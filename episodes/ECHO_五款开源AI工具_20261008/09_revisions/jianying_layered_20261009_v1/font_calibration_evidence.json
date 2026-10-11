@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "status": "conditional_historical_native_calibration",
+  "nativeValidationForThisEpisode": "not_performed",
+  "historicalRuntime": "Jianying 11.5, as recorded in historical builder",
+  "evidence": [
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\jianying_layered_v7\\font_mapping_qc.json",
+      "sha256": "f0e1b7a11a687412f669ad09829c6e4ab9683b28f7674751ac2a6290c0ebe659"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\jianying_layered_v7\\native_typography_qc.json",
+      "sha256": "cd4810910133d30fd6e67e5dce94177a205d1ffc0648e11fd7ac5e5105fff292"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\jianying_layered_v7\\qc\\native_C02\\font_fit_measurements.json",
+      "sha256": "752d57d2e88b0a4c0cba20ae4616552290ec47f9a08972ae19889b9ea4faf6b7"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\jianying_layered_v7\\build_probe.py",
+      "sha256": "015d605edcfaafde021d786a1522b49b0447c8ddd8e359edb0934a9548c65980"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\jianying_layered_v7\\build_draft.py",
+      "sha256": "082961d86538dc4bdabf496cacce0c0b73f5c6a32b42c72e2c3199c69a029021"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\jianying_layered_v7\\svg_layers.js",
+      "sha256": "57d37c5fd36676437ddb0286d4a72b940aa2b743527670a1131882eecf32eb31"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\card_kit.js",
+      "sha256": "7803274f6eb398cd9c9586c1efc21494d51d5962e87d09551dee47c6359d18c0"
+    },
+    {
+      "path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\card_scene.html",
+      "sha256": "9f50358de8a822d19ac82854e3af49de33b5fba788204d7453070ab53d659916"
+    },
+    {
+      "path": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\ECHO_五款开源AI工具_20261008\\09_revisions\\jianying_layered_20261009_v1\\source\\episode\\06_project\\cards\\common.js",
+      "sha256": "dded8a91d926ee8c7dd01126c9c6187530c279aa42c3650602701f16ef3ce43f"
+    },
+    {
+      "path": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\ECHO_五款开源AI工具_20261008\\09_revisions\\jianying_layered_20261009_v1\\adapter\\instrument.js",
+      "sha256": "7444fa11fd6ef933146f783e5feed2df4b45da7aa7ee3682deb31f277afd8409"
+    }
+  ],
+  "systemFontSha256": {
+    "regular_font": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+    "bold_font": "4508821b3dffe01f0ef5e5326a3e60df705a44633858811f67b6982dce3f6ee6"
+  },
+  "compatibility": {
+    "canvas": [
+      1920,
+      1080
+    ],
+    "fps": 30,
+    "family": "Microsoft YaHei",
+    "systemFontBytesEqualHistoricalPackagedFontBytes": true,
+    "svgText": "Both emit SVG text x/y baseline, text-anchor start/middle, font-weight 400/700, and inherit Microsoft YaHei. Argument order differs only at helper API level.",
+    "sourceCoordinate": "Both extract transformed DOMPoint(getBBox.x+width/2,getBBox.y+height/2) using getCTM. Current inkCenter is additional data and is deliberately not used by the historical formula.",
+    "nativeStyle": "Both use TextStyle(size=...,align=1,auto_wrapping=False), text material type text, normal horizontal typesetting, font-weight flag.",
+    "native72pxSizeBefore": 6.666666666666666,
+    "native72pxSizeAfter": 6.8999999999999995
+  },
+  "selected": {
+    "fontSizeFactor": 1.035,
+    "divisorBeforeFactor": 10.8,
+    "effectiveDivisor": 10.434782608695654,
+    "svgLocalYOffsetPerFontPx": 0.105,
+    "formula": "size=fontSizePx*1.035/10.8; delta=fontSizePx*0.105*scaleY; xNativePx=xSvgFontBoxCenter-sin(rotation)*delta; yNativePx=ySvgFontBoxCenter+cos(rotation)*delta"
+  },
+  "historicalResult": {
+    "report": "native_typography_qc.json",
+    "sampleCount": 16,
+    "maxCenterDeltaPx": 1.0,
+    "maxWidthRatioError": 0.008399999999999963,
+    "status": "passed_sampled_native_font_geometry"
+  },
+  "limitations": [
+    "Historical evidence is reviewed here but the old native video has not been replayed in this task.",
+    "No current-episode native Jianying validation was performed.",
+    "Historical materials used explicit font paths; portable current materials leave them empty and require system font resolution.",
+    "Historical coefficient calibrates SVG full font-box centers only. Do not add this offset on top of inkCenter.",
+    "Font files are never copied or redistributed by this builder."
+  ]
+}

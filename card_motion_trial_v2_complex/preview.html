@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>复杂信息卡 · 动效试样</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#07110c;color:#f0f3ec;font-family:'Microsoft YaHei',sans-serif;padding:42px 24px}main{max-width:1240px;margin:auto}h1{font-size:30px;margin:0 0 14px}p{color:#a9b9ac;line-height:1.8;margin:12px 0 22px}video{display:block;width:100%;background:#14271b;border:1px solid #33533b;border-radius:14px}nav{display:flex;flex-wrap:wrap;gap:12px;margin:20px 0}button,a{font:inherit;color:#78efa2}button{padding:10px 17px;border:1px solid #33533b;background:#14271b;border-radius:8px;cursor:pointer}button:hover{background:#243d2b}section{padding:22px;border:1px solid #33533b;border-radius:12px;margin-top:26px}section p{margin:0}small{color:#a9b9ac}a{text-underline-offset:4px}
+</style>
+<main>
+<h1>复杂工程，也能清晰恢复</h1>
+<p>18 秒视觉试样 · 同一张海报，经历图层拆解、局部修复、结构重组和继续编辑。本版无旁白。</p>
+<video id="video" controls playsinline preload="metadata" poster="08_qc/final_frame.png" src="07_exports/complex_card_1080p.mp4"></video>
+<nav aria-label="选择动作阶段"><button data-t="0">从头播放</button><button data-t="2.6">识别图层</button><button data-t="6.4">局部修复</button><button data-t="11">结构重组</button><button data-t="13.8">继续编辑</button></nav>
+<section><p>对应文案：导入工程时，先识别图层、文字和对象位置。如果缺少字体，保留对象关系，定位冲突并完成替换。处理后恢复原有结构，继续编辑。</p></section>
+<p><a href="07_exports/complex_card_1080p.mp4">打开视频</a> · <a href="08_qc/cards/C01/process.png">查看过程图</a> · <a href="说明.md">源工程说明</a></p>
+<small>抽象流程示意，不对应特定软件的实测能力。当前节奏用于视觉评审，正式制作时仍按提供的旁白对齐。</small>
+</main>
+<script>const video=document.getElementById('video');document.querySelectorAll('[data-t]').forEach(b=>b.addEventListener('click',()=>{video.currentTime=Number(b.dataset.t);video.play()}));</script>
+</html>

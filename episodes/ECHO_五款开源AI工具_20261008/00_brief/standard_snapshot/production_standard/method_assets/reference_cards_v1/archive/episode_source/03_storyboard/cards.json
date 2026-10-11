@@ -1,0 +1,2443 @@
+{
+  "sop_version": "4.4.1",
+  "fps": 30,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "card_subtitles": false,
+  "motion_revision": "card_style_v4_reference",
+  "episode_total_frames": 2517,
+  "implementation": "Episode-specific reference adaptation; deterministic SVG card_kit + cards_main + cards_middle. Local vendored flubber supplies real shape interpolation; no network imports. Original episode narration and timing retained.",
+  "active_sources": [
+    "06_project/cards/card_scene.html",
+    "06_project/cards/card_kit.js",
+    "06_project/cards/cards_main.js",
+    "06_project/cards/cards_middle.js",
+    "06_project/cards/reference_style.json",
+    "06_project/cards/motion_specs.json",
+    "06_project/cards/vendor/flubber.min.js"
+  ],
+  "source_sha256": {
+    "card_scene.html": "9f50358de8a822d19ac82854e3af49de33b5fba788204d7453070ab53d659916",
+    "card_kit.js": "7803274f6eb398cd9c9586c1efc21494d51d5962e87d09551dee47c6359d18c0",
+    "cards_main.js": "beb1b5873886a3017a88420d550e1521fd9f3fa75f7d23e06e9d38536859a65a",
+    "cards_middle.js": "6bddeae2600093287b1bc5c441bbf64b4cd4ea099651bfc10c9599deac94aa3f",
+    "reference_style.json": "eacb050fba006d62ba5acbc29329c8344a5063c84e151ae2cdac45d39239e8cc",
+    "motion_specs.json": "73f4ab893f239b244bed8556e98b9854582afd9df431b459f7bdeb509b7fad5e",
+    "vendor/flubber.min.js": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4"
+  },
+  "historical_inactive_sources": [
+    "06_project/cards/card_motion.js",
+    "06_project/cards/palette_override.json"
+  ],
+  "type_defaults": "This-episode explicit reference override: title72px, main node46px, support34px; local headings/fields40/44/48/52px preserve hierarchy. Snapshot defaults and SOP are unchanged.",
+  "typography_override": {
+    "title_px": 72,
+    "node_px": 46,
+    "support_px": 34,
+    "scope": "episode_only_reference_layering",
+    "source": "06_project/cards/reference_style.json",
+    "note": "标题/主节点/辅助为层级基准，局部文件名与字段使用40/44/48/52等中间字号；不是全局标准变更"
+  },
+  "process_sample_policy": "Exactly six sample_frames for the existing 3x2 contact sheet; additional requested detail times and all event midpoints retained in process_sample_frames.",
+  "cards": [
+    {
+      "id": "C02",
+      "start": 3,
+      "end": 8.933,
+      "start_frame": 90,
+      "end_frame_exclusive": 268,
+      "frame_count": 178,
+      "title": "两种交代方式",
+      "source_span": "你缺的可能不是Prompt 而是Skill。先记住一句话：Prompt是临时交代 Skill是长期工作手册。",
+      "viewer_question": "Prompt和Skill在这段类比中怎样使用？",
+      "core_claim": "临时交代面向本次任务；保存的工作手册可供后续任务调用。",
+      "relation_type": "统一维度对照",
+      "nodes": [
+        {
+          "id": "Prompt",
+          "label": "Prompt"
+        },
+        {
+          "id": "本次任务",
+          "label": "本次任务"
+        },
+        {
+          "id": "Skill",
+          "label": "Skill"
+        },
+        {
+          "id": "方法存档",
+          "label": "方法存档"
+        },
+        {
+          "id": "任务 A",
+          "label": "任务 A"
+        },
+        {
+          "id": "任务 B",
+          "label": "任务 B"
+        }
+      ],
+      "edges": [
+        {
+          "from": "Prompt",
+          "to": "本次任务",
+          "meaning": "单次递交"
+        },
+        {
+          "from": "Skill",
+          "to": "任务 A",
+          "meaning": "调用"
+        },
+        {
+          "from": "Skill",
+          "to": "任务 B",
+          "meaning": "再次调用"
+        }
+      ],
+      "visual_encoding": "两栏同尺度比较；左侧便签递交，右侧手册保留并分出两次调用。任务A/B是教学示例，不是产品记录。",
+      "screen_copy": [
+        "Prompt",
+        "本次任务",
+        "Skill",
+        "方法存档",
+        "任务 A",
+        "任务 B"
+      ],
+      "information_gain": "用留存和流向区分临时交代与可复用手册，而不是重复两句定义。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S025",
+        "S039"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "临时说明"
+          ],
+          "meaning": "聊天说明沿弧线变成单次任务文档",
+          "start_frame": 10,
+          "end_frame_exclusive": 42,
+          "global_start_frame": 100,
+          "global_end_frame_exclusive": 132,
+          "from": "临时说明的过程起态",
+          "to": "聊天说明沿弧线变成单次任务文档",
+          "geometry": "bubble→clipboard形变/缩放/迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C02",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C02",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "Prompt是临时交代",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            17,
+            26,
+            36
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "方法存档"
+          ],
+          "meaning": "纸面缩为文档并进入开合文件夹",
+          "start_frame": 42,
+          "end_frame_exclusive": 68,
+          "global_start_frame": 132,
+          "global_end_frame_exclusive": 158,
+          "from": "方法存档的过程起态",
+          "to": "纸面缩为文档并进入开合文件夹",
+          "geometry": "paper→doc形变与文件夹开合",
+          "parameters_source": "06_project/cards/cards_main.js / C02",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C02",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "Skill是长期工作手册",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            47,
+            55,
+            62
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "调用A"
+          ],
+          "meaning": "方法保留，沿实际关系路径把内容送入任务A",
+          "start_frame": 72,
+          "end_frame_exclusive": 94,
+          "global_start_frame": 162,
+          "global_end_frame_exclusive": 184,
+          "from": "调用A的过程起态",
+          "to": "方法保留，沿实际关系路径把内容送入任务A",
+          "geometry": "真实贝塞尔弧长路径迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C02",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C02",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "长期工作手册",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            76,
+            83,
+            90
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "调用B"
+          ],
+          "meaning": "相同手册再次调用到任务B",
+          "start_frame": 110,
+          "end_frame_exclusive": 132,
+          "global_start_frame": 200,
+          "global_end_frame_exclusive": 222,
+          "from": "调用B的过程起态",
+          "to": "相同手册再次调用到任务B",
+          "geometry": "真实贝塞尔弧长路径迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C02",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C02",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "长期工作手册",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            114,
+            121,
+            128
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 148,
+        "end_frame_exclusive": 178,
+        "duration_seconds": 1.0
+      },
+      "sample_frames": [
+        3,
+        22,
+        55,
+        82,
+        122,
+        166
+      ],
+      "process_sample_frames": [
+        3,
+        22,
+        26,
+        55,
+        82,
+        83,
+        121,
+        122,
+        166
+      ],
+      "video": "04_assets/cards/C02.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C02"
+    },
+    {
+      "id": "C04",
+      "start": 12.733,
+      "end": 18.366,
+      "start_frame": 382,
+      "end_frame_exclusive": 551,
+      "frame_count": 169,
+      "title": "把写作方法变成流程",
+      "source_span": "先找痛点 再设计冲突 然后写开头 补案例 最后加上评论区互动 他照做 确实写出来了。",
+      "viewer_question": "五个动作怎样组织成一篇稿？",
+      "core_claim": "五项写作动作按口播顺序推进并累积到同一成稿。",
+      "relation_type": "顺序与输入输出",
+      "nodes": [
+        {
+          "id": "痛点",
+          "label": "痛点"
+        },
+        {
+          "id": "冲突",
+          "label": "冲突"
+        },
+        {
+          "id": "开头",
+          "label": "开头"
+        },
+        {
+          "id": "案例",
+          "label": "案例"
+        },
+        {
+          "id": "互动",
+          "label": "互动"
+        },
+        {
+          "id": "成稿",
+          "label": "成稿"
+        }
+      ],
+      "edges": [
+        {
+          "from": "痛点",
+          "to": "冲突",
+          "meaning": "顺序"
+        },
+        {
+          "from": "冲突",
+          "to": "开头",
+          "meaning": "顺序"
+        },
+        {
+          "from": "开头",
+          "to": "案例",
+          "meaning": "顺序"
+        },
+        {
+          "from": "案例",
+          "to": "互动",
+          "meaning": "顺序"
+        },
+        {
+          "from": "互动",
+          "to": "成稿",
+          "meaning": "流程结果"
+        }
+      ],
+      "visual_encoding": "上方五节点的连线和移动对象表达顺序，下方同一稿件逐项增添内容；不表示经实测的因果增益。",
+      "screen_copy": [
+        "痛点",
+        "冲突",
+        "开头",
+        "案例",
+        "互动",
+        "成稿"
+      ],
+      "information_gain": "让观众看见五个步骤如何推进、如何累积成一份完整文案。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S010",
+        "S017"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "痛点"
+          ],
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "start_frame": 16,
+          "end_frame_exclusive": 35,
+          "global_start_frame": 398,
+          "global_end_frame_exclusive": 417,
+          "from": "痛点的过程起态",
+          "to": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "parameters_source": "06_project/cards/cards_main.js / C04",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C04",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "先找痛点",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            20,
+            25,
+            31
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "冲突"
+          ],
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "start_frame": 37,
+          "end_frame_exclusive": 57,
+          "global_start_frame": 419,
+          "global_end_frame_exclusive": 439,
+          "from": "冲突的过程起态",
+          "to": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "parameters_source": "06_project/cards/cards_main.js / C04",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C04",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "再设计冲突",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            41,
+            47,
+            53
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "开头"
+          ],
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "start_frame": 59,
+          "end_frame_exclusive": 78,
+          "global_start_frame": 441,
+          "global_end_frame_exclusive": 460,
+          "from": "开头的过程起态",
+          "to": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "parameters_source": "06_project/cards/cards_main.js / C04",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C04",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "然后写开头",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            63,
+            69,
+            74
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "案例"
+          ],
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "start_frame": 80,
+          "end_frame_exclusive": 100,
+          "global_start_frame": 462,
+          "global_end_frame_exclusive": 482,
+          "from": "案例的过程起态",
+          "to": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "parameters_source": "06_project/cards/cards_main.js / C04",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C04",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "补案例",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            84,
+            90,
+            96
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "互动"
+          ],
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "start_frame": 102,
+          "end_frame_exclusive": 122,
+          "global_start_frame": 484,
+          "global_end_frame_exclusive": 504,
+          "from": "互动的过程起态",
+          "to": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "parameters_source": "06_project/cards/cards_main.js / C04",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C04",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "最后加上评论区互动",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            106,
+            112,
+            118
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "成稿"
+          ],
+          "meaning": "保留累计字段并建立成稿结果",
+          "start_frame": 120,
+          "end_frame_exclusive": 136,
+          "global_start_frame": 502,
+          "global_end_frame_exclusive": 518,
+          "from": "成稿的过程起态",
+          "to": "保留累计字段并建立成稿结果",
+          "geometry": "横向遮罩与勾号描画",
+          "parameters_source": "06_project/cards/cards_main.js / C04",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C04",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "他照做 确实写出来了",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            123,
+            128,
+            133
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 140,
+        "end_frame_exclusive": 169,
+        "duration_seconds": 0.967
+      },
+      "sample_frames": [
+        6,
+        26,
+        57,
+        92,
+        127,
+        158
+      ],
+      "process_sample_frames": [
+        6,
+        25,
+        26,
+        47,
+        57,
+        69,
+        90,
+        92,
+        112,
+        127,
+        128,
+        158
+      ],
+      "video": "04_assets/cards/C04.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C04"
+    },
+    {
+      "id": "C07",
+      "start": 26.7,
+      "end": 32.133,
+      "start_frame": 801,
+      "end_frame_exclusive": 964,
+      "frame_count": 163,
+      "title": "一份手册，四个维度",
+      "source_span": "什么任务使用它 具体分几步 哪些地方要注意 什么样的结果才算合格 以后你只要说。",
+      "viewer_question": "工作手册应回答哪几类问题？",
+      "core_claim": "使用条件、执行步骤、注意事项和合格结果是同一手册的四个并列维度。",
+      "relation_type": "并列维度汇聚",
+      "nodes": [
+        {
+          "id": "使用条件",
+          "label": "使用条件"
+        },
+        {
+          "id": "执行步骤",
+          "label": "执行步骤"
+        },
+        {
+          "id": "注意事项",
+          "label": "注意事项"
+        },
+        {
+          "id": "合格结果",
+          "label": "合格结果"
+        },
+        {
+          "id": "工作手册",
+          "label": "工作手册"
+        }
+      ],
+      "edges": [
+        {
+          "from": "使用条件",
+          "to": "工作手册",
+          "meaning": "并列字段汇入"
+        },
+        {
+          "from": "执行步骤",
+          "to": "工作手册",
+          "meaning": "并列字段汇入"
+        },
+        {
+          "from": "注意事项",
+          "to": "工作手册",
+          "meaning": "并列字段汇入"
+        },
+        {
+          "from": "合格结果",
+          "to": "工作手册",
+          "meaning": "并列字段汇入"
+        }
+      ],
+      "visual_encoding": "四项同级排列、互不连接，每项独立汇入手册对应行；先后显现只用于跟随讲解，不表示因果链。",
+      "screen_copy": [
+        "使用条件",
+        "执行步骤",
+        "注意事项",
+        "合格结果",
+        "工作手册"
+      ],
+      "information_gain": "把四种提问归类为手册结构，并保留每项与成册字段的对应。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S017",
+        "S010"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "使用条件图标"
+          ],
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "start_frame": 2,
+          "end_frame_exclusive": 19,
+          "global_start_frame": 803,
+          "global_end_frame_exclusive": 820,
+          "from": "使用条件图标的过程起态",
+          "to": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么任务使用它",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            5,
+            10,
+            15
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "使用条件独立关系"
+          ],
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "start_frame": 4,
+          "end_frame_exclusive": 27,
+          "global_start_frame": 805,
+          "global_end_frame_exclusive": 828,
+          "from": "使用条件独立关系的过程起态",
+          "to": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么任务使用它",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            9,
+            16,
+            23
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "使用条件手册字段"
+          ],
+          "meaning": "到达后对应字段从左向右写入",
+          "start_frame": 27,
+          "end_frame_exclusive": 41,
+          "global_start_frame": 828,
+          "global_end_frame_exclusive": 842,
+          "from": "使用条件手册字段的过程起态",
+          "to": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么任务使用它",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            30,
+            34,
+            38
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "执行步骤图标"
+          ],
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "start_frame": 25,
+          "end_frame_exclusive": 42,
+          "global_start_frame": 826,
+          "global_end_frame_exclusive": 843,
+          "from": "执行步骤图标的过程起态",
+          "to": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "具体分几步",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            28,
+            34,
+            39
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "执行步骤独立关系"
+          ],
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "start_frame": 28,
+          "end_frame_exclusive": 51,
+          "global_start_frame": 829,
+          "global_end_frame_exclusive": 852,
+          "from": "执行步骤独立关系的过程起态",
+          "to": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "具体分几步",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            32,
+            39,
+            46
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "执行步骤手册字段"
+          ],
+          "meaning": "到达后对应字段从左向右写入",
+          "start_frame": 51,
+          "end_frame_exclusive": 64,
+          "global_start_frame": 852,
+          "global_end_frame_exclusive": 865,
+          "from": "执行步骤手册字段的过程起态",
+          "to": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "具体分几步",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            53,
+            58,
+            62
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "注意事项图标"
+          ],
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "start_frame": 49,
+          "end_frame_exclusive": 66,
+          "global_start_frame": 850,
+          "global_end_frame_exclusive": 867,
+          "from": "注意事项图标的过程起态",
+          "to": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "哪些地方要注意",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            52,
+            58,
+            63
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "注意事项独立关系"
+          ],
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "start_frame": 52,
+          "end_frame_exclusive": 75,
+          "global_start_frame": 853,
+          "global_end_frame_exclusive": 876,
+          "from": "注意事项独立关系的过程起态",
+          "to": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "哪些地方要注意",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            56,
+            63,
+            70
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "注意事项手册字段"
+          ],
+          "meaning": "到达后对应字段从左向右写入",
+          "start_frame": 75,
+          "end_frame_exclusive": 88,
+          "global_start_frame": 876,
+          "global_end_frame_exclusive": 889,
+          "from": "注意事项手册字段的过程起态",
+          "to": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "哪些地方要注意",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            77,
+            82,
+            86
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "合格结果图标"
+          ],
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "start_frame": 84,
+          "end_frame_exclusive": 101,
+          "global_start_frame": 885,
+          "global_end_frame_exclusive": 902,
+          "from": "合格结果图标的过程起态",
+          "to": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么样的结果才算合格",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            87,
+            93,
+            98
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "合格结果独立关系"
+          ],
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "start_frame": 87,
+          "end_frame_exclusive": 110,
+          "global_start_frame": 888,
+          "global_end_frame_exclusive": 911,
+          "from": "合格结果独立关系的过程起态",
+          "to": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么样的结果才算合格",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            92,
+            98,
+            105
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "合格结果手册字段"
+          ],
+          "meaning": "到达后对应字段从左向右写入",
+          "start_frame": 110,
+          "end_frame_exclusive": 124,
+          "global_start_frame": 911,
+          "global_end_frame_exclusive": 925,
+          "from": "合格结果手册字段的过程起态",
+          "to": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C07",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C07",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么样的结果才算合格",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            113,
+            117,
+            121
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 124,
+        "end_frame_exclusive": 163,
+        "duration_seconds": 1.3
+      },
+      "sample_frames": [
+        4,
+        18,
+        42,
+        66,
+        104,
+        135
+      ],
+      "process_sample_frames": [
+        4,
+        10,
+        16,
+        18,
+        34,
+        39,
+        42,
+        58,
+        63,
+        66,
+        82,
+        93,
+        98,
+        104,
+        117,
+        135
+      ],
+      "video": "04_assets/cards/C07.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C07"
+    },
+    {
+      "id": "C09",
+      "start": 38.5,
+      "end": 48,
+      "start_frame": 1155,
+      "end_frame_exclusive": 1440,
+      "frame_count": 285,
+      "title": "把方法整理成可执行文件",
+      "source_span": "所以 Skill不是一句提示词 也不是让AI“认真一点” 它是把一项工作里的流程 判断标准 工具用法和验收要求 整理成AI可以重复执行的文件或文件夹。",
+      "viewer_question": "Skill保存的到底是什么？",
+      "core_claim": "流程、判断标准、工具用法和验收要求整理在文件或文件夹中，供重复执行。",
+      "relation_type": "排除误解与并列汇聚",
+      "nodes": [
+        {
+          "id": "一句提示词",
+          "label": "一句提示词"
+        },
+        {
+          "id": "认真一点",
+          "label": "认真一点"
+        },
+        {
+          "id": "流程",
+          "label": "流程"
+        },
+        {
+          "id": "判断标准",
+          "label": "判断标准"
+        },
+        {
+          "id": "工具用法",
+          "label": "工具用法"
+        },
+        {
+          "id": "验收要求",
+          "label": "验收要求"
+        },
+        {
+          "id": "Skill文件夹",
+          "label": "Skill文件夹"
+        }
+      ],
+      "edges": [
+        {
+          "from": "流程",
+          "to": "Skill文件夹",
+          "meaning": "组成"
+        },
+        {
+          "from": "判断标准",
+          "to": "Skill文件夹",
+          "meaning": "组成"
+        },
+        {
+          "from": "工具用法",
+          "to": "Skill文件夹",
+          "meaning": "组成"
+        },
+        {
+          "from": "验收要求",
+          "to": "Skill文件夹",
+          "meaning": "组成"
+        }
+      ],
+      "visual_encoding": "先划除口播排除的两种误解，四个同级内容从独立路径汇入同一文件夹；箭头表示整理归档，不是四项先后依赖。",
+      "screen_copy": [
+        "一句提示词",
+        "认真一点",
+        "流程",
+        "判断标准",
+        "工具用法",
+        "验收要求",
+        "Skill文件夹"
+      ],
+      "information_gain": "从一句模糊要求转为四种可组织、可检查的内容类别。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S012",
+        "S039"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "一句提示词误解"
+          ],
+          "meaning": "划线表示一句提示词不等于 Skill",
+          "start_frame": 20,
+          "end_frame_exclusive": 34,
+          "global_start_frame": 1175,
+          "global_end_frame_exclusive": 1189,
+          "from": "一句提示词误解的过程起态",
+          "to": "划线表示一句提示词不等于 Skill",
+          "geometry": "删除线长度增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "Skill不是一句提示词",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            22,
+            27,
+            31
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "认真一点误解"
+          ],
+          "meaning": "划线表示口头要求不等于 Skill",
+          "start_frame": 54,
+          "end_frame_exclusive": 69,
+          "global_start_frame": 1209,
+          "global_end_frame_exclusive": 1224,
+          "from": "认真一点误解的过程起态",
+          "to": "划线表示口头要求不等于 Skill",
+          "geometry": "删除线长度增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "也不是让AI认真一点",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            57,
+            61,
+            66
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "工作方法纸面"
+          ],
+          "meaning": "小文档扩为可承接四项内容的纸面",
+          "start_frame": 88,
+          "end_frame_exclusive": 106,
+          "global_start_frame": 1243,
+          "global_end_frame_exclusive": 1261,
+          "from": "工作方法纸面的过程起态",
+          "to": "小文档扩为可承接四项内容的纸面",
+          "geometry": "真实轮廓 morph、位置和尺寸连续变化",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "它是把一项工作里的流程",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            92,
+            98,
+            103
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "流程来源分支"
+          ],
+          "meaning": "同一文档展开该并列来源",
+          "start_frame": 100,
+          "end_frame_exclusive": 119,
+          "global_start_frame": 1255,
+          "global_end_frame_exclusive": 1274,
+          "from": "流程来源分支的过程起态",
+          "to": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "流程",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            104,
+            110,
+            115
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "流程汇入"
+          ],
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "start_frame": 111,
+          "end_frame_exclusive": 131,
+          "global_start_frame": 1266,
+          "global_end_frame_exclusive": 1286,
+          "from": "流程汇入的过程起态",
+          "to": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "流程",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            115,
+            121,
+            127
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "流程文档行"
+          ],
+          "meaning": "抵达后在对应行写入内容",
+          "start_frame": 131,
+          "end_frame_exclusive": 142,
+          "global_start_frame": 1286,
+          "global_end_frame_exclusive": 1297,
+          "from": "流程文档行的过程起态",
+          "to": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "流程",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            133,
+            136,
+            140
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "判断标准来源分支"
+          ],
+          "meaning": "同一文档展开该并列来源",
+          "start_frame": 130,
+          "end_frame_exclusive": 149,
+          "global_start_frame": 1285,
+          "global_end_frame_exclusive": 1304,
+          "from": "判断标准来源分支的过程起态",
+          "to": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "判断标准",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            134,
+            140,
+            145
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "判断标准汇入"
+          ],
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "start_frame": 141,
+          "end_frame_exclusive": 161,
+          "global_start_frame": 1296,
+          "global_end_frame_exclusive": 1316,
+          "from": "判断标准汇入的过程起态",
+          "to": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "判断标准",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            145,
+            151,
+            157
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "判断标准文档行"
+          ],
+          "meaning": "抵达后在对应行写入内容",
+          "start_frame": 161,
+          "end_frame_exclusive": 172,
+          "global_start_frame": 1316,
+          "global_end_frame_exclusive": 1327,
+          "from": "判断标准文档行的过程起态",
+          "to": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "判断标准",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            163,
+            166,
+            170
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "工具用法来源分支"
+          ],
+          "meaning": "同一文档展开该并列来源",
+          "start_frame": 154,
+          "end_frame_exclusive": 173,
+          "global_start_frame": 1309,
+          "global_end_frame_exclusive": 1328,
+          "from": "工具用法来源分支的过程起态",
+          "to": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "工具用法",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            158,
+            164,
+            169
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "工具用法汇入"
+          ],
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "start_frame": 165,
+          "end_frame_exclusive": 185,
+          "global_start_frame": 1320,
+          "global_end_frame_exclusive": 1340,
+          "from": "工具用法汇入的过程起态",
+          "to": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "工具用法",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            169,
+            175,
+            181
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "工具用法文档行"
+          ],
+          "meaning": "抵达后在对应行写入内容",
+          "start_frame": 185,
+          "end_frame_exclusive": 196,
+          "global_start_frame": 1340,
+          "global_end_frame_exclusive": 1351,
+          "from": "工具用法文档行的过程起态",
+          "to": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "工具用法",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            187,
+            190,
+            194
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "验收要求来源分支"
+          ],
+          "meaning": "同一文档展开该并列来源",
+          "start_frame": 178,
+          "end_frame_exclusive": 197,
+          "global_start_frame": 1333,
+          "global_end_frame_exclusive": 1352,
+          "from": "验收要求来源分支的过程起态",
+          "to": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "验收要求",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            182,
+            188,
+            193
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "验收要求汇入"
+          ],
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "start_frame": 189,
+          "end_frame_exclusive": 209,
+          "global_start_frame": 1344,
+          "global_end_frame_exclusive": 1364,
+          "from": "验收要求汇入的过程起态",
+          "to": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "验收要求",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            193,
+            199,
+            205
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "验收要求文档行"
+          ],
+          "meaning": "抵达后在对应行写入内容",
+          "start_frame": 209,
+          "end_frame_exclusive": 220,
+          "global_start_frame": 1364,
+          "global_end_frame_exclusive": 1375,
+          "from": "验收要求文档行的过程起态",
+          "to": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "验收要求",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            211,
+            214,
+            218
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "归档文件夹"
+          ],
+          "meaning": "文件夹前片张开准备收取文档",
+          "start_frame": 216,
+          "end_frame_exclusive": 230,
+          "global_start_frame": 1371,
+          "global_end_frame_exclusive": 1385,
+          "from": "归档文件夹的过程起态",
+          "to": "文件夹前片张开准备收取文档",
+          "geometry": "文件夹前片连续形变",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "整理成AI可以重复执行的文件或文件夹",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            219,
+            223,
+            227
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "工作方法归档"
+          ],
+          "meaning": "填好的纸面缩成一页进入文件夹，来源关系随之汇聚",
+          "start_frame": 227,
+          "end_frame_exclusive": 254,
+          "global_start_frame": 1382,
+          "global_end_frame_exclusive": 1409,
+          "from": "工作方法归档的过程起态",
+          "to": "填好的纸面缩成一页进入文件夹，来源关系随之汇聚",
+          "geometry": "纸面到文档轮廓形变、缩放和弧线迁移；汇聚曲线端点连续收拢",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "整理成AI可以重复执行的文件或文件夹",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            233,
+            241,
+            249
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "归档完成"
+          ],
+          "meaning": "文件夹前片闭合，保留复用结论",
+          "start_frame": 256,
+          "end_frame_exclusive": 270,
+          "global_start_frame": 1411,
+          "global_end_frame_exclusive": 1425,
+          "from": "归档完成的过程起态",
+          "to": "文件夹前片闭合，保留复用结论",
+          "geometry": "文件夹前片连续闭合",
+          "parameters_source": "06_project/cards/cards_middle.js / C09",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C09",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "可以重复执行",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            259,
+            263,
+            267
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 270,
+        "end_frame_exclusive": 285,
+        "duration_seconds": 0.5
+      },
+      "sample_frames": [
+        24,
+        97,
+        124,
+        200,
+        238,
+        274
+      ],
+      "process_sample_frames": [
+        24,
+        27,
+        61,
+        64,
+        97,
+        98,
+        110,
+        121,
+        124,
+        136,
+        140,
+        151,
+        164,
+        166,
+        171,
+        175,
+        188,
+        190,
+        199,
+        200,
+        214,
+        215,
+        223,
+        238,
+        241,
+        250,
+        263,
+        274
+      ],
+      "video": "04_assets/cards/C09.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C09"
+    },
+    {
+      "id": "C10",
+      "start": 48,
+      "end": 59.266,
+      "start_frame": 1440,
+      "end_frame_exclusive": 1778,
+      "frame_count": 338,
+      "title": "一个入口，按需扩展",
+      "source_span": "在常见的Skill框架里 通常会有一个skill.md 里面写清楚：这个Skill叫什么 什么情况下使用 以及具体怎么执行 复杂一点的Skill 还可以搭配案例库 参考资料 脚本和数据库。",
+      "viewer_question": "核心说明文件和配套资料是什么关系？",
+      "core_claim": "在口播所说的常见框架中，核心说明通常包含名称、场景、步骤，复杂Skill可以配置辅助资料。",
+      "relation_type": "核心与可选扩展",
+      "nodes": [
+        {
+          "id": "Skill",
+          "label": "Skill"
+        },
+        {
+          "id": "SKILL.md",
+          "label": "SKILL.md"
+        },
+        {
+          "id": "名称",
+          "label": "名称"
+        },
+        {
+          "id": "适用场景",
+          "label": "适用场景"
+        },
+        {
+          "id": "执行步骤",
+          "label": "执行步骤"
+        },
+        {
+          "id": "案例库",
+          "label": "案例库"
+        },
+        {
+          "id": "参考资料",
+          "label": "参考资料"
+        },
+        {
+          "id": "脚本",
+          "label": "脚本"
+        },
+        {
+          "id": "数据库",
+          "label": "数据库"
+        }
+      ],
+      "edges": [
+        {
+          "from": "Skill",
+          "to": "SKILL.md",
+          "meaning": "通常的核心说明"
+        },
+        {
+          "from": "Skill",
+          "to": "案例库",
+          "meaning": "复杂时可配套"
+        },
+        {
+          "from": "Skill",
+          "to": "参考资料",
+          "meaning": "复杂时可配套"
+        },
+        {
+          "from": "Skill",
+          "to": "脚本",
+          "meaning": "复杂时可配套"
+        },
+        {
+          "from": "Skill",
+          "to": "数据库",
+          "meaning": "复杂时可配套"
+        }
+      ],
+      "visual_encoding": "文件夹连到主说明文件，文件内三项逐行揭示；随后独立资料支路展开。持续标“结构示意”，并注明复杂时可配套，非真实应用截图。",
+      "screen_copy": [
+        "Skill",
+        "SKILL.md",
+        "名称",
+        "适用场景",
+        "执行步骤",
+        "案例库",
+        "参考资料",
+        "脚本",
+        "数据库"
+      ],
+      "information_gain": "将文件内部字段与外部辅助资源分开，避免把所有资料误当每个Skill的必备文件。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S039",
+        "S010"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "Skill文件夹打开"
+          ],
+          "meaning": "前片张开，提供主入口",
+          "start_frame": 4,
+          "end_frame_exclusive": 16,
+          "global_start_frame": 1444,
+          "global_end_frame_exclusive": 1456,
+          "from": "Skill文件夹打开的过程起态",
+          "to": "前片张开，提供主入口",
+          "geometry": "文件夹前片连续形变",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "在常见的Skill框架里",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            7,
+            10,
+            14
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "Skill文件夹收起"
+          ],
+          "meaning": "主文件接通后前片收起",
+          "start_frame": 32,
+          "end_frame_exclusive": 42,
+          "global_start_frame": 1472,
+          "global_end_frame_exclusive": 1482,
+          "from": "Skill文件夹收起的过程起态",
+          "to": "主文件接通后前片收起",
+          "geometry": "文件夹前片连续形变",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "在常见的Skill框架里",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            34,
+            37,
+            40
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "主入口关系"
+          ],
+          "meaning": "Skill文件夹连接主说明文件",
+          "start_frame": 8,
+          "end_frame_exclusive": 36,
+          "global_start_frame": 1448,
+          "global_end_frame_exclusive": 1476,
+          "from": "主入口关系的过程起态",
+          "to": "Skill文件夹连接主说明文件",
+          "geometry": "关系曲线生长和沿路径移动",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "通常会有一个skill.md",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            14,
+            22,
+            30
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "SKILL.md主纸面"
+          ],
+          "meaning": "文档沿弧线展开为保留深绿底的主文件面板",
+          "start_frame": 10,
+          "end_frame_exclusive": 36,
+          "global_start_frame": 1450,
+          "global_end_frame_exclusive": 1476,
+          "from": "SKILL.md主纸面的过程起态",
+          "to": "文档沿弧线展开为保留深绿底的主文件面板",
+          "geometry": "文档到纸面的轮廓、位置、尺寸与填色连续形变",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "通常会有一个skill.md",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            16,
+            23,
+            31
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "名称字段"
+          ],
+          "meaning": "该字段及说明在主文件中横向填写",
+          "start_frame": 81,
+          "end_frame_exclusive": 102,
+          "global_start_frame": 1521,
+          "global_end_frame_exclusive": 1542,
+          "from": "名称字段的过程起态",
+          "to": "该字段及说明在主文件中横向填写",
+          "geometry": "文字遮罩和对应行长度同步增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "这个Skill叫什么",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            85,
+            92,
+            98
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "适用场景字段"
+          ],
+          "meaning": "该字段及说明在主文件中横向填写",
+          "start_frame": 120,
+          "end_frame_exclusive": 141,
+          "global_start_frame": 1560,
+          "global_end_frame_exclusive": 1581,
+          "from": "适用场景字段的过程起态",
+          "to": "该字段及说明在主文件中横向填写",
+          "geometry": "文字遮罩和对应行长度同步增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "什么情况下使用",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            124,
+            130,
+            137
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "执行步骤字段"
+          ],
+          "meaning": "该字段及说明在主文件中横向填写",
+          "start_frame": 174,
+          "end_frame_exclusive": 195,
+          "global_start_frame": 1614,
+          "global_end_frame_exclusive": 1635,
+          "from": "执行步骤字段的过程起态",
+          "to": "该字段及说明在主文件中横向填写",
+          "geometry": "文字遮罩和对应行长度同步增长",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "具体怎么执行",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            178,
+            184,
+            191
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "案例库配套关系"
+          ],
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "start_frame": 213,
+          "end_frame_exclusive": 234,
+          "global_start_frame": 1653,
+          "global_end_frame_exclusive": 1674,
+          "from": "案例库配套关系的过程起态",
+          "to": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "案例库",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            217,
+            223,
+            230
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "案例库附件"
+          ],
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "start_frame": 230,
+          "end_frame_exclusive": 257,
+          "global_start_frame": 1670,
+          "global_end_frame_exclusive": 1697,
+          "from": "案例库附件的过程起态",
+          "to": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "案例库",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            235,
+            243,
+            252
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "参考资料配套关系"
+          ],
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "start_frame": 217,
+          "end_frame_exclusive": 238,
+          "global_start_frame": 1657,
+          "global_end_frame_exclusive": 1678,
+          "from": "参考资料配套关系的过程起态",
+          "to": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "参考资料",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            221,
+            227,
+            233
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "参考资料附件"
+          ],
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "start_frame": 241,
+          "end_frame_exclusive": 268,
+          "global_start_frame": 1681,
+          "global_end_frame_exclusive": 1708,
+          "from": "参考资料附件的过程起态",
+          "to": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "参考资料",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            247,
+            255,
+            263
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "脚本配套关系"
+          ],
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "start_frame": 220,
+          "end_frame_exclusive": 241,
+          "global_start_frame": 1660,
+          "global_end_frame_exclusive": 1681,
+          "from": "脚本配套关系的过程起态",
+          "to": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "脚本",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            224,
+            231,
+            237
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "脚本附件"
+          ],
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "start_frame": 253,
+          "end_frame_exclusive": 280,
+          "global_start_frame": 1693,
+          "global_end_frame_exclusive": 1720,
+          "from": "脚本附件的过程起态",
+          "to": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "脚本",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            258,
+            266,
+            274
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "数据库配套关系"
+          ],
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "start_frame": 224,
+          "end_frame_exclusive": 245,
+          "global_start_frame": 1664,
+          "global_end_frame_exclusive": 1685,
+          "from": "数据库配套关系的过程起态",
+          "to": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "数据库",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            228,
+            234,
+            241
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "数据库附件"
+          ],
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "start_frame": 264,
+          "end_frame_exclusive": 291,
+          "global_start_frame": 1704,
+          "global_end_frame_exclusive": 1731,
+          "from": "数据库附件的过程起态",
+          "to": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "parameters_source": "06_project/cards/cards_middle.js / C10",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C10",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "数据库",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            269,
+            278,
+            286
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 291,
+        "end_frame_exclusive": 338,
+        "duration_seconds": 1.567
+      },
+      "sample_frames": [
+        8,
+        22,
+        91,
+        184,
+        247,
+        314
+      ],
+      "process_sample_frames": [
+        8,
+        10,
+        22,
+        23,
+        37,
+        45,
+        91,
+        92,
+        130,
+        132,
+        184,
+        223,
+        225,
+        227,
+        231,
+        234,
+        243,
+        247,
+        255,
+        266,
+        270,
+        278,
+        282,
+        314
+      ],
+      "video": "04_assets/cards/C10.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C10"
+    },
+    {
+      "id": "C11",
+      "start": 59.266,
+      "end": 65.666,
+      "start_frame": 1778,
+      "end_frame_exclusive": 1970,
+      "frame_count": 192,
+      "title": "先匹配手册，再执行任务",
+      "source_span": "而Agent接到任务后 通常会先查看各个Skill的介绍 再选择最匹配的那个执行 这就像公司里分工。",
+      "viewer_question": "多个Skill都在时，任务怎样找到所需手册？",
+      "core_claim": "Agent通常查看介绍，并选择与任务匹配的Skill执行。",
+      "relation_type": "条件选择与执行",
+      "nodes": [
+        {
+          "id": "写短视频文案",
+          "label": "写短视频文案"
+        },
+        {
+          "id": "文案手册",
+          "label": "文案手册"
+        },
+        {
+          "id": "分析手册",
+          "label": "分析手册"
+        },
+        {
+          "id": "剪辑手册",
+          "label": "剪辑手册"
+        },
+        {
+          "id": "执行任务",
+          "label": "执行任务"
+        }
+      ],
+      "edges": [
+        {
+          "from": "写短视频文案",
+          "to": "文案手册",
+          "meaning": "示例匹配"
+        },
+        {
+          "from": "文案手册",
+          "to": "执行任务",
+          "meaning": "选中后执行"
+        }
+      ],
+      "visual_encoding": "候选节点并列。阅读扫描覆盖三份介绍；最终只把文案手册接入执行线路。写文案任务为教学示例，沿用后文分工类比。",
+      "screen_copy": [
+        "写短视频文案",
+        "文案手册",
+        "分析手册",
+        "剪辑手册",
+        "执行任务"
+      ],
+      "information_gain": "明确“查看候选”和“选中执行”是两步，而不是所有Skill同时执行。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S030",
+        "S012"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "候选介绍"
+          ],
+          "meaning": "阅读框连续扫描三份候选介绍",
+          "start_frame": 52,
+          "end_frame_exclusive": 105,
+          "global_start_frame": 1830,
+          "global_end_frame_exclusive": 1883,
+          "from": "候选介绍的过程起态",
+          "to": "阅读框连续扫描三份候选介绍",
+          "geometry": "纵向连续移动",
+          "parameters_source": "06_project/cards/cards_main.js / C11",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C11",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "先查看各个Skill的介绍",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            63,
+            79,
+            95
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "选中说明"
+          ],
+          "meaning": "选中手册转为执行对象，其他候选弱化",
+          "start_frame": 114,
+          "end_frame_exclusive": 141,
+          "global_start_frame": 1892,
+          "global_end_frame_exclusive": 1919,
+          "from": "选中说明的过程起态",
+          "to": "选中手册转为执行对象，其他候选弱化",
+          "geometry": "doc→clipboard形变与位移/缩放",
+          "parameters_source": "06_project/cards/cards_main.js / C11",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C11",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "再选择最匹配的那个执行",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            119,
+            128,
+            136
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "执行路径"
+          ],
+          "meaning": "沿真实折线与转弯到达执行节点",
+          "start_frame": 129,
+          "end_frame_exclusive": 153,
+          "global_start_frame": 1907,
+          "global_end_frame_exclusive": 1931,
+          "from": "执行路径的过程起态",
+          "to": "沿真实折线与转弯到达执行节点",
+          "geometry": "路径描画与弧长迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C11",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C11",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "执行",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            134,
+            141,
+            148
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 170,
+        "end_frame_exclusive": 192,
+        "duration_seconds": 0.733
+      },
+      "sample_frames": [
+        6,
+        39,
+        76,
+        119,
+        142,
+        180
+      ],
+      "process_sample_frames": [
+        6,
+        39,
+        76,
+        79,
+        119,
+        128,
+        141,
+        142,
+        180
+      ],
+      "video": "04_assets/cards/C11.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C11"
+    },
+    {
+      "id": "C13",
+      "start": 69.8,
+      "end": 77.2,
+      "start_frame": 2094,
+      "end_frame_exclusive": 2316,
+      "frame_count": 222,
+      "title": "把方法保存下来，供任务复用",
+      "source_span": "没有Skill 你每次都要重新教AI 有了Skill 你可以把自己的写作方法 运营经验 分析流程 变成AI能反复使用的能力。",
+      "viewer_question": "从每次解释到方法复用，差别在哪里？",
+      "core_claim": "将方法保存为可调用材料，后续任务可复用这份方法，而不是每次重新交代。",
+      "relation_type": "重复交代与保存复用对照",
+      "nodes": [
+        {
+          "id": "交代方法×3",
+          "label": "交代方法×3"
+        },
+        {
+          "id": "任务1–3",
+          "label": "任务1–3"
+        },
+        {
+          "id": "方法存档",
+          "label": "方法存档"
+        },
+        {
+          "id": "多任务调用",
+          "label": "多任务调用"
+        }
+      ],
+      "edges": [
+        {
+          "from": "交代方法×3",
+          "to": "任务1–3",
+          "meaning": "分别交代"
+        },
+        {
+          "from": "方法存档",
+          "to": "任务1–3",
+          "meaning": "同一方法多次复用"
+        }
+      ],
+      "visual_encoding": "左边每一任务有各自说明；右边保留同一方法库，分别把副本送向三次任务。不画脑内永久记忆，不暗示自动永久学习。",
+      "screen_copy": [
+        "交代方法×3",
+        "任务1–3",
+        "方法存档",
+        "多任务调用"
+      ],
+      "information_gain": "相同任务数量下，对比重复输入与持久资料复用的关系。",
+      "claim_basis": {
+        "narration": "用户提供SRT",
+        "inference": "仅对口播关系作结构化归纳",
+        "examples": "任务A/B、任务1–3、文件夹结构与选择文案手册均为明确示意",
+        "unknown": "未验证框架实际产品UI；不作产品事实证明"
+      },
+      "states": [
+        "初态：建立观众问题及对象",
+        "中态：连续运动建立关系，输入/方法保留",
+        "末态：关系完整，停留阅读"
+      ],
+      "motion_revision": "card_style_v4_reference",
+      "motion_reference": [
+        "S028",
+        "S039"
+      ],
+      "process_events": [
+        {
+          "target_ids": [
+            "重复交代1"
+          ],
+          "meaning": "每个任务各自接受一次说明",
+          "start_frame": 14,
+          "end_frame_exclusive": 34,
+          "global_start_frame": 2108,
+          "global_end_frame_exclusive": 2128,
+          "from": "重复交代1的过程起态",
+          "to": "每个任务各自接受一次说明",
+          "geometry": "连线描画与弧长迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "每次都要重新教AI",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            18,
+            24,
+            30
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "重复交代2"
+          ],
+          "meaning": "每个任务各自接受一次说明",
+          "start_frame": 27,
+          "end_frame_exclusive": 48,
+          "global_start_frame": 2121,
+          "global_end_frame_exclusive": 2142,
+          "from": "重复交代2的过程起态",
+          "to": "每个任务各自接受一次说明",
+          "geometry": "连线描画与弧长迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "每次都要重新教AI",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            31,
+            38,
+            44
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "重复交代3"
+          ],
+          "meaning": "每个任务各自接受一次说明",
+          "start_frame": 40,
+          "end_frame_exclusive": 61,
+          "global_start_frame": 2134,
+          "global_end_frame_exclusive": 2155,
+          "from": "重复交代3的过程起态",
+          "to": "每个任务各自接受一次说明",
+          "geometry": "连线描画与弧长迁移",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "每次都要重新教AI",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            45,
+            51,
+            57
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "方法存档"
+          ],
+          "meaning": "大纸面缩入文件夹，文件夹真实开合接收",
+          "start_frame": 75,
+          "end_frame_exclusive": 100,
+          "global_start_frame": 2169,
+          "global_end_frame_exclusive": 2194,
+          "from": "方法存档的过程起态",
+          "to": "大纸面缩入文件夹，文件夹真实开合接收",
+          "geometry": "paper→doc形变/缩放/迁移与开合",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "有了Skill",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            80,
+            88,
+            95
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "复用1"
+          ],
+          "meaning": "保留存档方法，沿各自真实路径分发到任务",
+          "start_frame": 104,
+          "end_frame_exclusive": 130,
+          "global_start_frame": 2198,
+          "global_end_frame_exclusive": 2224,
+          "from": "复用1的过程起态",
+          "to": "保留存档方法，沿各自真实路径分发到任务",
+          "geometry": "贝塞尔路径描画/弧长迁移/抵达后绘勾",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "反复使用的能力",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            109,
+            117,
+            125
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "复用2"
+          ],
+          "meaning": "保留存档方法，沿各自真实路径分发到任务",
+          "start_frame": 124,
+          "end_frame_exclusive": 151,
+          "global_start_frame": 2218,
+          "global_end_frame_exclusive": 2245,
+          "from": "复用2的过程起态",
+          "to": "保留存档方法，沿各自真实路径分发到任务",
+          "geometry": "贝塞尔路径描画/弧长迁移/抵达后绘勾",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "反复使用的能力",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            129,
+            137,
+            145
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        },
+        {
+          "target_ids": [
+            "复用3"
+          ],
+          "meaning": "保留存档方法，沿各自真实路径分发到任务",
+          "start_frame": 144,
+          "end_frame_exclusive": 171,
+          "global_start_frame": 2238,
+          "global_end_frame_exclusive": 2265,
+          "from": "复用3的过程起态",
+          "to": "保留存档方法，沿各自真实路径分发到任务",
+          "geometry": "贝塞尔路径描画/弧长迁移/抵达后绘勾",
+          "parameters_source": "06_project/cards/cards_main.js / C13",
+          "motion_spec_source": "06_project/cards/motion_specs.json / C13",
+          "easing": "Pure frame-time functions; cubic/quadratic object changes, linear arc-length packet progression",
+          "voice_anchor": "反复使用的能力",
+          "retain": "来源、已完成字段与必要关系保留；调用时方法母本不消失",
+          "check_frames": [
+            149,
+            157,
+            165
+          ],
+          "check_frame_scope": "strictly inside continuous process; index 1 is encoded midpoint check"
+        }
+      ],
+      "reading_hold": {
+        "start_frame": 192,
+        "end_frame_exclusive": 222,
+        "duration_seconds": 1.0
+      },
+      "sample_frames": [
+        4,
+        32,
+        85,
+        117,
+        154,
+        212
+      ],
+      "process_sample_frames": [
+        4,
+        24,
+        32,
+        38,
+        51,
+        85,
+        88,
+        117,
+        137,
+        154,
+        157,
+        212
+      ],
+      "video": "04_assets/cards/C13.mp4",
+      "renderer": "06_project/cards/card_scene.html?card=C13"
+    }
+  ]
+}

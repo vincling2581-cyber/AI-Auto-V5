@@ -1,0 +1,14 @@
+{
+  "changes": {
+    "Git Hub": "GitHub",
+    "voicestudio": "VoiceStudio",
+    "paper clip": "Paperclip",
+    "Memos": "MemOS",
+    "欧拉玛加openwebview": "Ollama 加 Open WebUI",
+    "impactable": "Impeccable",
+    "长兴": "涨星"
+  },
+  "timings_preserved": true,
+  "numerical_claims_not_silently_rewritten": true,
+  "not_claimed_as_manually_listened_alignment": true
+}

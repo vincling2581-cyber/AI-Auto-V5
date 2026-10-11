@@ -1,0 +1,2442 @@
+{
+  "scope": "当前标准、入口工具与最新方法资产；原有旧集/旧工具条目仅供历史追溯，不自动执行，不覆盖v4.5。",
+  "files": [
+    {
+      "path": "@AutomationLog.txt",
+      "kind": "制作说明/历史记录",
+      "bytes": 258,
+      "sha256": "57f526cd0366724de36c9c64a9ec73c36047f94aedd9aa9651465a50ea622b0a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "AGENTS.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "card_motion_v1/assemble_preview.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 3632,
+      "sha256": "978bb21392ca47aa25106cef8b830f9eeda35ed89434660e7ee13e8996d78042",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/build_review.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 11572,
+      "sha256": "f17eeebb129cf9dcbedce07dc7aaabfad2f04a8166328bb6509360da3495e181",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/card_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 14868,
+      "sha256": "f1db676d1260463aec32f7fb0233e83b3cff68e0cc7ae87d43c699e0902dd6ce",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/card_scene.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 552,
+      "sha256": "515372e0628000dc87cf8e4c985e7a8728dd16abf50a2e43f3c8fdeb85ebbd7b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/assembly.json",
+      "kind": "检查证据/规则",
+      "bytes": 549,
+      "sha256": "6c43ab02644163b62407975317a4630da21071430fb83a8b8ad2d5bc2c8153bf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/codec_check.html",
+      "kind": "检查证据/规则",
+      "bytes": 63,
+      "sha256": "1af1e68f2841a4861fa0a2118044f02a408c0f25882a3470ef424407bff6672d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/copy_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 638,
+      "sha256": "462fb9b6cf34cf06cd5c6d74861b9df8c3335a39c397707ca0a4d4ee41d749f7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/montage_check.html",
+      "kind": "检查证据/规则",
+      "bytes": 78,
+      "sha256": "b64c0b9d6cd604a8b352ac0a4c354da498a2f7b609154ec7ff0273fabea5303a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/review_page_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 255,
+      "sha256": "755690b52b57a0aa25bb0306ce574b7aaecabc46dfcfe42a58f6163216dc3c72",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/sample_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 5065,
+      "sha256": "3543e5fd838c6eaa71274961d18595dcc886dc207fcb3ab44a1c082f32357b34",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/selected_render_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 568,
+      "sha256": "f372a5b5289ecd9a12ba83d32b8d253c87df138369e32668c6bff95df08f1901",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/checks/视频检查.json",
+      "kind": "检查证据/规则",
+      "bytes": 3123,
+      "sha256": "9c6e0b1caaceb99afd23329ba7dcbbc4ef956e1a5b97b163f806cc0b9456bbfd",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/manifest.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 11926,
+      "sha256": "1321d4b22ef0ab6746b7030d14a499a3546da5e984fbbce99e3d1d29b06715c7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/render_cards.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 5020,
+      "sha256": "659466bdcf7f655e5424451fb597fcb04ff3e0d1513789bc95aeec3622c73e10",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/vendor/flubber.min.js",
+      "kind": "固定依赖/许可",
+      "bytes": 53509,
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/vendor/manifest.json",
+      "kind": "固定依赖/许可",
+      "bytes": 844,
+      "sha256": "28e34407aed4f94dd998f49a98befe4bcd12b227140a7530245c6b029aa2ce78",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/vendor/THIRD_PARTY.md",
+      "kind": "固定依赖/许可",
+      "bytes": 939,
+      "sha256": "906a24a5fc64e996073d07da468d6ef29cf1af568b835041e3441d8fe5c8444e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/vendor/tween.esm.js",
+      "kind": "固定依赖/许可",
+      "bytes": 43418,
+      "sha256": "095e3b8c30a67342dbabf27887cedd50558e0c491adcf31655d6ee58b91e5b74",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/verify_preview.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 5369,
+      "sha256": "1c02ebe0df2aed42b567e0dcf90526c15d646139656cd8ae31448d5a37b9a4e1",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/信息卡动效_新旧对照.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 14422,
+      "sha256": "1c64ffaf61838430a185c05896dd3d36709d4d338ac722346f758fb29c9acf1d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "card_motion_v1/修改与检查记录.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 3560,
+      "sha256": "e9dc0dfc9a4885ff3cedeb63dcebc497eb25243f4b8b1a8022194ab6cbec589c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/assemble_video.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 3578,
+      "sha256": "8feee9147af2b883c46b20ac9b56ff7124a33cb9096c371e7375edb251fd789e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/build_draft.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 11275,
+      "sha256": "480dfe90a5fdc9da545a8ad04efcc9f733c4b5b5fa71f1fa8dc8df4ba0ff4277",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/delivery_qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 11061,
+      "sha256": "349a97f70a4a8d814278f47c78425e2333b4684275f4b30fbc5c6839272f6e8a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/native_index_before_probe/draft_meta_info.json",
+      "kind": "检查证据/规则",
+      "bytes": 1740,
+      "sha256": "14e8a7fb12eadc6b02cf1e3104d333675a6d18774cbd426df8d297729a75f447",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/native_index_before_probe/root_meta_info.json",
+      "kind": "检查证据/规则",
+      "bytes": 95535,
+      "sha256": "397a17a154bbfd0714df454659d97266a7303f83754268533f09e46a92541f9c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/native_validation.json",
+      "kind": "检查证据/规则",
+      "bytes": 812,
+      "sha256": "3025f55f8c18c01d0d29e5811907e2e73040248db1956fa984f7c1116ab88532",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/package_qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 926,
+      "sha256": "c820bf4fe1d48624470171c58afbf02e53476eea227b21d1e3801008f5bffb74",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/probe_path.json",
+      "kind": "检查证据/规则",
+      "bytes": 211,
+      "sha256": "b6127011107529f4844150ee937e110ccc8a7181a168c6947bfb8ae889dc373b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S008_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 429363,
+      "sha256": "94c1bc400a58b4efb6deb856b0053cdb957a710f7b6a55720a4942cc0f371359",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S010_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 709139,
+      "sha256": "4c4ae34cdb79d9aa1ab84c3a6da76cae545e20fb33d81d7b989006aea7501a53",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S012_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 601208,
+      "sha256": "195b94b376b0c4b43469a70edefb833a0fbe35533123594b3a7e1ef397f8cbe5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S015_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 481886,
+      "sha256": "4b1db6168a5612e6abff0b1acf684c92b4de82541b478ce5b456b66ae5a031ca",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S017_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 418968,
+      "sha256": "65f5939e291bd0ff5293cb9067a3a066c497f98c754e22f9cc08e4308361a87d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S025_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 212992,
+      "sha256": "5929e184db45a118f7dc69c37142afc60f2c1dcab7730fba1b4fcad66ac8517e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S028_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 77714,
+      "sha256": "838aa7e6bb100482f77ceaa0eb316c29a60d6a4fca1e3de6a0de37b568840b05",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S030_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 352079,
+      "sha256": "ff9b8e25ad63691ef021e623fe150854005a931c3656514e4193aa13d0943747",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/checks/S039_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 835184,
+      "sha256": "52398befc467c032c582b111554439f98fd0dd84b2b001ce26560fe169098791",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/CONTINUATION.txt",
+      "kind": "制作说明/历史记录",
+      "bytes": 1593,
+      "sha256": "70978d20b354c8e952c4523a77ca3b60a11ae0292c494815c057253b0d517cdf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/dom_text_export.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 4129,
+      "sha256": "939532dfdb71e2cb06b4249b55d9c92a4f2b31db58bcf2462b03086479373f8c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/install_draft.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2369,
+      "sha256": "10e73cfb21f4941864470608114e4dcac08b637bbf05fb54009350e83229cb8a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/installed_draft.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 385,
+      "sha256": "a3330e2256921ff190f00d23bc943f6bea2287fb59f54de188df6622814920e7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/package_delivery.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 6354,
+      "sha256": "65726dc8287e9d8fdf1db8e84d5504beffa89e1c46ee77670efee7d143f2443f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/plan.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 66799,
+      "sha256": "9c5037ff3bdc28cf8f3beb69de9ba49bb20fdfaa3869fb4acc40535a984c68fd",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/probe_draft.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2438,
+      "sha256": "259f3aae4f4fc6b51e75590a58812d5d3934e2ee820e48fafc1fb473758c2c3d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/render_layers.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 4495,
+      "sha256": "55b4700a6d4b1858b34fd6075a66d89d58e6679a86897b5a510a25a259e559d7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/state_layers.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 404709,
+      "sha256": "9f78db2639a8d19bf4b690e4cc587646f51e958a11d4793a6750eea2a6a716fb",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/ui_inspect.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 710,
+      "sha256": "a4541b3cb402e75ce20bb7a422ba32a28d170a69aa06946968acd8afb00f7d27",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/verify_delivery.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 4436,
+      "sha256": "124d131abe255fb15893c7b0693a66433116df2b661495881fe2c0f80fa1ba98",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/delivery_qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 11061,
+      "sha256": "349a97f70a4a8d814278f47c78425e2333b4684275f4b30fbc5c6839272f6e8a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/draft_content.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2688151,
+      "sha256": "5f0fbe64c41ff3669b07b0ca7351cbaccc8486263fedc853212f4f5a34ea99f3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/install_draft.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2369,
+      "sha256": "10e73cfb21f4941864470608114e4dcac08b637bbf05fb54009350e83229cb8a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/manifest.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 118962,
+      "sha256": "5c880a29b4783f636a72b2276c155ad1b7f0a6a2c220f283e391206e33a87793",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/native_validation.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 812,
+      "sha256": "3025f55f8c18c01d0d29e5811907e2e73040248db1956fa984f7c1116ab88532",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/card_motion_v1/card_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 14868,
+      "sha256": "f1db676d1260463aec32f7fb0233e83b3cff68e0cc7ae87d43c699e0902dd6ce",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/card_motion_v1/card_scene.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 552,
+      "sha256": "515372e0628000dc87cf8e4c985e7a8728dd16abf50a2e43f3c8fdeb85ebbd7b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/card_motion_v1/vendor/flubber.min.js",
+      "kind": "固定依赖/许可",
+      "bytes": 53509,
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/card_motion_v1/vendor/manifest.json",
+      "kind": "固定依赖/许可",
+      "bytes": 844,
+      "sha256": "28e34407aed4f94dd998f49a98befe4bcd12b227140a7530245c6b029aa2ce78",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/card_motion_v1/vendor/THIRD_PARTY.md",
+      "kind": "固定依赖/许可",
+      "bytes": 939,
+      "sha256": "906a24a5fc64e996073d07da468d6ef29cf1af568b835041e3441d8fe5c8444e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/card_motion_v1/vendor/tween.esm.js",
+      "kind": "固定依赖/许可",
+      "bytes": 43418,
+      "sha256": "095e3b8c30a67342dbabf27887cedd50558e0c491adcf31655d6ee58b91e5b74",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/assemble_video.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 3578,
+      "sha256": "8feee9147af2b883c46b20ac9b56ff7124a33cb9096c371e7375edb251fd789e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/build_draft.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 11275,
+      "sha256": "480dfe90a5fdc9da545a8ad04efcc9f733c4b5b5fa71f1fa8dc8df4ba0ff4277",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S008_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 429363,
+      "sha256": "94c1bc400a58b4efb6deb856b0053cdb957a710f7b6a55720a4942cc0f371359",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S010_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 709139,
+      "sha256": "4c4ae34cdb79d9aa1ab84c3a6da76cae545e20fb33d81d7b989006aea7501a53",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S012_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 601208,
+      "sha256": "195b94b376b0c4b43469a70edefb833a0fbe35533123594b3a7e1ef397f8cbe5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S015_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 481886,
+      "sha256": "4b1db6168a5612e6abff0b1acf684c92b4de82541b478ce5b456b66ae5a031ca",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S017_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 418968,
+      "sha256": "65f5939e291bd0ff5293cb9067a3a066c497f98c754e22f9cc08e4308361a87d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S025_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 212992,
+      "sha256": "5929e184db45a118f7dc69c37142afc60f2c1dcab7730fba1b4fcad66ac8517e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S028_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 77714,
+      "sha256": "838aa7e6bb100482f77ceaa0eb316c29a60d6a4fca1e3de6a0de37b568840b05",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S030_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 352079,
+      "sha256": "ff9b8e25ad63691ef021e623fe150854005a931c3656514e4193aa13d0943747",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/checks/S039_text_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 835184,
+      "sha256": "52398befc467c032c582b111554439f98fd0dd84b2b001ce26560fe169098791",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/dom_text_export.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 4129,
+      "sha256": "939532dfdb71e2cb06b4249b55d9c92a4f2b31db58bcf2462b03086479373f8c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/install_draft.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2369,
+      "sha256": "10e73cfb21f4941864470608114e4dcac08b637bbf05fb54009350e83229cb8a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/plan.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 66799,
+      "sha256": "9c5037ff3bdc28cf8f3beb69de9ba49bb20fdfaa3869fb4acc40535a984c68fd",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/render_layers.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 4495,
+      "sha256": "55b4700a6d4b1858b34fd6075a66d89d58e6679a86897b5a510a25a259e559d7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/state_layers.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 404709,
+      "sha256": "9f78db2639a8d19bf4b690e4cc587646f51e958a11d4793a6750eea2a6a716fb",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/delivery_v1/verify_delivery.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 4436,
+      "sha256": "124d131abe255fb15893c7b0693a66433116df2b661495881fe2c0f80fa1ba98",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/eye_completion_v1/illustration_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 10412,
+      "sha256": "11373f572f32d3703502449ec97c3365488e80444acdec591157c555df08dbec",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/eye_completion_v1/motion_scene.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 1099,
+      "sha256": "c0e3f4e2ca8a47bdce71e9a3807b7c1164b1977e25cfe97331bb6ab32fe43cbf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/eye_completion_v1/native_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 12541,
+      "sha256": "33e7ebe4895bf9864dba568ac6509e0015216fcd24b464482514c58d11776dfe",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/eye_completion_v1/native_motion_events.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 19149,
+      "sha256": "e54938f465d234f9afd13d3520e11ca7f2099e4eb260fd71cf7a6b061fd17fd3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/visual_design_v1/illustration_scenes.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 6849,
+      "sha256": "4bf14d4d7c04e3874255b465c7cd0ad27455e38c179522c8fa99d99c266d2c03",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/source/visual_design_v1/native_scenes.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 23528,
+      "sha256": "25249fba218c5dd926cc3d8acf06cf26170f0fe728bb83ffcd2b5317bfe824f5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/使用说明.txt",
+      "kind": "制作说明/历史记录",
+      "bytes": 3416,
+      "sha256": "02f787729f6bfa965ed6da357662bce059c0ddf62af79b1ea7778ad3f7224169",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "delivery_v1/剪映草稿包/本机导入新副本.ps1",
+      "kind": "实例代码/执行默认值",
+      "bytes": 730,
+      "sha256": "634c2836f75dad8c30e7601d2c4fa60c28caea634780d88684683eda304110b0",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/build_review.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 22246,
+      "sha256": "b669129015af928bf8e72175cf4fa1b848a6f4458ff333466f7300852c745f05",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/checks/delivery_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 260,
+      "sha256": "9efbf7c6befb5ab8ebabc897fb53b67fc59618e00f9a82a7485a4036761efdc8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/checks/representative_frames.json",
+      "kind": "检查证据/规则",
+      "bytes": 10001,
+      "sha256": "24eb4ca1f872ddbd08de08474c514651755f2a76f649cc4bc6b777b66cd5a674",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/edit_manifest.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 23555,
+      "sha256": "2d8afb49816a4dc6d3248bb495282d3542491fb316a49fc14da9a30b142edefd",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/illustration_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 10412,
+      "sha256": "11373f572f32d3703502449ec97c3365488e80444acdec591157c555df08dbec",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/inspect_eyes.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2857,
+      "sha256": "0f1d12ff090e62be23c119a3d09fff1c959b195cbfa0b578dc9a82c5ef1b7d11",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/motion_scene.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 1099,
+      "sha256": "c0e3f4e2ca8a47bdce71e9a3807b7c1164b1977e25cfe97331bb6ab32fe43cbf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/native_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 12541,
+      "sha256": "33e7ebe4895bf9864dba568ac6509e0015216fcd24b464482514c58d11776dfe",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/native_motion_events.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 19149,
+      "sha256": "e54938f465d234f9afd13d3520e11ca7f2099e4eb260fd71cf7a6b061fd17fd3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S001.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1359,
+      "sha256": "9a1e4f90fd4f396b9ddc71f7e8bfe813fda86cfaa94db96c11ae542badf1c2a9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S001_typing.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1359,
+      "sha256": "9a1e4f90fd4f396b9ddc71f7e8bfe813fda86cfaa94db96c11ae542badf1c2a9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S003.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1205,
+      "sha256": "e289ebf8005416cb9fede69f6e7f8397181569f51886f3c836395393548bbec8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S003_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1205,
+      "sha256": "e289ebf8005416cb9fede69f6e7f8397181569f51886f3c836395393548bbec8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S004.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1204,
+      "sha256": "21154889b91325e0193faf311f7e0e73994b6fb269f30d154649a98acbd24480",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S004_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1204,
+      "sha256": "21154889b91325e0193faf311f7e0e73994b6fb269f30d154649a98acbd24480",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S011.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1232,
+      "sha256": "580ed227b23cc3e239a54832ea5831ab0dab8680008680a15ac23ce1178bbfa9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S013.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1216,
+      "sha256": "6111cdf6037f23db135d3561ac0960f56e34658677a0a5a10dbce38db0f2d16a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S013_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1216,
+      "sha256": "6111cdf6037f23db135d3561ac0960f56e34658677a0a5a10dbce38db0f2d16a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S014.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1213,
+      "sha256": "c00c301ba36e3c6711e4342e63fb68a41db46abe213693e8cc0054b05ae101e3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S016.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1378,
+      "sha256": "fd8cf92082bf672a5c7817db2b75d064cb5cb2b0511c9081deeed195dde18f56",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S016_end.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1378,
+      "sha256": "fd8cf92082bf672a5c7817db2b75d064cb5cb2b0511c9081deeed195dde18f56",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S016_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1378,
+      "sha256": "fd8cf92082bf672a5c7817db2b75d064cb5cb2b0511c9081deeed195dde18f56",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S018.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1296,
+      "sha256": "952ff05300080c954467795e0ef3ec3dcfa6ac4e3391d8de4cb933fde91c901d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S024.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1220,
+      "sha256": "0162a88d9b7c2d5e5dd3eabb3556fe2227d28e936d29dbc06aa9ed21ddde5d5b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S024_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1220,
+      "sha256": "0162a88d9b7c2d5e5dd3eabb3556fe2227d28e936d29dbc06aa9ed21ddde5d5b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S026.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1224,
+      "sha256": "cba494817b3bff2c1dbb93b49e10c6c4fd2208f0f3cdf1478e937ec5789262f3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S027.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1213,
+      "sha256": "6361f95770aa84f31413188a1f3db1a26e87b1ac032a347b8095f0862a04b703",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S027_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1213,
+      "sha256": "6361f95770aa84f31413188a1f3db1a26e87b1ac032a347b8095f0862a04b703",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S029.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1260,
+      "sha256": "8ec497304cb93a7afc2f9563697132e4d31791b59f4792fb9b30ed356efc6367",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S029_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1260,
+      "sha256": "8ec497304cb93a7afc2f9563697132e4d31791b59f4792fb9b30ed356efc6367",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S035.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1223,
+      "sha256": "66787cd44d84339ed2700f0ad9408e9ae4549ce9490f462615957842ecf11313",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S035_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1223,
+      "sha256": "66787cd44d84339ed2700f0ad9408e9ae4549ce9490f462615957842ecf11313",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S037.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1242,
+      "sha256": "8b248faa6c27e3e229cd681a44b1513d1139810920061d24f48753c7d776941e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S037_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1242,
+      "sha256": "8b248faa6c27e3e229cd681a44b1513d1139810920061d24f48753c7d776941e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S038.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1351,
+      "sha256": "105bacf885bc3c69a0d532a484a9c095b1bf0065ad2692a2e3e25b3b8baf64a4",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/prompts/S040.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1016,
+      "sha256": "c9a6009eb8acfad79158a921ccad52cc917ec7439ccf5649ee69d7bffeaf84b9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 62650,
+      "sha256": "27cab3123c9babdbce96165d430a22e7ebd76ffd431cec0923303e93959608ff",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S001.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 595,
+      "sha256": "4e58583d0e0dfd654c072ee141e3b9874667cd88542687d1e075d0a3a4bf2b72",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S001_typing.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 600,
+      "sha256": "f4a3c468bdc4489fe37dd212a10b87d8fc66bfbc2863f4f81437d1dad35a26e0",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S003.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 441,
+      "sha256": "ad75707930a3bde7871939713640b78445c87f13b655e863a373ba38ca01809a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S003_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 443,
+      "sha256": "6d26c185a0025d89ffcf567728d67a45fd47b073d3352c7f15ad949398fa486f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S004.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 440,
+      "sha256": "2bfaa16c013ae39d2b29b351cffaed108b4377710b84094f35eaadd888fc93b4",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S004_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 442,
+      "sha256": "aa70a50346f37aa795de95512c6bd012a97d10944cb1f2a61f4c5329a8ad113f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S011.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 468,
+      "sha256": "ab3ff9425d457c421901d2d58d7f7258c84504db05be04295eb6e6d59c70cc83",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S013.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 452,
+      "sha256": "432ae94fa914339cf2ae75af80e8a9851101bbe69152ffc2b90bb5793813f993",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S013_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 454,
+      "sha256": "ec19a39d3564e6844903422128e593579fdc5045ad5d5617dc3962c88ccea298",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S014.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 449,
+      "sha256": "1d526bd747c3099a26b728884e633866dd26f2c20391ca2437799fa42d747f3b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S016.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 614,
+      "sha256": "251dbf71f9b9bff2cafc761381b7f1187ec4f636ff1d516f3218068dc32dd4db",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S016_end.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 610,
+      "sha256": "26b7386a8208d9de639842d389f82eddcf16713d194ee171401c86e686dba566",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S016_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 616,
+      "sha256": "e768925972e8652e29eeb3a6f021b228d252f409160f94f74e0f6b249f37e6ec",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S018.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 532,
+      "sha256": "c5349d000ea808a30df95c123aaa4ef75c571d62b01abe256baf228fe0915640",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S024.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 456,
+      "sha256": "23663a0958e177648a297a1f88c44eae2720c250ddae4f01c3a2163a7b2006d9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S024_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 458,
+      "sha256": "187ffd46c687710f13db3dbcf0fe27093cbe816e0df2595ff282052570438779",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S026.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 460,
+      "sha256": "ed97f3ced774b190a980e7b10b62016ab355489a28b1443c9567bfcd5bd37b23",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S027.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 449,
+      "sha256": "4018d2dcbfb32d2372307e0158f21381a55c835fc0d5fbf06311beecd42bc546",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S027_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 451,
+      "sha256": "884803e0ff35542ef42de4991a188c07d9839b3e92de9cae5e6a863f550ec7db",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S029.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 496,
+      "sha256": "57e8871b9edc10a8423a6553fe2f43c96ed0e8ef61e4e85790256b531b7646cb",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S029_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 498,
+      "sha256": "abfbd360f928236f68ae3f60209c4f0005d8e3113f3825d68cb32deeb6698782",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S035.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 459,
+      "sha256": "b90114fe033143bd298b5e27eeb4961a6334922e7a2a2bb73e990f82b1f130f2",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S035_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 461,
+      "sha256": "f7f48e83f3a5a425e7ce7c3a77f0d48c22504cf0d99a83233b1c6b84b4475529",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S037.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 478,
+      "sha256": "29b144c4913d42e84cfc56213588c7bf63281abe933d4fe345262fbce26a9c07",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S037_start.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 480,
+      "sha256": "b3e4192baf89e47507a9c652a651cd919db407ca997752b38fcc16fe554fba0b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S038.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 587,
+      "sha256": "04468aeba074dc272eb7468b643c40f82a93175da7e3c0d87188080264b99860",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/records/S040.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 364,
+      "sha256": "57e0596020efa18fef1268802d68d37efa764a4cfdf5ed157d070ae149515a3a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/render_representatives.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 1818,
+      "sha256": "f77e05f88fb1021f75a4e78e0bb822266e1c9b38dff8d87eedd7f48450e4ce44",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/render_states.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 5007,
+      "sha256": "aa602af6835e17fcb4202a3b45bf64165219f0a257b32e5bad9dcc6cd026a3f6",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/state_manifest.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 75223,
+      "sha256": "bfef8927aecb8e577757705d7911472e2882b4ae466fbd9a84e48ac4ab4ba18d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/verify_video.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 6212,
+      "sha256": "3e7cbc8dda679380926c851480a7aaac45306987c94de5ba11ba5e31af54ce59",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/video_qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 255811,
+      "sha256": "d2dd7e172884323dc044532029319118c2688d74de204ddb588eead003191abf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/人物眼部补全_逐镜审阅.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 130582,
+      "sha256": "d20ec1dc777793bf1be7cf54bb41bc3ca876e605739a249553437519ab92f9b3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "eye_completion_v1/检查结论与修订.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 3590,
+      "sha256": "9e68e1fc654d417b918bb90f6df51f35fecb87e0456c872601674479a9408c5a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/baseline_audit.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2201,
+      "sha256": "9ba6c9bbf35966a8e6627ffd13bc8bd382df84eb07852d6c8bc63a9ff0118cdc",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/build_review.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 21180,
+      "sha256": "a2153d47eda19784b3327a3668022c3800f5df313888fd56a08d660fe4155f0f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/check_native_motion.py",
+      "kind": "检查证据/规则",
+      "bytes": 4100,
+      "sha256": "05aa02a6f2045f256b0c92c27d67fed7e48b0aee4295e7bd45838b69accec3ef",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/checks/review_page_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 114,
+      "sha256": "baceee2d36e3c9511bfb0d9e45ddc1700f12847a252f54004919ff47d47162b7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/illustration_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 10357,
+      "sha256": "b8aea9b25344e617184be7c5b94155a85afb905ae3f9cf665a3400a571f89f0b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/motion_scene.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 1116,
+      "sha256": "1af66d9b655f0d8a1daaecdf390c2e9e8efd9a0f3a4524263967554d705346ed",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/native_motion.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 12541,
+      "sha256": "33e7ebe4895bf9864dba568ac6509e0015216fcd24b464482514c58d11776dfe",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/native_motion_events.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 19149,
+      "sha256": "e54938f465d234f9afd13d3520e11ca7f2099e4eb260fd71cf7a6b061fd17fd3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S001_typing.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1332,
+      "sha256": "bfef10287e9fcf13b19cd922c174da3ca83ba19511e66ed7d66b46fe37255747",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S003_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1143,
+      "sha256": "5c74e9c0e83ccde1ff90f54a14a2dc0407297c048aee1f9b99b8b2a4b77a6313",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S004_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1303,
+      "sha256": "395b1e352a3cba52436d3eac6db2477cfe117680b316f89e088afc463b45837c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S006_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1059,
+      "sha256": "6c4edca2d15663ef5a98fab744731cfeaf2557efa84c51a3e3ce866885c1d70b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S007_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1200,
+      "sha256": "32c0ebca0b0434f7f26cf181bf6488f67b238b9c134ea3fc273c533c94a66bea",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S013_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1284,
+      "sha256": "d5a26c4be0f784606f994f8bbdb88f8f2364b1b367d4957d2f0972a34656de6e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S016_end.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1330,
+      "sha256": "377c2fe40ef03c1197fe22a69b5f499e7070759a33e34db1887caac05c7ca99f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S016_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1325,
+      "sha256": "fc7d3a979b71d987c9b4ac756999210f99f42c8f71433d29ca0f9c09f6b0dd4a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S024_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2873,
+      "sha256": "0711eb956b9c17a2a071fc5151f2a96e13b2e1ab031cacf008eeefcaa3ff8828",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S027_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1861,
+      "sha256": "e5b095265227d644d51ad11df2f58872c266688ad6b8f1396e552224d61f3863",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S029_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2007,
+      "sha256": "d711ee77b58a36aed0ce08ea0895affc90bdb5e71ee234689f03f074924b838f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S035_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1984,
+      "sha256": "56be0d137cbccf2cac3c19206c3dce5aeaf0c7f210260647c243a7f12a45ed2a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S036_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2081,
+      "sha256": "eea2a598ce6f94da25ae1577458b9d9eea4a0206184724b54166b6e6d59e33c6",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/prompts/S037_start.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1951,
+      "sha256": "401052cf9c41ddac688ab2191e0472e01005ff053e8230184f578896604aeeca",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 62651,
+      "sha256": "e19b9eebb4238a1597fa4cd83b4b2794dd4867eb2ec51e91e668c73b19c52af8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/render_states.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 5007,
+      "sha256": "aa602af6835e17fcb4202a3b45bf64165219f0a257b32e5bad9dcc6cd026a3f6",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/state_manifest.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 75223,
+      "sha256": "bfef8927aecb8e577757705d7911472e2882b4ae466fbd9a84e48ac4ab4ba18d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/variants_manifest_early.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 3164,
+      "sha256": "21840003eeea747dd3517ad06aaf39fed94764e490ab92b3d6524966a5f67e52",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/variants_manifest_root.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 742,
+      "sha256": "be3300a3b5611eca2ca6a68785ee63e2fb7de056b754ae85590df7c0826900b7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/variants_manifest_visual.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 4622,
+      "sha256": "d2b4cc6a050c1b3bfc8b113f0610e97db3aaad0976fe6c1b43f7781e0e831960",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/verify_video.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 6212,
+      "sha256": "3e7cbc8dda679380926c851480a7aaac45306987c94de5ba11ba5e31af54ce59",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/video_qc.json",
+      "kind": "检查证据/规则",
+      "bytes": 255818,
+      "sha256": "08bfc6bfff827b55faed7152bb30778852d9e07dee67c142fe86b5ce49b8d513",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/动画层节奏检查.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 129978,
+      "sha256": "670e917ce1eebc4500969b4ea0ec8adb05d98f68543aff07e1742af0d1ae243b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "motion_audit_v1/检查结论与修订.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 3110,
+      "sha256": "8fc273f70d50a5e01daee281add7fd5263a9b8694567fb80c6eed23c26583200",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "production_standard/animation_revision_20261005.py",
+      "kind": "标准生成/选版/审阅工具",
+      "bytes": 13521,
+      "sha256": "827c41c6f20da9aecb9ad46e021404018104e01c213f78936b34910e095b5159",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "production_standard/build_standard.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/historical_rebuild_guard.py",
+      "kind": "标准生成/选版/审阅工具",
+      "bytes": 628,
+      "sha256": "4092ca9d90f85abe4b97b30664851e1a49f068b87615d5490c1b43d1b1c89973",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "production_standard/package_standard.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/prompt_library.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/review_page.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/rule_catalog.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/standard_loader.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/start_episode.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/verify_standard.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "reference_analysis/A_0020_0022/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1956,
+      "sha256": "ee834852edf13cf4d39a6e6e5f493dd641c1ba2b91cb884739370b8a1f5545ee",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/ABC_A1_detail/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 724,
+      "sha256": "bdb68ca371911c04970c3537aad4e79188e42acbb84375ed4d551974d1f208d0",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/ABC_A2_detail/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 724,
+      "sha256": "65c391d76f096ead0a54e56a8b3b5e2335af412269054d7b716f89e4629b4ffb",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/ABC_B1_detail/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 724,
+      "sha256": "c1a2b6721a4464e75cfc77f87776fe15abef81e36a18aa171330d99e4da12bb1",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/ABC_B2_detail/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 724,
+      "sha256": "fc67e96ad4e63e64ea72616cca97e9021fadc9bdea656ae7359cf0e2c5d63ba5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/ABC_C1_detail/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 727,
+      "sha256": "d7b76adce941cf4a59eeb8685323df793505612b0ac67cc11df67db0c0373113",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/ABC_C2_detail/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 727,
+      "sha256": "96652a2a5df776632b0d5d945f46cc0fb84e6829a959d923f455040d9d2fd03b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/analyze_reference.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 3447,
+      "sha256": "ebecc131cdd7c854fafba8d38d19478081f0c215a4e77e9dfde9a2a2b82f294d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/B_0025_0026/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1491,
+      "sha256": "f0ed06d1e0a0da3d0c537af483c0cac6928506335040bae5d3c2d98e840ee441",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/build_review_page.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 17509,
+      "sha256": "e32885dbde6bee400902253565459f36cdb5380c5998c6bae63a995f232ffe09",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/build_sop.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 39336,
+      "sha256": "d61b4a66c10eff45fb4d020ca0ca88d20ae0fb37b19f79849d984ed190eab535",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/C_0109_0114/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 3387,
+      "sha256": "b8d548670903de38b2cce3418fc75c463507b6191600fba040efbab88b843cb3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/card_angles/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 3423,
+      "sha256": "442d1c06b75d0712b2f285f9a0276edc37aef1642e5b086dd1f5c129829e125d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/card_angles_pre/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1092,
+      "sha256": "2b3c3858bb21564f1c7acd1105ce0a884b90b2065ec84afa9a21e0a7082e380d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/card_cost/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2886,
+      "sha256": "ce783c53d1a8238efe7a9049c79c812123a4b1ccad7a3e86103627046dd181c4",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/card_prompt/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 4848,
+      "sha256": "d7b36c966ce3f42830e28aad0c4b3aefbaaf0fa41f228eb7a297bf9472c3aee7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/D_0154_0155/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1523,
+      "sha256": "dafd58f48638d923fec79cc7374abe61eeae5d25ede236ed9f768a0f48e35b51",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/D_boundary_1146/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1618,
+      "sha256": "2a19e3b9bc34c6e865a3f2e0f0a59eca00ec0101fe028cf701b717915e0f03e5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/document_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 538,
+      "sha256": "dbf7576b90d4065e7c672b8db5b33c0052cde8a67f83be914f4c5f6841a50487",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/E_0234_0237/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2473,
+      "sha256": "037f1ad3540138f7b81944ac134b21ec0740a2c650129e4922bcfbe37309be55",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/E_boundary_1548/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1618,
+      "sha256": "20657508111f4ffbacb95f7b083a1821db543e7795d97277d405f1871fed360b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/F_0248_0251/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2473,
+      "sha256": "eafefaa1834dec54aa79059efb8a2b3d9a01e326f4fe54ade97c973769a13642",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/F_boundary_1698/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1618,
+      "sha256": "42c3b3f5a93ee70c11448ee600fb1292086e3d1e1990d5c3ab1cb95906d16737",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/index.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1549,
+      "sha256": "3ab91e0b0c79c11d5f4db3991abf1c7b0f518b2e93ca10f389c5e2f90c7b822d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/metadata.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2700,
+      "sha256": "41d384c1b2aa1d93239646e3568fe3e96a3c7255e0c87e1cc8e04bf17a533f78",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/overview/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 5124,
+      "sha256": "7fb806b744ca35c060687425093599a17dc492905b52d60028391a2c290edbdf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/price_card/samples.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 2421,
+      "sha256": "7e8139b69c3f5f7793944ecd061476c12416a94d047789946d9512ddf673c50a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/sop_revision.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 467,
+      "sha256": "d9fd9d9ed10128d3288ff41ee63070ea88bff21a1cd7da80a47190165436333f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/verify_review_page.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2859,
+      "sha256": "84471ddac7875145b6aefe81c43e09dbae394a9a159831dd042fc43130050999",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/信息卡观察.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 9480,
+      "sha256": "f91c8929d90efbf1b4c3aff12c64dbdd3da4c18193d962d8573e21b43f697870",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/参考复盘.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 17373,
+      "sha256": "26e6e7bf83b514fcb8495077ecb61daa0656111e9d04c2b27aa184e2832ee9b6",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/参考视频拆解与修改说明.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 12380,
+      "sha256": "aaa4dde7a9b02b6180aa66b0265dd11a9053eeecf119a70b6ece34065f3acfd3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/观察_A_B_C.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 11497,
+      "sha256": "a2dda8335360a34422a9bd6242987fb1c6f35834b93a366278ec99a733f68ef7",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "reference_analysis/观察_D_E_F.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 10196,
+      "sha256": "509f3d13d45730df0972d01f8f92cbb2a52fa61cf1f27e08887e7b6c86c06be0",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/AI扫盲班01_Prompt_全片分镜_v1_待确认.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 132136,
+      "sha256": "6f59e35f4ee3b537034177e5473fb79c997ea9c0cf317c91b5682ec90b9e2308",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/AI扫盲班01_Prompt_全片分镜_v1_待确认.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 75859,
+      "sha256": "9f2d64ef2d5e36ad9c1813c9fdda7f2e986185d5a892731b1d74e60351d4079c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/AI扫盲班01_Prompt_全片分镜_v2_内容确认简表.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 18908,
+      "sha256": "bc878e98d9804da9ae11046f675d57635dd7e223f2ec963c0bd12e70d5ad0fb6",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/AI扫盲班01_Prompt_全片分镜_v2_内容确认简表.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 11555,
+      "sha256": "c296916ec73c1d2e035ec901a873ab79d4642aadcf05a12acd4f3b04bdf23d0c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/browser_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 352,
+      "sha256": "499dfd6b281f7222c3b5ba9cf2ba8cd0e37b34cc34c7f99a081fcac8325a729b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/build_simple_storyboard.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 10501,
+      "sha256": "674cacb95f20bbc637ecf4dc3edbcef530e6daba9abb1a29d27cfd7596780972",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/build_storyboard.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 31950,
+      "sha256": "b00ef319a23fe54b87aff578c9d75c371249201a516280e9f25df40847d584e9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/part1.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 22502,
+      "sha256": "d7ab3b51477e0701bbdbb556aff2b37616ecb76232f409dae762d062987a9b2c",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/part2.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 26786,
+      "sha256": "8b3eaa6f4412061aa11ba7ac32c8a312cd63f2c0b9d5243b1920e778af3f63be",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/part3.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 27343,
+      "sha256": "c6700658e8faaaf501fc637322657abe331171f5d7cdc553e29d5092505b6d23",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/prepare_source.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 1272,
+      "sha256": "9dc223508c5c0fe79f023be2fad05434bf672903c5f3f8d1cc567f53c30f938e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/source_srt.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 18757,
+      "sha256": "f08c31a0715b41d89cb83602c90c92aa1c897866fc3427023538030aec66ebad",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/storyboard_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 394,
+      "sha256": "ea1b7278106deed9d8750d0ee7a79587b2c4db014cfdb36cb300c7caef2d7ab5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "storyboard/storyboard_v1.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 144705,
+      "sha256": "1218b1df8149e132011475887ff0629d9981564fa9fff91a281e80adfafe0f01",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/build_gallery.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 17926,
+      "sha256": "46c6f8dc412283026a8c700548fd26958d785527d6687c16769416a06558d2fd",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/build_overviews.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 1584,
+      "sha256": "1e02bfa9d5746a3239e92e390d6bf4d223337152f75f80b13561c93dc6cbed5d",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/gallery_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 243,
+      "sha256": "e5680c92c79c00aba3d91ad3dc24db96bdfeb5b29e250e74757859ae57d9d925",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/illustrations_overview.html",
+      "kind": "检查证据/规则",
+      "bytes": 3149,
+      "sha256": "e8f853242577b8417c12eedfe2d4ea054c94e1483b2e20c9af8cf42d41e3bb34",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/native_overview.html",
+      "kind": "检查证据/规则",
+      "bytes": 2199,
+      "sha256": "8bd21fe8cb3d4ecb77582293af0db142c628cf96f08e3b19f97b33edc25aa034",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/overview_01.html",
+      "kind": "检查证据/规则",
+      "bytes": 1836,
+      "sha256": "c525ce666bfbb87cf63eae0611274fd63365beec439c87bd9111252f0aebc041",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/overview_02.html",
+      "kind": "检查证据/规则",
+      "bytes": 1836,
+      "sha256": "d18520bae6fad18e86fb7fe8281d13cfa8a36617f8be6915cf4b3316fe9f9c69",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/overview_03.html",
+      "kind": "检查证据/规则",
+      "bytes": 1836,
+      "sha256": "0cb5395fd06286078bcb6f97f533dba7f9a60339443a38b63448cc11cc124b73",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/overview_04.html",
+      "kind": "检查证据/规则",
+      "bytes": 1836,
+      "sha256": "87543b79454e1ff449a31f2348e402739c3dafc844284e24b5f84e5f77abd15b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/render_check.json",
+      "kind": "检查证据/规则",
+      "bytes": 10094,
+      "sha256": "be31d07bb646fd3f3bfb54b78eabba3f899c01189d3533f9217fd7f4de587d85",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/checks/render_check_partial.json",
+      "kind": "检查证据/规则",
+      "bytes": 384,
+      "sha256": "b929f45e5be5ab4952e2668bad2bbfc0eb11aca1e4b7250fe2664242331131b6",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/delivery_manifest.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 8492,
+      "sha256": "1b0f7ce4f58326e508f0131590a8d8853b5918196d7f4212b501394bfea1d016",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/illustration_manifest_root.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 1522,
+      "sha256": "80d0c1fa54e0033f7ce7262f75c9fb3f505f336570cfcc7255be56639ab11cd9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/illustration_manifest_sop_audit.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 9326,
+      "sha256": "92ba8f58bbbbb228f4cf361c13eab90482db33baa80953e2d4a45c858fc1e627",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/illustration_manifest_visual_def.json",
+      "kind": "实例输入/事件/配置",
+      "bytes": 11413,
+      "sha256": "d8ed0950e9b64d32bd90bfe209c79eeeec8002cc24f209110810b84d6e19c647",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/illustration_scenes.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 6849,
+      "sha256": "4bf14d4d7c04e3874255b465c7cd0ad27455e38c179522c8fa99d99c266d2c03",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/native_scenes.js",
+      "kind": "实例代码/执行默认值",
+      "bytes": 23528,
+      "sha256": "25249fba218c5dd926cc3d8acf06cf26170f0fe728bb83ffcd2b5317bfe824f5",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S001.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1714,
+      "sha256": "3a5d38556e050217dee0d60a640e7fbab2e532e99f85817b0e5f3c1ca25dfd85",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S003.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1651,
+      "sha256": "65a42b1234d5ef1b190897f4402f0a13c064c8704c244f12c2b2e97959fdd662",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S004.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1817,
+      "sha256": "bb186a5a0e4ef6fd7628dda259dd4212a9a66b76039624f5a92833a057713f69",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S005.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2021,
+      "sha256": "7b7d32a5cc0c6bd0fae41147f84a10799b22b50b1a1ebc11960b2b0bcddef804",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S006.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2082,
+      "sha256": "d90517edd0b38c9562c340f13938e7b6a21ad4f79d0a350226cca27415212c78",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S007.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1928,
+      "sha256": "1375dedf70a930fda53405ad26615bc79ec2efb9d85933119d7b7bc7693a70a8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S009.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2416,
+      "sha256": "ad58db7af0dee29ab401f6438c276b7de876e584cb55033f3351dad2678b13b3",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S011.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2330,
+      "sha256": "e7bedb1470b2c3779a22ebb839c3f17ef88c7b3439ab256b7cec2090d6d25348",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S013.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2418,
+      "sha256": "f6ac74a92307397a56f8174ac5f08d504322dd17d86d193287230bb7f72cd103",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S014.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2402,
+      "sha256": "a15d0cd2384f40ea79d9238f52dc14e76646a7d1b506b933b8c9ac5971b9e89b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S016.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2531,
+      "sha256": "b38ed54aa3c02cf5c01e61c23b8fb669c2e60876b260e0827611ce6b1f188f58",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S018.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2797,
+      "sha256": "545e7a878b26cfad1a22680e6044ad06c82ebe3becf121f8dba76cf79351d05b",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S024.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3243,
+      "sha256": "256a656972c12a7e4a5c1983f1781b0bb9bb8efbcc3a891681d648bb425c3f9e",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S026.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3210,
+      "sha256": "559b06ea72b17314766f559a2ac62b2565802663ac8406fa6371bb31822fc578",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S027.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3298,
+      "sha256": "63d9eaebe35ccd411905cbb4ed8711f5e1916e8b281effd02e539e1c49cf2aa8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S029.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3256,
+      "sha256": "c00689116cc344c51f7f56713e226d581660014ee4ce5324a981d52c219b89bf",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S035.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3379,
+      "sha256": "e423e3088a59833df12c4c6fd7111441f753ff3afcfb9260ef5a77540b603413",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S036.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3420,
+      "sha256": "6573a4a0354973b8643f4dcab2c39eff2f2fdbe15bd70fb2a9319925437327f9",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S037.txt",
+      "kind": "单集历史提示词",
+      "bytes": 3256,
+      "sha256": "1090463bfd3257fb74f2a83f935dba72d42560b350eb9b25f6029ac7d6f08707",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S038.txt",
+      "kind": "单集历史提示词",
+      "bytes": 2517,
+      "sha256": "cce346e61aa8fafd5876a126f48b65ed56537c642cebd8a3356628787172553f",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/prompts/S040.txt",
+      "kind": "单集历史提示词",
+      "bytes": 1790,
+      "sha256": "e76c58dbb8cdb68002911d6c55e0bb69a36d0e67c513a65b99b5bc4afb890587",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/README.md",
+      "kind": "制作说明/历史记录",
+      "bytes": 1183,
+      "sha256": "30abee421a63f1768463823b555e015ea91adca7d0af0aef9259039e4551f2e8",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/render_designs.py",
+      "kind": "实例代码/执行默认值",
+      "bytes": 2142,
+      "sha256": "2802cf148eabcc6e4d0f4dbe280724526d48f2347d3b11f745014042fe3e32c0",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/scene.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 1182,
+      "sha256": "15277c0fca6db0256065025f88d6c522dede5b825b3040242927647c7b58b21a",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/全片画面审阅.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 75519,
+      "sha256": "7bb8b62fb1eb197e1d669dfadc5d822abeffaee6cc88f4cf368d035b4e4e7aae",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "visual_design_v1/画面预览.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 1566,
+      "sha256": "0924a5bf3945720aadc3daac6340a9454924bdd3f0944f195df877b639fb15da",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.3.1.md",
+      "kind": "历史规范",
+      "bytes": 74904,
+      "sha256": "e66734dc098c1f071017f2848beee926fc73b4a128f9b665f41ff5edce4a9c12",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.3.2.md",
+      "kind": "历史规范",
+      "bytes": 76418,
+      "sha256": "2d103fec627b6a80cce31c89e1b3edc5cb4b3ff23078b08a23a914bceeffe0f1",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.3.md",
+      "kind": "历史规范",
+      "bytes": 66696,
+      "sha256": "6ad9388f808e9606445dcb9810c389781adaf263093509642a66f565e74d9125",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.4.md",
+      "kind": "历史规范",
+      "bytes": 75291,
+      "sha256": "32008fb0b73559e07a02cdfaf5a60c142dd01df22c2c3787abb6372f8f273bf1",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "制作标准_v4.4_总览与确认.html",
+      "kind": "实例审阅或渲染页面",
+      "bytes": 637238,
+      "sha256": "13740d8cd44031f6d7417045f6915b4f6ea8c5fed862e756551d9eed4b5d0339",
+      "effective": "历史来源快照或辅助证据；不是v4.5默认入口，所记哈希不代表本次重新验收"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.5.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/assets/补全眼部参考.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/assets/角色身份参考.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/brand_assets.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/conflicts.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/defaults.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/historical_prompts.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/README.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/accepted_master.mp4",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/00_brief/standard_lock.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/03_storyboard/cards.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/build_data.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/card_kit.js",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/card_scene.html",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/cards_main.js",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/cards_middle.js",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/motion_specs.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/reference_style.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/render_cards.py",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准，按根manifest锁定；归档素材与源代码仅用于参考，不能当新集内容执行",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/method_sources.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/palette_profile.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/THIRD_PARTY.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber.min.js",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_baseline_v4.5.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/prompts.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171118_838_86.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171119_839_86.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171121_840_86.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171525_841_86.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_842_86.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_843_86.png",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/用户截图来源.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/rules.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/先读我.txt",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/提示词_v4.5.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/本次修改说明_v4.5.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；依本集明确覆盖制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/validation.json",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；按本集有效配置制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/全部制作规则_v4.5.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；按本集有效配置制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/冲突与取舍_v4.5.md",
+      "kind": "当前规范/入口工具/方法资产",
+      "effective": "当前v4.5标准或通用方法资产；按本集有效配置制作",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/自检结论_v4.5.md",
+      "kind": "当前标准自检与参考依据",
+      "effective": "当前v4.5参考或自检说明，按用户明确委托启用",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/观察说明.md",
+      "kind": "当前标准自检与参考依据",
+      "effective": "当前v4.5参考或自检说明，按用户明确委托启用",
+      "hash_location": "production_standard.json，避免派生文档或来源索引保存重复的过期哈希"
+    }
+  ],
+  "external": [
+    {
+      "source": "D:\\AI-Auto-V3（Codex）\\Xilo风格视频生产线SOP_v4.2.md",
+      "copy": "production_standard/source_archive/SOP_v4.2_历史原文.md",
+      "scope": "历史基础，仅继承已纳入v4.4.1的规则",
+      "sha256": "07acf22179aed3b48ff505de3b8a567cc609d4c160a5c20b8bc8d8c9b47b1f67"
+    },
+    {
+      "source": "D:\\AI-Auto-V2（空白）\\auto-video-pipeline\\prompts.md",
+      "copy": "production_standard/source_archive/V2_prompts_历史原文.md",
+      "scope": "本地改编，非外部文章原文；不直接执行",
+      "sha256": "3d87404f13b02f5e855b929114767480c117d4572da5ceb8ef133110837dde72"
+    },
+    {
+      "source": "D:\\AI\\overlay-studio\\README.md",
+      "copy": "production_standard/source_archive/overlay_studio_README_局部规则.md",
+      "scope": "工具局部规则；非本项目全局标准",
+      "sha256": "9429eec1c70d752bbfc5a0be751fb94477fa3aa0c66bc1b5ea62f911d4abd02b"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\Xilo风格视频生产线SOP_v4.3.md",
+      "copy": "production_standard/source_archive/Xilo风格视频生产线SOP_v4.3.md",
+      "scope": "历史版本，不自动生效",
+      "sha256": "6ad9388f808e9606445dcb9810c389781adaf263093509642a66f565e74d9125"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\Xilo风格视频生产线SOP_v4.3.1.md",
+      "copy": "production_standard/source_archive/Xilo风格视频生产线SOP_v4.3.1.md",
+      "scope": "历史版本，不自动生效",
+      "sha256": "e66734dc098c1f071017f2848beee926fc73b4a128f9b665f41ff5edce4a9c12"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\Xilo风格视频生产线SOP_v4.3.2.md",
+      "copy": "production_standard/source_archive/Xilo风格视频生产线SOP_v4.3.2.md",
+      "scope": "历史版本，不自动生效",
+      "sha256": "2d103fec627b6a80cce31c89e1b3edc5cb4b3ff23078b08a23a914bceeffe0f1"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\Xilo风格视频生产线SOP_v4.4.md",
+      "copy": "production_standard/source_archive/Xilo风格视频生产线SOP_v4.4.md",
+      "scope": "历史版本，不自动生效",
+      "sha256": "32008fb0b73559e07a02cdfaf5a60c142dd01df22c2c3787abb6372f8f273bf1"
+    }
+  ],
+  "brand_assets": [
+    {
+      "source": "D:\\AI资产库\\人物\\assets\\Character_turnaround_sheet_of__2026-09-13T15-51-38.png",
+      "copy": "production_standard/assets/角色身份参考.png",
+      "sha256": "03b39446edbd89af83f235a40660a55d3bb07f8ceb74b59d5dfa58bf67a509fd",
+      "usage": "身份、身体与笔触；空白眼睛不沿用"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\eye_completion_v1\\illustrations\\S040.png",
+      "copy": "production_standard/assets/补全眼部参考.png",
+      "sha256": "b6c9b7acaadb640676227e69c839739597f15d37a65debbd8f00d69b0c26d49d",
+      "usage": "只参考眼部，不复制S040场景"
+    }
+  ],
+  "user_animation_references": {
+    "date": "2026-10-05",
+    "user_confirmed_rule_ids": [
+      "A09",
+      "A10",
+      "B11"
+    ],
+    "scope": "未来同系列动画制作；未重做现有成片",
+    "screenshots": [
+      {
+        "source": "D:\\Downloads\\Video\\微信图片_20261005171121_840_86.png",
+        "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171121_840_86.png",
+        "role": "现状",
+        "sha256": "f2c20a163403fe68c19cf6396ec4501063f4feadec0fd41be73d547fd74c29d1",
+        "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+      },
+      {
+        "source": "D:\\Downloads\\Video\\微信图片_20261005171119_839_86.png",
+        "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171119_839_86.png",
+        "role": "现状",
+        "sha256": "338929d590a785b68ef6daeaeb937b76103e082bca4eb9ce92075459f1b3e72c",
+        "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+      },
+      {
+        "source": "D:\\Downloads\\Video\\微信图片_20261005171118_838_86.png",
+        "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171118_838_86.png",
+        "role": "现状",
+        "sha256": "badbfe32e94cab4b5414185c8484ff2c1a51ddb1787751046d4acae55515ac99",
+        "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+      },
+      {
+        "source": "D:\\Downloads\\Video\\微信图片_20261005171525_841_86.png",
+        "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171525_841_86.png",
+        "role": "期望",
+        "sha256": "18472acd50454f1597c7e3943d79944f4f0cfb25c7d831fd4ccabeadd925cd8e",
+        "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+      },
+      {
+        "source": "D:\\Downloads\\Video\\微信图片_20261005171526_842_86.png",
+        "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_842_86.png",
+        "role": "期望",
+        "sha256": "a8f3039bd692bed2fda3a6e6b75236a3176e915560713dba68e3b139be506202",
+        "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+      },
+      {
+        "source": "D:\\Downloads\\Video\\微信图片_20261005171526_843_86.png",
+        "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_843_86.png",
+        "role": "期望",
+        "sha256": "4c58831a633d1f1d12c20bdc7032e42c9aa71d469fa8ca61cba828185101d024",
+        "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+      }
+    ],
+    "video_source": "D:/xwechat_files/qq1046998451_7a24/msg/video/2026-10/6b5a121fc5d665d0ccfb56b85c466a3d_raw.mp4",
+    "video_usage": "只参考动作；原片底部字幕带不继承",
+    "lower_edge_reference": "期望截图841–843",
+    "whole_standard_approved": false
+  },
+  "snapshot_date": "2026-10-06"
+}

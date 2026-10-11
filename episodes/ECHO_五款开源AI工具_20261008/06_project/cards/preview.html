@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="data:,">
+  <title>ECHO · 源项目预览</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#07110c;color:#f0f3ec;font-family:"Microsoft YaHei",sans-serif}
+    body{padding:16px 20px}main{max-width:1560px;margin:auto}header{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-bottom:12px}
+    h1{font-size:20px;margin:0;font-weight:700}header p{font-size:13px;color:#a9b9ac;margin:0;text-align:right}
+    #preview-screen{width:100%;aspect-ratio:16/9;background:#07110c;margin:0 auto;overflow:hidden;outline:1px solid #24422e}
+    #preview-screen>svg{display:block;width:100%;height:100%}#loading{height:100%;display:grid;place-items:center;color:#a9b9ac;padding:28px;text-align:center}
+    .controls{max-width:1440px;margin:14px auto 0;padding:14px 16px;background:#14271b;border:1px solid #33533b;border-radius:12px}
+    .progress-row{display:flex;gap:12px;align-items:center}.progress-row input{flex:1;min-width:80px;accent-color:#78efa2;cursor:pointer}output{font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}
+    fieldset{border:0;margin:0;padding:0}.buttons{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+    button{font:inherit;font-size:14px;color:#f0f3ec;background:#233e2b;border:1px solid #54775e;border-radius:7px;min-height:37px;padding:6px 13px;cursor:pointer}
+    button:hover:enabled{background:#31533b}button:disabled,input:disabled{cursor:wait;opacity:.45}button:focus-visible,input:focus-visible{outline:2px solid #78efa2;outline-offset:3px}
+    #play{background:#78efa2;color:#14271b;border-color:#78efa2;min-width:84px;font-weight:700}.shot{flex:1;min-width:220px;margin-left:8px;font-size:14px}
+    #frames{font-size:12px;color:#a9b9ac;margin-top:5px;font-variant-numeric:tabular-nums}.hint{font-size:12px;color:#a9b9ac;margin:10px 0 0}#status{color:#b6cdbb}#status.error{color:#ffd6b7}
+    @media(max-width:700px){body{padding:10px}header{display:block}header p{text-align:left;margin-top:5px}.controls{padding:11px}.shot{flex-basis:100%;margin:4px 0 0}.progress-row{gap:6px}output{font-size:11px}button{padding:6px 10px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header><h1>ECHO · 源项目预览</h1><p>原始配音 · 无内嵌字幕 · 画面随音频定位</p></header>
+    <div id="preview-screen" aria-label="视频画面"><div id="loading">正在加载字体、插画和原始配音…</div></div>
+    <section class="controls" aria-label="预览控制">
+      <fieldset id="controls" disabled>
+        <div class="progress-row"><output id="time">00:00.000</output><input id="progress" type="range" min="0" max="0" step="1" value="0" aria-label="逐帧进度"><output id="duration">00:00.000</output></div>
+        <div class="buttons">
+          <button id="play" type="button">播放</button>
+          <button id="previous" type="button">上一镜头</button><button id="next" type="button">下一镜头</button>
+          <button id="back-frame" type="button" aria-label="上一帧">−1 帧</button><button id="next-frame" type="button" aria-label="下一帧">+1 帧</button>
+          <div class="shot"><div id="shot">正在加载…</div><div id="frames">—</div></div>
+        </div>
+      </fieldset>
+      <p class="hint"><span id="status" role="status">准备中</span> · 空格播放/暂停，← / → 逐帧查看</p>
+    </section>
+    <audio id="voice" preload="auto" src="../../00_brief/input/voice_original.mp3"></audio>
+  </main>
+  <script src="vendor/flubber.min.js"></script>
+  <script src="card_kit.js"></script>
+  <script src="common.js"></script>
+  <script src="scenes_a.js"></script>
+  <script src="scenes_bc.js"></script>
+  <script src="scenes_de.js"></script>
+  <script>
+  'use strict';
+  (() => {
+    const ui=Object.fromEntries(['controls','progress','time','duration','play','previous','next','back-frame','next-frame','shot','frames','status','voice'].map(id=>[id,document.getElementById(id)]));
+    ui.screen=document.getElementById('preview-screen');
+    const audio=ui.voice;
+    const state={ready:false,frame:-1,shotIndex:0,raf:0,assets:[]};
+    let data,cfg,fps,lastFrame;
+    window.previewReady=false;
+    const clock=seconds=>{const ms=Math.max(0,Math.round(seconds*1000));return `${String(Math.floor(ms/60000)).padStart(2,'0')}:${String(Math.floor(ms/1000)%60).padStart(2,'0')}.${String(ms%1000).padStart(3,'0')}`;};
+    const clampFrame=f=>Math.max(0,Math.min(lastFrame,Math.round(Number(f)||0)));
+    // Chromium may return a seek target rounded down to microseconds.
+    const frameAtTime=seconds=>clampFrame(Math.floor(seconds*fps+1e-4));
+    function fitScreen(){
+      const width=document.querySelector('main').clientWidth;
+      const remaining=Math.max(150,innerHeight-document.querySelector('header').offsetHeight-document.querySelector('.controls').offsetHeight-65);
+      ui.screen.style.width=Math.min(width,remaining*16/9)+'px';
+    }
+    function fail(error){
+      state.ready=false;window.previewReady=false;audio.pause();ui.controls.disabled=true;
+      ui.status.className='error';ui.status.textContent='加载失败：'+(error?.message||error);
+      console.error(error);
+    }
+    async function readJSON(url){const response=await fetch(url,{cache:'no-store'});if(!response.ok)throw new Error(`${url}（${response.status}）`);return response.json();}
+    function loadImage(file){
+      return new Promise((resolve,reject)=>{
+        const url=new URL('../../04_assets/'+file,location.href);
+        if(url.origin!==location.origin)return reject(new Error('素材必须来自当前本地项目：'+file));
+        const image=new Image();state.assets.push(image);
+        image.onload=()=>image.decode().then(resolve,reject);image.onerror=()=>reject(new Error('素材无法读取：'+file));image.src=url.href;
+      });
+    }
+    function loadAudio(){
+      return new Promise((resolve,reject)=>{
+        if(audio.error)return reject(new Error('原始配音无法读取'));
+        if(audio.readyState>=4)return resolve();
+        const timer=setTimeout(()=>done(new Error('原始配音未能加载完成，请刷新重试')),30000);
+        const ready=()=>done();const error=()=>done(new Error('原始配音无法解码'));
+        function done(reason){clearTimeout(timer);audio.removeEventListener('canplaythrough',ready);audio.removeEventListener('error',error);reason?reject(reason):resolve();}
+        audio.addEventListener('canplaythrough',ready,{once:true});audio.addEventListener('error',error,{once:true});
+        if(audio.networkState===HTMLMediaElement.NETWORK_EMPTY)audio.load();
+      });
+    }
+    async function loadFonts(){
+      const family=String(cfg.type.family);
+      // Verify the configured local family without requesting a file outside this episode.
+      await new FontFace('EpisodePreviewFontCheck',`local(${JSON.stringify(family)})`).load();
+      await Promise.all([400,700].map(weight=>document.fonts.load(`${weight} 46px ${JSON.stringify(family)}`,'ECHO 声音 任务 记忆')));
+      await document.fonts.ready;
+    }
+    function findShot(frame){
+      let low=0,high=data.cards.length-1;
+      while(low<=high){const mid=(low+high)>>1,c=data.cards[mid];if(frame<c.start_frame)high=mid-1;else if(frame>=c.end_frame_exclusive)low=mid+1;else return mid;}
+      throw new Error('分镜未覆盖当前帧：'+frame);
+    }
+    function drawFrame(frame,force=false){
+      frame=clampFrame(frame);if(frame===state.frame&&!force)return frame;
+      const index=findShot(frame),card=data.cards[index],local=frame-card.start_frame;
+      H.k.beginFrame();ui.screen.innerHTML=H.frame(card,local/fps);
+      state.frame=frame;state.shotIndex=index;
+      ui.progress.value=String(frame);ui.progress.setAttribute('aria-valuetext',`${clock(frame/fps)}，${card.id}，第 ${local+1} 帧`);
+      ui.time.value=clock(frame/fps);ui.shot.textContent=`${card.id} · ${card.title}`;
+      ui.frames.textContent=`总帧 ${frame+1} / ${data.total_frames}　镜头内 ${local+1} / ${card.frame_count}`;
+      ui.previous.disabled=index===0;ui.next.disabled=index===data.cards.length-1;
+      return frame;
+    }
+    function seekFrame(frame,pause=true){
+      if(!state.ready)return;
+      if(pause)audio.pause();
+      frame=clampFrame(frame);audio.currentTime=Math.min(frame/fps,audio.duration);drawFrame(frame,true);
+      return frame;
+    }
+    function seekShot(idOrIndex){
+      const index=typeof idOrIndex==='number'?idOrIndex:data.cards.findIndex(card=>card.id===idOrIndex);
+      if(index<0||index>=data.cards.length)throw new Error('没有这个镜头：'+idOrIndex);
+      return seekFrame(data.cards[index].start_frame);
+    }
+    function tick(){
+      if(!state.ready||audio.paused||audio.ended)return;
+      drawFrame(frameAtTime(audio.currentTime));state.raf=requestAnimationFrame(tick);
+    }
+    async function toggle(){
+      if(!state.ready)return;
+      if(!audio.paused){audio.pause();return;}
+      if(audio.ended||state.frame>=lastFrame)seekFrame(0);
+      try{await audio.play();}catch(error){ui.status.textContent='播放未启动：'+error.message;}
+    }
+    ui.play.addEventListener('click',toggle);
+    ui.progress.addEventListener('input',()=>seekFrame(ui.progress.value));
+    ui.previous.addEventListener('click',()=>seekShot(Math.max(0,state.shotIndex-1)));
+    ui.next.addEventListener('click',()=>seekShot(Math.min(data.cards.length-1,state.shotIndex+1)));
+    ui['back-frame'].addEventListener('click',()=>seekFrame(state.frame-1));
+    ui['next-frame'].addEventListener('click',()=>seekFrame(state.frame+1));
+    audio.addEventListener('play',()=>{ui.play.textContent='暂停';ui.status.textContent='正在播放原始配音';cancelAnimationFrame(state.raf);state.raf=requestAnimationFrame(tick);});
+    audio.addEventListener('pause',()=>{ui.play.textContent='播放';ui.status.textContent='已暂停 · 可逐帧查看';cancelAnimationFrame(state.raf);if(state.ready)drawFrame(frameAtTime(audio.currentTime));});
+    audio.addEventListener('seeked',()=>{if(state.ready)drawFrame(frameAtTime(audio.currentTime));});
+    audio.addEventListener('timeupdate',()=>{if(state.ready)drawFrame(frameAtTime(audio.currentTime));});
+    audio.addEventListener('ended',()=>{cancelAnimationFrame(state.raf);drawFrame(lastFrame);ui.play.textContent='重播';ui.status.textContent='预览结束';});
+    document.addEventListener('keydown',event=>{
+      if(!state.ready||event.target.closest('input,button,select,textarea'))return;
+      if(event.code==='Space'){event.preventDefault();toggle();}
+      if(event.code==='ArrowLeft'||event.code==='ArrowRight'){event.preventDefault();seekFrame(state.frame+(event.code==='ArrowRight'?1:-1));}
+    });
+    addEventListener('resize',fitScreen);fitScreen();
+    (async()=>{
+      [cfg,data]=await Promise.all([readJSON('../../00_brief/effective_defaults.json'),readJSON('../../03_storyboard/cards.json')]);
+      fps=data.fps;lastFrame=data.total_frames-1;
+      if(fps!==cfg.video.fps||data.width!==1920||data.height!==1080)throw new Error('分镜与项目规格不一致');
+      let end=0;for(const card of data.cards){if(card.start_frame!==end||card.frame_count!==card.end_frame_exclusive-card.start_frame)throw new Error('分镜帧范围不连续：'+card.id);if(!card.id.startsWith('A')&&typeof SCENES[card.id]!=='function')throw new Error('场景未加载：'+card.id);end=card.end_frame_exclusive;}
+      if(end!==data.total_frames)throw new Error('总帧数与分镜范围不一致');
+      window.CFG=cfg;window.DATA=data;H.k=createReferenceCardKit(cfg);
+      ui.progress.max=String(lastFrame);ui.duration.value=clock(data.total_frames/fps);
+      await Promise.all([loadFonts(),loadAudio(),...data.preload.map(loadImage)]);
+      if(!Number.isFinite(audio.duration)||audio.duration<=0)throw new Error('原始配音时长无效');
+      state.ready=true;ui.controls.disabled=false;
+      const query=new URLSearchParams(location.search);
+      const wantedShot=data.cards.find(card=>card.id===query.get('shot'));
+      const first=query.has('frame')?clampFrame(query.get('frame')):wantedShot?.start_frame||0;
+      seekFrame(first);ui.status.textContent=`已就绪 · ${fps} fps · ${data.cards.length} 个镜头`;fitScreen();
+      window.preview={seekFrame,seekShot,audio,getState:()=>({ready:state.ready,frame:state.frame,shot:data.cards[state.shotIndex].id,localFrame:state.frame-data.cards[state.shotIndex].start_frame,fps,totalFrames:data.total_frames,currentTime:audio.currentTime,paused:audio.paused,assetCount:state.assets.length})};
+      window.previewReady=true;
+    })().catch(fail);
+  })();
+  </script>
+</body>
+</html>

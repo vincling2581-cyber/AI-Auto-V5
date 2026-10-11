@@ -1,0 +1,36 @@
+{
+  "controls": {
+    "linear": {
+      "objectMidpoint": 0.5,
+      "morphMidpointX": 50
+    },
+    "quadratic_out": {
+      "objectMidpoint": 0.75,
+      "morphMidpointX": 75
+    },
+    "cubic_out": {
+      "objectMidpoint": 0.875,
+      "morphMidpointX": 87.5
+    }
+  },
+  "rejected": {
+    "object_default": true,
+    "morph_default": true,
+    "missingEasing": true,
+    "iconUnits200": true,
+    "explicitEasing": true
+  },
+  "defaultGeometryMatchesArchivedOriginal": true,
+  "objectAndMorphIndependent": true,
+  "arbitraryOrderSvgIdentical": true,
+  "paletteOverride": true,
+  "fontOverride": true,
+  "borderOverride": true,
+  "status": "passed_effective_easing_fixed_icon_units_and_deterministic_geometry",
+  "checked_utc": "2026-10-06T04:03:23.098460+00:00",
+  "helper_sha256": "18c9846748a11334fd94423fb2f96a765777c279b9d570effc89e46334bb227a",
+  "readme_sha256": "5d97f6fe8e64c9e40fadffa7b1c606ed31eef833b5aa6c12bfaad42487263130",
+  "input_defaults_sha256": "f372a756314e86d605afaaaf5a598f7ba4845249763428bcc508621b5a4fe472",
+  "archived_original_sources_unchanged": true,
+  "scope": "Chrome SVG checks only; no new full video production or perceptual approval claimed"
+}

@@ -1,0 +1,6 @@
+# Core renderer packages observed in the working Python 3.12 environment.
+# Optional Jianying export dependencies are documented in README.md.
+playwright==1.59.0
+Pillow==12.2.0
+numpy==2.5.2
+opencv-python==5.0.0.93

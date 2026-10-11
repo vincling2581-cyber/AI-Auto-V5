@@ -1,0 +1,266 @@
+{
+  "version": "4.5",
+  "review_status": "active_after_delegated_self_check",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_codec": "libx264",
+    "crf": 17,
+    "preset": "fast",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_bitrate": "256k",
+    "duration_basis": "final_voice"
+  },
+  "brand": {
+    "series_label_template": "ECHO · AI新玩法",
+    "episode_title": "五款AI工具，放进你的工作流",
+    "cream": "#F5F2E9",
+    "dark": "#07110C",
+    "card": "#14271B",
+    "accent": "#78EFA2",
+    "text_on_dark": "#F0F3EC",
+    "text_on_light": "#24362B",
+    "robot_enabled": false
+  },
+  "type": {
+    "family": "Microsoft YaHei",
+    "regular_font": "C:\\Windows\\Fonts\\msyh.ttc",
+    "bold_font": "C:\\Windows\\Fonts\\msyhbd.ttc",
+    "title_px": 64,
+    "title_range_px": [
+      52,
+      64
+    ],
+    "node_px": 40,
+    "node_range_px": [
+      34,
+      44
+    ],
+    "support_px": 30,
+    "support_range_px": [
+      28,
+      32
+    ],
+    "caption_px": 44,
+    "caption_range_px": [
+      40,
+      44
+    ],
+    "caption_bold": true
+  },
+  "layout": {
+    "content_safe": [
+      64,
+      110,
+      1856,
+      880
+    ],
+    "content_safe_scope": "critical_details_only_not_illustration_bounds",
+    "caption_safe": [
+      160,
+      920,
+      1760,
+      1040
+    ],
+    "illustration_extent": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "reserved_bottom_band_px": 0,
+    "illustration_lower_edge": "natural_scene_continuation",
+    "subtitle_placement": "overlay_on_complete_scene",
+    "source_aspect_mismatch": "safe_reframe_else_extend_or_regenerate",
+    "border_px": 2,
+    "radius_px": 24,
+    "badge_optional": true,
+    "episode_label_px": 34,
+    "episode_label_right_px": 42,
+    "episode_label_top_px": 36
+  },
+  "animation": {
+    "max_static_seconds": 3.0,
+    "target_static_seconds": 2.8,
+    "scope": "animation_layer_content_states",
+    "decorative_changes_count": false,
+    "same_scene_state_switching_allowed": true,
+    "cross_segment_image_reuse": false,
+    "visual_priority": "action_first_for_actable_content",
+    "preserve_graphic_text_scenes": true,
+    "text_required_every_shot": false,
+    "pose_change": "distinct_body_hand_prop_contact_changes",
+    "fixed_action_shot_ratio": null,
+    "frame_count_quota": null,
+    "qc_exclusion": "actual_text_overlay_mask_not_fixed_bottom_strip",
+    "anatomy_check": true,
+    "anatomy_check_scope": "visible_character_limb_connections_left_right_and_prop_contact",
+    "preserve_natural_limb_occlusion": true
+  },
+  "cards": {
+    "semantic_process_required": true,
+    "render_continuous_intermediate_frames": true,
+    "pure_title_exemption_requires_reason": true,
+    "reading_hold_allowed": true,
+    "entry_seconds": [
+      0.25,
+      0.4
+    ],
+    "entry_translation_px": [
+      16,
+      32
+    ],
+    "highlight_seconds": [
+      0.15,
+      0.3
+    ],
+    "zoom_seconds": [
+      0.3,
+      0.6
+    ],
+    "process_initial_seconds": 0.55,
+    "flubber_version": "0.4.2",
+    "method_profile": "reference_cards_v1",
+    "implementation": "deterministic_svg_frame_time",
+    "method_assets": "production_standard/method_assets/reference_cards_v1",
+    "palette": {
+      "background": "#07110C",
+      "dark": "#14271B",
+      "soft": "#101F16",
+      "paper": "#F0F3EC",
+      "accent": "#78EFA2",
+      "text": "#F0F3EC",
+      "ink": "#12251A",
+      "muted": "#A9B9AC",
+      "line": "#54775E",
+      "edge": "#33533B",
+      "paperLine": "#C4CCC2"
+    },
+    "palette_roles": {
+      "background": "全画幅深绿黑底",
+      "dark": "深绿大框和常规对象",
+      "soft": "次级深绿表面",
+      "paper": "对照方、文档或重要结果的纸白表面",
+      "accent": "当前焦点、传递对象、完成状态或三框以上时的浅绿表面",
+      "text": "深底主文字",
+      "ink": "纸白/浅绿底文字",
+      "muted": "辅助说明和弱化内容",
+      "line": "普通关系线",
+      "edge": "深色框边",
+      "paperLine": "浅色表面内部细线"
+    },
+    "large_panel_policy": {
+      "two": [
+        "dark",
+        "paper"
+      ],
+      "three_or_more": "可按对象职责增加浅绿或其他已登记颜色，不强制每框不同色",
+      "single_large_with_small": "保留大框与小框的深绿层级；不机械套两大框规则",
+      "palette_change_scope": "只调整指定大框底色；不联动修改既有小文本框、图形、连线、字体和字框"
+    },
+    "typography": {
+      "title_px": 72,
+      "node_px": 46,
+      "support_px": 34,
+      "status": "active_starting_point_inherited_from_accepted_latest_video",
+      "scope": "information_cards_only",
+      "intermediate_sizes": "按字段/文件名/局部标题的阅读层级选择；不固定为本集具体字号列表",
+      "override_policy": "按本集effective defaults执行；可按内容和可读性调整并记录依据；用户本集明确要求优先，不影响字幕和动画文字。"
+    },
+    "geometry": {
+      "panel_border_px": 2,
+      "panel_radius_px": 28,
+      "connection_stroke_px": 3,
+      "icon_stroke_local_px": 3.5,
+      "icon_viewbox_units": 100,
+      "status": "active_starting_points_inherited_from_accepted_latest_video",
+      "icon_viewbox_policy": "fixed_100_unit_shape_coordinates_validated_not_arbitrary_override"
+    },
+    "frame_time_easing": {
+      "object_default": "cubic_out",
+      "morph_default": "quadratic_out",
+      "path_progress": "path_arc_length_with_explicit_progress_curve"
+    },
+    "object_handoff": {
+      "continuous_identity_required": true,
+      "target_state_after_arrival": true,
+      "preserve_reusable_source": true,
+      "occlusion_matches_container_depth": true
+    },
+    "process_sampling": {
+      "interior_fractions": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "encoded_midpoint_neighbors": true,
+      "normal_speed_review_required": true,
+      "pixel_change_is_not_semantic_pass": true
+    },
+    "dependencies": {
+      "flubber": {
+        "version": "0.4.2",
+        "local_only": true
+      },
+      "tween_js": {
+        "required": false,
+        "reason": "已认可成片由明确帧时间的纯函数插值驱动；无 Tween.js 运行时加载"
+      }
+    },
+    "effective_defaults_required": true,
+    "episode_scene_generation_required": true,
+    "jianying_layer_extraction_default": false
+  },
+  "audio": {
+    "preserve_provided_voice": true,
+    "bgm_default": "none_for_this_master",
+    "sfx_default": "none_preserve_supplied_narration",
+    "fixed_bgm_gain_db": null,
+    "cue_required_if_enabled": true,
+    "sfx_gain_applied_once": true,
+    "fixed_voice_gain_db": null,
+    "fixed_sfx_gain_db": null,
+    "fixed_sfx_count": null,
+    "fixed_sfx_ducking_db": null,
+    "auto_authorize_paid_sfx": false
+  },
+  "delivery": {
+    "scope_default": [
+      "master",
+      "review_per_episode",
+      "rerenderable_source_project",
+      "srt",
+      "assets",
+      "qc_and_handoff"
+    ],
+    "caption_mode": "no_burned_narration_captions",
+    "project_format": "source_project",
+    "cover_default": "echo",
+    "jianying_import_default": false,
+    "jianying_import_requires": "explicit_user_request"
+  },
+  "brand_assets": {
+    "identity": "production_standard/assets/角色身份参考.png",
+    "eye_reference": "production_standard/assets/补全眼部参考.png",
+    "action_and_lower_edge_references": "production_standard/references/2026-10-05_animation_review/用户截图来源.json"
+  },
+  "tools_local": {
+    "ffmpeg": "D:\\ffmpeg\\bin\\ffmpeg.exe",
+    "browser_channel": "chrome",
+    "python_packages": [
+      "playwright",
+      "Pillow",
+      "numpy",
+      "opencv-python"
+    ],
+    "optional_overlay_library": "D:\\AI\\overlay-studio"
+  },
+  "notes": [
+    "Active after the user authorized assistant self-check; not a claim that the user personally reviewed every item. Defaults remain adjustable for each episode.",
+    "Per-episode requirements override applicable defaults and must be recorded.",
+    "Historical episode scripts do not automatically consume these defaults; adapt and verify before reuse.",
+    "User authorized enhanced semantic card motion, original voice retention, corrected on-screen names/conditions and a fact-check appendix. All writes remain inside this V5 episode."
+  ]
+}

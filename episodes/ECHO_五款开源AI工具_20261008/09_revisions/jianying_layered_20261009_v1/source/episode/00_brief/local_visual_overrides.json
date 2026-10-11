@@ -1,0 +1,29 @@
+{
+  "scope": "this episode only",
+  "sources": "active v4.5 snapshot and user instruction",
+  "overrides": [
+    {
+      "field": "layout.footer",
+      "value": "y1018, 30px",
+      "reason": "条件与出处附注占用独立页脚，主内容保留安全区"
+    },
+    {
+      "field": "illustration.native_dimensions",
+      "value": [
+        1672,
+        941
+      ],
+      "reason": "内置图像工具原生返回，按比例cover到1920x1080，不拉伸"
+    },
+    {
+      "field": "branding",
+      "value": "ECHO AI新玩法",
+      "reason": "新一集工具题材，保留系列角色画风与卡片规范"
+    },
+    {
+      "field": "audio",
+      "value": "原配音无变速无增益无BGM/SFX",
+      "reason": "用户选择保留原配音"
+    }
+  ]
+}

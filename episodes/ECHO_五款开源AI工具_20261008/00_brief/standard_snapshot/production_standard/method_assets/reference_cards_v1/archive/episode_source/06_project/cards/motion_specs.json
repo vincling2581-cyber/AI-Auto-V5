@@ -1,0 +1,696 @@
+{
+  "revision": "card_style_v4_reference",
+  "scope": "current_episode_information_cards_only",
+  "source_merge": [
+    "09_revisions/card_style_v4_reference/main_motion_specs.json",
+    "09_revisions/card_style_v4_reference/middle_motion_specs.json"
+  ],
+  "timeline_lock": {
+    "total_frames": 2517,
+    "fps": 30,
+    "card_frames": 1547
+  },
+  "typography_override": {
+    "title_px": 72,
+    "node_px": 46,
+    "support_px": 34,
+    "scope": "episode_only_reference_layering",
+    "source": "06_project/cards/reference_style.json",
+    "note": "标题/主节点/辅助为层级基准，局部文件名与字段使用40/44/48/52等中间字号；不是全局标准变更"
+  },
+  "check_frame_policy": "Interior samples at 20%, 50%, 80% of each continuous interval; render_cards checks actual encoded midpoint with both neighboring frames.",
+  "overview_policy": "Exactly six sample_frames for the existing 3x2 contact sheet; additional requested detail times and all event midpoints retained in process_sample_frames.",
+  "cards": {
+    "C02": {
+      "reference": [
+        "S025",
+        "S039"
+      ],
+      "hold_start": 4.95,
+      "sample_seconds": [
+        0.1,
+        0.75,
+        1.83,
+        2.75,
+        4.05,
+        5.55
+      ],
+      "process_events": [
+        {
+          "start": 0.35,
+          "end": 1.4,
+          "target": "临时说明",
+          "meaning": "聊天说明沿弧线变成单次任务文档",
+          "geometry": "bubble→clipboard形变/缩放/迁移",
+          "voice_anchor": "Prompt是临时交代"
+        },
+        {
+          "start": 1.4,
+          "end": 2.25,
+          "target": "方法存档",
+          "meaning": "纸面缩为文档并进入开合文件夹",
+          "geometry": "paper→doc形变与文件夹开合",
+          "voice_anchor": "Skill是长期工作手册"
+        },
+        {
+          "start": 2.4,
+          "end": 3.15,
+          "target": "调用A",
+          "meaning": "方法保留，沿实际关系路径把内容送入任务A",
+          "geometry": "真实贝塞尔弧长路径迁移",
+          "voice_anchor": "长期工作手册"
+        },
+        {
+          "start": 3.65,
+          "end": 4.4,
+          "target": "调用B",
+          "meaning": "相同手册再次调用到任务B",
+          "geometry": "真实贝塞尔弧长路径迁移",
+          "voice_anchor": "长期工作手册"
+        }
+      ],
+      "module": "cards_main.js"
+    },
+    "C04": {
+      "reference": [
+        "S010",
+        "S017"
+      ],
+      "hold_start": 4.65,
+      "sample_seconds": [
+        0.2,
+        0.85,
+        1.9,
+        3.05,
+        4.22,
+        5.25
+      ],
+      "process_events": [
+        {
+          "start": 0.52,
+          "end": 1.17,
+          "target": "痛点",
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "voice_anchor": "先找痛点"
+        },
+        {
+          "start": 1.24,
+          "end": 1.89,
+          "target": "冲突",
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "voice_anchor": "再设计冲突"
+        },
+        {
+          "start": 1.96,
+          "end": 2.61,
+          "target": "开头",
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "voice_anchor": "然后写开头"
+        },
+        {
+          "start": 2.68,
+          "end": 3.33,
+          "target": "案例",
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "voice_anchor": "补案例"
+        },
+        {
+          "start": 3.4,
+          "end": 4.05,
+          "target": "互动",
+          "meaning": "对应步骤沿独立路径进入同一文案并留下字段",
+          "geometry": "连线描画/弧长迁移/纸面字段遮罩写入",
+          "voice_anchor": "最后加上评论区互动"
+        },
+        {
+          "start": 4,
+          "end": 4.55,
+          "target": "成稿",
+          "meaning": "保留累计字段并建立成稿结果",
+          "geometry": "横向遮罩与勾号描画",
+          "voice_anchor": "他照做 确实写出来了"
+        }
+      ],
+      "module": "cards_main.js"
+    },
+    "C07": {
+      "process_events": [
+        {
+          "start": 0.05,
+          "end": 0.63,
+          "target": "使用条件图标",
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "voice_anchor": "什么任务使用它"
+        },
+        {
+          "start": 0.15,
+          "end": 0.91,
+          "target": "使用条件独立关系",
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "voice_anchor": "什么任务使用它"
+        },
+        {
+          "start": 0.91,
+          "end": 1.37,
+          "target": "使用条件手册字段",
+          "meaning": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "voice_anchor": "什么任务使用它"
+        },
+        {
+          "start": 0.83,
+          "end": 1.41,
+          "target": "执行步骤图标",
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "voice_anchor": "具体分几步"
+        },
+        {
+          "start": 0.93,
+          "end": 1.69,
+          "target": "执行步骤独立关系",
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "voice_anchor": "具体分几步"
+        },
+        {
+          "start": 1.69,
+          "end": 2.15,
+          "target": "执行步骤手册字段",
+          "meaning": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "voice_anchor": "具体分几步"
+        },
+        {
+          "start": 1.63,
+          "end": 2.21,
+          "target": "注意事项图标",
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "voice_anchor": "哪些地方要注意"
+        },
+        {
+          "start": 1.73,
+          "end": 2.49,
+          "target": "注意事项独立关系",
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "voice_anchor": "哪些地方要注意"
+        },
+        {
+          "start": 2.49,
+          "end": 2.95,
+          "target": "注意事项手册字段",
+          "meaning": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "voice_anchor": "哪些地方要注意"
+        },
+        {
+          "start": 2.8,
+          "end": 3.38,
+          "target": "合格结果图标",
+          "meaning": "源问题轮廓逐笔建立且保留",
+          "geometry": "图标路径描画",
+          "voice_anchor": "什么样的结果才算合格"
+        },
+        {
+          "start": 2.9,
+          "end": 3.66,
+          "target": "合格结果独立关系",
+          "meaning": "该维度沿自己的曲线路径汇入手册",
+          "geometry": "独立曲线生长与沿同一 SVG path 的点迁移",
+          "voice_anchor": "什么样的结果才算合格"
+        },
+        {
+          "start": 3.66,
+          "end": 4.12,
+          "target": "合格结果手册字段",
+          "meaning": "到达后对应字段从左向右写入",
+          "geometry": "文字遮罩和对应行长度增长",
+          "voice_anchor": "什么样的结果才算合格"
+        }
+      ],
+      "hold_start": 4.12,
+      "sample_seconds": [
+        0.15,
+        0.59,
+        1.39,
+        2.19,
+        3.47,
+        4.5
+      ],
+      "module": "cards_middle.js",
+      "reference": [
+        "S017",
+        "S010"
+      ]
+    },
+    "C09": {
+      "process_events": [
+        {
+          "start": 0.65,
+          "end": 1.15,
+          "target": "一句提示词误解",
+          "meaning": "划线表示一句提示词不等于 Skill",
+          "geometry": "删除线长度增长",
+          "voice_anchor": "Skill不是一句提示词"
+        },
+        {
+          "start": 1.8,
+          "end": 2.3,
+          "target": "认真一点误解",
+          "meaning": "划线表示口头要求不等于 Skill",
+          "geometry": "删除线长度增长",
+          "voice_anchor": "也不是让AI认真一点"
+        },
+        {
+          "start": 2.95,
+          "end": 3.55,
+          "target": "工作方法纸面",
+          "meaning": "小文档扩为可承接四项内容的纸面",
+          "geometry": "真实轮廓 morph、位置和尺寸连续变化",
+          "voice_anchor": "它是把一项工作里的流程"
+        },
+        {
+          "start": 3.35,
+          "end": 3.97,
+          "target": "流程来源分支",
+          "meaning": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "voice_anchor": "流程"
+        },
+        {
+          "start": 3.69,
+          "end": 4.38,
+          "target": "流程汇入",
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "voice_anchor": "流程"
+        },
+        {
+          "start": 4.38,
+          "end": 4.72,
+          "target": "流程文档行",
+          "meaning": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "voice_anchor": "流程"
+        },
+        {
+          "start": 4.35,
+          "end": 4.97,
+          "target": "判断标准来源分支",
+          "meaning": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "voice_anchor": "判断标准"
+        },
+        {
+          "start": 4.69,
+          "end": 5.38,
+          "target": "判断标准汇入",
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "voice_anchor": "判断标准"
+        },
+        {
+          "start": 5.38,
+          "end": 5.72,
+          "target": "判断标准文档行",
+          "meaning": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "voice_anchor": "判断标准"
+        },
+        {
+          "start": 5.15,
+          "end": 5.77,
+          "target": "工具用法来源分支",
+          "meaning": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "voice_anchor": "工具用法"
+        },
+        {
+          "start": 5.49,
+          "end": 6.18,
+          "target": "工具用法汇入",
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "voice_anchor": "工具用法"
+        },
+        {
+          "start": 6.18,
+          "end": 6.52,
+          "target": "工具用法文档行",
+          "meaning": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "voice_anchor": "工具用法"
+        },
+        {
+          "start": 5.95,
+          "end": 6.57,
+          "target": "验收要求来源分支",
+          "meaning": "同一文档展开该并列来源",
+          "geometry": "中心向来源的曲线生长和来源节点展开",
+          "voice_anchor": "验收要求"
+        },
+        {
+          "start": 6.29,
+          "end": 6.98,
+          "target": "验收要求汇入",
+          "meaning": "来源内容沿真实路径抵达工作方法纸面",
+          "geometry": "沿 SVG path 的点迁移",
+          "voice_anchor": "验收要求"
+        },
+        {
+          "start": 6.98,
+          "end": 7.32,
+          "target": "验收要求文档行",
+          "meaning": "抵达后在对应行写入内容",
+          "geometry": "文字横向遮罩和行线展开",
+          "voice_anchor": "验收要求"
+        },
+        {
+          "start": 7.2,
+          "end": 7.66,
+          "target": "归档文件夹",
+          "meaning": "文件夹前片张开准备收取文档",
+          "geometry": "文件夹前片连续形变",
+          "voice_anchor": "整理成AI可以重复执行的文件或文件夹"
+        },
+        {
+          "start": 7.58,
+          "end": 8.46,
+          "target": "工作方法归档",
+          "meaning": "填好的纸面缩成一页进入文件夹，来源关系随之汇聚",
+          "geometry": "纸面到文档轮廓形变、缩放和弧线迁移；汇聚曲线端点连续收拢",
+          "voice_anchor": "整理成AI可以重复执行的文件或文件夹"
+        },
+        {
+          "start": 8.55,
+          "end": 8.99,
+          "target": "归档完成",
+          "meaning": "文件夹前片闭合，保留复用结论",
+          "geometry": "文件夹前片连续闭合",
+          "voice_anchor": "可以重复执行"
+        }
+      ],
+      "hold_start": 8.99,
+      "sample_seconds": [
+        0.8,
+        3.23,
+        4.13,
+        6.68,
+        7.94,
+        9.13
+      ],
+      "module": "cards_middle.js",
+      "detail_sample_seconds": [
+        0.8,
+        2.15,
+        3.23,
+        4.13,
+        5.7,
+        6.68,
+        7.16,
+        7.94,
+        8.34,
+        9.13
+      ],
+      "reference": [
+        "S012",
+        "S039"
+      ]
+    },
+    "C10": {
+      "process_events": [
+        {
+          "start": 0.15,
+          "end": 0.53,
+          "target": "Skill文件夹打开",
+          "meaning": "前片张开，提供主入口",
+          "geometry": "文件夹前片连续形变",
+          "voice_anchor": "在常见的Skill框架里"
+        },
+        {
+          "start": 1.05,
+          "end": 1.4,
+          "target": "Skill文件夹收起",
+          "meaning": "主文件接通后前片收起",
+          "geometry": "文件夹前片连续形变",
+          "voice_anchor": "在常见的Skill框架里"
+        },
+        {
+          "start": 0.28,
+          "end": 1.19,
+          "target": "主入口关系",
+          "meaning": "Skill文件夹连接主说明文件",
+          "geometry": "关系曲线生长和沿路径移动",
+          "voice_anchor": "通常会有一个skill.md"
+        },
+        {
+          "start": 0.35,
+          "end": 1.2,
+          "target": "SKILL.md主纸面",
+          "meaning": "文档沿弧线展开为保留深绿底的主文件面板",
+          "geometry": "文档到纸面的轮廓、位置、尺寸与填色连续形变",
+          "voice_anchor": "通常会有一个skill.md"
+        },
+        {
+          "start": 2.7,
+          "end": 3.4,
+          "target": "名称字段",
+          "meaning": "该字段及说明在主文件中横向填写",
+          "geometry": "文字遮罩和对应行长度同步增长",
+          "voice_anchor": "这个Skill叫什么"
+        },
+        {
+          "start": 4,
+          "end": 4.7,
+          "target": "适用场景字段",
+          "meaning": "该字段及说明在主文件中横向填写",
+          "geometry": "文字遮罩和对应行长度同步增长",
+          "voice_anchor": "什么情况下使用"
+        },
+        {
+          "start": 5.8,
+          "end": 6.5,
+          "target": "执行步骤字段",
+          "meaning": "该字段及说明在主文件中横向填写",
+          "geometry": "文字遮罩和对应行长度同步增长",
+          "voice_anchor": "具体怎么执行"
+        },
+        {
+          "start": 7.1,
+          "end": 7.8,
+          "target": "案例库配套关系",
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "voice_anchor": "案例库"
+        },
+        {
+          "start": 7.66,
+          "end": 8.57,
+          "target": "案例库附件",
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "voice_anchor": "案例库"
+        },
+        {
+          "start": 7.22,
+          "end": 7.92,
+          "target": "参考资料配套关系",
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "voice_anchor": "参考资料"
+        },
+        {
+          "start": 8.04,
+          "end": 8.95,
+          "target": "参考资料附件",
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "voice_anchor": "参考资料"
+        },
+        {
+          "start": 7.34,
+          "end": 8.04,
+          "target": "脚本配套关系",
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "voice_anchor": "脚本"
+        },
+        {
+          "start": 8.42,
+          "end": 9.33,
+          "target": "脚本附件",
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "voice_anchor": "脚本"
+        },
+        {
+          "start": 7.46,
+          "end": 8.16,
+          "target": "数据库配套关系",
+          "meaning": "从同一Skill来源接出独立可选附件支路",
+          "geometry": "同源路径描画",
+          "voice_anchor": "数据库"
+        },
+        {
+          "start": 8.8,
+          "end": 9.71,
+          "target": "数据库附件",
+          "meaning": "附件在同源支路下方展开，路径点沿分支迁移，图标逐笔绘成",
+          "geometry": "节点从各自支路连续展开、沿真实曲线路径的点迁移及图标逐笔绘制",
+          "voice_anchor": "数据库"
+        }
+      ],
+      "hold_start": 9.71,
+      "sample_seconds": [
+        0.25,
+        0.74,
+        3.04,
+        6.14,
+        8.23,
+        10.48
+      ],
+      "module": "cards_middle.js",
+      "detail_sample_seconds": [
+        0.25,
+        0.74,
+        1.49,
+        3.04,
+        4.4,
+        6.14,
+        7.49,
+        8.23,
+        8.99,
+        9.4,
+        10.48
+      ],
+      "reference": [
+        "S039",
+        "S010"
+      ]
+    },
+    "C11": {
+      "reference": [
+        "S030",
+        "S012"
+      ],
+      "hold_start": 5.65,
+      "sample_seconds": [
+        0.2,
+        1.3,
+        2.55,
+        3.98,
+        4.72,
+        6
+      ],
+      "process_events": [
+        {
+          "start": 1.75,
+          "end": 3.5,
+          "target": "候选介绍",
+          "meaning": "阅读框连续扫描三份候选介绍",
+          "geometry": "纵向连续移动",
+          "voice_anchor": "先查看各个Skill的介绍"
+        },
+        {
+          "start": 3.8,
+          "end": 4.7,
+          "target": "选中说明",
+          "meaning": "选中手册转为执行对象，其他候选弱化",
+          "geometry": "doc→clipboard形变与位移/缩放",
+          "voice_anchor": "再选择最匹配的那个执行"
+        },
+        {
+          "start": 4.3,
+          "end": 5.1,
+          "target": "执行路径",
+          "meaning": "沿真实折线与转弯到达执行节点",
+          "geometry": "路径描画与弧长迁移",
+          "voice_anchor": "执行"
+        }
+      ],
+      "module": "cards_main.js"
+    },
+    "C13": {
+      "reference": [
+        "S028",
+        "S039"
+      ],
+      "hold_start": 6.4,
+      "sample_seconds": [
+        0.15,
+        1.05,
+        2.82,
+        3.9,
+        5.12,
+        7.05
+      ],
+      "process_events": [
+        {
+          "start": 0.45,
+          "end": 1.15,
+          "target": "重复交代1",
+          "meaning": "每个任务各自接受一次说明",
+          "geometry": "连线描画与弧长迁移",
+          "voice_anchor": "每次都要重新教AI"
+        },
+        {
+          "start": 0.9,
+          "end": 1.6,
+          "target": "重复交代2",
+          "meaning": "每个任务各自接受一次说明",
+          "geometry": "连线描画与弧长迁移",
+          "voice_anchor": "每次都要重新教AI"
+        },
+        {
+          "start": 1.35,
+          "end": 2.05,
+          "target": "重复交代3",
+          "meaning": "每个任务各自接受一次说明",
+          "geometry": "连线描画与弧长迁移",
+          "voice_anchor": "每次都要重新教AI"
+        },
+        {
+          "start": 2.5,
+          "end": 3.35,
+          "target": "方法存档",
+          "meaning": "大纸面缩入文件夹，文件夹真实开合接收",
+          "geometry": "paper→doc形变/缩放/迁移与开合",
+          "voice_anchor": "有了Skill"
+        },
+        {
+          "start": 3.45,
+          "end": 4.35,
+          "target": "复用1",
+          "meaning": "保留存档方法，沿各自真实路径分发到任务",
+          "geometry": "贝塞尔路径描画/弧长迁移/抵达后绘勾",
+          "voice_anchor": "反复使用的能力"
+        },
+        {
+          "start": 4.12,
+          "end": 5.02,
+          "target": "复用2",
+          "meaning": "保留存档方法，沿各自真实路径分发到任务",
+          "geometry": "贝塞尔路径描画/弧长迁移/抵达后绘勾",
+          "voice_anchor": "反复使用的能力"
+        },
+        {
+          "start": 4.79,
+          "end": 5.69,
+          "target": "复用3",
+          "meaning": "保留存档方法，沿各自真实路径分发到任务",
+          "geometry": "贝塞尔路径描画/弧长迁移/抵达后绘勾",
+          "voice_anchor": "反复使用的能力"
+        }
+      ],
+      "module": "cards_main.js"
+    }
+  }
+}

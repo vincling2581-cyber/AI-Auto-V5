@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>C04 信息卡动效试样</title>
+  <style>
+    :root { color-scheme: dark; font-family: "Microsoft YaHei", sans-serif; background: #0a1510; color: #eef2e9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 36px 22px 50px; }
+    main { max-width: 1200px; margin: auto; }
+    h1 { font-size: clamp(24px, 4vw, 34px); margin: 0 0 10px; }
+    h2 { margin: 0 0 14px; font-size: 20px; }
+    p { color: #b1bfb4; line-height: 1.7; margin: 0 0 22px; }
+    section { margin-top: 30px; padding: 22px; background: #13241a; border: 1px solid #2b4533; border-radius: 16px; }
+    video { display: block; width: 100%; height: auto; background: #07110b; border-radius: 8px; }
+    a { color: #9de7b6; text-decoration-thickness: 1px; text-underline-offset: 4px; }
+    .links { margin: 15px 0 0; display: flex; gap: 22px; flex-wrap: wrap; }
+    .note { margin-top: 28px; font-size: 14px; }
+    @media (max-width: 600px) { body { padding: 22px 12px; } section { padding: 13px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>C04 · 信息卡动效试样</h1>
+    <p>同一段原始旁白，同一时长。先看试样，再比较保存、恢复和继续编辑的动作是否更清楚。</p>
+    <section>
+      <h2>带声新样片</h2>
+      <video controls playsinline preload="metadata" src="exports/C04_upgraded_with_audio.mp4" aria-label="C04 带声动效试样"></video>
+      <div class="links"><a href="exports/C04_upgraded_with_audio.mp4">打开新样片</a><a href="exports/C04_original_with_audio.mp4">打开原版</a></div>
+    </section>
+    <section>
+      <h2>同步对比 · 左原版，右动效试样</h2>
+      <p>左右画面已合成在同一条视频中，共用一份声音。点击全屏查看细节。</p>
+      <video controls playsinline preload="metadata" src="exports/comparison.mp4" aria-label="左原版右动效试样的同步比较"></video>
+      <div class="links"><a href="exports/comparison.mp4">打开并排比较视频</a></div>
+    </section>
+    <p class="note">9.27 秒 · 可留意结构包的往返、图层展开、位置提示，以及花朵能否继续编辑。</p>
+  </main>
+  <script>
+    const videos = [...document.querySelectorAll('video')];
+    for (const video of videos) {
+      video.addEventListener('play', () => videos.forEach(other => { if (other !== video) other.pause(); }));
+    }
+  </script>
+</body>
+</html>

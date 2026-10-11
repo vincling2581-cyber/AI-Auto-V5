@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-05",
+  "user_confirmed_rule_ids": [
+    "A09",
+    "A10",
+    "B11"
+  ],
+  "scope": "未来同系列动画制作；未重做现有成片",
+  "screenshots": [
+    {
+      "source": "D:\\Downloads\\Video\\微信图片_20261005171121_840_86.png",
+      "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171121_840_86.png",
+      "role": "现状",
+      "sha256": "f2c20a163403fe68c19cf6396ec4501063f4feadec0fd41be73d547fd74c29d1",
+      "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+    },
+    {
+      "source": "D:\\Downloads\\Video\\微信图片_20261005171119_839_86.png",
+      "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171119_839_86.png",
+      "role": "现状",
+      "sha256": "338929d590a785b68ef6daeaeb937b76103e082bca4eb9ce92075459f1b3e72c",
+      "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+    },
+    {
+      "source": "D:\\Downloads\\Video\\微信图片_20261005171118_838_86.png",
+      "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171118_838_86.png",
+      "role": "现状",
+      "sha256": "badbfe32e94cab4b5414185c8484ff2c1a51ddb1787751046d4acae55515ac99",
+      "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+    },
+    {
+      "source": "D:\\Downloads\\Video\\微信图片_20261005171525_841_86.png",
+      "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171525_841_86.png",
+      "role": "期望",
+      "sha256": "18472acd50454f1597c7e3943d79944f4f0cfb25c7d831fd4ccabeadd925cd8e",
+      "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+    },
+    {
+      "source": "D:\\Downloads\\Video\\微信图片_20261005171526_842_86.png",
+      "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_842_86.png",
+      "role": "期望",
+      "sha256": "a8f3039bd692bed2fda3a6e6b75236a3176e915560713dba68e3b139be506202",
+      "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+    },
+    {
+      "source": "D:\\Downloads\\Video\\微信图片_20261005171526_843_86.png",
+      "copy": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_843_86.png",
+      "role": "期望",
+      "sha256": "4c58831a633d1f1d12c20bdc7032e42c9aa71d469fa8ca61cba828185101d024",
+      "usage": "动作与下沿构图参考；不复制文字、水印或场景为下一集内容"
+    }
+  ],
+  "video_source": "D:/xwechat_files/qq1046998451_7a24/msg/video/2026-10/6b5a121fc5d665d0ccfb56b85c466a3d_raw.mp4",
+  "video_usage": "只参考动作；原片底部字幕带不继承",
+  "lower_edge_reference": "期望截图841–843",
+  "whole_standard_approved": false
+}

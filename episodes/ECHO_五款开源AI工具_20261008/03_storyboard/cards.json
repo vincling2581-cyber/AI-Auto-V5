@@ -1,0 +1,927 @@
+{
+  "revision": "new_episode_enhanced_cards_v1",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "total_frames": 2777,
+  "duration_seconds": 92.56666666666666,
+  "preload": [
+    "illustrations/A01.png",
+    "illustrations/A02.png",
+    "illustrations/A03.png",
+    "illustrations/A04.png",
+    "illustrations/A05.png",
+    "illustrations/A06.png",
+    "illustrations/A07.png",
+    "illustrations/A08.png",
+    "illustrations/A09.png",
+    "official/voice_clone.webp",
+    "official/voice_dub.webp",
+    "official/paperclip_home.png",
+    "official/webui_demo.png",
+    "official/ollama_logo.png",
+    "official/impeccable_case.png",
+    "official/impeccable_home.png"
+  ],
+  "cards": [
+    {
+      "id": "A01",
+      "title": "工具太多，成本也多",
+      "kicker": "",
+      "footer": "",
+      "label": "",
+      "start_frame": 0,
+      "end_frame_exclusive": 67,
+      "frame_count": 67,
+      "overview_frames": [
+        0,
+        33,
+        66
+      ],
+      "process_events": [
+        {
+          "id": "A01_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.2333333333333334,
+          "check_frames": [
+            13,
+            34,
+            54
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "title": "把工具放进工作流",
+      "kicker": "",
+      "footer": "",
+      "label": "",
+      "start_frame": 67,
+      "end_frame_exclusive": 134,
+      "frame_count": 67,
+      "overview_frames": [
+        0,
+        33,
+        66
+      ],
+      "process_events": [
+        {
+          "id": "A02_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.2333333333333334,
+          "check_frames": [
+            13,
+            34,
+            54
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C00",
+      "title": "五款 AI 工具，五个工作入口",
+      "kicker": "TOOLKIT / 01—05",
+      "footer": "开源与免费不等于无条件商用 · 软件、模型和服务许可分别核对",
+      "label": "",
+      "start_frame": 134,
+      "end_frame_exclusive": 288,
+      "frame_count": 154,
+      "overview_frames": [
+        0,
+        76,
+        153
+      ],
+      "process_events": [
+        {
+          "id": "C00_E01",
+          "start_seconds": 0.1,
+          "end_seconds": 1.23,
+          "check_frames": [
+            10,
+            20,
+            30
+          ],
+          "meaning": "五种工具按用途进入"
+        },
+        {
+          "id": "C00_E02",
+          "start_seconds": 2.15,
+          "end_seconds": 3.1,
+          "check_frames": [
+            70,
+            79,
+            87
+          ],
+          "meaning": "五个入口按同一基线归位"
+        },
+        {
+          "id": "C00_E03",
+          "start_seconds": 3.55,
+          "end_seconds": 4.2,
+          "check_frames": [
+            110,
+            116,
+            122
+          ],
+          "meaning": "选择原则出现"
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "title": "VoiceStudio",
+      "kicker": "",
+      "footer": "",
+      "label": "01 / VoiceStudio · 声音制作",
+      "start_frame": 288,
+      "end_frame_exclusive": 354,
+      "frame_count": 66,
+      "overview_frames": [
+        0,
+        32,
+        65
+      ],
+      "process_events": [
+        {
+          "id": "A03_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.2,
+          "check_frames": [
+            13,
+            33,
+            53
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "title": "VoiceStudio：把录音变成声音工作流",
+      "kicker": "01 / VOICE",
+      "footer": "流程示意与官方界面 · 仅使用获授权声音 · 商用需核对软件与模型许可",
+      "label": "",
+      "start_frame": 354,
+      "end_frame_exclusive": 708,
+      "frame_count": 354,
+      "overview_frames": [
+        0,
+        176,
+        353
+      ],
+      "process_events": [
+        {
+          "id": "C01_E01",
+          "start_seconds": 0.3,
+          "end_seconds": 1.9,
+          "check_frames": [
+            19,
+            33,
+            47
+          ],
+          "meaning": "参考录音输入"
+        },
+        {
+          "id": "C01_E02",
+          "start_seconds": 1.3,
+          "end_seconds": 2.3,
+          "check_frames": [
+            45,
+            54,
+            63
+          ],
+          "meaning": "录音特征传递，保留录音"
+        },
+        {
+          "id": "C01_E03",
+          "start_seconds": 2.3,
+          "end_seconds": 3,
+          "check_frames": [
+            73,
+            80,
+            86
+          ],
+          "meaning": "到达后生成音色档案"
+        },
+        {
+          "id": "C01_E04",
+          "start_seconds": 3.1,
+          "end_seconds": 3.9,
+          "check_frames": [
+            98,
+            105,
+            112
+          ],
+          "meaning": "音色分配三类应用"
+        },
+        {
+          "id": "C01_E05",
+          "start_seconds": 4.9,
+          "end_seconds": 6.7,
+          "check_frames": [
+            158,
+            174,
+            190
+          ],
+          "meaning": "语言输出逐个建立"
+        },
+        {
+          "id": "C01_E06",
+          "start_seconds": 8.15,
+          "end_seconds": 8.75,
+          "check_frames": [
+            248,
+            253,
+            259
+          ],
+          "meaning": "官方配音界面与授权层级"
+        },
+        {
+          "id": "C01_E07",
+          "start_seconds": 10,
+          "end_seconds": 10.6,
+          "check_frames": [
+            304,
+            309,
+            314
+          ],
+          "meaning": "模型许可条件进一步标记"
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "title": "Paperclip",
+      "kicker": "",
+      "footer": "",
+      "label": "02 / Paperclip · 任务协作",
+      "start_frame": 708,
+      "end_frame_exclusive": 788,
+      "frame_count": 80,
+      "overview_frames": [
+        0,
+        40,
+        79
+      ],
+      "process_events": [
+        {
+          "id": "A04_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.6666666666666665,
+          "check_frames": [
+            16,
+            40,
+            64
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "title": "Paperclip：让任务找到合适的 Agent",
+      "kicker": "02 / ORCHESTRATION",
+      "footer": "流程示意 · 需配置 Agent 与模型服务，调用可能付费 · 周涨星未证实",
+      "label": "",
+      "start_frame": 788,
+      "end_frame_exclusive": 1219,
+      "frame_count": 431,
+      "overview_frames": [
+        0,
+        215,
+        430
+      ],
+      "process_events": [
+        {
+          "id": "C02_E01",
+          "start_seconds": 0.35,
+          "end_seconds": 0.9,
+          "check_frames": [
+            14,
+            19,
+            24
+          ],
+          "meaning": "建立目标"
+        },
+        {
+          "id": "C02_E02",
+          "start_seconds": 1.15,
+          "end_seconds": 2.35,
+          "check_frames": [
+            42,
+            52,
+            63
+          ],
+          "meaning": "三项任务并行派发"
+        },
+        {
+          "id": "C02_E03",
+          "start_seconds": 3.25,
+          "end_seconds": 4.6,
+          "check_frames": [
+            106,
+            118,
+            130
+          ],
+          "meaning": "三任务各自执行"
+        },
+        {
+          "id": "C02_E04",
+          "start_seconds": 4.65,
+          "end_seconds": 5.75,
+          "check_frames": [
+            146,
+            156,
+            166
+          ],
+          "meaning": "任务A回传"
+        },
+        {
+          "id": "C02_E05",
+          "start_seconds": 5.15,
+          "end_seconds": 6.25,
+          "check_frames": [
+            161,
+            171,
+            181
+          ],
+          "meaning": "任务B回传"
+        },
+        {
+          "id": "C02_E06",
+          "start_seconds": 5.65,
+          "end_seconds": 6.75,
+          "check_frames": [
+            176,
+            186,
+            196
+          ],
+          "meaning": "任务C回传"
+        },
+        {
+          "id": "C02_E07",
+          "start_seconds": 6.75,
+          "end_seconds": 7.45,
+          "check_frames": [
+            207,
+            213,
+            219
+          ],
+          "meaning": "统一进度汇总"
+        },
+        {
+          "id": "C02_E08",
+          "start_seconds": 8.45,
+          "end_seconds": 9.25,
+          "check_frames": [
+            258,
+            266,
+            273
+          ],
+          "meaning": "按配置显示预算约束"
+        },
+        {
+          "id": "C02_E09",
+          "start_seconds": 10.55,
+          "end_seconds": 11.27,
+          "check_frames": [
+            321,
+            327,
+            334
+          ],
+          "meaning": "官方界面切入"
+        },
+        {
+          "id": "C02_E10",
+          "start_seconds": 12.55,
+          "end_seconds": 13.15,
+          "check_frames": [
+            380,
+            386,
+            391
+          ],
+          "meaning": "官方界面局部查看"
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "title": "MemOS",
+      "kicker": "",
+      "footer": "",
+      "label": "03 / MemOS · 长期记忆",
+      "start_frame": 1219,
+      "end_frame_exclusive": 1287,
+      "frame_count": 68,
+      "overview_frames": [
+        0,
+        34,
+        67
+      ],
+      "process_events": [
+        {
+          "id": "A05_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.2666666666666666,
+          "check_frames": [
+            14,
+            34,
+            54
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "title": "MemOS：让记忆进入下一次对话",
+      "kicker": "03 / MEMORY",
+      "footer": "流程示意 · 节省幅度依任务与配置 · 项目方数据不等于通用保证",
+      "label": "",
+      "start_frame": 1287,
+      "end_frame_exclusive": 1850,
+      "frame_count": 563,
+      "overview_frames": [
+        0,
+        281,
+        562
+      ],
+      "process_events": [
+        {
+          "id": "C03_E01",
+          "start_seconds": 0.25,
+          "end_seconds": 0.85,
+          "check_frames": [
+            11,
+            16,
+            22
+          ],
+          "meaning": "建立对话上下文"
+        },
+        {
+          "id": "C03_E02",
+          "start_seconds": 1.45,
+          "end_seconds": 2.8,
+          "check_frames": [
+            52,
+            64,
+            76
+          ],
+          "meaning": "M1/M2/M3副本入库"
+        },
+        {
+          "id": "C03_E03",
+          "start_seconds": 3.2,
+          "end_seconds": 3.85,
+          "check_frames": [
+            100,
+            106,
+            112
+          ],
+          "meaning": "持久保留源记录"
+        },
+        {
+          "id": "C03_E04",
+          "start_seconds": 4.35,
+          "end_seconds": 5.5,
+          "check_frames": [
+            137,
+            148,
+            158
+          ],
+          "meaning": "查询并行分发双路"
+        },
+        {
+          "id": "C03_E05",
+          "start_seconds": 6.15,
+          "end_seconds": 7.3,
+          "check_frames": [
+            191,
+            202,
+            212
+          ],
+          "meaning": "返回候选记忆"
+        },
+        {
+          "id": "C03_E06",
+          "start_seconds": 7.8,
+          "end_seconds": 8.65,
+          "check_frames": [
+            239,
+            247,
+            254
+          ],
+          "meaning": "选中M1/M2并排除M3"
+        },
+        {
+          "id": "C03_E07",
+          "start_seconds": 9.45,
+          "end_seconds": 10.65,
+          "check_frames": [
+            291,
+            302,
+            312
+          ],
+          "meaning": "取回相关副本"
+        },
+        {
+          "id": "C03_E08",
+          "start_seconds": 11.1,
+          "end_seconds": 11.75,
+          "check_frames": [
+            337,
+            343,
+            349
+          ],
+          "meaning": "复用上下文"
+        },
+        {
+          "id": "C03_E09",
+          "start_seconds": 12.85,
+          "end_seconds": 13.57,
+          "check_frames": [
+            390,
+            396,
+            403
+          ],
+          "meaning": "开发者接入结构"
+        },
+        {
+          "id": "C03_E10",
+          "start_seconds": 14.45,
+          "end_seconds": 15.7,
+          "check_frames": [
+            441,
+            452,
+            464
+          ],
+          "meaning": "记忆副本送入应用"
+        },
+        {
+          "id": "C03_E11",
+          "start_seconds": 16.15,
+          "end_seconds": 16.75,
+          "check_frames": [
+            488,
+            494,
+            499
+          ],
+          "meaning": "到达后显示已接收"
+        },
+        {
+          "id": "C03_E12",
+          "start_seconds": 17.05,
+          "end_seconds": 17.6,
+          "check_frames": [
+            515,
+            520,
+            525
+          ],
+          "meaning": "产品接入条件"
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "title": "Ollama + Open WebUI",
+      "kicker": "",
+      "footer": "",
+      "label": "04 / Ollama + Open WebUI",
+      "start_frame": 1850,
+      "end_frame_exclusive": 1926,
+      "frame_count": 76,
+      "overview_frames": [
+        0,
+        38,
+        75
+      ],
+      "process_events": [
+        {
+          "id": "A06_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.533333333333333,
+          "check_frames": [
+            15,
+            38,
+            61
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "title": "Ollama + Open WebUI：在本地协作",
+      "kicker": "04 / LOCAL",
+      "footer": "需先下载本地模型 · WebUI 品牌条款、模型许可需分别核对",
+      "label": "",
+      "start_frame": 1926,
+      "end_frame_exclusive": 2223,
+      "frame_count": 297,
+      "overview_frames": [
+        0,
+        148,
+        296
+      ],
+      "process_events": [
+        {
+          "id": "C04_E01",
+          "start_seconds": 0.18,
+          "end_seconds": 1.6,
+          "check_frames": [
+            14,
+            27,
+            39
+          ],
+          "meaning": "模型下载到本机"
+        },
+        {
+          "id": "C04_E02",
+          "start_seconds": 1.55,
+          "end_seconds": 2.55,
+          "check_frames": [
+            52,
+            61,
+            70
+          ],
+          "meaning": "模型接入Ollama"
+        },
+        {
+          "id": "C04_E03",
+          "start_seconds": 2.65,
+          "end_seconds": 3.65,
+          "check_frames": [
+            86,
+            94,
+            104
+          ],
+          "meaning": "连接WebUI"
+        },
+        {
+          "id": "C04_E04",
+          "start_seconds": 3.55,
+          "end_seconds": 4.4,
+          "check_frames": [
+            112,
+            119,
+            127
+          ],
+          "meaning": "建立本地回路"
+        },
+        {
+          "id": "C04_E05",
+          "start_seconds": 4.55,
+          "end_seconds": 5.65,
+          "check_frames": [
+            143,
+            153,
+            163
+          ],
+          "meaning": "外网插头分离"
+        },
+        {
+          "id": "C04_E06",
+          "start_seconds": 5.65,
+          "end_seconds": 6.05,
+          "check_frames": [
+            172,
+            176,
+            179
+          ],
+          "meaning": "本地对话继续"
+        },
+        {
+          "id": "C04_E07",
+          "start_seconds": 7.1,
+          "end_seconds": 7.75,
+          "check_frames": [
+            217,
+            223,
+            229
+          ],
+          "meaning": "平台兼容范围"
+        },
+        {
+          "id": "C04_E08",
+          "start_seconds": 8.15,
+          "end_seconds": 8.95,
+          "check_frames": [
+            249,
+            256,
+            264
+          ],
+          "meaning": "本地模型A/B切换"
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "title": "Impeccable",
+      "kicker": "",
+      "footer": "",
+      "label": "05 / Impeccable · 界面设计",
+      "start_frame": 2223,
+      "end_frame_exclusive": 2294,
+      "frame_count": 71,
+      "overview_frames": [
+        0,
+        35,
+        70
+      ],
+      "process_events": [
+        {
+          "id": "A07_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.3666666666666667,
+          "check_frames": [
+            14,
+            36,
+            57
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "title": "Impeccable：把设计判断交给工作流",
+      "kicker": "05 / DESIGN",
+      "footer": "流程示意与官网案例 · 星标为 2026-10-08 核查快照 · 效果依工具与任务",
+      "label": "",
+      "start_frame": 2294,
+      "end_frame_exclusive": 2580,
+      "frame_count": 286,
+      "overview_frames": [
+        0,
+        142,
+        285
+      ],
+      "process_events": [
+        {
+          "id": "C05_E01",
+          "start_seconds": 0.45,
+          "end_seconds": 1.35,
+          "check_frames": [
+            19,
+            27,
+            35
+          ],
+          "meaning": "标题层级重排"
+        },
+        {
+          "id": "C05_E02",
+          "start_seconds": 0.55,
+          "end_seconds": 1.35,
+          "check_frames": [
+            21,
+            29,
+            36
+          ],
+          "meaning": "完成卡上移"
+        },
+        {
+          "id": "C05_E03",
+          "start_seconds": 1.35,
+          "end_seconds": 2.25,
+          "check_frames": [
+            46,
+            54,
+            62
+          ],
+          "meaning": "完成卡横移"
+        },
+        {
+          "id": "C05_E04",
+          "start_seconds": 2.25,
+          "end_seconds": 2.9,
+          "check_frames": [
+            71,
+            77,
+            83
+          ],
+          "meaning": "任务卡横移"
+        },
+        {
+          "id": "C05_E05",
+          "start_seconds": 2.9,
+          "end_seconds": 3.48,
+          "check_frames": [
+            90,
+            96,
+            101
+          ],
+          "meaning": "三卡归入同一栅格"
+        },
+        {
+          "id": "C05_E06",
+          "start_seconds": 3.6,
+          "end_seconds": 4.1,
+          "check_frames": [
+            111,
+            115,
+            120
+          ],
+          "meaning": "显示更正星标约7.85万"
+        },
+        {
+          "id": "C05_E07",
+          "start_seconds": 6.15,
+          "end_seconds": 7,
+          "check_frames": [
+            190,
+            197,
+            205
+          ],
+          "meaning": "展开官网案例"
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "title": "减少重复劳动",
+      "kicker": "",
+      "footer": "",
+      "label": "",
+      "start_frame": 2580,
+      "end_frame_exclusive": 2648,
+      "frame_count": 68,
+      "overview_frames": [
+        0,
+        34,
+        67
+      ],
+      "process_events": [
+        {
+          "id": "A08_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.2666666666666666,
+          "check_frames": [
+            14,
+            34,
+            54
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "title": "交付真正的结果",
+      "kicker": "",
+      "footer": "",
+      "label": "",
+      "start_frame": 2648,
+      "end_frame_exclusive": 2715,
+      "frame_count": 67,
+      "overview_frames": [
+        0,
+        33,
+        66
+      ],
+      "process_events": [
+        {
+          "id": "A09_E01",
+          "start_seconds": 0,
+          "end_seconds": 2.2333333333333334,
+          "check_frames": [
+            13,
+            34,
+            54
+          ],
+          "meaning": "人物动作关键姿势；镜头停留不超过2.8秒"
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "title": "ECHO · AI 新玩法",
+      "kicker": "KEEP EXPLORING",
+      "footer": "项目链接、使用条件及原声数字说明见随片核查文档",
+      "label": "",
+      "start_frame": 2715,
+      "end_frame_exclusive": 2777,
+      "frame_count": 62,
+      "overview_frames": [
+        0,
+        30,
+        61
+      ],
+      "process_events": [
+        {
+          "id": "C06_E01",
+          "start_seconds": 0,
+          "end_seconds": 0.65,
+          "check_frames": [
+            4,
+            10,
+            16
+          ],
+          "meaning": "收束工具用途与关注入口"
+        }
+      ]
+    }
+  ]
+}

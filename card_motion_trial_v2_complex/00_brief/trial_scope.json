@@ -1,0 +1,16 @@
+{
+  "visual_trial": true,
+  "narration_provided": false,
+  "timing_requires_voice_alignment_for_production": true,
+  "source_standard": "4.5",
+  "protect": [
+    "V4 entire tree",
+    "V5 card_motion_trial_v1"
+  ],
+  "allowed_changes": "V5/card_motion_trial_v2_complex only; new card content, layout and semantic motion",
+  "flow": "existing deterministic SVG > Chrome frames > FFmpeg; no AE or new animation framework",
+  "episode_overrides": {
+    "brand.episode_title": "复杂信息卡视觉试验：工程结构恢复",
+    "video.duration_basis": "visual_trial_timing_pending_supplied_voice"
+  }
+}

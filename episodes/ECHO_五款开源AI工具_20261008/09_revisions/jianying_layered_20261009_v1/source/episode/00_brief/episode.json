@@ -1,0 +1,38 @@
+{
+  "project_name": "ECHO_五款开源AI工具_20261008",
+  "standard_version": "4.5",
+  "standard_status": "active",
+  "topic": "五款AI工具与工作流：VoiceStudio / Paperclip / MemOS / Ollama + Open WebUI / Impeccable",
+  "inputs": {
+    "voice": {
+      "original_path": "D:\\Downloads\\Video\\10月8日\\10月8日.mp3",
+      "local": "00_brief/input/voice_original.mp3",
+      "sha256": "dbf5b56b2d112cce6820ca2ad81f104b99982220b500b7acc2fe544da705aa1a"
+    },
+    "srt": {
+      "original_path": "D:\\Downloads\\Video\\10月8日\\10月8日.srt",
+      "local": "00_brief/input/subtitles_original.srt",
+      "sha256": "44af96b0ed497a7d0f5940254218c3c39f953a69073c6bfaea11d3a34cb10bc8"
+    }
+  },
+  "duration_seconds": 92.551833,
+  "fps": 30,
+  "frame_count": 2777,
+  "subtitle_mode": "no_burned_narration_captions",
+  "bgm_mode": "none",
+  "sfx_mode": "none",
+  "project_format": "source_project",
+  "jianying_import_requested": false,
+  "user_authorized_fact_handling": "保留原配音，画面更正名称、注明使用条件，并附核查说明",
+  "card_motion_adoption": "Adapt semantic transport, masking, layer decomposition/reassembly, local corrections and result holds from the two V5 trials; new content and event times for this voice.",
+  "per_episode_overrides": {
+    "brand.episode_title": "五款AI工具，放进你的工作流",
+    "brand.series_label_template": "ECHO · AI新玩法",
+    "delivery.caption_mode": "no_burned_narration_captions",
+    "audio.bgm_default": "none_for_this_master",
+    "audio.sfx_default": "none_preserve_supplied_narration"
+  },
+  "render_status": "rendered_complete_for_user_review",
+  "scope": "new episode only; protect V4, V5 trial v1 and v2, original inputs",
+  "delivery_report": "08_qc/delivery_report.json"
+}

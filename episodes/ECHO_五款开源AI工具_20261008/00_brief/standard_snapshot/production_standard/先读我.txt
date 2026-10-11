@@ -1,0 +1,30 @@
+视频制作标准：以根目录 production_standard.json 指定的当前版本为准。
+
+当前已按用户明确委托完成自检后启用，后续直接按入口指定版本制作，不需要用户逐项审核。
+先打开入口 review 字段指向的标准页，阅读简短“自检结论”；完整修改说明、SOP、提示词、参数与制作基准均可查阅。
+本轮按最新无字幕母版的制作方法更新；剪映导入不在视频制作流程中，需要用户另行明确提出。
+已有明确要求继续有效。当前 user_approved=true 表示用户明确授权按助手自检结果使用；approval_mode=delegated_self_check，user_personal_item_review=false，不宣称用户亲自逐条审阅。后续本集要求仍可覆盖。
+
+唯一入口与新集
+python production_standard/standard_loader.py
+python production_standard/start_episode.py --name 新集名称 --srt 字幕路径 --voice 配音路径
+新入口只建立独立输入、标准锁与完整快照；没有自动生产图片/视频。
+默认 project_format=source_project，jianying_import_requested=false。
+技术配置、可用软件或历史工程均不能代替用户的剪映导入请求。
+读快照中的完整 SOP、统一提示词、默认参数、制作基准与参考资产后继续制作。
+
+标准维护
+SOP 与 rules.json、prompts.json、defaults.json 是当前可审阅内容源。
+build_standard.py 只从当前 manifest 指定的内容生成提示词文档、规则表、来源说明、审阅页并刷新哈希，不会从旧 SOP 重建，也不回写历史默认值。
+不要直接修改派生文档后遗漏 JSON 内容源；改标准同步规则、提示词、默认值、制作基准、变更说明和哈希。
+verify_standard.py 检查入口完整性、新集默认与快照、历史入口保护、审阅页和反馈哈希。
+package_standard.py 只打包 manifest 选定内容及显式补充文件，不自动收入旧集或剪映导入工程。
+
+可选反馈
+标准已启用，规则清单不是待办，也无需逐项提交。以后需要调整时可填写“需修改 / 不采用”的备注并导出反馈，或直接回复修改要求。
+页面只在浏览器本地保存，不会自行改标准。旧版本反馈哈希不匹配时不能自动应用。
+
+历史
+history 目录和旧集保留原始版本与证据，不把新版本号回填到旧片。
+旧渲染脚本含固定文案、镜号、时间和素材；只可参考方法，不能直接充当新集。
+历史构建器须显式 --historical-rebuild；不会因此成为当前制作入口。

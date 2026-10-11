@@ -1,0 +1,3122 @@
+{
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "cards": [
+    {
+      "id": "A01",
+      "start_frame": 0,
+      "end_frame": 67,
+      "panels": [],
+      "text_frames": "card_text/A01.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A01_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 0,
+          "end_frame": 67,
+          "path": "card_media/A01_background.png",
+          "kind": "image",
+          "sha256": "c1f36ca57026db6e9f5d40260381c0656b3027a6f90d7ab763e19fc8cba27fea",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "A02",
+      "start_frame": 67,
+      "end_frame": 134,
+      "panels": [],
+      "text_frames": "card_text/A02.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A02_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 67,
+          "end_frame": 134,
+          "path": "card_media/A02_background.png",
+          "kind": "image",
+          "sha256": "d8b46734d8d763815e0788e8bd48afb0fe26604444ba6bdedcb596ff85955653",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C00",
+      "start_frame": 134,
+      "end_frame": 288,
+      "panels": [
+        {
+          "owner": "tool1",
+          "owner_label": "声音制作·VoiceStudio",
+          "slot": 0,
+          "bounds": [
+            110,
+            360,
+            320,
+            350
+          ],
+          "source_id": "box_scenes_a.js_4_96__common.js_18_55_0"
+        },
+        {
+          "owner": "tool2",
+          "owner_label": "任务协作·Paperclip",
+          "slot": 1,
+          "bounds": [
+            458,
+            360,
+            320,
+            350
+          ],
+          "source_id": "box_scenes_a.js_4_96__common.js_18_55_1"
+        },
+        {
+          "owner": "tool3",
+          "owner_label": "长期记忆·MemOS",
+          "slot": 2,
+          "bounds": [
+            806,
+            360,
+            320,
+            350
+          ],
+          "source_id": "box_scenes_a.js_4_96__common.js_18_55_2"
+        },
+        {
+          "owner": "tool4",
+          "owner_label": "本地模型·Ollama + WebUI",
+          "slot": 3,
+          "bounds": [
+            1154,
+            360,
+            320,
+            350
+          ],
+          "source_id": "box_scenes_a.js_4_96__common.js_18_55_3"
+        },
+        {
+          "owner": "tool5",
+          "owner_label": "界面设计·Impeccable",
+          "slot": 4,
+          "bounds": [
+            1502,
+            360,
+            320,
+            350
+          ],
+          "source_id": "box_scenes_a.js_4_96__common.js_18_55_4"
+        }
+      ],
+      "text_frames": "card_text/C00.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "icon_scenes_a.js_4_215__common.js_18_55_0",
+          "owner": "tool1"
+        },
+        {
+          "id": "icon_scenes_a.js_4_215__common.js_18_55_1",
+          "owner": "tool2"
+        },
+        {
+          "id": "icon_scenes_a.js_4_215__common.js_18_55_2",
+          "owner": "tool3"
+        },
+        {
+          "id": "icon_scenes_a.js_4_215__common.js_18_55_3",
+          "owner": "tool4"
+        },
+        {
+          "id": "icon_scenes_a.js_4_215__common.js_18_55_4",
+          "owner": "tool5"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C00_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_background.png",
+          "kind": "image",
+          "sha256": "bd65dc4d9850b4b8556c37ffd60629f17a2001da30dc360f932d1738fb24fdec",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C00_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_shared_progress.mov",
+          "kind": "video",
+          "sha256": "22e6cefc42851a0a0f390a8f299c111b1a70d74de0dd7db6ff429bb3740eeba2",
+          "unique_rasters": 154
+        },
+        {
+          "id": "C00_tool1_box",
+          "owner": "tool1",
+          "role": "box",
+          "layer_key": "tool1_box",
+          "z": 10,
+          "owner_label": "声音制作·VoiceStudio",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_a.js_4_96__common.js_18_55_0"
+          ],
+          "crop": [
+            106,
+            356,
+            328,
+            436
+          ],
+          "width": 328,
+          "height": 436,
+          "x": 270.0,
+          "y": 574.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool1_box.mov",
+          "kind": "video",
+          "sha256": "b7f20ebcf96d03901740526482deff48ef571be31c80a3c3422b74bf7f7e0624",
+          "unique_rasters": 21
+        },
+        {
+          "id": "C00_tool2_box",
+          "owner": "tool2",
+          "role": "box",
+          "layer_key": "tool2_box",
+          "z": 10,
+          "owner_label": "任务协作·Paperclip",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_a.js_4_96__common.js_18_55_1"
+          ],
+          "crop": [
+            454,
+            356,
+            328,
+            504
+          ],
+          "width": 328,
+          "height": 504,
+          "x": 618.0,
+          "y": 608.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool2_box.mov",
+          "kind": "video",
+          "sha256": "ea772c14d911e2fb90964aeffe27f4370c22297ddfec7206b500f1fff92baa5a",
+          "unique_rasters": 51
+        },
+        {
+          "id": "C00_tool3_box",
+          "owner": "tool3",
+          "role": "box",
+          "layer_key": "tool3_box",
+          "z": 10,
+          "owner_label": "长期记忆·MemOS",
+          "slot": 2,
+          "source_ids": [
+            "box_scenes_a.js_4_96__common.js_18_55_2"
+          ],
+          "crop": [
+            802,
+            356,
+            328,
+            438
+          ],
+          "width": 328,
+          "height": 438,
+          "x": 966.0,
+          "y": 575.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool3_box.mov",
+          "kind": "video",
+          "sha256": "b5d298f99466c184f2bd34e71863234cc3e7acb3c3ac007115e7a3c1082238b0",
+          "unique_rasters": 21
+        },
+        {
+          "id": "C00_tool4_box",
+          "owner": "tool4",
+          "role": "box",
+          "layer_key": "tool4_box",
+          "z": 10,
+          "owner_label": "本地模型·Ollama + WebUI",
+          "slot": 3,
+          "source_ids": [
+            "box_scenes_a.js_4_96__common.js_18_55_3"
+          ],
+          "crop": [
+            1150,
+            356,
+            328,
+            506
+          ],
+          "width": 328,
+          "height": 506,
+          "x": 1314.0,
+          "y": 609.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool4_box.mov",
+          "kind": "video",
+          "sha256": "05a5173c6cc2236061f792f43a1c7c147ed0a6262673b1e920465072b910603e",
+          "unique_rasters": 51
+        },
+        {
+          "id": "C00_tool5_box",
+          "owner": "tool5",
+          "role": "box",
+          "layer_key": "tool5_box",
+          "z": 10,
+          "owner_label": "界面设计·Impeccable",
+          "slot": 4,
+          "source_ids": [
+            "box_scenes_a.js_4_96__common.js_18_55_4"
+          ],
+          "crop": [
+            1498,
+            356,
+            328,
+            440
+          ],
+          "width": 328,
+          "height": 440,
+          "x": 1662.0,
+          "y": 576.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool5_box.mov",
+          "kind": "video",
+          "sha256": "f4f66b7288fc407b3e6ce7f435c257b377fe36dd4a470a744d7261b2095c2d90",
+          "unique_rasters": 21
+        },
+        {
+          "id": "C00_tool1_graphics",
+          "owner": "tool1",
+          "role": "graphics",
+          "layer_key": "tool1_graphics",
+          "z": 30,
+          "owner_label": "声音制作·VoiceStudio",
+          "slot": 0,
+          "source_ids": [
+            "icon_scenes_a.js_4_215__common.js_18_55_0"
+          ],
+          "crop": [
+            228,
+            470,
+            84,
+            154
+          ],
+          "width": 84,
+          "height": 154,
+          "x": 270.0,
+          "y": 547.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool1_graphics.mov",
+          "kind": "video",
+          "sha256": "ff047d070db6e28ad8afdfb0471b692204b115e67ea085fda2e7185f6d1b01ae",
+          "unique_rasters": 21
+        },
+        {
+          "id": "C00_tool2_graphics",
+          "owner": "tool2",
+          "role": "graphics",
+          "layer_key": "tool2_graphics",
+          "z": 30,
+          "owner_label": "任务协作·Paperclip",
+          "slot": 1,
+          "source_ids": [
+            "icon_scenes_a.js_4_215__common.js_18_55_1"
+          ],
+          "crop": [
+            584,
+            469,
+            68,
+            226
+          ],
+          "width": 68,
+          "height": 226,
+          "x": 618.0,
+          "y": 582.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool2_graphics.mov",
+          "kind": "video",
+          "sha256": "dcd8d157ca10ea6585e0a05e9ee61c754eabfdfaf1b39a69cb052bf688a831ed",
+          "unique_rasters": 51
+        },
+        {
+          "id": "C00_tool3_graphics",
+          "owner": "tool3",
+          "role": "graphics",
+          "layer_key": "tool3_graphics",
+          "z": 30,
+          "owner_label": "长期记忆·MemOS",
+          "slot": 2,
+          "source_ids": [
+            "icon_scenes_a.js_4_215__common.js_18_55_2"
+          ],
+          "crop": [
+            924,
+            471,
+            84,
+            152
+          ],
+          "width": 84,
+          "height": 152,
+          "x": 966.0,
+          "y": 547.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool3_graphics.mov",
+          "kind": "video",
+          "sha256": "b7c8b9bbb254d32eddb5604e150ed2938a0be626dc49f20e7296aca831eccd72",
+          "unique_rasters": 21
+        },
+        {
+          "id": "C00_tool4_graphics",
+          "owner": "tool4",
+          "role": "graphics",
+          "layer_key": "tool4_graphics",
+          "z": 30,
+          "owner_label": "本地模型·Ollama + WebUI",
+          "slot": 3,
+          "source_ids": [
+            "icon_scenes_a.js_4_215__common.js_18_55_3"
+          ],
+          "crop": [
+            1275,
+            470,
+            78,
+            222
+          ],
+          "width": 78,
+          "height": 222,
+          "x": 1314.0,
+          "y": 581.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool4_graphics.mov",
+          "kind": "video",
+          "sha256": "f4da6f6669055e29b3e8349b9750d36e63099a53baa33958eaf350eb6ec63ec6",
+          "unique_rasters": 51
+        },
+        {
+          "id": "C00_tool5_graphics",
+          "owner": "tool5",
+          "role": "graphics",
+          "layer_key": "tool5_graphics",
+          "z": 30,
+          "owner_label": "界面设计·Impeccable",
+          "slot": 4,
+          "source_ids": [
+            "icon_scenes_a.js_4_215__common.js_18_55_4"
+          ],
+          "crop": [
+            1623,
+            468,
+            78,
+            160
+          ],
+          "width": 78,
+          "height": 160,
+          "x": 1662.0,
+          "y": 548.0,
+          "start_frame": 134,
+          "end_frame": 288,
+          "path": "card_media/C00_tool5_graphics.mov",
+          "kind": "video",
+          "sha256": "1fd00015e25f9b768d49154eb0fb9a9546cefef35379704a518bad6859963a86",
+          "unique_rasters": 21
+        }
+      ]
+    },
+    {
+      "id": "A03",
+      "start_frame": 288,
+      "end_frame": 354,
+      "panels": [],
+      "text_frames": "card_text/A03.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A03_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "raw_art_label_plate",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 288,
+          "end_frame": 354,
+          "path": "card_media/A03_background.png",
+          "kind": "image",
+          "sha256": "f0d90c45942475b3c8480e46ffa57aa0e4cf90216fba7c8fcad2780f8e2ccae6",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C01",
+      "start_frame": 354,
+      "end_frame": 708,
+      "panels": [
+        {
+          "owner": "left",
+          "owner_label": "左框·参考录音与配音制作",
+          "slot": 0,
+          "bounds": [
+            90,
+            282,
+            740,
+            640
+          ],
+          "source_id": "box_scenes_a.js_7_66__common.js_18_55_0"
+        },
+        {
+          "owner": "right",
+          "owner_label": "右框·音色档案与许可核对",
+          "slot": 1,
+          "bounds": [
+            870,
+            282,
+            960,
+            640
+          ],
+          "source_id": "box_scenes_a.js_7_86__common.js_18_55_0"
+        }
+      ],
+      "text_frames": "card_text/C01.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "box_common.js_12_36__scenes_a.js_8_16__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "waveform_scenes_a.js_6_54__scenes_a.js_8_115__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_common.js_12_36__scenes_a.js_13_74__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_common.js_12_36__scenes_a.js_13_74__common.js_18_55_1",
+          "owner": "left"
+        },
+        {
+          "id": "box_common.js_12_36__scenes_a.js_13_74__common.js_18_55_2",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_a.js_15_93__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "waveform_scenes_a.js_6_54__scenes_a.js_15_187__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_a.js_15_93__common.js_18_55_1",
+          "owner": "left"
+        },
+        {
+          "id": "waveform_scenes_a.js_6_54__scenes_a.js_15_187__common.js_18_55_1",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_a.js_15_93__common.js_18_55_2",
+          "owner": "left"
+        },
+        {
+          "id": "waveform_scenes_a.js_6_54__scenes_a.js_15_187__common.js_18_55_2",
+          "owner": "left"
+        },
+        {
+          "id": "img_scenes_a.js_17_77__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_a.js_9_50__common.js_18_55_0",
+          "owner": "shared"
+        },
+        {
+          "id": "packet_common.js_10_39__scenes_a.js_9_87__common.js_18_55_0",
+          "owner": "shared"
+        },
+        {
+          "id": "box_scenes_a.js_10_47__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "icon_scenes_a.js_10_90__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "waveform_scenes_a.js_6_54__scenes_a.js_11_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "img_scenes_a.js_16_59__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_a.js_18_127__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_a.js_18_297__common.js_18_55_0",
+          "owner": "right"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C01_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_background.png",
+          "kind": "image",
+          "sha256": "bd65dc4d9850b4b8556c37ffd60629f17a2001da30dc360f932d1738fb24fdec",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C01_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_shared_progress.mov",
+          "kind": "video",
+          "sha256": "4d42dd6883569ba08359de2731f280702dd6f38e91bcd54ba4fa57282e4313eb",
+          "unique_rasters": 354
+        },
+        {
+          "id": "C01_left_box",
+          "owner": "left",
+          "role": "box",
+          "layer_key": "left_box",
+          "z": 10,
+          "owner_label": "左框·参考录音与配音制作",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_a.js_7_66__common.js_18_55_0"
+          ],
+          "crop": [
+            86,
+            278,
+            748,
+            648
+          ],
+          "width": 748,
+          "height": 648,
+          "x": 460.0,
+          "y": 602.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_left_box.png",
+          "kind": "image",
+          "sha256": "3a297ee4e23413259672350e318f4b5d9e88c833f27d5af2627ab08d0f1351cb",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C01_right_box",
+          "owner": "right",
+          "role": "box",
+          "layer_key": "right_box",
+          "z": 10,
+          "owner_label": "右框·音色档案与许可核对",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_a.js_7_86__common.js_18_55_0"
+          ],
+          "crop": [
+            866,
+            278,
+            968,
+            648
+          ],
+          "width": 968,
+          "height": 648,
+          "x": 1350.0,
+          "y": 602.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_right_box.png",
+          "kind": "image",
+          "sha256": "e645f65feb78f15c32eb9113e792c9761c29ea1ba04069dedcb155a684ce49a1",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C01_left_graphics",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_graphics",
+          "z": 30,
+          "owner_label": "左框·参考录音与配音制作",
+          "slot": 0,
+          "source_ids": [
+            "box_common.js_12_36__scenes_a.js_8_16__common.js_18_55_0",
+            "waveform_scenes_a.js_6_54__scenes_a.js_8_115__common.js_18_55_0",
+            "box_common.js_12_36__scenes_a.js_13_74__common.js_18_55_0",
+            "box_common.js_12_36__scenes_a.js_13_74__common.js_18_55_1",
+            "box_common.js_12_36__scenes_a.js_13_74__common.js_18_55_2",
+            "box_scenes_a.js_15_93__common.js_18_55_0",
+            "waveform_scenes_a.js_6_54__scenes_a.js_15_187__common.js_18_55_0",
+            "box_scenes_a.js_15_93__common.js_18_55_1",
+            "waveform_scenes_a.js_6_54__scenes_a.js_15_187__common.js_18_55_1",
+            "box_scenes_a.js_15_93__common.js_18_55_2",
+            "waveform_scenes_a.js_6_54__scenes_a.js_15_187__common.js_18_55_2",
+            "img_scenes_a.js_17_77__common.js_18_55_0"
+          ],
+          "crop": [
+            102,
+            316,
+            698,
+            532
+          ],
+          "width": 698,
+          "height": 532,
+          "x": 451.0,
+          "y": 582.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_left_graphics.mov",
+          "kind": "video",
+          "sha256": "925c0d40691300f7ccdb5384b30c8c4b88086de46729a076719af363f5db431f",
+          "unique_rasters": 99
+        },
+        {
+          "id": "C01_shared_extraction",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_extraction",
+          "z": 40,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "path_common.js_9_45__scenes_a.js_9_50__common.js_18_55_0",
+            "packet_common.js_10_39__scenes_a.js_9_87__common.js_18_55_0"
+          ],
+          "crop": [
+            729,
+            507,
+            340,
+            114
+          ],
+          "width": 340,
+          "height": 114,
+          "x": 899.0,
+          "y": 564.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_shared_extraction.mov",
+          "kind": "video",
+          "sha256": "5cd20f045f01a194467156e4d5078501f3b83b8d360a9cd4a4ce56e1dcbf0485",
+          "unique_rasters": 33
+        },
+        {
+          "id": "C01_right_foreground",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_foreground",
+          "z": 50,
+          "owner_label": "右框·音色档案与许可核对",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_a.js_10_47__common.js_18_55_0",
+            "icon_scenes_a.js_10_90__common.js_18_55_0",
+            "waveform_scenes_a.js_6_54__scenes_a.js_11_11__common.js_18_55_0",
+            "img_scenes_a.js_16_59__common.js_18_55_0",
+            "path_common.js_9_45__scenes_a.js_18_127__common.js_18_55_0",
+            "box_scenes_a.js_18_297__common.js_18_55_0"
+          ],
+          "crop": [
+            907,
+            389,
+            886,
+            494
+          ],
+          "width": 886,
+          "height": 494,
+          "x": 1350.0,
+          "y": 636.0,
+          "start_frame": 354,
+          "end_frame": 708,
+          "path": "card_media/C01_right_foreground.mov",
+          "kind": "video",
+          "sha256": "1394b5ae4a5cb43c88c8b4ac02cf56269242e1d0b10848c7b69e081eda0693f5",
+          "unique_rasters": 61
+        }
+      ]
+    },
+    {
+      "id": "A04",
+      "start_frame": 708,
+      "end_frame": 788,
+      "panels": [],
+      "text_frames": "card_text/A04.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A04_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "raw_art_label_plate",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 708,
+          "end_frame": 788,
+          "path": "card_media/A04_background.png",
+          "kind": "image",
+          "sha256": "4c9f6f73836a9610ec81c4ca8ba33d2c943fb06660aafb30c12c2e0d7f64c526",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "start_frame": 788,
+      "end_frame": 1219,
+      "panels": [
+        {
+          "owner": "left",
+          "owner_label": "左框·目标派发与 Agent 执行",
+          "slot": 0,
+          "bounds": [
+            90,
+            270,
+            1000,
+            620
+          ],
+          "source_id": "box_scenes_bc.js_47_17__common.js_18_55_0"
+        },
+        {
+          "owner": "right",
+          "owner_label": "右框·结果进度与官方界面",
+          "slot": 1,
+          "bounds": [
+            1130,
+            270,
+            700,
+            620
+          ],
+          "source_id": "box_scenes_bc.js_47_53__common.js_18_55_0"
+        }
+      ],
+      "text_frames": "card_text/C02.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "paperclip-goal__box_scenes_bc.js_49_24__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_55_16__scenes_bc.js_53_13_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_55_16__scenes_bc.js_53_13_1",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_55_16__scenes_bc.js_53_13_2",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-task-1-dispatch__box_scenes_bc.js_29_51__scenes_bc.js_56_14__scenes_bc.js_53_13_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-task-2-dispatch__box_scenes_bc.js_29_51__scenes_bc.js_56_14__scenes_bc.js_53_13_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-task-3-dispatch__box_scenes_bc.js_29_51__scenes_bc.js_56_14__scenes_bc.js_53_13_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_64_24__scenes_bc.js_60_13_0",
+          "owner": "shared"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_64_24__scenes_bc.js_60_13_1",
+          "owner": "shared"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_64_24__scenes_bc.js_60_13_2",
+          "owner": "shared"
+        },
+        {
+          "id": "paperclip-task-1-return__box_scenes_bc.js_29_51__scenes_bc.js_65_11__scenes_bc.js_60_13_0",
+          "owner": "shared"
+        },
+        {
+          "id": "paperclip-task-2-return__box_scenes_bc.js_29_51__scenes_bc.js_65_11__scenes_bc.js_60_13_0",
+          "owner": "shared"
+        },
+        {
+          "id": "paperclip-task-3-return__box_scenes_bc.js_29_51__scenes_bc.js_65_11__scenes_bc.js_60_13_0",
+          "owner": "shared"
+        },
+        {
+          "id": "paperclip-agent-1__box_scenes_bc.js_70_22__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-1__box_scenes_bc.js_73_13__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-1__box_scenes_bc.js_74_13__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-2__box_scenes_bc.js_70_22__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-2__box_scenes_bc.js_73_13__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-2__box_scenes_bc.js_74_13__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-3__box_scenes_bc.js_70_22__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-3__box_scenes_bc.js_73_13__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-agent-3__box_scenes_bc.js_74_13__scenes_bc.js_67_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_bc.js_92_22__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_94_9_0",
+          "owner": "left"
+        },
+        {
+          "id": "paperclip-result-1__box_scenes_bc.js_80_57__scenes_bc.js_78_14__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-result-2__box_scenes_bc.js_80_57__scenes_bc.js_78_14__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-result-3__box_scenes_bc.js_80_57__scenes_bc.js_78_14__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_88_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_89_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-official-ui__box_scenes_bc.js_100_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-official-ui__img_scenes_bc.js_102_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-result-1__path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_83_23_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-result-2__path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_83_23_0",
+          "owner": "right"
+        },
+        {
+          "id": "paperclip-result-3__path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_83_23_0",
+          "owner": "right"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C02_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_background.mov",
+          "kind": "video",
+          "sha256": "8e297de96e21feeeebe48c1cce8c75ddf7f85c30c940c01af201c77c516f3cc8",
+          "unique_rasters": 43
+        },
+        {
+          "id": "C02_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_shared_progress.mov",
+          "kind": "video",
+          "sha256": "3013cbaa146fecfe1cec1730b6645ce5098e10a4f511687d15ad798864beabdb",
+          "unique_rasters": 431
+        },
+        {
+          "id": "C02_left_box",
+          "owner": "left",
+          "role": "box",
+          "layer_key": "left_box",
+          "z": 10,
+          "owner_label": "左框·目标派发与 Agent 执行",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_bc.js_47_17__common.js_18_55_0"
+          ],
+          "crop": [
+            86,
+            266,
+            1008,
+            628
+          ],
+          "width": 1008,
+          "height": 628,
+          "x": 590.0,
+          "y": 580.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_left_box.mov",
+          "kind": "video",
+          "sha256": "c78488ef3f8837e98ed6499333314597d34191956094240394dcf0a7318e35e4",
+          "unique_rasters": 43
+        },
+        {
+          "id": "C02_right_box",
+          "owner": "right",
+          "role": "box",
+          "layer_key": "right_box",
+          "z": 10,
+          "owner_label": "右框·结果进度与官方界面",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_bc.js_47_53__common.js_18_55_0"
+          ],
+          "crop": [
+            1126,
+            266,
+            708,
+            628
+          ],
+          "width": 708,
+          "height": 628,
+          "x": 1480.0,
+          "y": 580.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_right_box.mov",
+          "kind": "video",
+          "sha256": "6caf51c3ff41168e834d40b205fc48f6df6c9f3a4ae0939050209b0c2598297f",
+          "unique_rasters": 43
+        },
+        {
+          "id": "C02_left_graphics_base",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_graphics_base",
+          "z": 30,
+          "owner_label": "左框·目标派发与 Agent 执行",
+          "slot": 0,
+          "source_ids": [
+            "paperclip-goal__box_scenes_bc.js_49_24__common.js_18_55_0",
+            "path_common.js_9_45__scenes_bc.js_55_16__scenes_bc.js_53_13_0",
+            "path_common.js_9_45__scenes_bc.js_55_16__scenes_bc.js_53_13_1",
+            "path_common.js_9_45__scenes_bc.js_55_16__scenes_bc.js_53_13_2",
+            "paperclip-task-1-dispatch__box_scenes_bc.js_29_51__scenes_bc.js_56_14__scenes_bc.js_53_13_0",
+            "paperclip-task-2-dispatch__box_scenes_bc.js_29_51__scenes_bc.js_56_14__scenes_bc.js_53_13_0",
+            "paperclip-task-3-dispatch__box_scenes_bc.js_29_51__scenes_bc.js_56_14__scenes_bc.js_53_13_0"
+          ],
+          "crop": [
+            230,
+            311,
+            720,
+            224
+          ],
+          "width": 720,
+          "height": 224,
+          "x": 590.0,
+          "y": 423.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_left_graphics_base.mov",
+          "kind": "video",
+          "sha256": "cde956036693c6457cbfd49cf0290d26100508f0776b9a4b090893b55d4d782f",
+          "unique_rasters": 97
+        },
+        {
+          "id": "C02_shared_returns",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_returns",
+          "z": 30,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "path_common.js_9_45__scenes_bc.js_64_24__scenes_bc.js_60_13_0",
+            "path_common.js_9_45__scenes_bc.js_64_24__scenes_bc.js_60_13_1",
+            "path_common.js_9_45__scenes_bc.js_64_24__scenes_bc.js_60_13_2",
+            "paperclip-task-1-return__box_scenes_bc.js_29_51__scenes_bc.js_65_11__scenes_bc.js_60_13_0",
+            "paperclip-task-2-return__box_scenes_bc.js_29_51__scenes_bc.js_65_11__scenes_bc.js_60_13_0",
+            "paperclip-task-3-return__box_scenes_bc.js_29_51__scenes_bc.js_65_11__scenes_bc.js_60_13_0"
+          ],
+          "crop": [
+            231,
+            393,
+            990,
+            396
+          ],
+          "width": 990,
+          "height": 396,
+          "x": 726.0,
+          "y": 591.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_shared_returns.mov",
+          "kind": "video",
+          "sha256": "5828e63bbaae4a46b097e8105366dde018c21238e57e8b55984a6da58f772a78",
+          "unique_rasters": 107
+        },
+        {
+          "id": "C02_left_foreground",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_foreground",
+          "z": 50,
+          "owner_label": "左框·目标派发与 Agent 执行",
+          "slot": 0,
+          "source_ids": [
+            "paperclip-agent-1__box_scenes_bc.js_70_22__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-1__box_scenes_bc.js_73_13__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-1__box_scenes_bc.js_74_13__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-2__box_scenes_bc.js_70_22__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-2__box_scenes_bc.js_73_13__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-2__box_scenes_bc.js_74_13__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-3__box_scenes_bc.js_70_22__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-3__box_scenes_bc.js_73_13__scenes_bc.js_67_13__common.js_18_55_0",
+            "paperclip-agent-3__box_scenes_bc.js_74_13__scenes_bc.js_67_13__common.js_18_55_0",
+            "box_scenes_bc.js_92_22__common.js_18_55_0",
+            "path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_94_9_0"
+          ],
+          "crop": [
+            138,
+            501,
+            904,
+            376
+          ],
+          "width": 904,
+          "height": 376,
+          "x": 590.0,
+          "y": 689.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_left_foreground.mov",
+          "kind": "video",
+          "sha256": "081c4070fce3201fabf32501558761202f48442c3af1873d17ea1084da6a5333",
+          "unique_rasters": 133
+        },
+        {
+          "id": "C02_right_foreground",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_foreground",
+          "z": 50,
+          "owner_label": "右框·结果进度与官方界面",
+          "slot": 1,
+          "source_ids": [
+            "paperclip-result-1__box_scenes_bc.js_80_57__scenes_bc.js_78_14__common.js_18_55_0",
+            "paperclip-result-2__box_scenes_bc.js_80_57__scenes_bc.js_78_14__common.js_18_55_0",
+            "paperclip-result-3__box_scenes_bc.js_80_57__scenes_bc.js_78_14__common.js_18_55_0",
+            "box_scenes_bc.js_88_11__common.js_18_55_0",
+            "box_scenes_bc.js_89_11__common.js_18_55_0",
+            "paperclip-official-ui__box_scenes_bc.js_100_11__common.js_18_55_0",
+            "paperclip-official-ui__img_scenes_bc.js_102_11__common.js_18_55_0",
+            "paperclip-result-1__path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_83_23_0",
+            "paperclip-result-2__path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_83_23_0",
+            "paperclip-result-3__path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_83_23_0"
+          ],
+          "crop": [
+            272,
+            0,
+            1648,
+            872
+          ],
+          "width": 1648,
+          "height": 872,
+          "x": 1096.0,
+          "y": 436.0,
+          "start_frame": 788,
+          "end_frame": 1219,
+          "path": "card_media/C02_right_foreground.mov",
+          "kind": "video",
+          "sha256": "90a00abdfe2e17bcdb3d7d3b6e9732615b82e5b779785a96a3768028de8dca30",
+          "unique_rasters": 85
+        }
+      ]
+    },
+    {
+      "id": "A05",
+      "start_frame": 1219,
+      "end_frame": 1287,
+      "panels": [],
+      "text_frames": "card_text/A05.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A05_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "raw_art_label_plate",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 1219,
+          "end_frame": 1287,
+          "path": "card_media/A05_background.png",
+          "kind": "image",
+          "sha256": "1124c971a845816b394877bbe9aee36dd6c3ce1e255c855494a02cd8af74bc15",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "start_frame": 1287,
+      "end_frame": 1850,
+      "panels": [
+        {
+          "owner": "left",
+          "owner_label": "左框·来源上下文与持久记忆库",
+          "slot": 0,
+          "bounds": [
+            90,
+            270,
+            750,
+            620
+          ],
+          "source_id": "box_scenes_bc.js_126_17__common.js_18_55_0"
+        },
+        {
+          "owner": "right",
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "bounds": [
+            880,
+            270,
+            950,
+            620
+          ],
+          "source_id": "box_scenes_bc.js_126_52__common.js_18_55_0"
+        }
+      ],
+      "text_frames": "card_text/C03.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "box_scenes_bc.js_129_14__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-source-M1__box_scenes_bc.js_109_26__scenes_bc.js_132_22__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_134_16__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-source-M2__box_scenes_bc.js_109_26__scenes_bc.js_132_22__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_134_16__scenes_bc.js_131_12_1",
+          "owner": "left"
+        },
+        {
+          "id": "memory-source-M3__box_scenes_bc.js_109_26__scenes_bc.js_132_22__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_134_16__scenes_bc.js_131_12_2",
+          "owner": "left"
+        },
+        {
+          "id": "memory-store-M1__box_scenes_bc.js_29_51__scenes_bc.js_135_14__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-store-M2__box_scenes_bc.js_29_51__scenes_bc.js_135_14__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-store-M3__box_scenes_bc.js_29_51__scenes_bc.js_135_14__scenes_bc.js_131_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_bc.js_145_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_150_22__scenes_bc.js_148_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_150_22__scenes_bc.js_148_12_1",
+          "owner": "right"
+        },
+        {
+          "id": "memory-query-0__box_scenes_bc.js_29_51__scenes_bc.js_151_20__scenes_bc.js_148_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "memory-query-1__box_scenes_bc.js_29_51__scenes_bc.js_151_20__scenes_bc.js_148_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_137_14__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-library-M1__box_scenes_bc.js_109_26__scenes_bc.js_140_30__scenes_bc.js_139_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-library-M2__box_scenes_bc.js_109_26__scenes_bc.js_140_30__scenes_bc.js_139_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "memory-library-M3__box_scenes_bc.js_109_26__scenes_bc.js_140_30__scenes_bc.js_139_12_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_bc.js_152_22__scenes_bc.js_148_12__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_152_22__scenes_bc.js_148_12__common.js_18_55_1",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_159_22__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_159_22__scenes_bc.js_156_17_1",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_159_22__scenes_bc.js_156_17_2",
+          "owner": "right"
+        },
+        {
+          "id": "memory-candidate-transfer-M1__box_scenes_bc.js_29_51__scenes_bc.js_160_20__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "memory-candidate-transfer-M2__box_scenes_bc.js_29_51__scenes_bc.js_160_20__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "memory-candidate-transfer-M3__box_scenes_bc.js_29_51__scenes_bc.js_160_20__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "memory-candidate-M1__box_scenes_bc.js_109_26__scenes_bc.js_163_30__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_164_33_0",
+          "owner": "right"
+        },
+        {
+          "id": "memory-candidate-M2__box_scenes_bc.js_109_26__scenes_bc.js_163_30__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_164_33_1",
+          "owner": "right"
+        },
+        {
+          "id": "memory-candidate-M3__box_scenes_bc.js_109_26__scenes_bc.js_163_30__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_165_29__scenes_bc.js_156_17_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_171_22__scenes_bc.js_169_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_171_22__scenes_bc.js_169_12_1",
+          "owner": "right"
+        },
+        {
+          "id": "memory-retrieve-M1__box_scenes_bc.js_29_51__scenes_bc.js_172_20__scenes_bc.js_169_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "memory-retrieve-M2__box_scenes_bc.js_29_51__scenes_bc.js_172_20__scenes_bc.js_169_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_174_20__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_187_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_bc.js_186_11__common.js_18_55_0",
+          "owner": "shared"
+        },
+        {
+          "id": "memory-integration-copy-M1__box_scenes_bc.js_29_51__scenes_bc.js_195_352__common.js_18_55_0",
+          "owner": "shared"
+        },
+        {
+          "id": "box_scenes_bc.js_188_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_191_11__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_bc.js_196_22__common.js_18_55_0",
+          "owner": "right"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C03_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_background.mov",
+          "kind": "video",
+          "sha256": "539133982c8530955a1cc95cff9a33c0e42b7c166cfe490c79e863a1297d7f22",
+          "unique_rasters": 24
+        },
+        {
+          "id": "C03_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_shared_progress.mov",
+          "kind": "video",
+          "sha256": "8f7e347795e06a4e7e07d028ab74970c22cac162036e9a494c452f80cc3a2ee0",
+          "unique_rasters": 563
+        },
+        {
+          "id": "C03_left_box",
+          "owner": "left",
+          "role": "box",
+          "layer_key": "left_box",
+          "z": 10,
+          "owner_label": "左框·来源上下文与持久记忆库",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_bc.js_126_17__common.js_18_55_0"
+          ],
+          "crop": [
+            86,
+            266,
+            758,
+            628
+          ],
+          "width": 758,
+          "height": 628,
+          "x": 465.0,
+          "y": 580.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_left_box.mov",
+          "kind": "video",
+          "sha256": "271f58b322ae8f2707a5f419ceefee840017a84c89358ee4f439195687d02640",
+          "unique_rasters": 24
+        },
+        {
+          "id": "C03_right_box",
+          "owner": "right",
+          "role": "box",
+          "layer_key": "right_box",
+          "z": 10,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_bc.js_126_52__common.js_18_55_0"
+          ],
+          "crop": [
+            876,
+            266,
+            958,
+            628
+          ],
+          "width": 958,
+          "height": 628,
+          "x": 1355.0,
+          "y": 580.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_box.mov",
+          "kind": "video",
+          "sha256": "ba9b95d909f3680fe02d2cd5b598a9b42c136584ed346f686a764fd25d493c61",
+          "unique_rasters": 24
+        },
+        {
+          "id": "C03_left_context_store",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_context_store",
+          "z": 30,
+          "owner_label": "左框·来源上下文与持久记忆库",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_bc.js_129_14__common.js_18_55_0",
+            "memory-source-M1__box_scenes_bc.js_109_26__scenes_bc.js_132_22__scenes_bc.js_131_12_0",
+            "path_common.js_9_45__scenes_bc.js_134_16__scenes_bc.js_131_12_0",
+            "memory-source-M2__box_scenes_bc.js_109_26__scenes_bc.js_132_22__scenes_bc.js_131_12_0",
+            "path_common.js_9_45__scenes_bc.js_134_16__scenes_bc.js_131_12_1",
+            "memory-source-M3__box_scenes_bc.js_109_26__scenes_bc.js_132_22__scenes_bc.js_131_12_0",
+            "path_common.js_9_45__scenes_bc.js_134_16__scenes_bc.js_131_12_2",
+            "memory-store-M1__box_scenes_bc.js_29_51__scenes_bc.js_135_14__scenes_bc.js_131_12_0",
+            "memory-store-M2__box_scenes_bc.js_29_51__scenes_bc.js_135_14__scenes_bc.js_131_12_0",
+            "memory-store-M3__box_scenes_bc.js_29_51__scenes_bc.js_135_14__scenes_bc.js_131_12_0"
+          ],
+          "crop": [
+            136,
+            359,
+            658,
+            324
+          ],
+          "width": 658,
+          "height": 324,
+          "x": 465.0,
+          "y": 521.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_left_context_store.mov",
+          "kind": "video",
+          "sha256": "32df16251788499161fbcca46c407231867c17658c585e5968ef0b18d3383bef",
+          "unique_rasters": 84
+        },
+        {
+          "id": "C03_right_query",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_query",
+          "z": 30,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_bc.js_145_11__common.js_18_55_0",
+            "path_common.js_9_45__scenes_bc.js_150_22__scenes_bc.js_148_12_0",
+            "path_common.js_9_45__scenes_bc.js_150_22__scenes_bc.js_148_12_1",
+            "memory-query-0__box_scenes_bc.js_29_51__scenes_bc.js_151_20__scenes_bc.js_148_12_0",
+            "memory-query-1__box_scenes_bc.js_29_51__scenes_bc.js_151_20__scenes_bc.js_148_12_0"
+          ],
+          "crop": [
+            1100,
+            361,
+            540,
+            146
+          ],
+          "width": 540,
+          "height": 146,
+          "x": 1370.0,
+          "y": 434.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_query.mov",
+          "kind": "video",
+          "sha256": "af2ffe72148f56e8237f28ec88aadabad408c2c74657f394f8c9f80540e85baa",
+          "unique_rasters": 59
+        },
+        {
+          "id": "C03_left_library_foreground",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_library_foreground",
+          "z": 50,
+          "owner_label": "左框·来源上下文与持久记忆库",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_bc.js_137_14__common.js_18_55_0",
+            "memory-library-M1__box_scenes_bc.js_109_26__scenes_bc.js_140_30__scenes_bc.js_139_12_0",
+            "memory-library-M2__box_scenes_bc.js_109_26__scenes_bc.js_140_30__scenes_bc.js_139_12_0",
+            "memory-library-M3__box_scenes_bc.js_109_26__scenes_bc.js_140_30__scenes_bc.js_139_12_0"
+          ],
+          "crop": [
+            136,
+            578,
+            658,
+            256
+          ],
+          "width": 658,
+          "height": 256,
+          "x": 465.0,
+          "y": 706.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_left_library_foreground.mov",
+          "kind": "video",
+          "sha256": "244155584c421670d865a85fe76a7d2539f4caa09986cb91b3abe592c1898e70",
+          "unique_rasters": 25
+        },
+        {
+          "id": "C03_right_lanes_foreground",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_lanes_foreground",
+          "z": 50,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_bc.js_152_22__scenes_bc.js_148_12__common.js_18_55_0",
+            "box_scenes_bc.js_152_22__scenes_bc.js_148_12__common.js_18_55_1"
+          ],
+          "crop": [
+            941,
+            473,
+            858,
+            96
+          ],
+          "width": 858,
+          "height": 96,
+          "x": 1370.0,
+          "y": 521.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_lanes_foreground.mov",
+          "kind": "video",
+          "sha256": "6ed7dd584f0a2f394a76f0822b7885e8c8d52a5d3bf6cc5a71616be4f886ed37",
+          "unique_rasters": 24
+        },
+        {
+          "id": "C03_right_candidate_transfer",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_candidate_transfer",
+          "z": 60,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "path_common.js_9_45__scenes_bc.js_159_22__scenes_bc.js_156_17_0",
+            "path_common.js_9_45__scenes_bc.js_159_22__scenes_bc.js_156_17_1",
+            "path_common.js_9_45__scenes_bc.js_159_22__scenes_bc.js_156_17_2",
+            "memory-candidate-transfer-M1__box_scenes_bc.js_29_51__scenes_bc.js_160_20__scenes_bc.js_156_17_0",
+            "memory-candidate-transfer-M2__box_scenes_bc.js_29_51__scenes_bc.js_160_20__scenes_bc.js_156_17_0",
+            "memory-candidate-transfer-M3__box_scenes_bc.js_29_51__scenes_bc.js_160_20__scenes_bc.js_156_17_0"
+          ],
+          "crop": [
+            1027,
+            537,
+            630,
+            104
+          ],
+          "width": 630,
+          "height": 104,
+          "x": 1342.0,
+          "y": 589.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_candidate_transfer.mov",
+          "kind": "video",
+          "sha256": "8711216695c235240cfcd081566a011c6906b00786d8c031ceae4c9e069eb5fd",
+          "unique_rasters": 59
+        },
+        {
+          "id": "C03_right_candidates_foreground",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_candidates_foreground",
+          "z": 80,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "memory-candidate-M1__box_scenes_bc.js_109_26__scenes_bc.js_163_30__scenes_bc.js_156_17_0",
+            "path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_164_33_0",
+            "memory-candidate-M2__box_scenes_bc.js_109_26__scenes_bc.js_163_30__scenes_bc.js_156_17_0",
+            "path_common.js_9_45__scenes_bc.js_34_14__scenes_bc.js_164_33_1",
+            "memory-candidate-M3__box_scenes_bc.js_109_26__scenes_bc.js_163_30__scenes_bc.js_156_17_0",
+            "path_common.js_9_45__scenes_bc.js_165_29__scenes_bc.js_156_17_0"
+          ],
+          "crop": [
+            951,
+            607,
+            784,
+            118
+          ],
+          "width": 784,
+          "height": 118,
+          "x": 1343.0,
+          "y": 666.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_candidates_foreground.mov",
+          "kind": "video",
+          "sha256": "a89e5d0835e8d82f6ada02131c3c513c88072556404067bfca40cb17eb3ab50b",
+          "unique_rasters": 51
+        },
+        {
+          "id": "C03_right_retrieve",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_retrieve",
+          "z": 90,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "path_common.js_9_45__scenes_bc.js_171_22__scenes_bc.js_169_12_0",
+            "path_common.js_9_45__scenes_bc.js_171_22__scenes_bc.js_169_12_1",
+            "memory-retrieve-M1__box_scenes_bc.js_29_51__scenes_bc.js_172_20__scenes_bc.js_169_12_0",
+            "memory-retrieve-M2__box_scenes_bc.js_29_51__scenes_bc.js_172_20__scenes_bc.js_169_12_0"
+          ],
+          "crop": [
+            1030,
+            659,
+            470,
+            128
+          ],
+          "width": 470,
+          "height": 128,
+          "x": 1265.0,
+          "y": 723.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_retrieve.mov",
+          "kind": "video",
+          "sha256": "f3c886127dd67c67cc7d190cb52381e16d5cebf50d8d939e4169a1331299377c",
+          "unique_rasters": 61
+        },
+        {
+          "id": "C03_right_receiver_foreground",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_receiver_foreground",
+          "z": 110,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_bc.js_174_20__common.js_18_55_0"
+          ],
+          "crop": [
+            1131,
+            747,
+            624,
+            102
+          ],
+          "width": 624,
+          "height": 102,
+          "x": 1443.0,
+          "y": 798.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_receiver_foreground.mov",
+          "kind": "video",
+          "sha256": "1a8b5e23b8db65e78b975edcf4f56a7a018d168b39e97e94f84ddae6b0994175",
+          "unique_rasters": 24
+        },
+        {
+          "id": "C03_right_integration_link",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_integration_link",
+          "z": 119,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "path_common.js_9_45__scenes_bc.js_187_11__common.js_18_55_0"
+          ],
+          "crop": [
+            1266,
+            578,
+            180,
+            8
+          ],
+          "width": 180,
+          "height": 8,
+          "x": 1356.0,
+          "y": 582.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_integration_link.mov",
+          "kind": "video",
+          "sha256": "8cc83bd34e576a7bc53e5e576af3476052586dd27ae35a0c42c14c78d7371e7e",
+          "unique_rasters": 62
+        },
+        {
+          "id": "C03_shared_integration",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_integration",
+          "z": 120,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "path_common.js_9_45__scenes_bc.js_186_11__common.js_18_55_0",
+            "memory-integration-copy-M1__box_scenes_bc.js_29_51__scenes_bc.js_195_352__common.js_18_55_0"
+          ],
+          "crop": [
+            776,
+            552,
+            694,
+            256
+          ],
+          "width": 694,
+          "height": 256,
+          "x": 1123.0,
+          "y": 680.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_shared_integration.mov",
+          "kind": "video",
+          "sha256": "1b7b701966cd5758136a3bc47ab8f8e81356fd872f8d8cb5025ca762e3a67ad0",
+          "unique_rasters": 62
+        },
+        {
+          "id": "C03_right_integration_foreground",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_integration_foreground",
+          "z": 130,
+          "owner_label": "右框·检索复用与应用接入",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_bc.js_188_11__common.js_18_55_0",
+            "box_scenes_bc.js_191_11__common.js_18_55_0",
+            "box_scenes_bc.js_196_22__common.js_18_55_0"
+          ],
+          "crop": [
+            941,
+            501,
+            850,
+            276
+          ],
+          "width": 850,
+          "height": 276,
+          "x": 1366.0,
+          "y": 639.0,
+          "start_frame": 1287,
+          "end_frame": 1850,
+          "path": "card_media/C03_right_integration_foreground.mov",
+          "kind": "video",
+          "sha256": "0750931809662120e7a4a0df3c1b6d03faed991a41bad5ce6a61d2ac7d1abdcd",
+          "unique_rasters": 43
+        }
+      ]
+    },
+    {
+      "id": "A06",
+      "start_frame": 1850,
+      "end_frame": 1926,
+      "panels": [],
+      "text_frames": "card_text/A06.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A06_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "raw_art_label_plate",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 1850,
+          "end_frame": 1926,
+          "path": "card_media/A06_background.png",
+          "kind": "image",
+          "sha256": "10db91fee6311d39d1ec29747e3e64bf7d358cf2c6e452e026e607846c5bf5a1",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "start_frame": 1926,
+      "end_frame": 2223,
+      "panels": [
+        {
+          "owner": "left",
+          "owner_label": "左框·本地模型协作与断网流程",
+          "slot": 0,
+          "bounds": [
+            90,
+            280,
+            1060,
+            630
+          ],
+          "source_id": "box_scenes_de.js_7_55__scenes_de.js_31_13__common.js_18_55_0"
+        },
+        {
+          "owner": "right",
+          "owner_label": "右框·官方界面与平台条件",
+          "slot": 1,
+          "bounds": [
+            1190,
+            280,
+            640,
+            630
+          ],
+          "source_id": "box_scenes_de.js_7_55__scenes_de.js_32_8__common.js_18_55_0"
+        }
+      ],
+      "text_frames": "card_text/C04.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_35_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_36_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_37_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_39_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_40_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_de.js_41_10__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_15_17__scenes_de.js_42_8_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_16_8__scenes_de.js_42_8_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_15_17__scenes_de.js_43_8_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_16_8__scenes_de.js_43_8_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_circle_scenes_de.js_12_58__scenes_de.js_46_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_circle_scenes_de.js_12_58__scenes_de.js_47_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_51_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_52_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_53_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_54_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_de.js_56_12__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_de.js_57_10__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_58_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_59_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "path_common.js_9_45__scenes_de.js_62_12__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_71_22__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_72_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_73_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_74_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_75_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_78_13__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "packet_common.js_10_39__scenes_de.js_60_34__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "packet_common.js_10_39__scenes_de.js_61_35__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_66_12__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "packet_common.js_10_39__scenes_de.js_64_14__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_84_8__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "img_scenes_de.js_85_10__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_88_15__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_90_8__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_92_8__common.js_18_55_0",
+          "owner": "right"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C04_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 1926,
+          "end_frame": 2223,
+          "path": "card_media/C04_background.png",
+          "kind": "image",
+          "sha256": "bd65dc4d9850b4b8556c37ffd60629f17a2001da30dc360f932d1738fb24fdec",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C04_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 1926,
+          "end_frame": 2223,
+          "path": "card_media/C04_shared_progress.mov",
+          "kind": "video",
+          "sha256": "a3fe44a1468943c15606eed1545bf6d7a8dc5216eb9f79c79acbb175e531a095",
+          "unique_rasters": 297
+        },
+        {
+          "id": "C04_left_box",
+          "owner": "left",
+          "role": "box",
+          "layer_key": "left_box",
+          "z": 10,
+          "owner_label": "左框·本地模型协作与断网流程",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_31_13__common.js_18_55_0"
+          ],
+          "crop": [
+            86,
+            276,
+            1068,
+            638
+          ],
+          "width": 1068,
+          "height": 638,
+          "x": 620.0,
+          "y": 595.0,
+          "start_frame": 1926,
+          "end_frame": 2223,
+          "path": "card_media/C04_left_box.png",
+          "kind": "image",
+          "sha256": "3bbe3ab979a7fa73656cb22108bc93777bc9662bef21a5a3077181b3409acd02",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C04_right_box",
+          "owner": "right",
+          "role": "box",
+          "layer_key": "right_box",
+          "z": 10,
+          "owner_label": "右框·官方界面与平台条件",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_32_8__common.js_18_55_0"
+          ],
+          "crop": [
+            1186,
+            276,
+            648,
+            638
+          ],
+          "width": 648,
+          "height": 638,
+          "x": 1510.0,
+          "y": 595.0,
+          "start_frame": 1926,
+          "end_frame": 2223,
+          "path": "card_media/C04_right_box.png",
+          "kind": "image",
+          "sha256": "d7491eef83850e69aee27cd4b8aa9911b353645b88402932724b08198c10b55d",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C04_left_graphics",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_graphics",
+          "z": 30,
+          "owner_label": "左框·本地模型协作与断网流程",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_35_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_36_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_37_8__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_39_8__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_40_8__common.js_18_55_0",
+            "path_common.js_9_45__scenes_de.js_41_10__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_15_17__scenes_de.js_42_8_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_16_8__scenes_de.js_42_8_0",
+            "box_scenes_de.js_7_55__scenes_de.js_15_17__scenes_de.js_43_8_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_16_8__scenes_de.js_43_8_0",
+            "raw_circle_scenes_de.js_12_58__scenes_de.js_46_8__common.js_18_55_0",
+            "raw_circle_scenes_de.js_12_58__scenes_de.js_47_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_51_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_52_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_53_8__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_54_8__common.js_18_55_0",
+            "path_common.js_9_45__scenes_de.js_56_12__common.js_18_55_0",
+            "path_common.js_9_45__scenes_de.js_57_10__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_58_13__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_59_13__common.js_18_55_0",
+            "path_common.js_9_45__scenes_de.js_62_12__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_71_22__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_72_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_73_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_74_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_75_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_78_13__common.js_18_55_0",
+            "packet_common.js_10_39__scenes_de.js_60_34__common.js_18_55_0",
+            "packet_common.js_10_39__scenes_de.js_61_35__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_66_12__common.js_18_55_0",
+            "packet_common.js_10_39__scenes_de.js_64_14__common.js_18_55_0"
+          ],
+          "crop": [
+            135,
+            407,
+            974,
+            448
+          ],
+          "width": 974,
+          "height": 448,
+          "x": 622.0,
+          "y": 631.0,
+          "start_frame": 1926,
+          "end_frame": 2223,
+          "path": "card_media/C04_left_graphics.mov",
+          "kind": "video",
+          "sha256": "6dbec7f9e6e8a5270c5705923c691ca7e0b565c5c5285515e875306b58a22bcb",
+          "unique_rasters": 290
+        },
+        {
+          "id": "C04_right_graphics",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_graphics",
+          "z": 30,
+          "owner_label": "右框·官方界面与平台条件",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_84_8__common.js_18_55_0",
+            "img_scenes_de.js_85_10__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_88_15__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_90_8__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_92_8__common.js_18_55_0"
+          ],
+          "crop": [
+            1221,
+            400,
+            578,
+            500
+          ],
+          "width": 578,
+          "height": 500,
+          "x": 1510.0,
+          "y": 650.0,
+          "start_frame": 1926,
+          "end_frame": 2223,
+          "path": "card_media/C04_right_graphics.mov",
+          "kind": "video",
+          "sha256": "98489014af9b734a6175dad6d65a88f9d1406d884af670444ddc70191791730d",
+          "unique_rasters": 21
+        }
+      ]
+    },
+    {
+      "id": "A07",
+      "start_frame": 2223,
+      "end_frame": 2294,
+      "panels": [],
+      "text_frames": "card_text/A07.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A07_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "raw_art_label_plate",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 2223,
+          "end_frame": 2294,
+          "path": "card_media/A07_background.png",
+          "kind": "image",
+          "sha256": "de84ea03b0624e3715e9ee57d1d6da220fd37555593380d63d2b1bce9a8883b2",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "start_frame": 2294,
+      "end_frame": 2580,
+      "panels": [
+        {
+          "owner": "left",
+          "owner_label": "左框·界面结构重排",
+          "slot": 0,
+          "bounds": [
+            90,
+            280,
+            1040,
+            630
+          ],
+          "source_id": "box_scenes_de.js_7_55__scenes_de.js_114_13__common.js_18_55_0"
+        },
+        {
+          "owner": "right",
+          "owner_label": "右框·设计检查与官方案例",
+          "slot": 1,
+          "bounds": [
+            1165,
+            280,
+            665,
+            630
+          ],
+          "source_id": "box_scenes_de.js_7_55__scenes_de.js_115_8__common.js_18_55_0"
+        }
+      ],
+      "text_frames": "card_text/C05.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_118_8__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_1",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_2",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_3",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_121_46__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_121_46__common.js_18_55_1",
+          "owner": "left"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_121_46__common.js_18_55_2",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_125_15__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_98_12__scenes_de.js_128_10_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_98_12__scenes_de.js_131_10_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_98_12__scenes_de.js_134_10_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_136_10__common.js_18_55_0",
+          "owner": "left"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_146_14__scenes_de.js_144_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_148_17__scenes_de.js_144_12_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_146_14__scenes_de.js_144_12_1",
+          "owner": "right"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_148_17__scenes_de.js_144_12_1",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_146_14__scenes_de.js_144_12_2",
+          "owner": "right"
+        },
+        {
+          "id": "raw_path_scenes_de.js_11_52__scenes_de.js_148_17__scenes_de.js_144_12_2",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_152_10__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "box_scenes_de.js_7_55__scenes_de.js_159_10__common.js_18_55_0",
+          "owner": "right"
+        },
+        {
+          "id": "img_scenes_de.js_161_54__common.js_18_55_0",
+          "owner": "right"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C05_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 2294,
+          "end_frame": 2580,
+          "path": "card_media/C05_background.png",
+          "kind": "image",
+          "sha256": "bd65dc4d9850b4b8556c37ffd60629f17a2001da30dc360f932d1738fb24fdec",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C05_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 2294,
+          "end_frame": 2580,
+          "path": "card_media/C05_shared_progress.mov",
+          "kind": "video",
+          "sha256": "2fe980649acf19cf33794d9664ed3289d7782e20ee987d2680c0e8f8bfd49041",
+          "unique_rasters": 286
+        },
+        {
+          "id": "C05_left_box",
+          "owner": "left",
+          "role": "box",
+          "layer_key": "left_box",
+          "z": 10,
+          "owner_label": "左框·界面结构重排",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_114_13__common.js_18_55_0"
+          ],
+          "crop": [
+            86,
+            276,
+            1048,
+            638
+          ],
+          "width": 1048,
+          "height": 638,
+          "x": 610.0,
+          "y": 595.0,
+          "start_frame": 2294,
+          "end_frame": 2580,
+          "path": "card_media/C05_left_box.png",
+          "kind": "image",
+          "sha256": "97a6ab92f1c2c484945981b96231608afb77de913436f94b1440b601b8a4aaea",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C05_right_box",
+          "owner": "right",
+          "role": "box",
+          "layer_key": "right_box",
+          "z": 10,
+          "owner_label": "右框·设计检查与官方案例",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_115_8__common.js_18_55_0"
+          ],
+          "crop": [
+            1161,
+            276,
+            674,
+            638
+          ],
+          "width": 674,
+          "height": 638,
+          "x": 1498.0,
+          "y": 595.0,
+          "start_frame": 2294,
+          "end_frame": 2580,
+          "path": "card_media/C05_right_box.png",
+          "kind": "image",
+          "sha256": "c6639d788d82e79c3c90898bb0d3760011892e81c4dc67a77598c552e6f15ae1",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C05_left_graphics",
+          "owner": "left",
+          "role": "graphics",
+          "layer_key": "left_graphics",
+          "z": 30,
+          "owner_label": "左框·界面结构重排",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_118_8__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_1",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_2",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_120_51__common.js_18_55_3",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_121_46__common.js_18_55_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_121_46__common.js_18_55_1",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_121_46__common.js_18_55_2",
+            "box_scenes_de.js_7_55__scenes_de.js_125_15__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_98_12__scenes_de.js_128_10_0",
+            "box_scenes_de.js_7_55__scenes_de.js_98_12__scenes_de.js_131_10_0",
+            "box_scenes_de.js_7_55__scenes_de.js_98_12__scenes_de.js_134_10_0",
+            "box_scenes_de.js_7_55__scenes_de.js_136_10__common.js_18_55_0"
+          ],
+          "crop": [
+            131,
+            400,
+            958,
+            442
+          ],
+          "width": 958,
+          "height": 442,
+          "x": 610.0,
+          "y": 621.0,
+          "start_frame": 2294,
+          "end_frame": 2580,
+          "path": "card_media/C05_left_graphics.mov",
+          "kind": "video",
+          "sha256": "fe45957bd491e169bfa4b77096c27e0f4fcf771afb9bc0bd1927a567845e7dd8",
+          "unique_rasters": 102
+        },
+        {
+          "id": "C05_right_graphics",
+          "owner": "right",
+          "role": "graphics",
+          "layer_key": "right_graphics",
+          "z": 30,
+          "owner_label": "右框·设计检查与官方案例",
+          "slot": 1,
+          "source_ids": [
+            "box_scenes_de.js_7_55__scenes_de.js_146_14__scenes_de.js_144_12_0",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_148_17__scenes_de.js_144_12_0",
+            "box_scenes_de.js_7_55__scenes_de.js_146_14__scenes_de.js_144_12_1",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_148_17__scenes_de.js_144_12_1",
+            "box_scenes_de.js_7_55__scenes_de.js_146_14__scenes_de.js_144_12_2",
+            "raw_path_scenes_de.js_11_52__scenes_de.js_148_17__scenes_de.js_144_12_2",
+            "box_scenes_de.js_7_55__scenes_de.js_152_10__common.js_18_55_0",
+            "box_scenes_de.js_7_55__scenes_de.js_159_10__common.js_18_55_0",
+            "img_scenes_de.js_161_54__common.js_18_55_0"
+          ],
+          "crop": [
+            1202,
+            410,
+            586,
+            372
+          ],
+          "width": 586,
+          "height": 372,
+          "x": 1495.0,
+          "y": 596.0,
+          "start_frame": 2294,
+          "end_frame": 2580,
+          "path": "card_media/C05_right_graphics.mov",
+          "kind": "video",
+          "sha256": "dd844d492864b1e1aee574354b495aac6f634035430cc22835c848a92f71a5c7",
+          "unique_rasters": 88
+        }
+      ]
+    },
+    {
+      "id": "A08",
+      "start_frame": 2580,
+      "end_frame": 2648,
+      "panels": [],
+      "text_frames": "card_text/A08.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A08_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 2580,
+          "end_frame": 2648,
+          "path": "card_media/A08_background.png",
+          "kind": "image",
+          "sha256": "ab4a5ebd8cc299bce64ea7a7decd8b1f7d1676b735b91e8d23c3d76ae15cf89a",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "A09",
+      "start_frame": 2648,
+      "end_frame": 2715,
+      "panels": [],
+      "text_frames": "card_text/A09.json",
+      "source_graphic_ids": [],
+      "layers": [
+        {
+          "id": "A09_background",
+          "owner": "shared",
+          "role": "animation",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "img_common.js_14_16_0",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 2648,
+          "end_frame": 2715,
+          "path": "card_media/A09_background.png",
+          "kind": "image",
+          "sha256": "c300b241d5aab5aa3699d93fc22002f4f15c7e03f025de21051a28ae226528f0",
+          "unique_rasters": 1
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "start_frame": 2715,
+      "end_frame": 2777,
+      "panels": [
+        {
+          "owner": "main",
+          "owner_label": "主框·系列结束语",
+          "slot": 0,
+          "bounds": [
+            90,
+            290,
+            1740,
+            628
+          ],
+          "source_id": "box_scenes_a.js_20_73__common.js_18_55_0"
+        }
+      ],
+      "text_frames": "card_text/C06.json",
+      "source_graphic_ids": [
+        {
+          "id": "raw_progress_track",
+          "owner": "shared"
+        },
+        {
+          "id": "raw_progress_active",
+          "owner": "shared"
+        },
+        {
+          "id": "box_scenes_a.js_20_252__common.js_18_55_0",
+          "owner": "main"
+        }
+      ],
+      "layers": [
+        {
+          "id": "C06_background",
+          "owner": "shared",
+          "role": "background",
+          "layer_key": "background",
+          "z": 0,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "box_common.js_16_14_0",
+            "raw_heading_rule",
+            "box_common.js_22_9_0"
+          ],
+          "crop": [
+            0,
+            0,
+            1920,
+            1080
+          ],
+          "width": 1920,
+          "height": 1080,
+          "x": 960.0,
+          "y": 540.0,
+          "start_frame": 2715,
+          "end_frame": 2777,
+          "path": "card_media/C06_background.png",
+          "kind": "image",
+          "sha256": "bd65dc4d9850b4b8556c37ffd60629f17a2001da30dc360f932d1738fb24fdec",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C06_shared_progress",
+          "owner": "shared",
+          "role": "graphics_shared",
+          "layer_key": "shared_progress",
+          "z": 5,
+          "owner_label": "全局",
+          "slot": -1,
+          "source_ids": [
+            "raw_progress_track",
+            "raw_progress_active"
+          ],
+          "crop": [
+            86,
+            1047,
+            1748,
+            12
+          ],
+          "width": 1748,
+          "height": 12,
+          "x": 960.0,
+          "y": 1053.0,
+          "start_frame": 2715,
+          "end_frame": 2777,
+          "path": "card_media/C06_shared_progress.mov",
+          "kind": "video",
+          "sha256": "0c6efae3b0b6e7fa42d99a56701fa2062c463d797741461f332f5a36d5d99c06",
+          "unique_rasters": 62
+        },
+        {
+          "id": "C06_main_box",
+          "owner": "main",
+          "role": "box",
+          "layer_key": "main_box",
+          "z": 10,
+          "owner_label": "主框·系列结束语",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_a.js_20_73__common.js_18_55_0"
+          ],
+          "crop": [
+            86,
+            286,
+            1748,
+            636
+          ],
+          "width": 1748,
+          "height": 636,
+          "x": 960.0,
+          "y": 604.0,
+          "start_frame": 2715,
+          "end_frame": 2777,
+          "path": "card_media/C06_main_box.png",
+          "kind": "image",
+          "sha256": "928de539115923e8b801bb49cf389ce9e08226e1690e99391f654954a442e01d",
+          "unique_rasters": 1
+        },
+        {
+          "id": "C06_main_graphics",
+          "owner": "main",
+          "role": "graphics",
+          "layer_key": "main_graphics",
+          "z": 30,
+          "owner_label": "主框·系列结束语",
+          "slot": 0,
+          "source_ids": [
+            "box_scenes_a.js_20_252__common.js_18_55_0"
+          ],
+          "crop": [
+            686,
+            740,
+            548,
+            134
+          ],
+          "width": 548,
+          "height": 134,
+          "x": 960.0,
+          "y": 807.0,
+          "start_frame": 2715,
+          "end_frame": 2777,
+          "path": "card_media/C06_main_graphics.mov",
+          "kind": "video",
+          "sha256": "e506b4410db0cfe5e5117c959340b626dfa51670d4853e3e69df4939fe637cff",
+          "unique_rasters": 21
+        }
+      ]
+    }
+  ]
+}

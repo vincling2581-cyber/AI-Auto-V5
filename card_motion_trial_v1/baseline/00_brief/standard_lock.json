@@ -1,0 +1,283 @@
+{
+  "version": "4.5",
+  "status": "active",
+  "user_approved": true,
+  "date": "2026-10-06",
+  "sop": "Xilo风格视频生产线SOP_v4.5.md",
+  "prompts": "production_standard/提示词_v4.5.md",
+  "prompts_data": "production_standard/prompts.json",
+  "defaults": "production_standard/defaults.json",
+  "rules": "production_standard/rules.json",
+  "review": "制作标准_v4.5_总览与确认.html",
+  "changes": "production_standard/本次修改说明_v4.5.md",
+  "baseline_manifest": "production_standard/method_baseline_v4.5.json",
+  "source_inventory": "production_standard/source_inventory.json",
+  "conflicts": "production_standard/conflicts.json",
+  "selection": "Read this exact manifest; do not infer latest from filenames.",
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "sha256": "df68cbfeea0dd60be558d1b6c4b6dc1997d24c5cd6a6eb5240fb27f18201bef8"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.5.md",
+      "sha256": "65fcf8d0f1a7b6a4ff16d3b0192d1e06d8f129d34801b4ddfca68651f0256c86"
+    },
+    {
+      "path": "production_standard/assets/补全眼部参考.png",
+      "sha256": "b6c9b7acaadb640676227e69c839739597f15d37a65debbd8f00d69b0c26d49d"
+    },
+    {
+      "path": "production_standard/assets/角色身份参考.png",
+      "sha256": "03b39446edbd89af83f235a40660a55d3bb07f8ceb74b59d5dfa58bf67a509fd"
+    },
+    {
+      "path": "production_standard/brand_assets.json",
+      "sha256": "846c0308141e64ee6041f7d1839d8f2bebf2cfcab2fa688ee62c96440751678d"
+    },
+    {
+      "path": "production_standard/build_standard.py",
+      "sha256": "742690751d937a38fa197d457607ac94b9c4747b13a5f06da057b2a57087ddf1"
+    },
+    {
+      "path": "production_standard/conflicts.json",
+      "sha256": "5d7b162605b877c09ce28cdd36fbf70895d6dd858990ab23c97ad1ea6cf47f18"
+    },
+    {
+      "path": "production_standard/defaults.json",
+      "sha256": "e4b128962561b085bb028bc058fb66db545a5b9b711fcd81813130fb8a2a6c09"
+    },
+    {
+      "path": "production_standard/historical_prompts.json",
+      "sha256": "df7caafef99b66f40b7d29595bc27659f9acdbd3cdc0ebef6b67a5b4b7dd07ed"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/README.md",
+      "sha256": "8b35873dfddad54878adcabba41af157526050e66ba7a38bbc790379e89227d3"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/accepted_master.mp4",
+      "sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/00_brief/standard_lock.json",
+      "sha256": "571ac70eeddbbd28ac513ff3f9b5eab28f9f04fae4a0e52a6aedc57baace4d02"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/03_storyboard/cards.json",
+      "sha256": "01fe400f1cba189e47952e752c2f181c3849d90701eebdb7a7fea6ed4e637c42"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/build_data.py",
+      "sha256": "a0308f4622f81280ad8648a76c5f9373ecd339ae1b7233cb710e39508e319f4c"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/card_kit.js",
+      "sha256": "7803274f6eb398cd9c9586c1efc21494d51d5962e87d09551dee47c6359d18c0"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/card_scene.html",
+      "sha256": "9f50358de8a822d19ac82854e3af49de33b5fba788204d7453070ab53d659916"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/cards_main.js",
+      "sha256": "beb1b5873886a3017a88420d550e1521fd9f3fa75f7d23e06e9d38536859a65a"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/cards_middle.js",
+      "sha256": "6bddeae2600093287b1bc5c441bbf64b4cd4ea099651bfc10c9599deac94aa3f"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/motion_specs.json",
+      "sha256": "73f4ab893f239b244bed8556e98b9854582afd9df431b459f7bdeb509b7fad5e"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/reference_style.json",
+      "sha256": "eacb050fba006d62ba5acbc29329c8344a5063c84e151ae2cdac45d39239e8cc"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/archive/episode_source/06_project/cards/render_cards.py",
+      "sha256": "e2f0c2b265019e2d739c21b7652be101593cf5b452942a48c6d7b1d62c4ff1e2"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
+      "sha256": "18c9846748a11334fd94423fb2f96a765777c279b9d570effc89e46334bb227a"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/method_sources.json",
+      "sha256": "91ef59d0cbd9442b07596b3534e35f9b14285fb103173c75d5a3c1fdd157331e"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/palette_profile.json",
+      "sha256": "fbca1f75069dd54f9d81e1556842c64090d94f9bcf9cbe5c2909ce3fce5c8351"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/validation.json",
+      "sha256": "f597e08c1a5b4e0545e6f0a442dddbf2c4068170a884cdcbfe2055f5999613c5"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/THIRD_PARTY.md",
+      "sha256": "27fe7605011796980b9adbf865fcac0adc899a8e10fa3da7e4cc656799689a5d"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
+      "sha256": "3eb888ef31044c40757fe52030e381d2b7ec6ef5e90379920ea18b98ac32d187"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber.min.js",
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4"
+    },
+    {
+      "path": "production_standard/method_baseline_v4.5.json",
+      "sha256": "f08acfdac3137ba8253936c6deff88a021f105f2c10fa6135a51c4cb7624f9f4"
+    },
+    {
+      "path": "production_standard/package_standard.py",
+      "sha256": "8729e5f01b8a85f272a547d5123130d0226d992073166cc2fdc14d278cd1accd"
+    },
+    {
+      "path": "production_standard/prompt_library.py",
+      "sha256": "d3eb24caaf86338fbe8e390f6fc4f2832a6cc3e5b8a118a78f834aa75ec4f5fa"
+    },
+    {
+      "path": "production_standard/prompts.json",
+      "sha256": "3c13d5bd43ae1da3a0e5a32c2cc3ef9dc21de70ab994773b6e38334d05d2bc56"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171118_838_86.png",
+      "sha256": "badbfe32e94cab4b5414185c8484ff2c1a51ddb1787751046d4acae55515ac99"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171119_839_86.png",
+      "sha256": "338929d590a785b68ef6daeaeb937b76103e082bca4eb9ce92075459f1b3e72c"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171121_840_86.png",
+      "sha256": "f2c20a163403fe68c19cf6396ec4501063f4feadec0fd41be73d547fd74c29d1"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171525_841_86.png",
+      "sha256": "18472acd50454f1597c7e3943d79944f4f0cfb25c7d831fd4ccabeadd925cd8e"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_842_86.png",
+      "sha256": "a8f3039bd692bed2fda3a6e6b75236a3176e915560713dba68e3b139be506202"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/微信图片_20261005171526_843_86.png",
+      "sha256": "4c58831a633d1f1d12c20bdc7032e42c9aa71d469fa8ca61cba828185101d024"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/用户截图来源.json",
+      "sha256": "b125b6f4c0775568256d54108eb957aad9a6a09f22fb1e4d57ed9d11070f6944"
+    },
+    {
+      "path": "production_standard/references/2026-10-05_animation_review/观察说明.md",
+      "sha256": "e0702a3a51246d00fdeed0d840a147812ed0f3739073dbac79ecd5bf550296c2"
+    },
+    {
+      "path": "production_standard/review_page.py",
+      "sha256": "8a40c3bc84e3b1c786fa77ab4fab3f75b2fe94d2f1b4a17cb20f17f4c8f31b79"
+    },
+    {
+      "path": "production_standard/rule_catalog.py",
+      "sha256": "d0f36d1b11577cb17b011b9270d50447848fc1d887cc83081a79ed0201ff73bd"
+    },
+    {
+      "path": "production_standard/rules.json",
+      "sha256": "0989cb8e5b1ad83059b0cd2ada974355b2bd4a519cb93bbd803961ca2c8a9a88"
+    },
+    {
+      "path": "production_standard/source_inventory.json",
+      "sha256": "cb97da00eb23dfe78d87bcc54d0975d667aa106262ae83c597ce4a3759d7d9a3"
+    },
+    {
+      "path": "production_standard/standard_loader.py",
+      "sha256": "894912d137dbf684bfbb96435979e4a4894fe46970a4b5dae423286c95320c54"
+    },
+    {
+      "path": "production_standard/start_episode.py",
+      "sha256": "8bf50f28dfa2a3dc1540ee08bbf3ce9b7b839351a92a13e6a57b19bd00c1dce5"
+    },
+    {
+      "path": "production_standard/verify_standard.py",
+      "sha256": "49e815f1735dc81082d82cc12d297fedaa02bb53823a19899f115f883d2d593e"
+    },
+    {
+      "path": "production_standard/先读我.txt",
+      "sha256": "de238e876f63aba389430b695478f4ba0e48119995ad197e72eb644eeea25d55"
+    },
+    {
+      "path": "production_standard/全部制作规则_v4.5.md",
+      "sha256": "417bf5734ca30b126e373498ab3145800796a6e1bc1fbf46dca30cc2ab4c4de2"
+    },
+    {
+      "path": "production_standard/冲突与取舍_v4.5.md",
+      "sha256": "3a37446e7aab9bd473b22315626f598bcdf3cc63af7726fc5f144b92dc2e66f1"
+    },
+    {
+      "path": "production_standard/提示词_v4.5.md",
+      "sha256": "e9ae87e31b23c9ca0a73e556964284a522cf49b0fcea438b2d5a33c2b4d28b9c"
+    },
+    {
+      "path": "production_standard/本次修改说明_v4.5.md",
+      "sha256": "722b77c5bfa87dcfffa13aaa6b02553d5ceafb917e709fdfd1140241789d6a82"
+    },
+    {
+      "path": "production_standard/来源与影响清单.md",
+      "sha256": "7882e3efd673921ed7ab5d291e1ba3c76ee833e1409a2794bf6cf41c46283e8e"
+    },
+    {
+      "path": "production_standard/自检结论_v4.5.md",
+      "sha256": "78b13889b8a5e94aaa4a59d5108b366c896a683eb6e89a5981d7c3b0e43cf894"
+    }
+  ],
+  "history_policy": "read_only_reference_or_explicit_historical_rebuild",
+  "legacy_pipeline_note": "Historical episode code has fixed content; default production uses current method assets and a new episode scene with effective defaults.",
+  "user_confirmed_changes": {
+    "date": "2026-10-06",
+    "rule_ids": [
+      "A09",
+      "A10",
+      "B11",
+      "D09",
+      "E09"
+    ],
+    "reference_manifest": "production_standard/references/2026-10-05_animation_review/用户截图来源.json",
+    "requirements": [
+      "保留图文动画并增加明显人物/道具动作",
+      "动画图片下方不留白",
+      "两个大框优先深绿和白色，三个及以上才用浅绿及其他色，保留单大框配小框例外",
+      "剪映导入不属于默认制作流程，仅用户后续明确请求时执行"
+    ],
+    "whole_standard_approved": true,
+    "whole_standard_approval_mode": "delegated_self_check_not_personal_item_review"
+  },
+  "method_update_authorization": {
+    "date": "2026-10-06",
+    "scope": "按最新成片制作方法更新SOP，并逐项说明供审阅；剪映导入以后由用户单独明确提出",
+    "does_not_imply": "全部新增通用参数永久获批",
+    "latest_adoption": {
+      "mode": "delegated_self_check",
+      "date": "2026-10-06",
+      "authorized_quote": "确认的内容太多了，我检查不过来，你自己再检查一次，没有问题就可以。首先告诉我我只做视频的规则、sop、提示词等可以影响视频内容和效果有没有按照最新的这一版制作流程进行更新。",
+      "user_personal_item_review": false,
+      "self_check_report": "production_standard/自检结论_v4.5.md",
+      "scope": "影响视频制作内容与效果的当前SOP、规则、提示词、默认参数、方法资产与执行入口；助手复核通过后直接启用，不要求用户逐项确认",
+      "parameters_remain_overridable_per_episode": true
+    }
+  },
+  "package_supplemental_files": [],
+  "approval_mode": "delegated_self_check",
+  "approval": {
+    "mode": "delegated_self_check",
+    "date": "2026-10-06",
+    "authorized_quote": "确认的内容太多了，我检查不过来，你自己再检查一次，没有问题就可以。首先告诉我我只做视频的规则、sop、提示词等可以影响视频内容和效果有没有按照最新的这一版制作流程进行更新。",
+    "user_personal_item_review": false,
+    "self_check_report": "production_standard/自检结论_v4.5.md",
+    "scope": "影响视频制作内容与效果的当前SOP、规则、提示词、默认参数、方法资产与执行入口；助手复核通过后直接启用，不要求用户逐项确认",
+    "parameters_remain_overridable_per_episode": true
+  },
+  "self_check": "production_standard/自检结论_v4.5.md",
+  "revision": "2026-10-06_self_checked"
+}

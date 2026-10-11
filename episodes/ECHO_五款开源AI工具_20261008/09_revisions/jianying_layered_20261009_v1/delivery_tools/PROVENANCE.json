@@ -1,0 +1,40 @@
+{
+  "sourceSkill": "jianying-layered-export",
+  "sourceRoot": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export",
+  "copyDate": "2026-10-09",
+  "copiedUnmodified": true,
+  "toolsExecuted": false,
+  "runtimeRequirement": "install_draft.py and build_draft.py require a compatible private pyJianYingDraft fork; no runtime library or system fonts are redistributed",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "sha256": "7A66CF22E5D68B92AC6E2F773D91C8E1EA3B3FC2CFF49261AE4D352A24BBF082",
+      "source": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export\\SKILL.md"
+    },
+    {
+      "path": "references/adapter-notes.md",
+      "sha256": "FF9B45473ECCFBD05FDBAE0B5444370CF7414958217F365AED0D0E6DCD14C37F",
+      "source": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export\\references\\adapter-notes.md"
+    },
+    {
+      "path": "references/delivery.md",
+      "sha256": "190E137500FD1B9F5762F1F7681324F9E1829CB7A7B2AB293BAFFB9061A36431",
+      "source": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export\\references\\delivery.md"
+    },
+    {
+      "path": "references/package-schema.md",
+      "sha256": "01627A3D1B0418B86A5E0C21C12C7ABA1BE46ACA77BBFE59A182BC823B7A0B33",
+      "source": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export\\references\\package-schema.md"
+    },
+    {
+      "path": "scripts/install_draft.py",
+      "sha256": "2E1E0CB52431561A5141B8116655088FF910E469413F954EDB54526A90D2B464",
+      "source": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export\\scripts\\install_draft.py"
+    },
+    {
+      "path": "scripts/validate_package.py",
+      "sha256": "E591BAB313D8E555EAB9C64DC87039BC137A0261AC8496DBBD1EA243A35CA9F0",
+      "source": "C:\\Users\\Administrator\\.codex\\skills\\jianying-layered-export\\scripts\\validate_package.py"
+    }
+  ]
+}

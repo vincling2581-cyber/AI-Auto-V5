@@ -1,0 +1,97 @@
+{
+  "profile_id": "reference_cards_v1",
+  "standard_version": "4.5",
+  "status": "adopted_adjustable_starting_point_after_delegated_self_check",
+  "cards": {
+    "method_profile": "reference_cards_v1",
+    "implementation": "deterministic_svg_frame_time",
+    "method_assets": "production_standard/method_assets/reference_cards_v1",
+    "palette": {
+      "background": "#07110C",
+      "dark": "#14271B",
+      "soft": "#101F16",
+      "paper": "#F0F3EC",
+      "accent": "#78EFA2",
+      "text": "#F0F3EC",
+      "ink": "#12251A",
+      "muted": "#A9B9AC",
+      "line": "#54775E",
+      "edge": "#33533B",
+      "paperLine": "#C4CCC2"
+    },
+    "palette_roles": {
+      "background": "全画幅深绿黑底",
+      "dark": "深绿大框和常规对象",
+      "soft": "次级深绿表面",
+      "paper": "对照方、文档或重要结果的纸白表面",
+      "accent": "当前焦点、传递对象、完成状态或三框以上时的浅绿表面",
+      "text": "深底主文字",
+      "ink": "纸白/浅绿底文字",
+      "muted": "辅助说明和弱化内容",
+      "line": "普通关系线",
+      "edge": "深色框边",
+      "paperLine": "浅色表面内部细线"
+    },
+    "large_panel_policy": {
+      "two": [
+        "dark",
+        "paper"
+      ],
+      "three_or_more": "可按对象职责增加浅绿或其他已登记颜色，不强制每框不同色",
+      "single_large_with_small": "保留大框与小框的深绿层级；不机械套两大框规则",
+      "palette_change_scope": "只调整指定大框底色；不联动修改既有小文本框、图形、连线、字体和字框"
+    },
+    "typography": {
+      "title_px": 72,
+      "node_px": 46,
+      "support_px": 34,
+      "status": "adopted_adjustable_starting_point_after_delegated_self_check",
+      "scope": "information_cards_only",
+      "intermediate_sizes": "按字段/文件名/局部标题的阅读层级选择；不固定为本集具体字号列表",
+      "override_policy": "先读本集 effective defaults；仅本集明确覆盖可改；不影响字幕和动画文字的通用字号"
+    },
+    "geometry": {
+      "panel_border_px": 2,
+      "panel_radius_px": 28,
+      "connection_stroke_px": 3,
+      "icon_stroke_local_px": 3.5,
+      "icon_viewbox_units": 100,
+      "status": "adopted_adjustable_starting_point_after_delegated_self_check"
+    },
+    "process_initial_seconds": 0.55,
+    "frame_time_easing": {
+      "object_default": "cubic_out",
+      "morph_default": "quadratic_out",
+      "path_progress": "path_arc_length_with_explicit_progress_curve"
+    },
+    "object_handoff": {
+      "continuous_identity_required": true,
+      "target_state_after_arrival": true,
+      "preserve_reusable_source": true,
+      "occlusion_matches_container_depth": true
+    },
+    "process_sampling": {
+      "interior_fractions": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "encoded_midpoint_neighbors": true,
+      "normal_speed_review_required": true,
+      "pixel_change_is_not_semantic_pass": true
+    },
+    "dependencies": {
+      "flubber": {
+        "version": "0.4.2",
+        "local_only": true
+      },
+      "tween_js": {
+        "required": false,
+        "reason": "已认可成片由明确帧时间的纯函数插值驱动；无 Tween.js 运行时加载"
+      }
+    },
+    "effective_defaults_required": true,
+    "episode_scene_generation_required": true,
+    "jianying_layer_extraction_default": false
+  }
+}

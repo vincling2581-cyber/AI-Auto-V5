@@ -1,0 +1,218 @@
+{
+  "profile_id": "reference_cards_v1",
+  "standard_version": "4.5",
+  "origin_revision": "card_style_v4_reference",
+  "approval_scope": "用户认可最新视频，并授权按最新成片方法更新标准；2026-10-06进一步授权由助手检查，无问题后启用。并非用户亲自逐项审阅；本方法参数作为可调默认起点。",
+  "master": {
+    "original": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\07_exports\\Skill工作手册_1080p_无字幕母版.mp4",
+    "archive": "archive/accepted_master.mp4",
+    "sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88",
+    "archive_sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88",
+    "scope": "accepted_visual_method_reference_not_reusable_episode_footage"
+  },
+  "active_source_lock": [
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\card_scene.html",
+      "archive": "archive/episode_source/06_project/cards/card_scene.html",
+      "sha256": "9f50358de8a822d19ac82854e3af49de33b5fba788204d7453070ab53d659916",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\card_kit.js",
+      "archive": "archive/episode_source/06_project/cards/card_kit.js",
+      "sha256": "7803274f6eb398cd9c9586c1efc21494d51d5962e87d09551dee47c6359d18c0",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\cards_main.js",
+      "archive": "archive/episode_source/06_project/cards/cards_main.js",
+      "sha256": "beb1b5873886a3017a88420d550e1521fd9f3fa75f7d23e06e9d38536859a65a",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\cards_middle.js",
+      "archive": "archive/episode_source/06_project/cards/cards_middle.js",
+      "sha256": "6bddeae2600093287b1bc5c441bbf64b4cd4ea099651bfc10c9599deac94aa3f",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\reference_style.json",
+      "archive": "archive/episode_source/06_project/cards/reference_style.json",
+      "sha256": "eacb050fba006d62ba5acbc29329c8344a5063c84e151ae2cdac45d39239e8cc",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\motion_specs.json",
+      "archive": "archive/episode_source/06_project/cards/motion_specs.json",
+      "sha256": "73f4ab893f239b244bed8556e98b9854582afd9df431b459f7bdeb509b7fad5e",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\build_data.py",
+      "archive": "archive/episode_source/06_project/cards/build_data.py",
+      "sha256": "a0308f4622f81280ad8648a76c5f9373ecd339ae1b7233cb710e39508e319f4c",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\render_cards.py",
+      "archive": "archive/episode_source/06_project/cards/render_cards.py",
+      "sha256": "e2f0c2b265019e2d739c21b7652be101593cf5b452942a48c6d7b1d62c4ff1e2",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\03_storyboard\\cards.json",
+      "archive": "archive/episode_source/03_storyboard/cards.json",
+      "sha256": "01fe400f1cba189e47952e752c2f181c3849d90701eebdb7a7fea6ed4e637c42",
+      "use": "read_only_example_not_default_runtime"
+    },
+    {
+      "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\00_brief\\standard_lock.json",
+      "archive": "archive/episode_source/00_brief/standard_lock.json",
+      "sha256": "571ac70eeddbbd28ac513ff3f9b5eab28f9f04fae4a0e52a6aedc57baace4d02",
+      "use": "read_only_example_not_default_runtime"
+    }
+  ],
+  "runtime_derivation": {
+    "source": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\06_project\\cards\\card_kit.js",
+    "source_sha256": "7803274f6eb398cd9c9586c1efc21494d51d5962e87d09551dee47c6359d18c0",
+    "output": "card_kit.js",
+    "changes": [
+      "保留源绘图和几何算法",
+      "删除本集base、renderFrame、renderCard、initCardMotion和所有fetch",
+      "删除C02默认回退和本集场景注册",
+      "由本集effective defaults传入色板、字号、线宽、圆角、画布和过程起点",
+      "保留通用形状与图标局部坐标，不含本集镜头场景坐标",
+      "object_default/morph_default实际接入显式缓动，支持linear/quadratic_out/cubic_out并拒绝未知值",
+      "icon_viewbox_units固定100并初始化校验；其他值拒绝",
+      "README区分配置输入快照与实际参数消费，披露组件内部装饰/造型起点"
+    ],
+    "new_scene_required": true
+  },
+  "dependencies": [
+    {
+      "name": "Flubber",
+      "version": "0.4.2",
+      "path": "vendor/flubber.min.js",
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4",
+      "license": "MIT",
+      "license_path": "vendor/flubber-LICENSE",
+      "license_sha256": "3eb888ef31044c40757fe52030e381d2b7ec6ef5e90379920ea18b98ac32d187"
+    }
+  ],
+  "excluded": [
+    "09_revisions/jianying_layered_v7",
+    "native text/font conversion",
+    "alpha segment splitting",
+    "transparent ProRes extraction",
+    "draft packaging",
+    "historical inactive card_motion.js",
+    "historical palette_override.json"
+  ],
+  "files": [
+    {
+      "path": "archive/accepted_master.mp4",
+      "bytes": 12770666,
+      "sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88"
+    },
+    {
+      "path": "archive/episode_source/00_brief/standard_lock.json",
+      "bytes": 3859,
+      "sha256": "571ac70eeddbbd28ac513ff3f9b5eab28f9f04fae4a0e52a6aedc57baace4d02"
+    },
+    {
+      "path": "archive/episode_source/03_storyboard/cards.json",
+      "bytes": 99776,
+      "sha256": "01fe400f1cba189e47952e752c2f181c3849d90701eebdb7a7fea6ed4e637c42"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/build_data.py",
+      "bytes": 15466,
+      "sha256": "a0308f4622f81280ad8648a76c5f9373ecd339ae1b7233cb710e39508e319f4c"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/card_kit.js",
+      "bytes": 7805,
+      "sha256": "7803274f6eb398cd9c9586c1efc21494d51d5962e87d09551dee47c6359d18c0"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/card_scene.html",
+      "bytes": 611,
+      "sha256": "9f50358de8a822d19ac82854e3af49de33b5fba788204d7453070ab53d659916"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/cards_main.js",
+      "bytes": 6802,
+      "sha256": "beb1b5873886a3017a88420d550e1521fd9f3fa75f7d23e06e9d38536859a65a"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/cards_middle.js",
+      "bytes": 7154,
+      "sha256": "6bddeae2600093287b1bc5c441bbf64b4cd4ea099651bfc10c9599deac94aa3f"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/motion_specs.json",
+      "bytes": 23210,
+      "sha256": "73f4ab893f239b244bed8556e98b9854582afd9df431b459f7bdeb509b7fad5e"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/reference_style.json",
+      "bytes": 1102,
+      "sha256": "eacb050fba006d62ba5acbc29329c8344a5063c84e151ae2cdac45d39239e8cc"
+    },
+    {
+      "path": "archive/episode_source/06_project/cards/render_cards.py",
+      "bytes": 7885,
+      "sha256": "e2f0c2b265019e2d739c21b7652be101593cf5b452942a48c6d7b1d62c4ff1e2"
+    },
+    {
+      "path": "card_kit.js",
+      "bytes": 8643,
+      "sha256": "18c9846748a11334fd94423fb2f96a765777c279b9d570effc89e46334bb227a"
+    },
+    {
+      "path": "palette_profile.json",
+      "bytes": 3543,
+      "sha256": "fbca1f75069dd54f9d81e1556842c64090d94f9bcf9cbe5c2909ce3fce5c8351"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5040,
+      "sha256": "8b35873dfddad54878adcabba41af157526050e66ba7a38bbc790379e89227d3"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 1219,
+      "sha256": "f597e08c1a5b4e0545e6f0a442dddbf2c4068170a884cdcbfe2055f5999613c5"
+    },
+    {
+      "path": "vendor/flubber-LICENSE",
+      "bytes": 1069,
+      "sha256": "3eb888ef31044c40757fe52030e381d2b7ec6ef5e90379920ea18b98ac32d187"
+    },
+    {
+      "path": "vendor/flubber.min.js",
+      "bytes": 53509,
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4"
+    },
+    {
+      "path": "vendor/THIRD_PARTY.md",
+      "bytes": 515,
+      "sha256": "27fe7605011796980b9adbf865fcac0adc899a8e10fa3da7e4cc656799689a5d"
+    }
+  ],
+  "validation": {
+    "path": "validation.json",
+    "sha256": "f597e08c1a5b4e0545e6f0a442dddbf2c4068170a884cdcbfe2055f5999613c5",
+    "status": "passed_effective_easing_fixed_icon_units_and_deterministic_geometry"
+  },
+  "adoption": {
+    "mode": "delegated_self_check",
+    "date": "2026-10-06",
+    "status": "adopted_adjustable_defaults",
+    "authority": "用户要求助手自行检查，无问题即可，不再要求用户逐项确认",
+    "not_claimed": "用户亲自逐项审阅或永久锁死所有参数",
+    "runtime_code_changed": false,
+    "numeric_and_color_defaults_changed": false,
+    "historical_validation_unchanged": true
+  }
+}

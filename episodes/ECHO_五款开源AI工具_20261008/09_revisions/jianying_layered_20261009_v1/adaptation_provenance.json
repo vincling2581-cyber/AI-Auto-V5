@@ -1,0 +1,11 @@
+{
+  "scope": "export only; original source untouched",
+  "episode": "source/episode",
+  "modified_export_copy_files": [
+    "06_project/cards/scenes_a.js",
+    "06_project/cards/scenes_de.js",
+    "06_project/cards/common.js"
+  ],
+  "reason": "Stable identity wrappers and no-op fallback for uninstrumented source preview; no geometry or timing changes",
+  "source_manifest_sha256": "104f87288d33df43b72bfc92ad76c9e6d36a908b73db6c9bfee1e91de53f10e8"
+}

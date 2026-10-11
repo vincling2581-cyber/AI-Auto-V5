@@ -1,0 +1,3325 @@
+{
+  "schema": "echo_card_semantic_design_v1",
+  "created_at_utc": "2026-10-08T14:15:59.783161+00:00",
+  "standard_version": "4.5",
+  "sop_reference": "00_brief/standard_snapshot/Xilo风格视频生产线SOP_v4.5.md §6.1, §4.5, §12",
+  "scope": "C00–C06 of this new episode only; no global standard or narration edits",
+  "source_data": [
+    "03_storyboard/cards.json",
+    "02_timing/subtitles_names_corrected.srt",
+    "00_brief/事实核查与画面更正.md",
+    "04_assets/official/source_manifest.json",
+    "04_assets/official/web_capture_manifest.json"
+  ],
+  "policy": {
+    "original_voice": "preserved; screen corrections and conditions follow episode authorization",
+    "diagram_identity": "self-authored explanation, not a measured product run",
+    "official_media": "source-backed official examples, not local testing",
+    "object_ids": "semantic-design IDs; where explicit DOM data-object-id exists it is an implementation aid, not a claim every object already has a DOM ID",
+    "event_times": "copied from active cards.json; source-level continuous/discrete distinctions recorded separately",
+    "acceptance": "structural completeness is not subjective playback or listening acceptance"
+  },
+  "final_revision_checks": [
+    {
+      "card_id": "C03",
+      "status": "resolved_in_final_source_and_sampled_visual_review",
+      "evidence": "08_qc/independent_review.json",
+      "change": "Neutral output port (790,790) and receiver front mask applied."
+    },
+    {
+      "card_id": "C04",
+      "status": "resolved_in_final_source_and_sampled_visual_review",
+      "evidence": "08_qc/independent_review.json",
+      "change": "Receiver lights/content update after arrival; model B marked already downloaded."
+    },
+    {
+      "card_id": "C00",
+      "status": "resolved_and_encoded_samples_refreshed",
+      "evidence": "08_qc/cards/C00/render_check.json",
+      "change": "Entry event ends at1.23 seconds in final cards.json."
+    }
+  ],
+  "cards": [
+    {
+      "id": "C00",
+      "title": "五款 AI 工具，五个工作入口",
+      "source_span": "杀疯了\n全球程序员都在刷的GitHub热榜\n彻底被开源AI攻陷了\n今天就来盘点10月5款在榜免费可商用的AI工具\n看完直接帮你省下几千块年费",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "on_screen_overlap_srt_ids": [
+          4,
+          5
+        ],
+        "context_segments": [
+          {
+            "id": 1,
+            "start_seconds": 0.133,
+            "end_seconds": 0.466,
+            "text": "杀疯了"
+          },
+          {
+            "id": 2,
+            "start_seconds": 0.466,
+            "end_seconds": 2.633,
+            "text": "全球程序员都在刷的GitHub热榜"
+          },
+          {
+            "id": 3,
+            "start_seconds": 2.8,
+            "end_seconds": 4.4,
+            "text": "彻底被开源AI攻陷了"
+          },
+          {
+            "id": 4,
+            "start_seconds": 4.466,
+            "end_seconds": 7.6,
+            "text": "今天就来盘点10月5款在榜免费可商用的AI工具"
+          },
+          {
+            "id": 5,
+            "start_seconds": 7.6,
+            "end_seconds": 9.6,
+            "text": "看完直接帮你省下几千块年费"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 134,
+        "end_frame_exclusive": 288,
+        "frame_count": 154,
+        "local_duration_seconds": 5.133333333333334,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "这五款工具分别进入哪一种工作任务，是否都能无条件免费商用？",
+      "core_claim": "按声音、协作、记忆、本地模型与设计五种用途分类；软件、模型和服务的使用条件要分别核对。",
+      "relation_type": "parallel_category_mapping_with_license_condition",
+      "nodes": [
+        {
+          "id": "tool_1",
+          "label": "VoiceStudio",
+          "role": "named_tool",
+          "persistence": "本卡持续保留，互不消费"
+        },
+        {
+          "id": "job_1",
+          "label": "声音制作",
+          "role": "use_category",
+          "persistence": "与对应工具共同保留"
+        },
+        {
+          "id": "tool_2",
+          "label": "Paperclip",
+          "role": "named_tool",
+          "persistence": "本卡持续保留，互不消费"
+        },
+        {
+          "id": "job_2",
+          "label": "任务协作",
+          "role": "use_category",
+          "persistence": "与对应工具共同保留"
+        },
+        {
+          "id": "tool_3",
+          "label": "MemOS",
+          "role": "named_tool",
+          "persistence": "本卡持续保留，互不消费"
+        },
+        {
+          "id": "job_3",
+          "label": "长期记忆",
+          "role": "use_category",
+          "persistence": "与对应工具共同保留"
+        },
+        {
+          "id": "tool_4",
+          "label": "Ollama + WebUI",
+          "role": "named_tool",
+          "persistence": "本卡持续保留，互不消费"
+        },
+        {
+          "id": "job_4",
+          "label": "本地模型",
+          "role": "use_category",
+          "persistence": "与对应工具共同保留"
+        },
+        {
+          "id": "tool_5",
+          "label": "Impeccable",
+          "role": "named_tool",
+          "persistence": "本卡持续保留，互不消费"
+        },
+        {
+          "id": "job_5",
+          "label": "界面设计",
+          "role": "use_category",
+          "persistence": "与对应工具共同保留"
+        },
+        {
+          "id": "selection_rule",
+          "label": "先找到用途，再核对授权",
+          "role": "selection_condition",
+          "persistence": "末态保留"
+        }
+      ],
+      "edges": [
+        {
+          "from": "tool_1",
+          "to": "job_1",
+          "meaning": "名称与用途在同一框内对应",
+          "relation": "spatial_pairing",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "tool_2",
+          "to": "job_2",
+          "meaning": "名称与用途在同一框内对应",
+          "relation": "spatial_pairing",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "tool_3",
+          "to": "job_3",
+          "meaning": "名称与用途在同一框内对应",
+          "relation": "spatial_pairing",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "tool_4",
+          "to": "job_4",
+          "meaning": "名称与用途在同一框内对应",
+          "relation": "spatial_pairing",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "tool_5",
+          "to": "job_5",
+          "meaning": "名称与用途在同一框内对应",
+          "relation": "spatial_pairing",
+          "condition": "not_applicable"
+        }
+      ],
+      "visual_encoding": {
+        "five_peer_columns": "五类用途的并列入口，不是排名和流水线；编号仅对应讲述顺序。",
+        "same_baseline": "五个入口归位，便于同层级扫读，不暗示性能相等。",
+        "panel_colors": "深绿与纸白用于分隔相邻类别，不编码优劣、费用或许可。",
+        "footer": "更正原声笼统免费商用表述，不为五款统一贴商用保证。"
+      },
+      "screen_copy": {
+        "tool_labels": [
+          "VoiceStudio",
+          "Paperclip",
+          "MemOS",
+          "Ollama + WebUI",
+          "Impeccable"
+        ],
+        "category_labels": [
+          "声音制作",
+          "任务协作",
+          "长期记忆",
+          "本地模型",
+          "界面设计"
+        ],
+        "conclusion": "先找到用途，再核对授权",
+        "title": "五款 AI 工具，五个工作入口",
+        "footer": "开源与免费不等于无条件商用 · 软件、模型和服务许可分别核对"
+      },
+      "information_gain": "同一个空间把五个名字映射到五种任务，让观众先判断工具解决什么问题；再把使用资格作为独立条件，而不是重复热榜口号。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [
+          "G01",
+          "G02",
+          "V01",
+          "P01",
+          "M01",
+          "O01",
+          "I01"
+        ],
+        "supported_screen_claims": [
+          "五组项目名称和用途映射",
+          "商用条件不能统一推断"
+        ],
+        "limits_and_corrections": [
+          "未核实五组同时在榜，不画排名。",
+          "不展示节省几千元的保证或未经依据的对比金额。",
+          "Open WebUI条款与模型许可在对应卡及核查文档进一步说明。"
+        ],
+        "official_assets": [],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C00_initial",
+          "visible": "五个分类入口逐项建立",
+          "withheld": "选择原则尚未出现",
+          "established_by_event": "C00_E01"
+        },
+        {
+          "id": "C00_aligned",
+          "visible": "五组名称和用途落到共同基线",
+          "withheld": "不建立工具间箭头或因果",
+          "established_by_event": "C00_E02"
+        },
+        {
+          "id": "C00_read",
+          "visible": "并列类别及授权核对原则共同保留",
+          "withheld": "无新增排名数字",
+          "established_by_event": "C00_E03"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_a.js"
+      ],
+      "simplification": {
+        "applies": false,
+        "reason": "分类关系通过同框配对、并列布局和归位呈现；未声称五款之间存在转换流程。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 4.2,
+        "local_end_seconds": 5.133333333333334,
+        "local_start_frame": 126,
+        "local_end_frame_exclusive": 154,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "none_after_entry_and_alignment",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C00_E01",
+          "start_seconds": 0.1,
+          "end_seconds": 1.23,
+          "check_frames": [
+            10,
+            20,
+            30
+          ],
+          "meaning": "五种工具按用途进入",
+          "local_first_noninitial_frame": 4,
+          "local_first_final_frame": 37,
+          "global_check_frames": [
+            144,
+            154,
+            164
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C00_E02",
+          "start_seconds": 2.15,
+          "end_seconds": 3.1,
+          "check_frames": [
+            70,
+            79,
+            87
+          ],
+          "meaning": "五个入口按同一基线归位",
+          "local_first_noninitial_frame": 65,
+          "local_first_final_frame": 93,
+          "global_check_frames": [
+            204,
+            213,
+            221
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C00_E03",
+          "start_seconds": 3.55,
+          "end_seconds": 4.2,
+          "check_frames": [
+            110,
+            116,
+            122
+          ],
+          "meaning": "选择原则出现",
+          "local_first_noninitial_frame": 107,
+          "local_first_final_frame": 126,
+          "global_check_frames": [
+            244,
+            250,
+            256
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "五组名称与用途逐一对应，无错配。",
+          "五框等层级，不形成先后依赖。",
+          "选择原则与许可脚注正常速度可读。"
+        ]
+      }
+    },
+    {
+      "id": "C01",
+      "title": "VoiceStudio：把录音变成声音工作流",
+      "source_span": "第一个VoiceStudio AI配音天花板\n只需上传3秒干净录音\n就能克隆同款声音\n无论做口播播客还是有声书全能打\n多音色多语言效果跟真人没差\n下载安装包直接打开就能用\n一分钱不花\n热榜单日涨星第一",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "on_screen_overlap_srt_ids": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "context_segments": [
+          {
+            "id": 6,
+            "start_seconds": 9.6,
+            "end_seconds": 11.8,
+            "text": "第一个VoiceStudio AI配音天花板"
+          },
+          {
+            "id": 7,
+            "start_seconds": 11.8,
+            "end_seconds": 13.4,
+            "text": "只需上传3秒干净录音"
+          },
+          {
+            "id": 8,
+            "start_seconds": 13.4,
+            "end_seconds": 14.633,
+            "text": "就能克隆同款声音"
+          },
+          {
+            "id": 9,
+            "start_seconds": 14.666,
+            "end_seconds": 17.2,
+            "text": "无论做口播播客还是有声书全能打"
+          },
+          {
+            "id": 10,
+            "start_seconds": 17.4,
+            "end_seconds": 19.466,
+            "text": "多音色多语言效果跟真人没差"
+          },
+          {
+            "id": 11,
+            "start_seconds": 19.5,
+            "end_seconds": 21.266,
+            "text": "下载安装包直接打开就能用"
+          },
+          {
+            "id": 12,
+            "start_seconds": 21.3,
+            "end_seconds": 22.2,
+            "text": "一分钱不花"
+          },
+          {
+            "id": 13,
+            "start_seconds": 22.2,
+            "end_seconds": 23.533,
+            "text": "热榜单日涨星第一"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 354,
+        "end_frame_exclusive": 708,
+        "frame_count": 354,
+        "local_duration_seconds": 11.8,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "参考录音怎样进入语音制作，以及商业使用前要分别检查什么？",
+      "core_claim": "短参考音频作为音色输入，可进入多种声音任务；约3秒表示输入样本长度，应用与模型权重许可不能混同。",
+      "relation_type": "input_to_reusable_voice_profile_plus_applications_and_license_layers",
+      "nodes": [
+        {
+          "id": "reference_audio",
+          "label": "参考录音 / 3秒",
+          "role": "reusable_source",
+          "persistence": "音色提取段保留源波形"
+        },
+        {
+          "id": "voice_profile",
+          "label": "同款音色档案",
+          "role": "derived_result",
+          "persistence": "特征到达后显示，不作为独立实测结果"
+        },
+        {
+          "id": "voice_uses",
+          "label": "口播 / 播客 / 有声书",
+          "role": "parallel_uses",
+          "persistence": "三类标签并列，不画成步骤"
+        },
+        {
+          "id": "languages",
+          "label": "中文 / English / 日本語",
+          "role": "parallel_outputs",
+          "persistence": "语言条目逐项建立后保持"
+        },
+        {
+          "id": "clone_ui",
+          "label": "声音克隆界面示例",
+          "role": "official_evidence",
+          "persistence": "只在中段作为官方画面展示"
+        },
+        {
+          "id": "dub_ui",
+          "label": "官方配音界面示例",
+          "role": "official_evidence",
+          "persistence": "许可段保留"
+        },
+        {
+          "id": "app_license",
+          "label": "软件授权 AGPL-3.0",
+          "role": "license_layer",
+          "persistence": "末段保留"
+        },
+        {
+          "id": "model_license",
+          "label": "默认 OmniVoice：CC-BY-NC / 含非商用限制",
+          "role": "license_condition",
+          "persistence": "与软件许可同屏保留"
+        },
+        {
+          "id": "commercial_condition",
+          "label": "商业使用需另查授权",
+          "role": "condition",
+          "persistence": "末态保留"
+        }
+      ],
+      "edges": [
+        {
+          "from": "reference_audio",
+          "to": "voice_profile",
+          "meaning": "参考音频提供音色信息",
+          "relation": "transformation",
+          "condition": "传递结束后显示已提取状态；不消费源录音"
+        },
+        {
+          "from": "voice_profile",
+          "to": "voice_uses",
+          "meaning": "同一音色可用于不同内容",
+          "relation": "parallel_use",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "voice_profile",
+          "to": "languages",
+          "meaning": "多语言输出方向",
+          "relation": "parallel_use",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "app_license",
+          "to": "commercial_condition",
+          "meaning": "应用许可是核对的一层",
+          "relation": "required_check",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "model_license",
+          "to": "commercial_condition",
+          "meaning": "权重许可是另一个必须核对的层次",
+          "relation": "required_check",
+          "condition": "not_applicable"
+        }
+      ],
+      "visual_encoding": {
+        "left_to_right": "输入与提取结果的方向；传递线不表示3秒内必生成。",
+        "waveforms": "解释声音输入和音色档案的示意波形，不是本机实测音频波形。",
+        "parallel_labels": "应用类别和语言是并列用途，不是必经顺序。",
+        "official_images": "明确标官方界面，不当作本次本机操作录屏。",
+        "license_hierarchy": "应用许可与模型许可分层显示，非商业条件用邻近说明强调。"
+      },
+      "screen_copy": {
+        "input": [
+          "参考录音",
+          "3 秒",
+          "输入音频长度"
+        ],
+        "result": [
+          "同款音色档案",
+          "音色特征已提取",
+          "仅指参考时长，不是生成耗时"
+        ],
+        "uses": [
+          "口播",
+          "播客",
+          "有声书"
+        ],
+        "languages": [
+          "中文",
+          "English",
+          "日本語"
+        ],
+        "license": [
+          "使用前核对",
+          "软件授权",
+          "AGPL-3.0",
+          "模型权重许可另算",
+          "默认 OmniVoice：CC-BY-NC",
+          "含非商用限制",
+          "商业使用需另查授权"
+        ],
+        "title": "VoiceStudio：把录音变成声音工作流",
+        "footer": "流程示意与官方界面 · 仅使用获授权声音 · 商用需核对软件与模型许可"
+      },
+      "information_gain": "把原文宣传拆成可追踪的录音输入、音色结果、并列用途和两层授权条件，避免把输入长度、生成耗时及商用许可混为一谈。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [
+          "V01",
+          "V02",
+          "V03",
+          "V04",
+          "V05"
+        ],
+        "supported_screen_claims": [
+          "官网介绍短参考录音、声音克隆及多语言用途",
+          "应用与默认模型权重的许可不同"
+        ],
+        "limits_and_corrections": [
+          "3秒为参考录音长度，不是生成速度保证。",
+          "未盲听或实测，不保证与真人无差别。",
+          "不展示未经核实的单日涨星第一。",
+          "仅使用获授权的声音。"
+        ],
+        "official_assets": [
+          "04_assets/official/voice_clone.webp",
+          "04_assets/official/voice_dub.webp"
+        ],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C01_input",
+          "visible": "录音和示意波形",
+          "withheld": "音色提取结论暂不显示",
+          "established_by_event": "C01_E01"
+        },
+        {
+          "id": "C01_transfer",
+          "visible": "输入保留，特征沿路径交接",
+          "withheld": "目标未到达前无已提取状态",
+          "established_by_event": "C01_E02"
+        },
+        {
+          "id": "C01_profile",
+          "visible": "到达后出现音色档案内容",
+          "withheld": "不提供实测相似度数字",
+          "established_by_event": "C01_E03"
+        },
+        {
+          "id": "C01_uses",
+          "visible": "口播/播客/有声书并列",
+          "withheld": "无先后依赖",
+          "established_by_event": "C01_E04"
+        },
+        {
+          "id": "C01_languages",
+          "visible": "语言条目和官方克隆界面",
+          "withheld": "不声称这些是本机生成的声音",
+          "established_by_event": "C01_E05"
+        },
+        {
+          "id": "C01_license",
+          "visible": "官方配音界面、应用许可、权重许可",
+          "withheld": "不统一承诺无条件商用",
+          "established_by_event": "C01_E06"
+        },
+        {
+          "id": "C01_condition",
+          "visible": "商业使用核对条件完整",
+          "withheld": "不新增付费或生成调用",
+          "established_by_event": "C01_E07"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_a.js"
+      ],
+      "simplification": {
+        "applies": false,
+        "reason": "存在输入到结果的实际路径过程；许可末段允许静态读取。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 10.6,
+        "local_end_seconds": 11.8,
+        "local_start_frame": 318,
+        "local_end_frame_exclusive": 354,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "none_after_license_condition",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C01_E01",
+          "start_seconds": 0.3,
+          "end_seconds": 1.9,
+          "check_frames": [
+            19,
+            33,
+            47
+          ],
+          "meaning": "参考录音输入",
+          "local_first_noninitial_frame": 10,
+          "local_first_final_frame": 57,
+          "global_check_frames": [
+            373,
+            387,
+            401
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C01_E02",
+          "start_seconds": 1.3,
+          "end_seconds": 2.3,
+          "check_frames": [
+            45,
+            54,
+            63
+          ],
+          "meaning": "录音特征传递，保留录音",
+          "local_first_noninitial_frame": 40,
+          "local_first_final_frame": 69,
+          "global_check_frames": [
+            399,
+            408,
+            417
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C01_E03",
+          "start_seconds": 2.3,
+          "end_seconds": 3,
+          "check_frames": [
+            73,
+            80,
+            86
+          ],
+          "meaning": "到达后生成音色档案",
+          "local_first_noninitial_frame": 70,
+          "local_first_final_frame": 90,
+          "global_check_frames": [
+            427,
+            434,
+            440
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C01_E04",
+          "start_seconds": 3.1,
+          "end_seconds": 3.9,
+          "check_frames": [
+            98,
+            105,
+            112
+          ],
+          "meaning": "音色分配三类应用",
+          "local_first_noninitial_frame": 94,
+          "local_first_final_frame": 117,
+          "global_check_frames": [
+            452,
+            459,
+            466
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C01_E05",
+          "start_seconds": 4.9,
+          "end_seconds": 6.7,
+          "check_frames": [
+            158,
+            174,
+            190
+          ],
+          "meaning": "语言输出逐个建立",
+          "local_first_noninitial_frame": 148,
+          "local_first_final_frame": 201,
+          "global_check_frames": [
+            512,
+            528,
+            544
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C01_E06",
+          "start_seconds": 8.15,
+          "end_seconds": 8.75,
+          "check_frames": [
+            248,
+            253,
+            259
+          ],
+          "meaning": "官方配音界面与授权层级",
+          "local_first_noninitial_frame": 245,
+          "local_first_final_frame": 263,
+          "global_check_frames": [
+            602,
+            607,
+            613
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C01_E07",
+          "start_seconds": 10,
+          "end_seconds": 10.6,
+          "check_frames": [
+            304,
+            309,
+            314
+          ],
+          "meaning": "模型许可条件进一步标记",
+          "local_first_noninitial_frame": 301,
+          "local_first_final_frame": 318,
+          "global_check_frames": [
+            658,
+            663,
+            668
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "录音特征到达后再出现提取完成内容。",
+          "3秒限定与非商业权重条件可读。",
+          "中后段官方画面不冒称当前实测。"
+        ]
+      }
+    },
+    {
+      "id": "C02",
+      "title": "Paperclip：让任务找到合适的 Agent",
+      "source_span": "第二个Paperclip AI打工仔管理器\n单周涨星超1万\n解决单人即可运营agent\n团队的复杂工作流\n可以帮你按照公司架构\n调度管理一整支AI团队\n从任务派发到进度追踪\n预算管控全自动化\n只需照着文档玩就能用\n以前一个人干好几摊\n事的就都可以丢给他",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "on_screen_overlap_srt_ids": [
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "context_segments": [
+          {
+            "id": 14,
+            "start_seconds": 23.6,
+            "end_seconds": 26.266,
+            "text": "第二个Paperclip AI打工仔管理器"
+          },
+          {
+            "id": 15,
+            "start_seconds": 26.266,
+            "end_seconds": 27.6,
+            "text": "单周涨星超1万"
+          },
+          {
+            "id": 16,
+            "start_seconds": 27.6,
+            "end_seconds": 29.266,
+            "text": "解决单人即可运营agent"
+          },
+          {
+            "id": 17,
+            "start_seconds": 29.266,
+            "end_seconds": 30.333,
+            "text": "团队的复杂工作流"
+          },
+          {
+            "id": 18,
+            "start_seconds": 30.366,
+            "end_seconds": 31.866,
+            "text": "可以帮你按照公司架构"
+          },
+          {
+            "id": 19,
+            "start_seconds": 31.866,
+            "end_seconds": 33.4,
+            "text": "调度管理一整支AI团队"
+          },
+          {
+            "id": 20,
+            "start_seconds": 33.466,
+            "end_seconds": 35.166,
+            "text": "从任务派发到进度追踪"
+          },
+          {
+            "id": 21,
+            "start_seconds": 35.166,
+            "end_seconds": 36.5,
+            "text": "预算管控全自动化"
+          },
+          {
+            "id": 22,
+            "start_seconds": 36.5,
+            "end_seconds": 38.0,
+            "text": "只需照着文档玩就能用"
+          },
+          {
+            "id": 23,
+            "start_seconds": 38.066,
+            "end_seconds": 39.3,
+            "text": "以前一个人干好几摊"
+          },
+          {
+            "id": 24,
+            "start_seconds": 39.3,
+            "end_seconds": 40.633,
+            "text": "事的就都可以丢给他"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 788,
+        "end_frame_exclusive": 1219,
+        "frame_count": 431,
+        "local_duration_seconds": 14.366666666666667,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "一个人如何把目标分给多个 Agent，再集中查看进度与预算？",
+      "core_claim": "目标可以拆分为同级并行任务，结果分别回传到管理视图；配置、服务费用及审批仍是使用条件。",
+      "relation_type": "one_to_many_parallel_dispatch_then_result_aggregation",
+      "nodes": [
+        {
+          "id": "goal",
+          "label": "一个目标 / 并行推进三项任务",
+          "role": "source_goal",
+          "persistence": "任务派发期间目标保留"
+        },
+        {
+          "id": "agent_A",
+          "label": "Agent A",
+          "role": "parallel_executor",
+          "persistence": "不因回传而消失"
+        },
+        {
+          "id": "task_A",
+          "label": "任务 A",
+          "role": "task_identity",
+          "persistence": "在派发、执行、回传中保持对应"
+        },
+        {
+          "id": "result_A",
+          "label": "结果 A",
+          "role": "receiving_result",
+          "persistence": "到达后累积保留"
+        },
+        {
+          "id": "agent_B",
+          "label": "Agent B",
+          "role": "parallel_executor",
+          "persistence": "不因回传而消失"
+        },
+        {
+          "id": "task_B",
+          "label": "任务 B",
+          "role": "task_identity",
+          "persistence": "在派发、执行、回传中保持对应"
+        },
+        {
+          "id": "result_B",
+          "label": "结果 B",
+          "role": "receiving_result",
+          "persistence": "到达后累积保留"
+        },
+        {
+          "id": "agent_C",
+          "label": "Agent C",
+          "role": "parallel_executor",
+          "persistence": "不因回传而消失"
+        },
+        {
+          "id": "task_C",
+          "label": "任务 C",
+          "role": "task_identity",
+          "persistence": "在派发、执行、回传中保持对应"
+        },
+        {
+          "id": "result_C",
+          "label": "结果 C",
+          "role": "receiving_result",
+          "persistence": "到达后累积保留"
+        },
+        {
+          "id": "progress",
+          "label": "统一查看进度 / 3 / 3",
+          "role": "aggregate_status",
+          "persistence": "仅随各结果到达累积"
+        },
+        {
+          "id": "budget",
+          "label": "预算约束 / 按配置执行",
+          "role": "configuration_condition",
+          "persistence": "末段持续保留"
+        },
+        {
+          "id": "official_ui",
+          "label": "官方界面",
+          "role": "official_evidence",
+          "persistence": "后段切入并放大月花费和待审批区域"
+        }
+      ],
+      "edges": [
+        {
+          "from": "goal",
+          "to": "agent_A",
+          "meaning": "派发任务A",
+          "relation": "parallel_dispatch",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "agent_A",
+          "to": "result_A",
+          "meaning": "同一任务A的结果回传",
+          "relation": "result_handoff",
+          "condition": "包到达后才更新已收到"
+        },
+        {
+          "from": "result_A",
+          "to": "progress",
+          "meaning": "完成结果计入统一进度",
+          "relation": "aggregation",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "goal",
+          "to": "agent_B",
+          "meaning": "派发任务B",
+          "relation": "parallel_dispatch",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "agent_B",
+          "to": "result_B",
+          "meaning": "同一任务B的结果回传",
+          "relation": "result_handoff",
+          "condition": "包到达后才更新已收到"
+        },
+        {
+          "from": "result_B",
+          "to": "progress",
+          "meaning": "完成结果计入统一进度",
+          "relation": "aggregation",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "goal",
+          "to": "agent_C",
+          "meaning": "派发任务C",
+          "relation": "parallel_dispatch",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "agent_C",
+          "to": "result_C",
+          "meaning": "同一任务C的结果回传",
+          "relation": "result_handoff",
+          "condition": "包到达后才更新已收到"
+        },
+        {
+          "from": "result_C",
+          "to": "progress",
+          "meaning": "完成结果计入统一进度",
+          "relation": "aggregation",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "budget",
+          "to": "official_ui",
+          "meaning": "官方页面展示成本和审批字段",
+          "relation": "evidence_mapping",
+          "condition": "not_applicable"
+        }
+      ],
+      "visual_encoding": {
+        "fan_out": "一个目标向三个同级节点分叉；不存在Agent A到B再到C的虚假串行关系。",
+        "task_ids": "A/B/C贯穿派发、对应执行节点和结果行。",
+        "return_rails": "独立回传轨道到对应结果，先到先更新。",
+        "three_of_three": "纯示意三项任务的完成数，不是产品性能指标或用户业务结果。",
+        "official_focus": "官方截图从全局总览放大到Month Spend与Pending Approvals；0和Unlimited budget只是官方示例画面。"
+      },
+      "screen_copy": {
+        "goal": [
+          "一个目标",
+          "并行推进三项任务"
+        ],
+        "agents": [
+          "Agent A",
+          "Agent B",
+          "Agent C"
+        ],
+        "states": [
+          "等待派发",
+          "执行任务",
+          "已回传"
+        ],
+        "results": [
+          "结果逐项回传",
+          "等待接收",
+          "结果已收到",
+          "统一查看进度"
+        ],
+        "conditions": [
+          "进度回传",
+          "预算约束",
+          "按配置执行"
+        ],
+        "official": [
+          "官方界面",
+          "任务与运行状态总览",
+          "查看预算与待审批项"
+        ],
+        "title": "Paperclip：让任务找到合适的 Agent",
+        "footer": "流程示意 · 需配置 Agent 与模型服务，调用可能付费 · 周涨星未证实"
+      },
+      "information_gain": "同时呈现任务的身份、并行性和回传终点，观众能区分派发、执行、接收、汇总及审批，不把所有管理能力压成自动化口号。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [
+          "P01",
+          "P02",
+          "P03",
+          "P04"
+        ],
+        "supported_screen_claims": [
+          "官方资料提供任务、组织、成本预算与审批管理",
+          "示例展示配置后的集中管理关系"
+        ],
+        "limits_and_corrections": [
+          "单周涨星超1万未证实，不上屏该数字。",
+          "三任务与3/3是流程示意，不是实际运行结果。",
+          "不声称所有业务无需人工或绝不超预算。",
+          "Agent和模型服务需配置，外部服务可能计费。"
+        ],
+        "official_assets": [
+          "04_assets/official/paperclip_home.png"
+        ],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C02_goal",
+          "visible": "目标与等待任务节点",
+          "withheld": "暂无已完成结果",
+          "established_by_event": "C02_E01"
+        },
+        {
+          "id": "C02_dispatch",
+          "visible": "目标向三个同级Agent并行派发",
+          "withheld": "无Agent间依赖连线",
+          "established_by_event": "C02_E02"
+        },
+        {
+          "id": "C02_execute",
+          "visible": "Agent各自执行",
+          "withheld": "结果仍待接收",
+          "established_by_event": "C02_E03"
+        },
+        {
+          "id": "C02_result_A",
+          "visible": "A结果已收到，其余按到达更新",
+          "withheld": "不提前计入未到达任务",
+          "established_by_event": "C02_E04"
+        },
+        {
+          "id": "C02_result_B",
+          "visible": "B结果加入，保留A",
+          "withheld": "不清空旧结果",
+          "established_by_event": "C02_E05"
+        },
+        {
+          "id": "C02_result_C",
+          "visible": "C结果加入，三项完整",
+          "withheld": "不重复生成第四个结果",
+          "established_by_event": "C02_E06"
+        },
+        {
+          "id": "C02_progress",
+          "visible": "进度汇总与结果对应",
+          "withheld": "不当作实测效率数据",
+          "established_by_event": "C02_E07"
+        },
+        {
+          "id": "C02_budget",
+          "visible": "按配置执行预算约束",
+          "withheld": "不展示零配置承诺",
+          "established_by_event": "C02_E08"
+        },
+        {
+          "id": "C02_official",
+          "visible": "右侧切入官方界面，左侧组织关系保留",
+          "withheld": "官方数据不是本次示意任务结果",
+          "established_by_event": "C02_E09"
+        },
+        {
+          "id": "C02_focus",
+          "visible": "官方月花费及待审批区域放大",
+          "withheld": "不更改截图中的原始内容",
+          "established_by_event": "C02_E10"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_bc.js"
+      ],
+      "simplification": {
+        "applies": false,
+        "reason": "解释并行派发、独立回传与汇总，须核对实际中间过程。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 13.15,
+        "local_end_seconds": 14.366666666666667,
+        "local_start_frame": 395,
+        "local_end_frame_exclusive": 431,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "none_after_official_focus",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C02_E01",
+          "start_seconds": 0.35,
+          "end_seconds": 0.9,
+          "check_frames": [
+            14,
+            19,
+            24
+          ],
+          "meaning": "建立目标",
+          "local_first_noninitial_frame": 11,
+          "local_first_final_frame": 27,
+          "global_check_frames": [
+            802,
+            807,
+            812
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E02",
+          "start_seconds": 1.15,
+          "end_seconds": 2.35,
+          "check_frames": [
+            42,
+            52,
+            63
+          ],
+          "meaning": "三项任务并行派发",
+          "local_first_noninitial_frame": 35,
+          "local_first_final_frame": 71,
+          "global_check_frames": [
+            830,
+            840,
+            851
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E03",
+          "start_seconds": 3.25,
+          "end_seconds": 4.6,
+          "check_frames": [
+            106,
+            118,
+            130
+          ],
+          "meaning": "三任务各自执行",
+          "local_first_noninitial_frame": 98,
+          "local_first_final_frame": 138,
+          "global_check_frames": [
+            894,
+            906,
+            918
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E04",
+          "start_seconds": 4.65,
+          "end_seconds": 5.75,
+          "check_frames": [
+            146,
+            156,
+            166
+          ],
+          "meaning": "任务A回传",
+          "local_first_noninitial_frame": 140,
+          "local_first_final_frame": 173,
+          "global_check_frames": [
+            934,
+            944,
+            954
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E05",
+          "start_seconds": 5.15,
+          "end_seconds": 6.25,
+          "check_frames": [
+            161,
+            171,
+            181
+          ],
+          "meaning": "任务B回传",
+          "local_first_noninitial_frame": 155,
+          "local_first_final_frame": 188,
+          "global_check_frames": [
+            949,
+            959,
+            969
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E06",
+          "start_seconds": 5.65,
+          "end_seconds": 6.75,
+          "check_frames": [
+            176,
+            186,
+            196
+          ],
+          "meaning": "任务C回传",
+          "local_first_noninitial_frame": 170,
+          "local_first_final_frame": 203,
+          "global_check_frames": [
+            964,
+            974,
+            984
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E07",
+          "start_seconds": 6.75,
+          "end_seconds": 7.45,
+          "check_frames": [
+            207,
+            213,
+            219
+          ],
+          "meaning": "统一进度汇总",
+          "local_first_noninitial_frame": 203,
+          "local_first_final_frame": 224,
+          "global_check_frames": [
+            995,
+            1001,
+            1007
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E08",
+          "start_seconds": 8.45,
+          "end_seconds": 9.25,
+          "check_frames": [
+            258,
+            266,
+            273
+          ],
+          "meaning": "按配置显示预算约束",
+          "local_first_noninitial_frame": 254,
+          "local_first_final_frame": 278,
+          "global_check_frames": [
+            1046,
+            1054,
+            1061
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E09",
+          "start_seconds": 10.55,
+          "end_seconds": 11.27,
+          "check_frames": [
+            321,
+            327,
+            334
+          ],
+          "meaning": "官方界面切入",
+          "local_first_noninitial_frame": 317,
+          "local_first_final_frame": 339,
+          "global_check_frames": [
+            1109,
+            1115,
+            1122
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C02_E10",
+          "start_seconds": 12.55,
+          "end_seconds": 13.15,
+          "check_frames": [
+            380,
+            386,
+            391
+          ],
+          "meaning": "官方界面局部查看",
+          "local_first_noninitial_frame": 377,
+          "local_first_final_frame": 395,
+          "global_check_frames": [
+            1168,
+            1174,
+            1179
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "对应结果行不早于对应包到达更新。",
+          "三个任务同级，原目标和Agent保留。",
+          "官方截图放大位置真实对应月花费/待审批，不虚构预算实施结果。"
+        ]
+      }
+    },
+    {
+      "id": "C03",
+      "title": "MemOS：让记忆进入下一次对话",
+      "source_span": "第三个MemOS给AI装的记忆硬盘\n是不是受够了每次开新对话\nAI都从头自我介绍\nMemOS能为大模型与agent提供超\n持久记忆以及混合检索\n有效降低30%的TOKEN消耗\n累计1.17万star快速攀升\n还原生支持Deepseek Harness框架\n说句实话\n这个目前是给开发者的\n普通人先收藏\n等产品接入\n你就躺着享受",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "on_screen_overlap_srt_ids": [
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "context_segments": [
+          {
+            "id": 25,
+            "start_seconds": 40.633,
+            "end_seconds": 42.9,
+            "text": "第三个MemOS给AI装的记忆硬盘"
+          },
+          {
+            "id": 26,
+            "start_seconds": 42.933,
+            "end_seconds": 44.8,
+            "text": "是不是受够了每次开新对话"
+          },
+          {
+            "id": 27,
+            "start_seconds": 44.8,
+            "end_seconds": 46.1,
+            "text": "AI都从头自我介绍"
+          },
+          {
+            "id": 28,
+            "start_seconds": 46.3,
+            "end_seconds": 47.866,
+            "text": "MemOS能为大模型与agent提供超"
+          },
+          {
+            "id": 29,
+            "start_seconds": 48.533,
+            "end_seconds": 50.133,
+            "text": "持久记忆以及混合检索"
+          },
+          {
+            "id": 30,
+            "start_seconds": 50.2,
+            "end_seconds": 52.266,
+            "text": "有效降低30%的TOKEN消耗"
+          },
+          {
+            "id": 31,
+            "start_seconds": 52.4,
+            "end_seconds": 54.4,
+            "text": "累计1.17万star快速攀升"
+          },
+          {
+            "id": 32,
+            "start_seconds": 54.533,
+            "end_seconds": 56.466,
+            "text": "还原生支持Deepseek Harness框架"
+          },
+          {
+            "id": 33,
+            "start_seconds": 56.533,
+            "end_seconds": 57.333,
+            "text": "说句实话"
+          },
+          {
+            "id": 34,
+            "start_seconds": 57.333,
+            "end_seconds": 58.7,
+            "text": "这个目前是给开发者的"
+          },
+          {
+            "id": 35,
+            "start_seconds": 58.866,
+            "end_seconds": 59.766,
+            "text": "普通人先收藏"
+          },
+          {
+            "id": 36,
+            "start_seconds": 59.766,
+            "end_seconds": 60.566,
+            "text": "等产品接入"
+          },
+          {
+            "id": 37,
+            "start_seconds": 60.566,
+            "end_seconds": 61.666,
+            "text": "你就躺着享受"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 1287,
+        "end_frame_exclusive": 1850,
+        "frame_count": 563,
+        "local_duration_seconds": 18.766666666666666,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "旧对话的信息怎样留存，并在新任务中只取回相关部分？",
+      "core_claim": "对话信息留存在记忆库，经并行检索和相关性筛选后把选中副本交给新任务；来源保留，开发者需要完成应用接入。",
+      "relation_type": "persistent_storage_parallel_retrieval_selection_and_copy_reuse",
+      "nodes": [
+        {
+          "id": "conversation",
+          "label": "对话中的上下文",
+          "role": "reusable_source",
+          "persistence": "全段保留"
+        },
+        {
+          "id": "library",
+          "label": "持久记忆库",
+          "role": "persistent_storage",
+          "persistence": "入库后不因取回被清空"
+        },
+        {
+          "id": "M1",
+          "label": "M1 偏好",
+          "role": "persistent_record",
+          "persistence": "源和库保留"
+        },
+        {
+          "id": "candidate_M1",
+          "label": "M1 偏好",
+          "role": "retrieval_candidate",
+          "persistence": "M3未选；M1/M2可取回"
+        },
+        {
+          "id": "M2",
+          "label": "M2 背景",
+          "role": "persistent_record",
+          "persistence": "源和库保留"
+        },
+        {
+          "id": "candidate_M2",
+          "label": "M2 背景",
+          "role": "retrieval_candidate",
+          "persistence": "M3未选；M1/M2可取回"
+        },
+        {
+          "id": "M3",
+          "label": "M3 旧任务",
+          "role": "persistent_record",
+          "persistence": "源和库保留"
+        },
+        {
+          "id": "candidate_M3",
+          "label": "M3 旧任务",
+          "role": "retrieval_candidate",
+          "persistence": "M3未选；M1/M2可取回"
+        },
+        {
+          "id": "query",
+          "label": "后续对话 / 新任务",
+          "role": "retrieval_request",
+          "persistence": "检索段保留"
+        },
+        {
+          "id": "keyword",
+          "label": "关键词检索",
+          "role": "parallel_retrieval_route",
+          "persistence": "与语义检索同级"
+        },
+        {
+          "id": "semantic",
+          "label": "语义检索",
+          "role": "parallel_retrieval_route",
+          "persistence": "不被画成关键词检索后续步骤"
+        },
+        {
+          "id": "selected",
+          "label": "M1 / M2选中，M3排除",
+          "role": "selection_gate",
+          "persistence": "排除项不进入接收"
+        },
+        {
+          "id": "context_result",
+          "label": "已取回M1+M2 / 复用相关上下文",
+          "role": "receiving_context",
+          "persistence": "到达后建立"
+        },
+        {
+          "id": "api",
+          "label": "记忆接口 / 调用检索",
+          "role": "integration_boundary",
+          "persistence": "接入段保持"
+        },
+        {
+          "id": "application",
+          "label": "应用 / Agent",
+          "role": "receiving_application",
+          "persistence": "包到达后才显示已取得上下文"
+        }
+      ],
+      "edges": [
+        {
+          "from": "conversation",
+          "to": "library",
+          "meaning": "复制上下文入库",
+          "relation": "copy_storage",
+          "condition": "保留原始上下文"
+        },
+        {
+          "from": "query",
+          "to": "keyword",
+          "meaning": "将查询交给关键词路径",
+          "relation": "parallel_query",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "query",
+          "to": "semantic",
+          "meaning": "将同一查询交给语义路径",
+          "relation": "parallel_query",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "keyword",
+          "to": "candidate_M1",
+          "meaning": "返回候选M1",
+          "relation": "retrieval_example",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "keyword",
+          "to": "candidate_M2",
+          "meaning": "返回候选M2",
+          "relation": "retrieval_example",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "semantic",
+          "to": "candidate_M3",
+          "meaning": "返回待筛选候选M3",
+          "relation": "retrieval_example",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "candidate_M1",
+          "to": "selected",
+          "meaning": "接受相关候选",
+          "relation": "selection",
+          "condition": "仅M1/M2"
+        },
+        {
+          "from": "candidate_M2",
+          "to": "selected",
+          "meaning": "接受相关候选",
+          "relation": "selection",
+          "condition": "仅M1/M2"
+        },
+        {
+          "from": "candidate_M3",
+          "to": "selected",
+          "meaning": "明确排除无关项",
+          "relation": "rejection",
+          "condition": "M3无有效输出边"
+        },
+        {
+          "from": "selected",
+          "to": "context_result",
+          "meaning": "把相关副本交给新任务",
+          "relation": "copy_handoff",
+          "condition": "取回到达后更新结果"
+        },
+        {
+          "from": "library",
+          "to": "api",
+          "meaning": "从记忆库中性端口取出M1副本",
+          "relation": "copy_reuse",
+          "condition": "不消费来源，不从被排除M3的标签出发"
+        },
+        {
+          "from": "api",
+          "to": "application",
+          "meaning": "经接口交接给应用",
+          "relation": "handoff",
+          "condition": "进入容器时遮挡合理，到达后更新目标"
+        }
+      ],
+      "visual_encoding": {
+        "M_ids": "M1/M2/M3在源、库存、候选中身份一致。标签是抽象例子，不是实际用户隐私数据。",
+        "source_persistence": "旧对话和已入库记录始终保留，表达取回是复用副本。",
+        "dual_routes": "两路检索是并行方法，不画先后依赖；候选分配仅解释结构，不定义实际算法。",
+        "selection_marks": "勾选M1/M2，弱化并划除M3；被排除项没有流入接收的路径。",
+        "integration_port": "应用接入从记忆库的独立端口出发，避免被读成M3继续执行。",
+        "official_asset_exclusion": "memos_architecture.png实为概念画，本卡不拿它当系统架构或执行证据。"
+      },
+      "screen_copy": {
+        "source": [
+          "对话中的上下文",
+          "M1 偏好",
+          "M2 背景",
+          "M3 旧任务"
+        ],
+        "store": [
+          "持久记忆库",
+          "来源保留，后续继续复用"
+        ],
+        "retrieve": [
+          "后续对话 / 新任务",
+          "查询相关记忆",
+          "关键词检索",
+          "语义检索",
+          "筛选相关项，再取回",
+          "已取回 M1 + M2",
+          "复用相关上下文继续任务"
+        ],
+        "integration": [
+          "开发者接入应用",
+          "通过接口把记忆接到任务中",
+          "记忆接口",
+          "调用 / 检索",
+          "应用 / Agent",
+          "已取得上下文",
+          "记忆仍在库中，任务获得副本",
+          "应用接入后，用户才能在产品中使用"
+        ],
+        "title": "MemOS：让记忆进入下一次对话",
+        "footer": "流程示意 · 节省幅度依任务与配置 · 项目方数据不等于通用保证"
+      },
+      "information_gain": "用持久身份和副本交接区分存储、检索、筛选、复用与集成；观众能看到被排除项不会混入结果，也不会误以为每次检索会消耗原记忆。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [
+          "M01",
+          "M02",
+          "M03",
+          "M04"
+        ],
+        "supported_screen_claims": [
+          "MemOS提供持久记忆和混合检索方向",
+          "需要开发者配置并接入应用"
+        ],
+        "limits_and_corrections": [
+          "不显示通用-30%节省保证。",
+          "不显示未经上下文验证的增长曲线或精确历史星标。",
+          "不把记忆硬盘比喻当硬件产品。",
+          "未画DeepSeek Harness内核自带，未保证某消费产品未来必接入。",
+          "M1/M2/M3、检索归属和筛选都是解释性例子，不是产品内部架构或本机实测。"
+        ],
+        "official_assets": [],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C03_context",
+          "visible": "三个上下文记录",
+          "withheld": "库内记录暂空",
+          "established_by_event": "C03_E01"
+        },
+        {
+          "id": "C03_store",
+          "visible": "副本连续入库，源保留",
+          "withheld": "到达前库内不显示已收存标签",
+          "established_by_event": "C03_E02"
+        },
+        {
+          "id": "C03_persistent",
+          "visible": "原记录和库存共同保留",
+          "withheld": "没有消耗来源",
+          "established_by_event": "C03_E03"
+        },
+        {
+          "id": "C03_query",
+          "visible": "新任务向同级双路发出查询",
+          "withheld": "不建立双路串行依赖",
+          "established_by_event": "C03_E04"
+        },
+        {
+          "id": "C03_candidates",
+          "visible": "M1/M2/M3候选已返回",
+          "withheld": "尚未全部进入接收",
+          "established_by_event": "C03_E05"
+        },
+        {
+          "id": "C03_select",
+          "visible": "M1/M2选中，M3划除弱化",
+          "withheld": "M3不接通结果",
+          "established_by_event": "C03_E06"
+        },
+        {
+          "id": "C03_receive",
+          "visible": "仅M1/M2副本交给接收区",
+          "withheld": "到达前不能显示已取回",
+          "established_by_event": "C03_E07"
+        },
+        {
+          "id": "C03_reuse",
+          "visible": "上下文用于继续任务，库存不变",
+          "withheld": "不追加token节省数值",
+          "established_by_event": "C03_E08"
+        },
+        {
+          "id": "C03_integrate",
+          "visible": "库、接口、应用三者关系",
+          "withheld": "尚未显示已取得上下文",
+          "established_by_event": "C03_E09"
+        },
+        {
+          "id": "C03_handoff",
+          "visible": "M1副本经中性端口和接口进入应用",
+          "withheld": "来源不消失",
+          "established_by_event": "C03_E10"
+        },
+        {
+          "id": "C03_received",
+          "visible": "到达后应用更新",
+          "withheld": "不提前报告接收",
+          "established_by_event": "C03_E11"
+        },
+        {
+          "id": "C03_boundary",
+          "visible": "保留开发者/产品接入条件",
+          "withheld": "不承诺自动获得或无限兼容",
+          "established_by_event": "C03_E12"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_bc.js"
+      ],
+      "simplification": {
+        "applies": false,
+        "reason": "存储、检索、筛选和副本交接需要完整连续过程。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 17.6,
+        "local_end_seconds": 18.766666666666666,
+        "local_start_frame": 528,
+        "local_end_frame_exclusive": 563,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "none_after_integration_condition",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C03_E01",
+          "start_seconds": 0.25,
+          "end_seconds": 0.85,
+          "check_frames": [
+            11,
+            16,
+            22
+          ],
+          "meaning": "建立对话上下文",
+          "local_first_noninitial_frame": 8,
+          "local_first_final_frame": 26,
+          "global_check_frames": [
+            1298,
+            1303,
+            1309
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E02",
+          "start_seconds": 1.45,
+          "end_seconds": 2.8,
+          "check_frames": [
+            52,
+            64,
+            76
+          ],
+          "meaning": "M1/M2/M3副本入库",
+          "local_first_noninitial_frame": 44,
+          "local_first_final_frame": 84,
+          "global_check_frames": [
+            1339,
+            1351,
+            1363
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E03",
+          "start_seconds": 3.2,
+          "end_seconds": 3.85,
+          "check_frames": [
+            100,
+            106,
+            112
+          ],
+          "meaning": "持久保留源记录",
+          "local_first_noninitial_frame": 97,
+          "local_first_final_frame": 116,
+          "global_check_frames": [
+            1387,
+            1393,
+            1399
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E04",
+          "start_seconds": 4.35,
+          "end_seconds": 5.5,
+          "check_frames": [
+            137,
+            148,
+            158
+          ],
+          "meaning": "查询并行分发双路",
+          "local_first_noninitial_frame": 131,
+          "local_first_final_frame": 165,
+          "global_check_frames": [
+            1424,
+            1435,
+            1445
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E05",
+          "start_seconds": 6.15,
+          "end_seconds": 7.3,
+          "check_frames": [
+            191,
+            202,
+            212
+          ],
+          "meaning": "返回候选记忆",
+          "local_first_noninitial_frame": 185,
+          "local_first_final_frame": 219,
+          "global_check_frames": [
+            1478,
+            1489,
+            1499
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E06",
+          "start_seconds": 7.8,
+          "end_seconds": 8.65,
+          "check_frames": [
+            239,
+            247,
+            254
+          ],
+          "meaning": "选中M1/M2并排除M3",
+          "local_first_noninitial_frame": 235,
+          "local_first_final_frame": 260,
+          "global_check_frames": [
+            1526,
+            1534,
+            1541
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E07",
+          "start_seconds": 9.45,
+          "end_seconds": 10.65,
+          "check_frames": [
+            291,
+            302,
+            312
+          ],
+          "meaning": "取回相关副本",
+          "local_first_noninitial_frame": 284,
+          "local_first_final_frame": 320,
+          "global_check_frames": [
+            1578,
+            1589,
+            1599
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E08",
+          "start_seconds": 11.1,
+          "end_seconds": 11.75,
+          "check_frames": [
+            337,
+            343,
+            349
+          ],
+          "meaning": "复用上下文",
+          "local_first_noninitial_frame": 334,
+          "local_first_final_frame": 353,
+          "global_check_frames": [
+            1624,
+            1630,
+            1636
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E09",
+          "start_seconds": 12.85,
+          "end_seconds": 13.57,
+          "check_frames": [
+            390,
+            396,
+            403
+          ],
+          "meaning": "开发者接入结构",
+          "local_first_noninitial_frame": 386,
+          "local_first_final_frame": 408,
+          "global_check_frames": [
+            1677,
+            1683,
+            1690
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E10",
+          "start_seconds": 14.45,
+          "end_seconds": 15.7,
+          "check_frames": [
+            441,
+            452,
+            464
+          ],
+          "meaning": "记忆副本送入应用",
+          "local_first_noninitial_frame": 434,
+          "local_first_final_frame": 471,
+          "global_check_frames": [
+            1728,
+            1739,
+            1751
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E11",
+          "start_seconds": 16.15,
+          "end_seconds": 16.75,
+          "check_frames": [
+            488,
+            494,
+            499
+          ],
+          "meaning": "到达后显示已接收",
+          "local_first_noninitial_frame": 485,
+          "local_first_final_frame": 503,
+          "global_check_frames": [
+            1775,
+            1781,
+            1786
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C03_E12",
+          "start_seconds": 17.05,
+          "end_seconds": 17.6,
+          "check_frames": [
+            515,
+            520,
+            525
+          ],
+          "meaning": "产品接入条件",
+          "local_first_noninitial_frame": 512,
+          "local_first_final_frame": 528,
+          "global_check_frames": [
+            1802,
+            1807,
+            1812
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "M1/M2/M3来源及库存保留，M3不进入接收。",
+          "2.80秒入库、10.65秒取回后才更新结果；15.70秒交接到达后再显示应用已收取。",
+          "复核最终源码的中性输出口以及API/应用前片遮挡修订已进入编码。"
+        ]
+      }
+    },
+    {
+      "id": "C04",
+      "title": "Ollama + Open WebUI：在本地协作",
+      "source_span": "第四个Ollama 加 Open WebUI\n长期霸榜的公认神级组合\n一行命令装完主流大\n模型全跑你电脑上\n断网也能用\n隐私直接拉满\n全平台兼容\n模型管理轻量化\n是本地部署大模型的事实标准",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "on_screen_overlap_srt_ids": [
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46
+        ],
+        "context_segments": [
+          {
+            "id": 38,
+            "start_seconds": 61.666,
+            "end_seconds": 63.466,
+            "text": "第四个Ollama 加 Open WebUI"
+          },
+          {
+            "id": 39,
+            "start_seconds": 63.5,
+            "end_seconds": 65.266,
+            "text": "长期霸榜的公认神级组合"
+          },
+          {
+            "id": 40,
+            "start_seconds": 65.333,
+            "end_seconds": 66.9,
+            "text": "一行命令装完主流大"
+          },
+          {
+            "id": 41,
+            "start_seconds": 66.9,
+            "end_seconds": 68.133,
+            "text": "模型全跑你电脑上"
+          },
+          {
+            "id": 42,
+            "start_seconds": 68.2,
+            "end_seconds": 69.066,
+            "text": "断网也能用"
+          },
+          {
+            "id": 43,
+            "start_seconds": 69.066,
+            "end_seconds": 69.933,
+            "text": "隐私直接拉满"
+          },
+          {
+            "id": 44,
+            "start_seconds": 70.0,
+            "end_seconds": 70.966,
+            "text": "全平台兼容"
+          },
+          {
+            "id": 45,
+            "start_seconds": 70.966,
+            "end_seconds": 72.0,
+            "text": "模型管理轻量化"
+          },
+          {
+            "id": 46,
+            "start_seconds": 72.0,
+            "end_seconds": 74.066,
+            "text": "是本地部署大模型的事实标准"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 1926,
+        "end_frame_exclusive": 2223,
+        "frame_count": 297,
+        "local_duration_seconds": 9.9,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "Ollama与Open WebUI分别负责什么，什么条件下断网后仍能继续？",
+      "core_claim": "先准备本地模型，由Ollama承担本地推理，Open WebUI提供交互；预先下载并选择本地模型后，本地回路可在外网断开时继续，云服务不包括在内。",
+      "relation_type": "conditional_local_pipeline_with_external_network_separation",
+      "nodes": [
+        {
+          "id": "model_A",
+          "label": "模型文件 A",
+          "role": "downloaded_local_asset",
+          "persistence": "就绪后接入运行时"
+        },
+        {
+          "id": "model_B",
+          "label": "模型文件 B",
+          "role": "alternative_downloaded_local_asset",
+          "persistence": "后段示意切换，不暗示免费获得任意模型"
+        },
+        {
+          "id": "runtime",
+          "label": "Ollama / 推理",
+          "role": "local_runtime",
+          "persistence": "外网断开时仍保留"
+        },
+        {
+          "id": "browser",
+          "label": "Open WebUI / 浏览器交互",
+          "role": "local_interface",
+          "persistence": "本地交互回路持续"
+        },
+        {
+          "id": "local_loop",
+          "label": "本地对话回路",
+          "role": "local_relation",
+          "persistence": "断网时不断开"
+        },
+        {
+          "id": "external",
+          "label": "外网连接 / 外网断开",
+          "role": "external_connection",
+          "persistence": "插头分离，和本地回路区分"
+        },
+        {
+          "id": "official_ui",
+          "label": "Open WebUI官方界面示例",
+          "role": "official_evidence",
+          "persistence": "右侧保留，明确示例含外部API"
+        },
+        {
+          "id": "platforms",
+          "label": "Windows / macOS / Linux",
+          "role": "supported_platform_categories",
+          "persistence": "后段建立后保留"
+        }
+      ],
+      "edges": [
+        {
+          "from": "model_A",
+          "to": "runtime",
+          "meaning": "已下载模型供本地运行",
+          "relation": "dependency",
+          "condition": "模型文件先就绪，不提前接收"
+        },
+        {
+          "from": "runtime",
+          "to": "browser",
+          "meaning": "推理与界面相连",
+          "relation": "handoff",
+          "condition": "连接抵达后再建立对应目标状态"
+        },
+        {
+          "from": "browser",
+          "to": "local_loop",
+          "meaning": "本地交互参与回路",
+          "relation": "local_link",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "local_loop",
+          "to": "runtime",
+          "meaning": "本地请求/响应联系",
+          "relation": "local_link",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "external",
+          "to": "runtime",
+          "meaning": "外部网络是独立连接",
+          "relation": "optional_external_link",
+          "condition": "断开后只保留已具备离线条件的本地路径"
+        },
+        {
+          "from": "model_B",
+          "to": "runtime",
+          "meaning": "切换已下载的模型示例",
+          "relation": "alternative_input",
+          "condition": "not_applicable"
+        }
+      ],
+      "visual_encoding": {
+        "left_to_right": "模型文件、推理运行时、交互界面的职责分工；不表示一条命令自动安装全部。",
+        "disconnected_wire": "只拆外网插头，本地回路保持，明确哪些关系仍在。",
+        "local_packet_loop": "用于表现同一本地回路继续处理请求；循环次数不当新事实或新语义事件。",
+        "A_B_switch": "两份已下载模型的切换示意，不体现真实容量、速度或硬件测试。",
+        "official_ui": "右侧官方示例含外部API，不能作为离线本机实测；旁边保留本地模型前提。"
+      },
+      "screen_copy": {
+        "workflow": [
+          "模型下载后，在本机运行",
+          "文件 → 推理 → 对话",
+          "本地模型",
+          "Ollama",
+          "推理",
+          "本地运行时",
+          "Open WebUI",
+          "浏览器交互"
+        ],
+        "network": [
+          "外网连接",
+          "外网断开",
+          "本地对话继续",
+          "本地流程示意"
+        ],
+        "conditions": [
+          "官方界面示例",
+          "示例画面含外部 API",
+          "离线需选择本地模型",
+          "Windows",
+          "macOS",
+          "Linux"
+        ],
+        "title": "Ollama + Open WebUI：在本地协作",
+        "footer": "需先下载本地模型 · WebUI 品牌条款、模型许可需分别核对"
+      },
+      "information_gain": "把模型文件、计算引擎、界面和网络分开，让断网动作具有明确边界；观众不会把带云端API的官方界面误认为所有功能都能离线。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [
+          "O01",
+          "O02",
+          "O03",
+          "O04",
+          "O05"
+        ],
+        "supported_screen_claims": [
+          "本地模型准备、运行时与界面分工",
+          "已准备的本地模型可用于离线场景",
+          "列举三类桌面系统"
+        ],
+        "limits_and_corrections": [
+          "不保证所有模型适配任意硬件。",
+          "不声称一条命令完成整个组合及全部模型。",
+          "云模型、云API和联网检索需要网络。",
+          "不宣称绝对隐私安全。",
+          "Open WebUI品牌条件及各模型许可分别核对。"
+        ],
+        "official_assets": [
+          "04_assets/official/webui_demo.png"
+        ],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C04_download",
+          "visible": "模型文件下载进入本机",
+          "withheld": "未就绪前不发送可运行结果",
+          "established_by_event": "C04_E01"
+        },
+        {
+          "id": "C04_runtime",
+          "visible": "模型接入Ollama",
+          "withheld": "接收状态不得早于文件准备与到达",
+          "established_by_event": "C04_E02"
+        },
+        {
+          "id": "C04_interface",
+          "visible": "运行时连接WebUI",
+          "withheld": "响应在连接到达后建立",
+          "established_by_event": "C04_E03"
+        },
+        {
+          "id": "C04_local",
+          "visible": "本地交互回路可见",
+          "withheld": "不把云端外部API纳入离线回路",
+          "established_by_event": "C04_E04"
+        },
+        {
+          "id": "C04_disconnect",
+          "visible": "外网插头分离，本地线仍连通",
+          "withheld": "不拆本地关系",
+          "established_by_event": "C04_E05"
+        },
+        {
+          "id": "C04_offline",
+          "visible": "本地对话继续及前提同屏",
+          "withheld": "不扩展为所有功能离线",
+          "established_by_event": "C04_E06"
+        },
+        {
+          "id": "C04_platforms",
+          "visible": "三类桌面平台显示",
+          "withheld": "不外推所有系统与设备",
+          "established_by_event": "C04_E07"
+        },
+        {
+          "id": "C04_model_switch",
+          "visible": "模型A换为已下载模型B",
+          "withheld": "不虚构模型下载速度或性能数字",
+          "established_by_event": "C04_E08"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_de.js"
+      ],
+      "simplification": {
+        "applies": false,
+        "reason": "职责链、到达交接和断网后保持本地回路均是需实际解释的关系。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 8.95,
+        "local_end_seconds": 9.9,
+        "local_start_frame": 269,
+        "local_end_frame_exclusive": 297,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "structural_reading_with_semantically_related_local_request_loop; not all pixels static",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C04_E01",
+          "start_seconds": 0.18,
+          "end_seconds": 1.6,
+          "check_frames": [
+            14,
+            27,
+            39
+          ],
+          "meaning": "模型下载到本机",
+          "local_first_noninitial_frame": 6,
+          "local_first_final_frame": 48,
+          "global_check_frames": [
+            1940,
+            1953,
+            1965
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E02",
+          "start_seconds": 1.55,
+          "end_seconds": 2.55,
+          "check_frames": [
+            52,
+            61,
+            70
+          ],
+          "meaning": "模型接入Ollama",
+          "local_first_noninitial_frame": 47,
+          "local_first_final_frame": 77,
+          "global_check_frames": [
+            1978,
+            1987,
+            1996
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E03",
+          "start_seconds": 2.65,
+          "end_seconds": 3.65,
+          "check_frames": [
+            86,
+            94,
+            104
+          ],
+          "meaning": "连接WebUI",
+          "local_first_noninitial_frame": 80,
+          "local_first_final_frame": 110,
+          "global_check_frames": [
+            2012,
+            2020,
+            2030
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E04",
+          "start_seconds": 3.55,
+          "end_seconds": 4.4,
+          "check_frames": [
+            112,
+            119,
+            127
+          ],
+          "meaning": "建立本地回路",
+          "local_first_noninitial_frame": 107,
+          "local_first_final_frame": 132,
+          "global_check_frames": [
+            2038,
+            2045,
+            2053
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E05",
+          "start_seconds": 4.55,
+          "end_seconds": 5.65,
+          "check_frames": [
+            143,
+            153,
+            163
+          ],
+          "meaning": "外网插头分离",
+          "local_first_noninitial_frame": 137,
+          "local_first_final_frame": 170,
+          "global_check_frames": [
+            2069,
+            2079,
+            2089
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E06",
+          "start_seconds": 5.65,
+          "end_seconds": 6.05,
+          "check_frames": [
+            172,
+            176,
+            179
+          ],
+          "meaning": "本地对话继续",
+          "local_first_noninitial_frame": 170,
+          "local_first_final_frame": 182,
+          "global_check_frames": [
+            2098,
+            2102,
+            2105
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E07",
+          "start_seconds": 7.1,
+          "end_seconds": 7.75,
+          "check_frames": [
+            217,
+            223,
+            229
+          ],
+          "meaning": "平台兼容范围",
+          "local_first_noninitial_frame": 214,
+          "local_first_final_frame": 233,
+          "global_check_frames": [
+            2143,
+            2149,
+            2155
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C04_E08",
+          "start_seconds": 8.15,
+          "end_seconds": 8.95,
+          "check_frames": [
+            249,
+            256,
+            264
+          ],
+          "meaning": "本地模型A/B切换",
+          "local_first_noninitial_frame": 245,
+          "local_first_final_frame": 269,
+          "global_check_frames": [
+            2175,
+            2182,
+            2190
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "模型准备完再接入运行时；WebUI响应不能早于连接到达。",
+          "外网分离过程中本地路径连续。",
+          "官方API界面和本地示意明确分开；模型及品牌条件可读。"
+        ]
+      }
+    },
+    {
+      "id": "C05",
+      "title": "Impeccable：把设计判断交给工作流",
+      "source_span": "最后一个Impeccable\n专治AI审美绝症\n用AI写过网页的都懂\n功能全对\n但却丑的整整齐齐\n累计75万star快速蹿红\n往你的AI编程工具里一挂\n自动修正样式问题\n提升界面审美",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "on_screen_overlap_srt_ids": [
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55
+        ],
+        "context_segments": [
+          {
+            "id": 47,
+            "start_seconds": 74.1,
+            "end_seconds": 75.2,
+            "text": "最后一个Impeccable"
+          },
+          {
+            "id": 48,
+            "start_seconds": 75.2,
+            "end_seconds": 76.466,
+            "text": "专治AI审美绝症"
+          },
+          {
+            "id": 49,
+            "start_seconds": 76.466,
+            "end_seconds": 77.966,
+            "text": "用AI写过网页的都懂"
+          },
+          {
+            "id": 50,
+            "start_seconds": 78.1,
+            "end_seconds": 78.733,
+            "text": "功能全对"
+          },
+          {
+            "id": 51,
+            "start_seconds": 78.733,
+            "end_seconds": 79.966,
+            "text": "但却丑的整整齐齐"
+          },
+          {
+            "id": 52,
+            "start_seconds": 80.066,
+            "end_seconds": 81.866,
+            "text": "累计75万star快速蹿红"
+          },
+          {
+            "id": 53,
+            "start_seconds": 81.866,
+            "end_seconds": 83.666,
+            "text": "往你的AI编程工具里一挂"
+          },
+          {
+            "id": 54,
+            "start_seconds": 83.7,
+            "end_seconds": 85.0,
+            "text": "自动修正样式问题"
+          },
+          {
+            "id": 55,
+            "start_seconds": 85.0,
+            "end_seconds": 86.0,
+            "text": "提升界面审美"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 2294,
+        "end_frame_exclusive": 2580,
+        "frame_count": 286,
+        "local_duration_seconds": 9.533333333333333,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "设计指导改善的是哪些界面关系，如何区别示意、官方案例和星标纠错？",
+      "core_claim": "保持同一组内容对象，通过位置、间距与层级调整改善组织；官方案例仅作来源展示，星标使用本集核查快照更正原SRT量级。",
+      "relation_type": "persistent_object_layout_reorganization_plus_evidence_and_numeric_correction",
+      "nodes": [
+        {
+          "id": "page_title",
+          "label": "项目概览 / 本周进展",
+          "role": "persistent_heading",
+          "persistence": "位置与字号变化，身份不变"
+        },
+        {
+          "id": "metric_projects",
+          "label": "项目 12",
+          "role": "illustrative_metric",
+          "persistence": "从初态保留到整理后"
+        },
+        {
+          "id": "metric_tasks",
+          "label": "任务 36",
+          "role": "illustrative_metric",
+          "persistence": "沿独立通道移位，数值不变"
+        },
+        {
+          "id": "metric_done",
+          "label": "完成 8",
+          "role": "illustrative_metric",
+          "persistence": "先上移再横移，身份不变"
+        },
+        {
+          "id": "open_button",
+          "label": "打开项目",
+          "role": "persistent_action_control",
+          "persistence": "位置改变，不新增功能"
+        },
+        {
+          "id": "design_rules",
+          "label": "排版层级 / 对齐与间距 / 可读性检查",
+          "role": "design_guidance",
+          "persistence": "按阶段出现检查标记"
+        },
+        {
+          "id": "star_correction",
+          "label": "约7.85万 / 非75万",
+          "role": "source_snapshot_correction",
+          "persistence": "中段单独读取"
+        },
+        {
+          "id": "official_case",
+          "label": "Neo Mirai 官方案例",
+          "role": "official_evidence",
+          "persistence": "末段遮罩展开，不冒称本机改造成果"
+        }
+      ],
+      "edges": [
+        {
+          "from": "page_title",
+          "to": "design_rules",
+          "meaning": "通过层级规则组织标题",
+          "relation": "layout_rule",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "metric_projects",
+          "to": "metric_tasks",
+          "meaning": "整理后按统一栅格并列",
+          "relation": "alignment",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "metric_tasks",
+          "to": "metric_done",
+          "meaning": "同等宽度与间距帮助比较",
+          "relation": "alignment",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "design_rules",
+          "to": "official_case",
+          "meaning": "规则方向对应官方案例展示",
+          "relation": "example_evidence",
+          "condition": "not_applicable"
+        },
+        {
+          "from": "star_correction",
+          "to": "official_case",
+          "meaning": "两个独立证据阶段，不构成因果",
+          "relation": "sequence_only",
+          "condition": "not_applicable"
+        }
+      ],
+      "visual_encoding": {
+        "persistent_ids": "项目12、任务36、完成8是示意页面内部对象，不是工具性能或真实业务数据；移动时不换对象。",
+        "separate_lanes": "对象按上移、横移、归位分开通过，避免彼此穿越。",
+        "grid_and_type": "栅格、间距、字号和粗细表达信息层级，不暗示新增功能。",
+        "star": "约7.85万是2026-10-08既有核查快照；不展示虚构的上涨过程。",
+        "official_case": "右侧网页案例独立标注官方来源，不能说是左侧示意页面自动变成该案例。"
+      },
+      "screen_copy": {
+        "illustration": [
+          "同一界面，重排结构",
+          "移动位置 → 对齐 → 建立层级",
+          "项目概览",
+          "本周进展",
+          "项目 12",
+          "任务 36",
+          "完成 8",
+          "打开项目",
+          "统一栅格",
+          "元素身份保留，结构变清楚"
+        ],
+        "rules": [
+          "排版层级",
+          "对齐与间距",
+          "可读性检查"
+        ],
+        "correction": [
+          "GitHub Stars",
+          "★ 约7.85万",
+          "核查快照 · 非75万",
+          "以核查时页面显示为准"
+        ],
+        "case": [
+          "官方案例",
+          "Neo Mirai · 页面设计",
+          "官方案例展示"
+        ],
+        "title": "Impeccable：把设计判断交给工作流",
+        "footer": "流程示意与官网案例 · 星标为 2026-10-08 核查快照 · 效果依工具与任务"
+      },
+      "information_gain": "用同一页面对象持续位移具体展示设计判断改变的关系，且把演示数值、官方案例与原文星标纠错分开，避免把审美提升说成不可见的一键保证。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [
+          "I01",
+          "I02",
+          "I03"
+        ],
+        "supported_screen_claims": [
+          "项目提供供编码Agent使用的设计指导与审查",
+          "本集核查记录星标约7.85万",
+          "Neo Mirai为官方案例页"
+        ],
+        "limits_and_corrections": [
+          "12/36/8仅为自绘界面示意数字。",
+          "未在本机调用Impeccable改写示意页面。",
+          "不保证任意界面一键优秀。",
+          "星标快照具有日期，不断言原MP3一定读错或SRT错误成因。"
+        ],
+        "official_assets": [
+          "04_assets/official/impeccable_case.png"
+        ],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C05_initial",
+          "visible": "同一组元素位置与层级不齐",
+          "withheld": "不换成另一套页面数据",
+          "established_by_event": "C05_E01"
+        },
+        {
+          "id": "C05_lift",
+          "visible": "完成卡先抬高",
+          "withheld": "不穿过其他卡",
+          "established_by_event": "C05_E02"
+        },
+        {
+          "id": "C05_move_done",
+          "visible": "完成卡沿独立水平通道移位",
+          "withheld": "身份数值不变",
+          "established_by_event": "C05_E03"
+        },
+        {
+          "id": "C05_move_task",
+          "visible": "任务卡横移至中列",
+          "withheld": "不靠替换图片假装移动",
+          "established_by_event": "C05_E04"
+        },
+        {
+          "id": "C05_align",
+          "visible": "三卡归入同一栅格，标题与按钮完成整理",
+          "withheld": "示意数字不当实测",
+          "established_by_event": "C05_E05"
+        },
+        {
+          "id": "C05_stars",
+          "visible": "右侧显示有日期的星标量级更正",
+          "withheld": "不伪造上涨动画",
+          "established_by_event": "C05_E06"
+        },
+        {
+          "id": "C05_case",
+          "visible": "官方案例遮罩展开，左侧整理结果保留",
+          "withheld": "不把两者说成一次实际产品执行前后",
+          "established_by_event": "C05_E07"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_de.js"
+      ],
+      "simplification": {
+        "applies_to": [
+          "C05_E06"
+        ],
+        "reason": "星标更正属于单个数值与来源条件，不存在需要连续插值的数值生成过程；源码在3.60秒离散切换，3.60–4.10秒是检查/读取窗口。其他界面重排和案例展开仍需连续过程验收。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 7.0,
+        "local_end_seconds": 9.533333333333333,
+        "local_start_frame": 210,
+        "local_end_frame_exclusive": 286,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "none_after_official_case_reveal",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C05_E01",
+          "start_seconds": 0.45,
+          "end_seconds": 1.35,
+          "check_frames": [
+            19,
+            27,
+            35
+          ],
+          "meaning": "标题层级重排",
+          "local_first_noninitial_frame": 14,
+          "local_first_final_frame": 41,
+          "global_check_frames": [
+            2313,
+            2321,
+            2329
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C05_E02",
+          "start_seconds": 0.55,
+          "end_seconds": 1.35,
+          "check_frames": [
+            21,
+            29,
+            36
+          ],
+          "meaning": "完成卡上移",
+          "local_first_noninitial_frame": 17,
+          "local_first_final_frame": 41,
+          "global_check_frames": [
+            2315,
+            2323,
+            2330
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C05_E03",
+          "start_seconds": 1.35,
+          "end_seconds": 2.25,
+          "check_frames": [
+            46,
+            54,
+            62
+          ],
+          "meaning": "完成卡横移",
+          "local_first_noninitial_frame": 41,
+          "local_first_final_frame": 68,
+          "global_check_frames": [
+            2340,
+            2348,
+            2356
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C05_E04",
+          "start_seconds": 2.25,
+          "end_seconds": 2.9,
+          "check_frames": [
+            71,
+            77,
+            83
+          ],
+          "meaning": "任务卡横移",
+          "local_first_noninitial_frame": 68,
+          "local_first_final_frame": 87,
+          "global_check_frames": [
+            2365,
+            2371,
+            2377
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C05_E05",
+          "start_seconds": 2.9,
+          "end_seconds": 3.48,
+          "check_frames": [
+            90,
+            96,
+            101
+          ],
+          "meaning": "三卡归入同一栅格",
+          "local_first_noninitial_frame": 88,
+          "local_first_final_frame": 105,
+          "global_check_frames": [
+            2384,
+            2390,
+            2395
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        },
+        {
+          "id": "C05_E06",
+          "start_seconds": 3.6,
+          "end_seconds": 4.1,
+          "check_frames": [
+            111,
+            115,
+            120
+          ],
+          "meaning": "显示更正星标约7.85万",
+          "local_first_noninitial_frame": 109,
+          "local_first_final_frame": 123,
+          "global_check_frames": [
+            2405,
+            2409,
+            2414
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "discrete_numeric_correction_reading_window"
+        },
+        {
+          "id": "C05_E07",
+          "start_seconds": 6.15,
+          "end_seconds": 7,
+          "check_frames": [
+            190,
+            197,
+            205
+          ],
+          "meaning": "展开官网案例",
+          "local_first_noninitial_frame": 185,
+          "local_first_final_frame": 210,
+          "global_check_frames": [
+            2484,
+            2491,
+            2499
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "三张指标卡的身份和数字在全过程保留。",
+          "卡片移动无互相穿越、遮住必要标题或越界。",
+          "星标更正在对应原文附近可读，日期限定保留。",
+          "官方案例标识清楚，不被说成本机实测。"
+        ]
+      }
+    },
+    {
+      "id": "C06",
+      "title": "ECHO · AI 新玩法",
+      "source_span": "都说好技术是消灭摩擦的\n而这批开源项目就是\n正在消灭摩擦的人\n关注我每天了解一个AI新玩法",
+      "source_reference": {
+        "srt_file": "02_timing/subtitles_names_corrected.srt",
+        "context_srt_ids": [
+          56,
+          57,
+          58,
+          59
+        ],
+        "on_screen_overlap_srt_ids": [
+          59
+        ],
+        "context_segments": [
+          {
+            "id": 56,
+            "start_seconds": 86.0,
+            "end_seconds": 87.8,
+            "text": "都说好技术是消灭摩擦的"
+          },
+          {
+            "id": 57,
+            "start_seconds": 87.8,
+            "end_seconds": 89.266,
+            "text": "而这批开源项目就是"
+          },
+          {
+            "id": 58,
+            "start_seconds": 89.266,
+            "end_seconds": 90.433,
+            "text": "正在消灭摩擦的人"
+          },
+          {
+            "id": 59,
+            "start_seconds": 90.5,
+            "end_seconds": 92.5,
+            "text": "关注我每天了解一个AI新玩法"
+          }
+        ],
+        "transcription_scope": "Names corrected; timings retained from provided SRT. This file does not assert independent word-level listening.",
+        "voice_preserved": true,
+        "source_is_not_automatically_verified_fact": true
+      },
+      "timing": {
+        "fps": 30,
+        "start_frame": 2715,
+        "end_frame_exclusive": 2777,
+        "frame_count": 62,
+        "local_duration_seconds": 2.066666666666667,
+        "time_basis": "locked provided narration"
+      },
+      "viewer_question": "本片最后希望观众记住什么并如何继续了解？",
+      "core_claim": "回收五类用途并邀请继续关注，把工具与具体工作流联系起来；不新增产品效果或许可保证。",
+      "relation_type": "short_summary_and_call_to_action",
+      "nodes": [
+        {
+          "id": "series_cta",
+          "label": "每天了解一个 AI 新玩法",
+          "role": "call_to_action",
+          "persistence": "末态保持"
+        },
+        {
+          "id": "summary_categories",
+          "label": "声音 / 协作 / 记忆 / 本地 / 设计",
+          "role": "parallel_summary",
+          "persistence": "同一行总结五类用途"
+        },
+        {
+          "id": "workflow_conclusion",
+          "label": "让工具，进入你的工作流",
+          "role": "closing_conclusion",
+          "persistence": "末态保持"
+        }
+      ],
+      "edges": [
+        {
+          "from": "summary_categories",
+          "to": "workflow_conclusion",
+          "meaning": "把五类用途收束为选择工作流的建议",
+          "relation": "summary",
+          "condition": "not_applicable"
+        }
+      ],
+      "visual_encoding": {
+        "single_large_paper_panel": "一个收束焦点，避免重播所有卡片。",
+        "category_row": "只回收已经出现的五类用途，不建立新的流程箭头。",
+        "short_entry_then_hold": "短入场后稳定阅读，不靠无意义循环或新增指标填时长。"
+      },
+      "screen_copy": {
+        "cta": "每天了解一个 AI 新玩法",
+        "summary": "声音  /  协作  /  记忆  /  本地  /  设计",
+        "conclusion": "让工具，进入你的工作流",
+        "title": "ECHO · AI 新玩法",
+        "footer": "项目链接、使用条件及原声数字说明见随片核查文档"
+      },
+      "information_gain": "在结尾把分散的五类工具压成一个用途检索线索和明确关注入口，不重放前文所有步骤。",
+      "claim_basis": {
+        "fact_review_file": "00_brief/事实核查与画面更正.md",
+        "fact_review_item_ids": [],
+        "supported_screen_claims": [
+          "原文关注邀请及已展示的五类用途"
+        ],
+        "limits_and_corrections": [
+          "不新增效率、价格、商业授权或产品承诺。",
+          "片尾指向随片核查文档，不能代替前文条件说明。"
+        ],
+        "official_assets": [],
+        "evidence_scope": "Uses the episode recorded fact review and official source inventory; not independent local product testing."
+      },
+      "states": [
+        {
+          "id": "C06_enter",
+          "visible": "关注语、用途总结和工作流结论短入场",
+          "withheld": "无新产品关系需要建立",
+          "established_by_event": "C06_E01"
+        },
+        {
+          "id": "C06_read",
+          "visible": "整体稳定阅读",
+          "withheld": "不再加入新节点或数字",
+          "established_by_event": "C06_E01"
+        }
+      ],
+      "source_files": [
+        "06_project/cards/scenes_a.js"
+      ],
+      "simplification": {
+        "applies": true,
+        "reason": "约2.07秒的总结与关注入口，没有内部转换、分支或待解释机制，采用短入场加阅读保持；不将此例外用于C01–C05解释过程。"
+      },
+      "reading_hold": {
+        "local_start_seconds": 0.65,
+        "local_end_seconds": 2.066666666666667,
+        "local_start_frame": 20,
+        "local_end_frame_exclusive": 62,
+        "purpose": "阅读已建立的完整结构及本卡使用条件",
+        "motion_during_reading": "none_after_short_entry",
+        "normal_speed_readability": "pending_subjective_review"
+      },
+      "motion_events": [
+        {
+          "id": "C06_E01",
+          "start_seconds": 0,
+          "end_seconds": 0.65,
+          "check_frames": [
+            4,
+            10,
+            16
+          ],
+          "meaning": "收束工具用途与关注入口",
+          "local_first_noninitial_frame": 1,
+          "local_first_final_frame": 20,
+          "global_check_frames": [
+            2719,
+            2725,
+            2731
+          ],
+          "timing_source": "03_storyboard/cards.json; event interval copied without changing timeline",
+          "event_kind": "frame_time_scene_event"
+        }
+      ],
+      "acceptance": {
+        "semantic_record": "documented_from_current_episode_design",
+        "encoded_process_review": "Encoded event midpoint neighbors generated and measured; source process sheets and selected final master frames visually reviewed. Full-speed subjective review remains pending. See08_qc/cards and08_qc/delivery_report.json.",
+        "normal_speed_visual_review": "pending_subjective_review",
+        "full_audio_listening": "pending_subjective_review",
+        "user_acceptance": "not_assumed",
+        "mandatory_checks": [
+          "关注文字正常速度可读。",
+          "尾帧覆盖人声末尾，不裁断配音。",
+          "不把片尾标题卡当新的性能或许可事实。"
+        ]
+      }
+    }
+  ],
+  "structure_validation": {
+    "required_card_count": 7,
+    "documented_card_count": 7,
+    "required_fields_present": true,
+    "node_edge_references_resolve": true,
+    "state_event_references_resolve": true,
+    "motion_event_metadata_unchanged": true,
+    "scope": "JSON structure and references only; no audiovisual pass claimed"
+  }
+}

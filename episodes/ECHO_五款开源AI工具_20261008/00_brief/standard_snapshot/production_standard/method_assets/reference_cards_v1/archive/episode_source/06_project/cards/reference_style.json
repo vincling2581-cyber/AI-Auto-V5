@@ -1,0 +1,12 @@
+{
+  "revision": "card_style_v4_reference",
+  "reference_video": "D:/AI-Auto-V4（Codex）/delivery_v1/output/AI扫盲班01_信息卡动效修订_1080p无字幕母版.mp4",
+  "scope": "this_episode_cards_only",
+  "colors": {"background":"#07110C","dark":"#14271B","soft":"#101F16","paper":"#F0F3EC","accent":"#78EFA2","text":"#F0F3EC","ink":"#12251A","muted":"#A9B9AC","line":"#54775E","edge":"#33533B","paperLine":"#C4CCC2"},
+  "typography_override": {"title_px":72,"node_px":46,"support_px":34,"reason":"本集按用户新指定成片的标题/节点/辅助层级迁移；不改长期默认值"},
+  "two_large_panel_priority": ["dark","paper"],
+  "three_or_more_large_panels": "可用accent表现焦点，其余以dark、soft、paper分工；不强行各框不同色",
+  "single_large_with_small_panels": "保留既有大框与小框的深绿层级，主要升级动作过程",
+  "motion": ["真实路径弧长迁移","细线图标描画","纸张形变与放缩","遮罩字段展开","文件夹开合接收","按口播保留读取终态"],
+  "sop_update": "deferred_until_finished_film_user_review"
+}

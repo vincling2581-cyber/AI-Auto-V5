@@ -1,0 +1,280 @@
+{
+  "standard_version": "4.5",
+  "status": "active",
+  "whole_standard_approved": true,
+  "authorization": {
+    "date": "2026-10-06",
+    "scope": "按最新成片制作方法更新SOP，并逐项说明供审阅；剪映导入以后由用户单独明确提出",
+    "does_not_imply": "授权自检后使用，不表示用户亲自逐项审阅，也不把默认起点冻结为每集固定值。"
+  },
+  "master": {
+    "original": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\07_exports\\Skill工作手册_1080p_无字幕母版.mp4",
+    "archive": "archive/accepted_master.mp4",
+    "sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88",
+    "archive_sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88",
+    "scope": "accepted_visual_method_reference_not_reusable_episode_footage"
+  },
+  "method_revisions": [
+    "card_style_v4_reference",
+    "arm_topology_v6",
+    "arm_sfx_v5"
+  ],
+  "default_card_method": "production_standard/method_assets/reference_cards_v1",
+  "cards_method_sources": {
+    "path": "production_standard/method_assets/reference_cards_v1/method_sources.json",
+    "sha256": "91ef59d0cbd9442b07596b3534e35f9b14285fb103173c75d5a3c1fdd157331e"
+  },
+  "media_method_sources": {
+    "base_version": "4.4.1",
+    "target_version": "4.5",
+    "status": "review_candidate",
+    "whole_standard_user_approved": false,
+    "scope": "成片制作方法；不含剪映导入、原生坐标换算或草稿兼容实现",
+    "basis": "本次按用户认可的最新成片制作方法更新SOP的要求；以下新增通用方法供审阅，单集数值不提升为全局固定值",
+    "created_at": "2026-10-06T11:52:48.096000+08:00",
+    "files": [
+      {
+        "id": "base_sop",
+        "path": "Xilo风格视频生产线SOP_v4.4.1.md",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\Xilo风格视频生产线SOP_v4.4.1.md",
+        "sha256": "55047b13371a60534b19b94ade37e00f1b470539eee7eaf8724891c285861284",
+        "bytes": 81288,
+        "use": "现行完整SOP；片段基于其确切版本追加，不按文件名猜版本。"
+      },
+      {
+        "id": "base_prompts",
+        "path": "production_standard/提示词_v4.4.1.md",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\production_standard\\提示词_v4.4.1.md",
+        "sha256": "6c30c428a55075adfc5165f4425cf3e8f5f4a7fb11c83afcb43a21e84c6a5629",
+        "bytes": 14503,
+        "use": "五份完整提示词替换的基线。"
+      },
+      {
+        "id": "base_defaults",
+        "path": "production_standard/history/v4.4.1/production_standard/defaults.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\production_standard\\history\\v4.4.1\\production_standard\\defaults.json",
+        "sha256": "f31bbefdb75ed791c58ceecebce1b87b7e726d8c8110a89dde5f273269f5818d",
+        "bytes": 4574,
+        "use": "v4.4.1 历史快照：增量参数合并基线；未列参数保持原值。"
+      },
+      {
+        "id": "base_rules",
+        "path": "production_standard/history/v4.4.1/production_standard/rules.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\production_standard\\history\\v4.4.1\\production_standard\\rules.json",
+        "sha256": "dc9c30b2d5a71522922f57c793e8a64e550ecb674a385fd786b6ad226d23bf6a",
+        "bytes": 34343,
+        "use": "v4.4.1 历史快照：新增B12/T09/T10/Q08/Q09；其他ID不重编号。"
+      },
+      {
+        "id": "v6_request",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_topology_v6/revision_request.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_topology_v6\\revision_request.json",
+        "sha256": "f399738445907d40b57eb6d5eeb56ab04d85c190db4acf9fdfd562c75dbe313c",
+        "bytes": 1325,
+        "use": "用户指出同肩双袖；此前只数两只手的检查被推翻。"
+      },
+      {
+        "id": "v6_visual",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_topology_v6/visual_review.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_topology_v6\\visual_review.json",
+        "sha256": "f84d832fbc2fa4b70605edf7c0f64be3683f930fa712724715f92259b6782163",
+        "bytes": 2572,
+        "use": "完整原图、连接链和成片551/570/580/608帧的具体审查；当时主观全片回放及用户状态按原记录保留。"
+      },
+      {
+        "id": "v6_prompt",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_topology_v6/image_edit_prompt.txt",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_topology_v6\\image_edit_prompt.txt",
+        "sha256": "50571f0ed61809b9d12e475664e4060f468d33ad70af636c7a82e24f812409b8",
+        "bytes": 2253,
+        "use": "局部删除整条多余袖管与手，并保留其余场景的修图方法。"
+      },
+      {
+        "id": "v6_A05",
+        "path": "episodes/ECHO_Skill工作手册_20261005/04_assets/illustrations/A05.png",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\04_assets\\illustrations\\A05.png",
+        "sha256": "3137bded49b425ed0d7be2da0d1fc49bccd2b74558658ad7d1035089f4df48bb",
+        "bytes": 2240135,
+        "use": "本集双手握纸修复结果；是连接正确示例，不是所有镜头固定姿势。"
+      },
+      {
+        "id": "v6_video_qc",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_topology_v6/render_delivery/revision_video_qc.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_topology_v6\\render_delivery\\revision_video_qc.json",
+        "sha256": "3d0e79e981cce78367809c9d96cd8011d3f20ed99b4e061f694e808af7e74f51",
+        "bytes": 61577,
+        "use": "58帧受控更新；2459帧和既有混音保留；相同依赖的检查继承。"
+      },
+      {
+        "id": "v6_renderer",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_topology_v6/render_delivery/render_revision.py",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_topology_v6\\render_delivery\\render_revision.py",
+        "sha256": "3399a91813368836e6580fc6cb3ccf2bca15b04d6ac9c1850903c8d36335e9be",
+        "bytes": 7014,
+        "use": "本集局部重渲和保留既有AAC的实现实例；含固定A05区间，不能原样运行作为新集入口。"
+      },
+      {
+        "id": "v5_request",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/revision_request.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\revision_request.json",
+        "sha256": "02143c4bce66df911209facc26ff3a06fea7edae46fb18b8f41fb29767721dc3",
+        "bytes": 1032,
+        "use": "当时授权仅本成片；不改写成更早的全局永久授权。"
+      },
+      {
+        "id": "v5_cues",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/sound_design/cue_sheet.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\sound_design\\cue_sheet.json",
+        "sha256": "16d7319a159036f108bfd89c0c106d43db869b58375adcc566d5e3c7d534b196",
+        "bytes": 20918,
+        "use": "cue ID、动作依据、帧/样本位置、素材、增益和处理记录。"
+      },
+      {
+        "id": "v5_sound_method",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/sound_design/音效制作说明.txt",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\sound_design\\音效制作说明.txt",
+        "sha256": "59de86c068d4fe9fc1ecc0ade2250d5d9d381e8075c891a558eba1ab00a29fa3",
+        "bytes": 1169,
+        "use": "轻量动作声、每条归零、仅声效躲避、已烘焙增益及试听边界。"
+      },
+      {
+        "id": "v5_synthesis",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/sound_design/build_sfx.py",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\sound_design\\build_sfx.py",
+        "sha256": "550d853bf3ac912a2d7f39d6d3b271ebf793b404591bc3418807a14ad1aa9d56",
+        "bytes": 14573,
+        "use": "本地有种子合成实例；其中固定cue与数值不可原样作为新集内容。"
+      },
+      {
+        "id": "v5_sfx_qc",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/sound_design/sfx_qc.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\sound_design\\sfx_qc.json",
+        "sha256": "88e912f5a5f7f72d48e904f9a4bdaeae19d1401282f447c02450e4aec27abf05",
+        "bytes": 1488,
+        "use": "时长、采样、峰值、首尾、非零区间、可重复性数值检查。"
+      },
+      {
+        "id": "v5_independent_audit",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/sound_design/independent_signal_audit.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\sound_design\\independent_signal_audit.json",
+        "sha256": "70ee5b637d33c833a80bfc18d5614bccdab4b443ae45d3fca39089b8b20a0e01",
+        "bytes": 3903,
+        "use": "重新读取19个WAV；stem等于cue之和；机器检查不替代主观试听。"
+      },
+      {
+        "id": "v5_mix",
+        "path": "episodes/ECHO_Skill工作手册_20261005/09_revisions/arm_sfx_v5/render_delivery/mix_build.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\09_revisions\\arm_sfx_v5\\render_delivery\\mix_build.json",
+        "sha256": "a507d28be95b6c3393221e3d8d7624eb7f6b54ab6b817ec307539c706de71ec7",
+        "bytes": 1972,
+        "use": "原声×既定本集增益加已烘焙声效，保留起点速度，尾部补零有记录。"
+      },
+      {
+        "id": "episode_plan",
+        "path": "episodes/ECHO_Skill工作手册_20261005/03_storyboard/production_plan.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\03_storyboard\\production_plan.json",
+        "sha256": "2f053eb30210cda2916097be5fce7c24994bdec2275907cec76c34adfe95a700",
+        "bytes": 38208,
+        "use": "本集同源语义状态/帧区间数据，17插画和7卡属于案例数量。"
+      },
+      {
+        "id": "episode_video_qc",
+        "path": "episodes/ECHO_Skill工作手册_20261005/08_qc/video_qc.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\08_qc\\video_qc.json",
+        "sha256": "19cc0afa3fb1f8ebc751d6d2a513fedd574485fbf09301689cfc658ae3cf085c",
+        "bytes": 27411,
+        "use": "本集970插画帧核验，最长状态2.7秒；不是新的固定上限。"
+      },
+      {
+        "id": "episode_source_illustration_qc",
+        "path": "episodes/ECHO_Skill工作手册_20261005/08_qc/illustration_visual_review.json",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\08_qc\\illustration_visual_review.json",
+        "sha256": "150fa4bf14436605820bd5d08911dfe9e2692ef176de4a66028c759bd56a2c9c",
+        "bytes": 13994,
+        "use": "眼部、动作及满幅下沿原图证据；历史A05结论以v6修订优先。"
+      },
+      {
+        "id": "current_master",
+        "path": "episodes/ECHO_Skill工作手册_20261005/07_exports/Skill工作手册_1080p_无字幕母版.mp4",
+        "absolute_path": "D:\\AI-Auto-V4（Codex）\\episodes\\ECHO_Skill工作手册_20261005\\07_exports\\Skill工作手册_1080p_无字幕母版.mp4",
+        "sha256": "70c327bf2785c6f1b0e7c1cc0f4eeb3dc056dc32013ec39f860ac759cada0d88",
+        "bytes": 12770666,
+        "use": "视频制作来源母版；不把后续剪映导入的坐标/轨数/兼容参数带入此次制作方法。"
+      }
+    ],
+    "method_classification": {
+      "already_explicit_long_term": [
+        "可见睁眼具有虹膜与瞳孔",
+        "动画同语义状态≤3秒，制作余量目标≤2.8秒",
+        "保留有用图文并增加明显姿态/道具动作",
+        "场景自然到下沿，不预留字幕空白带"
+      ],
+      "new_general_method_candidates": [
+        "身体连接链与遮挡/道具接触检查",
+        "启用音效时cue表及增益归属",
+        "限定范围重建与验证继承"
+      ],
+      "episode_authorization_not_retroactively_global": [
+        "A05修图当时仅本集",
+        "arm_sfx_v5添加音效当时仅本集"
+      ],
+      "excluded_from_this_update": [
+        "剪映草稿创建/导入/安装/导出流程",
+        "原生字号×1.035与基线补偿",
+        "95轨/188文字片段",
+        "透明ProRes抽层与原生字体兼容参数"
+      ]
+    },
+    "episode_values_not_global_defaults": {
+      "illustration_count": 17,
+      "card_count": 7,
+      "sfx_count": 18,
+      "video_frames": 2517,
+      "video_duration_s": 83.9,
+      "max_animation_hold_observed_s": 2.7,
+      "voice_gain_db": -4.5,
+      "sfx_voice_analysis_window_ms": 40,
+      "sfx_only_ducking_db_range": [
+        0,
+        4
+      ],
+      "audio_sample_rate": 48000,
+      "audio_channels": 2,
+      "tail_padding_samples": 999,
+      "A05_interval": [
+        551,
+        609
+      ],
+      "sfx_measured_peak_dbfs_range": [
+        -25.46811391180334,
+        -21.001341670225994
+      ]
+    },
+    "approval_record_policy": "历史文件里的待认可/未检查保持原样；最新用户对具体成片的认可由主修订记录追加绑定最终文件，不伪造旧检查已执行，也不推定所有长期候选数值获批。",
+    "defaults_patch_review_note": "defaults_patch.json为纯增量对象；所有新增默认项仍属本次审阅候选。新增人体检查与音效记录不增加用户逐图确认。未启用音效时cue表不适用，不自动授权付费服务。"
+  },
+  "episode_values_are_examples": [
+    "83.9秒",
+    "17插画",
+    "7信息卡",
+    "18音效",
+    "配音-4.5dB",
+    "固定镜号、文字、坐标、时点、补零数量与修复姿势"
+  ],
+  "excluded_default_workflows": [
+    "剪映导入和草稿制作",
+    "jianying_layered_v7"
+  ],
+  "evidence_scope": "采用已有成片方法与源文件实证，不把此次文档/工具检查当成新内容成片验收，不改写历史批准状态或标准锁",
+  "master_archive_root": "production_standard/method_assets/reference_cards_v1",
+  "adoption": {
+    "mode": "delegated_self_check",
+    "date": "2026-10-06",
+    "authorized_quote": "确认的内容太多了，我检查不过来，你自己再检查一次，没有问题就可以。首先告诉我我只做视频的规则、sop、提示词等可以影响视频内容和效果有没有按照最新的这一版制作流程进行更新。",
+    "user_personal_item_review": false,
+    "self_check_report": "production_standard/自检结论_v4.5.md",
+    "scope": "影响视频制作内容与效果的当前SOP、规则、提示词、默认参数、方法资产与执行入口；助手复核通过后直接启用，不要求用户逐项确认",
+    "parameters_remain_overridable_per_episode": true
+  },
+  "media_method_sources_record_scope": "Original migration evidence before delegated adoption; any review_candidate status inside that record is historical, not the current execution status."
+}

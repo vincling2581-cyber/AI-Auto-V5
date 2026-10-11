@@ -1,0 +1,1103 @@
+{
+  "schema": "episode_cards_v1",
+  "revision": "compositor_cards_v1.2_author_demo",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "total_video_frames": 1939,
+  "subtitle_mode": "none",
+  "cards": [
+    {
+      "id": "C01",
+      "start_frame": 50,
+      "end_frame_exclusive": 177,
+      "frame_count": 127,
+      "title": "订阅之外，多一个选择",
+      "source_span": "Photoshop一个月的订阅费，可能正在被一个12Mb的开源工具重新定价",
+      "viewer_question": "使用工具是否只有持续订阅一条路？",
+      "core_claim": "在订阅之外介绍轻量开源工具这一选择，不比较虚构价格或完整替代能力。",
+      "relation_type": "方式对照",
+      "nodes": [
+        {
+          "id": "periods",
+          "role": "连续月份说明订阅是周期性使用方式"
+        },
+        {
+          "id": "package",
+          "role": "同一工具包沿路径移到开放工具面板"
+        },
+        {
+          "id": "evidence",
+          "role": "到达后展开官网界面和体积标签"
+        }
+      ],
+      "edges": "按visual_encoding及源场景中的明确路径；并列输入互不串联",
+      "visual_encoding": "两大框：订阅方式深绿、开放工具纸白；订阅周期逐格建立，另一边工具包缩小后展开真实官网缩略图。",
+      "screen_copy": "订阅之外，多一个选择",
+      "information_gain": "从价格口号变为获取方式与工具形态对照。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试"
+      },
+      "states": [
+        "初态：语义对象建立",
+        "过程：逐事件连续几何变化与交接",
+        "终态：关系及必要限定保留"
+      ],
+      "reading_hold": {
+        "start_frame": 96,
+        "end_frame_exclusive": 127
+      },
+      "process_events": [
+        {
+          "id": "periods",
+          "target_ids": [
+            "periods"
+          ],
+          "meaning": "连续月份说明订阅是周期性使用方式",
+          "start_frame": 8,
+          "end_frame_exclusive": 38,
+          "global_start_frame": 58,
+          "global_end_frame_exclusive": 88,
+          "geometry": "日历格顺次展开与路径描画",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            14,
+            23,
+            32
+          ],
+          "voice_anchor": "Photoshop一个月的订阅费，可能正在被一个12Mb的开源工具重新定价",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "package",
+          "target_ids": [
+            "package"
+          ],
+          "meaning": "同一工具包沿路径移到开放工具面板",
+          "start_frame": 36,
+          "end_frame_exclusive": 66,
+          "global_start_frame": 86,
+          "global_end_frame_exclusive": 116,
+          "geometry": "文档轮廓连续收缩迁移，标签固定在下方避免遮挡",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            42,
+            51,
+            60
+          ],
+          "voice_anchor": "Photoshop一个月的订阅费，可能正在被一个12Mb的开源工具重新定价",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "evidence",
+          "target_ids": [
+            "evidence"
+          ],
+          "meaning": "到达后展开官网界面和体积标签",
+          "start_frame": 68,
+          "end_frame_exclusive": 96,
+          "global_start_frame": 118,
+          "global_end_frame_exclusive": 146,
+          "geometry": "图标接收后遮罩揭示官网图，旧图标不与图证叠影",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            74,
+            82,
+            90
+          ],
+          "voice_anchor": "Photoshop一个月的订阅费，可能正在被一个12Mb的开源工具重新定价",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        }
+      ],
+      "overview_frames": [
+        3,
+        28,
+        53,
+        79,
+        102,
+        124
+      ]
+    },
+    {
+      "id": "C02",
+      "start_frame": 342,
+      "end_frame_exclusive": 506,
+      "frame_count": 164,
+      "title": "接续已有工作流",
+      "source_span": "把Photoshop那套工作流原封不动搬到免费软件里",
+      "viewer_question": "已有图层怎样进入另一段编辑过程？",
+      "core_claim": "左侧展示作者真实图层合成编辑片段；右侧概括图层、工程与继续编辑的关系，不将作者演示视作PSD兼容或性能测试。",
+      "relation_type": "实录图证 + 顺序工作流概括",
+      "nodes": [
+        {
+          "id": "author_demo",
+          "role": "作者图层合成演示，完整UI，按源片1倍时间取样"
+        },
+        {
+          "id": "source_layers",
+          "role": "输入图层结构概括"
+        },
+        {
+          "id": "project",
+          "role": "到达后成立的工程对象"
+        },
+        {
+          "id": "target_layers",
+          "role": "抵达后展开，可单独位移的编辑图层"
+        }
+      ],
+      "edges": [
+        {
+          "from": "source_layers",
+          "to": "project",
+          "meaning": "形成并交接工程对象"
+        },
+        {
+          "from": "project",
+          "to": "target_layers",
+          "meaning": "打开工程继续编辑"
+        }
+      ],
+      "visual_encoding": "左深绿宽框展示作者完整UI实录，右纸白窄框以纵向三对象连续交接概括工作流；到达后才展开工程和目标图层，最后单层位移。",
+      "screen_copy": "接续已有工作流",
+      "information_gain": "真实界面提供操作证据，独立图示解释工作流关系，并明确二者的证据范围。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试",
+        "author_demo_source": "04_assets/references/corrected_reference/author_compositor_launch_demo.mp4",
+        "author_demo_scope": "实录中图层合成与正常编辑；原片自带剪辑/加速，本集不再变速，非原始实时性能测试"
+      },
+      "states": [
+        "左作者演示持续播放，右已有图层结构",
+        "工程对象沿第一段路径抵达后展开",
+        "工程沿第二段路径抵达后展开对应图层并单层编辑"
+      ],
+      "reading_hold": {
+        "start_frame": 144,
+        "end_frame_exclusive": 164
+      },
+      "process_events": [
+        {
+          "id": "group",
+          "target_ids": [
+            "group"
+          ],
+          "meaning": "图层结构形成可传递工程对象",
+          "start_frame": 8,
+          "end_frame_exclusive": 30,
+          "global_start_frame": 350,
+          "global_end_frame_exclusive": 372,
+          "geometry": "层结构的概括轮廓连续收缩为文档",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            12,
+            19,
+            26
+          ],
+          "voice_anchor": "把Photoshop那套工作流原封不动搬到免费软件里",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "右側对象仅在纸白工作流区域内；两条路径抵达后才展开目的对象，左侧实录与右侧图示始终分区"
+        },
+        {
+          "id": "route",
+          "target_ids": [
+            "route"
+          ],
+          "meaning": "工程包从输入图层沿路径抵达工程节点",
+          "start_frame": 30,
+          "end_frame_exclusive": 66,
+          "global_start_frame": 372,
+          "global_end_frame_exclusive": 408,
+          "geometry": "同一纵向路径描画与对象迁移",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            37,
+            48,
+            59
+          ],
+          "voice_anchor": "把Photoshop那套工作流原封不动搬到免费软件里",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "右側对象仅在纸白工作流区域内；两条路径抵达后才展开目的对象，左侧实录与右侧图示始终分区"
+        },
+        {
+          "id": "project",
+          "target_ids": [
+            "project"
+          ],
+          "meaning": "抵达后工程对象才展开",
+          "start_frame": 66,
+          "end_frame_exclusive": 78,
+          "global_start_frame": 408,
+          "global_end_frame_exclusive": 420,
+          "geometry": "接收工程后文件夹轮廓展开",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            68,
+            72,
+            76
+          ],
+          "voice_anchor": "把Photoshop那套工作流原封不动搬到免费软件里",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "右側对象仅在纸白工作流区域内；两条路径抵达后才展开目的对象，左侧实录与右侧图示始终分区"
+        },
+        {
+          "id": "continue",
+          "target_ids": [
+            "continue"
+          ],
+          "meaning": "工程对象沿第二段路径抵达编辑节点",
+          "start_frame": 78,
+          "end_frame_exclusive": 108,
+          "global_start_frame": 420,
+          "global_end_frame_exclusive": 450,
+          "geometry": "第二段真实曲线迁移",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            84,
+            93,
+            102
+          ],
+          "voice_anchor": "把Photoshop那套工作流原封不动搬到免费软件里",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "右側对象仅在纸白工作流区域内；两条路径抵达后才展开目的对象，左侧实录与右侧图示始终分区"
+        },
+        {
+          "id": "restore",
+          "target_ids": [
+            "restore"
+          ],
+          "meaning": "抵达后目标三层按同一颜色顺序恢复",
+          "start_frame": 108,
+          "end_frame_exclusive": 126,
+          "global_start_frame": 450,
+          "global_end_frame_exclusive": 468,
+          "geometry": "接收目标展开三层",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            112,
+            117,
+            122
+          ],
+          "voice_anchor": "把Photoshop那套工作流原封不动搬到免费软件里",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "右側对象仅在纸白工作流区域内；两条路径抵达后才展开目的对象，左侧实录与右侧图示始终分区"
+        },
+        {
+          "id": "edit",
+          "target_ids": [
+            "edit"
+          ],
+          "meaning": "目标中间图层可单独改变位置",
+          "start_frame": 126,
+          "end_frame_exclusive": 144,
+          "global_start_frame": 468,
+          "global_end_frame_exclusive": 486,
+          "geometry": "中间层及其选框同步位移25px",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            130,
+            135,
+            140
+          ],
+          "voice_anchor": "把Photoshop那套工作流原封不动搬到免费软件里",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "右側对象仅在纸白工作流区域内；两条路径抵达后才展开目的对象，左侧实录与右侧图示始终分区"
+        }
+      ],
+      "overview_frames": [
+        3,
+        36,
+        69,
+        102,
+        131,
+        161
+      ],
+      "official_demo": {
+        "manifest": "04_assets/official_demo_frames/manifest.json",
+        "source_start_seconds": 10.5,
+        "source_end_exclusive_seconds": 15.966666666666667,
+        "frame_count": 164,
+        "source_has_editorial_speed_and_cuts": true,
+        "additional_speed_factor": 1,
+        "audio_used": false,
+        "screen_label": "作者演示 · 图层合成",
+        "evidence_scope": "图层合成操作，不用于证明PSD无损、大文件性能或跨平台互通"
+      }
+    },
+    {
+      "id": "C03",
+      "start_frame": 506,
+      "end_frame_exclusive": 732,
+      "frame_count": 226,
+      "title": "从选中主体，到检查图层",
+      "source_span": "抠图不用慢慢描路径；点一下主体直接选出来；PSD大文件也能正常打开；图层就算跑到画布外面也不会轻易报错",
+      "viewer_question": "选择主体、载入工程和越界图层分别解决什么？",
+      "core_claim": "展示主体选择和受支持PSD图层导入的功能关系；越界与大文件情况按导入报告和设备条件核对。",
+      "relation_type": "顺序演示与能力边界",
+      "nodes": [
+        {
+          "id": "select",
+          "role": "轮廓跟随主体建立，背景弱化以显示选区"
+        },
+        {
+          "id": "psd",
+          "role": "PSD沿曲线进入同一编辑画面并展开图层"
+        },
+        {
+          "id": "received_layers",
+          "role": "文件抵达后展开对应图层"
+        },
+        {
+          "id": "bounds",
+          "role": "显露画布与图层边界的区别"
+        }
+      ],
+      "edges": "按visual_encoding及源场景中的明确路径；并列输入互不串联",
+      "visual_encoding": "三项对应同一编辑画面：同一主体的真实轮廓被选中；PSD实际到达后图层列表恢复；花主体连同自身框向右移出固定画布并被裁切。",
+      "screen_copy": "从选中主体，到检查图层",
+      "information_gain": "区分选区、文件导入、图层范围，不把三件事变成未经测试的性能保证。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试"
+      },
+      "states": [
+        "初态：语义对象建立",
+        "过程：逐事件连续几何变化与交接",
+        "终态：关系及必要限定保留"
+      ],
+      "reading_hold": {
+        "start_frame": 200,
+        "end_frame_exclusive": 226
+      },
+      "process_events": [
+        {
+          "id": "select",
+          "target_ids": [
+            "select"
+          ],
+          "meaning": "轮廓跟随主体建立，背景弱化以显示选区",
+          "start_frame": 4,
+          "end_frame_exclusive": 56,
+          "global_start_frame": 510,
+          "global_end_frame_exclusive": 562,
+          "geometry": "由同一花主体几何求外扩轮廓，遮罩连续揭示；背景弱化",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            14,
+            30,
+            46
+          ],
+          "voice_anchor": "抠图不用慢慢描路径；点一下主体直接选出来；PSD大文件也能正常打开；图层就算跑到画布外面也不会轻易报错",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "psd",
+          "target_ids": [
+            "psd"
+          ],
+          "meaning": "PSD沿曲线进入同一编辑画面并展开图层",
+          "start_frame": 92,
+          "end_frame_exclusive": 132,
+          "global_start_frame": 598,
+          "global_end_frame_exclusive": 638,
+          "geometry": "文件沿实际曲线迁移，到达前目标列表保持隐藏",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            100,
+            112,
+            124
+          ],
+          "voice_anchor": "抠图不用慢慢描路径；点一下主体直接选出来；PSD大文件也能正常打开；图层就算跑到画布外面也不会轻易报错",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "receive",
+          "target_ids": [
+            "received_layers"
+          ],
+          "meaning": "PSD到达后再恢复对应图层列表",
+          "start_frame": 132,
+          "end_frame_exclusive": 150,
+          "global_start_frame": 638,
+          "global_end_frame_exclusive": 656,
+          "geometry": "到达后背景、主体、文字三层依次展开",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            136,
+            141,
+            146
+          ],
+          "voice_anchor": "抠图不用慢慢描路径；点一下主体直接选出来；PSD大文件也能正常打开；图层就算跑到画布外面也不会轻易报错",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "bounds",
+          "target_ids": [
+            "bounds"
+          ],
+          "meaning": "显露画布与图层边界的区别",
+          "start_frame": 164,
+          "end_frame_exclusive": 200,
+          "global_start_frame": 670,
+          "global_end_frame_exclusive": 706,
+          "geometry": "花主体与自身边界同向移动270px；固定画布裁切越界像素，图层边界仍保留",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            171,
+            182,
+            193
+          ],
+          "voice_anchor": "抠图不用慢慢描路径；点一下主体直接选出来；PSD大文件也能正常打开；图层就算跑到画布外面也不会轻易报错",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        }
+      ],
+      "overview_frames": [
+        3,
+        50,
+        95,
+        140,
+        181,
+        223
+      ]
+    },
+    {
+      "id": "C04",
+      "start_frame": 864,
+      "end_frame_exclusive": 1142,
+      "frame_count": 278,
+      "title": "保存的是可继续编辑的结构",
+      "source_span": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+      "viewer_question": "重新打开后留下的是什么？",
+      "core_claim": "项目保存图层与位置等结构，重开后恢复相同可编辑对象；不作无限大文件或绝不卡死保证。",
+      "relation_type": "保存、关闭与恢复",
+      "nodes": [
+        {
+          "id": "save",
+          "role": "同一图层组与位置结构装入工程文件"
+        },
+        {
+          "id": "close",
+          "role": "当前视图关闭，存档继续存在"
+        },
+        {
+          "id": "open",
+          "role": "工程包反向送回编辑区"
+        },
+        {
+          "id": "restore",
+          "role": "恢复原来三个对象的位置和层次"
+        },
+        {
+          "id": "layers",
+          "role": "展开已保存的图层结构"
+        },
+        {
+          "id": "position",
+          "role": "展示对象位置也有记录"
+        },
+        {
+          "id": "workflow",
+          "role": "继续编辑路径接通"
+        }
+      ],
+      "edges": "按visual_encoding及源场景中的明确路径；并列输入互不串联",
+      "visual_encoding": "左编辑面板深绿，右工程包纸白；相同三层结构存入、关闭后恢复原位，再展开保留项。",
+      "screen_copy": "保存的是可继续编辑的结构",
+      "information_gain": "把保存图片和保存可编辑结构的区别变得可见。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试"
+      },
+      "states": [
+        "初态：语义对象建立",
+        "过程：逐事件连续几何变化与交接",
+        "终态：关系及必要限定保留"
+      ],
+      "reading_hold": {
+        "start_frame": 240,
+        "end_frame_exclusive": 278
+      },
+      "process_events": [
+        {
+          "id": "save",
+          "target_ids": [
+            "save"
+          ],
+          "meaning": "同一图层组与位置结构装入工程文件",
+          "start_frame": 2,
+          "end_frame_exclusive": 24,
+          "global_start_frame": 866,
+          "global_end_frame_exclusive": 888,
+          "geometry": "整体文件沿曲线移动并到达接收",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            6,
+            13,
+            20
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "close",
+          "target_ids": [
+            "close"
+          ],
+          "meaning": "当前视图关闭，存档继续存在",
+          "start_frame": 24,
+          "end_frame_exclusive": 33,
+          "global_start_frame": 888,
+          "global_end_frame_exclusive": 897,
+          "geometry": "编辑区遮罩收拢",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            26,
+            28,
+            31
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "open",
+          "target_ids": [
+            "open"
+          ],
+          "meaning": "工程包反向送回编辑区",
+          "start_frame": 33,
+          "end_frame_exclusive": 57,
+          "global_start_frame": 897,
+          "global_end_frame_exclusive": 921,
+          "geometry": "沿原路径反向迁移",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            38,
+            45,
+            52
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "restore",
+          "target_ids": [
+            "restore"
+          ],
+          "meaning": "恢复原来三个对象的位置和层次",
+          "start_frame": 57,
+          "end_frame_exclusive": 72,
+          "global_start_frame": 921,
+          "global_end_frame_exclusive": 936,
+          "geometry": "相同对象按原坐标展开",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            60,
+            64,
+            69
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "layers",
+          "target_ids": [
+            "layers"
+          ],
+          "meaning": "展开已保存的图层结构",
+          "start_frame": 126,
+          "end_frame_exclusive": 159,
+          "global_start_frame": 990,
+          "global_end_frame_exclusive": 1023,
+          "geometry": "图层字段和对应路径连续展开",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            133,
+            142,
+            152
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "position",
+          "target_ids": [
+            "position"
+          ],
+          "meaning": "展示对象位置也有记录",
+          "start_frame": 162,
+          "end_frame_exclusive": 195,
+          "global_start_frame": 1026,
+          "global_end_frame_exclusive": 1059,
+          "geometry": "位置字段遮罩与定位线描画",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            169,
+            178,
+            188
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "workflow",
+          "target_ids": [
+            "workflow"
+          ],
+          "meaning": "继续编辑路径接通",
+          "start_frame": 201,
+          "end_frame_exclusive": 240,
+          "global_start_frame": 1065,
+          "global_end_frame_exclusive": 1104,
+          "geometry": "工程字段与编辑标记建立",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            209,
+            220,
+            232
+          ],
+          "voice_anchor": "修到一半保存，下一次打开还能接着改；图层、工程文件和工作流程它基本都能接得上",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        }
+      ],
+      "overview_frames": [
+        3,
+        61,
+        117,
+        172,
+        222,
+        275
+      ]
+    },
+    {
+      "id": "C05",
+      "start_frame": 1142,
+      "end_frame_exclusive": 1287,
+      "frame_count": 145,
+      "title": "社区移植 · Composa",
+      "source_span": "甚至现在已经有人把它移植到了Linux；Windows和Linux之间也能互相打开工程",
+      "viewer_question": "工程交换应在哪个具体版本范围内讨论？",
+      "core_claim": "社区Composa支持Windows和Linux并使用.cmps；不暗示官方Mac.comp与其通用。",
+      "relation_type": "同一移植版的工程交换示意",
+      "nodes": [
+        {
+          "id": "file",
+          "role": "源端图层组成.cmps工程"
+        },
+        {
+          "id": "exchange",
+          "role": "同一工程沿路径从Windows送达Linux"
+        },
+        {
+          "id": "receive",
+          "role": "目标按同一层结构接收"
+        }
+      ],
+      "edges": "按visual_encoding及源场景中的明确路径；并列输入互不串联",
+      "visual_encoding": "Windows深绿、Linux纸白，两端通过同一个.cmps对象沿曲线交接，目的端保留对应层结构。",
+      "screen_copy": "社区移植 · Composa",
+      "information_gain": "限定为同一社区移植版及其工程格式，避免把平台都画成无条件互通。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试"
+      },
+      "states": [
+        "初态：语义对象建立",
+        "过程：逐事件连续几何变化与交接",
+        "终态：关系及必要限定保留"
+      ],
+      "reading_hold": {
+        "start_frame": 116,
+        "end_frame_exclusive": 145
+      },
+      "process_events": [
+        {
+          "id": "file",
+          "target_ids": [
+            "file"
+          ],
+          "meaning": "源端图层组成.cmps工程",
+          "start_frame": 6,
+          "end_frame_exclusive": 38,
+          "global_start_frame": 1148,
+          "global_end_frame_exclusive": 1180,
+          "geometry": "图层压合为文件轮廓",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            12,
+            22,
+            32
+          ],
+          "voice_anchor": "甚至现在已经有人把它移植到了Linux；Windows和Linux之间也能互相打开工程",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "exchange",
+          "target_ids": [
+            "exchange"
+          ],
+          "meaning": "同一工程沿路径从Windows送达Linux",
+          "start_frame": 39,
+          "end_frame_exclusive": 102,
+          "global_start_frame": 1181,
+          "global_end_frame_exclusive": 1244,
+          "geometry": "真实曲线路径、文档和点迁移",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            52,
+            70,
+            89
+          ],
+          "voice_anchor": "甚至现在已经有人把它移植到了Linux；Windows和Linux之间也能互相打开工程",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "receive",
+          "target_ids": [
+            "receive"
+          ],
+          "meaning": "目标按同一层结构接收",
+          "start_frame": 102,
+          "end_frame_exclusive": 116,
+          "global_start_frame": 1244,
+          "global_end_frame_exclusive": 1258,
+          "geometry": "图层展开与接收状态建立",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            105,
+            109,
+            113
+          ],
+          "voice_anchor": "甚至现在已经有人把它移植到了Linux；Windows和Linux之间也能互相打开工程",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        }
+      ],
+      "overview_frames": [
+        3,
+        32,
+        61,
+        90,
+        116,
+        142
+      ]
+    },
+    {
+      "id": "C06",
+      "start_frame": 1413,
+      "end_frame_exclusive": 1681,
+      "frame_count": 268,
+      "title": "替代方案，先看适不适合",
+      "source_span": "很多设计工作可能有了免费开源的替代方案；它未必马上取代Photoshop",
+      "viewer_question": "选择替代工具时应同时看什么？",
+      "core_claim": "开源工具增加选择；功能适配、现有工程衔接与成本需要一起衡量，不等于全面取代Photoshop。",
+      "relation_type": "并列维度汇聚",
+      "nodes": [
+        {
+          "id": "function",
+          "role": "功能适配作为第一项判断输入"
+        },
+        {
+          "id": "project",
+          "role": "现有工程衔接作为独立判断输入"
+        },
+        {
+          "id": "cost",
+          "role": "成本作为第三项判断输入"
+        },
+        {
+          "id": "choice",
+          "role": "三项共同形成按任务选择的结论"
+        }
+      ],
+      "edges": "按visual_encoding及源场景中的明确路径；并列输入互不串联",
+      "visual_encoding": "三项分别为深绿、纸白、浅绿，同级独立路径汇入选型结果，无先后因果链。",
+      "screen_copy": "替代方案，先看适不适合",
+      "information_gain": "从免费口号变为能用于判断的三个并列维度。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试"
+      },
+      "states": [
+        "初态：语义对象建立",
+        "过程：逐事件连续几何变化与交接",
+        "终态：关系及必要限定保留"
+      ],
+      "reading_hold": {
+        "start_frame": 225,
+        "end_frame_exclusive": 268
+      },
+      "process_events": [
+        {
+          "id": "function",
+          "target_ids": [
+            "function"
+          ],
+          "meaning": "功能适配作为第一项判断输入",
+          "start_frame": 14,
+          "end_frame_exclusive": 61,
+          "global_start_frame": 1427,
+          "global_end_frame_exclusive": 1474,
+          "geometry": "图标描画、独立路径和到达写入",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            23,
+            38,
+            52
+          ],
+          "voice_anchor": "很多设计工作可能有了免费开源的替代方案；它未必马上取代Photoshop",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "project",
+          "target_ids": [
+            "project"
+          ],
+          "meaning": "现有工程衔接作为独立判断输入",
+          "start_frame": 66,
+          "end_frame_exclusive": 114,
+          "global_start_frame": 1479,
+          "global_end_frame_exclusive": 1527,
+          "geometry": "同级路径和到达写入",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            76,
+            90,
+            104
+          ],
+          "voice_anchor": "很多设计工作可能有了免费开源的替代方案；它未必马上取代Photoshop",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "cost",
+          "target_ids": [
+            "cost"
+          ],
+          "meaning": "成本作为第三项判断输入",
+          "start_frame": 120,
+          "end_frame_exclusive": 168,
+          "global_start_frame": 1533,
+          "global_end_frame_exclusive": 1581,
+          "geometry": "同级路径和到达写入",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            130,
+            144,
+            158
+          ],
+          "voice_anchor": "很多设计工作可能有了免费开源的替代方案；它未必马上取代Photoshop",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "choice",
+          "target_ids": [
+            "choice"
+          ],
+          "meaning": "三项共同形成按任务选择的结论",
+          "start_frame": 170,
+          "end_frame_exclusive": 225,
+          "global_start_frame": 1583,
+          "global_end_frame_exclusive": 1638,
+          "geometry": "三输入汇聚后结果轮廓展开",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            181,
+            198,
+            214
+          ],
+          "voice_anchor": "很多设计工作可能有了免费开源的替代方案；它未必马上取代Photoshop",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        }
+      ],
+      "overview_frames": [
+        3,
+        59,
+        113,
+        166,
+        214,
+        265
+      ]
+    },
+    {
+      "id": "C07",
+      "start_frame": 1784,
+      "end_frame_exclusive": 1876,
+      "frame_count": 92,
+      "title": "你最离不开哪项？",
+      "source_span": "你最离不开PS的哪个功能？评论区说说",
+      "viewer_question": "邀请观众选哪个使用需求？",
+      "core_claim": "抠图、图层、调色是提问示例，观众可在评论补充。",
+      "relation_type": "并列选择与互动",
+      "nodes": [
+        {
+          "id": "cutout",
+          "role": "抠图作为可讨论的选项接入评论"
+        },
+        {
+          "id": "layers",
+          "role": "图层作为同级选项接入评论"
+        },
+        {
+          "id": "color",
+          "role": "调色作为同级选项接入评论"
+        }
+      ],
+      "edges": "按visual_encoding及源场景中的明确路径；并列输入互不串联",
+      "visual_encoding": "三个同级示例节点依次建立并分别连向评论入口。",
+      "screen_copy": "你最离不开哪项？",
+      "information_gain": "把开放提问具体化为可回忆的使用场景。",
+      "claim_basis": {
+        "narration": "用户原SRT",
+        "verified_sources": [
+          "https://robbietilton.com/compositor",
+          "https://github.com/robbietilton/Compositor",
+          "https://github.com/dvdstelt/Composa"
+        ],
+        "limitations": "12MB未获当前版本尺寸核验；PSD按支持类型导入且受RAM限制，越界层可能裁切；Composa与官方Mac工程格式不相同；图示非实机性能测试"
+      },
+      "states": [
+        "初态：语义对象建立",
+        "过程：逐事件连续几何变化与交接",
+        "终态：关系及必要限定保留"
+      ],
+      "reading_hold": {
+        "start_frame": 74,
+        "end_frame_exclusive": 92
+      },
+      "process_events": [
+        {
+          "id": "cutout",
+          "target_ids": [
+            "cutout"
+          ],
+          "meaning": "抠图作为可讨论的选项接入评论",
+          "start_frame": 4,
+          "end_frame_exclusive": 38,
+          "global_start_frame": 1788,
+          "global_end_frame_exclusive": 1822,
+          "geometry": "图标描画与连接",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            11,
+            21,
+            31
+          ],
+          "voice_anchor": "你最离不开PS的哪个功能？评论区说说",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "layers",
+          "target_ids": [
+            "layers"
+          ],
+          "meaning": "图层作为同级选项接入评论",
+          "start_frame": 15,
+          "end_frame_exclusive": 52,
+          "global_start_frame": 1799,
+          "global_end_frame_exclusive": 1836,
+          "geometry": "图标描画与连接",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            22,
+            34,
+            45
+          ],
+          "voice_anchor": "你最离不开PS的哪个功能？评论区说说",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        },
+        {
+          "id": "color",
+          "target_ids": [
+            "color"
+          ],
+          "meaning": "调色作为同级选项接入评论",
+          "start_frame": 26,
+          "end_frame_exclusive": 68,
+          "global_start_frame": 1810,
+          "global_end_frame_exclusive": 1852,
+          "geometry": "图标描画与连接",
+          "easing": "cubic_out; path progress linear unless specified",
+          "check_frames": [
+            34,
+            47,
+            60
+          ],
+          "voice_anchor": "你最离不开PS的哪个功能？评论区说说",
+          "retained": "保留对应来源、已经建立的结构与终态；转换对象在交接后由目标接收",
+          "occlusion": "容器内对象在容器边界内显示；画布外边界演示仅C03明确区分"
+        }
+      ],
+      "overview_frames": [
+        3,
+        20,
+        39,
+        57,
+        74,
+        89
+      ]
+    }
+  ],
+  "active_sources": [
+    "06_project/cards/scene.js",
+    "06_project/cards/card_scene.html",
+    "06_project/cards/card_kit.js",
+    "06_project/cards/vendor/flubber.min.js",
+    "00_brief/effective_defaults.json",
+    "06_project/cards/prepare_official_demo.py",
+    "04_assets/official_demo_frames/manifest.json",
+    "04_assets/references/corrected_reference/author_compositor_launch_demo.mp4"
+  ],
+  "source_sha256": {}
+}

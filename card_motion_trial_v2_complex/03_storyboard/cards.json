@@ -1,0 +1,197 @@
+{
+  "schema": "episode_cards_v1",
+  "revision": "complex_motion_trial_v2",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "total_video_frames": 540,
+  "subtitle_mode": "none",
+  "cards": [
+    {
+      "id": "C01",
+      "title": "复杂工程，也能清晰恢复",
+      "start_frame": 0,
+      "end_frame_exclusive": 540,
+      "frame_count": 540,
+      "source_span": "导入工程时，先识别图层、文字和对象位置。如果缺少字体，保留对象关系，定位冲突并完成替换。处理后恢复原有结构，继续编辑。",
+      "viewer_question": "文件有多种对象和局部问题时，怎样保留结构并继续编辑？",
+      "core_claim": "以虚构海报演示结构识别、局部修复和可编辑性，不构成任何真实软件的功能承诺。",
+      "relation_type": "结构拆解—局部修复—关系恢复",
+      "overview_frames": [
+        44,
+        138,
+        209,
+        299,
+        391,
+        520
+      ],
+      "reading_hold": {
+        "start_frame": 474,
+        "end_frame_exclusive": 540
+      },
+      "process_events": [
+        {
+          "id": "import",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "保留来源文件；文件副本沿路径进入编辑区并展开为海报",
+          "start_frame": 12,
+          "end_frame_exclusive": 72,
+          "global_start_frame": 12,
+          "global_end_frame_exclusive": 72,
+          "check_frames": [
+            24,
+            42,
+            60
+          ],
+          "voice_anchor": "导入工程",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        },
+        {
+          "id": "split",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "同一海报拆成背景、标题和标签，分层过程中内容身份与层级保留",
+          "start_frame": 78,
+          "end_frame_exclusive": 144,
+          "global_start_frame": 78,
+          "global_end_frame_exclusive": 144,
+          "check_frames": [
+            91,
+            111,
+            131
+          ],
+          "voice_anchor": "识别图层、文字和对象位置",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        },
+        {
+          "id": "inspect",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "从三个图层提取关系线，结构检查逐项建立，标题局部问题被定位",
+          "start_frame": 150,
+          "end_frame_exclusive": 192,
+          "global_start_frame": 150,
+          "global_end_frame_exclusive": 192,
+          "check_frames": [
+            158,
+            171,
+            184
+          ],
+          "voice_anchor": "识别图层、文字和对象位置",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        },
+        {
+          "id": "focus",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "展开与标题层连接的局部修复区，其他图层保持原位",
+          "start_frame": 192,
+          "end_frame_exclusive": 222,
+          "global_start_frame": 192,
+          "global_end_frame_exclusive": 222,
+          "check_frames": [
+            198,
+            207,
+            216
+          ],
+          "voice_anchor": "如果缺少字体",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        },
+        {
+          "id": "repair",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "替代字体条目沿路径送回同一标题层，到达后字形变清晰，字号与锚点保持",
+          "start_frame": 228,
+          "end_frame_exclusive": 312,
+          "global_start_frame": 228,
+          "global_end_frame_exclusive": 312,
+          "check_frames": [
+            245,
+            270,
+            295
+          ],
+          "voice_anchor": "保留对象关系，完成替换",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        },
+        {
+          "id": "rebuild",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "已修复标题与原背景、标签沿分解路线逆向重组，右侧图层列表仍保留",
+          "start_frame": 330,
+          "end_frame_exclusive": 402,
+          "global_start_frame": 330,
+          "global_end_frame_exclusive": 402,
+          "check_frames": [
+            344,
+            366,
+            388
+          ],
+          "voice_anchor": "恢复原有结构",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        },
+        {
+          "id": "edit",
+          "target_ids": [
+            "poster",
+            "background",
+            "title",
+            "tag"
+          ],
+          "meaning": "选中标签，以光标拖动到新位置并吸附；背景和标题不移动，保持新终态",
+          "start_frame": 414,
+          "end_frame_exclusive": 474,
+          "global_start_frame": 414,
+          "global_end_frame_exclusive": 474,
+          "check_frames": [
+            426,
+            444,
+            462
+          ],
+          "voice_anchor": "继续编辑",
+          "easing": "smoothstep for transport; cubic_out for local reveals; no overshoot",
+          "retained": "源文件、对象身份、层级和已完成结果保留；字体替换和最终标签位置为明确的状态改变",
+          "occlusion": "图片受背景画布遮罩；局部修复区在右侧纸白框内；图层按背景、标题、标签依次覆盖"
+        }
+      ]
+    }
+  ]
+}

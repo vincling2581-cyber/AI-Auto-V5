@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>ECHO · 五款AI工具</title>
+<style>html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07110C}svg{display:block}</style>
+<div id="root"></div><script src="vendor/flubber.min.js"></script><script src="card_kit.js"></script>
+<script src="common.js"></script><script src="scenes_a.js"></script><script src="scenes_bc.js"></script><script src="scenes_de.js"></script>
+<script>
+(async()=>{const [cfg,data]=await Promise.all(['../../00_brief/effective_defaults.json','../../03_storyboard/cards.json'].map(u=>fetch(u).then(r=>r.json())));window.CFG=cfg;window.DATA=data;H.k=createReferenceCardKit(cfg);window.currentShot=data.cards.find(x=>x.id===new URLSearchParams(location.search).get('card'))||data.cards[0];
+const sid=currentShot.id,needed=sid.startsWith('A')?['illustrations/'+sid+'.png']:({C01:['official/voice_clone.webp','official/voice_dub.webp'],C02:['official/paperclip_home.png'],C04:['official/webui_demo.png','official/ollama_logo.png'],C05:['official/impeccable_case.png','official/impeccable_home.png']}[sid]||[]);
+await Promise.all(needed.map(src=>new Promise(res=>{const im=new Image();im.onload=res;im.onerror=()=>{window.assetErrors=(window.assetErrors||[]).concat(src);res()};im.src='../../04_assets/'+src;})));
+await document.fonts.ready;window.renderFrame=f=>{H.k.beginFrame();const c=window.currentShot,t=f/data.fps;document.querySelector('#root').innerHTML=H.frame(c,t);};renderFrame(0);window.cardMotionReady=true;})();
+</script>
