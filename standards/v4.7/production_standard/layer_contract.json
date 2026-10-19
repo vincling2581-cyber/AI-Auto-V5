@@ -48,9 +48,9 @@
     "scene_id_semantics": "Identifies a concrete situation. Returning to a situation may reuse its scene_id but must use a new source image. Consecutive scene groups are derived separately.",
     "scene_change_reason_semantics": "Nonempty when scene_id changes from the preceding illustration, even if information cards intervene. The first illustration needs no change reason.",
     "planning_levels": [
-      "single_illustration",
-      "contiguous_scene_group",
-      "semantic_sequence"
+      "single_image",
+      "same_scene_group",
+      "semantic_segment"
     ]
   },
   "information_card": {
@@ -66,7 +66,8 @@
       "semantic_transition"
     ],
     "corner_labels": false,
-    "motion_quality": "Use meaningful object relationships, traceable identity, intermediate states, arrival/occlusion and readable holds; motion=none needs an explicit simple-card purpose in the design."
+    "motion_quality": "Use meaningful object relationships, traceable identity, intermediate states, arrival/occlusion and readable holds; motion=none needs an explicit simple-card purpose in the design.",
+    "static_purpose_field": "static_card_purpose"
   },
   "narration_anchor": {
     "required_fields": [

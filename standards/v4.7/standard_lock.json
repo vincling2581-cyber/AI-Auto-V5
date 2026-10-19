@@ -54,7 +54,7 @@
     },
     {
       "path": "production_standard/layer_contract.json",
-      "sha256": "24ff7db77f4e4de45c8a18dec76da44cb31df5e955f0dd4816e78c679c00c905"
+      "sha256": "e82269631425b2c652a9ff7e0d99308b9fb621407b2826872fbbe7c8edb02378"
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
@@ -62,7 +62,7 @@
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/README.md",
-      "sha256": "7124fca0a219966c49d1637ec0916d02bc87df66fcffbba09eac1fe960e03ebf"
+      "sha256": "007352710ed2c1769a5f8c019affaf2ddac391da8c7ed8b8362325dfd8e2fc57"
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
@@ -86,11 +86,11 @@
     },
     {
       "path": "production_standard/validate_episode.py",
-      "sha256": "25a50af418d46049c2c70e13c365260c5121f526b4fe14cc305b6f133e83a723"
+      "sha256": "148da7b107b834851bfb766ec7598a7c829c0b0cd256bac24cc486e133afc9b3"
     },
     {
       "path": "production_standard/verify_standard.py",
-      "sha256": "65472ff7331057c5a31e6a3fc2da413f57844ba98ac560bb397abf1a5ac66f91"
+      "sha256": "748b095c3287c18ab864f060fd340912b103a611a0c1e2bce65f21ff99946a14"
     },
     {
       "path": "production_standard/visual_references.json",

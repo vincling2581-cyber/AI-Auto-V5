@@ -96,6 +96,8 @@ def verify(root=STANDARD_ROOT, project_root=None):
     require(contract["illustration"]["max_contiguous_image_seconds"] == 2.0, "Layer contract cap mismatch")
     require(contract["illustration"]["motion"] == "none" and contract["illustration"]["transition"] == "hard_cut", "Layer contract stillness mismatch")
     require(contract["illustration"]["required_scene_fields"] == illustration["scene_contract_fields"], "Contract/defaults scene field mismatch")
+    require(contract["illustration"]["planning_levels"] == illustration["planning_levels"], "Scene planning vocabulary mismatch")
+    require(contract["information_card"]["static_purpose_field"] == "static_card_purpose", "Missing explicit static-card exemption")
     require(contract["information_card"]["max_contiguous_image_seconds"] is None, "Card cap introduced in layer contract")
     require(all(contract[key]["corner_labels"] is False for key in ("illustration", "information_card")), "Layer contract corner labels enabled")
     template = read_json(local_path(root, manifest["episode_contract_template"]))

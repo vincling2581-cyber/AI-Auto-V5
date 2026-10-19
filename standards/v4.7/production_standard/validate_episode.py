@@ -178,6 +178,10 @@ def validate(episode_root, contract_path=None):
             policy = spec['information_card']
             check(clip.get('motion') in policy['allowed_motion'], label + ' invalid information-card motion mode')
             check(clip.get('transition') in policy['allowed_transition'], label + ' invalid information-card transition')
+            if clip.get('motion') == 'none':
+                purpose = clip.get(policy['static_purpose_field'])
+                check(isinstance(purpose, str) and bool(purpose.strip()),
+                      label + ' static information card needs ' + policy['static_purpose_field'])
     if total is not None:
         check(cursor == total, 'Main visual sequence must end at total_frames')
     groups = []

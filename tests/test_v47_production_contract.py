@@ -59,6 +59,13 @@ class ProductionContractTest(unittest.TestCase):
         self.assertTrue(self.run_check(self.contract([
             self.clip(end=240, asset='card.svg', layer='information_card')]))['passed'])
 
+    def test_static_card_needs_explicit_purpose_without_duration_cap(self):
+        card = self.clip(end=240, asset='card.svg', layer='information_card')
+        card['motion'] = 'none'
+        self.assertFalse(self.run_check(self.contract([card]))['passed'])
+        card['static_card_purpose'] = 'Hold the simple final conclusion for reading.'
+        self.assertTrue(self.run_check(self.contract([card]))['passed'])
+
     def test_card_entry_cannot_animate_over_previous_illustration(self):
         card = self.clip('card', 60, 240, 'card.svg', 'information_card')
         card['transition'] = 'card_entry'

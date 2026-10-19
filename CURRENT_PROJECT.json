@@ -9,8 +9,8 @@
     "snapshot_root": "standards/v4.7",
     "entry_point": "standards/v4.7/production_standard.json",
     "lock": "standards/v4.7/standard_lock.json",
-    "entry_sha256": "94c3758a45f69b716f053a2b621df0ab600f3b2accf297ec8914303d01b6b41b",
-    "lock_sha256": "94c3758a45f69b716f053a2b621df0ab600f3b2accf297ec8914303d01b6b41b",
+    "entry_sha256": "97f27da2d302cf2c4fcafc4c9e81154403ccca4e28cea1fa1aab736f5aee4397",
+    "lock_sha256": "97f27da2d302cf2c4fcafc4c9e81154403ccca4e28cea1fa1aab736f5aee4397",
     "policy": "V5 v4.7 场景组修订：静态连环画单张≤2秒，按单图/连续场景组/整段语义规划；同景推进、跨情境连贯；信息卡连续过程，两层无固定角标。用于新集，旧集按自己的锁和明确覆盖续做，不自动迁移。",
     "revision": "2026-10-20-scene-continuity"
   },
