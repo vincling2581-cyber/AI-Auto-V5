@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1920, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>HUMAN 3.0 · 角色与语义插画修订完整版</title>
+  <style>
+    *{box-sizing:border-box}html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#f5f2e9}
+    body{font-family:"Microsoft YaHei",sans-serif}#stage{position:relative;width:1920px;height:1080px;overflow:hidden}
+    #illustration{position:absolute;inset:0;width:1920px;height:1080px;object-fit:cover;display:none}
+    #graphics,#overlay{position:absolute;inset:0;width:1920px;height:1080px}
+    #overlay{pointer-events:none}text{font-family:"Microsoft YaHei",sans-serif;font-kerning:normal}
+  </style>
+</head>
+<body>
+  <main id="stage"><img id="illustration" alt="本镜语义插画"><svg id="graphics" viewBox="0 0 1920 1080"></svg><svg id="overlay" viewBox="0 0 1920 1080"></svg></main>
+  <script src="cards.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

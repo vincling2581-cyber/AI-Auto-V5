@@ -1,0 +1,393 @@
+{
+  "schema_version": 1,
+  "is_template": false,
+  "path_base": "episode_root；project_entry 相对于 project_root",
+  "project_root": "C:\\Users\\Administrator\\.codex\\worktrees\\0dff\\AI-Auto-V5（Codex+AE）",
+  "project_entry": "CURRENT_PROJECT.json",
+  "episode_id": "TEST_V46_HUMAN3_20261018",
+  "episode_root": "C:\\Users\\Administrator\\.codex\\worktrees\\0dff\\AI-Auto-V5（Codex+AE）\\episodes\\TEST_V46_HUMAN3_20261018",
+  "updated_at": "2026-10-19T23:31:59.972269+08:00",
+  "stage": "comic_2s_demo",
+  "status": "demo_ready_for_user_viewing",
+  "inputs": {
+    "voice": {
+      "path": "00_brief/input/10月18日.mp3",
+      "original_path": "C:\\Users\\Administrator\\Videos\\屏幕录制\\10月18日\\10月18日.mp3",
+      "sha256": "7dba283d1420d7a3be5e86ac41f355f31274425e99f985a6fe28c5aef51b0642",
+      "duration_seconds": 55.902042
+    },
+    "srt": {
+      "path": "00_brief/input/10月18日.srt",
+      "original_path": "C:\\Users\\Administrator\\Videos\\屏幕录制\\10月18日\\10月18日.srt",
+      "sha256": "26561571776fbc22d14c7aaa4bdd4a0cd94e176dd6578ffd9c2bd2c6c8f22462"
+    }
+  },
+  "authoritative_files": {
+    "standard_entry": "00_brief/standard_snapshot/production_standard.json",
+    "standard_lock": "00_brief/standard_lock.json",
+    "episode_config": "00_brief/episode.json",
+    "effective_defaults": "00_brief/effective_defaults.json",
+    "storyboard": "03_storyboard/scenes.json",
+    "semantic_design": "03_storyboard/semantic_design.json",
+    "asset_usage": "03_storyboard/asset_usage.json"
+  },
+  "standard": {
+    "version": "4.6",
+    "entry_sha256": "6bc4e458cfb7da0cc9c736bb5343590aeb8a1a0e60baba50da0b9ad6497c42ab",
+    "lock_sha256": "6bc4e458cfb7da0cc9c736bb5343590aeb8a1a0e60baba50da0b9ad6497c42ab",
+    "integrity_report": null
+  },
+  "current_user_requirements": [
+    "只做一个demo供观看后讨论，不更新全局SOP。",
+    "动画层只能用多张静态插画，单张展示不超过2秒，无图内动效和角标，保留原配音，不覆盖成片。"
+  ],
+  "scoped_overrides": [],
+  "rule_reads": [],
+  "completed_stages": [
+    "intake",
+    "semantic_storyboard",
+    "illustration_generation_and_source_visual_review",
+    "cards_implementation",
+    "composed_keyframe_review",
+    "full_length_render",
+    "media_checks",
+    "encoded_keyframe_review",
+    "test_delivery",
+    "jianying_layered_export",
+    "conversation_comparison_sample",
+    "identity_and_semantic_full_revision",
+    "jianying_identity_cardsplit_export",
+    "jianying_native_text_editability_review"
+  ],
+  "outputs": [
+    {
+      "type": "test_mp4",
+      "path": "07_exports/HUMAN3_v46_视觉测试_1080p.mp4",
+      "sha256": "350d32e10eeca84a2b879469f9e67a5482c1db1817843247407350b4a16db2bd",
+      "status": "delivered"
+    },
+    {
+      "type": "test_notes",
+      "path": "07_exports/测试说明.md",
+      "sha256": "570e8c917961c4d85769bf71ae81f26dad24d75ab635c1ee8ea9068d4fc1128b",
+      "status": "delivered"
+    },
+    {
+      "type": "rerenderable_source_entry",
+      "path": "06_project/README.md",
+      "sha256": "9c33b07ab7732ea8269a0740aa2c170404b9f20d43f170a73b557f3ec2fff443",
+      "status": "delivered"
+    },
+    {
+      "type": "encoded_keyframe_sheet",
+      "path": "08_qc/final_encoded_contact_sheet.jpg",
+      "sha256": "f6a747546c1eec7ae92e13bbcbe00a746617435e28b3efc5226c474f96175d44",
+      "status": "delivered"
+    },
+    {
+      "type": "integrated_full_video",
+      "path": "07_exports/HUMAN3_v46_新版开头完整版_1080p.mp4",
+      "sha256": "fee75156d920b9c4d6b7919a3335b2fba70ba97ff5c671cd07c40b9c00eaf2fa",
+      "status": "delivered"
+    },
+    {
+      "type": "jianying_draft",
+      "path": "09_revisions/jianying_layered_20261018/package/draft_content.json",
+      "sha256": "0ec85008118fff61224a02f59e7da383f7d32b8ae2e36a1149c5c70aaf89e05a",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_manifest",
+      "path": "09_revisions/jianying_layered_20261018/package/manifest.json",
+      "sha256": "2f2c0a8fcfb2eee52af047d3ebf1e2518dfcbe8bf0c240ce9bb1f75d10eb0912",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_portable_zip",
+      "path": "09_revisions/jianying_layered_20261018/第一步_新开头完整版_剪映分层草稿.zip",
+      "sha256": "2e0eaf6aa5e295c0b65d216fcfcf426116da567fd9699ca310cbe0470845d216",
+      "bytes": 253482638,
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_textfix_draft",
+      "path": "09_revisions/jianying_textfix_20261018_v2/第一步_文字动效修正版_剪映分层草稿/draft_content.json",
+      "sha256": "3d979f81fd1cf264cf2a2d85d1d9e6ce2fe48e4c7d7a583ef318a9c30c133826",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_textfix_manifest",
+      "path": "09_revisions/jianying_textfix_20261018_v2/第一步_文字动效修正版_剪映分层草稿/manifest.json",
+      "sha256": "ec0cb482747e971e8db84380eed6206f206f41e54bc45a09b4671d57612b281b",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_textfix_zip",
+      "path": "09_revisions/jianying_textfix_20261018_v2/第一步_文字动效修正版_剪映分层草稿.zip",
+      "sha256": "d90ca040de9394255cef87612bdde1ab50f3557ce8b3a98f405d0726e4485954",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_subtitle_fixed_draft",
+      "path": "09_revisions/jianying_subtitle_fixed_20261018_v3/第一步_字幕居中版_v3_剪映分层草稿/draft_content.json",
+      "sha256": "069589196717ef9b73e571052e71d23935878b1993b551ee7fb61478bbfc2287",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_subtitle_fixed_manifest",
+      "path": "09_revisions/jianying_subtitle_fixed_20261018_v3/第一步_字幕居中版_v3_剪映分层草稿/manifest.json",
+      "sha256": "6fcdae74a845e23484f27908bb977a4457e2f85e420b9d42b875fc3c000791c9",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_subtitle_fixed_zip",
+      "path": "09_revisions/jianying_subtitle_fixed_20261018_v3/第一步_字幕居中版_v3_剪映分层草稿.zip",
+      "sha256": "73793fd66463c4ebd3234fad3793eeb65a6823d59f98e92f15bbb171f0ba976b",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "conversation_original_excerpt",
+      "path": "09_revisions/conversation_semantic_20261018_v1/outputs/01_原版片段_1080p.mp4",
+      "sha256": "02fe62732f110d2fccd49274b323c05d78401ee72d16263e88e909fd4b0bf63b",
+      "status": "sample_ready_for_user_review"
+    },
+    {
+      "type": "conversation_semantic_sample",
+      "path": "09_revisions/conversation_semantic_20261018_v1/outputs/02_语义推进版_1080p.mp4",
+      "sha256": "5b5f20c604f7e7551629968cf0538c4632681825929815a31f6e25ddbef9fb13",
+      "status": "sample_ready_for_user_review"
+    },
+    {
+      "type": "conversation_side_by_side",
+      "path": "09_revisions/conversation_semantic_20261018_v1/outputs/03_左右同步对照.mp4",
+      "sha256": "859007ba60eb31e88309d6914b698df585a8e336bfaf3cabb5f6ace18a2da0d4",
+      "status": "sample_ready_for_user_review"
+    },
+    {
+      "type": "identity_semantic_revised_full_video",
+      "path": "09_revisions/identity_semantic_full_20261018_v2/exports/full_01/HUMAN3_角色与语义插画修订完整版_1080p.mp4",
+      "sha256": "d559ca86a43e0cb5f175fd236e46f4649b0cb4fc5d54107872c1485ff94d338d",
+      "status": "rendered_checked_awaiting_user_viewing"
+    },
+    {
+      "type": "identity_semantic_source",
+      "path": "09_revisions/identity_semantic_full_20261018_v2/README_render.md",
+      "sha256": "63c4c3d488ab0908c7254408651951649b475eea006fbbe2f5c406f9e094072b",
+      "status": "delivered"
+    },
+    {
+      "type": "identity_semantic_encoded_storyboard",
+      "path": "09_revisions/identity_semantic_full_20261018_v2/qa/full_01/encoded_illustrations.jpg",
+      "sha256": "4cf52e76296bf546d22c5a11923bc21dc4a59b31ef982b598da7d770ee2ff89a",
+      "status": "delivered"
+    },
+    {
+      "type": "jianying_identity_cardsplit_draft",
+      "path": "09_revisions/jianying_identity_cardsplit_20261019_v1/HUMAN3_角色插画修订_文字独立_剪映草稿/draft_content.json",
+      "sha256": "ad7114c3974dd2b834926c13d1a69ea59fbcda644ae37fc1f6588f3752974333",
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_identity_cardsplit_zip",
+      "path": "09_revisions/jianying_identity_cardsplit_20261019_v1/HUMAN3_角色插画修订_文字独立_剪映草稿.zip",
+      "sha256": "7bd82bd72ecd1a65064579329ea220d7c3193d422204e9799ee9a29ebe4acba1",
+      "bytes": 77166765,
+      "status": "exported_review_not_performed"
+    },
+    {
+      "type": "jianying_native_editability_check_copy",
+      "path": "D:\\剪映\\JianyingPro Drafts\\HUMAN3_信息卡文字原生检查_20261019",
+      "draft_name": "HUMAN3_信息卡文字原生检查_20261019",
+      "status": "native_text_editability_passed",
+      "report": "09_revisions/jianying_native_textcheck_20261019_v1/native_editability_report.json"
+    },
+    {
+      "type": "comic_2s_demo",
+      "path": "09_revisions/comic_2s_demo_20261019_v1/exports/demo.mp4",
+      "sha256": "6afc13be50f2a08295db94fe5daebd0b24e019b4af493052361622f25a91605d",
+      "status": "sample_ready_for_user_review"
+    },
+    {
+      "type": "comic_original_3_images_baseline",
+      "path": "09_revisions/comic_2s_demo_20261019_v1/exports/baseline.mp4",
+      "sha256": "ed282dd0b6e8b5191437f2a6a1eb3fcadfddcf7f18943bc2ffc22930ec919433",
+      "status": "sample_ready_for_user_review"
+    }
+  ],
+  "checks": [
+    {
+      "id": "composition_preview",
+      "status": "passed",
+      "checked_at": "2026-10-18",
+      "evidence": "08_qc/preview_contact_sheet.jpg",
+      "scope": "15个代表合成帧、五张原始插画；后续仅将C04示意说明改为常显，最终视频需核对。"
+    },
+    {
+      "id": "media_checks",
+      "status": "passed_with_observation",
+      "checked_at": "2026-10-18T17:08:19.978696+08:00",
+      "dependencies_manifest": "08_qc/dependencies_manifest.json",
+      "dependencies_sha256": "be95566f8b9a37913a8078ef2acd4233d6af2b8c358c3b2fa5211d14964ae3dc",
+      "artifact_sha256": "350d32e10eeca84a2b879469f9e67a5482c1db1817843247407350b4a16db2bd",
+      "evidence": "08_qc/media_checks.json",
+      "evidence_sha256": "2bcb3a44daf75ca63078faedbbb6de584dc4081b5fca5f52675644f30e3371a9",
+      "scope": "媒体参数、全文件解码、原配音指纹与客观同步/波形比较；保留AAC有损差异观测。"
+    },
+    {
+      "id": "encoded_keyframe_review",
+      "status": "passed",
+      "checked_at": "2026-10-18T17:08:19.978696+08:00",
+      "dependencies_manifest": "08_qc/dependencies_manifest.json",
+      "dependencies_sha256": "be95566f8b9a37913a8078ef2acd4233d6af2b8c358c3b2fa5211d14964ae3dc",
+      "artifact_sha256": "350d32e10eeca84a2b879469f9e67a5482c1db1817843247407350b4a16db2bd",
+      "evidence": "08_qc/visual_checks.json",
+      "evidence_sha256": "f73694848963e98e16a73d033020a5da3a77fc4e2984e2a60cbfd5136990b66c",
+      "scope": "最终编码视频10个代表帧；包含C04常显说明，不代表整片主观视听。"
+    },
+    {
+      "id": "approved_opening_full_integration",
+      "status": "passed",
+      "checked_at": "2026-10-18T18:02:23.691301+08:00",
+      "dependencies_manifest": "09_revisions/full_with_opening_v2_20261018/merge_manifest.json",
+      "dependencies_sha256": "48fd2aaf3274f96d5f5c44dc5f1211af2b214ba54754290b28f5e8604e6657b8",
+      "artifact_sha256": "fee75156d920b9c4d6b7919a3335b2fba70ba97ff5c671cd07c40b9c00eaf2fa",
+      "evidence": "09_revisions/full_with_opening_v2_20261018/qc/merge_checks.json",
+      "scope": "完整片画面压缩包/时间戳映射、原音轨逐包一致、完整解码和接点关键帧。"
+    },
+    {
+      "id": "conversation_comparison_media",
+      "status": "passed",
+      "checked_at": "2026-10-18T22:32:58.32004+08:00",
+      "dependencies_manifest": "09_revisions/conversation_semantic_20261018_v1/outputs/qa/dependencies_manifest.json",
+      "dependencies_sha256": "65846e5d449107d5821bb5d94a9a620097c91389d7a5cc2b3717180dba927bde",
+      "artifact_sha256": "859007ba60eb31e88309d6914b698df585a8e336bfaf3cabb5f6ace18a2da0d4",
+      "evidence": "09_revisions/conversation_semantic_20261018_v1/outputs/qa/machine_checks.json",
+      "scope": "仅本次3个短片：帧数、分辨率、完整解码、共用音轨包体/时间戳、截取音轨同步。"
+    },
+    {
+      "id": "conversation_comparison_encoded_frames",
+      "status": "passed_with_observation",
+      "checked_at": "2026-10-18T22:39:51.885445+08:00",
+      "dependencies_manifest": "09_revisions/conversation_semantic_20261018_v1/outputs/qa/dependencies_manifest.json",
+      "dependencies_sha256": "65846e5d449107d5821bb5d94a9a620097c91389d7a5cc2b3717180dba927bde",
+      "artifact_sha256": "5b5f20c604f7e7551629968cf0538c4632681825929815a31f6e25ddbef9fb13",
+      "evidence": "09_revisions/conversation_semantic_20261018_v1/outputs/qa/root_visual_review.json",
+      "scope": "三张源插画、新版三代表编码帧与对照截图；第二镜托书手下缘有少量字幕遮挡，核心指点与笔记图示清楚。"
+    },
+    {
+      "id": "identity_semantic_full_media",
+      "status": "passed",
+      "checked_at": "2026-10-19T00:07:53.956127+08:00",
+      "dependencies_manifest": "09_revisions/identity_semantic_full_20261018_v2/qa/full_01/dependencies_manifest.json",
+      "dependencies_sha256": "552da50e2d949a99d56c41d90e1efe6c12ca0a079d7989ada1e5e40bb7821d69",
+      "artifact_sha256": "d559ca86a43e0cb5f175fd236e46f4649b0cb4fc5d54107872c1485ff94d338d",
+      "evidence": "09_revisions/identity_semantic_full_20261018_v2/qa/full_01/machine_checks.json",
+      "evidence_sha256": "b4e91b605b2d2fee19553a80df98c1926b42e6b5bc355acafda15320aeb23271",
+      "scope": "本次新完整版；机器/抽帧检查不等同正常速度整片主观视听。"
+    },
+    {
+      "id": "identity_semantic_full_encoded_review",
+      "status": "passed_with_observation",
+      "checked_at": "2026-10-19T00:07:53.956127+08:00",
+      "dependencies_manifest": "09_revisions/identity_semantic_full_20261018_v2/qa/full_01/dependencies_manifest.json",
+      "dependencies_sha256": "552da50e2d949a99d56c41d90e1efe6c12ca0a079d7989ada1e5e40bb7821d69",
+      "artifact_sha256": "d559ca86a43e0cb5f175fd236e46f4649b0cb4fc5d54107872c1485ff94d338d",
+      "evidence": "09_revisions/identity_semantic_full_20261018_v2/qa/full_01/visual_review.json",
+      "evidence_sha256": "7983809ad30439a4f2597e77da0d3e05ad6f32100fceb8ad76b149298bc729af",
+      "scope": "本次新完整版；机器/抽帧检查不等同正常速度整片主观视听。"
+    },
+    {
+      "id": "jianying_native_card_text_editability_20261019",
+      "status": "passed",
+      "checked_at": "2026-10-19T13:49:26.058445+08:00",
+      "scope": "57个卡内内容文字+4个品牌文字，原生改字撤销及截图局部变化检查",
+      "evidence": "09_revisions/jianying_native_textcheck_20261019_v1/native_editability_report.json",
+      "evidence_sha256": "392956e62bf22abd73a650146614e21b2cd8bf97fcb7140cbcc440b774de878a"
+    }
+  ],
+  "acceptance": {
+    "machine_checks": "passed_with_observation",
+    "sampled_visual_review": "passed_source_images_composed_previews_and_10_encoded_frames",
+    "full_speed_subjective_av": "not_performed",
+    "jianying_draft_registration": "native_ui_copy_created_and_opened",
+    "jianying_native_open_playback": "opened_check_copy; full_playback_not_performed",
+    "jianying_native_export": "not_performed",
+    "jianying_draft_export": "identity_cardsplit_exported_review_not_performed",
+    "jianying_additional_review": "passed_scoped_text_editability_only",
+    "conversation_comparison_sample": {
+      "machine_checks": "passed",
+      "sampled_visual_review": "passed_with_observation",
+      "full_speed_subjective_av": "not_performed",
+      "user_acceptance": "pending",
+      "identity_user_feedback": "rejected_identity_drift; superseded_by_new_full_revision"
+    },
+    "identity_semantic_full_revision": {
+      "machine_checks": "passed",
+      "sampled_visual_review": "passed_with_observations",
+      "full_speed_subjective_av": "not_performed",
+      "user_acceptance": "pending"
+    },
+    "jianying_native_text_editability": {
+      "status": "passed",
+      "count": 61,
+      "report": "09_revisions/jianying_native_textcheck_20261019_v1/native_editability_report.json",
+      "applies_to": "独立原生检查副本"
+    },
+    "jianying_native_open": "passed_check_copy",
+    "comic_2s_demo": {
+      "machine_checks": "passed",
+      "source_illustrations": "viewed_5_selected_images",
+      "encoded_visual_samples": "viewed_2_new_images",
+      "normal_speed_subjective_av": "not_performed",
+      "user_acceptance": "pending",
+      "report": "09_revisions/comic_2s_demo_20261019_v1/qa/check_results.json"
+    }
+  },
+  "blocking_issues": [],
+  "deferred_improvements": [],
+  "next_action": "用户观看8.37秒5图静态连环画demo，与同段3图版比较后讨论；不自动更新长期规则、不融入全片。",
+  "field_contract": {
+    "initialization": "复制到新集后填 episode_id、episode_root、updated_at，并设 is_template=false；不写回此模板。",
+    "scoped_overrides": "每项记录 field、value、scope、用户依据及原因；只对本集生效。",
+    "rule_reads": "每项记录阶段、规则来源、内容哈希和适用条目；不能据此跳过新上下文缺少的必要规则。",
+    "outputs": "每项记录类型、相对路径、sha256 和状态；未验证临时文件不冒充有效交付。",
+    "checks": "每项记录 id、status、checked_at、dependencies_manifest、dependencies_sha256、artifact_sha256、evidence。passed 必须有可核对证据，依赖变化标 stale；允许 failed、not_performed、not_applicable。",
+    "dependencies": "依赖清单按检查对象记录输入、规则、实现、素材、字体、工具/依赖版本及参数；缺依赖指纹不得复用旧 passed。",
+    "authority": "本文件只做交接和证据索引；生产配置以 authoritative_files 指向的内容为准。"
+  },
+  "delivery_notes": [
+    "完整使用10月18日原文案和配音；视频55.933333秒。",
+    "原配音未应用变速或音量滤镜；AAC转码后的实测波形拟合电平约低0.15dB，非逐样本无损一致。",
+    "插画为完整场景保持与访谈关键动作两态切换，不宣称连续人物动画。"
+  ],
+  "latest_revision": {
+    "id": "identity_semantic_full_20261018_v2",
+    "root": "09_revisions/identity_semantic_full_20261018_v2",
+    "state_file": "09_revisions/identity_semantic_full_20261018_v2/state.json",
+    "status": "rendered_checked_awaiting_user_viewing",
+    "scope": "identity_locked_illustrations_and_semantic_full_video"
+  },
+  "latest_export_notes": {
+    "receipt": "09_revisions/jianying_identity_cardsplit_20261019_v1/export_receipt.json",
+    "draft_name": "HUMAN3_角色插画修订_文字独立_55秒",
+    "scope": "identity_semantic_full_card_text_split",
+    "native_text_segments": 108,
+    "review": "not_performed",
+    "registration": "not_performed",
+    "previous_outputs": "旧草稿、已有成片和素材均保留。"
+  },
+  "latest_native_review": {
+    "root": "09_revisions/jianying_native_textcheck_20261019_v1",
+    "report": "09_revisions/jianying_native_textcheck_20261019_v1/native_editability_report.json",
+    "draft_name": "HUMAN3_信息卡文字原生检查_20261019",
+    "scope": "all_card_text_editability",
+    "status": "passed"
+  },
+  "active_demo": {
+    "root": "09_revisions/comic_2s_demo_20261019_v1",
+    "status": "ready_for_user_viewing",
+    "video": "09_revisions/comic_2s_demo_20261019_v1/exports/demo.mp4",
+    "baseline": "09_revisions/comic_2s_demo_20261019_v1/exports/baseline.mp4",
+    "scope": "仅本次demo单图≤2秒，静态硬切，无角标"
+  }
+}

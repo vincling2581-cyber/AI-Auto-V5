@@ -1,0 +1,29 @@
+{
+  "user_authorization": "把角色形象偏移和插画表达不足修好之后，没问题的话重新制作一版成片",
+  "scope": "修正全片插画角色和语义状态；保留信息卡真正关系/操作/结构化结果，原音及原字幕；另存新完整版",
+  "standard_version": "4.6",
+  "identity_reference": "00_brief/standard_snapshot/production_standard/assets/角色身份参考.png",
+  "eye_reference": "00_brief/standard_snapshot/production_standard/assets/补全眼部参考.png",
+  "protection": "不改旧成片、旧配置、旧源码、全局标准或其他项目，不做剪映导出",
+  "status": "rendered_checked_awaiting_user_viewing",
+  "next_action": "交付新版完整成片，等待用户正常速度观看反馈；不自动导出剪映或改全局规则。",
+  "sample_review": "此前conversation_semantic_20261018_v1角色一致性被用户否定，不继承原通过结论",
+  "updated_at": "2026-10-19T00:07:53.956127+08:00",
+  "output": {
+    "type": "identity_semantic_revised_full_video",
+    "path": "09_revisions/identity_semantic_full_20261018_v2/exports/full_01/HUMAN3_角色与语义插画修订完整版_1080p.mp4",
+    "sha256": "d559ca86a43e0cb5f175fd236e46f4649b0cb4fc5d54107872c1485ff94d338d",
+    "status": "rendered_checked_awaiting_user_viewing"
+  },
+  "duration_seconds": 55.93333333333333,
+  "machine_checks": "passed",
+  "sampled_visual_review": "passed_with_observations",
+  "full_speed_subjective_av": "not_performed",
+  "user_acceptance": "pending",
+  "review_evidence": [
+    "root_visual_review.json",
+    "qa/full_01/machine_checks.json",
+    "qa/full_01/visual_review.json"
+  ],
+  "protected_files_check": "protected_files_check.json"
+}

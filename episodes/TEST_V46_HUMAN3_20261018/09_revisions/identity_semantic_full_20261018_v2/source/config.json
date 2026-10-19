@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "total_frames": 1678,
+  "ffmpeg": "D:/ffmpeg/bin/ffmpeg.exe",
+  "original_video": "07_exports/HUMAN3_v46_新版开头完整版_1080p.mp4",
+  "original_srt": "00_brief/input/10月18日.srt",
+  "baseline_hashes": {
+    "06_project/cards.js": "97aa268dd99b9d21f08ba42143de11d892b3b591b10ff1cf0cefb534d493875f",
+    "00_brief/effective_defaults.json": "b0ba1f1960eaf8bb32994556f8dafd0b171dc4637e07021ca564df1432596893",
+    "02_timing/subtitles.json": "42d3b8f132fac7b865123bdb2ee88eb8d31224c7be0176712a879fb6cceb3e46",
+    "00_brief/input/10月18日.srt": "26561571776fbc22d14c7aaa4bdd4a0cd94e176dd6578ffd9c2bd2c6c8f22462",
+    "03_storyboard/scenes.json": "5be944ba51fa88391aa2e706d39d09c8f9bb407cf709da6c135fe4af5db8ce57",
+    "00_brief/standard_snapshot/production_standard/rules.json": "5bc8d0176c8b0c30636277749b548c3dfdd9c85848a3a525e9a12fb8fa239b98",
+    "07_exports/HUMAN3_v46_新版开头完整版_1080p.mp4": "fee75156d920b9c4d6b7919a3335b2fba70ba97ff5c671cd07c40b9c00eaf2fa"
+  },
+  "video": {
+    "codec": "libx264",
+    "crf": 17,
+    "preset": "fast",
+    "pixel_format": "yuv420p"
+  },
+  "audio": {
+    "mode": "stream_copy_entire_original_audio_track",
+    "speed": 1,
+    "gain_filter": null,
+    "mixing": false
+  },
+  "opening": {
+    "hook_text": "第一步，往哪走？",
+    "x": 110,
+    "anchor": "start",
+    "lines": [
+      {
+        "text": "第一步",
+        "size": 106,
+        "y": 230
+      },
+      {
+        "text": "往哪走？",
+        "size": 118,
+        "y": 370
+      }
+    ],
+    "study_x": 110,
+    "study_y": 210
+  },
+  "subtitle": {
+    "x": 960,
+    "plate_y": 947,
+    "plate_height": 83,
+    "baseline_y": 1004,
+    "font_size": 44,
+    "anchor": "middle"
+  },
+  "card_reuse": {
+    "mode": "exact_file_and_defaults_copy",
+    "original_scene_times": true,
+    "review_status": "not_inherited_without_output_evidence"
+  },
+  "acceptance": {
+    "full_speed_subjective_av": "not_performed",
+    "jianying_native_open_playback": "not_performed",
+    "jianying_native_export": "not_performed"
+  }
+}

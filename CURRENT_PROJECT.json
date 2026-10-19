@@ -1,46 +1,34 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-09",
+  "updated_at": "2026-10-20T01:08:55.071170+08:00",
   "purpose": "V5 当前制作入口；只维护有效路径、范围和最新交接状态。所有相对路径以 V5 根目录为基准。",
   "workflow": "docs/SINGLE_EPISODE_WORKFLOW.md",
   "new_episode_state_template": "templates/episode_state.json",
   "standard": {
-    "version": "4.5",
-    "snapshot_root": "episodes/ECHO_五款开源AI工具_20261008/00_brief/standard_snapshot",
-    "entry_point": "episodes/ECHO_五款开源AI工具_20261008/00_brief/standard_snapshot/production_standard.json",
-    "lock": "episodes/ECHO_五款开源AI工具_20261008/00_brief/standard_lock.json",
-    "entry_sha256": "104f87288d33df43b72bfc92ad76c9e6d36a908b73db6c9bfee1e91de53f10e8",
-    "lock_sha256": "104f87288d33df43b72bfc92ad76c9e6d36a908b73db6c9bfee1e91de53f10e8",
-    "policy": "这是当前明确采用的 V5 本地标准副本，不是按旧集日期推断的默认值；后续标准变更须显式更新此指针，新集锁定自己的副本。"
+    "version": "4.7",
+    "snapshot_root": "standards/v4.7",
+    "entry_point": "standards/v4.7/production_standard.json",
+    "lock": "standards/v4.7/standard_lock.json",
+    "entry_sha256": "94c3758a45f69b716f053a2b621df0ab600f3b2accf297ec8914303d01b6b41b",
+    "lock_sha256": "94c3758a45f69b716f053a2b621df0ab600f3b2accf297ec8914303d01b6b41b",
+    "policy": "V5 v4.7 场景组修订：静态连环画单张≤2秒，按单图/连续场景组/整段语义规划；同景推进、跨情境连贯；信息卡连续过程，两层无固定角标。用于新集，旧集按自己的锁和明确覆盖续做，不自动迁移。",
+    "revision": "2026-10-20-scene-continuity"
   },
   "adopted_method": {
-    "name": "增强信息卡：按内容组织对象传递、遮罩展开、层级变化、局部校正和结果保持",
+    "name": "静态连环画与语义信息卡：单图增量、同景推进、跨情境连贯",
     "renderer": "本地 HTML/SVG/JavaScript → Chrome → FFmpeg",
     "ae_required": false,
-    "scene_reference": "episodes/ECHO_五款开源AI工具_20261008/06_project/cards",
-    "semantic_reference": "episodes/ECHO_五款开源AI工具_20261008/03_storyboard/semantic_design.json",
-    "reuse_scope": "复用视觉和实现方法；场景脚本仍含旧集文案、镜号、时点，必须为新集适配，不能作为一键通用模板。"
+    "scene_reference": "standards/v4.7/production_standard/method_assets/reference_cards_v1",
+    "semantic_reference": "standards/v4.7/production_standard/visual_references.json",
+    "reuse_scope": "复用角色/眼睛/画风与通用卡片原语；插画静态硬切≤2秒，按单图/场景组/整段语义设计，不设场景时长或图数配额。卡片过程不套2秒上限；参数须进入实际渲染并检查输出。工作树与主干通过明确的Git合并同步，不运行旧场景生成器，不改写旧集。",
+    "layer_contract": "standards/v4.7/production_standard/layer_contract.json",
+    "episode_validator": "standards/v4.7/production_standard/validate_episode.py"
   },
   "latest_episode": {
-    "id": "ECHO_五款开源AI工具_20261008",
-    "root": "episodes/ECHO_五款开源AI工具_20261008",
-    "status": "delivered_for_review",
-    "episode_config": "episodes/ECHO_五款开源AI工具_20261008/00_brief/episode.json",
-    "effective_defaults": "episodes/ECHO_五款开源AI工具_20261008/00_brief/effective_defaults.json",
-    "local_overrides": "episodes/ECHO_五款开源AI工具_20261008/00_brief/local_visual_overrides.json",
-    "master": "episodes/ECHO_五款开源AI工具_20261008/07_exports/ECHO_五款AI工具_增强信息卡_1080p.mp4",
-    "master_report": "episodes/ECHO_五款开源AI工具_20261008/08_qc/delivery_report.json",
-    "draft_package": "episodes/ECHO_五款开源AI工具_20261008/09_revisions/jianying_layered_20261009_v1/ECHO_五款AI工具_剪映分层草稿.zip",
-    "draft_install_receipt": "episodes/ECHO_五款开源AI工具_20261008/09_revisions/jianying_layered_20261009_v1/installation_audit/20261009_230544_36bc63f7/installed_draft.json",
-    "per_episode_decisions": [
-      "原配音保留；画面更正名称、注明使用条件，并附事实核查说明",
-      "本集不烧录旁白字幕，不添加 BGM 或音效",
-      "用户随后明确要求剪映分层草稿；已有安装和结构校验回执"
-    ],
-    "evidence_boundary": "上述状态来自所列交付报告与安装回执，本次未重新渲染、播放或打开编辑器；旧报告不能自动作为修改后的验证证据。",
-    "full_speed_subjective_av": "not_recorded_as_completed",
-    "jianying_native_open_and_export": "not_performed_in_receipt",
-    "next_action": "等用户新集输入或本集具体修改意见；不自动重建、重复审查或重复导入。"
+    "id": "TEST_V46_HUMAN3_20261018",
+    "root": "episodes/TEST_V46_HUMAN3_20261018",
+    "state_file": "episodes/TEST_V46_HUMAN3_20261018/00_brief/episode_state.json",
+    "status": "comic_2s_demo_ready_for_user_viewing"
   },
   "routine_search_exclusions": [
     "card_motion_trial_v1/**",

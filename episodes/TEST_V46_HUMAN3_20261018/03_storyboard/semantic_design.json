@@ -1,0 +1,933 @@
+{
+  "schema_version": 1,
+  "episode_id": "TEST_V46_HUMAN3_20261018",
+  "standard_version": "4.6",
+  "implementation": "06_project/cards.js",
+  "contract": "window.renderCard(assetName,t,absoluteT) returns 1920x1080 SVG inner markup; t is scene-local seconds",
+  "rules": [
+    "P04",
+    "P05",
+    "P09",
+    "SOP 4.5",
+    "SOP 6"
+  ],
+  "layout": {
+    "critical_y": [
+      180,
+      860
+    ],
+    "caption_y_owned_by_compositor": 965,
+    "header_owned_by_compositor": true,
+    "font_family": "Microsoft YaHei",
+    "type_defaults_px": [
+      72,
+      46,
+      34
+    ]
+  },
+  "sources": [
+    {
+      "url": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
+      "use": "HUMAN 3.0 attribution and four quadrants",
+      "status": "verified_by_parent_before_card_implementation"
+    },
+    {
+      "url": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and",
+      "use": "Structured prompt, interview and growth-planning context",
+      "status": "verified_by_parent_before_card_implementation"
+    }
+  ],
+  "shared_constraints": [
+    "不制造测评分数、收益、成功率或人的优劣总排名",
+    "提示词不是官方逐字引文，明确标摘要示意",
+    "示意输出不冒充真实个人测评",
+    "并列维度没有先后依赖",
+    "四个选择不会自动选中某项",
+    "所有路径传递按同一绘制折线路径弧长取点",
+    "目标内容在传递物抵达后写入",
+    "函数不使用随机数、网络或墙上时钟"
+  ],
+  "cards": [
+    {
+      "id": "C01",
+      "asset": "title_route",
+      "scene_seconds": [
+        3.9666666667,
+        10.4
+      ],
+      "frames": [
+        119,
+        312
+      ],
+      "theme": "paper",
+      "source_span": "Dan Koe提出HUMAN 3.0；把混乱的成长理成清晰路径",
+      "viewer_question": "这是谁提出的框架，它试图帮助我做什么？",
+      "core_claim": "以Dan Koe署名的大标题建立来源，将同一条混乱线整理成可追踪的方向；三点是编辑示意。",
+      "relation_type": "attribution_and_concept_transformation",
+      "nodes": [
+        {
+          "id": "framework",
+          "role": "concept",
+          "label": "HUMAN 3.0"
+        },
+        {
+          "id": "author",
+          "role": "attribution",
+          "label": "Dan Koe"
+        },
+        {
+          "id": "route",
+          "role": "persistent_object",
+          "label": "路径示意"
+        },
+        {
+          "id": "r1",
+          "role": "example_waypoint",
+          "label": "盘点"
+        },
+        {
+          "id": "r2",
+          "role": "example_waypoint",
+          "label": "定位"
+        },
+        {
+          "id": "r3",
+          "role": "example_waypoint",
+          "label": "行动"
+        }
+      ],
+      "edges": [
+        {
+          "from": "author",
+          "to": "framework",
+          "meaning": "attribution"
+        },
+        {
+          "from": "r1",
+          "to": "r2",
+          "meaning": "illustrated_route"
+        },
+        {
+          "from": "r2",
+          "to": "r3",
+          "meaning": "illustrated_route"
+        }
+      ],
+      "visual_encoding": "巨幅编辑标题位于左侧；右侧同一81点路径逐点形变。橙色追踪点沿当前形变路径弧长行进，终态留下绿线与三个示意路标。",
+      "screen_copy": [
+        "一个关于成长的框架",
+        "HUMAN",
+        "3.0",
+        "Dan Koe",
+        "人生进化框架",
+        "盘点",
+        "定位",
+        "行动",
+        "路径示意"
+      ],
+      "information_gain": "通过同一对象从缠绕变得连贯，显示整理前后结构变化；不是给口播添加三个独立方框。",
+      "claim_basis": {
+        "verified_fact": "Dan Koe与HUMAN 3.0归属",
+        "editorial_example": "盘点、定位、行动是路径视觉示意，不冒充官方固定三步法"
+      },
+      "form_choice": "editorial_title_with_morphing_route",
+      "states": [
+        "大标题署名与缠绕路径建立",
+        "7.833秒开始整理同一路径",
+        "9.166秒进入清晰路径区间",
+        "稳定保留三个路标供读"
+      ],
+      "reading_hold": {
+        "absolute_seconds": [
+          9.9467,
+          10.4
+        ],
+        "purpose": "短词路标与持续存在的大标题收束阅读"
+      },
+      "events": [
+        {
+          "id": "route_draw",
+          "target_ids": [
+            "route"
+          ],
+          "meaning": "展示最初复杂状态",
+          "local_seconds": [
+            0.25,
+            1.2
+          ],
+          "start_frame": 127,
+          "end_frame_exclusive": 155,
+          "from": "undrawn tangled polyline",
+          "to": "full tangled polyline",
+          "geometry": "81-point polyline, pathLength=1",
+          "easing": "cubic_out",
+          "voice_anchor": 3.966,
+          "preserve": [
+            "framework",
+            "author"
+          ],
+          "arrival_state": "full tangled line",
+          "occlusion": "none",
+          "check_absolute_seconds": [
+            4.4067,
+            4.6917,
+            4.9767
+          ]
+        },
+        {
+          "id": "route_organize",
+          "target_ids": [
+            "route",
+            "r1",
+            "r2",
+            "r3"
+          ],
+          "meaning": "同一条线从混乱整理成连贯路径",
+          "local_seconds": [
+            3.866,
+            5.62
+          ],
+          "start_frame": 235,
+          "end_frame_exclusive": 288,
+          "from": "tangled 81-point geometry",
+          "to": "arc-length resampled clean curve from (1050,690) to (1730,365)",
+          "geometry": "pointwise morph; tracking dot samples current morphed path by arc length",
+          "easing": "smoothstep morph / cubic_out point travel",
+          "voice_anchor": [
+            7.833,
+            9.166
+          ],
+          "preserve": [
+            "framework",
+            "author",
+            "route identity"
+          ],
+          "arrival_state": "three labeled example waypoints persist",
+          "occlusion": "none",
+          "check_absolute_seconds": [
+            8.1835,
+            8.7097,
+            9.2359
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "asset": "quadrants",
+      "scene_seconds": [
+        10.4,
+        17.5
+      ],
+      "frames": [
+        312,
+        525
+      ],
+      "theme": "paper",
+      "source_span": "把人生拆解成心智、身体、精神、事业四个核心象限，做一次全面盘点",
+      "viewer_question": "四个象限如何属于同一个人？",
+      "core_claim": "同一个人有四个平等观察方向，它们各自连接核心，不是先后步骤。",
+      "relation_type": "one_subject_four_parallel_dimensions",
+      "nodes": [
+        {
+          "id": "self",
+          "role": "shared_subject",
+          "label": "你"
+        },
+        {
+          "id": "mind",
+          "role": "dimension",
+          "label": "心智",
+          "support": "理解与思考"
+        },
+        {
+          "id": "body",
+          "role": "dimension",
+          "label": "身体",
+          "support": "健康与活力"
+        },
+        {
+          "id": "spirit",
+          "role": "dimension",
+          "label": "精神",
+          "support": "意义与连接"
+        },
+        {
+          "id": "career",
+          "role": "dimension",
+          "label": "事业",
+          "support": "价值与贡献"
+        }
+      ],
+      "edges": [
+        {
+          "from": "self",
+          "to": "mind",
+          "meaning": "dimension_of"
+        },
+        {
+          "from": "self",
+          "to": "body",
+          "meaning": "dimension_of"
+        },
+        {
+          "from": "self",
+          "to": "spirit",
+          "meaning": "dimension_of"
+        },
+        {
+          "from": "self",
+          "to": "career",
+          "meaning": "dimension_of"
+        }
+      ],
+      "visual_encoding": "同一中心圆被四个平等的彩色象限围绕。四条独立径向曲线依口播建立；象限面积相同，不含数值量表。",
+      "screen_copy": [
+        "从四个方向，看见自己",
+        "你",
+        "心智",
+        "理解与思考",
+        "身体",
+        "健康与活力",
+        "精神",
+        "意义与连接",
+        "事业",
+        "价值与贡献",
+        "四个维度 · 一次完整盘点"
+      ],
+      "information_gain": "空间中的四分关系明确显示四个方面属于同一主体，并通过同源径向连接避免误读成四步流程。",
+      "claim_basis": {
+        "verified_fact": "四象限分类",
+        "summary": "辅助词为语义归纳，不含测评分数"
+      },
+      "form_choice": "radial_four_quadrant_map",
+      "states": [
+        "中心与四等分领域存在",
+        "口播命名时逐条从中心建立对应关系",
+        "全部维度平等留下供完整盘点"
+      ],
+      "reading_hold": {
+        "absolute_seconds": [
+          16.05,
+          17.5
+        ],
+        "purpose": "整体读取同一人的四维结构"
+      },
+      "events": [
+        {
+          "id": "four_radial_connections",
+          "target_ids": [
+            "mind",
+            "body",
+            "spirit",
+            "career"
+          ],
+          "meaning": "四个独立维度各自关联同一中心",
+          "local_starts": [
+            2.166,
+            2.806,
+            3.446,
+            4.086
+          ],
+          "duration_seconds": 0.84,
+          "start_frame": 377,
+          "end_frame_exclusive": 460,
+          "from": "pale quadrant and absent relation",
+          "to": "connected labeled dimension",
+          "geometry": "same-source cubic curves, sampled as 81-point polylines; radial path arrives after 0.62s; labels appear only after arrival and settle after 0.84s",
+          "easing": "cubic_out",
+          "voice_anchor": [
+            12.566,
+            15.7
+          ],
+          "preserve": [
+            "self",
+            "previous dimensions"
+          ],
+          "arrival_state": "all four labels and auxiliary meanings remain",
+          "occlusion": "center circle covers the branch origin",
+          "check_absolute_seconds": [
+            12.71,
+            12.926,
+            13.142,
+            13.35,
+            13.566,
+            13.782,
+            13.99,
+            14.206,
+            14.422,
+            14.63,
+            14.846,
+            15.062
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "asset": "prompt",
+      "scene_seconds": [
+        24.8,
+        31.5666666667
+      ],
+      "frames": [
+        744,
+        947
+      ],
+      "theme": "dark",
+      "background": "#102D29",
+      "source_span": "把HUMAN 3.0结构化提示词发给大模型，AI根据四个象限分别做基础定级",
+      "viewer_question": "输入与四个维度的初步分析是什么关系？",
+      "core_claim": "一张结构化提示进入AI后保留为同一来源，再分别用于了解四个维度；画面仅呈现基础定位。",
+      "relation_type": "persistent_document_handoff_and_reuse_distribution",
+      "nodes": [
+        {
+          "id": "prompt_doc",
+          "role": "persistent_reusable_source",
+          "label": "结构化提示"
+        },
+        {
+          "id": "ai_input",
+          "role": "receiving_container",
+          "label": "AI 输入"
+        },
+        {
+          "id": "mind",
+          "role": "independent_receiver",
+          "label": "心智"
+        },
+        {
+          "id": "body",
+          "role": "independent_receiver",
+          "label": "身体"
+        },
+        {
+          "id": "spirit",
+          "role": "independent_receiver",
+          "label": "精神"
+        },
+        {
+          "id": "career",
+          "role": "independent_receiver",
+          "label": "事业"
+        }
+      ],
+      "edges": [
+        {
+          "from": "prompt_doc",
+          "to": "ai_input",
+          "meaning": "send_and_store"
+        },
+        {
+          "from": "ai_input",
+          "to": "mind",
+          "meaning": "reuse_for_initial_positioning"
+        },
+        {
+          "from": "ai_input",
+          "to": "body",
+          "meaning": "reuse_for_initial_positioning"
+        },
+        {
+          "from": "ai_input",
+          "to": "spirit",
+          "meaning": "reuse_for_initial_positioning"
+        },
+        {
+          "from": "ai_input",
+          "to": "career",
+          "meaning": "reuse_for_initial_positioning"
+        }
+      ],
+      "visual_encoding": "白色折角提示文档沿曲线连续缩放迁移到深绿输入槽；槽口前片遮住页底，文档留下。四份小调用标识从同一输入源分别沿独立路径抵达对应维度，抵达后才出现基础定位状态。",
+      "screen_copy": [
+        "把结构化提示交给 AI",
+        "HUMAN 3.0",
+        "结构化提示",
+        "围绕四个象限",
+        "逐项了解当前状态",
+        "结合回答继续追问",
+        "摘要示意",
+        "AI 输入",
+        "提示已接收",
+        "心智",
+        "身体",
+        "精神",
+        "事业",
+        "基础定位",
+        "同一份提示，分别了解四个维度",
+        "画面示意 · 提示词为摘要"
+      ],
+      "information_gain": "可见地将文档输入和四维独立接收连接起来；来源保留，四个输出不被画成先后等级或最终测评。",
+      "claim_basis": {
+        "verified_context": "官方结构化提示与采访方法",
+        "editorial_example": "显示文字是摘要示意，无官方原文引号，无真实个人结论"
+      },
+      "form_choice": "document_to_input_then_radial_fanout",
+      "states": [
+        "可读的单张提示文档",
+        "同一文档移动并缩入接收槽",
+        "同一源保留并独立分发四次",
+        "四维基础定位状态保留"
+      ],
+      "reading_hold": {
+        "absolute_seconds": [
+          30.8,
+          31.5666666667
+        ],
+        "purpose": "四个基础定位状态与保留的同一份提示"
+      },
+      "events": [
+        {
+          "id": "prompt_transfer",
+          "target_ids": [
+            "prompt_doc",
+            "ai_input"
+          ],
+          "meaning": "同一文档被发送并接收",
+          "local_seconds": [
+            2.566,
+            3.94
+          ],
+          "start_frame": 821,
+          "end_frame_exclusive": 862,
+          "from": {
+            "center": [
+              405,
+              568
+            ],
+            "scale": 1
+          },
+          "to": {
+            "center": [
+              890,
+              600
+            ],
+            "scale": 0.37
+          },
+          "geometry": "sampled cubic [(405,568),(590,660),(720,650),(890,600)], position by arc length; continuous scale 1 to .37",
+          "easing": "cubic_out",
+          "voice_anchor": 27.366,
+          "preserve": [
+            "document identity and folded corner"
+          ],
+          "arrival_state": "document visibly stored; tray status becomes 提示已接收",
+          "occlusion": "AI back wall behind document; foreground lip y660..713 covers arriving page bottom",
+          "check_absolute_seconds": [
+            27.6408,
+            28.053,
+            28.4652
+          ]
+        },
+        {
+          "id": "prompt_fanout",
+          "target_ids": [
+            "mind",
+            "body",
+            "spirit",
+            "career"
+          ],
+          "meaning": "同一保留来源分别接入四个维度",
+          "local_starts": [
+            4.4,
+            4.52,
+            4.64,
+            4.76
+          ],
+          "travel_seconds": 0.72,
+          "label_settle_seconds": 0.95,
+          "start_frame": 876,
+          "end_frame_exclusive": 916,
+          "from": "same AI input origin (1048,565)",
+          "to": "four separate dimension receivers",
+          "geometry": "four sampled cubic paths; small document-call tokens travel on their respective path by arc length",
+          "easing": "cubic_out",
+          "voice_anchor": 29.2,
+          "preserve": [
+            "stored prompt_doc",
+            "previous received states"
+          ],
+          "arrival_state": "each recipient adds 基础定位 only after its token arrives",
+          "occlusion": "tokens terminate at receiver edge; no connector between peer dimensions",
+          "check_absolute_seconds": [
+            29.344,
+            29.56,
+            29.776,
+            29.464,
+            29.68,
+            29.896,
+            29.584,
+            29.8,
+            30.016,
+            29.704,
+            29.92,
+            30.136
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "asset": "plan",
+      "scene_seconds": [
+        39.9333333333,
+        43.9666666667
+      ],
+      "frames": [
+        1198,
+        1319
+      ],
+      "theme": "paper",
+      "source_span": "得到专属成长模型与进化指南",
+      "viewer_question": "一份可以使用的成长指南应把什么串起来？",
+      "core_claim": "同一份指南连续展开当前位置、关键问题、下一步行动的输出结构；不伪造真实个人结论。",
+      "relation_type": "single_artifact_expansion",
+      "nodes": [
+        {
+          "id": "guide",
+          "role": "persistent_output_artifact",
+          "label": "成长指南"
+        },
+        {
+          "id": "current",
+          "role": "artifact_section",
+          "label": "当前位置"
+        },
+        {
+          "id": "problem",
+          "role": "artifact_section",
+          "label": "关键问题"
+        },
+        {
+          "id": "next",
+          "role": "artifact_section",
+          "label": "下一步行动"
+        }
+      ],
+      "edges": [
+        {
+          "from": "guide",
+          "to": "current",
+          "meaning": "contains"
+        },
+        {
+          "from": "guide",
+          "to": "problem",
+          "meaning": "contains"
+        },
+        {
+          "from": "guide",
+          "to": "next",
+          "meaning": "contains"
+        }
+      ],
+      "visual_encoding": "一张折页以两个共享铰链连续打开，页内容受同一纸面的投影与遮罩约束。折页从中央向左平移以给后续页面让位，最终三部分仍属于同一份纸。",
+      "screen_copy": [
+        "一份可以继续行动的指南",
+        "当前位置",
+        "四维状态",
+        "与现有习惯",
+        "关键问题",
+        "值得继续追问",
+        "的成长卡点",
+        "下一步行动",
+        "可以尝试的",
+        "具体小步骤",
+        "输出结构示意 · 根据真实回答继续完善"
+      ],
+      "information_gain": "把当前位置、追问和行动收在一个持续扩展的输出对象内，显示指南的内部联系。",
+      "claim_basis": {
+        "summary": "输出结构概括",
+        "editorial_example": "所有页面内容是结构示意，不代表任何人已完成测评"
+      },
+      "form_choice": "one_accordion_foldout",
+      "states": [
+        "折起的一份指南",
+        "第一铰链展开关键问题",
+        "第二铰链展开下一步行动",
+        "完整纸面保持供读"
+      ],
+      "reading_hold": {
+        "absolute_seconds": [
+          42.6333333333,
+          43.9666666667
+        ],
+        "purpose": "三项短标题和说明完整读取"
+      },
+      "events": [
+        {
+          "id": "guide_fold_1",
+          "target_ids": [
+            "guide",
+            "problem"
+          ],
+          "meaning": "同一份纸在铰链处展开第二部分",
+          "local_seconds": [
+            0.36,
+            1.5
+          ],
+          "start_frame": 1209,
+          "end_frame_exclusive": 1243,
+          "from": "projected second leaf width 16.8px",
+          "to": "second leaf width 480px",
+          "geometry": "shared hinge; projected width .035→1; 45*sin(pi*p) vertical fold offset; text clipped to projected page",
+          "easing": "cubic_out",
+          "voice_anchor": 39.933,
+          "preserve": [
+            "current",
+            "single paper identity"
+          ],
+          "arrival_state": "关键问题完整可读",
+          "occlusion": "each page text clipped to same polygon as its visible paper surface",
+          "check_absolute_seconds": [
+            40.5213,
+            40.8633,
+            41.2053
+          ]
+        },
+        {
+          "id": "guide_fold_2",
+          "target_ids": [
+            "guide",
+            "next"
+          ],
+          "meaning": "沿第二铰链展开行动部分",
+          "local_seconds": [
+            1.16,
+            2.55
+          ],
+          "start_frame": 1233,
+          "end_frame_exclusive": 1275,
+          "from": "projected third leaf width 12px",
+          "to": "third leaf width 480px",
+          "geometry": "third leaf inherits second leaf hinge displacement; .025 to 1 projected width and -45*sin(pi*p) vertical fold; final single sheet x240..1680",
+          "easing": "cubic_out",
+          "voice_anchor": 42.366,
+          "preserve": [
+            "current",
+            "problem",
+            "guide"
+          ],
+          "arrival_state": "complete three-section foldout",
+          "occlusion": "shared boundaries stay joined; text remains clipped until surface opens",
+          "check_absolute_seconds": [
+            41.3713,
+            41.7883,
+            42.2053
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "asset": "choice",
+      "scene_seconds": [
+        48.2,
+        55.9333333333
+      ],
+      "frames": [
+        1446,
+        1678
+      ],
+      "theme": "paper",
+      "source_span": "最想先升级心智、身体、精神还是事业；评论区选择；关注AI新玩法",
+      "viewer_question": "我想把注意力先放在哪个维度？",
+      "core_claim": "观众拥有四个平等选项，画面不代替观众选择。四项共同引向评论邀请，再转为关注收尾。",
+      "relation_type": "open_choice_and_shared_response_invitation",
+      "nodes": [
+        {
+          "id": "mind",
+          "role": "unselected_candidate",
+          "label": "心智"
+        },
+        {
+          "id": "body",
+          "role": "unselected_candidate",
+          "label": "身体"
+        },
+        {
+          "id": "spirit",
+          "role": "unselected_candidate",
+          "label": "精神"
+        },
+        {
+          "id": "career",
+          "role": "unselected_candidate",
+          "label": "事业"
+        },
+        {
+          "id": "comment",
+          "role": "response_invitation",
+          "label": "评论区 · 留下你的选择"
+        },
+        {
+          "id": "follow",
+          "role": "follow_invitation",
+          "label": "继续探索 AI 新玩法"
+        }
+      ],
+      "edges": [
+        {
+          "from": "all_four_candidates",
+          "to": "comment",
+          "meaning": "any_choice_may_be_answered",
+          "no_auto_selection": true
+        }
+      ],
+      "visual_encoding": "四个无框语义图标等大平排；口播点名时只做短暂描边提示，之后恢复同等权重。四项下方形成共享收束线到评论邀请，不接通某个单独选项。末段标题变为AI关注邀请。",
+      "screen_copy": [
+        "你最想先升级哪一项？",
+        "心智",
+        "理解与思考",
+        "身体",
+        "健康与活力",
+        "精神",
+        "意义与连接",
+        "事业",
+        "价值与贡献",
+        "评论区 · 留下你的选择",
+        "继续探索 AI 新玩法",
+        "关注，一起看看更多可能"
+      ],
+      "information_gain": "把提问变成明确且平等的可选空间，并用公共收束线说明任意一项都可以作为评论回答。",
+      "claim_basis": {
+        "source_fact": "口播给出的四个选择与关注邀请",
+        "unknown": "观众的实际选择保持未知"
+      },
+      "form_choice": "open_symbol_choice_and_public_comment_bracket",
+      "states": [
+        "四个等大选项等待观众选择",
+        "跟随口播点名后恢复平等",
+        "四个选项共同引向评论邀请",
+        "关注标题出现，四项和评论邀请继续保留"
+      ],
+      "reading_hold": {
+        "absolute_seconds": [
+          54.05,
+          55.9333333333
+        ],
+        "purpose": "完整选择语境与关注收尾"
+      },
+      "events": [
+        {
+          "id": "spoken_options",
+          "target_ids": [
+            "mind",
+            "body",
+            "spirit",
+            "career"
+          ],
+          "meaning": "逐项点名，不产生选中状态",
+          "local_starts": [
+            1.666,
+            2.216,
+            2.766,
+            3.316
+          ],
+          "start_frame": 1496,
+          "end_frame_exclusive": 1567,
+          "from": "equal open candidate symbols",
+          "to": "same equal open candidate symbols",
+          "geometry": "temporary equal-radius outline cues; no selected badge, score or rank",
+          "easing": "cubic_out",
+          "voice_anchor": 49.866,
+          "preserve": [
+            "all four candidates"
+          ],
+          "arrival_state": "equal final color strength and size",
+          "occlusion": "none",
+          "check_absolute_seconds": [
+            49.96,
+            50.1,
+            50.24,
+            50.51,
+            50.65,
+            50.79,
+            51.06,
+            51.2,
+            51.34,
+            51.61,
+            51.75,
+            51.89
+          ]
+        },
+        {
+          "id": "shared_comment_invitation",
+          "target_ids": [
+            "comment",
+            "mind",
+            "body",
+            "spirit",
+            "career"
+          ],
+          "meaning": "四个平等选项共同指向评论邀请",
+          "local_seconds": [
+            4.466,
+            5.12
+          ],
+          "start_frame": 1580,
+          "end_frame_exclusive": 1600,
+          "from": "four open candidates without response connection",
+          "to": "shared bracket and comment invitation",
+          "geometry": "continuous line below all four candidates, common center drop to response capsule",
+          "easing": "cubic_out",
+          "voice_anchor": 52.666,
+          "preserve": [
+            "all four candidates"
+          ],
+          "arrival_state": "comment invitation readable, no automatic choice",
+          "occlusion": "none",
+          "check_absolute_seconds": [
+            52.7968,
+            52.993,
+            53.1892
+          ]
+        },
+        {
+          "id": "follow_close",
+          "target_ids": [
+            "follow"
+          ],
+          "meaning": "末段转入AI内容关注邀请",
+          "local_seconds": [
+            5.466,
+            5.85
+          ],
+          "start_frame": 1610,
+          "end_frame_exclusive": 1622,
+          "from": "question headline",
+          "to": "AI follow headline",
+          "geometry": "short headline crossfade; unchanged four-choice map",
+          "easing": "cubic_out",
+          "voice_anchor": 53.666,
+          "preserve": [
+            "all four candidates",
+            "comment"
+          ],
+          "arrival_state": "readable final follow invitation",
+          "occlusion": "none",
+          "check_absolute_seconds": [
+            53.7428,
+            53.858,
+            53.9732
+          ]
+        }
+      ]
+    }
+  ],
+  "validation_scope": {
+    "source_static_and_sample_render": "passed",
+    "source_sha256": "aa7a76f525fd6fe8f2369c182c73d81361da3830aec1262ab8c204050e2393d8",
+    "runtime": "Windows Chrome headless via Playwright",
+    "sample_count": 77,
+    "xml_parse_errors": 0,
+    "visible_text_bounds_errors": 0,
+    "text_bounds_contract": "x60..1860 and y180..860 at reviewed scene/event samples",
+    "arbitrary_order_determinism": "passed identical markup after reverse-order replay",
+    "sample_still_visual_review": "performed for five final cards, route morph, document handoff and foldout midpoint; corrected out-of-bounds footer baselines and document/header overlap",
+    "evidence_storage": "in-memory browser screenshots inspected during implementation; no files outside the two assigned source files were written",
+    "encoded_midpoint_neighbors": "owned_by_parent_after_composition",
+    "normal_speed_review": "not_performed_by_card_agent",
+    "full_film_render": "not_performed_by_card_agent"
+  }
+}

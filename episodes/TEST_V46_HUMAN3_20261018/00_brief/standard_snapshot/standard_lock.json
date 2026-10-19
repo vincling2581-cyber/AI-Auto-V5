@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "version": "4.6",
+  "status": "active",
+  "date": "2026-10-18",
+  "scope": "V5 new episodes; existing episode locks and outputs are unchanged",
+  "sop": "Xilo风格视频生产线SOP_v4.6.md",
+  "prompts": "production_standard/提示词_v4.6.md",
+  "prompts_data": "production_standard/prompts.json",
+  "defaults": "production_standard/defaults.json",
+  "rules": "production_standard/rules.json",
+  "rules_readable": "production_standard/全部制作规则_v4.6.md",
+  "changes": "production_standard/变更说明_v4.6.md",
+  "visual_references": "production_standard/visual_references.json",
+  "brand_assets": "production_standard/brand_assets.json",
+  "verifier": "production_standard/verify_standard.py",
+  "selection": "Select from project CURRENT_PROJECT.json for new episodes; continue existing episodes from their own lock. Paths in this manifest are relative to its directory.",
+  "origin": {
+    "version": "4.5",
+    "project_relative_manifest": "episodes/ECHO_五款开源AI工具_20261008/00_brief/standard_snapshot/production_standard.json",
+    "sha256": "104f87288d33df43b72bfc92ad76c9e6d36a908b73db6c9bfee1e91de53f10e8",
+    "policy": "read_only_provenance_not_active_dependency"
+  },
+  "user_approved": true,
+  "approval": {
+    "mode": "explicit_user_confirmation",
+    "date": "2026-10-18",
+    "authorized_quote": "可以，按这版方案更新 V5 的 SOP、规则、提示词和默认参数，取消固定时长硬限制，按语义安排节奏。不要动其他版本和已有成片，修改后把变更点告诉我。",
+    "scope": "用户确认的规则调整方案及其同步配置；不声称用户逐项重审继承条文或验收新成片"
+  },
+  "history_policy": "existing_episode_snapshots_and_outputs_remain_unchanged",
+  "initialization": "Follow project docs/SINGLE_EPISODE_WORKFLOW.md; copy this standard and lock to a new episode, derive effective_defaults, adapt new scene code. No historical generator is an active entry point.",
+  "media_distribution": "Two local brand-reference images remain excluded from Git; restore using brand_assets.json and verify hashes before production. External reference films are not bundled or required by integrity checks.",
+  "files": [
+    {
+      "path": "production_standard/assets/补全眼部参考.png",
+      "sha256": "b6c9b7acaadb640676227e69c839739597f15d37a65debbd8f00d69b0c26d49d"
+    },
+    {
+      "path": "production_standard/assets/角色身份参考.png",
+      "sha256": "03b39446edbd89af83f235a40660a55d3bb07f8ceb74b59d5dfa58bf67a509fd"
+    },
+    {
+      "path": "production_standard/brand_assets.json",
+      "sha256": "574af837c5a7c826b20577f2c50b3fe038c5939befd95a82a9a02ce3eef4ba05"
+    },
+    {
+      "path": "production_standard/defaults.json",
+      "sha256": "28d89670f06d21ee6ac43cd2c1c3ac95b4c38b67b76afba1b4aabf0da93cbb07"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
+      "sha256": "18c9846748a11334fd94423fb2f96a765777c279b9d570effc89e46334bb227a"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/README.md",
+      "sha256": "7124fca0a219966c49d1637ec0916d02bc87df66fcffbba09eac1fe960e03ebf"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
+      "sha256": "3eb888ef31044c40757fe52030e381d2b7ec6ef5e90379920ea18b98ac32d187"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber.min.js",
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/THIRD_PARTY.md",
+      "sha256": "4a150d9ca340ab483e0dbe2675d3140828b2e94c8561fa5791b7755c99896eff"
+    },
+    {
+      "path": "production_standard/prompts.json",
+      "sha256": "bb8985d4b2b64305b4d13e32c76df9d7c0306b2a95fcfcd3791b94621cae4637"
+    },
+    {
+      "path": "production_standard/rules.json",
+      "sha256": "5bc8d0176c8b0c30636277749b548c3dfdd9c85848a3a525e9a12fb8fa239b98"
+    },
+    {
+      "path": "production_standard/verify_standard.py",
+      "sha256": "a309e6b2e07a823eb1d5c76eca8c3c332600bc6b6c37661ea7557628fe6bf6ee"
+    },
+    {
+      "path": "production_standard/visual_references.json",
+      "sha256": "10e1f8f0d54016769553ae52a0e3ea3a37543ee1d1298a2400bef644c961f0f0"
+    },
+    {
+      "path": "production_standard/全部制作规则_v4.6.md",
+      "sha256": "26a4f34c1f2bf2404e5fc06921266d14e8a0ba5b40c02047f3d15128bcacc6b3"
+    },
+    {
+      "path": "production_standard/变更说明_v4.6.md",
+      "sha256": "44adad9a45fe60a6ff926c5ea27916f6d5353499d7d6d53a0936ce1f934bc935"
+    },
+    {
+      "path": "production_standard/提示词_v4.6.md",
+      "sha256": "350e8a89b7d85add794b190a8c56407edde8e69a4ed3cf4a716b93adc76c0fa2"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.6.md",
+      "sha256": "453aa1b5c93930008ad0b99a9b7d01c3aaf23531d33f3227c5258b115c048d25"
+    }
+  ]
+}

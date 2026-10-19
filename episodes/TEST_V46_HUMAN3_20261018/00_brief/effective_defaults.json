@@ -1,0 +1,353 @@
+{
+  "version": "4.6",
+  "review_status": "active_after_explicit_user_confirmation_2026_10_18",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_codec": "libx264",
+    "crf": 17,
+    "preset": "fast",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_bitrate": "256k",
+    "duration_basis": "final_voice"
+  },
+  "brand": {
+    "series_label_template": "ECHO / HUMAN 3.0",
+    "episode_title": "HUMAN 3.0",
+    "cream": "#F5F2E9",
+    "dark": "#07110C",
+    "card": "#14271B",
+    "accent": "#78EFA2",
+    "text_on_dark": "#F0F3EC",
+    "text_on_light": "#24362B",
+    "robot_enabled": false
+  },
+  "type": {
+    "family": "Microsoft YaHei",
+    "regular_font": "C:\\Windows\\Fonts\\msyh.ttc",
+    "bold_font": "C:\\Windows\\Fonts\\msyhbd.ttc",
+    "title_px": 64,
+    "title_range_px": [
+      52,
+      64
+    ],
+    "node_px": 40,
+    "node_range_px": [
+      34,
+      44
+    ],
+    "support_px": 30,
+    "support_range_px": [
+      28,
+      32
+    ],
+    "caption_px": 44,
+    "caption_range_px": [
+      40,
+      44
+    ],
+    "caption_bold": true
+  },
+  "layout": {
+    "content_safe": [
+      64,
+      110,
+      1856,
+      880
+    ],
+    "content_safe_scope": "critical_details_only_not_illustration_bounds",
+    "caption_safe": [
+      160,
+      920,
+      1760,
+      1040
+    ],
+    "illustration_extent": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "reserved_bottom_band_px": 0,
+    "illustration_lower_edge": "natural_scene_continuation",
+    "subtitle_placement": "overlay_on_complete_scene",
+    "source_aspect_mismatch": "safe_reframe_else_extend_or_regenerate",
+    "border_px": 2,
+    "radius_px": 24,
+    "badge_optional": true,
+    "episode_label_px": 34,
+    "episode_label_right_px": 42,
+    "episode_label_top_px": 36
+  },
+  "animation": {
+    "max_static_seconds": null,
+    "target_static_seconds": null,
+    "scope": "animation_layer_content_states",
+    "decorative_changes_count": false,
+    "same_scene_state_switching_allowed": true,
+    "cross_segment_image_reuse": false,
+    "visual_priority": "semantic_task_then_action_or_graphic_expression",
+    "preserve_graphic_text_scenes": true,
+    "text_required_every_shot": false,
+    "pose_change": "distinct_body_hand_prop_contact_changes",
+    "fixed_action_shot_ratio": null,
+    "frame_count_quota": null,
+    "qc_exclusion": "actual_text_overlay_mask_not_fixed_bottom_strip",
+    "anatomy_check": true,
+    "anatomy_check_scope": "visible_character_limb_connections_left_right_and_prop_contact",
+    "preserve_natural_limb_occlusion": true,
+    "timing_policy": "semantic_beats_and_narration",
+    "fixed_cut_interval_seconds": null,
+    "minimum_state_seconds": null,
+    "hold_basis": [
+      "semantic_completion",
+      "narration_anchor",
+      "reading",
+      "reaction_or_emotion"
+    ],
+    "long_hold_policy": "review_semantic_purpose_and_comprehension_not_elapsed_seconds",
+    "continuous_hold_across_srt_allowed": true,
+    "split_complete_meaning_to_meet_timer": false,
+    "semantic_check": "画面与原文的主体、行动及关系对应；遮去标签仍可辨关键含义，准确术语和证据文字按需保留；不随意加手势或用数量道具代替实际步骤。",
+    "source_adapter_policy": "复用旧脚本前删除固定秒数/帧数的切图、补状态和静态时长失败断言；不得把null回退成3、2.8、2或0秒。帧率、音频对齐和总片长检查保留。"
+  },
+  "cards": {
+    "semantic_process_required": true,
+    "render_continuous_intermediate_frames": true,
+    "pure_title_exemption_requires_reason": true,
+    "reading_hold_allowed": true,
+    "entry_seconds": [
+      0.25,
+      0.4
+    ],
+    "entry_translation_px": [
+      16,
+      32
+    ],
+    "highlight_seconds": [
+      0.15,
+      0.3
+    ],
+    "zoom_seconds": [
+      0.3,
+      0.6
+    ],
+    "process_initial_seconds": 0.55,
+    "flubber_version": "0.4.2",
+    "method_profile": "semantic_forms_with_reference_cards_v1_primitives",
+    "implementation": "deterministic_svg_frame_time",
+    "method_assets": "production_standard/method_assets/reference_cards_v1",
+    "palette": {
+      "background": "#F5F2E9",
+      "dark": "#14271B",
+      "soft": "#E8EEDC",
+      "paper": "#F0F3EC",
+      "accent": "#78EFA2",
+      "text": "#24362B",
+      "ink": "#12251A",
+      "muted": "#526454",
+      "line": "#54775E",
+      "edge": "#B1C1AE",
+      "paperLine": "#C4CCC2"
+    },
+    "palette_roles": {
+      "background": "当前场景底色；paper/dark为起点，也可按题材登记自定义色板，不固定全片深绿黑底",
+      "dark": "可选深绿表面和对象；不要求每卡出现大框",
+      "soft": "当前主题的次级表面，字色按实际底色选择",
+      "paper": "对照方、文档或重要结果的纸白表面",
+      "accent": "当前焦点、传递对象、完成状态或三框以上时的浅绿表面",
+      "text": "当前画面背景上的主文字；局部容器中的字色按实际底色显式选择",
+      "ink": "纸白/浅绿底文字",
+      "muted": "当前底色上可读的辅助说明；局部深浅底变化需适配",
+      "line": "普通关系线",
+      "edge": "当前主题中的边缘；根据表面调整对比",
+      "paperLine": "浅色表面内部细线"
+    },
+    "large_panel_policy": {
+      "two": [
+        "dark",
+        "paper"
+      ],
+      "three_or_more": "可按对象职责增加浅绿或其他已登记颜色，不强制每框不同色",
+      "single_large_with_small": "保留大框与小框的深绿层级；不机械套两大框规则",
+      "palette_change_scope": "局部调色遵守本集修订范围；选浅/深主题时同步检查文字、关系线与表面对比，不能沿用导致不可读的字色。",
+      "applies_when": "已按内容选择两个或更多大面板；不据此决定卡片必须有框"
+    },
+    "typography": {
+      "title_px": 72,
+      "node_px": 46,
+      "support_px": 34,
+      "status": "active_starting_point_inherited_from_accepted_latest_video",
+      "scope": "information_cards_only",
+      "intermediate_sizes": "按字段/文件名/局部标题的阅读层级选择；不固定为本集具体字号列表",
+      "override_policy": "按本集effective defaults执行；可按内容和可读性调整并记录依据；用户本集明确要求优先，不影响字幕和动画文字。"
+    },
+    "geometry": {
+      "panel_border_px": 2,
+      "panel_radius_px": 28,
+      "connection_stroke_px": 3,
+      "icon_stroke_local_px": 3.5,
+      "icon_viewbox_units": 100,
+      "status": "active_starting_points_inherited_from_accepted_latest_video",
+      "icon_viewbox_policy": "fixed_100_unit_shape_coordinates_validated_not_arbitrary_override"
+    },
+    "frame_time_easing": {
+      "object_default": "cubic_out",
+      "morph_default": "quadratic_out",
+      "path_progress": "path_arc_length_with_explicit_progress_curve"
+    },
+    "object_handoff": {
+      "continuous_identity_required": true,
+      "target_state_after_arrival": true,
+      "preserve_reusable_source": true,
+      "occlusion_matches_container_depth": true
+    },
+    "process_sampling": {
+      "interior_fractions": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "encoded_midpoint_neighbors": true,
+      "normal_speed_review_required": true,
+      "pixel_change_is_not_semantic_pass": true
+    },
+    "dependencies": {
+      "flubber": {
+        "version": "0.4.2",
+        "local_only": true
+      },
+      "tween_js": {
+        "required": false,
+        "reason": "已认可成片由明确帧时间的纯函数插值驱动；无 Tween.js 运行时加载"
+      }
+    },
+    "effective_defaults_required": true,
+    "episode_scene_generation_required": true,
+    "jianying_layer_extraction_default": false,
+    "layout_policy": "semantic_relation_before_container",
+    "default_layout": null,
+    "allowed_forms": [
+      "evidence_with_annotation",
+      "mapping",
+      "causal_process",
+      "condition_branch",
+      "gather_and_archive",
+      "comparison",
+      "quote_and_network",
+      "cycle",
+      "minimal_conclusion",
+      "freeform_semantic_diagram"
+    ],
+    "container_required": false,
+    "theme_selection": "per_scene_semantics_and_contrast",
+    "default_theme": "paper",
+    "palette_presets": {
+      "paper": {
+        "background": "#F5F2E9",
+        "dark": "#14271B",
+        "soft": "#E8EEDC",
+        "paper": "#F0F3EC",
+        "accent": "#78EFA2",
+        "text": "#24362B",
+        "ink": "#12251A",
+        "muted": "#526454",
+        "line": "#54775E",
+        "edge": "#B1C1AE",
+        "paperLine": "#C4CCC2"
+      },
+      "dark": {
+        "background": "#07110C",
+        "dark": "#14271B",
+        "soft": "#101F16",
+        "paper": "#F0F3EC",
+        "accent": "#78EFA2",
+        "text": "#F0F3EC",
+        "ink": "#12251A",
+        "muted": "#A9B9AC",
+        "line": "#54775E",
+        "edge": "#33533B",
+        "paperLine": "#C4CCC2"
+      }
+    },
+    "fixed_card_share": null,
+    "fixed_layout_count": null,
+    "timing_policy": "narration_and_semantic_process_with_reading_hold",
+    "timing_parameters_status": "entry/highlight/zoom/process_initial_seconds仅为可调的局部插值起点，不是镜头、状态或阅读时长限制；逐事件按语义与配音设置。",
+    "layout_diversity_review": "比较相邻及跨段的整体构图、关系结构和表现方式；避免只换字换色的双栏/三栏，内容自然需要重复结构时允许保留。"
+  },
+  "audio": {
+    "preserve_provided_voice": true,
+    "bgm_default": "none_for_this_test",
+    "sfx_default": "none_for_this_test",
+    "fixed_bgm_gain_db": null,
+    "cue_required_if_enabled": true,
+    "sfx_gain_applied_once": true,
+    "fixed_voice_gain_db": null,
+    "fixed_sfx_gain_db": null,
+    "fixed_sfx_count": null,
+    "fixed_sfx_ducking_db": null,
+    "auto_authorize_paid_sfx": false
+  },
+  "delivery": {
+    "scope_default": [
+      "master",
+      "review_per_episode",
+      "rerenderable_source_project",
+      "srt",
+      "assets",
+      "qc_and_handoff"
+    ],
+    "caption_mode": "burn_in_for_visual_test",
+    "project_format": "source_project",
+    "cover_default": "echo",
+    "jianying_import_default": false,
+    "jianying_import_requires": "explicit_user_request"
+  },
+  "brand_assets": {
+    "identity": "production_standard/assets/角色身份参考.png",
+    "eye_reference": "production_standard/assets/补全眼部参考.png",
+    "action_and_lower_edge_references": "production_standard/visual_references.json"
+  },
+  "tools_local": {
+    "ffmpeg": "D:\\ffmpeg\\bin\\ffmpeg.exe",
+    "browser_channel": "chrome",
+    "python_packages": [
+      "playwright",
+      "Pillow",
+      "numpy",
+      "opencv-python"
+    ],
+    "optional_overlay_library": "D:\\AI\\overlay-studio"
+  },
+  "notes": [
+    "2026-10-18用户明确批准本版方案；取消动画状态的固定秒数硬线，按语义、配音和阅读安排节奏。",
+    "本集明确要求覆盖适用默认项并记录；画面数量、场景数、室外比例、图卡占比和卡片结构均无固定配额。",
+    "旧集和旧快照不改写。新集复制当前标准及锁；续做旧集沿用已锁版本，除非用户明确要求迁移。",
+    "旧集脚本不自动消费这些默认值；适配复用时检查实际字段消费，不运行旧标准构建器覆盖本版。"
+  ],
+  "illustration": {
+    "reference": "xianyu_anhao",
+    "reference_manifest": "production_standard/visual_references.json",
+    "scene_selection": "meaning_first",
+    "default_setting": null,
+    "identity_style_lock_only": true,
+    "same_semantic_scene_continuity": true,
+    "composition_policy": "按语义选择地点、景别、机位、主体尺度和空间关系；连续动作保留必要环境连续性，不把全片固定为室内桌面。",
+    "color_policy": "保留奶油纸感、手绘线条和角色绿，环境/道具用符合内容的自然颜色与暖冷光；柔和不等于统一灰暗滤镜。",
+    "repeat_review_dimensions": [
+      "setting",
+      "composition",
+      "camera_angle",
+      "subject_scale",
+      "action",
+      "lighting",
+      "palette"
+    ],
+    "fixed_outdoor_ratio": null,
+    "fixed_scene_count": null,
+    "fixed_illustration_share": null
+  }
+}

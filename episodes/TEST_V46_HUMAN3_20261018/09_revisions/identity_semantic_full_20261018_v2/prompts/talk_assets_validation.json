@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-10-18",
+  "generator": "built-in image_gen",
+  "final_assets": [
+    {
+      "file": "assets/talk_followup.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "5CF3C10FC9A6074005E7C4AB5F2317CEFF8A5428C3F8C811A47427E631377E95",
+      "semantic_beat": "Interviewer leans forward and points yellow pencil at earlier green notebook notes; protagonist holds closed cream notebook with both hands and thinks.",
+      "manual_review": "Round face, eye components, simple main-character identity, clear hands, no core hand/notebook obstruction at subtitle zone."
+    },
+    {
+      "file": "assets/talk_blocker.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0C511118FA06FD5443D78CAF65F299ADF4F61DC1E13B1CA9D6C669A42F039D90",
+      "semantic_beat": "Over interviewer shoulder, protagonist points toward repeatedly crossed-out incomplete sketch; main page and two hands readable.",
+      "manual_review": "Shoulder does not obscure protagonist face or notebook. Notebook and main hands approximately within upper 75 percent."
+    },
+    {
+      "file": "assets/talk_answer.png",
+      "width": 1671,
+      "height": 941,
+      "sha256": "724D37CF596CA40DF75EE9CDF99C524D8F33CBA52CB7E591F334FCE06353E15D",
+      "semantic_beat": "Protagonist looks up and presents same unresolved scribbled page; interviewer pencil tip touches green notebook paper.",
+      "manual_review": "Removed newly added foreground table. Preserved unresolved sketch and two notebooks. Hands and faces do not intersect lower subtitle band."
+    }
+  ],
+  "reference_policy": "All final generations and correction explicitly use original identity, completed-eye reference, and approved open_ready_initial. Old conversation_listen was inspected only for scene/interviewer continuity and omitted from final generator inputs.",
+  "corrections": "One identity/style regeneration for followup; one continuity correction for answer. Initial variants retained as talk_followup_initial.png and talk_answer_initial.png.",
+  "limitations": "Static image review only. Built-in outputs are near 16:9 with slight pixel rounding; compositor should fit to 1920x1080. No normal-speed final-video subjective review performed in this task."
+}
