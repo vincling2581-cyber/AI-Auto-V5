@@ -2,7 +2,7 @@
   "schema_version": 1,
   "is_template": true,
   "path_base": "episode_root；project_entry 相对于 project_root",
-  "project_root": "D:\\AI-Auto-V5（Codex+AE）",
+  "project_root": null,
   "project_entry": "CURRENT_PROJECT.json",
   "episode_id": null,
   "episode_root": null,
@@ -10,8 +10,15 @@
   "stage": "intake",
   "status": "not_started",
   "inputs": {
-    "voice": {"path": null, "sha256": null, "duration_seconds": null},
-    "srt": {"path": null, "sha256": null}
+    "voice": {
+      "path": null,
+      "sha256": null,
+      "duration_seconds": null
+    },
+    "srt": {
+      "path": null,
+      "sha256": null
+    }
   },
   "authoritative_files": {
     "standard_entry": "00_brief/standard_snapshot/production_standard.json",
@@ -20,7 +27,9 @@
     "effective_defaults": "00_brief/effective_defaults.json",
     "storyboard": null,
     "semantic_design": null,
-    "asset_usage": null
+    "asset_usage": null,
+    "production_contract": "03_storyboard/production_contract.json",
+    "defaults_consumption": null
   },
   "standard": {
     "version": null,
@@ -36,17 +45,26 @@
   "checks": [],
   "acceptance": {
     "machine_checks": "not_performed",
+    "declared_layer_contract": "not_performed",
+    "illustration_semantic_increment": "not_performed",
+    "encoded_illustration_stillness_and_timing": "not_performed",
+    "fixed_corner_labels_absence": "not_performed",
+    "information_card_process_and_reading": "not_performed",
+    "opening_visual_reason_to_continue": "not_performed",
     "sampled_visual_review": "not_performed",
     "full_speed_subjective_av": "not_performed",
+    "user_acceptance": "not_requested",
     "jianying_draft_registration": "not_requested",
     "jianying_native_open_playback": "not_performed",
-    "jianying_native_export": "not_performed"
+    "jianying_native_export": "not_performed",
+    "illustration_scene_progress_and_sequence_continuity": "not_performed"
   },
   "blocking_issues": [],
   "deferred_improvements": [],
   "next_action": "填写本集输入、有效要求和交付范围；复制当前标准并完成开工检查。",
   "field_contract": {
-    "initialization": "复制到新集后填 episode_id、episode_root、updated_at，并设 is_template=false；不写回此模板。",
+    "initialization": "复制到新集后填实际project_root绝对路径、episode_id、episode_root、updated_at，并设 is_template=false；另填标准的production_contract模板，不写回这些模板。",
+    "layer_acceptance": "分层合同通过只证明配置/时间/哈希检查；语义、真实编码静止/无角标、卡片过程与正常速度整片视听分别记录，不互相替代。",
     "scoped_overrides": "每项记录 field、value、scope、用户依据及原因；只对本集生效。",
     "rule_reads": "每项记录阶段、规则来源、内容哈希和适用条目；不能据此跳过新上下文缺少的必要规则。",
     "outputs": "每项记录类型、相对路径、sha256 和状态；未验证临时文件不冒充有效交付。",

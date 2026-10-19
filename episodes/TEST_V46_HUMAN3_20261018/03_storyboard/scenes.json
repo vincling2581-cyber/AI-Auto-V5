@@ -1,0 +1,122 @@
+[
+  {
+    "id": "A01",
+    "start_frame": 0,
+    "end_frame_exclusive": 119,
+    "start": 0.0,
+    "end": 3.966666666666667,
+    "type": "illustration",
+    "asset": "crossroads",
+    "source_span": "想提升自己、想赚钱但不知道从哪下手",
+    "visual_task": "城市岔路前停下看地图，选择困难",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "C01",
+    "start_frame": 119,
+    "end_frame_exclusive": 312,
+    "start": 3.966666666666667,
+    "end": 10.4,
+    "type": "card",
+    "asset": "title_route",
+    "source_span": "Dan Koe、HUMAN 3.0；从混乱到清晰路径",
+    "visual_task": "编辑式大标题与乱线连续整理成清晰路径",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "C02",
+    "start_frame": 312,
+    "end_frame_exclusive": 525,
+    "start": 10.4,
+    "end": 17.5,
+    "type": "card",
+    "asset": "quadrants",
+    "source_span": "四象限与全面盘点",
+    "visual_task": "环绕同一主体建立四个并列维度，非先后流程",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "A02",
+    "start_frame": 525,
+    "end_frame_exclusive": 744,
+    "start": 17.5,
+    "end": 24.8,
+    "type": "illustration",
+    "asset": "ascent",
+    "source_span": "L1到L3、针对性成长规划",
+    "visual_task": "山坡三个自然平台与沿路推进的等级标记；属于路径类比，不是人的总排名",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "C03",
+    "start_frame": 744,
+    "end_frame_exclusive": 947,
+    "start": 24.8,
+    "end": 31.566666666666666,
+    "type": "card",
+    "asset": "prompt",
+    "source_span": "发送结构化提示词，四维基础定位",
+    "visual_task": "单张提示文档展开并迁移到AI输入，四个维度独立接收",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "A03a",
+    "start_frame": 947,
+    "end_frame_exclusive": 1102,
+    "start": 31.566666666666666,
+    "end": 36.733333333333334,
+    "type": "illustration",
+    "asset": "conversation_listen",
+    "source_span": "递进追问，挖掘想法和成长卡点",
+    "visual_task": "明亮温室谈话角：对方提问，主角认真思考",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "A03b",
+    "start_frame": 1102,
+    "end_frame_exclusive": 1198,
+    "start": 36.733333333333334,
+    "end": 39.93333333333333,
+    "type": "illustration",
+    "asset": "conversation_answer",
+    "source_span": "具体真诚回答，跟着问题梳理",
+    "visual_task": "同机位主角主动展开笔记解释，对方倾听",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "C04",
+    "start_frame": 1198,
+    "end_frame_exclusive": 1319,
+    "start": 39.93333333333333,
+    "end": 43.96666666666667,
+    "type": "card",
+    "asset": "plan",
+    "source_span": "专属成长模型与进化指南",
+    "visual_task": "同一折页展开为当前位置、关键问题、下一步行动，标明输出示意",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "A04",
+    "start_frame": 1319,
+    "end_frame_exclusive": 1446,
+    "start": 43.96666666666667,
+    "end": 48.2,
+    "type": "illustration",
+    "asset": "clarity",
+    "source_span": "迷茫与系统提问",
+    "visual_task": "俯视明亮阅览空间，主角将清楚的地图铺开并指向路径",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  },
+  {
+    "id": "C05",
+    "start_frame": 1446,
+    "end_frame_exclusive": 1678,
+    "start": 48.2,
+    "end": 55.93333333333333,
+    "type": "card",
+    "asset": "choice",
+    "source_span": "四项选择与关注收尾",
+    "visual_task": "开放式四个选项并列，无随机测评分数；收束到评论选择",
+    "hold_reason": "完整语义与配音锚点决定连续保持，不按秒数补图"
+  }
+]

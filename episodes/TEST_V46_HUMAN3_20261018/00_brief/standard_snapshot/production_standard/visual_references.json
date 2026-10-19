@@ -1,0 +1,32 @@
+{
+  "standard_version": "4.6",
+  "confirmed_date": "2026-10-18",
+  "scope": "用户确认的视觉方向；只迁移画面与表达方法，不复制旧集内容和时长，不代表本轮重新验收参考视频",
+  "references": [
+    {
+      "id": "xianyu_anhao",
+      "title": "闲鱼暗号",
+      "source": "D:/AI-Auto-V3（Codex）/ECHO_S01E01_闲鱼暗号/07_exports/xianyu_full_v2_review.mp4",
+      "source_storyboard": "D:/AI-Auto-V3（Codex）/ECHO_S01E01_闲鱼暗号/03_storyboard/全片分镜.md",
+      "illustration_use": ["由语义选择地点和情境", "不同机位、景别、主体尺度及构图", "奶油纸感与自然场景色、暖冷光", "完整意思的保持与动作或结果变化"],
+      "card_use": ["文章证据与标注", "概念映射", "循环替换", "引用与网络关系", "对照", "极简文字结论"],
+      "not_inherited": ["早期空白眼部", "具体文案与数字", "旧集镜号和固定事件时点", "图卡占比", "旧图素材作为新片内容"]
+    },
+    {
+      "id": "skill_workbook",
+      "title": "Skill工作手册",
+      "source": "D:/AI-Auto-V4（Codex）/episodes/ECHO_Skill工作手册_20261005/07_exports/Skill工作手册_1080p_无字幕母版.mp4",
+      "card_use": ["持续可追踪的对象身份", "展开与转移的中间状态", "信息汇聚与归档", "保留来源的调用和分发", "终态阅读保持"],
+      "not_inherited": ["同状态秒数上限", "每镜图片数量", "所有内容套两栏或三栏", "统一暗底", "单集音效数、音量和固定时点"]
+    }
+  ],
+  "preserved_quality": ["人物身份与手绘质感", "可见睁眼的虹膜和瞳孔", "肩肘腕手、左右归属及道具接触正确", "有含义的明显动作", "场景自然延伸至下沿，字幕避开关键内容"],
+  "access_policy": "外部参考只读，按当前阶段需要访问；不修改其他版本，不要求每集重看全片；缺失时从已登记说明继续规划，实际需要视觉比对再恢复原文件。",
+  "runtime_component": {
+    "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
+    "origin": "V5原v4.5标准中的通用绘图组件",
+    "source_sha256": "18c9846748a11334fd94423fb2f96a765777c279b9d570effc89e46334bb227a",
+    "algorithm_changed": false,
+    "use": "按新集语义重写场景，显式传入有效配色及事件参数；不运行旧场景生成器。"
+  }
+}

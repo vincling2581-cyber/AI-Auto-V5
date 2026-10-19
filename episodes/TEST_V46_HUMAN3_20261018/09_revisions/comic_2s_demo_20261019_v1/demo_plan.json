@@ -1,0 +1,50 @@
+{
+  "purpose": "单张静态插画≤2秒的连环画demo，仅本修订测试，不修改全局规则",
+  "source_interval_frames": [
+    947,
+    1198
+  ],
+  "fps": 30,
+  "total_frames": 251,
+  "no_internal_motion": true,
+  "no_corner_labels": true,
+  "keep_original_narration": true,
+  "subtitles": "原SRT片段，固定底部中央，无动效",
+  "shots": [
+    {
+      "id": "talk_followup",
+      "start_frame": 0,
+      "end_frame_exclusive": 55,
+      "source": "existing",
+      "meaning": "接受递进追问"
+    },
+    {
+      "id": "talk_open_up",
+      "start_frame": 55,
+      "end_frame_exclusive": 109,
+      "source": "new",
+      "meaning": "打开自己的记录，面对真实犹豫"
+    },
+    {
+      "id": "talk_blocker",
+      "start_frame": 109,
+      "end_frame_exclusive": 155,
+      "source": "existing",
+      "meaning": "指出隐藏的成长卡点"
+    },
+    {
+      "id": "talk_answer",
+      "start_frame": 155,
+      "end_frame_exclusive": 208,
+      "source": "existing",
+      "meaning": "具体说明，对方记录"
+    },
+    {
+      "id": "talk_sort",
+      "start_frame": 208,
+      "end_frame_exclusive": 251,
+      "source": "new",
+      "meaning": "自己开始补记、重新梳理"
+    }
+  ]
+}

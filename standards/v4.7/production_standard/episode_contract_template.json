@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "standard_version": "4.7",
+  "is_template": true,
+  "scope": "episode",
+  "fps": 30,
+  "total_frames": null,
+  "corner_labels": false,
+  "opening": {
+    "viewer_question": null,
+    "visual_payoff": null,
+    "narration_anchor": null,
+    "entry_clip_id": null
+  },
+  "subtitles": {
+    "enabled": true,
+    "role": "spoken_caption",
+    "position": "bottom_center",
+    "motion": "none",
+    "plate_position": "bottom_center",
+    "plate_motion": "none"
+  },
+  "clips": [],
+  "template_guidance": "Fill clips using layer_contract.json; illustration clips need scene_id/scene_progress and a scene_change_reason when changing from the preceding illustration, even across a card. Set is_template=false only after filling the real timeline. Scene_id may recur, source image must not."
+}

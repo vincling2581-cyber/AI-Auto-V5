@@ -1,0 +1,67 @@
+[
+  {
+    "scene": "A01",
+    "path": "04_assets/illustrations/crossroads.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "89b70bbb7481e7e8fa4e541af597f572fc2e89906e4b9d363ce1d043e0a23cf4",
+    "first_frame": 0,
+    "end_frame_exclusive": 119,
+    "generation": "new_for_v46_test",
+    "review": "identity_eyes_anatomy_scene_full_frame_visually_inspected"
+  },
+  {
+    "scene": "A02",
+    "path": "04_assets/illustrations/ascent.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "5812fdb38ab440fc4a0334246058ad957eaa59f1ed217ec09b67ffc595573933",
+    "first_frame": 525,
+    "end_frame_exclusive": 744,
+    "generation": "new_for_v46_test",
+    "review": "identity_eyes_anatomy_scene_full_frame_visually_inspected"
+  },
+  {
+    "scene": "A03a",
+    "path": "04_assets/illustrations/conversation_listen.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "9db42a1bf8dd158332eec661902357e78339c9c72c03304c05527d046f5ef217",
+    "first_frame": 947,
+    "end_frame_exclusive": 1102,
+    "generation": "new_for_v46_test",
+    "review": "identity_eyes_anatomy_scene_full_frame_visually_inspected"
+  },
+  {
+    "scene": "A03b",
+    "path": "04_assets/illustrations/conversation_answer.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "a53105943f63ffab08c1aa922b63dd5d26c014d45c04cb667608075e2b34e525",
+    "first_frame": 1102,
+    "end_frame_exclusive": 1198,
+    "generation": "new_for_v46_test",
+    "review": "identity_eyes_anatomy_scene_full_frame_visually_inspected"
+  },
+  {
+    "scene": "A04",
+    "path": "04_assets/illustrations/clarity.png",
+    "dimensions": [
+      1672,
+      941
+    ],
+    "sha256": "ef262f6d119cfde505aae7fd8cd5b44b3ac289ec0424f126e1be45be04c93e7a",
+    "first_frame": 1319,
+    "end_frame_exclusive": 1446,
+    "generation": "new_for_v46_test",
+    "review": "identity_eyes_anatomy_scene_full_frame_visually_inspected"
+  }
+]

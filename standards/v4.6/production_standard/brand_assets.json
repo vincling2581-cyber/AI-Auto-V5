@@ -1,0 +1,16 @@
+[
+  {
+    "source": "D:\\AI资产库\\人物\\assets\\Character_turnaround_sheet_of__2026-09-13T15-51-38.png",
+    "copy": "production_standard/assets/角色身份参考.png",
+    "sha256": "03b39446edbd89af83f235a40660a55d3bb07f8ceb74b59d5dfa58bf67a509fd",
+    "usage": "身份、身体与笔触；空白眼睛不沿用",
+    "copied_from_v5": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\ECHO_五款开源AI工具_20261008\\00_brief\\standard_snapshot\\production_standard\\assets\\角色身份参考.png"
+  },
+  {
+    "source": "D:\\AI-Auto-V4（Codex）\\eye_completion_v1\\illustrations\\S040.png",
+    "copy": "production_standard/assets/补全眼部参考.png",
+    "sha256": "b6c9b7acaadb640676227e69c839739597f15d37a65debbd8f00d69b0c26d49d",
+    "usage": "只参考眼部，不复制S040场景",
+    "copied_from_v5": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\ECHO_五款开源AI工具_20261008\\00_brief\\standard_snapshot\\production_standard\\assets\\补全眼部参考.png"
+  }
+]

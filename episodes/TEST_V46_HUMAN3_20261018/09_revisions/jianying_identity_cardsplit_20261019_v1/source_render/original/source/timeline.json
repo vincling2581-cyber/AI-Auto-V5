@@ -1,0 +1,130 @@
+[
+  {
+    "id": "open_ready",
+    "asset": "open_ready",
+    "type": "illustration",
+    "start_frame": 0,
+    "end_frame_exclusive": 58,
+    "asset_path": "assets/open_ready.png"
+  },
+  {
+    "id": "open_stop",
+    "asset": "open_stop",
+    "type": "illustration",
+    "start_frame": 58,
+    "end_frame_exclusive": 119,
+    "asset_path": "assets/open_stop.png"
+  },
+  {
+    "id": "open_study",
+    "asset": "open_study",
+    "type": "illustration",
+    "start_frame": 119,
+    "end_frame_exclusive": 235,
+    "asset_path": "assets/open_study.png"
+  },
+  {
+    "id": "open_go",
+    "asset": "open_go",
+    "type": "illustration",
+    "start_frame": 235,
+    "end_frame_exclusive": 312,
+    "asset_path": "assets/open_go.png"
+  },
+  {
+    "id": "quadrants",
+    "asset": "quadrants",
+    "type": "card",
+    "start_frame": 312,
+    "end_frame_exclusive": 525,
+    "asset_path": null
+  },
+  {
+    "id": "ascent_step",
+    "asset": "ascent_step",
+    "type": "illustration",
+    "start_frame": 525,
+    "end_frame_exclusive": 623,
+    "asset_path": "assets/ascent_step.png"
+  },
+  {
+    "id": "ascent_plan",
+    "asset": "ascent_plan",
+    "type": "illustration",
+    "start_frame": 623,
+    "end_frame_exclusive": 701,
+    "asset_path": "assets/ascent_plan.png"
+  },
+  {
+    "id": "ascent_continue",
+    "asset": "ascent_continue",
+    "type": "illustration",
+    "start_frame": 701,
+    "end_frame_exclusive": 744,
+    "asset_path": "assets/ascent_continue.png"
+  },
+  {
+    "id": "prompt",
+    "asset": "prompt",
+    "type": "card",
+    "start_frame": 744,
+    "end_frame_exclusive": 947,
+    "asset_path": null
+  },
+  {
+    "id": "talk_followup",
+    "asset": "talk_followup",
+    "type": "illustration",
+    "start_frame": 947,
+    "end_frame_exclusive": 1017,
+    "asset_path": "assets/talk_followup.png"
+  },
+  {
+    "id": "talk_blocker",
+    "asset": "talk_blocker",
+    "type": "illustration",
+    "start_frame": 1017,
+    "end_frame_exclusive": 1102,
+    "asset_path": "assets/talk_blocker.png"
+  },
+  {
+    "id": "talk_answer",
+    "asset": "talk_answer",
+    "type": "illustration",
+    "start_frame": 1102,
+    "end_frame_exclusive": 1198,
+    "asset_path": "assets/talk_answer.png"
+  },
+  {
+    "id": "plan",
+    "asset": "plan",
+    "type": "card",
+    "start_frame": 1198,
+    "end_frame_exclusive": 1319,
+    "asset_path": null
+  },
+  {
+    "id": "clarity_find",
+    "asset": "clarity_find",
+    "type": "illustration",
+    "start_frame": 1319,
+    "end_frame_exclusive": 1396,
+    "asset_path": "assets/clarity_find.png"
+  },
+  {
+    "id": "clarity_act",
+    "asset": "clarity_act",
+    "type": "illustration",
+    "start_frame": 1396,
+    "end_frame_exclusive": 1446,
+    "asset_path": "assets/clarity_act.png"
+  },
+  {
+    "id": "choice",
+    "asset": "choice",
+    "type": "card",
+    "start_frame": 1446,
+    "end_frame_exclusive": 1678,
+    "asset_path": null
+  }
+]

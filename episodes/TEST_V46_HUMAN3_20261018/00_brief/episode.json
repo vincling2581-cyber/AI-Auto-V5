@@ -1,0 +1,30 @@
+{
+  "id": "TEST_V46_HUMAN3_20261018",
+  "type": "full_length_visual_test",
+  "standard_version": "4.6",
+  "inputs": {
+    "voice": {
+      "path": "00_brief/input/10月18日.mp3",
+      "original_path": "C:\\Users\\Administrator\\Videos\\屏幕录制\\10月18日\\10月18日.mp3",
+      "sha256": "7dba283d1420d7a3be5e86ac41f355f31274425e99f985a6fe28c5aef51b0642",
+      "duration_seconds": 55.902042
+    },
+    "srt": {
+      "path": "00_brief/input/10月18日.srt",
+      "original_path": "C:\\Users\\Administrator\\Videos\\屏幕录制\\10月18日\\10月18日.srt",
+      "sha256": "26561571776fbc22d14c7aaa4bdd4a0cd94e176dd6578ffd9c2bd2c6c8f22462"
+    }
+  },
+  "fps": 30,
+  "total_frames": 1678,
+  "duration_seconds": 55.93333333333333,
+  "caption_mode": "burn_in_for_visual_test",
+  "voice_processing": "original_voice_no_gain_or_speed_change",
+  "delivery": [
+    "test_mp4",
+    "rerenderable_source",
+    "storyboard",
+    "qc_notes"
+  ],
+  "scope": "只在本测试目录制作；不改其他版本、旧集配置或已有成片；不进行剪映导出。"
+}
