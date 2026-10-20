@@ -2,7 +2,7 @@
 
 This is an interchange and validation contract for this skill, not Jianying's native schema. Adapt the current project's exporter into it; do not hard-code the historical episode. The package root contains `manifest.json`, `draft_content.json` and local media. Additional cover images, notes and source files are allowed. The installer rebases portable paths only after this package passes verification.
 
-The default skill task ends after writing and delivering the package. Use this schema to build it; run the checks below only when the user explicitly requests review. Missing native evidence does not prevent an export-only delivery. Report export completion separately from review, which remains `not_performed` until requested and performed.
+The default skill task builds this package, registers a new draft on the current computer, and delivers a portable ZIP with a double-click import entry. An explicit export-only request skips registration. The installer performs its necessary structural/media/index checks; the standalone review commands below still require a user review request. Missing native evidence does not prevent ordinary export or registration. Report export, portable archive, registration and review separately; review remains `not_performed` until requested and performed. Modifying this skill alone does not authorize importing an actual draft.
 
 ```json
 {
@@ -23,11 +23,11 @@ This abbreviated example is not a complete runnable draft. Every native segment 
 
 ## Manifest fields
 
-- `layeringMode`: record `card_text_split` for new default exports, or `panel_split` only when the user explicitly requests independently editable panels. This is adapter metadata within schemaVersion 1; the current structural validator does not interpret or enforce it. Missing metadata in an old package does not authorize rewriting its structure. The exporter must implement the chosen mode rather than merely add a label.
+- `layeringMode`: record `card_text_split` for new default exports, or `panel_split` only when the user explicitly requests independently editable card panels. This field describes information-card structure; illustration footage, its editable overlay text and text plates are separate units in either card mode. This is adapter metadata within schemaVersion 1; the current structural validator does not interpret or enforce it. Missing metadata in an old package does not authorize rewriting its structure. The exporter must implement the chosen mode rather than merely add a label.
 - `project`: nonempty `name`, positive integer `width`, `height`, `durationUs`; positive numeric `fps`. They must match the draft's `name`, `canvas_config`, `duration` and `fps`. Timeline units are integer microseconds; comparison permits 1 µs rounding at boundaries. Duration equals the greatest segment end; trailing intentional silence needs a corresponding timeline segment.
 - `media`: each local media/font path, exact byte length and SHA-256. Paths are relative to the package root; no drive letters, URLs, parent traversal or symlink escape. `/` is preferred; `\` is accepted. Empty native optional path fields are ignored. Sidecar documentation not referenced as draft material need not be listed.
-- `panels`: export-unit owners, uniquely identified by `(scene,id)`. In `card_text_split`, register one non-text unit per card, conventionally `id:"card_visual"`; the field name does not require drawing or splitting a physical panel. Different cards in one scene need distinct owner IDs. In `panel_split`, owners represent independent large boxes, including text-only boxes. IDs are stable and cannot be `shared`; labels are optional. Do not invent panels in preserved footage.
-- `sources`: objects that the graphics exporter is responsible for, grouped by scene. Each object has a unique `id` within that scene and an `owner` in `panels` or `shared`. In `card_text_split`, include all of the card's non-text objects, including background, panel fills/frames, icons and cross-panel connections; assign all to the card's single export owner. Exclude native text, separately handled narration captions/plates, audio and preserved illustration shots. In `panel_split`, exclude separately exported panel fills/background and assign graphics to their individual panel or `shared`. Derive the universe from the source scene/object map before export; ownership declarations are not visual proof.
+- `panels`: export-unit owners, uniquely identified by `(scene,id)`. In `card_text_split`, register one non-text unit per card, conventionally `id:"card_visual"`; the field name does not require drawing or splitting a physical panel. Different cards in one scene need distinct owner IDs. For illustration scenes, register the actual illustration, each editable text block and each independent text plate as distinct export units, as shown below; do not invent visual frames. In `panel_split`, card owners represent independent large boxes, including text-only boxes. IDs are stable and cannot be `shared`; labels are optional.
+- `sources`: objects that the graphics exporter is responsible for, grouped by scene. Each object has a unique `id` within that scene and an `owner` in `panels` or `shared`. In `card_text_split`, include all of the card's non-text objects, including background, panel fills/frames, icons and cross-panel connections; assign all to the card's single export owner. Include independently extracted illustration text-plate objects when exported as `graphics`; exclude native text, separately handled narration captions/plates, audio and clean illustration media. In `panel_split`, exclude separately exported panel fills/background and assign graphics to their individual panel or `shared`. Derive the universe from the source scene/object map before export; ownership declarations are not visual proof.
 - `segments`: exact native `id`, nonempty `scene`, `role` and `owner` for every draft segment. Optional `motionIntent.visibilityMethod` documents the actual visibility implementation; do not change that claim just to silence a diagnostic. Other project fields may be preserved without being interpreted.
 - `fontDependencies`: for system fonts that cannot be redistributed, name the required font (for example `fontName:"Microsoft YaHei"`), record `redistributed:false` and the unresolved native resolution status. Empty paths do not prove a matching installed font. Packaged fonts still require permitted redistribution, portable paths and media hashes. Full native evidence currently requires file-bound fonts; a system-font dependency alone cannot satisfy that gate.
 
@@ -35,9 +35,9 @@ Roles and additional fields:
 
 | Role | Owner | Requirements |
 | --- | --- | --- |
-| `background`, `animation` | export-unit ID or `shared` | Local video/image material on a video track. Preserved illustration animation may be one finished clip; separately handled caption plates may use `background` with a caption-purpose entry in the edit index. Default card backgrounds are inside that card's `graphics` composite, not an extra segment. |
+| `background`, `animation` | export-unit ID or `shared` | Local video/image material on a video track. Each clean illustration/shot may be one image or clip, with exported text and its plate removed; separately handled narration caption plates may use `background` with a caption-purpose entry in the edit index. Default card backgrounds are inside that card's `graphics` composite, not an extra segment. |
 | `panel` | one export-unit ID | Independently movable fill/frame in the optional `panel_split` mode; default card frames are inside `graphics`. |
-| `graphics` | one export-unit ID | Nonempty `sourceObjectIds`, all belonging to this owner. Default: exactly one continuous non-text composite segment per card, including its background and all frames/connectors. Panel mode: per-panel graphics and any necessary foreground units. Preserve native ordering and resolve text occlusion without silently violating the selected mode. |
+| `graphics` | one export-unit ID | Nonempty `sourceObjectIds`, all belonging to this owner. For illustrations: each independent text plate is its own transparent graphic segment. For default cards: exactly one continuous non-text composite per card, including its background and all frames/connectors. Panel mode: per-panel graphics and any necessary foreground units. Preserve native ordering and resolve text occlusion without silently violating the selected mode. |
 | `shared_graphics` | `shared` | Nonempty `sourceObjectIds`; genuine shared/cross-panel objects in `panel_split`. Default card connections belong inside the card's `graphics` composite. Do not label an all-card bake as shared or leave editable text baked into it. |
 | `text`, `brand` | export-unit ID or `shared` | Native `texts` material on a text track; nonempty `textKey` unique within a scene and unique text material per segment. One segment per continuous appearance; necessary reappearances use unique occurrence keys plus a common optional `logicalTextKey` and edit-index relationship. |
 | `narration`, `sfx`, `music` | export-unit ID or `shared` | Native audio material and audio track; `expectedVolume` is mandatory. |
@@ -49,6 +49,37 @@ For the default mode, one card means one continuous card appearance; its interna
 `expectedVolume` is the intended final **linear** native segment gain (1 means 0 dB). It is mandatory for all audio-track segments and video-track segments with nonzero audio, and may be supplied for silent video segments as 0. `audioGainBakedDb` optionally records preprocessing already applied to the media. The validator compares actual volume with `expectedVolume`; it never infers the right gain from the baked value. A voice media file already processed by −2.9 dB usually has `audioGainBakedDb:-2.9, expectedVolume:1`, unless an additional gain is explicitly intended and recorded. Media-level mix duplication, perceived loudness and sample alignment need a separate audio check.
 
 Optional provenance may record `editorFamily`, editor/library versions and source commit, adapter hashes, font dependencies and capability decisions. These fields are not official draft fields or native proof. Do not fill them from another machine's assumptions.
+
+## Illustration text and plate mapping
+
+New exports keep each illustration/shot, each overlay text block and each independently authored text plate separate. This applies to illustration overlays, not scene paper textures or environmental backgrounds. It does not change the information-card composite rule. If there is no text or plate, omit that unit rather than add an empty track. Keep a text/plate pair spanning several illustrations continuous when that matches its actual appearance, and record the association in the edit index instead of splitting it at every image cut.
+
+Example ownership mapping (abbreviated, not a complete native draft):
+
+```json
+{
+  "schemaVersion": 1,
+  "layeringMode": "card_text_split",
+  "panels": [
+    {"scene": "A01", "id": "illustration", "label": "Clean illustration"},
+    {"scene": "A01", "id": "overlay_title", "label": "Editable illustration title"},
+    {"scene": "A01", "id": "title_plate", "label": "Independent title plate"}
+  ],
+  "sources": [{"scene": "A01", "objects": [
+    {"id": "title_fill", "owner": "title_plate"},
+    {"id": "title_outline", "owner": "title_plate"}
+  ]}],
+  "segments": [
+    {"id": "illustration_segment", "scene": "A01", "role": "animation", "owner": "illustration"},
+    {"id": "plate_segment", "scene": "A01", "role": "graphics", "owner": "title_plate", "sourceObjectIds": ["title_fill", "title_outline"]},
+    {"id": "title_segment", "scene": "A01", "role": "text", "owner": "overlay_title", "textKey": "title"}
+  ]
+}
+```
+
+The illustration and plate use separate native video/image materials and independently selectable segments; the title uses its own native `texts` material. Concurrent units need separate tracks with the original stacking, transforms and timing. Do not auto-group these units or place them inside an inseparable compound clip. Separate texture/frame objects already independently adjustable in the source remain separate plate units; fill/texture/outline of one authored plate may stay together. Only graphics roles use `sourceObjectIds`; provenance for the illustration and text belongs in the edit index.
+
+Remove editable lettering from both the clean illustration and the plate media. A flattened image containing lettering/plates does not supply clean layers: obtain the editable source or a reliable clean export copy, and disclose missing inputs instead of duplicating the image on several tracks or covering old text with new text. Preserve the source files. Raster plates can be moved, scaled and replaced independently; internal colors, textures and paths require a source rerender unless actually represented by a supported independent native shape. The current structural validator can check these existing roles and owner/material relationships, but cannot detect baked text in pixels, guarantee a clean illustration or prove actual independent editing. User-requested review remains separate from export.
 
 ## Native data checked
 
