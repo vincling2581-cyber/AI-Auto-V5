@@ -338,6 +338,10 @@ echo 提供或确认文案、干音、真实素材及事实，反馈关键样片
 
 ## 10. 实现、目录与恢复
 
+本次代码审查修订后新建集，渲染和明确要求的导出由本集锁定的 `production_standard/run_stage.py` 调用本集内实际 Python 适配器。运行 `--episode-root <本集绝对路径> --stage render|export --entry <本集内入口.py>`，需转发脚本参数时放在 `--` 后；`--check-only` 仅检查。入口校验两份锁、依赖哈希、制作合同和有效参数的核心约束及帧率，失败不启动子脚本。四个环境变量 `V5_EPISODE_ROOT`、`V5_EFFECTIVE_DEFAULTS`、`V5_PRODUCTION_CONTRACT`、`V5_STAGE` 指向实际输入与阶段；适配器须将同源配置传到真实渲染消费点。入口不证明参数已消费，不检查画面或自动原生复检；旧集继续原入口，不改旧锁。
+
+新集明确要求剪映导出时，依据项目 `CURRENT_PROJECT.export_tooling` 采用仓库 Skill，在本集保存所用工具及哈希。默认结构检查；原生复检另行明确要求后使用 `--require-native-evidence`。不要自动引用全局已安装副本，也不要替换旧交付的内置工具。
+
 ### 10.1 能力和默认实现
 
 默认使用本地 HTML/SVG/JavaScript → 浏览器逐帧输出 → FFmpeg 编码，帧时间明确、资产本地可追踪，无需 AE。开工只检查当前阶段所需的读取、渲染、编码、图像检查和视听能力，缺什么记录什么，不顺手重写系统。

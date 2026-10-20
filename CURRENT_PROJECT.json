@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-20T01:08:55.071170+08:00",
+  "updated_at": "2026-10-20T14:59:58.473018+08:00",
   "purpose": "V5 当前制作入口；只维护有效路径、范围和最新交接状态。所有相对路径以 V5 根目录为基准。",
   "workflow": "docs/SINGLE_EPISODE_WORKFLOW.md",
   "new_episode_state_template": "templates/episode_state.json",
@@ -9,10 +9,10 @@
     "snapshot_root": "standards/v4.7",
     "entry_point": "standards/v4.7/production_standard.json",
     "lock": "standards/v4.7/standard_lock.json",
-    "entry_sha256": "97f27da2d302cf2c4fcafc4c9e81154403ccca4e28cea1fa1aab736f5aee4397",
-    "lock_sha256": "97f27da2d302cf2c4fcafc4c9e81154403ccca4e28cea1fa1aab736f5aee4397",
+    "entry_sha256": "95c78018cca16a077066a0575a552e6cb33e28f5801187c7cdd78d200e5c95eb",
+    "lock_sha256": "95c78018cca16a077066a0575a552e6cb33e28f5801187c7cdd78d200e5c95eb",
     "policy": "V5 v4.7 场景组修订：静态连环画单张≤2秒，按单图/连续场景组/整段语义规划；同景推进、跨情境连贯；信息卡连续过程，两层无固定角标。用于新集，旧集按自己的锁和明确覆盖续做，不自动迁移。",
-    "revision": "2026-10-20-scene-continuity"
+    "revision": "2026-10-20-code-audit"
   },
   "adopted_method": {
     "name": "静态连环画与语义信息卡：单图增量、同景推进、跨情境连贯",
@@ -22,7 +22,8 @@
     "semantic_reference": "standards/v4.7/production_standard/visual_references.json",
     "reuse_scope": "复用角色/眼睛/画风与通用卡片原语；插画静态硬切≤2秒，按单图/场景组/整段语义设计，不设场景时长或图数配额。卡片过程不套2秒上限；参数须进入实际渲染并检查输出。工作树与主干通过明确的Git合并同步，不运行旧场景生成器，不改写旧集。",
     "layer_contract": "standards/v4.7/production_standard/layer_contract.json",
-    "episode_validator": "standards/v4.7/production_standard/validate_episode.py"
+    "episode_validator": "standards/v4.7/production_standard/validate_episode.py",
+    "stage_runner": "standards/v4.7/production_standard/run_stage.py"
   },
   "latest_episode": {
     "id": "TEST_V46_HUMAN3_20261018",
@@ -42,5 +43,9 @@
     "**/*.zip"
   ],
   "exclusion_policy": "只约束常规搜索；本集实际需要的交付文件、异常证据或明确授权的剪映修订路径可直接访问，不删除文件。",
-  "protected_external_root": "D:\\AI-Auto-V4（Codex）"
+  "protected_external_root": "D:\\AI-Auto-V4（Codex）",
+  "export_tooling": {
+    "skill": "skills/jianying-layered-export/SKILL.md",
+    "policy": "New explicitly requested V5 exports copy needed tools from this repository into the episode and record hashes; legacy exports retain their bundled tools. Repository updates do not install the global Skill."
+  }
 }

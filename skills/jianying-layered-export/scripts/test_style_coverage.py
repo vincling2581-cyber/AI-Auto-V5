@@ -46,7 +46,7 @@ class StyleCoverageTests(unittest.TestCase):
         self.save_evidence()
 
     def assert_ready(self):
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertTrue(report['deliveryReady'], report['errors'])
         self.assertTrue(report['passed'], report['errors'])
         return report

@@ -434,6 +434,7 @@
     "schema": "production_standard/layer_contract.json",
     "validator": "production_standard/validate_episode.py",
     "effective_defaults_must_be_consumed": true,
-    "machine_validation_is_subjective_acceptance": false
+    "machine_validation_is_subjective_acceptance": false,
+    "stage_runner": "production_standard/run_stage.py"
   }
 }

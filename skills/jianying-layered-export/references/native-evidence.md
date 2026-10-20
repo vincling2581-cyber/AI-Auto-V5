@@ -33,7 +33,7 @@ binding["mediaManifestSha256"] = media_manifest_sha256(manifest)
 
 该函数对媒体项 `{path, sha256, bytes}` 按 path 排序，将路径分隔符规范为 `/`、哈希转小写，再以 `json.dumps(..., sort_keys=True, separators=(',', ':'), ensure_ascii=False)` 的 UTF-8 字节计算 SHA-256。当前完整证据助手要求实际草稿引用的包内字体文件，不能只填显示名称；普通导出及未复检导入可以采用声明的系统字体依赖。系统字体的运行时文件绑定尚未由此证据格式覆盖，不得强制复制无权分发的字体或伪造路径来通过门禁。
 
-`runtime` 指定版本字符串和在 `--jy-install` 下的实际 exe 相对路径及 SHA-256。所有样本都来自这一版本。升级、换 exe、字体或画布后标记相关证据失效，用户提出复检后才重做对应校准及检查；默认安装模式验证 exe 哈希。
+`runtime` 指定版本字符串和在 `--jy-install` 下的实际 exe 相对路径及 SHA-256。所有样本都来自这一版本。升级、换 exe、字体或画布后标记相关证据失效，用户提出复检后才重做对应校准及检查；安装助手仅在显式 `--require-native-evidence` 模式验证 exe 哈希。
 
 测试注册只允许名字/ID 及素材路径重定位影响安装副本。截图记录的 `capture.draftSha256` 绑定用于该次注册的可移植草稿；核对安装审计中解码后的 tracks/materials 与该包重定位后相符。若在剪映中改过排版，先回收这些实际修改到最终包，再绑定新哈希并重新采样；不能对旧包哈希声明新画面合格。
 
@@ -111,8 +111,8 @@ binding["mediaManifestSha256"] = media_manifest_sha256(manifest)
 
 ## 检查与结果
 
-用户明确要求完整原生证据检查时：`python scripts/validate_package.py --package PACKAGE --require-native-evidence --report REPORT`。旧的无模式参数调用仍保留此门禁，不是 skill 默认导出步骤。缺失、失效或不完整证据返回失败，`deliveryReady:false`；这些字段描述证据门禁，不否定导出文件已生成。静态证据匹配后 `nativeValidation:"evidence_verified"`，但未解决的动效警告仍使 `motionValidation:"requires_review"`、`deliveryReady:false`；不能仅看 `passed` 或退出码就宣布全片效果通过。
+用户明确要求完整原生证据检查时：`python scripts/validate_package.py --package PACKAGE --require-native-evidence --report REPORT`。无模式参数调用默认只检查结构；需要原生门禁的旧调用方也应显式添加该参数。缺失、失效或不完整证据返回失败，`deliveryReady:false`；这些字段描述证据门禁，不否定导出文件已生成。静态证据匹配后 `nativeValidation:"evidence_verified"`，但未解决的动效警告仍使 `motionValidation:"requires_review"`、`deliveryReady:false`；不能仅看 `passed` 或退出码就宣布全片效果通过。
 
-用户仅要求结构复检时使用 `--structure-only`，结果为 `status:"structure_passed"`、`nativeValidation:"not_performed"`、`deliveryReady:false`。真正的测试/校准注册仍可用旧 `--allow-unvalidated-test-draft`，普通未复检导入使用安装助手的 `--allow-unreviewed`，见 [delivery.md](delivery.md)。这些模式均不能用于宣称原生验收通过，正常导出不需要运行它们。
+用户仅要求结构复检时使用 `--structure-only`，结果为 `status:"structure_passed"`、`nativeValidation:"not_performed"`、`deliveryReady:false`。真正的测试/校准注册仍可用旧 `--allow-unvalidated-test-draft`，普通未复检导入使用安装助手的默认模式，旧 `--allow-unreviewed` 仍兼容，见 [delivery.md](delivery.md)。这些模式均不能用于宣称原生验收通过，正常导出不需要运行它们。
 
 原生证据契约通过、机器结构检查、完整正常速度视听、原生完整导出分别记录。证据中的导出采样不能自动推广为整集播放或最终完整导出通过。独立行为测试使用 `python scripts/test_native_gate.py` 和 `python scripts/test_style_coverage.py`；测试生成的合成图片仅用于门禁逻辑，绝不是任何项目的原生验收证据。

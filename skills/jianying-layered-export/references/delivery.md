@@ -38,9 +38,9 @@ export-revision/
 
 ## 本机注册助手
 
-本节仅在用户明确要求注册时使用，不是默认导出的步骤。三种模式不能混淆：已有完整原生证据用默认门禁；用户只要求直接导入用 `--allow-unreviewed`；真正的校准/测试稿才用 `--allow-unvalidated-test-draft`。不要为了正常导入强制把草稿伪装成测试稿，也不能因缺证据自动启动校准。
+本节仅在用户明确要求注册时使用，不是默认导出的步骤。普通注册默认不做原生复检；`--allow-unreviewed` 保留为相同模式的兼容参数。用户明确要求检查已有完整原生证据时加 `--require-native-evidence`；真正的校准/测试稿才用 `--allow-unvalidated-test-draft`。三种模式互斥。不要为了正常导入强制把草稿伪装成测试稿，也不能因缺证据自动启动校准。
 
-已完成原生验收后使用默认安装模式：读取包内 `native-evidence.json`，或以 `--native-evidence` 指定包内其他 JSON。证据绑定最终草稿、媒体、字体、画布、时长/帧率与实际剪映版本及 exe SHA-256。版本文件改变后证据失效，重新校准及审核仍需用户明确提出。
+已完成原生验收且本次要求核验证据后，使用 `--require-native-evidence`：读取包内 `native-evidence.json`，或以 `--native-evidence` 指定包内其他 JSON。仅指定证据路径不会启动证据检查。证据绑定最终草稿、媒体、字体、画布、时长/帧率与实际剪映版本及 exe SHA-256。版本文件改变后证据失效，重新校准及审核仍需用户明确提出。
 
 所有命令中的路径都是当前任务提供的参数，使用正确的 shell 引号。默认仅预检，不写剪映目录：
 
@@ -48,10 +48,10 @@ export-revision/
 python scripts/install_draft.py --package PACKAGE --user-data USER_DATA --draft-root DRAFT_ROOT --jy-install JY_INSTALL --name NEW_NAME
 ```
 
-用户已明确要求直接导入、未要求原生验收时，用具备兼容库的 Python 加 `--install --allow-unreviewed` 执行。它仍执行安装前必要的结构与素材检查，保留动效/系统字体等未确认提示，不追加原生复检。同名拒绝覆盖；选择新的名称即可，无需因此让用户重复批准已经授权的新草稿创建。不要向脚本提供用户正在编辑的现有草稿名。
+用户已明确要求直接导入、未要求原生验收时，用具备兼容库的 Python 加 `--install` 执行。它仍执行安装前必要的结构与素材检查，保留动效/系统字体等未确认提示，不追加原生复检。同名拒绝覆盖；选择新的名称即可，无需因此让用户重复批准已经授权的新草稿创建。不要向脚本提供用户正在编辑的现有草稿名。
 
 ```text
-python scripts/install_draft.py --package PACKAGE --user-data USER_DATA --draft-root DRAFT_ROOT --jy-install JY_INSTALL --name NEW_NAME --install --allow-unreviewed --audit-dir AUDIT_DIR
+python scripts/install_draft.py --package PACKAGE --user-data USER_DATA --draft-root DRAFT_ROOT --jy-install JY_INSTALL --name NEW_NAME --install --audit-dir AUDIT_DIR
 ```
 
 助手会在写入前校验包、记录根索引和既有草稿，复制素材到新目录，重定向素材及嵌套字体路径，然后通过本地库保存与注册。不能仅复制目录就声称已注册；应确认唯一索引记录和媒体链接。

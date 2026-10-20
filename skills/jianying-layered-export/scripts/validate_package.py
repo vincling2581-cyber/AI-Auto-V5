@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Check package structure and required native evidence for delivery."""
+"""Check package structure; native evidence is checked only by explicit request."""
 import argparse
-import hashlib
 import json
 import math
 from collections import defaultdict
 from pathlib import Path, PureWindowsPath
 
-from native_evidence import validate_native_evidence
+from native_evidence import digest as sha256, validate_native_evidence
 
 ROLES = {"background", "animation", "panel", "graphics", "shared_graphics",
          "text", "brand", "narration", "sfx", "music"}
@@ -111,14 +110,6 @@ def validate_motion(segment, entry, fps, check, warn, info, claim_id):
         check('keyframes.native_uniform_scale_exclusive', 'KFTypeScaleY' not in properties, sid)
 
 
-def sha256(path):
-    digest = hashlib.sha256()
-    with path.open("rb") as stream:
-        for chunk in iter(lambda: stream.read(1024 * 1024), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
-
-
 def number(value):
     return isinstance(value, (int, float)) and not isinstance(value, bool) and math.isfinite(value)
 
@@ -167,7 +158,7 @@ def validate_package(package, native_evidence=None, allow_unvalidated_test_draft
               "structuralValidation": "failed", "motionValidation": "not_performed",
               "audioValidation": "metadata_only",
               "packageRoot": str(root), "deliveryReady": False,
-              "validationMode": "structure_only" if structure_only else ("test_only" if allow_unvalidated_test_draft else "delivery")}
+              "validationMode": "delivery" if require_native_evidence else ("test_only" if allow_unvalidated_test_draft else "structure_only")}
 
     def check(name, condition, detail=""):
         okay = bool(condition)
@@ -195,6 +186,9 @@ def validate_package(package, native_evidence=None, allow_unvalidated_test_draft
     if not check('validation.mode', sum(bool(x) for x in (structure_only, require_native_evidence, allow_unvalidated_test_draft)) <= 1,
                  'structure_only, require_native_evidence and legacy test mode are mutually exclusive'):
         return result
+    # Choosing an evidence file is not authorization to run the native gate.
+    # No-mode callers share the explicit structure-only path.
+    structure_only = not (require_native_evidence or allow_unvalidated_test_draft)
 
     def portable_path(raw, label):
         if not check(label, isinstance(raw, str) and bool(raw), "path must be a nonempty string"):
@@ -515,14 +509,14 @@ def validate_package(package, native_evidence=None, allow_unvalidated_test_draft
         check("package.read_or_structure", False, f"{type(exc).__name__}: {exc}")
     result["structuralValidation"] = "passed" if not result["errors"] else "failed"
     result['motionValidation'] = 'requires_review' if result['warnings'] else 'not_performed'
-    if not result["errors"] and not allow_unvalidated_test_draft and not structure_only:
+    if not result["errors"] and require_native_evidence:
         evidence = validate_native_evidence(root, manifest, draft, native_evidence, check)
         result["nativeEvidence"] = evidence
         result["nativeValidation"] = evidence["status"]
     elif allow_unvalidated_test_draft:
         result["nativeValidation"] = "bypassed_for_test_only"
     result["passed"] = not result["errors"]
-    result["deliveryReady"] = result["passed"] and not allow_unvalidated_test_draft and not structure_only and not result['warnings']
+    result["deliveryReady"] = result["passed"] and require_native_evidence and not result['warnings']
     result["status"] = ("structure_passed" if structure_only else ("test_only_passed" if allow_unvalidated_test_draft else "passed")) if result["passed"] else "failed"
     return result
 
@@ -533,8 +527,8 @@ def main():
     parser.add_argument("--report", type=Path)
     parser.add_argument("--native-evidence", type=Path, help="Evidence JSON inside the package; default native-evidence.json")
     modes = parser.add_mutually_exclusive_group()
-    modes.add_argument('--structure-only', action='store_true', help='Check package structure only; does not open Jianying or require native evidence')
-    modes.add_argument('--require-native-evidence', action='store_true', help='Explicit native evidence gate (also the legacy default)')
+    modes.add_argument('--structure-only', action='store_true', help='Check package structure only (default); does not open Jianying or require native evidence')
+    modes.add_argument('--require-native-evidence', action='store_true', help='Explicitly check existing native evidence; never capture evidence or operate Jianying')
     modes.add_argument("--allow-unvalidated-test-draft", action="store_true",
                         help="Structure-only test/calibration check; never marks delivery ready")
     args = parser.parse_args()

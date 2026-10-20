@@ -14,7 +14,7 @@ class InstalledMediaTests(unittest.TestCase):
     fake_runtime = fixtures.NativeGateTests.fake_runtime
 
     def install(self, mutation=None, test=False):
-        args = self.args(install=True, test=test)
+        args = self.args(install=True, test=test, native=not test)
         api, codec, decode = self.fake_runtime(args)
         original_load = api.DraftFolder.load_template
         def load(folder, name):

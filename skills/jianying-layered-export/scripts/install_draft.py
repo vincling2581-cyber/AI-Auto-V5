@@ -1,8 +1,9 @@
-"""Register a validated portable package as a NEW Jianying draft.
+"""Register a portable package as a NEW Jianying draft.
 
 Default is read-only preflight. --install writes only a new draft and appends its
 index entry via a compatible locally installed pyJianYingDraft implementation.
 No GUI automation, replacement, editor restart, or automatic rollback is used.
+Native evidence is checked only with --require-native-evidence.
 """
 from __future__ import annotations
 
@@ -20,7 +21,7 @@ import tempfile
 import uuid
 
 from validate_package import validate_package
-from native_evidence import digest
+from native_evidence import digest, digest as sha
 
 
 def read(path):
@@ -47,14 +48,6 @@ def write(path, value):
 def read_snapshot(path):
     data = Path(path).read_bytes()
     return json.loads(data.decode('utf-8-sig')), hashlib.sha256(data).hexdigest()
-
-
-def sha(path):
-    with Path(path).open('rb') as stream:
-        digest = hashlib.sha256()
-        for chunk in iter(lambda: stream.read(1024 * 1024), b''):
-            digest.update(chunk)
-        return digest.hexdigest()
 
 
 def require(condition, message):
@@ -273,11 +266,14 @@ def load_runtime(installation):
 def run(args):
     package = args.package.resolve()
     test_only = args.allow_unvalidated_test_draft
-    unreviewed = getattr(args, 'allow_unreviewed', False)
-    require(not (unreviewed and test_only), 'Choose normal unreviewed registration or a test draft, not both')
-    native_required = not (test_only or unreviewed)
-    validation = (validate_package(package, args.native_evidence, structure_only=True) if unreviewed else
-                  validate_package(package, args.native_evidence, test_only))
+    native_required = getattr(args, 'require_native_evidence', False)
+    require(sum(bool(mode) for mode in (native_required, test_only, getattr(args, 'allow_unreviewed', False))) <= 1,
+            'Choose one registration mode: normal unreviewed, native evidence, or test draft')
+    unreviewed = not (native_required or test_only)
+    validation = validate_package(package, args.native_evidence,
+                                  allow_unvalidated_test_draft=test_only,
+                                  structure_only=unreviewed,
+                                  require_native_evidence=native_required)
     require(validation['passed'], 'Package validation failed: ' + '; '.join(validation['errors']))
     if native_required:
         require(validation['deliveryReady'],
@@ -389,7 +385,7 @@ def run(args):
                 'Source package changed during installation')
         stage = 'before_registration'
         if native_required:
-            final_validation = validate_package(package, args.native_evidence)
+            final_validation = validate_package(package, args.native_evidence, require_native_evidence=True)
             require(final_validation['deliveryReady'] and
                     final_validation['nativeEvidence'].get('evidenceSha256') == validation['nativeEvidence']['evidenceSha256']
                     and digest(executable) == runtime['executableSha256'],
@@ -479,8 +475,10 @@ def main():
     parser.add_argument('--audit-dir', type=Path, help='New audit directory; must not already exist')
     parser.add_argument('--native-evidence', type=Path, help='Evidence JSON inside package; default native-evidence.json')
     modes = parser.add_mutually_exclusive_group()
+    modes.add_argument('--require-native-evidence', action='store_true',
+                       help='Check existing native evidence before registration; use only when review is explicitly requested')
     modes.add_argument('--allow-unreviewed', action='store_true',
-                       help='Register a normal draft without native evidence; record native review as not performed')
+                       help='Compatibility alias for the default registration without native evidence')
     modes.add_argument('--allow-unvalidated-test-draft', action='store_true',
                         help='Register only a visibly marked [TEST]/[CALIBRATION] draft; never delivery ready')
     args = parser.parse_args()

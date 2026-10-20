@@ -103,7 +103,7 @@ class MotionContractTests(unittest.TestCase):
         self.evidence['binding'].update(draftSha256=new_hash, manifestSha256=digest(self.root / 'manifest.json'))
         self.evidence['finalLayout']['samples'][0]['capture']['draftSha256'] = new_hash
         self.save_evidence()
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertTrue(report['deliveryReady'], report['errors'])
         self.assertEqual(report['motionValidation'], 'not_performed')
         self.assertTrue(report['motionInfo'])
@@ -126,7 +126,7 @@ class MotionContractTests(unittest.TestCase):
         self.evidence['binding']['draftSha256'] = digest(self.root / 'draft_content.json')
         self.evidence['finalLayout']['samples'][0]['capture']['draftSha256'] = self.evidence['binding']['draftSha256']
         self.save_evidence()
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertTrue(report['passed'], report['errors'])
         self.assertFalse(report['deliveryReady'])
         self.assertEqual(report['motionValidation'], 'requires_review')
@@ -184,7 +184,7 @@ class MotionContractTests(unittest.TestCase):
         self.evidence['binding']['draftSha256'] = new_hash
         self.evidence['finalLayout']['samples'][0]['capture']['draftSha256'] = new_hash
         self.save_evidence()
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertFalse(report['passed'])
         self.assertTrue(any('segmentNotHidden' in error for error in report['errors']), report['errors'])
 
@@ -256,7 +256,7 @@ class MotionContractTests(unittest.TestCase):
         self.evidence['binding'].update(draftSha256=new_hash, manifestSha256=digest(self.root / 'manifest.json'), fonts=[])
         self.evidence['finalLayout']['samples'][0]['capture']['draftSha256'] = new_hash
         self.save_evidence()
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertFalse(report['passed'])
         self.assertFalse(report['deliveryReady'])
         self.assertTrue(any('fonts.explicit' in error for error in report['errors']), report['errors'])
@@ -308,7 +308,7 @@ class MotionContractTests(unittest.TestCase):
         self.evidence['binding']['draftSha256'] = new_hash
         self.evidence['finalLayout']['samples'][0]['capture']['draftSha256'] = new_hash
         self.save_evidence()
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertFalse(report['passed'])
         self.assertTrue(any('segmentNotHidden' in error for error in report['errors']), report['errors'])
 

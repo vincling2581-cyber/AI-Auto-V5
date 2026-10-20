@@ -93,16 +93,17 @@ class NativeGateTests(unittest.TestCase):
         write_json(self.root / 'native-evidence.json', self.evidence)
 
     def assert_rejected(self, name):
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertFalse(report['deliveryReady'], report)
         self.assertFalse(report['passed'], report)
         self.assertTrue(any(name in error for error in report['errors']), report['errors'])
 
-    def args(self, install=False, test=False):
+    def args(self, install=False, test=False, native=False):
         user_data, draft_root = self.base / 'user_data', self.base / 'drafts'
         draft_root.mkdir(exist_ok=True)
         write_json(user_data / 'Projects/com.lveditor.draft/root_meta_info.json', {'all_draft_store': []})
         return argparse.Namespace(package=self.root, native_evidence=None, allow_unvalidated_test_draft=test,
+                                  require_native_evidence=native,
                                   user_data=user_data, draft_root=draft_root, jy_install=self.installation,
                                   name='Candidate', install=install, audit_dir=self.base / 'audit')
 
@@ -150,7 +151,7 @@ class NativeGateTests(unittest.TestCase):
             return result
         return copy_and_scan
 
-    def test_missing_evidence_blocks_default_delivery(self):
+    def test_missing_evidence_blocks_explicit_native_gate(self):
         (self.root / 'native-evidence.json').unlink()
         self.assert_rejected('native.evidence')
 
@@ -162,7 +163,7 @@ class NativeGateTests(unittest.TestCase):
         self.assertFalse(report['deliveryReady'])
 
     def test_complete_record_validates_evidence_without_claiming_playback(self):
-        report = validate_package(self.root)
+        report = validate_package(self.root, require_native_evidence=True)
         self.assertTrue(report['deliveryReady'], report['errors'])
         self.assertEqual(report['nativeValidation'], 'evidence_verified')
         self.assertEqual(report['nativeEvidence']['nativePlaybackValidation'], 'not_performed')
@@ -283,7 +284,7 @@ class NativeGateTests(unittest.TestCase):
         self.assert_rejected('visualReview')
 
     def test_missing_evidence_blocks_installer_before_runtime_or_writes(self):
-        args = self.args(install=True)
+        args = self.args(install=True, native=True)
         (self.root / 'native-evidence.json').unlink()
         with patch.object(install_draft, 'load_runtime') as loader:
             with self.assertRaisesRegex(ValueError, 'Package validation failed'):
@@ -293,7 +294,7 @@ class NativeGateTests(unittest.TestCase):
         self.assertFalse(args.audit_dir.exists())
 
     def test_runtime_drift_blocks_installer_before_writes(self):
-        args = self.args(install=True)
+        args = self.args(install=True, native=True)
         (self.installation / 'JianyingPro.exe').write_bytes(b'upgraded-runtime')
         with patch.object(install_draft, 'load_runtime') as loader:
             with self.assertRaisesRegex(ValueError, 'executable differs'):
@@ -314,7 +315,7 @@ class NativeGateTests(unittest.TestCase):
         self.assertFalse(audit['deliveryReady'])
 
     def test_formal_install_requires_and_records_evidence(self):
-        args = self.args(install=True)
+        args = self.args(install=True, native=True)
         with patch.object(install_draft, 'load_runtime', return_value=self.fake_runtime(args)):
             result = install_draft.run(args)
         self.assertEqual(result['status'], 'installed_with_native_evidence')
@@ -325,7 +326,7 @@ class NativeGateTests(unittest.TestCase):
     def test_saved_canvas_or_fps_drift_cannot_keep_delivery_approval(self):
         for key, changed in [('fps', 24), ('canvas_config', {'width': 1280, 'height': 720})]:
             with self.subTest(field=key):
-                args = self.args(install=True)
+                args = self.args(install=True, native=True)
                 args.name = 'Drift_' + key
                 args.audit_dir = self.base / ('audit_' + key)
                 api, codec, decode = self.fake_runtime(args)

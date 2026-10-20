@@ -42,7 +42,7 @@ def verify(root=STANDARD_ROOT, project_root=None):
     files = manifest["files"]
     paths = [item["path"] for item in files]
     require(len(paths) == len(set(paths)), "Duplicate manifest path")
-    for key in ("sop", "prompts", "prompts_data", "defaults", "rules", "rules_readable", "changes", "visual_references", "brand_assets", "verifier", "layer_contract", "episode_validator", "episode_contract_template"):
+    for key in ("sop", "prompts", "prompts_data", "defaults", "rules", "rules_readable", "changes", "visual_references", "brand_assets", "verifier", "layer_contract", "episode_validator", "episode_contract_template", "stage_runner"):
         require(manifest[key] in paths, "Untracked required file: " + key)
     for item in files:
         path = local_path(root, item["path"])
@@ -104,6 +104,7 @@ def verify(root=STANDARD_ROOT, project_root=None):
     require(template["is_template"] is True and template["standard_version"] == manifest["version"], "Episode contract template mismatch")
     require(defaults["layer_contract"]["schema"] == manifest["layer_contract"], "Defaults layer contract path mismatch")
     require(defaults["layer_contract"]["validator"] == manifest["episode_validator"], "Defaults validator path mismatch")
+    require(defaults["layer_contract"]["stage_runner"] == manifest["stage_runner"], "Defaults stage runner path mismatch")
 
     prompts = read_json(local_path(root, manifest["prompts_data"]))
     rules = read_json(local_path(root, manifest["rules"]))
@@ -133,7 +134,8 @@ def verify(root=STANDARD_ROOT, project_root=None):
 
     if project_root is not None:
         project_root = project_root.resolve()
-        entry = read_json(project_root / "CURRENT_PROJECT.json")["standard"]
+        project = read_json(project_root / "CURRENT_PROJECT.json")
+        entry = project["standard"]
         require(entry["version"] == manifest["version"], "Project version mismatch")
         require(entry["revision"] == manifest["revision"], "Project revision mismatch")
         require(local_path(project_root, entry["snapshot_root"]) == root, "Project standard root mismatch")
@@ -141,6 +143,9 @@ def verify(root=STANDARD_ROOT, project_root=None):
             require(local_path(project_root, entry[field]) == expected, "Project pointer mismatch: " + field)
         require(entry["entry_sha256"] == sha256(manifest_path), "Project manifest hash mismatch")
         require(entry["lock_sha256"] == sha256(lock), "Project lock hash mismatch")
+        require(local_path(project_root, project["adopted_method"]["stage_runner"]) == local_path(root, manifest["stage_runner"]), "Project stage runner path mismatch")
+        export_skill = local_path(project_root, project["export_tooling"]["skill"])
+        require(export_skill.is_file(), "Missing project export Skill")
     return {"version": manifest["version"], "status": "passed", "files": len(files), "rules": len(rules), "prompts": len(prompts), "scope": "standard_integrity_and_configuration_only", "video_review": "not_performed"}
 
 

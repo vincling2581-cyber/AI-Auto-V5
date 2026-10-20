@@ -44,6 +44,7 @@ class TextVisibilityTests(unittest.TestCase):
         self.assertEqual((s["startFrame"], s["endFrameExclusive"]), (1, 5))
         self.assertEqual([x["value"] for x in s["nativeAlphaSamples"]], [.3, 1, 0, 1])
         self.assertTrue(all(x["scaleX"] == 1 for x in s["transformSamples"]))
+        self.assertEqual(p["visibilityMethod"], "native_alpha")
 
     def test_source_scale_animation_is_preserved(self):
         p = plan_text_visibility(source(0, [1, 1, 1], [0, .5, 1]), fps=30, text_key="intentional")

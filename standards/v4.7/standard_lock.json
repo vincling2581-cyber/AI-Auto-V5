@@ -25,11 +25,11 @@
   "approval": {
     "mode": "explicit_user_confirmation",
     "date": "2026-10-20",
-    "authorized_quote": "可以，先这样确定动画层的表现，帮我把规则、sop、提示词这些影响视频制作的因素进行改写，改写完成后将最新的分支项目于主干项目进行合并。合并完成后进行检查，检查是否更新为最新版，同时检查最新版的主干项目，将多余、重复的各项进行确认，如果发现有前期文件造成的不生效、重复、冲突、多余的按我们现在最新的进行修改。",
-    "scope": "按已确认的静态连环画、单张≤2秒、两层无角标、同景叙事推进/跨情境连贯修订V5有效规则与流程，合并到本地主干并检查冲突；不表示demo或全片观感已获认可，不迁移旧集锁或改写已有成片。"
+    "authorized_quote": "那就补做一次 V5 主干的代码审查，检查重复实现、废弃代码、渲染和导出调用链冲突，以及旧硬编码覆盖新参数的问题。查实后按最新规则修复，保留旧集重渲所需代码，不动 V4、旧集配置和已有成片，检查通过后同步 GitHub，并告诉我发现和修改了什么。",
+    "scope": "维持已批准的 v4.7 视觉规则，修复当前卡片参数消费、通用导出默认调用与输出声明，收敛重复摘要函数，补上新集锁定的渲染/导出执行入口；保留旧集代码、锁、配置和成片，不安装全局 Skill。"
   },
   "history_policy": "existing_episode_snapshots_configuration_and_outputs_remain_unchanged",
-  "initialization": "Follow docs/SINGLE_EPISODE_WORKFLOW.md; copy this standard/lock and the state/production-contract templates to a new episode, derive effective defaults, design and adapt actual rendering code. No generic SRT-to-video generator is implied.",
+  "initialization": "Follow docs/SINGLE_EPISODE_WORKFLOW.md; copy this standard/lock and state/contract templates into a new episode, derive effective defaults and adapt the actual renderer. Run the episode-locked stage_runner before new-episode rendering or explicitly requested export. No generic SRT-to-video generator is implied.",
   "media_distribution": "Two local brand-reference images remain excluded from Git; restore using brand_assets.json and verify hashes before production. External reference films are not bundled or required by integrity checks.",
   "files": [
     {
@@ -46,7 +46,7 @@
     },
     {
       "path": "production_standard/defaults.json",
-      "sha256": "ec73ebf58b6e6d1c407f134d4aec5200c93d8abf3649fb343429cb45f1141a2f"
+      "sha256": "1f3ef7e805d2bdfc03570065b8805a99f5ec595fed384eb5b717d33a58c153f0"
     },
     {
       "path": "production_standard/episode_contract_template.json",
@@ -58,11 +58,11 @@
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
-      "sha256": "18c9846748a11334fd94423fb2f96a765777c279b9d570effc89e46334bb227a"
+      "sha256": "30bc5baccf24f839bfc9edc1ca096ce0c96b6f51e76050e8690ac421c20f24b1"
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/README.md",
-      "sha256": "007352710ed2c1769a5f8c019affaf2ddac391da8c7ed8b8362325dfd8e2fc57"
+      "sha256": "b4d94c9ac7045e70ece5e4c074d68a44020ed8c76fedf84fce65bcc765219e63"
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
@@ -78,7 +78,7 @@
     },
     {
       "path": "production_standard/prompts.json",
-      "sha256": "86831bf5eb14ca346ec1d4fc6ed167ae6a2b1cb8fba9d0ec70fe4bc7fa3c11ff"
+      "sha256": "cfbcb424981e51e531b8fccde4140be26af6140febd7dbc99eca45a1a421be2b"
     },
     {
       "path": "production_standard/rules.json",
@@ -90,7 +90,7 @@
     },
     {
       "path": "production_standard/verify_standard.py",
-      "sha256": "748b095c3287c18ab864f060fd340912b103a611a0c1e2bce65f21ff99946a14"
+      "sha256": "5c367c5485b75fb53b35f1a8f702613fcb78741121b744ddd303e2ef8374c47e"
     },
     {
       "path": "production_standard/visual_references.json",
@@ -102,19 +102,24 @@
     },
     {
       "path": "production_standard/变更说明_v4.7.md",
-      "sha256": "ea8fd1a31fa520364c2114884deba377fecf875b6068426475e37fdacd9e0ec2"
+      "sha256": "0b9f60713620b135c898fc7e9526d93682b4c4f96c6007cac4c1d462ef5250f3"
     },
     {
       "path": "production_standard/提示词_v4.7.md",
-      "sha256": "bc4ccf1adec3344e38de692503e32ad6d791d79c797b11642f9faf7222fea36e"
+      "sha256": "2fe9bf150adfe38a690e6e663a70d0acb20948576f56f14ab35aa5047478bf93"
     },
     {
       "path": "Xilo风格视频生产线SOP_v4.7.md",
-      "sha256": "2c7a7d22fb04686b620c3259b3e6e45f9677c9c008a0aa82fe8855e28b03a7f8"
+      "sha256": "71bf1bfc79fd1b268f6dc8c86581a60b995aa8440e5966aeb6bcf1456a942d7c"
+    },
+    {
+      "path": "production_standard/run_stage.py",
+      "sha256": "c1fd665647ab2758a9148085725c7fc767ff4f8ac4cf64f45ba4cd104ce9196d"
     }
   ],
   "layer_contract": "production_standard/layer_contract.json",
   "episode_validator": "production_standard/validate_episode.py",
   "episode_contract_template": "production_standard/episode_contract_template.json",
-  "revision": "2026-10-20-scene-continuity"
+  "revision": "2026-10-20-code-audit",
+  "stage_runner": "production_standard/run_stage.py"
 }

@@ -72,7 +72,8 @@ def plan_text_visibility(samples: Sequence[Mapping], *, fps: float,
             else:
                 spans.append([f, f + 1])
     result = {"textKey": text_key, "fps": fps, "opacityActiveSpans": spans,
-              "visibilityMethod": "segment_ranges", "nativeAlphaEnabled": alpha_keyframes_verified,
+              "visibilityMethod": "native_alpha" if alpha_keyframes_verified else "segment_ranges",
+              "nativeAlphaEnabled": alpha_keyframes_verified,
               "segments": [], "requirements": [], "status": "ready"}
     if not spans:
         result["status"] = "not_visible"
