@@ -1,0 +1,1313 @@
+{
+  "revision": "reverse_skill_v1",
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "total_frames": 2496,
+  "cards": [
+    {
+      "id": "A01a",
+      "group": "A01",
+      "type": "animation",
+      "title": "主角坐在工作台左侧双手扶头，望着右侧封闭软件黑盒，明显困惑",
+      "start_frame": 0,
+      "end_frame_exclusive": 62,
+      "frame_count": 62,
+      "art": "illustrations/A01a.png",
+      "overview_frames": [
+        0,
+        31,
+        61
+      ],
+      "process_events": [],
+      "action": "主角坐在工作台左侧双手扶头，望着右侧封闭软件黑盒，明显困惑",
+      "scene": "夜间逆向工作台，主角、封闭软件黑盒和小文件卡，桌面自然铺到下沿",
+      "source_text": "干逆向的兄弟最近可能有点睡不着因为有人把一整支逆向"
+    },
+    {
+      "id": "A01b",
+      "group": "A01",
+      "type": "animation",
+      "title": "主角直起身体，两手从桌上举起一个墨绿小卡盒，几张小专业卡在其上方汇聚，眼睛看卡盒",
+      "start_frame": 62,
+      "end_frame_exclusive": 141,
+      "frame_count": 79,
+      "art": "illustrations/A01b.png",
+      "overview_frames": [
+        0,
+        39,
+        78
+      ],
+      "process_events": [],
+      "action": "主角直起身体，两手从桌上举起一个墨绿小卡盒，几张小专业卡在其上方汇聚，眼睛看卡盒",
+      "scene": "夜间逆向工作台，主角、封闭软件黑盒和小文件卡，桌面自然铺到下沿",
+      "source_text": "因为有人把一整支逆向团队塞进了一个AI skill"
+    },
+    {
+      "id": "A01c",
+      "group": "A01",
+      "type": "animation",
+      "title": "主角站起侧身，一手稳住卡盒，另一手向前伸掌展示，姿态明确由焦虑转为介绍",
+      "start_frame": 141,
+      "end_frame_exclusive": 225,
+      "frame_count": 84,
+      "art": "illustrations/A01c.png",
+      "overview_frames": [
+        0,
+        42,
+        83
+      ],
+      "process_events": [],
+      "action": "主角站起侧身，一手稳住卡盒，另一手向前伸掌展示，姿态明确由焦虑转为介绍",
+      "scene": "夜间逆向工作台，主角、封闭软件黑盒和小文件卡，桌面自然铺到下沿",
+      "source_text": "团队塞进了一个AI skill看完你就知道为什么安全圈都在盯着它"
+    },
+    {
+      "id": "C01",
+      "type": "card",
+      "start_frame": 225,
+      "end_frame_exclusive": 441,
+      "frame_count": 216,
+      "title": "把软件黑盒，看成可读结构",
+      "kicker": "01 / 先理解逆向",
+      "footer": "静态分析示意 · 逆向也包括动态调试，并非总是不改字节",
+      "viewer_question": "拿到软件后，逆向分析让哪些东西可见？",
+      "core_claim": "拿到软件后，逆向分析让哪些东西可见？",
+      "relation_type": "外部行为与内部结构映射",
+      "nodes": [
+        "software",
+        "structure",
+        "logic"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "把软件黑盒，看成可读结构",
+      "information_gain": "外部行为与内部结构映射",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 2.6,
+      "process_events": [
+        {
+          "id": "C01_E1",
+          "target_ids": [
+            "software",
+            "structure"
+          ],
+          "meaning": "扫描软件对象，内部模块通过遮罩逐步显露",
+          "start_frame": 54,
+          "end_frame_exclusive": 96,
+          "check_frames": [
+            62,
+            75,
+            88
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "software",
+            "structure",
+            "logic"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C01_E2",
+          "target_ids": [
+            "structure",
+            "logic"
+          ],
+          "meaning": "同一模块沿连线映射为可读逻辑",
+          "start_frame": 105,
+          "end_frame_exclusive": 138,
+          "check_frames": [
+            112,
+            122,
+            131
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "software",
+            "structure",
+            "logic"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        108,
+        215
+      ],
+      "source_text": "先说人话逆向工程是什么软件在你手里就是个黑盒子逆向就是不动它一个字节把它从里到外看清楚"
+    },
+    {
+      "id": "C02",
+      "type": "card",
+      "start_frame": 441,
+      "end_frame_exclusive": 610,
+      "frame_count": 169,
+      "title": "给软件做一张“CT”",
+      "kicker": "02 / 从结构到线索",
+      "footer": "可视化示意 · 风险线索需要进一步验证",
+      "viewer_question": "结构、调用和风险如何对应回同一个软件？",
+      "core_claim": "结构、调用和风险如何对应回同一个软件？",
+      "relation_type": "同一软件的多个分析视角",
+      "nodes": [
+        "module",
+        "call",
+        "risk",
+        "software"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "给软件做一张“CT”",
+      "information_gain": "同一软件的多个分析视角",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 2.18,
+      "process_events": [
+        {
+          "id": "C02_E1",
+          "target_ids": [
+            "software",
+            "module"
+          ],
+          "meaning": "结构切片从同一软件中展开",
+          "start_frame": 3,
+          "end_frame_exclusive": 36,
+          "check_frames": [
+            10,
+            20,
+            29
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "module",
+            "call",
+            "risk",
+            "software"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C02_E2",
+          "target_ids": [
+            "module",
+            "call"
+          ],
+          "meaning": "调用关系从结构节点连接建立",
+          "start_frame": 38,
+          "end_frame_exclusive": 68,
+          "check_frames": [
+            44,
+            53,
+            62
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "module",
+            "call",
+            "risk",
+            "software"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C02_E3",
+          "target_ids": [
+            "module",
+            "risk"
+          ],
+          "meaning": "风险观察框定位具体模块而非给整软件盖漏洞章",
+          "start_frame": 72,
+          "end_frame_exclusive": 104,
+          "check_frames": [
+            78,
+            88,
+            98
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "module",
+            "call",
+            "risk",
+            "software"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        84,
+        168
+      ],
+      "source_text": "哪个模块在干什么哪里藏着漏洞行话叫给软件做CT搞安全的人靠这个吃饭以前干这个"
+    },
+    {
+      "id": "A02a",
+      "group": "A02",
+      "type": "animation",
+      "title": "站在高高手册堆前，双手抱住厚手册向后仰，表现入门负担",
+      "start_frame": 610,
+      "end_frame_exclusive": 688,
+      "frame_count": 78,
+      "art": "illustrations/A02a.png",
+      "overview_frames": [
+        0,
+        39,
+        77
+      ],
+      "process_events": [],
+      "action": "站在高高手册堆前，双手抱住厚手册向后仰，表现入门负担",
+      "scene": "同角色在明亮纸感工作室，成堆工具手册与安装包文件，桌面延伸下沿",
+      "source_text": "以前干这个门槛高到劝退一整套工具链"
+    },
+    {
+      "id": "A02b",
+      "group": "A02",
+      "type": "animation",
+      "title": "坐下前倾，打开厚手册一手翻页另一手握笔，对照桌上的黑色软件盒",
+      "start_frame": 688,
+      "end_frame_exclusive": 766,
+      "frame_count": 78,
+      "art": "illustrations/A02b.png",
+      "overview_frames": [
+        0,
+        39,
+        77
+      ],
+      "process_events": [],
+      "action": "坐下前倾，打开厚手册一手翻页另一手握笔，对照桌上的黑色软件盒",
+      "scene": "同角色在明亮纸感工作室，成堆工具手册与安装包文件，桌面延伸下沿",
+      "source_text": "一整套工具链光IDA就得学小半年一个安装包啃几个小时起步"
+    },
+    {
+      "id": "A02c",
+      "group": "A02",
+      "type": "animation",
+      "title": "主角靠回椅背一手揉额头，另一手垂下拿笔，桌面手册摊开，明显疲倦",
+      "start_frame": 766,
+      "end_frame_exclusive": 844,
+      "frame_count": 78,
+      "art": "illustrations/A02c.png",
+      "overview_frames": [
+        0,
+        39,
+        77
+      ],
+      "process_events": [],
+      "action": "主角靠回椅背一手揉额头，另一手垂下拿笔，桌面手册摊开，明显疲倦",
+      "scene": "同角色在明亮纸感工作室，成堆工具手册与安装包文件，桌面延伸下沿",
+      "source_text": "一个安装包啃几个小时起步没几年功力摸不到门现在有人把这套流程做成了AI skill"
+    },
+    {
+      "id": "C03",
+      "type": "card",
+      "start_frame": 844,
+      "end_frame_exclusive": 1090,
+      "frame_count": 246,
+      "title": "一句任务，先选路线再分析",
+      "kicker": "03 / reverse-skill",
+      "footer": "工作流示意 · 实际执行依赖模型、已安装工具与目标权限",
+      "viewer_question": "不同样本如何选择合适工具，并汇总报告？",
+      "core_claim": "不同样本如何选择合适工具，并汇总报告？",
+      "relation_type": "条件选择后顺序累积",
+      "nodes": [
+        "APK",
+        "EXE",
+        "router",
+        "tools",
+        "evidence",
+        "report"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "一句任务，先选路线再分析",
+      "information_gain": "条件选择后顺序累积",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 2.1,
+      "process_events": [
+        {
+          "id": "C03_E1",
+          "target_ids": [
+            "APK",
+            "router"
+          ],
+          "meaning": "任务进入调度器",
+          "start_frame": 6,
+          "end_frame_exclusive": 39,
+          "check_frames": [
+            13,
+            22,
+            32
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "APK",
+            "EXE",
+            "router",
+            "tools",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C03_E2",
+          "target_ids": [
+            "router",
+            "tools"
+          ],
+          "meaning": "识别APK后只接通Android分析路线",
+          "start_frame": 38,
+          "end_frame_exclusive": 74,
+          "check_frames": [
+            45,
+            56,
+            67
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "APK",
+            "EXE",
+            "router",
+            "tools",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C03_E3",
+          "target_ids": [
+            "tools",
+            "evidence"
+          ],
+          "meaning": "选定工具输出证据到统一证据栏",
+          "start_frame": 81,
+          "end_frame_exclusive": 120,
+          "check_frames": [
+            89,
+            100,
+            112
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "APK",
+            "EXE",
+            "router",
+            "tools",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C03_E4",
+          "target_ids": [
+            "evidence",
+            "report"
+          ],
+          "meaning": "证据到达后写入报告字段",
+          "start_frame": 144,
+          "end_frame_exclusive": 183,
+          "check_frames": [
+            152,
+            164,
+            175
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "APK",
+            "EXE",
+            "router",
+            "tools",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        123,
+        245
+      ],
+      "source_text": "现在有人把这套流程做成了AI skill一句话丢过去它自动挑工具自动分析apk exe安装包连逆向报告都替你写好几小时的活缩到几分钟"
+    },
+    {
+      "id": "C04",
+      "type": "card",
+      "start_frame": 1090,
+      "end_frame_exclusive": 1197,
+      "frame_count": 107,
+      "title": "分析结果，连同报告一起交付",
+      "kicker": "04 / 结果闭环",
+      "footer": "“几小时到几分钟”未获实测佐证 · 耗时随样本与环境变化",
+      "viewer_question": "分析成果包含哪些可复核的输出？",
+      "core_claim": "分析成果包含哪些可复核的输出？",
+      "relation_type": "一份分析结果分发为图示和文字报告",
+      "nodes": [
+        "analysis",
+        "structure",
+        "report"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        26,
+        27,
+        28
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "分析结果，连同报告一起交付",
+      "information_gain": "一份分析结果分发为图示和文字报告",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 2.3,
+      "process_events": [
+        {
+          "id": "C04_E1",
+          "target_ids": [
+            "analysis",
+            "structure",
+            "report"
+          ],
+          "meaning": "同一分析结果分发为结构图和报告两份输出",
+          "start_frame": 4,
+          "end_frame_exclusive": 38,
+          "check_frames": [
+            11,
+            21,
+            31
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "analysis",
+            "structure",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        54,
+        106
+      ],
+      "source_text": "几小时的活缩到几分钟CT机一扫片子报告全出来"
+    },
+    {
+      "id": "C05",
+      "type": "card",
+      "start_frame": 1197,
+      "end_frame_exclusive": 1359,
+      "frame_count": 162,
+      "title": "不是一个按钮，是一组专业能力",
+      "kicker": "05 / 调度入口",
+      "footer": "来源：zhaoxuya520/reverse-skill · GitHub 固定版本记录随工程附上",
+      "viewer_question": "工具与skill集合是什么关系？",
+      "core_claim": "工具与skill集合是什么关系？",
+      "relation_type": "核心调度器与技能集合层级",
+      "nodes": [
+        "repository",
+        "router",
+        "modules"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        29,
+        30,
+        31
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "不是一个按钮，是一组专业能力",
+      "information_gain": "核心调度器与技能集合层级",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 2.3,
+      "process_events": [
+        {
+          "id": "C05_E1",
+          "target_ids": [
+            "repository",
+            "router"
+          ],
+          "meaning": "从仓库入口引出调度核心",
+          "start_frame": 6,
+          "end_frame_exclusive": 44,
+          "check_frames": [
+            14,
+            25,
+            36
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "repository",
+            "router",
+            "modules"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C05_E2",
+          "target_ids": [
+            "router",
+            "modules"
+          ],
+          "meaning": "调度核心展开数十个专业技能代表项",
+          "start_frame": 51,
+          "end_frame_exclusive": 93,
+          "check_frames": [
+            59,
+            72,
+            85
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "repository",
+            "router",
+            "modules"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        81,
+        161
+      ],
+      "source_text": "但真正的重点在后半段它不是一个工具是几十个专业skill组成的会诊天团"
+    },
+    {
+      "id": "C06",
+      "type": "card",
+      "start_frame": 1359,
+      "end_frame_exclusive": 1556,
+      "frame_count": 197,
+      "title": "分工分析，汇总到同一结论",
+      "kicker": "06 / 专业模块协作",
+      "footer": "协作关系示意 · 不表示所有模块始终同时运行",
+      "viewer_question": "各专业环节如何分工并留下可复核结论？",
+      "core_claim": "各专业环节如何分工并留下可复核结论？",
+      "relation_type": "并列分析汇聚而非虚假的串行依赖",
+      "nodes": [
+        "structure",
+        "risk",
+        "evidence",
+        "report"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        32,
+        33,
+        34,
+        35
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "分工分析，汇总到同一结论",
+      "information_gain": "并列分析汇聚而非虚假的串行依赖",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 1.46,
+      "process_events": [
+        {
+          "id": "C06_E1",
+          "target_ids": [
+            "structure",
+            "report"
+          ],
+          "meaning": "结构分析结果进入统一报告并保留来源",
+          "start_frame": 42,
+          "end_frame_exclusive": 72,
+          "check_frames": [
+            48,
+            57,
+            66
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "structure",
+            "risk",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C06_E2",
+          "target_ids": [
+            "risk",
+            "report"
+          ],
+          "meaning": "风险排查结果独立接入同一报告",
+          "start_frame": 84,
+          "end_frame_exclusive": 114,
+          "check_frames": [
+            90,
+            99,
+            108
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "structure",
+            "risk",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C06_E3",
+          "target_ids": [
+            "evidence",
+            "report"
+          ],
+          "meaning": "证据核对结果独立汇总",
+          "start_frame": 123,
+          "end_frame_exclusive": 153,
+          "check_frames": [
+            129,
+            138,
+            147
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "structure",
+            "risk",
+            "evidence",
+            "report"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        98,
+        196
+      ],
+      "source_text": "每个模块只干自己最擅长的那一段谁擅长看结构谁上谁擅长挖漏洞谁上最后统一汇总出结论以前是一个医生从头看到尾"
+    },
+    {
+      "id": "A03a",
+      "group": "A03",
+      "type": "animation",
+      "title": "主角独自俯身用放大镜查看黑盒，另一手压住记录页",
+      "start_frame": 1556,
+      "end_frame_exclusive": 1613,
+      "frame_count": 57,
+      "art": "illustrations/A03a.png",
+      "overview_frames": [
+        0,
+        28,
+        56
+      ],
+      "process_events": [],
+      "action": "主角独自俯身用放大镜查看黑盒，另一手压住记录页",
+      "scene": "医院会诊类比，主角保持卫衣耳机身份，在浅色会诊工作台前，软件黑盒为被分析对象，桌面铺到下沿",
+      "source_text": "以前是一个医生从头看到尾现在是整栋医院排队会诊"
+    },
+    {
+      "id": "A03b",
+      "group": "A03",
+      "type": "animation",
+      "title": "主角直身伸手接收右侧两位棕发白大褂专家递来的不同报告，专家所有睁眼均有棕色虹膜瞳孔，肢体归属清楚",
+      "start_frame": 1613,
+      "end_frame_exclusive": 1667,
+      "frame_count": 54,
+      "art": "illustrations/A03b.png",
+      "overview_frames": [
+        0,
+        27,
+        53
+      ],
+      "process_events": [],
+      "action": "主角直身伸手接收右侧两位棕发白大褂专家递来的不同报告，专家所有睁眼均有棕色虹膜瞳孔，肢体归属清楚",
+      "scene": "医院会诊类比，主角保持卫衣耳机身份，在浅色会诊工作台前，软件黑盒为被分析对象，桌面铺到下沿",
+      "source_text": "现在是整栋医院排队会诊不管是做合法的软件逆向研究"
+    },
+    {
+      "id": "C07",
+      "type": "card",
+      "start_frame": 1667,
+      "end_frame_exclusive": 1844,
+      "frame_count": 177,
+      "title": "同一套能力，落到不同任务",
+      "kicker": "07 / 使用场景",
+      "footer": "仅用于合法研究、CTF 或明确授权的测试",
+      "viewer_question": "这些能力适用于哪些任务，前提是什么？",
+      "core_claim": "这些能力适用于哪些任务，前提是什么？",
+      "relation_type": "授权前提之下四种并列用途",
+      "nodes": [
+        "authorized",
+        "research",
+        "audit",
+        "ctf",
+        "pentest"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        38,
+        39,
+        40,
+        41
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "同一套能力，落到不同任务",
+      "information_gain": "授权前提之下四种并列用途",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 1.2,
+      "process_events": [
+        {
+          "id": "C07_E1",
+          "target_ids": [
+            "authorized",
+            "research"
+          ],
+          "meaning": "授权前提显露并连接合法研究",
+          "start_frame": 6,
+          "end_frame_exclusive": 36,
+          "check_frames": [
+            12,
+            21,
+            30
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "authorized",
+            "research",
+            "audit",
+            "ctf",
+            "pentest"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C07_E2",
+          "target_ids": [
+            "authorized",
+            "audit"
+          ],
+          "meaning": "漏洞排查作为独立用途建立",
+          "start_frame": 36,
+          "end_frame_exclusive": 66,
+          "check_frames": [
+            42,
+            51,
+            60
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "authorized",
+            "research",
+            "audit",
+            "ctf",
+            "pentest"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C07_E3",
+          "target_ids": [
+            "authorized",
+            "ctf"
+          ],
+          "meaning": "CTF赛事用途建立",
+          "start_frame": 72,
+          "end_frame_exclusive": 102,
+          "check_frames": [
+            78,
+            87,
+            96
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "authorized",
+            "research",
+            "audit",
+            "ctf",
+            "pentest"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C07_E4",
+          "target_ids": [
+            "authorized",
+            "pentest"
+          ],
+          "meaning": "授权测试用途建立",
+          "start_frame": 111,
+          "end_frame_exclusive": 141,
+          "check_frames": [
+            117,
+            126,
+            135
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "authorized",
+            "research",
+            "audit",
+            "ctf",
+            "pentest"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        88,
+        176
+      ],
+      "source_text": "不管是做合法的软件逆向研究安全漏洞排查还是打CTF赛事做授权渗透测试这套系统都能大幅分担基础工作量"
+    },
+    {
+      "id": "A04a",
+      "group": "A04",
+      "type": "animation",
+      "title": "主角侧身双手把基础报告堆推入左侧收纳托盘，表现交出重复劳动",
+      "start_frame": 1844,
+      "end_frame_exclusive": 1910,
+      "frame_count": 66,
+      "art": "illustrations/A04a.png",
+      "overview_frames": [
+        0,
+        33,
+        65
+      ],
+      "process_events": [],
+      "action": "主角侧身双手把基础报告堆推入左侧收纳托盘，表现交出重复劳动",
+      "scene": "阳光工作台，主角保持身份，左侧基础报告纸堆、右侧一张关键分析图，台面铺到下沿",
+      "source_text": "这套系统都能大幅分担基础工作量把精力留给核心的分析与判断"
+    },
+    {
+      "id": "A04b",
+      "group": "A04",
+      "type": "animation",
+      "title": "主角转向右侧，身体前倾一手拿放大镜一手指住关键分析图，注意力集中到判断",
+      "start_frame": 1910,
+      "end_frame_exclusive": 1970,
+      "frame_count": 60,
+      "art": "illustrations/A04b.png",
+      "overview_frames": [
+        0,
+        30,
+        59
+      ],
+      "process_events": [],
+      "action": "主角转向右侧，身体前倾一手拿放大镜一手指住关键分析图，注意力集中到判断",
+      "scene": "阳光工作台，主角保持身份，左侧基础报告纸堆、右侧一张关键分析图，台面铺到下沿",
+      "source_text": "把精力留给核心的分析与判断做安全逆向漏洞研究的朋友"
+    },
+    {
+      "id": "C08",
+      "type": "card",
+      "start_frame": 1970,
+      "end_frame_exclusive": 2156,
+      "frame_count": 186,
+      "title": "从仓库开始，先看适用范围",
+      "kicker": "08 / GitHub 素材",
+      "footer": "仓库页面素材 · 能力说明以对应版本为准",
+      "viewer_question": "在哪里了解项目，以及先看什么？",
+      "core_claim": "在哪里了解项目，以及先看什么？",
+      "relation_type": "仓库证据到入口信息和适用边界映射",
+      "nodes": [
+        "repository",
+        "readme",
+        "skills",
+        "requirements"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        44,
+        45,
+        46
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "从仓库开始，先看适用范围",
+      "information_gain": "仓库证据到入口信息和适用边界映射",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 3.0,
+      "process_events": [
+        {
+          "id": "C08_E1",
+          "target_ids": [
+            "repository",
+            "readme"
+          ],
+          "meaning": "仓库核心名称与入口聚焦",
+          "start_frame": 9,
+          "end_frame_exclusive": 45,
+          "check_frames": [
+            16,
+            27,
+            38
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "repository",
+            "readme",
+            "skills",
+            "requirements"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C08_E2",
+          "target_ids": [
+            "repository",
+            "skills",
+            "requirements"
+          ],
+          "meaning": "技能目录和依赖要求从同一入口展开",
+          "start_frame": 60,
+          "end_frame_exclusive": 96,
+          "check_frames": [
+            67,
+            78,
+            89
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "repository",
+            "readme",
+            "skills",
+            "requirements"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        93,
+        185
+      ],
+      "source_text": "做安全逆向漏洞研究的朋友建议先去Git Hub点个star这种AI辅助逆向的效率只会越来越高这种打法可能就是AI"
+    },
+    {
+      "id": "C09",
+      "type": "card",
+      "start_frame": 2156,
+      "end_frame_exclusive": 2297,
+      "frame_count": 141,
+      "title": "下一步：把能力组织成工作流",
+      "kicker": "09 / 核心观点",
+      "footer": "观点与流程示意 · 关键结论仍需人的分析判断",
+      "viewer_question": "调度带来的变化是什么？",
+      "core_claim": "调度带来的变化是什么？",
+      "relation_type": "任务经由调度形成输出而非只堆砌知识",
+      "nodes": [
+        "task",
+        "skills",
+        "routing",
+        "result",
+        "human"
+      ],
+      "edges": "see process_events and source scene geometry",
+      "source_span": [
+        47,
+        48,
+        49,
+        50
+      ],
+      "visual_encoding": "spatial roles, continuous retained input, only selected route executes, accumulated report stays visible",
+      "screen_copy": "下一步：把能力组织成工作流",
+      "information_gain": "任务经由调度形成输出而非只堆砌知识",
+      "claim_basis": "配音语义＋02_research官方来源；教学流程为示意，非执行实测",
+      "states": [
+        "initial",
+        "process",
+        "readable_result"
+      ],
+      "reading_hold": 1.35,
+      "process_events": [
+        {
+          "id": "C09_E1",
+          "target_ids": [
+            "task",
+            "routing"
+          ],
+          "meaning": "任务进入调度中心",
+          "start_frame": 6,
+          "end_frame_exclusive": 36,
+          "check_frames": [
+            12,
+            21,
+            30
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "task",
+            "skills",
+            "routing",
+            "result",
+            "human"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C09_E2",
+          "target_ids": [
+            "routing",
+            "skills",
+            "result"
+          ],
+          "meaning": "调用合适技能并回收结果",
+          "start_frame": 38,
+          "end_frame_exclusive": 74,
+          "check_frames": [
+            45,
+            56,
+            67
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "task",
+            "skills",
+            "routing",
+            "result",
+            "human"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        },
+        {
+          "id": "C09_E3",
+          "target_ids": [
+            "result",
+            "human"
+          ],
+          "meaning": "将结果交给人的最终判断",
+          "start_frame": 76,
+          "end_frame_exclusive": 100,
+          "check_frames": [
+            81,
+            88,
+            95
+          ],
+          "from": "source_or_hidden",
+          "to": "target_received_or_revealed",
+          "method": "explicit SVG path/mask/geometry; deterministic frame time",
+          "easing": "cubic_out",
+          "preserve": [
+            "task",
+            "skills",
+            "routing",
+            "result",
+            "human"
+          ],
+          "arrival_rule": "target result appears only after transfer reaches endpoint",
+          "occlusion": "diagram plane; reveal mask clips interior only"
+        }
+      ],
+      "overview_frames": [
+        0,
+        71,
+        140
+      ],
+      "source_text": "这种打法可能就是AI应用的下一个方向不拼谁懂得多而是拼谁会调度你觉得这是逆向工程师的末日"
+    },
+    {
+      "id": "A05a",
+      "group": "A05",
+      "type": "animation",
+      "title": "主角摊开双手，看着左右两块无文字牌，开放提问表情",
+      "start_frame": 2297,
+      "end_frame_exclusive": 2353,
+      "frame_count": 56,
+      "art": "illustrations/A05a.png",
+      "overview_frames": [
+        0,
+        28,
+        55
+      ],
+      "process_events": [],
+      "action": "主角摊开双手，看着左右两块无文字牌，开放提问表情",
+      "scene": "温暖工作室收尾，主角站在工作台后，两块无文字牌与绿色小工具盒，桌面自然铺到下沿",
+      "source_text": "你觉得这是逆向工程师的末日还是他们的新外挂"
+    },
+    {
+      "id": "A05b",
+      "group": "A05",
+      "type": "animation",
+      "title": "主角双手拿起绿色小工具盒到胸前，笑着向观众展示，外挂类比",
+      "start_frame": 2353,
+      "end_frame_exclusive": 2428,
+      "frame_count": 75,
+      "art": "illustrations/A05b.png",
+      "overview_frames": [
+        0,
+        37,
+        74
+      ],
+      "process_events": [],
+      "action": "主角双手拿起绿色小工具盒到胸前，笑着向观众展示，外挂类比",
+      "scene": "温暖工作室收尾，主角站在工作台后，两块无文字牌与绿色小工具盒，桌面自然铺到下沿",
+      "source_text": "还是他们的新外挂评论区聊聊关注我带你了解更多AI新玩法"
+    },
+    {
+      "id": "A05c",
+      "group": "A05",
+      "type": "animation",
+      "title": "放下工具盒到桌上，一手放桌沿另一手大幅抬起挥手，告别观众",
+      "start_frame": 2428,
+      "end_frame_exclusive": 2496,
+      "frame_count": 68,
+      "art": "illustrations/A05c.png",
+      "overview_frames": [
+        0,
+        34,
+        67
+      ],
+      "process_events": [],
+      "action": "放下工具盒到桌上，一手放桌沿另一手大幅抬起挥手，告别观众",
+      "scene": "温暖工作室收尾，主角站在工作台后，两块无文字牌与绿色小工具盒，桌面自然铺到下沿",
+      "source_text": "关注我带你了解更多AI新玩法"
+    }
+  ]
+}

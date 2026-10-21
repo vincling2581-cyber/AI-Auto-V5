@@ -1,0 +1,21 @@
+{
+  "episode_id": "ECHO_逆向工程Skill_20261011",
+  "title": "一支逆向团队，装进 AI Skill",
+  "duration_seconds": 83.2,
+  "total_frames": 2496,
+  "fps": 30,
+  "width": 1920,
+  "height": 1080,
+  "voice_preserved": true,
+  "caption_mode": "external_srt_only",
+  "sfx": false,
+  "bgm": "user_adds_in_post",
+  "reference_url": "https://v.douyin.com/wkoZ1ZUUPjM/",
+  "delivery": [
+    "master",
+    "rerenderable_source_project",
+    "srt",
+    "assets",
+    "qc_and_handoff"
+  ]
+}

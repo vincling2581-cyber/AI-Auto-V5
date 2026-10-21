@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>ECHO · AI逆向Skill</title>
+<style>html,body{margin:0;width:1920px;height:1080px;overflow:hidden;background:#07110C}svg{display:block}</style>
+<div id="root"></div><script src="card_kit.js"></script><script src="common.js"></script><script src="scenes_early.js"></script><script src="scenes_late.js"></script>
+<script>
+(async()=>{const [cfg,data]=await Promise.all(['../../00_brief/effective_defaults.json','../../03_storyboard/cards.json'].map(u=>fetch(u).then(r=>r.json())));window.CFG=cfg;window.DATA=data;H.k=createReferenceCardKit(cfg);window.currentShot=data.cards.find(x=>x.id===new URLSearchParams(location.search).get('card'))||data.cards[0];
+window.assetErrors=[];window.renderFrame=f=>{H.k.beginFrame();document.querySelector('#root').innerHTML=H.frame(currentShot,f/data.fps)};renderFrame(0);
+await document.fonts.ready;
+const urls=[...new Set([...document.querySelectorAll('image')].map(x=>x.getAttribute('href')))];await Promise.all(urls.map(src=>new Promise(res=>{const im=new Image();im.onload=res;im.onerror=()=>{assetErrors.push(src);res()};im.src=src;})));
+window.cardMotionReady=true;})();
+</script>
