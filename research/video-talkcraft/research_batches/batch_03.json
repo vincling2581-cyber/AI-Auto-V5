@@ -1,0 +1,1452 @@
+[
+  {
+    "id": "bed-echo-blur",
+    "relations": [
+      "单条竖屏证据与同源环境底床",
+      "前景内容与来源说明分区"
+    ],
+    "select_when": "真实竖屏视频需置入横屏证据段，且标题、来源要与完整原比例画面共存时。",
+    "avoid_when": "要逐字阅读密集长截图，或要给静态插画补运动时。",
+    "sequence": [
+      "同源画面压暗模糊铺满底床",
+      "清晰白边竖卡在一侧落位",
+      "另一侧标题和来源逐行进入",
+      "前景与底床异速保持后同收"
+    ],
+    "narration_anchor": "讲到“现场画面”时交代来源，再让证据承担说明。",
+    "pitfalls": [
+      "TSX src 只接视频，静图要改 Img，HTML 是占位漂移而非真实播放证明。",
+      "同源两层同速会形成重影；底床只降透明度会损害字的对比。",
+      "TSX 标称 7.7 秒镜头但 meta 为 243 帧，含额外收尾。"
+    ],
+    "v5_role": "evidence_presentation",
+    "v5_adaptation": "只作真实证据的横竖画幅处理候选，现场确认来源和清晰度；不把异速缓推用于 V5 插画，不强制信息卡持续运动。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/bed-echo-blur.tsx",
+        "needle": "muted playbackRate={rate}",
+        "finding": "同一视频组件可按 rate 设置播放速率，前景和底床不必同步。"
+      },
+      {
+        "file": "upstream/demos/bed-echo-blur/index.html",
+        "needle": "CONFIG.driftSpeed * CONFIG.echoSpeed * CONFIG.end",
+        "finding": "HTML 用较慢的底床占位漂移演示异速关系，未证明真素材表现。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "callout-line-label",
+    "relations": [
+      "截图具体部位到名称解释",
+      "多个目标的先后指认"
+    ],
+    "select_when": "旁白明确点到截图、产品图或地图的某个部位，且附近有标签留白时。",
+    "avoid_when": "标签只是无定位的观点，或多个长标签会遮住证据本体时。",
+    "sequence": [
+      "圆点在目标位置弹亮",
+      "折线从圆点沿拐点向外描出",
+      "线端标签展开并补入文字",
+      "下一目标错峰指认，阅读后反向收回"
+    ],
+    "narration_anchor": "“这里”“这个部位”触发圆点，名称在标签揭示时说出。",
+    "pitfalls": [
+      "标签先出会让答案抢在视线引导之前。",
+      "45 度与水平折线要据真图重新布点，不能原样套手机占位坐标。",
+      "标签只淡入会失去从线端展开的方向关系。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "保留点到线再到字的指认过程；替换真实对象并绑定坐标，给信息卡足够阅读保持，底部字幕另留空间，不采纳上游固定颜色。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/callout-line-label.tsx",
+        "needle": "const tLine = t0 + CONFIG.dotIn;",
+        "finding": "线条起点由圆点时长推导，支持先定位再引线。"
+      },
+      {
+        "file": "upstream/demos/callout-line-label/index.html",
+        "needle": "labelIn: 0.25",
+        "finding": "标签有独立揭示阶段，不能把点线文字当作整组淡入。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "chapter-title-card",
+    "relations": [
+      "上一主题到下一主题",
+      "章节编号与题名的层级"
+    ],
+    "select_when": "论述确有主题边界，需要先交代新章再进入内容时。",
+    "avoid_when": "只是换一句话或插画换景，尤其不能套到每个句号。",
+    "sequence": [
+      "整片色板扫入接管画面",
+      "大编号先建立章节身份",
+      "题名从编号旁揭示并接短线",
+      "内容相关线稿在后方描出",
+      "读清题名后色板同向离场"
+    ],
+    "narration_anchor": "在上一段收束后说新章问题，题名承接这次语义转向。",
+    "pitfalls": [
+      "文档说编号先落位，但源码题名在编号开始后 0.18 秒启动，存在交叠。",
+      "文档总时长上限约 2.5 秒，默认单卡参数相加约 2.55 秒，不能当锁定配额。",
+      "背景 motif 若与本章无关，只会制造第二视觉重点。"
+    ],
+    "v5_role": "transition",
+    "v5_adaptation": "仅作信息卡章节结构候选，保留编号与主题关系；取消对静止的否定和强制漂移，也不移植固定章节时长或插画扫屏转场。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/chapter-title-card.tsx",
+        "needle": "at + CONFIG.wipeIn + 0.18",
+        "finding": "题名比编号晚起步但未等编号完成，实际是错峰交叠。"
+      },
+      {
+        "file": "upstream/demos/chapter-title-card/index.html",
+        "needle": ".to(card, { xPercent: 100",
+        "finding": "出场继续朝同一侧扫走，表达单向翻页。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "chat-message-flow",
+    "relations": [
+      "我方提问到对方回应",
+      "消息发送到延迟反馈"
+    ],
+    "select_when": "有真实可引用的两到四条对话，需解释先问什么、等到什么回答时。",
+    "avoid_when": "完整聊天档案很长，或没有依据却要模拟真实客户证言时。",
+    "sequence": [
+      "我方文字在输入框逐字完成",
+      "短停后消息弹入对话区",
+      "对方三点输入提示等待",
+      "回复气泡替换提示，随后反应表情出现"
+    ],
+    "narration_anchor": "提问配输入与发送，回答落屏时再读出核心回应。",
+    "pitfalls": [
+      "提示气泡应退出后再显回复，重叠会像状态故障。",
+      "用 display 随意切换整行会造成历史消息突然跳位。",
+      "重演对话不能冒充原始截图或实际发生时间。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "用来表达问答、委托与反馈链，保留身份区分、等待和阅读；内容来自本集材料并标明重演，时刻表按旁白重排，不照搬品牌皮肤。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/chat-message-flow.tsx",
+        "needle": "comp = s.text.slice(0, Math.floor(p * s.len));",
+        "finding": "我方输入按字符显示，不是直接弹出已完成气泡。"
+      },
+      {
+        "file": "upstream/demos/chat-message-flow/index.html",
+        "needle": "r.ind.style.opacity = inP * outP;",
+        "finding": "输入提示由独立进出包络控制，可在回复前清退。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "claude-code",
+    "relations": [
+      "任务命令到工具调用",
+      "调用结果到代码改动再到结论"
+    ],
+    "select_when": "材料足以展示一次真实编码智能体执行链，需解释读文件、改文件与结果的因果时。",
+    "avoid_when": "只有产品名称或宣传口号，或无法核对示例执行记录时。",
+    "sequence": [
+      "终端外壳与身份区域错峰就位",
+      "用户命令逐字输入并提交",
+      "工具调用和缩进返回成簇出现",
+      "删除新增差异接上，末行给出结论"
+    ],
+    "narration_anchor": "命令对应任务，工具与返回各讲一件事，最后才说明结果。",
+    "pitfalls": [
+      "逐字打机器日志会混淆人输入和 stdout 的语法。",
+      "结果不缩进会被读成无关的并列日志。",
+      "上游品牌、模型和 cwd 为示例，不能据此宣称本集实际用过该工具。"
+    ],
+    "v5_role": "evidence_presentation",
+    "v5_adaptation": "保留命令、调用、返回、差异、结果的结构，使用可核对记录或明确重演；不将终端皮肤、品牌吉祥物或示例成功状态变为 V5 必备项。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/claude-code.tsx",
+        "needle": "Math.ceil(linear / CONFIG.logChunk) * CONFIG.logChunk",
+        "finding": "机器日志按固定块跳出，与用户命令逐字输入区分。"
+      },
+      {
+        "file": "upstream/demos/claude-code/index.html",
+        "needle": "row.row.style.visibility = on ? \"visible\" : \"hidden\";",
+        "finding": "预留日志行位置，出现时不重排整个终端。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "corner-bracket-frame",
+    "relations": [
+      "整句观点与其强调边界",
+      "先划范围再给题名"
+    ],
+    "select_when": "需要给一块短论点定题，强调的是整句话而非截图坐标时。",
+    "avoid_when": "必须点到证据里的具体按钮，或需要强烈命中感时。",
+    "sequence": [
+      "两个对角 L 从外侧同步进入",
+      "角框先建立一块阅读范围",
+      "两行题名按顺序进入框内",
+      "整组静置供阅读"
+    ],
+    "narration_anchor": "旁白提出本段论点时出现边界，关键词随后落在框内。",
+    "pitfalls": [
+      "四角框会改变为取景或锁定语义，与此卡的整句定题不同。",
+      "文字在框起步后 0.22 秒进，框本身用 0.3 秒，文档“先立住”并非严格串行。",
+      "加下划线或多种强调色会产生互相竞争的边界信号。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "可保留同步对角边界和分行阅读，按本集文字块重算尺寸；标题属于卡内语义，不作为固定栏目角标，静置保持不受插画两秒规则限制。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/corner-bracket-frame.tsx",
+        "needle": "const brP = tw(t, t0, CONFIG.brIn, power3Out);",
+        "finding": "两个角框共享同一进度，避免左右错拍。"
+      },
+      {
+        "file": "upstream/demos/corner-bracket-frame/index.html",
+        "needle": "t.to([tl, br], { opacity: 1, x: 0, y: 0",
+        "finding": "HTML 用单一 tween 同时把两个角框送到位。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "crash-zoom-punch",
+    "relations": [
+      "整页证据到单处关键文字",
+      "语音指认到目标特写"
+    ],
+    "select_when": "截图中的一处短文字确需由全景迅速切换为阅读焦点时。",
+    "avoid_when": "要保持多个位置的对照，或对象是 V5 静态叙事插画时。",
+    "sequence": [
+      "整页先显示以建立位置",
+      "围绕目标文字中心急推并短暂模糊",
+      "小幅回收至同一目标构图",
+      "落定清晰后静置阅读"
+    ],
+    "narration_anchor": "“就是这一行”对应急推，随后停运动再讲该行含义。",
+    "pitfalls": [
+      "目标应取文字块而非整行，否则容易推向空白。",
+      "相机只钳舞台边界，目标靠卡边会露出底色。",
+      "两档缩放必须共用目标中心；上游次数限制仅是来源偏好。"
+    ],
+    "v5_role": "source_camera",
+    "v5_adaptation": "只列为证据截图的条件候选，先核对分辨率、目标坐标和阅读余量；禁止移植到插画图内，是否使用须经本集适配验证。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/crash-zoom-punch.tsx",
+        "needle": "const a = camTo(CONFIG.zoom, px, py), b = camTo(CONFIG.settle, px, py);",
+        "finding": "冲入与回收使用相同目标中心，构成一次连续指认。"
+      },
+      {
+        "file": "upstream/demos/crash-zoom-punch/index.html",
+        "needle": "duration: CONFIG.punch, ease: \"power3.in\"",
+        "finding": "推进集中在短促加速段，而非持续缓推。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "danmu-bubble-praise",
+    "relations": [
+      "多条独立短评到群体在场感",
+      "一条重点与其余背景反馈"
+    ],
+    "select_when": "有依据的多条简短反馈需作轻量补充，且不承担主要论证时。",
+    "avoid_when": "评论必须逐条准确阅读，或根本没有评论材料却要制造共识时。",
+    "sequence": [
+      "第一条短评从近侧边缘进入",
+      "后续气泡按固定错峰接续",
+      "早到气泡在后续进入时上移退出",
+      "最后一条离场后回到主体内容"
+    ],
+    "narration_anchor": "“有几条反馈提到……”触发短评，重点内容仍由旁白说明。",
+    "pitfalls": [
+      "四条同时进出会变成标签墙，丢掉独立反馈流。",
+      "停留短，只适合短评，不能据此压缩必读证据的阅读。",
+      "固定数组保证复现，但示例文字不能当真实公众反馈。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "仅在有真实评论来源且适合节奏时候选；必要信息改用可读证据卡，避免遮脸、独立字幕和关键图形，不采用固定 CTA 或共识营销。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/danmu-bubble-praise.tsx",
+        "needle": "const tOut = tIn + CONFIG.inDur + CONFIG.hold;",
+        "finding": "每枚拥有自己的退出时刻，支持进出交叠。"
+      },
+      {
+        "file": "upstream/demos/danmu-bubble-praise/index.html",
+        "needle": "const dir = b.classList.contains(\"side-l\") ? -1 : 1;",
+        "finding": "气泡由其所在侧决定入场方向，而非全体同向弹入。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "error-retype",
+    "relations": [
+      "错误判断到修正结论",
+      "犹豫与果断纠错的时间差"
+    ],
+    "select_when": "原材料本身含有一次误解、更正或自我修正，且前后短语字数相近时。",
+    "avoid_when": "需要同时比较新旧两项，或不应先展示错误说法的严肃信息时。",
+    "sequence": [
+      "固定句干先在场",
+      "错误半句按字打出",
+      "停顿闪光标后更快退字",
+      "正确半句重打，光标退去后保持"
+    ],
+    "narration_anchor": "旁白先说误解，再在退字处完成转折，正确说法落定后解释。",
+    "pitfalls": [
+      "固定宽槽位针对相近字数，长短差太大容易留下异常空隙。",
+      "TSX 用 Math.floor 阶梯显示，加入缓动淡入会变成加载感。",
+      "文档写条件摘除光标，TSX 实际保留 span 并将 opacity 归零，属于视觉消失。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "只表达已有的纠错关系，不能为了动画编一个错误观点；保持正确结论阅读，不用于底部口播字幕，也不把示例反转文案当本集事实。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/error-retype.tsx",
+        "needle": "first.length - 1 - Math.floor((t - tDel) / CONFIG.del)",
+        "finding": "删除按离散字符阶梯进行，速度与首次输入分开。"
+      },
+      {
+        "file": "upstream/demos/error-retype/index.html",
+        "needle": "const blink2 = (t0)",
+        "finding": "犹豫和完稿分别安排两次短闪，而非光标全程循环。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "flying-words",
+    "relations": [
+      "多个概念到信息涌入的感受",
+      "背景词群与前景主旨的主次"
+    ],
+    "select_when": "仅需表达概念密集、信息不断涌来的气氛，前景已有明确主旨时。",
+    "avoid_when": "必须读清词间逻辑或逐个名词，或要给 V5 插画加纵深运动时。",
+    "sequence": [
+      "深底中心建立静态光晕",
+      "词群从远处按分散相位推进",
+      "临近观众时向外散开并模糊",
+      "词越过相机平面，整圈循环后收尾"
+    ],
+    "narration_anchor": "只承接“概念很多”的整体表意，关键知识仍应另卡说明。",
+    "pitfalls": [
+      "无前景时词群没有阅读焦点，不能把气氛误当信息提炼。",
+      "非整数圈会让首尾跳变；过长词在近处容易相互遮挡。",
+      "上游深底和彩色光晕是这版的条件，不是 V5 统一样式。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "作为低优先候选记录，若词间存在关系优先重做成可读结构卡；不移植到静态插画，不照搬次数配额，不能用飞词取代语义过程。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/flying-words.tsx",
+        "needle": "const u = ((Math.min(t, CONFIG.dur) / CONFIG.dur) * CONFIG.cycles + i / N) % 1;",
+        "finding": "词按相位均分并循环推进，组织的是数量感而非逻辑顺序。"
+      },
+      {
+        "file": "upstream/demos/flying-words/index.html",
+        "needle": "z = lerp(CONFIG.zFrom, CONFIG.zTo, u);",
+        "finding": "深度由同一生命进度驱动，从负 z 推进到正 z。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "glass-code-walk",
+    "relations": [
+      "代码整体结构到逐行解释",
+      "当前语句与上下文的邻接"
+    ],
+    "select_when": "真实代码或配置较短，每个停靠行都值得对应一句解说时。",
+    "avoid_when": "大段日志、几百行源码，或必须始终读完整长行却放大后裁切时。",
+    "sequence": [
+      "代码块和各行就位",
+      "推到走读焦距并压暗非当前行",
+      "高亮带与视点同步逐行滑动、停读",
+      "末行完成后回到全景解除压暗"
+    ],
+    "narration_anchor": "一句旁白对应一个停靠行，讲完再滑至下一句。",
+    "pitfalls": [
+      "行号若取整切换会使高亮跳格，无法表达视线连续转移。",
+      "TSX 的 hostSrc 参数未使用，不能宣称已支持人物同屏。",
+      "中文注释按整字宽估算；放大后最长行若超边界会丢信息。"
+    ],
+    "v5_role": "evidence_presentation",
+    "v5_adaptation": "真实代码证据才采用走读候选，保持缩进、上下文和阅读；相机只作用代码卡，不进入插画，玻璃装饰及上游持续运动要求不作为标准。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/glass-code-walk.tsx",
+        "needle": "linePos = lerp(STOPS[k - 1], STOPS[k],",
+        "finding": "浮点行位置在两次停靠间连续变化，而非整数行跳转。"
+      },
+      {
+        "file": "upstream/demos/glass-code-walk/index.html",
+        "needle": "linePos: stops[k], duration: C.stepDur",
+        "finding": "逐段 tween 以统一行位置推进，停靠间另外保留 dwell。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "hand-drawn-ellipse",
+    "relations": [
+      "短语指认到重要性确认",
+      "圈定位置先于文字重音"
+    ],
+    "select_when": "旁白明确要圈住一个短语并提高一次强调强度时。",
+    "avoid_when": "要框住整段，或标注对象没有独立短语盒、圈会切进邻字时。",
+    "sequence": [
+      "短语先完整在场",
+      "不规则椭圆一笔描出并过头交叉",
+      "圈画完后短语轻微放大回落",
+      "圈与文字一起静置供阅读"
+    ],
+    "narration_anchor": "“记住这几个字”先触发圈，语音重音落在圈后的短语确认。",
+    "pitfalls": [
+      "TSX 用预生成 ELLIPSE，换文字必须重算几何，HTML 会现场量墨迹盒。",
+      "完美 ellipse 会丢失过头交叉与外扩特征。",
+      "圈和字同时动会把指认与确认混成一次碰撞，横向留白也须防切字。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "可用于卡内短语强调，保留两拍先后与阅读保持；不为追求手绘添加静帧抖动，不把圈叠到禁止图内动效的叙事插画。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/hand-drawn-ellipse.tsx",
+        "needle": "CONFIG.startDelay + CONFIG.draw + CONFIG.punchGap",
+        "finding": "文字 punch 在描圈结束并留出间隙后启动。"
+      },
+      {
+        "file": "upstream/demos/hand-drawn-ellipse/index.html",
+        "needle": "ellipsePath(inkBoxOf(word), CONFIG)",
+        "finding": "HTML 依实际字形墨迹盒生成圈，换词后需重新适配位置。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "host-shrink-to-chip",
+    "relations": [
+      "讲者主体到图形主体的交接",
+      "同一讲者连续存在与舞台让位"
+    ],
+    "select_when": "明确采用真人讲解且有连续视频，需从人物主画面交接到证据图时。",
+    "avoid_when": "V5 当前只有静态角色插画，或没有获准的人物同屏交互需求时。",
+    "sequence": [
+      "人物全屏口播先建立主体",
+      "人物缩放与裁切同步收成角落圆窗",
+      "图形稍晚从另一侧接位",
+      "圆窗位置锁定，图形成为阅读中心"
+    ],
+    "narration_anchor": "“我把图摆出来”触发人物先让位，图进入后说明证据。",
+    "pitfalls": [
+      "只缩人物而不裁窗会成为角上悬浮小人。",
+      "裁切与位移分开排期会让人脸在中途挤出圆窗。",
+      "占位与真实 hostSrc 不等价，静态头像不能证明口型连续。"
+    ],
+    "v5_role": "host_interaction",
+    "v5_adaptation": "只作额外真人路线的条件研究，不纳入本集插画默认；不新增固定头像角标，若授权使用需避开字幕和图形，验证取景连续性。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/host-shrink-to-chip.tsx",
+        "needle": "const p = tw(t, CONFIG.startDelay, CONFIG.shrink, power2InOut);",
+        "finding": "裁切与人物几何共享同一缩位进度，形成连续交接。"
+      },
+      {
+        "file": "upstream/demos/host-shrink-to-chip/index.html",
+        "needle": "CONFIG.startDelay + CONFIG.gfxLag",
+        "finding": "图形入场晚于人物启动，避免双方同时争夺注意。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "info-term-card",
+    "relations": [
+      "首次出现的名词到简短释义",
+      "人物说明与侧边解释补充"
+    ],
+    "select_when": "首次提到专业名词，短释义能帮助观众继续理解且无需长篇展开时。",
+    "avoid_when": "定义本身含多步因果，或释义太长需要缩字号挤进小卡时。",
+    "sequence": [
+      "人物对侧的解释卡滑入并回稳",
+      "图标、词条和短释义同卡可见",
+      "短暂往返浮动保持层次",
+      "讲完后原路退出"
+    ],
+    "narration_anchor": "名词首次出现时进卡，读完核心定义再收，避免重复解释。",
+    "pitfalls": [
+      "文档称 ±6px 正弦浮动，TSX/HTML 默认实际在 0 与 +6px 间往返。",
+      "TSX 的词条和释义在 JSX 内，hostSrc 并非文字参数接口。",
+      "图标也跟着摆动，可能分散定义阅读，不应把悬浮当语义过程。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "采用名词到释义的层级，按本集内容决定是否需要示意关系；不强制浮动、投影或两行封顶，信息卡保持按阅读需要安排。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/info-term-card.tsx",
+        "needle": "const y = CONFIG.floatPx * fp;",
+        "finding": "位置由零到正幅值的 yoyo 进度控制，非对称上下正弦。"
+      },
+      {
+        "file": "upstream/demos/info-term-card/index.html",
+        "needle": "yoyo: true, repeat: 3",
+        "finding": "演示在落位后重复往返，属于装饰保持而非解释机制。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "lead-word-zoom-assemble",
+    "relations": [
+      "先出现的核心词到完整主张",
+      "主句让位到副句补充"
+    ],
+    "select_when": "一句短主张的语义重心确在首词，且后续词能自然补全关系时。",
+    "avoid_when": "首词过长、句子需多行，或要用大字冲击替代事实论证时。",
+    "sequence": [
+      "首词先以大尺度独占画面",
+      "首词缩回同时整行横移归位",
+      "后续词按槽位接续推入",
+      "主句上移同时补入副行",
+      "整句落定后保持再同收"
+    ],
+    "narration_anchor": "先念首词立住概念，再随着补词完成主张，副行给限定说明。",
+    "pitfalls": [
+      "首词中心必须按真实字宽测量，否则缩放会漂移。",
+      "缩放和位移同起但时长不同，不能误改成先缩再移。",
+      "固定 meta 时长未随任意长文案自动延长，换词后必须重排。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "只用于卡内短主张的组句，不用于独立底部字幕；保留副行限定条件与静置阅读，不能用字号变化冒充推理或照搬示例结论。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/lead-word-zoom-assemble.tsx",
+        "needle": "setM({ ratio, slide: L * (0.5 - ratio) });",
+        "finding": "测量首词中心在整行的占比，计算归位位移。"
+      },
+      {
+        "file": "upstream/demos/lead-word-zoom-assemble/index.html",
+        "needle": "duration: CONFIG.slide, ease: \"power3.inOut\" }, shrinkAt)",
+        "finding": "横移与缩小从同一时刻起步，保留位置延后落定的尾段。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "line-chart-story-draw",
+    "relations": [
+      "既成历史到未来假设",
+      "同一拐点下两种未来",
+      "区间标注到相关范围"
+    ],
+    "select_when": "有可核对的历史基准与清楚声明的情景假设，要边讲边比较分歧时。",
+    "avoid_when": "数据或轴单位不明，或只是把虚构增长线包装成事实时。",
+    "sequence": [
+      "历史线段从开始就完整在场",
+      "在拐点给出假设注释",
+      "主方案逐段生长，完成后出现标签",
+      "对比虚线从同一拐点岔出",
+      "最后淡入区间色带标明范围"
+    ],
+    "narration_anchor": "“如果从这里开始……”触发推演，标签只在相应线段讲完后出现。",
+    "pitfalls": [
+      "虚线不能直接用 dashoffset 描画，否则会变成原地流动。",
+      "历史与假设若同样生长会模糊二者证据等级。",
+      "示例百分比、坐标和区间是演示数据，不能直接作为 V5 事实。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "可优先研究其事实基准、分支推演和中间标签过程；替换真实数据并明示假设，保留分段停顿和阅读，不套插画两秒上限。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/line-chart-story-draw.tsx",
+        "needle": "const altAt = growAt1 + seg1.dur",
+        "finding": "对比方案在主方案逐段结束后再启动，保留推理先后。"
+      },
+      {
+        "file": "upstream/demos/line-chart-story-draw/index.html",
+        "needle": "tl.to(maskPath, { strokeDashoffset: 0",
+        "finding": "通过独立遮罩揭示虚线，避免改变虚线自身纹理位置。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "lower-third-nameplate",
+    "relations": [
+      "人物到姓名与身份",
+      "主要身份先于补充头衔"
+    ],
+    "select_when": "真人或被引用人物首次出现，需要用可核对姓名、职位说明来源身份时。",
+    "avoid_when": "匿名叙事角色、身份未经核对，或只是想增加常驻栏目包装时。",
+    "sequence": [
+      "底部一侧色条先展开",
+      "姓名沿水平方向揭示",
+      "头衔稍后接上并保持",
+      "头衔、姓名、色条依次反向收回"
+    ],
+    "narration_anchor": "人物首次发言时给姓名，身份与内容相关的部分再补出。",
+    "pitfalls": [
+      "文档称三段接力，代码姓名在色条进度约七成时启动，实际有交叠。",
+      "左下并不天然安全，仍可能压住固定底部字幕。",
+      "姓名与头衔在 JSX 中，不能只传 hostSrc 就获得可配置身份。"
+    ],
+    "v5_role": "evidence_presentation",
+    "v5_adaptation": "仅对真实人物或引用来源使用，保留姓名与身份层级；不转成固定品牌角标，按字幕安全区重新定位，停留由阅读决定而非固定模板秒数。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/lower-third-nameplate.tsx",
+        "needle": "const nameAt = t0 + CONFIG.barDur * 0.7;",
+        "finding": "姓名与色条尾段交叠，严格串行只是文档概括。"
+      },
+      {
+        "file": "upstream/demos/lower-third-nameplate/index.html",
+        "needle": ".to(bar, { scaleX: 0, duration: CONFIG.outDur",
+        "finding": "退出最后才收色条，保持身份文字先消失的层次。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "media-pop-in",
+    "relations": [
+      "多份证据到同一主张",
+      "逐项列举到同屏共存"
+    ],
+    "select_when": "几份真实截图或照片需快速建立“有多项材料”的集合，随后还能读关键证据时。",
+    "avoid_when": "每份材料都有长文需要独立阅读，或要以堆叠数量替代证据质量时。",
+    "sequence": [
+      "第一张证据带静态倾角弹入",
+      "后续证据紧密错峰拍上",
+      "后来材料压住前一张边角",
+      "全组落位后留作证据集合"
+    ],
+    "narration_anchor": "旁白列举材料时逐张出现，核心证据需再留独立阅读段。",
+    "pitfalls": [
+      "示例照片区在源码内，hostSrc 不是任意证据图片注入接口。",
+      "重叠不能遮住所引用的关键文字、日期或来源。",
+      "默认全组有循环呼吸，不能把示例的持续缩放当作 V5 必需保持。"
+    ],
+    "v5_role": "evidence_presentation",
+    "v5_adaptation": "可研究多证据集合的次序与共存关系，替换可核对原图并控制遮挡；必要时分卡讲清，去除无意义呼吸，不对插画做弹入缩放。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/media-pop-in.tsx",
+        "needle": "const p = tw(t, at, CONFIG.popDur, backOut(CONFIG.overshoot));",
+        "finding": "单张以带过冲的缩放落位表现拍放动作。"
+      },
+      {
+        "file": "upstream/demos/media-pop-in/index.html",
+        "needle": "repeat: -1, yoyo: true",
+        "finding": "演示落位后整组无限呼吸，属于需要取舍的装饰运动。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "news-card-desk",
+    "relations": [
+      "报道来源到被引用重点",
+      "第一份报道到补充报道"
+    ],
+    "select_when": "有原始报道或可靠截图，旁白需先给出处再标出某句报道内容时。",
+    "avoid_when": "用新闻外壳装自写判断，或截图低清到重点不可辨认时。",
+    "sequence": [
+      "第一张报道卡从下方落位",
+      "读到关键词时扫出下划线",
+      "第二张报道从侧面压叠补充",
+      "两份材料保持，来源与重点仍可读"
+    ],
+    "narration_anchor": "先说“这篇报道提到”，读到目标句才画线，后续材料再接上。",
+    "pitfalls": [
+      "标题与来源文字是示例，必须替换并核对，不能只换大标题保留虚构媒体。",
+      "第二张会压住第一张，需检查引用句有没有被遮掉。",
+      "hostSrc 在 TSX 未使用；八秒 Ken Burns 是上游条件，不是 V5 通用要求。"
+    ],
+    "v5_role": "evidence_presentation",
+    "v5_adaptation": "借鉴报道上台、语音划线和补充材料的证据链；真实来源就近标识，阅读时可保持静止，若采用镜头动作只作用证据截图并另行验证。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/news-card-desk.tsx",
+        "needle": "const redline = tw(t, CONFIG.redlineAt, CONFIG.redline, power2Out);",
+        "finding": "下划线有独立启动时刻，可与朗读关键词对齐。"
+      },
+      {
+        "file": "upstream/demos/news-card-desk/index.html",
+        "needle": "duration: CONFIG.kbDur, ease: \"none\"",
+        "finding": "截图内部持续匀速放大，与卡片入场动作分开控制。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "numbered-step-stack",
+    "relations": [
+      "并列方法到完整清单",
+      "编号与对应条目的一一对应"
+    ],
+    "select_when": "内容确是顺序可交换的几条建议，需在同屏形成清楚、可保存的集合时。",
+    "avoid_when": "后一步依赖前一步结果，或每条还需展开完整过程时。",
+    "sequence": [
+      "等宽横条从侧面均匀错峰进入",
+      "每条落定时只给编号块一次确认",
+      "所有横条就位后整组轻微上收",
+      "整份清单保持供阅读"
+    ],
+    "narration_anchor": "“可以记这几条”先建立集合，再按编号解释各项。",
+    "pitfalls": [
+      "有依赖的流程若去掉连接线会误传为可交换清单。",
+      "编号 punch 若作用整条，会变成整体没停稳。",
+      "TSX 根据 STEPS.length 排总收束，但 meta 时长固定，增加条目必须延长保持。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "可采用并列清单结构，条目数由材料决定；密集入场不等于已经读完，须给完整阅读与必要的逐项解释，不采纳固定四条或错峰配额。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/numbered-step-stack.tsx",
+        "needle": "const at = CONFIG.lead + i * CONFIG.barStagger;",
+        "finding": "各条由索引推导均匀错峰，形成一组而非随机入场。"
+      },
+      {
+        "file": "upstream/demos/numbered-step-stack/index.html",
+        "needle": ".fromTo(nos[i],",
+        "finding": "确认缩放只施加于编号块，横条正文落位后保持稳定。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "overexpose-flip-transition",
+    "relations": [
+      "一段论证结束到下一段",
+      "交接切点到曝光重音"
+    ],
+    "select_when": "信息卡或证据段确有郑重的语义翻页，且曝光处理不会遮掉重要材料时。",
+    "avoid_when": "V5 插画之间的换景，或仅为了刺激而给普通句末闪屏时。",
+    "sequence": [
+      "旧画面向证据物推进",
+      "曝光重音在切点前升至峰值",
+      "峰值处交叠换入新画面",
+      "曝光回落，新画面清晰落定"
+    ],
+    "narration_anchor": "句末收束重音与交接峰值同拍，新段信息等清晰后再展开。",
+    "pitfalls": [
+      "白底实际默认 peak 为 0.10 压暗，文档的 0.42–0.55 过曝不能跨极性照抄。",
+      "峰值不是对称 yoyo，若时刻错位会先看到新画面再闪。",
+      "上游“相机永不静止”和次数配额不适用于 V5 插画。"
+    ],
+    "v5_role": "transition",
+    "v5_adaptation": "仅作信息卡或证据交接的低优先候选，须确认底色与可读性；V5 插画仍硬切，不导入强制曝光、镜头慢推或整片次数规则。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/overexpose-flip-transition.tsx",
+        "needle": "tw(t, cut - B.rise, B.rise, power2In)",
+        "finding": "曝光升段以切点倒推，峰值锚定在内容交接处。"
+      },
+      {
+        "file": "upstream/demos/overexpose-flip-transition/index.html",
+        "needle": "peak: 0.10, rise: 0.26, fall: 0.42",
+        "finding": "白底示例采用较轻压暗包络，与深底过曝数值不同。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "pencil-sketch-draw",
+    "relations": [
+      "讲解次序到图形生成次序",
+      "笔尖位置到当前可见笔迹"
+    ],
+    "select_when": "概念确能被分成有意义的几笔关系，逐笔生成有助理解而非只画装饰边框时。",
+    "avoid_when": "要把完整叙事插画做图内绘制，或材料只是已经画好的复杂照片时。",
+    "sequence": [
+      "笔尖就位到第一条路径起点",
+      "笔尖与线条共享进度同步描出",
+      "每笔结束沿笔身方向抬笔",
+      "下一笔接续，最后出现解释标签并保持"
+    ],
+    "narration_anchor": "每一句讲解对应一笔或一组关系，名称在相关结构形成后补出。",
+    "pitfalls": [
+      "TSX 使用采样路径点，HTML 用浏览器路径测量，两者要按最终路径核对而非假定逐像素一致。",
+      "handSrc 更换后原有笔尖坐标与轴角会失效。",
+      "示例默认可退回矢量笔，不能把未交付照片素材视为已具备手绘效果。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "可研究信息卡内关系图的逐笔过程；先按语义拆路径并核实笔尖，保留完成图阅读，不给插画加绘制、漂移或环境呼吸，也不采用上游全局运动底线。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/pencil-sketch-draw.tsx",
+        "needle": "const pt = pointAtLength(g, at);",
+        "finding": "笔的位置由当前已画路径长度求出，使笔尖跟在线条前端。"
+      },
+      {
+        "file": "upstream/demos/pencil-sketch-draw/index.html",
+        "needle": "path.style.strokeDashoffset = len * (1 - state.p);",
+        "finding": "同一个 state.p 同时驱动线条显示与 placePencil，避免二者脱节。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "pullback-cool-transition",
+    "relations": [
+      "激烈论述到沉淀收束",
+      "旧内容退场到新内容出现"
+    ],
+    "select_when": "信息段落需要明确降速和退一步思考，且不在知识继续密集推进的位置时。",
+    "avoid_when": "需要连续推理的新步骤，或 V5 静态插画之间的常规切换时。",
+    "sequence": [
+      "旧画面先收住镜头尺度",
+      "旧内容本身压暗失焦",
+      "新画面从较小尺度交叠出现",
+      "新画面缓慢到工作尺度后进入下一段"
+    ],
+    "narration_anchor": "上一段讲完留出呼吸，再以“回过来看”之类真实转折接新信息。",
+    "pitfalls": [
+      "名称叫后拉，但入场尺度从 0.90 到 0.99 实际在放大，不应描述成实拍后退镜头。",
+      "沉暗施加在内容层，若只整体淡出会丢掉主体退场层级。",
+      "小于一的尺度会漏画幅，需有足够扩边；全片唯一规则只是上游偏好。"
+    ],
+    "v5_role": "transition",
+    "v5_adaptation": "仅研究卡片段落冷却的时序，是否采用需本集授权和适配；插画仍静态硬切，不采用强制慢漂、唯一尺度或固定交叠时长。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/pullback-cool-transition.tsx",
+        "needle": "lerp(P.inScale, P.inSettle",
+        "finding": "入场从较小尺度逐步放大到落点，源码不等于实拍后拉。"
+      },
+      {
+        "file": "upstream/demos/pullback-cool-transition/index.html",
+        "needle": "tl.to(outBig, { opacity: P.outDim",
+        "finding": "退场首先削弱内部内容，整镜交叠另由镜头层处理。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "quote-card",
+    "relations": [
+      "完整论述到一句核心结论",
+      "关键词与其余句子的权重"
+    ],
+    "select_when": "前文已建立依据，需要让一句短结论独占阅读注意力时。",
+    "avoid_when": "原句含许多限定条件却为了大字效果被截断，或多次替代实际讲解时。",
+    "sequence": [
+      "实色底板先接管画面",
+      "结论按行错峰进入",
+      "少量关键词提高权重，出处稍后出现",
+      "整句保持后底板轻量退去"
+    ],
+    "narration_anchor": "旁白完成论证后读出结论，按完整意思分行而非按固定字数切割。",
+    "pitfalls": [
+      "半透明底板让原人物与大字争夺视线。",
+      "TSX outAt 写死 3.40 秒，HTML 随逐行 timeline 接 hold，改行数后未必等时。",
+      "示例是观点卡，只有确有引文时才应使用人物署名或引号。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "可作为卡内结论保持，保留全部必要限定与真实出处；不强制三至五行、颜色或人物遮罩，不把大字强调误作增强信息卡的完整过程。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/quote-card.tsx",
+        "needle": "const outAt = 3.40;",
+        "finding": "TSX 退出固定排期，改字数和行数时需重新核对阅读长度。"
+      },
+      {
+        "file": "upstream/demos/quote-card/index.html",
+        "needle": "stagger: CONFIG.lineStagger",
+        "finding": "结论以整行为节奏单位顺序呈现，行内不再逐字演出。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "reticle-lock-on",
+    "relations": [
+      "整页证据到单个指定对象",
+      "先到位再咬合的重音确认"
+    ],
+    "select_when": "真实截图中只需点名一个按钮、数字或条款，旁白有明确“就是它”的重音时。",
+    "avoid_when": "同镜要连续标很多处，或目标只是没有出处的演示按钮时。",
+    "sequence": [
+      "整页先让观众建立位置",
+      "四个角从远处同时飞到大框位置",
+      "大框二次缩小过头后回弹锁住目标",
+      "锁定帧目标微亮并出现解释标签",
+      "整组静置留阅读"
+    ],
+    "narration_anchor": "四角飞入作准备，“就是这个”落在咬合与标签出现处。",
+    "pitfalls": [
+      "飞入和收缩若合并就丢掉先到再锁的两拍。",
+      "target 相对截图左上角，不能直接传舞台坐标。",
+      "目标常驻白色微亮可能冲淡原文字，使用真实图时须另查对比。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "只作证据或卡内单对象的指认候选，验证坐标、标签留白和原文可读；不把四角锁定叠到叙事插画，也不替换实际证据内容。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/reticle-lock-on.tsx",
+        "needle": "const LOCK = CONFIG.at + CONFIG.fly + CONFIG.shrink;",
+        "finding": "锁定由飞入和收缩完成共同定义，标签重音共享该节点。"
+      },
+      {
+        "file": "upstream/demos/reticle-lock-on/index.html",
+        "needle": "duration: CONFIG.snap, ease: \"back.out(2)\"",
+        "finding": "收缩过头后再弹回标准框，产生一次咬合确认。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "shape-wipe-transition",
+    "relations": [
+      "上个话题到下个话题",
+      "遮挡完成到内容替换"
+    ],
+    "select_when": "信息卡之间确有章节切分，且需要一个明显翻页信号时。",
+    "avoid_when": "静态插画切换、细密推理中间，或只为掩盖前后语义不连贯时。",
+    "sequence": [
+      "旧场景先保持",
+      "同方向多层色块错峰扫入",
+      "全遮挡窗口内替换下一场景",
+      "色块同向扫走后新内容再展开"
+    ],
+    "narration_anchor": "上一话题说完再扫屏，下一话题等完全揭示后开始。",
+    "pitfalls": [
+      "换场时刻必须落在真正覆盖区，层宽不足会从缝里露出画面。",
+      "三色随意跨色系会比内容更显眼。",
+      "TSX sceneB 在阈值后持续存在，HTML 用一次 call 切换，交互跳播语义不能直接等同。"
+    ],
+    "v5_role": "transition",
+    "v5_adaptation": "仅保留信息卡边界和遮挡时刻的研究，选用须本集另验；插画层只硬切，不新增固定扫屏、品牌色条或按句号触发的换景规则。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/shape-wipe-transition.tsx",
+        "needle": "const sceneBOn = t >= swapAt;",
+        "finding": "内容替换用确定阈值判断，遮挡层与场景显示分开控制。"
+      },
+      {
+        "file": "upstream/demos/shape-wipe-transition/index.html",
+        "needle": "CONFIG.layerDelay + CONFIG.wipeDur / 2",
+        "finding": "换场安排在中层色块经过中心的覆盖窗口。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "slow-push-in",
+    "relations": [
+      "整份截图到兴趣点的收拢",
+      "主推阶段到末速延续"
+    ],
+    "select_when": "真实证据截图较清晰，长句解释中确需缓慢收拢到一处且仍保留足够上下文时。",
+    "avoid_when": "密集文字必须全页阅读，或对象是 V5 叙事插画时。",
+    "sequence": [
+      "页面以原始尺度和固定兴趣点出现",
+      "主阶段轻缓推进并小幅修正构图",
+      "以主推末速延续剩余保持",
+      "整段单向结束，不中途折返"
+    ],
+    "narration_anchor": "完整说明一页证据时只用一条视线曲线，不按每个词追加缩放。",
+    "pitfalls": [
+      "固定 transform-origin 改变会造成页面跳位。",
+      "低分辨率截图放大后文字发虚，运动不能弥补原图质量。",
+      "上游把静止判作失败是自身系统规则，V5 信息卡可以保持，不能泛化。"
+    ],
+    "v5_role": "source_camera",
+    "v5_adaptation": "只作证据截图或卡片的条件镜头候选，必须优先可读性和来源完整；不强制常动，不移动底部字幕，更不能给静态插画施加缩放。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/slow-push-in.tsx",
+        "needle": "const holdZoom = CONFIG.zoomTo + rate * CONFIG.holdDur;",
+        "finding": "保持阶段仍以末速延伸尺度，区别于普通缓出后停住。"
+      },
+      {
+        "file": "upstream/demos/slow-push-in/index.html",
+        "needle": "transformOrigin: ox + \"px \" + oy + \"px\"",
+        "finding": "兴趣点通过页面几何计算并作为固定推进支点。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "speed-slab-title",
+    "relations": [
+      "速度主题到视觉惯性线索",
+      "先立主标题再给副题重音"
+    ],
+    "select_when": "内容真实表达提速、抢先或效率，且是短标题的语义重音时。",
+    "avoid_when": "冷静结论、长句阅读，或没有速度含义却只想套一个动感标题时。",
+    "sequence": [
+      "主标题先轻量落位",
+      "斜切副题块从画外冲入",
+      "块内文字滞后追赶到位",
+      "停止帧短速度线展开后迅速淡尽",
+      "完整标题静置"
+    ],
+    "narration_anchor": "先说主题词，提速相关副题在色块冲入时落重音。",
+    "pitfalls": [
+      "块起点不够远会一开始就在画内，失去冲入前提。",
+      "文字滞后需要父子两层坐标与裁切，不能同一 transform 上相加。",
+      "残影线留下太久会变装饰符号；源码颜色不能当作固定 V5 品牌色。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "只研究文字块内部的速度表意，不套用底部字幕或叙事插画；保留短标题阅读，速度线按本集内容决定，不能用动感替代论证过程。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/speed-slab-title.tsx",
+        "needle": "const slabTX = lerp(-CONFIG.lagPx, 0,",
+        "finding": "块内文字有独立追赶位移，使色块和文字出现惯性差。"
+      },
+      {
+        "file": "upstream/demos/speed-slab-title/index.html",
+        "needle": "const lineAt = slabAt + CONFIG.slabDur;",
+        "finding": "速度线在块到位时才启动，表达残影而非全程装饰。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "split-text-stagger",
+    "relations": [
+      "字符接续到完整标题",
+      "基线生长与末字落定同步"
+    ],
+    "select_when": "一行短章节题或要点标题需要明确的版式化入场，随后有完整阅读时间时。",
+    "avoid_when": "连续口播字幕、多行长文，或要把逐字动画当成信息解释时。",
+    "sequence": [
+      "基线与首字从同一时刻启动",
+      "各字在自己的行高裁切盒内接续升起",
+      "基线长满与末字落定对齐",
+      "副标补出，整组静置后同收"
+    ],
+    "narration_anchor": "标题短语完整读出，副标只补充必要限定，不逐字追着口播跑。",
+    "pitfalls": [
+      "HTML over 参数注释称约 10% 过冲，文档与计算曲线约为 5.3%，不能据注释承诺视觉强度。",
+      "裁切盒高过大就退化成普通位移，基线失去生成关系。",
+      "基线时长随字数计算，但副标和退出固定，长标题会挤掉阅读保持。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "可用于卡内短标题，不改独立口播字幕；标题与副标保留事实限制，按实际字数重新安排保持，不把纯入场效果视作增强卡的语义过程。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/split-text-stagger.tsx",
+        "needle": "const growDur = CONFIG.dur + CONFIG.stagger * (chars.length - 1);",
+        "finding": "基线总时长覆盖每字错峰和最后一字行程。"
+      },
+      {
+        "file": "upstream/demos/split-text-stagger/index.html",
+        "needle": "yPercent: 115",
+        "finding": "每字从裁切盒下方起升，呈现被基线逐渐露出的效果。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "step-timeline-vertical",
+    "relations": [
+      "前一步完成到后一步启动",
+      "流程总貌到当前所在步骤"
+    ],
+    "select_when": "步骤确有先后依赖，需让观众理解次序并知道当前在第几步时。",
+    "avoid_when": "几条可交换建议，或材料没有真实流程却硬加因果线时。",
+    "sequence": [
+      "竖向连接线从上向下推进",
+      "线到节点才弹出节点",
+      "节点之后对应文字接上",
+      "全部流程显示后单个节点升级为空心环",
+      "保持完整流程与当前位置"
+    ],
+    "narration_anchor": "按真实步骤解释，当前环在概览结束后回答“现在做到哪”。",
+    "pitfalls": [
+      "节点时刻要由缓动反解，手写 delay 会出现点早于线。",
+      "默认当前环永远选第一个节点，实际进度改变必须改实现。",
+      "三个点都升环会失去当前唯一性，清单也不能误用此卡。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "可研究其顺序推进、节点接文和当前状态三层关系；按本集真实依赖编排，节点可停留解释，不强制固定三步、线长或时长。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/step-timeline-vertical.tsx",
+        "needle": "CONFIG.lead + CONFIG.lineDur * invPower1InOut(s.at / WRAP_H)",
+        "finding": "根据节点高度反解线条缓动时间，保证线到才亮。"
+      },
+      {
+        "file": "upstream/demos/step-timeline-vertical/index.html",
+        "needle": "const ringAt = lastEnd + CONFIG.ringDelay;",
+        "finding": "当前位置确认安排在所有步骤就位之后，独立回答进度问题。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "subscribe-cta",
+    "relations": [
+      "移动与按压到关注状态",
+      "长按过程到依次完成的反馈"
+    ],
+    "select_when": "用户明确要求加入关注引导，且平台和操作含义已经确认时。",
+    "avoid_when": "没有 CTA 授权，或正片内容尚未完成却要常驻营销控件时。",
+    "sequence": [
+      "所选平台控件入场",
+      "光标沿可见路径移到操作目标",
+      "点击或长按并显示进度",
+      "按钮换态、图标或对勾确认",
+      "结果短停后退出"
+    ],
+    "narration_anchor": "仅在真实邀请关注的句子上演示操作，不覆盖知识说明。",
+    "pitfalls": [
+      "演示连续播放三种平台，不等于成片应全部加入。",
+      "B 站版的长按进度和依次点亮不能误改成一次同时成功。",
+      "程序状态变化只是示意交互，不代表真实完成关注或订阅。"
+    ],
+    "v5_role": "host_interaction",
+    "v5_adaptation": "仅记录交互反馈链，V5 默认不采纳 CTA、品牌皮肤或次数要求；只有本集明确授权后选择单一场景，且不得作为固定角标或遮住字幕。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/subscribe-cta.tsx",
+        "needle": "const subDone = t >= TC_A + 0.08;",
+        "finding": "订阅结果由点击后的独立阈值决定，状态变化跟在按压后。"
+      },
+      {
+        "file": "upstream/demos/subscribe-cta/index.html",
+        "needle": "tl.to(tickPath, { strokeDashoffset: 0",
+        "finding": "通用关注版用路径描出确认对勾，而非直接贴静态字符。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "tilt-3d-page",
+    "relations": [
+      "页面信息到产品物件的身份转换",
+      "正视阅读到立面展示"
+    ],
+    "select_when": "真实网页或 UI 的整体外观本身是展示对象，且不必逐字读倾斜后的正文时。",
+    "avoid_when": "要核查条款细字、图表精确数值，或对象是 V5 插画时。",
+    "sequence": [
+      "页面正视停留建立内容身份",
+      "页面在父级透视空间倾斜并略缩",
+      "投影同步加深并向反侧偏移",
+      "立面形态保持，示例续转展示"
+    ],
+    "narration_anchor": "“这是完成后的页面”先给正视，转向整体作品介绍再立起。",
+    "pitfalls": [
+      "倾角过大会让远端正文不可读，不能同时承诺细节阅读。",
+      "变换元素自身加 perspective 与父空间透视含义不同。",
+      "hostSrc 参数未用；立起后的持续微转是上游偏好，非 V5 保持要求。"
+    ],
+    "v5_role": "source_camera",
+    "v5_adaptation": "只作证据页面或产品卡的条件候选，先区分阅读与外观展示；不要给插画做透视或视差，是否保留续转需经本集适配，不作为默认镜头。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/tilt-3d-page.tsx",
+        "needle": "shOp = lerp(C.shadowFrom, C.shadowTo, p);",
+        "finding": "投影浓度与立起进度共享变化，构成物件浮起感。"
+      },
+      {
+        "file": "upstream/demos/tilt-3d-page/index.html",
+        "needle": "rotateY: CONFIG.rotYTo, rotateX: CONFIG.rotXTo, scale: CONFIG.scaleTo",
+        "finding": "倾斜时同时后退尺度，避免页面角点顶出画幅。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "tracking-in",
+    "relations": [
+      "分散字符到完整标题",
+      "字距收拢到视觉聚焦"
+    ],
+    "select_when": "一行短标题需要一次庄重归位，背景足够清楚且随后能保持阅读时。",
+    "avoid_when": "多行解释、常规字幕，或内容需要讲对象关系而非标题情绪时。",
+    "sequence": [
+      "大字以松字距和模糊态出现",
+      "同一弹簧进度同时收字距与解模糊",
+      "较短的独立淡入先完成",
+      "字距缓慢咬到终态后静置"
+    ],
+    "narration_anchor": "完整题名出现时强调主题，不需要让每字对应一个口播音节。",
+    "pitfalls": [
+      "字距与模糊分两条曲线会读成先排好再对焦。",
+      "初始松字距很宽，长标题可能被画幅裁两端。",
+      "源码 spring 接近临界阻尼但并非数学上的严格零过冲，文档“零回弹”是观感描述。"
+    ],
+    "v5_role": "card_emphasis",
+    "v5_adaptation": "可研究卡内短标题的聚焦手感，不作用底部字幕或静态插画；字数、字距、字号按本集可读性决定，不采纳固定一片次数和品牌落版。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/tracking-in.tsx",
+        "needle": "const blur = CONFIG.startBlur * (1 - s);",
+        "finding": "字距和模糊都读取同一个 spring 变量 s，形成一次归位。"
+      },
+      {
+        "file": "upstream/demos/tracking-in/index.html",
+        "needle": "el.style.letterSpacing = sp.toFixed(4) + \"em\";",
+        "finding": "以 em 手动写字距，保持换字号后的比例关系。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "ui-flow-theater",
+    "relations": [
+      "操作动作到控件换态",
+      "多步操作到最终保存反馈"
+    ],
+    "select_when": "确需说明一套短操作流程，能准确建模每次点击、拖拽与结果，且明确示意界面时。",
+    "avoid_when": "需要原生实测证据，或假 UI 的功能与真实产品未经核对时。",
+    "sequence": [
+      "界面和区块先揭示",
+      "光标依脚本移动到开关并点击",
+      "继续选分段并拖滑杆，值同步变化",
+      "保存后按钮成功，稍晚系统 toast 回应"
+    ],
+    "narration_anchor": "一步旁白对应一次操作和一个状态变化，成功提示跟在最后操作之后。",
+    "pitfalls": [
+      "上游首个光标 1.28 秒起步，而末区块约 1.93 秒才落定，存在入场与操作交叠。",
+      "HTML 运行时反算 POS，TSX 是固定测量坐标，换布局必须重新测。",
+      "示意成功 toast 不能被当作真实软件测试通过。"
+    ],
+    "v5_role": "card_content",
+    "v5_adaptation": "可优先研究单一时间表驱动操作与结果的因果链，依据真实流程重建并标注示意；保留中间态及阅读，界面不采固定品牌，不对插画使用相机运动。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/ui-flow-theater.tsx",
+        "needle": "moves.push({ t0: s.at - CONFIG.hoverHold - dur, dur, to: POS[s.target] });",
+        "finding": "光标移动由同一 STEPS 操作时刻倒排，避免单独手数时间。"
+      },
+      {
+        "file": "upstream/demos/ui-flow-theater/index.html",
+        "needle": "RESPOND[step.target](t, step);",
+        "finding": "控件响应读取同一操作步骤，点击和换态共享剧本。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "whip-pan-transition",
+    "relations": [
+      "并列案例 A 到案例 B",
+      "横向交接到同向速度连续"
+    ],
+    "select_when": "信息卡或真实证据段由一个并列对象转到另一个对象，方向有明确含义时。",
+    "avoid_when": "推理是深入同一对象，或 V5 插画的静态换景时。",
+    "sequence": [
+      "旧镜从已建立的画面向侧面加速甩出",
+      "新镜从另一侧带模糊进入",
+      "新镜减速刹到中心并解模糊",
+      "剩余旋转单独回稳再读新内容"
+    ],
+    "narration_anchor": "“再看另一边”之类真实并列转折对应横向交接。",
+    "pitfalls": [
+      "出场方向与入场来源配反会读作相互迎撞，旋转也要同向翻转。",
+      "CSS blur 为各向同性失焦，并非真实定向运动模糊。",
+      "示例用扩大画幅防露底；上游回稳后必须续推不适用于 V5 插画。"
+    ],
+    "v5_role": "transition",
+    "v5_adaptation": "只留作信息卡或证据交接的条件候选，优先让方向服务比较；禁止用于静态插画图内或镜头转场，不采永不静止要求，另验可读性与露边。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/whip-pan-transition.tsx",
+        "needle": "const bX = lerp(W.dist, 0, tw(t, cut, W.brake, power3Out));",
+        "finding": "新镜从正侧回中心，与旧镜向负侧离开的空间方向连贯。"
+      },
+      {
+        "file": "upstream/demos/whip-pan-transition/index.html",
+        "needle": "duration: W.recover, ease: \"sine.out\"",
+        "finding": "刹车结束后另排轻量回稳，只处理残留旋转。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  },
+  {
+    "id": "x-follow-card",
+    "relations": [
+      "人物资料到来源身份",
+      "点击关注到按钮与计数反馈"
+    ],
+    "select_when": "介绍真实作者或账号时确需资料上下文，且用户明确要求演示关注交互时。",
+    "avoid_when": "用虚构粉丝数制造社会证明，或只是引用观点却强加关注动作时。",
+    "sequence": [
+      "资料卡外壳弹入",
+      "内容按阅读顺序错峰揭示",
+      "光标移动到关注按钮并按下",
+      "按钮两态交叉、涟漪与计数纸带更新",
+      "短暂读结果后结束"
+    ],
+    "narration_anchor": "先说明这个人是谁，再在获准的关注引导处演示操作。",
+    "pitfalls": [
+      "文档称壳完全到位后内容才落，实际内容 0.34 秒起入，早于 0.62 秒壳落定。",
+      "TSX 使用固定 TARGET/TIP，HTML 需在终态量按钮；改资料布局会影响命中。",
+      "粉丝数加一只是演示状态，不能当成实际发生的关注事实。"
+    ],
+    "v5_role": "host_interaction",
+    "v5_adaptation": "只保留资料层次和可见反馈链的研究；V5 默认不采用 X 品牌、CTA 或伪计数，真实人物可另做来源卡，交互仅在本集明确授权后适配验证。",
+    "evidence": [
+      {
+        "file": "upstream/template/cards/x-follow-card.tsx",
+        "needle": "const p = tw(t, 0.34 + i * C.layerStagger, C.layerDur, power2Out);",
+        "finding": "资料内容从外壳动画进行中起步，实际是交叠错峰而非全串行。"
+      },
+      {
+        "file": "upstream/demos/x-follow-card/index.html",
+        "needle": "tl.to(strip, { y: -20, duration: C.rollDur",
+        "finding": "固定窗口内推动计数字带，表现演示计数更新而非真实网络操作。"
+      }
+    ],
+    "reviewed": {
+      "recipe": true,
+      "tsx_core": true,
+      "html_core": true
+    }
+  }
+]
+

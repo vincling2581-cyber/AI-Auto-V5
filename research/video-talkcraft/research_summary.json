@@ -1,0 +1,23 @@
+{
+  "recipes": 108,
+  "research_completed": 108,
+  "v5_adaptation_completed": 0,
+  "upstream_keyframe_capture_completed": 108,
+  "categories": {
+    "字幕花字": 22,
+    "数据信息图": 14,
+    "素材呈现": 27,
+    "人物互动": 10,
+    "转场结构": 13,
+    "强调标注": 14,
+    "运镜": 8
+  },
+  "roles": {
+    "card_content": 27,
+    "evidence_presentation": 23,
+    "host_interaction": 8,
+    "transition": 10,
+    "card_emphasis": 30,
+    "source_camera": 10
+  }
+}

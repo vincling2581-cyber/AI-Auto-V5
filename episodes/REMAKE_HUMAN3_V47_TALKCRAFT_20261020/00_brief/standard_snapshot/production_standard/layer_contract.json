@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "standard_version": "4.7",
+  "episode_contract": "03_storyboard/production_contract.json",
+  "required_root_fields": [
+    "schema_version",
+    "standard_version",
+    "scope",
+    "fps",
+    "total_frames",
+    "corner_labels",
+    "opening",
+    "clips"
+  ],
+  "required_clip_fields": [
+    "id",
+    "layer",
+    "asset_path",
+    "start_frame",
+    "end_frame_exclusive",
+    "semantic_gain",
+    "narration_anchors",
+    "change_dimensions",
+    "motion",
+    "transition"
+  ],
+  "transition_semantics": "transition describes entry into the current main-visual clip; any boundary with an illustration on either side must be hard_cut. Card-internal object/label entry belongs to its semantic_process, not a transition over the illustration.",
+  "illustration": {
+    "presentation_mode": "static_comic_sequence",
+    "max_contiguous_image_seconds": 2.0,
+    "motion": "none",
+    "transition": "hard_cut",
+    "corner_labels": false,
+    "allowed_extensions": [
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".webp",
+      ".bmp"
+    ],
+    "identity_of_image": "SHA-256 of actual source bytes; adjacent aliases are one continuous use, returning after another image/card is forbidden",
+    "required_scene_fields": [
+      "scene_id",
+      "scene_progress"
+    ],
+    "scene_change_reason_required_on_scene_change": true,
+    "fixed_scene_duration_seconds": null,
+    "scene_id_semantics": "Identifies a concrete situation. Returning to a situation may reuse its scene_id but must use a new source image. Consecutive scene groups are derived separately.",
+    "scene_change_reason_semantics": "Nonempty when scene_id changes from the preceding illustration, even if information cards intervene. The first illustration needs no change reason.",
+    "planning_levels": [
+      "single_image",
+      "same_scene_group",
+      "semantic_segment"
+    ]
+  },
+  "information_card": {
+    "max_contiguous_image_seconds": null,
+    "allowed_motion": [
+      "semantic_process",
+      "none"
+    ],
+    "allowed_transition": [
+      "hard_cut",
+      "none",
+      "card_entry",
+      "semantic_transition"
+    ],
+    "corner_labels": false,
+    "motion_quality": "Use meaningful object relationships, traceable identity, intermediate states, arrival/occlusion and readable holds; motion=none needs an explicit simple-card purpose in the design.",
+    "static_purpose_field": "static_card_purpose"
+  },
+  "narration_anchor": {
+    "required_fields": [
+      "text",
+      "start_frame",
+      "end_frame_exclusive"
+    ],
+    "time_basis": "episode-local frames, overlapping the clip; the same full semantic span can support several successive illustrations"
+  },
+  "change_dimensions": [
+    "scene",
+    "pose",
+    "character_position",
+    "prop_state",
+    "composition",
+    "expression",
+    "focus",
+    "relation",
+    "evidence",
+    "establishing"
+  ],
+  "opening": {
+    "required_episode_fields": [
+      "viewer_question",
+      "visual_payoff",
+      "narration_anchor",
+      "entry_clip_id"
+    ],
+    "timing": "No universal first-N-seconds or shot-count quota. Show a relevant problem/result/contrast and a reason to continue without rewriting the locked narration."
+  },
+  "subtitles": {
+    "role": "spoken_caption",
+    "position": "bottom_center",
+    "motion": "none",
+    "plate_position": "bottom_center",
+    "plate_motion": "none"
+  },
+  "limits": [
+    "This contract is the main visual sequence, not a declaration of physical editor tracks. Spoken captions are a separate overlay.",
+    "A semantic sentence can span multiple static illustrations; the 2-second cap does not cap the sentence or any information card.",
+    "Field presence, distinct hashes and a declared motion mode cannot prove meaningful visual differences, character consistency, absence of baked-in labels or actual rendered stillness.",
+    "Inspect source illustrations and actual encoded output; normal-speed picture/sound review is a separate required acceptance record for a finished video.",
+    "Scene metadata and group durations support review only: a related topic does not justify a long scene; there is no fixed scene-duration or scene-count quota. Assess visible progress and continuity across situations separately."
+  ]
+}

@@ -1,0 +1,763 @@
+{
+  "schemaVersion": "1.0",
+  "episodeId": "REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+  "scope": "episode_local_information_cards",
+  "purpose": "本集唯一语义设计与逐卡选型/实现记录；逐卡实际输出观察稍后按匹配版本留证。",
+  "library": {
+    "root": "research/video-talkcraft",
+    "sourceCommit": "a7c29edfb2404612dde6a5a1c8aa94232e85625b",
+    "queryTool": "research/video-talkcraft/scripts/query.py",
+    "workflowRead": "docs/SINGLE_EPISODE_WORKFLOW.md §3.1",
+    "queryCommandsActuallyRun": [
+      "python research/video-talkcraft/scripts/query.py title demote source converge --limit 5 --json",
+      "python research/video-talkcraft/scripts/query.py quadrant distribute level timeline vertical --limit 5 --json",
+      "python research/video-talkcraft/scripts/query.py ui flow theater doc park chat message --limit 5 --json",
+      "python research/video-talkcraft/scripts/query.py assemble strike replace focus dim spotlight --limit 5 --json"
+    ],
+    "readPolicy": "查询少量候选后实际读取以下9张笔记与各自关键TSX；没有重读全库，也没有照搬上游品牌、假数据或演示时长。",
+    "notesAndSourceExcerptsRead": [
+      {
+        "id": "title-demote-to-label",
+        "note": "research/video-talkcraft/cards/title-demote-to-label.md",
+        "source": "research/video-talkcraft/upstream/template/cards/title-demote-to-label.tsx",
+        "sourceLinesRead": [
+          72,
+          94
+        ]
+      },
+      {
+        "id": "source-converge",
+        "note": "research/video-talkcraft/cards/source-converge.md",
+        "source": "research/video-talkcraft/upstream/template/cards/source-converge.tsx",
+        "sourceLinesRead": [
+          80,
+          132
+        ]
+      },
+      {
+        "id": "step-timeline-vertical",
+        "note": "research/video-talkcraft/cards/step-timeline-vertical.md",
+        "source": "research/video-talkcraft/upstream/template/cards/step-timeline-vertical.tsx",
+        "sourceLinesRead": [
+          88,
+          135
+        ]
+      },
+      {
+        "id": "ui-flow-theater",
+        "note": "research/video-talkcraft/cards/ui-flow-theater.md",
+        "source": "research/video-talkcraft/upstream/template/cards/ui-flow-theater.tsx",
+        "sourceLinesRead": [
+          244,
+          280
+        ]
+      },
+      {
+        "id": "doc-park-left-pill-deal",
+        "note": "research/video-talkcraft/cards/doc-park-left-pill-deal.md",
+        "source": "research/video-talkcraft/upstream/template/cards/doc-park-left-pill-deal.tsx",
+        "sourceLinesRead": [
+          110,
+          137
+        ]
+      },
+      {
+        "id": "chat-message-flow",
+        "note": "research/video-talkcraft/cards/chat-message-flow.md",
+        "source": "research/video-talkcraft/upstream/template/cards/chat-message-flow.tsx",
+        "sourceLinesRead": [
+          245,
+          284
+        ]
+      },
+      {
+        "id": "info-card-assemble",
+        "note": "research/video-talkcraft/cards/info-card-assemble.md",
+        "source": "research/video-talkcraft/upstream/template/cards/info-card-assemble.tsx",
+        "sourceLinesRead": [
+          94,
+          125
+        ]
+      },
+      {
+        "id": "strike-and-replace",
+        "note": "research/video-talkcraft/cards/strike-and-replace.md",
+        "source": "research/video-talkcraft/upstream/template/cards/strike-and-replace.tsx",
+        "sourceLinesRead": [
+          85,
+          130
+        ]
+      },
+      {
+        "id": "focus-dim-spotlight",
+        "note": "research/video-talkcraft/cards/focus-dim-spotlight.md",
+        "source": "research/video-talkcraft/upstream/template/cards/focus-dim-spotlight.tsx",
+        "sourceLinesRead": [
+          155,
+          202
+        ]
+      }
+    ]
+  },
+  "implementation": {
+    "file": "06_project/cards.js",
+    "exports": [
+      "renderCard(id,t,duration,defaults)",
+      "cardState(id,t,duration,defaults)",
+      "CARD_TIMELINE"
+    ],
+    "units": "卡内秒数；绝对帧区间均为30fps、左闭右开",
+    "svgSize": [
+      1920,
+      1080
+    ],
+    "motion": "显式帧时间；确定性；沿实际三次贝塞尔路径的80段弧长表取位置；无DOM时钟、随机数、动画库或外部依赖",
+    "subtitleOwner": "主app独立固定底部中央字幕",
+    "safeAreaConsumption": "renderCard 以 defaults.layout.content_safe 建立真实 SVG clipPath；字幕安全区由主app消费",
+    "fixedCornerBrandLabels": false,
+    "animationLayerTwoSecondCapAppliedToCards": false
+  },
+  "cards": [
+    {
+      "cardId": "C01",
+      "timelineSegmentId": "C01",
+      "frameRange": [
+        119,
+        312
+      ],
+      "semanticRelation": "先介绍作者和框架，再让主题降级为段内标签；目标、卡点、行动三个松散来源通过各自通路归集为成长指南。",
+      "query": "title demote source converge",
+      "recipes": [
+        "title-demote-to-label",
+        "source-converge"
+      ],
+      "reason": "段首需要概念成立，后半段需要实际解释混乱到清晰。组合标题让位与三源归集，避免只换一页静态标题。",
+      "layout": "无外框标题接文档式收束；paper主题；三个小来源加一个结果文档，非双大面板。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 3.9667,
+          "srtId": 3,
+          "action": "作者Dan Koe先在中心成立"
+        },
+        {
+          "absoluteSeconds": 5.5667,
+          "srtId": 4,
+          "action": "HUMAN 3.0出现，作者退为辅助行"
+        },
+        {
+          "absoluteSeconds": 7.1167,
+          "action": "标题与尺寸共用同一连续进度让出主体区域"
+        },
+        {
+          "absoluteSeconds": 7.8334,
+          "srtId": 5,
+          "action": "三个明确来源的副本沿真实曲线开始归集"
+        },
+        {
+          "absoluteSeconds": 9.1667,
+          "srtId": 6,
+          "action": "最后来源已到达，清晰指南三行已成立并保持"
+        }
+      ],
+      "expectedProcess": [
+        "作者",
+        "作者加框架名称",
+        "段内小标题与三个来源建立",
+        "目标/卡点/行动沿各自曲线传递且原来源保留",
+        "每个副本到达后才建立对应指南行",
+        "完整指南保持约1.3秒"
+      ],
+      "implementationFunctions": [
+        "cardState:C01",
+        "c01",
+        "along",
+        "renderCard"
+      ],
+      "actualStateKeys": [
+        "titleReveal",
+        "demote",
+        "sourceReveal",
+        "transfers[].progress",
+        "transfers[].arrived",
+        "guideRows",
+        "guideReady",
+        "readingHold"
+      ],
+      "localReadingHoldStartsAt": 5.1,
+      "observeAtLocalSeconds": [
+        0.4,
+        1.9,
+        3.55,
+        4.15,
+        4.65,
+        5.2,
+        6.25
+      ]
+    },
+    {
+      "cardId": "C02",
+      "timelineSegmentId": "C02",
+      "frameRange": [
+        312,
+        525
+      ],
+      "semanticRelation": "自己从单一概念展开为四个平等、互补的观察象限；按口播轮流指认后回到全貌。",
+      "query": "title demote source converge；quadrant distribute level timeline vertical",
+      "recipes": [
+        "source-converge",
+        "focus-dim-spotlight"
+      ],
+      "adaptation": "汇聚配方反向用于概念展开，四个90度等面积扇区自由设计；不使用四个步骤、百分比或得分。",
+      "reason": "四象限没有先后因果，不能使用步骤线。保留中心自己及等面积扇区，逐项强调只改变当前注意力。",
+      "layout": "blue主题；无大面板的四等分环盘；中心自己保持，象限描述均为事实材料支持的领域词。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 10.95,
+          "srtId": 7,
+          "action": "由中心向四个方向逐一展开"
+        },
+        {
+          "absoluteSeconds": 12.5667,
+          "srtId": 8,
+          "action": "心智聚焦"
+        },
+        {
+          "absoluteSeconds": 13.35,
+          "srtId": 8,
+          "action": "身体聚焦"
+        },
+        {
+          "absoluteSeconds": 14.1333,
+          "srtId": 8,
+          "action": "精神聚焦"
+        },
+        {
+          "absoluteSeconds": 14.9166,
+          "srtId": 8,
+          "action": "事业聚焦"
+        },
+        {
+          "absoluteSeconds": 15.7,
+          "srtId": 9,
+          "action": "恢复四象限共同可读，进入全面盘点"
+        }
+      ],
+      "expectedProcess": [
+        "自己在中心",
+        "四个等权区域展开，连接副本沿曲线到达",
+        "到达后才显示该象限的文字身份",
+        "心智/身体/精神/事业按配音交接注意力",
+        "四个象限恢复同等权重并保持"
+      ],
+      "implementationFunctions": [
+        "cardState:C02",
+        "c02",
+        "focusAt",
+        "along"
+      ],
+      "actualStateKeys": [
+        "distribution[].progress",
+        "distribution[].equalWeight",
+        "focus.index",
+        "focus.weights",
+        "focus.restore",
+        "noScores"
+      ],
+      "localReadingHoldStartsAt": 5.7,
+      "observeAtLocalSeconds": [
+        0.2,
+        0.9,
+        1.65,
+        2.35,
+        3.15,
+        4.0,
+        4.85,
+        5.8,
+        6.8
+      ]
+    },
+    {
+      "cardId": "C03",
+      "timelineSegmentId": "C03",
+      "frameRange": [
+        525,
+        744
+      ],
+      "semanticRelation": "说明三个宏观层级的发展方式，再从参考位置连接到下一步规划；不给任何真实个人赋层级。",
+      "query": "quadrant distribute level timeline vertical",
+      "recipes": [
+        "step-timeline-vertical"
+      ],
+      "adaptation": "取节点到线及文字接续，改为由L1向L3建立层级示意；取消模板默认第一个节点的个人当前环。右侧另画一般性的当前位置到下一步。",
+      "reason": "模型层级有发展方向，但没有本人的访谈数据，不能把示意图冒充真实定级。",
+      "layout": "paper主题；左侧三层关系轨、右侧参考位置到行动，小模块不是双大面板。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 18.05,
+          "srtId": 10,
+          "action": "L1顺从建立，随后连接线连续向上推进"
+        },
+        {
+          "absoluteSeconds": 18.7,
+          "srtId": 10,
+          "action": "线到L2后，自主说明出现"
+        },
+        {
+          "absoluteSeconds": 19.35,
+          "srtId": 11,
+          "action": "线到L3后，整合说明出现"
+        },
+        {
+          "absoluteSeconds": 20.7667,
+          "srtId": 12,
+          "action": "右侧当前位置建立"
+        },
+        {
+          "absoluteSeconds": 21.6,
+          "srtId": 12,
+          "action": "从当前位置连至下一步行动"
+        }
+      ],
+      "expectedProcess": [
+        "层级标题与限定",
+        "L1到L3连线与节点连续建立",
+        "三种发展方式完整在场",
+        "参考当前位置到下一步行动",
+        "完整关系与非人格价值限定持续可读"
+      ],
+      "implementationFunctions": [
+        "cardState:C03",
+        "c03"
+      ],
+      "actualStateKeys": [
+        "rail",
+        "levels[].progress",
+        "levels[].notPersonalRating",
+        "planning",
+        "nextStep",
+        "personalLevel"
+      ],
+      "localReadingHoldStartsAt": 4.7,
+      "observeAtLocalSeconds": [
+        0.3,
+        0.9,
+        1.5,
+        2.1,
+        3.5,
+        4.4,
+        5.4,
+        7.0
+      ]
+    },
+    {
+      "cardId": "C04",
+      "timelineSegmentId": "C04",
+      "frameRange": [
+        744,
+        876
+      ],
+      "semanticRelation": "提示词原文保留，复制出来的同一副本沿弧线到AI输入区，随后发送，最后才出现收到。",
+      "query": "ui flow theater doc park chat message",
+      "recipes": [
+        "ui-flow-theater",
+        "doc-park-left-pill-deal"
+      ],
+      "adaptation": "只借用操作与控件状态共用剧本，以及来源持续驻留。没有假冒原生界面、来源滚屏、无关按钮或真实产品测试回执。",
+      "reason": "用法段强调复制、粘贴、发送的动作顺序，副本传递与收到先后比模板点击装饰更重要。",
+      "layout": "本集唯一双大面板，严格深绿来源加纸白AI；流程示意在标题下。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 25.9,
+          "srtId": 15,
+          "action": "复制动作"
+        },
+        {
+          "absoluteSeconds": 26.18,
+          "srtId": 15,
+          "action": "副本沿弧线离开，原文持续保留"
+        },
+        {
+          "absoluteSeconds": 27.45,
+          "srtId": 16,
+          "action": "副本到达，AI输入区才显示已粘贴"
+        },
+        {
+          "absoluteSeconds": 27.85,
+          "srtId": 16,
+          "action": "发送"
+        },
+        {
+          "absoluteSeconds": 28.25,
+          "srtId": 16,
+          "action": "AI显示已收到提示词"
+        }
+      ],
+      "expectedProcess": [
+        "原文与空AI输入区",
+        "复制",
+        "同一副本沿弧线传递",
+        "到达后已粘贴",
+        "发送后等待",
+        "已收到并保持"
+      ],
+      "implementationFunctions": [
+        "cardState:C04",
+        "c04",
+        "along"
+      ],
+      "actualStateKeys": [
+        "copy",
+        "transfer.identity",
+        "transfer.progress",
+        "transfer.arrived",
+        "transfer.sourcePreserved",
+        "pasted",
+        "sent",
+        "received",
+        "status"
+      ],
+      "localReadingHoldStartsAt": 3.65,
+      "observeAtLocalSeconds": [
+        0.4,
+        1.2,
+        1.6,
+        2.1,
+        2.6,
+        2.8,
+        3.2,
+        3.6,
+        4.2
+      ]
+    },
+    {
+      "cardId": "C05",
+      "timelineSegmentId": "C05",
+      "frameRange": [
+        876,
+        1102
+      ],
+      "semanticRelation": "四个方面先是待了解，经具体经历的问答，再追问顾虑，将回答线索提炼为待验证卡点；不存在虚构定级。",
+      "query": "ui flow theater doc park chat message",
+      "recipes": [
+        "chat-message-flow",
+        "source-converge"
+      ],
+      "adaptation": "固定消息槽保留问答历史，等待提示在回复前退出；末尾从具体回答中复制怕选错线索到待验证卡点，源回答保留，结果等到达再显。",
+      "reason": "采访是有身份、有等待、有追问依据的连续过程；仅一次性亮出四个等级会虚构评估。",
+      "layout": "blue主题；左侧四方面待了解列表，右侧四条示意聊天；末尾提炼标签。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 29.2,
+          "srtId": 17,
+          "action": "四象限均为待了解，不显示等级"
+        },
+        {
+          "absoluteSeconds": 31.5667,
+          "srtId": 18,
+          "action": "先问最近一次具体经历"
+        },
+        {
+          "absoluteSeconds": 32.76,
+          "srtId": 18,
+          "action": "示例回答出现，历史保留"
+        },
+        {
+          "absoluteSeconds": 33.9,
+          "srtId": 19,
+          "action": "追问具体顾虑"
+        },
+        {
+          "absoluteSeconds": 35.0,
+          "srtId": 20,
+          "action": "补充回答"
+        },
+        {
+          "absoluteSeconds": 35.55,
+          "srtId": 20,
+          "action": "回答中的怕选错副本沿曲线传给待验证卡点"
+        },
+        {
+          "absoluteSeconds": 36.05,
+          "srtId": 20,
+          "action": "到达后出现提炼内容，原回答仍在"
+        }
+      ],
+      "expectedProcess": [
+        "四方面待了解",
+        "组织问题等待态",
+        "提问",
+        "回答",
+        "基于回答追问",
+        "补充回答",
+        "回答线索传递到待验证卡点",
+        "四条历史与提炼结果保持"
+      ],
+      "implementationFunctions": [
+        "cardState:C05",
+        "c05",
+        "along"
+      ],
+      "actualStateKeys": [
+        "messages[].role",
+        "messages[].typing",
+        "messages[].visible",
+        "messages[].source",
+        "pendingQuadrants",
+        "estimatedLevels",
+        "extract",
+        "extractionArrived",
+        "sourcePreserved"
+      ],
+      "localReadingHoldStartsAt": 6.85,
+      "observeAtLocalSeconds": [
+        0.5,
+        2.1,
+        2.6,
+        3.9,
+        4.95,
+        6.05,
+        6.55,
+        7.2
+      ]
+    },
+    {
+      "cardId": "C06",
+      "timelineSegmentId": "C06",
+      "frameRange": [
+        1198,
+        1319
+      ],
+      "semanticRelation": "具体回答的事实、约束、意愿分别进入成长指南的当前状态、主要卡点、下一步行动，形成可回看的结构化结果。",
+      "query": "assemble strike replace focus dim spotlight",
+      "recipes": [
+        "info-card-assemble",
+        "source-converge"
+      ],
+      "adaptation": "取消书封、价格、色卡及默认前推；三个字段通过来源副本到达而建立，不靠整卡缩放或堆字。",
+      "reason": "这里只需要解释指南如何按回答组织，不应凭空显示真实个人诊断或收益。",
+      "layout": "paper主题；单个完整文档配三个小来源；所有示意字段均为结构词。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 40.2833,
+          "srtId": 23,
+          "action": "事实进入当前状态"
+        },
+        {
+          "absoluteSeconds": 41.0133,
+          "srtId": 23,
+          "action": "约束进入主要卡点"
+        },
+        {
+          "absoluteSeconds": 41.7433,
+          "srtId": 23,
+          "action": "意愿进入下一步行动"
+        },
+        {
+          "absoluteSeconds": 42.2433,
+          "srtId": 23,
+          "action": "完整结构成立，保留阅读，不追加收益保证"
+        }
+      ],
+      "expectedProcess": [
+        "具体回答与空指南结构",
+        "来源副本依次移动",
+        "每项到达后才填入指南字段",
+        "三个字段完成并持续阅读约1.6秒"
+      ],
+      "implementationFunctions": [
+        "cardState:C06",
+        "c06",
+        "along"
+      ],
+      "actualStateKeys": [
+        "fields[].progress",
+        "fields[].arrived",
+        "fields[].sourcePreserved",
+        "complete",
+        "visibleSteps"
+      ],
+      "localReadingHoldStartsAt": 2.45,
+      "observeAtLocalSeconds": [
+        0.2,
+        0.6,
+        0.95,
+        1.35,
+        1.85,
+        2.05,
+        2.6,
+        3.8
+      ]
+    },
+    {
+      "cardId": "C07",
+      "timelineSegmentId": "C07",
+      "frameRange": [
+        1319,
+        1446
+      ],
+      "semanticRelation": "同一个缺少槽位从答案纠正为系统提问；先否定旧理解，再替换；原判断作为划掉的历史注释保留。",
+      "query": "assemble strike replace focus dim spotlight",
+      "recipes": [
+        "strike-and-replace"
+      ],
+      "adaptation": "划线与旧词是独立SVG同级对象，不受旧词透明父层控制；换词时旧词与划线显式缩到历史注释位。新词进入原槽，不被同一条划线误划。",
+      "reason": "口播是一个明确的理解转折，同位替换比两个并列观点更能表达纠正。小字限定为自我反思视角。",
+      "layout": "dark主题；无框极简纠正；无固定品牌角标。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 45.4667,
+          "srtId": 26,
+          "action": "答案被从左到右划掉"
+        },
+        {
+          "absoluteSeconds": 46.5334,
+          "srtId": 27,
+          "action": "同槽系统提问进入，旧判断与独立划线缩成历史注释"
+        },
+        {
+          "absoluteSeconds": 47.0667,
+          "srtId": 27,
+          "action": "新判断完整阅读"
+        }
+      ],
+      "expectedProcess": [
+        "缺少答案可读",
+        "明确划除答案",
+        "旧判断连同独立划线缩到历史位",
+        "原槽出现系统提问",
+        "新判断与已划掉的历史同时保持"
+      ],
+      "implementationFunctions": [
+        "cardState:C07",
+        "c07"
+      ],
+      "actualStateKeys": [
+        "strike",
+        "replacement",
+        "archive",
+        "strikeIsIndependentSibling",
+        "struckOriginalRetained",
+        "oldValue",
+        "newValue"
+      ],
+      "localReadingHoldStartsAt": 3.1,
+      "observeAtLocalSeconds": [
+        0.5,
+        1.55,
+        1.8,
+        2.6,
+        2.8,
+        3.15,
+        4.0
+      ]
+    },
+    {
+      "cardId": "C08",
+      "timelineSegmentId": "C08",
+      "frameRange": [
+        1446,
+        1678
+      ],
+      "semanticRelation": "四个平等候选跟随口播依次成为注意力焦点，再恢复所有候选；观众尚未作出选择，因此没有已选项或赢家。",
+      "query": "assemble strike replace focus dim spotlight",
+      "recipes": [
+        "focus-dim-spotlight"
+      ],
+      "adaptation": "四项文字和面积不变，只轮流提高注意力；一个描边用连续几何进度接力，最后退去并恢复全体。取消呼吸发光与任何替观众选中的打勾。",
+      "reason": "结尾在询问偏好，逐项指认必须回到开放选择，而非默认选择事业或收益最高者。",
+      "layout": "peach主题；四张等大小的小候选；末尾一行语义CTA，非真实主页或固定品牌。",
+      "voiceAnchors": [
+        {
+          "absoluteSeconds": 49.8667,
+          "srtId": 29,
+          "action": "心智焦点"
+        },
+        {
+          "absoluteSeconds": 50.5167,
+          "srtId": 29,
+          "action": "身体焦点"
+        },
+        {
+          "absoluteSeconds": 51.1667,
+          "srtId": 29,
+          "action": "精神焦点"
+        },
+        {
+          "absoluteSeconds": 51.8167,
+          "srtId": 29,
+          "action": "事业焦点"
+        },
+        {
+          "absoluteSeconds": 52.4667,
+          "srtId": 29,
+          "action": "四个候选恢复平等"
+        },
+        {
+          "absoluteSeconds": 52.6667,
+          "srtId": 30,
+          "action": "评论区CTA"
+        },
+        {
+          "absoluteSeconds": 53.6667,
+          "srtId": 31,
+          "action": "关注继续了解AI用法CTA"
+        }
+      ],
+      "expectedProcess": [
+        "四个平等候选",
+        "焦点按心智/身体/精神/事业接力，其他选项始终可见",
+        "描边退去，四项恢复原亮度",
+        "评论及关注语义CTA",
+        "开放候选保持到结尾"
+      ],
+      "implementationFunctions": [
+        "cardState:C08",
+        "c08",
+        "focusAt"
+      ],
+      "actualStateKeys": [
+        "focus.index",
+        "focus.weights",
+        "focus.restore",
+        "focus.ring",
+        "selected",
+        "winner",
+        "equalOptions",
+        "cta",
+        "ctaReveal"
+      ],
+      "localReadingHoldStartsAt": 4.67,
+      "observeAtLocalSeconds": [
+        0.5,
+        1.85,
+        2.5,
+        3.15,
+        3.8,
+        4.5,
+        4.9,
+        5.8,
+        7.5
+      ]
+    }
+  ],
+  "implementationChecks": {
+    "syntax": {
+      "status": "passed",
+      "command": "node --check episodes/REMAKE_HUMAN3_V47_TALKCRAFT_20261020/06_project/cards.js"
+    },
+    "deterministicSampleGeneration": {
+      "status": "passed",
+      "scope": "8张卡各抽初态/20%/50%/80%/末态，SVG无NaN/undefined/Infinity，cardState可序列化；只证明调用与数值有效"
+    },
+    "sourceSvgVisualObservation": "not_performed",
+    "encodedOutputObservation": "not_performed",
+    "normalSpeedSubjectiveAV": "not_performed",
+    "informationCardProcessAndReading": "pending_encoded_output_observation",
+    "evidenceBoundary": "源码、状态机、参数传递及JSON记录均不等同于画面语义验收。主代理需检查匹配编码版本的初态、中间态、到达状态与末态阅读。"
+  },
+  "audience_question": "想提升却不知从哪下手，怎样把成长拆成明确的下一步？",
+  "core_claim": "把四象限、层级和逐题反思组织成可行动的自我探索路径，不承诺专业诊断或收入。",
+  "source_episode": "TEST_V46_HUMAN3_20261018",
+  "narration_unchanged": true,
+  "viewing_scope": "完整重制样片供用户观看效果，尚未获用户认可。"
+}

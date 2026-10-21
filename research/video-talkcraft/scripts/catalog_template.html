@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V5 信息卡动效研究库 · 108 套</title>
+<style>
+:root{font-family:"Microsoft YaHei",system-ui,sans-serif;color:#17332e;background:#f4f4ee;line-height:1.6}body{margin:0}header,main{max-width:1180px;margin:auto;padding:26px}header{padding-bottom:8px}h1{font-size:28px;margin:0 0 8px}p{margin:6px 0}.muted{color:#5b6863;font-size:14px}.tools{position:sticky;top:0;background:#f4f4eef5;backdrop-filter:blur(8px);padding:12px 0;display:flex;gap:10px;flex-wrap:wrap;z-index:3}input,select{padding:11px;border:1px solid #cbd4cc;border-radius:9px;background:white;color:#17332e;font:inherit}input{flex:1;min-width:220px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:18px}.card{background:#fff;border:1px solid #dce2d8;border-radius:14px;padding:18px;overflow:hidden}.card h2{font-size:19px;margin:0}.id{font-family:monospace;font-size:12px;color:#68766e;word-break:break-all}.tags{font-size:12px;color:#33744e;margin:8px 0}.card img{width:100%;height:auto;display:block;border-radius:7px;margin:10px 0}.card p,.card li{font-size:14px}.warn{color:#88512c}.card details{border-top:1px solid #e9ece7;margin-top:12px;padding-top:8px}.card summary{cursor:pointer}a{color:#22694d}ol,ul{padding-left:22px}.links{display:flex;gap:12px;flex-wrap:wrap;font-size:13px}#count{margin:10px 0 18px;font-size:14px}.empty{padding:30px}.badge{display:inline-block;padding:2px 7px;border-radius:5px;background:#e7f0e4;font-size:12px;margin-left:6px}
+</style>
+<header><h1>信息卡动效研究库 <span class="badge">108 套</span></h1>
+<p>先根据整段文案判断对象关系，再检索候选效果。每套包含选择条件、可见过程、误用边界与源码对照。</p>
+<p class="muted">全部完成文档与关键实现研究；V5 适配及真实配音验证按使用需要进行。此库不改变当前 SOP、插画规则或剪映导出合同。</p>
+<p class="muted">来源 Vincent Wei / video-talkcraft · 固定版本 a7c29ed · PolyForm Noncommercial 1.0.0 · <a href="README.md">使用说明与授权</a></p>
+<p class="muted">Git 源码版不含图片和视频。检索、笔记和源码可直接读取；预览图保存在本地，部分演示需补齐对应媒体。</p></header>
+<main><div class="tools"><input id="q" aria-label="搜索" placeholder="关系、用途或名称，例如 汇聚 / 对比 / 筛选 / 截图">
+<select id="cat" aria-label="分类"><option value="">全部上游分类</option></select><select id="role" aria-label="用途"><option value="">全部研究用途</option></select></div>
+<div id="count"></div><div id="cards" class="grid"></div></main>
+<script id="data" type="application/json">__CATALOG_JSON__</script>
+<script>
+const DATA=JSON.parse(document.getElementById('data').textContent), cards=DATA.cards;
+const $=id=>document.getElementById(id);
+function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n}
+function link(label,url){const n=el('a',label);n.href=url;n.target='_blank';n.rel='noopener';return n}
+for(const c of [...new Set(cards.map(x=>x.category))]){const n=el('option',c);n.value=c;$('cat').append(n)}
+for(const c of [...new Set(cards.map(x=>x.role_label))]){const n=el('option',c);n.value=c;$('role').append(n)}
+function render(){const q=$('q').value.trim().toLowerCase();const found=cards.filter(c=>(!$('cat').value||c.category===$('cat').value)&&(!$('role').value||c.role_label===$('role').value)&&(!q||[c.id,c.title,c.category,c.select_when,...c.relations].join(' ').toLowerCase().includes(q)));
+$('count').textContent=`找到 ${found.length} / 108 套候选。研究完成 ≠ 已接入 V5 或已通过成片验证。`;$('cards').replaceChildren();
+for(const c of found){const n=el('article',undefined,'card');n.append(el('h2',c.title),el('div',c.id,'id'),el('div',`${c.category} · ${c.role_label} · ${c.relations.join(' / ')}`,'tags'));
+const img=el('img');img.addEventListener('error',()=>img.replaceWith(el('p','预览图保存在本地；可通过下方笔记和源码查看过程。','muted')),{once:true});img.src=`previews/${c.id}.jpg`;img.alt='上游演示三个取样状态';img.loading='lazy';n.append(img,el('p','适合：'+c.select_when),el('p','避免：'+c.avoid_when,'warn'));
+if(c.status.upstream_keyframes.sample_warning)n.append(el('p','取样限制：'+c.status.upstream_keyframes.sample_warning,'warn'));
+const d=el('details');d.append(el('summary','展开动作过程与适配提醒'));const seq=el('ol');for(const s of c.sequence)seq.append(el('li',s));d.append(seq,el('p','配音落点：'+c.narration_anchor),el('p','V5 适配：'+c.v5_adaptation));const pitfalls=el('ul');for(const s of c.pitfalls)pitfalls.append(el('li',s));d.append(pitfalls);
+const links=el('div',undefined,'links');links.append(link('本地演示（部分需媒体）',`upstream/demos/${c.id}/index.html?embed=1`),link('逐卡笔记',`cards/${c.id}.md`),link('完整配方',c.sources.recipe.local),link('TSX 源码',c.sources.tsx.local));d.append(links,el('p','关键帧仅为研究取样；未执行正常速度主观审片、V5 生产适配或剪映原生验证。','muted'));n.append(d);$('cards').append(n)}
+if(!found.length)$('cards').append(el('p','可尝试“比较、顺序、汇聚、数量、强调、证据”等关系词。','empty'))}
+for(const id of ['q','cat','role'])$(id).addEventListener(id==='q'?'input':'change',render);render();
+</script></html>

@@ -1,0 +1,31 @@
+{
+  "id": "REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+  "type": "full_episode_remake_review_copy",
+  "standard_version": "4.7",
+  "inputs": {
+    "voice": {
+      "path": "00_brief/input/10月18日.mp3",
+      "original_path": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\TEST_V46_HUMAN3_20261018\\00_brief\\input\\10月18日.mp3",
+      "sha256": "7dba283d1420d7a3be5e86ac41f355f31274425e99f985a6fe28c5aef51b0642",
+      "duration_seconds": 55.902042
+    },
+    "srt": {
+      "path": "00_brief/input/10月18日.srt",
+      "original_path": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\TEST_V46_HUMAN3_20261018\\00_brief\\input\\10月18日.srt",
+      "sha256": "26561571776fbc22d14c7aaa4bdd4a0cd94e176dd6578ffd9c2bd2c6c8f22462"
+    }
+  },
+  "fps": 30,
+  "total_frames": 1678,
+  "duration_seconds": 55.93333333333333,
+  "caption_mode": "burn_in",
+  "voice_processing": "original_voice_no_gain_or_speed_change",
+  "delivery": [
+    "review_mp4",
+    "rerenderable_source",
+    "storyboard",
+    "srt",
+    "qc_notes"
+  ],
+  "scope": "新建独立重制集；旧集、V4和已有成片只读。用户要求完整成片供观看，不增加人工选卡审批，不进行剪映或AE导出。"
+}

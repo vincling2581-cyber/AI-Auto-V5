@@ -1,0 +1,455 @@
+{
+  "schema_version": 1,
+  "standard_version": "4.7",
+  "is_template": false,
+  "scope": "episode",
+  "fps": 30,
+  "total_frames": 1678,
+  "corner_labels": false,
+  "opening": {
+    "viewer_question": "想提升却不知道从哪里开始，怎样把成长拆成下一步？",
+    "visual_payoff": "从迷茫的目标、受阻的工作起步和地图起点进入可解释的四象限、L1到L3分级、逐题访谈与行动指南装配过程，让观众看见从不知道先做什么到能够组织下一步的关系。",
+    "narration_anchor": "第4至119帧的原配音“强烈建议想系统性提升自己／想赚钱又不知道从哪下手的兄弟”建立问题；第119至311帧的原配音引出Dan Koe、HUMAN 3.0及混乱到清晰路径，兑现继续观看的理由。各clip的narration_anchors保留结构化半开帧。",
+    "entry_clip_id": "I01"
+  },
+  "subtitles": {
+    "enabled": true,
+    "role": "spoken_caption",
+    "position": "bottom_center",
+    "motion": "none",
+    "plate_position": "bottom_center",
+    "plate_motion": "none",
+    "placement": "fixed_bottom_center"
+  },
+  "clips": [
+    {
+      "id": "I01",
+      "layer": "illustration",
+      "asset_path": "04_assets/illustrations/I01.png",
+      "start_frame": 0,
+      "end_frame_exclusive": 58,
+      "scene_id": "morning_park_goal",
+      "scene_progress": "目标建立。清晨公园中同一主角打开成长日志，步道延伸到远方学习目的地；视线、日志与远方形成想要提升但尚未找到入口的关系。",
+      "semantic_gain": "先把抽象的系统提升落到一个有方向的个人目标，呈现主角、成长日志和远处目的地；画面保持完整静止。",
+      "narration_anchors": [
+        {
+          "text": "强烈建议想系统性提升自己",
+          "start_frame": 4,
+          "end_frame_exclusive": 58
+        }
+      ],
+      "change_dimensions": [
+        "establishing",
+        "relation",
+        "composition"
+      ],
+      "motion": "none",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "I02",
+      "layer": "illustration",
+      "asset_path": "04_assets/illustrations/I02.png",
+      "start_frame": 58,
+      "end_frame_exclusive": 90,
+      "scene_id": "studio_first_step",
+      "scene_progress": "障碍具体化。同一主角面对制作一本手工笔记本的工作台，停笔看着待完成的本子，想开始独立工作却不知道第一步；不出现收益数额或成功承诺。",
+      "scene_change_reason": "从公园中的提升目标进入可执行却受阻的独立工作情境，以同一主角和记录习惯承接，让不知道从哪下手有具体对象。",
+      "semantic_gain": "把泛化的提升意愿推进到工作起步受阻，新增一个可理解的行动障碍；不以金钱、收入曲线或成果保证解释口播。",
+      "narration_anchors": [
+        {
+          "text": "想赚钱又不知道从哪下手的兄弟",
+          "start_frame": 58,
+          "end_frame_exclusive": 119
+        }
+      ],
+      "change_dimensions": [
+        "scene",
+        "pose",
+        "prop_state",
+        "composition"
+      ],
+      "motion": "none",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "I03",
+      "layer": "illustration",
+      "asset_path": "04_assets/illustrations/I03.png",
+      "start_frame": 90,
+      "end_frame_exclusive": 119,
+      "scene_id": "trail_decision",
+      "scene_progress": "行动入口。同一主角来到步道岔路，俯视构图中展开地图，笔悬于起点，准备决定先行动哪一步；地图把去哪里转成从哪里开始。",
+      "scene_change_reason": "从工作台前停笔的实际障碍转到寻找行动入口的地图情境，以同一主角、笔和起点承接，为随后把混乱理成路径的信息卡建立问题。",
+      "semantic_gain": "将不知道从哪下手进一步明确为选择起点，新增路径和第一步的关系，承接接下来的框架说明。",
+      "narration_anchors": [
+        {
+          "text": "想赚钱又不知道从哪下手的兄弟",
+          "start_frame": 58,
+          "end_frame_exclusive": 119
+        }
+      ],
+      "change_dimensions": [
+        "scene",
+        "composition",
+        "prop_state",
+        "focus",
+        "relation"
+      ],
+      "motion": "none",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C01",
+      "card_id": "C01",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 119,
+      "end_frame_exclusive": 312,
+      "semantic_gain": "介绍口播所称 Dan Koe 与 HUMAN 3.0，将分散的成长事项逐步归集成有先后关系的清晰路径；每个事项保持身份，观众能看见混乱到有序的中间过程。",
+      "narration_anchors": [
+        {
+          "text": "去试试油管大神Dan Koe",
+          "start_frame": 119,
+          "end_frame_exclusive": 167
+        },
+        {
+          "text": "提出的human3.0人生进化框架",
+          "start_frame": 167,
+          "end_frame_exclusive": 235
+        },
+        {
+          "text": "帮你把混乱的成长",
+          "start_frame": 235,
+          "end_frame_exclusive": 275
+        },
+        {
+          "text": "理成清晰的升级路径",
+          "start_frame": 275,
+          "end_frame_exclusive": 311
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "prop_state",
+        "composition"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C02",
+      "card_id": "C02",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 312,
+      "end_frame_exclusive": 525,
+      "semantic_gain": "把整体人生展开为心智、身体、精神、事业四个同等地位的象限，按口播交接焦点后恢复平等，保留四项整体盘点的关系，不暗示某象限先天更重要。",
+      "narration_anchors": [
+        {
+          "text": "这套模型核心就是把人生拆解成",
+          "start_frame": 312,
+          "end_frame_exclusive": 377
+        },
+        {
+          "text": "心智、身体、精神、事业四个核心象限",
+          "start_frame": 377,
+          "end_frame_exclusive": 471
+        },
+        {
+          "text": "帮你给自己做一次全面盘点",
+          "start_frame": 471,
+          "end_frame_exclusive": 524
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "composition",
+        "focus"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C03",
+      "card_id": "C03",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 525,
+      "end_frame_exclusive": 744,
+      "semantic_gain": "在象限之内建立 L1、L2、L3 的层级关系，再把当前理解连接到下一步规划；展示分级与规划之间的因果过程，示意对象不代表对观看者的真实评定，也不承诺成长结果。",
+      "narration_anchors": [
+        {
+          "text": "每个象限都从L1到L3",
+          "start_frame": 525,
+          "end_frame_exclusive": 579
+        },
+        {
+          "text": "划分出清晰的成长等级",
+          "start_frame": 579,
+          "end_frame_exclusive": 623
+        },
+        {
+          "text": "再基于层级制定针对性的成长规划",
+          "start_frame": 623,
+          "end_frame_exclusive": 691
+        },
+        {
+          "text": "实现更完满的成长状态",
+          "start_frame": 701,
+          "end_frame_exclusive": 744
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "prop_state",
+        "focus",
+        "composition"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C04",
+      "card_id": "C04",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 744,
+      "end_frame_exclusive": 876,
+      "semantic_gain": "把结构化提示词从源文档复制到 AI 输入区，原文档完整保留，复制件连续移动并在到达后形成已输入状态，使复制与提交的对象关系可追踪。",
+      "narration_anchors": [
+        {
+          "text": "用法很简单",
+          "start_frame": 744,
+          "end_frame_exclusive": 773
+        },
+        {
+          "text": "只需要直接把human3.0的",
+          "start_frame": 773,
+          "end_frame_exclusive": 821
+        },
+        {
+          "text": "结构化提示词发给大模型",
+          "start_frame": 821,
+          "end_frame_exclusive": 874
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "prop_state",
+        "composition"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C05",
+      "card_id": "C05",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 876,
+      "end_frame_exclusive": 1102,
+      "semantic_gain": "从四象限的基础了解进入逐题访谈，问题引出回答，再从回答中提取可讨论的卡点；先问后归集，保留问题、回答和提取物的来源，示例明确为示意，不假装已经对观众作出诊断。",
+      "narration_anchors": [
+        {
+          "text": "AI根据四个象限分别做基础定级",
+          "start_frame": 876,
+          "end_frame_exclusive": 947
+        },
+        {
+          "text": "再用深度采访的形式层层递进追问",
+          "start_frame": 947,
+          "end_frame_exclusive": 1017
+        },
+        {
+          "text": "一步步挖到你真实的",
+          "start_frame": 1017,
+          "end_frame_exclusive": 1056
+        },
+        {
+          "text": "想法和隐藏的成长卡点",
+          "start_frame": 1056,
+          "end_frame_exclusive": 1099
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "evidence",
+        "prop_state",
+        "focus"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "I04",
+      "layer": "illustration",
+      "asset_path": "04_assets/illustrations/I04.png",
+      "start_frame": 1102,
+      "end_frame_exclusive": 1155,
+      "scene_id": "park_specific_answer",
+      "scene_progress": "具体回答的材料出现。午后公园长椅上，同一主角翻开成长日志，参考一张旧票据回忆具体经历；把笼统自评落到可复述的真实事件。",
+      "scene_change_reason": "相对上一张插画 I03，从找行动入口推进到已经收到访谈问题后如何具体回答；同一主角和成长日志连接前后，午后长椅、旧票据与经历回忆提供新的实际情境。",
+      "semantic_gain": "让足够具体真诚有可见的行动依据，新增旧票据和日志所指向的具体经历，不以空泛点头或仅改字幕表达回答。",
+      "narration_anchors": [
+        {
+          "text": "只要你回答的足够具体真诚",
+          "start_frame": 1102,
+          "end_frame_exclusive": 1155
+        }
+      ],
+      "change_dimensions": [
+        "scene",
+        "pose",
+        "prop_state",
+        "evidence",
+        "composition"
+      ],
+      "motion": "none",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "I05",
+      "layer": "illustration",
+      "asset_path": "04_assets/illustrations/I05.png",
+      "start_frame": 1155,
+      "end_frame_exclusive": 1198,
+      "scene_id": "park_specific_answer",
+      "scene_progress": "从回忆推进到梳理。仍在午后公园长椅的同一具体情境，新图改为明显不同的俯视近景；主角圈选日志中的一个条目，并将它连向下一条问题，形成已选经历到下一问的明确关系。",
+      "semantic_gain": "接续 I04 的材料回忆，新增条目被选中和连接下一问的结果；以新构图、真实道具状态与关系变化表现逐步梳理，不复制或裁切 I04。",
+      "narration_anchors": [
+        {
+          "text": "跟着问题一步步梳理",
+          "start_frame": 1155,
+          "end_frame_exclusive": 1198
+        }
+      ],
+      "change_dimensions": [
+        "composition",
+        "prop_state",
+        "focus",
+        "relation"
+      ],
+      "motion": "none",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C06",
+      "card_id": "C06",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 1198,
+      "end_frame_exclusive": 1319,
+      "semantic_gain": "把前面的具体回答与卡点按来源归集、组织并装配为成长模型和行动指南；让行动条目来自已有回答，过程完成后留下可阅读的指南，而非直接凭空弹出结果。",
+      "narration_anchors": [
+        {
+          "text": "最终得到的专属成长模型和进化指南",
+          "start_frame": 1198,
+          "end_frame_exclusive": 1271
+        },
+        {
+          "text": "往往会超出你的预期",
+          "start_frame": 1272,
+          "end_frame_exclusive": 1319
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "evidence",
+        "prop_state",
+        "composition"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C07",
+      "card_id": "C07",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 1319,
+      "end_frame_exclusive": 1446,
+      "semantic_gain": "将缺少答案这一初始解释，在同一视觉槽位中纠正为缺少系统提问，保留替换前、中、后的可见联系；把关注点从催促答案转向问题组织。",
+      "narration_anchors": [
+        {
+          "text": "很多人做完才发现",
+          "start_frame": 1319,
+          "end_frame_exclusive": 1354
+        },
+        {
+          "text": "迷茫不是没答案",
+          "start_frame": 1364,
+          "end_frame_exclusive": 1396
+        },
+        {
+          "text": "是从没被人系统的问过",
+          "start_frame": 1396,
+          "end_frame_exclusive": 1446
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "prop_state",
+        "focus"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    },
+    {
+      "id": "C08",
+      "card_id": "C08",
+      "layer": "information_card",
+      "asset_path": "06_project/cards.js",
+      "start_frame": 1446,
+      "end_frame_exclusive": 1678,
+      "semantic_gain": "以平等的心智、身体、精神、事业四项邀请观众选择；按口播轮转临时关注后恢复中性，四项始终同级、不预先选出赢家；评论和关注文案服务原口播，不渲染固定品牌或集数角标。",
+      "narration_anchors": [
+        {
+          "text": "你最想先升级哪一项",
+          "start_frame": 1446,
+          "end_frame_exclusive": 1491
+        },
+        {
+          "text": "心智、身体、精神还是事业？",
+          "start_frame": 1496,
+          "end_frame_exclusive": 1574
+        },
+        {
+          "text": "评论区报个名",
+          "start_frame": 1580,
+          "end_frame_exclusive": 1609
+        },
+        {
+          "text": "关注我带你了解更多AI新玩法",
+          "start_frame": 1610,
+          "end_frame_exclusive": 1676
+        }
+      ],
+      "change_dimensions": [
+        "relation",
+        "composition",
+        "focus"
+      ],
+      "motion": "semantic_process",
+      "transition": "hard_cut",
+      "corner_labels": false
+    }
+  ],
+  "episode_id": "REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+  "timeline_source": "03_storyboard/scenes.json",
+  "time_basis": "half_open_episode_frames",
+  "subtitle_placement": "fixed_bottom_center",
+  "declaration_limits": "场景语义、动作和过程是制作声明，尚不证明真实图片、卡片中间状态或编码后静止；正常速度主观视听另行记录。"
+}

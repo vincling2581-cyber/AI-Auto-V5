@@ -1,0 +1,2205 @@
+{
+  "repository": "https://github.com/Vincentwei1021/video-talkcraft",
+  "commit": "a7c29edfb2404612dde6a5a1c8aa94232e85625b",
+  "license": "PolyForm Noncommercial 1.0.0",
+  "required_notice": "Required Notice: Copyright (c) 2026 Vincent Wei (https://github.com/Vincentwei1021/video-talkcraft)",
+  "scope": "Recipe documentation, standalone TSX, demo HTML and silent demo runtime; not an installed Skill or adopted production standard",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 4895,
+      "sha256": "ebe8b7ad95a04a78e6f233db4ffcfa2c03a1d8cfa2c49d537658b36e81603b7c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/LICENSE"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20216,
+      "sha256": "63aca232f209db300476c889891e0d53566a746ac2074f0a6cafc68b6b76a8d8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/README.md"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 4274,
+      "sha256": "2ea18ae78af55b7d55677a69acd6ec8bea7257fdb9f6d8d3b5de26efcba84ced",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/THIRD_PARTY_NOTICES.md"
+    },
+    {
+      "path": "demos/_lib/demo-shell.css",
+      "bytes": 5225,
+      "sha256": "f43f40b9caa1899ef5f1015d4e6b5567acd63935c4aa555447040a5c43fafcb3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/demo-shell.css"
+    },
+    {
+      "path": "demos/_lib/demo-shell.js",
+      "bytes": 15284,
+      "sha256": "f58397a72c439f2b07a564ed14095933dde4954376cae5e1d76638fb3d80fbd5",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/demo-shell.js"
+    },
+    {
+      "path": "demos/_lib/dh-host.webm",
+      "bytes": 292744,
+      "sha256": "02fd74fcaf4bd5e945b64a8d7d9dd67549351fbe00d3f30f54fcc09d2505b0af",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/dh-host.webm"
+    },
+    {
+      "path": "demos/_lib/gsap.min.js",
+      "bytes": 72304,
+      "sha256": "5468a19b889d234135baaad67b35ac892701f45fe3328b27eeab3aa4f4a479a7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/gsap.min.js"
+    },
+    {
+      "path": "demos/_lib/media/p-0.jpg",
+      "bytes": 57921,
+      "sha256": "d91b8db3ded913eac99572c2752aaec64b9aef1b37cdbb9be0ae58c0e0336af7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-0.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1015.jpg",
+      "bytes": 158108,
+      "sha256": "5195c86a6b93cc5414bf9cd16fdeb0b6cba161ad1e6c5470db8dea8dcc04d418",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1015.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1018.jpg",
+      "bytes": 105554,
+      "sha256": "19e04a103c0628400e0df6950aa4523238607ddfc00f3b84f6abe6dfd2c329c8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1018.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1027.jpg",
+      "bytes": 35969,
+      "sha256": "ed1ee17422ec9fda0b6d6f93325f72e8e84ba5b741237c749ddfa460777868a7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1027.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1036.jpg",
+      "bytes": 113554,
+      "sha256": "746c55cc52dab07083a922bc69c065cc9d93f80a279a347d7103cd1a5ae4b55c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1036.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1039.jpg",
+      "bytes": 194315,
+      "sha256": "62862552af4992522846304127b4cb1f3064ccd56626899fc87d83302e950b2f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1039.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1043.jpg",
+      "bytes": 218708,
+      "sha256": "fbfc1389bb10bc784449fa36df86edc91d4ba620e4e199adb5bfaeb61a27e4d7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1043.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1050.jpg",
+      "bytes": 142685,
+      "sha256": "c2d2399edbb81beb2755a960cd5ac439099ffb762cbff3a0e7b3f8d8b52a2e20",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1050.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1053.jpg",
+      "bytes": 203176,
+      "sha256": "4726f777408172beff7b4eaadc2d6abf2244c4eefb839f9b36351f7238b8a33b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1053.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1057.jpg",
+      "bytes": 124356,
+      "sha256": "68ba0538305099027ea2c2255fcf94a98e338f6b5297df071ec3b1d8fd46b4f7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1057.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1059.jpg",
+      "bytes": 94998,
+      "sha256": "c86fed528fa8ddd1a6814218c0123ec89e42633c62fdc7c741bc3b92bc86df15",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1059.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-1067.jpg",
+      "bytes": 96568,
+      "sha256": "110596cf1e09f5221de0b0ad4ae46c709bca8bcd5df4d5db7b160a81078ccbd7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-1067.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-160.jpg",
+      "bytes": 22943,
+      "sha256": "9941c5af296dc8f5c110224310d58637726a42be0fa5442292d324d4e0e8f96f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-160.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-177.jpg",
+      "bytes": 85543,
+      "sha256": "47dc7b23bb376101d1bac7da96e2297bf9ff282122021fd14d38c7739246f7c5",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-177.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-180.jpg",
+      "bytes": 82128,
+      "sha256": "0e8cd549129f7081e10ce7bd006bcc712c82d631f841f3b5c2386f7a4499d1c0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-180.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-24.jpg",
+      "bytes": 33289,
+      "sha256": "cbbb695ce5b784453879025f730785cbba3d505dc5847c0eb72179c9f369fcbb",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-24.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-250.jpg",
+      "bytes": 56497,
+      "sha256": "643c70261d5606de5887b9f9d7978e815f81f5666d6e3d9fe92b9f663dd0bb58",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-250.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-274.jpg",
+      "bytes": 105141,
+      "sha256": "a43c9b9cdf710a305f19412a5f1a6ce1ebe63e145cf0f7a2e99e929fa84d8b7c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-274.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-319.jpg",
+      "bytes": 49972,
+      "sha256": "ae37d242ce0754289aaf7d9d14a1dcd0850dbf38fe3e4f87811b114374c95eba",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-319.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-349.jpg",
+      "bytes": 28814,
+      "sha256": "8a597cf98ee48e948790d99cdc3359f8fc43bee9afcc5c442c8f85f319146c8c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-349.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-355.jpg",
+      "bytes": 79994,
+      "sha256": "3268183c7033daabb55c3cafce8356eda7d174e78c0598e25bc51578b7ef54ba",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-355.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-366.jpg",
+      "bytes": 51995,
+      "sha256": "0bb7bb16a4ae1a2243e2c64c270f3212fed376a6a14079899a6e353a3f26b252",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-366.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-367.jpg",
+      "bytes": 73794,
+      "sha256": "9ad0501210a2590293411a0128f735d3ee09b7b4e5faf7607b13f63257d2f219",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-367.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-392.jpg",
+      "bytes": 67967,
+      "sha256": "7fce0f5c7cc920a9ee7a8a672e211a61deafb7938c73c30e7e1d12b0e5f1f4b0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-392.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-60.jpg",
+      "bytes": 39810,
+      "sha256": "ddb49dc09886c023888ff53bcb2608fcb8f270645c0c09811016ad9ccec80e65",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-60.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-63.jpg",
+      "bytes": 18746,
+      "sha256": "6cd949d965adacebba0eddb6d5804e69fdc6623302c1a4fa38db3bb5464bd457",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-63.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-816.jpg",
+      "bytes": 34571,
+      "sha256": "bdfa15a13e352cf0e54b9c696a1f2b1ee0620fc64ee041aa8ce87501c5e23701",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-816.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-823.jpg",
+      "bytes": 97177,
+      "sha256": "69f97db90ff6c2dd9094552420c6f087f1d9768baaa5217c75be5cdbb849d474",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-823.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-845.jpg",
+      "bytes": 30646,
+      "sha256": "781bcda6dbffd670f7e7b110d4232a2a88eef8a50b577a39557ff656cf008fe3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-845.jpg"
+    },
+    {
+      "path": "demos/_lib/media/p-866.jpg",
+      "bytes": 33722,
+      "sha256": "2d5aacc4019c00fdbc08f7da625b3816928088a47c0effe0ab18c2988125baa7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/p-866.jpg"
+    },
+    {
+      "path": "demos/_lib/media/v-ocean.webm",
+      "bytes": 1517159,
+      "sha256": "27a5027a92f74e8de594e3fe9653857fd705e9fc05cea38fd8e96341c2d5cd45",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/v-ocean.webm"
+    },
+    {
+      "path": "demos/_lib/media/v-typing.webm",
+      "bytes": 390864,
+      "sha256": "b314d507fbe21e9f9588ea216722861cc9423e66722a46396f6529f0d6816c5f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/_lib/media/v-typing.webm"
+    },
+    {
+      "path": "demos/alt-block-lines/index.html",
+      "bytes": 5036,
+      "sha256": "981aba5b43e91282f43c9a50804c6b5a2977317c8e7d87a0448101329df31ed8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/alt-block-lines/index.html"
+    },
+    {
+      "path": "demos/bar-chart-growth/index.html",
+      "bytes": 6508,
+      "sha256": "824302fe5f2a07f3cc860d386802a4541539589740057757c5f6f1b2c801cc8b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/bar-chart-growth/index.html"
+    },
+    {
+      "path": "demos/bed-echo-blur/index.html",
+      "bytes": 8805,
+      "sha256": "bab7e6d5d4337314ebec28a50f6b96a7867ba77ba5c66de90a0b736e3aa11558",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/bed-echo-blur/index.html"
+    },
+    {
+      "path": "demos/behind-text-title/index.html",
+      "bytes": 4803,
+      "sha256": "48f313f9f6f1d4b01cebbf4a30ff8a09a67ae9fec564da0f84d29fb20da79333",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/behind-text-title/index.html"
+    },
+    {
+      "path": "demos/black-slam-transition/index.html",
+      "bytes": 6282,
+      "sha256": "bf3420fc53dd224b9ab8298b739a2291623e9921d6fda971af9e25dcb72c8806",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/black-slam-transition/index.html"
+    },
+    {
+      "path": "demos/callout-line-label/index.html",
+      "bytes": 7043,
+      "sha256": "0220b86393054ceb4e902b8235a8f5136a96ab01b5952009add051375b823894",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/callout-line-label/index.html"
+    },
+    {
+      "path": "demos/caret-wipe-transition/index.html",
+      "bytes": 8868,
+      "sha256": "bf5bd1d5fd013de85c0a91687b1f3bc14e7a15f947bc38a620a1f2affb59dd22",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/caret-wipe-transition/index.html"
+    },
+    {
+      "path": "demos/chapter-progress-list/index.html",
+      "bytes": 7335,
+      "sha256": "4fd7b2c0f9c6f790f0b83bb5408849b251f57a885fa197730169845e7be3f6ce",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chapter-progress-list/index.html"
+    },
+    {
+      "path": "demos/chapter-title-card/index.html",
+      "bytes": 9012,
+      "sha256": "6b71ec053012e0652dc9ba01c461e2f4d23ea35fe8debd4cfe7f99ca0770e535",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chapter-title-card/index.html"
+    },
+    {
+      "path": "demos/chart-grow/index.html",
+      "bytes": 5471,
+      "sha256": "a00656002908ffc2ee02509148cd2336529d8ab61f10658951972af1f66d608a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chart-grow/index.html"
+    },
+    {
+      "path": "demos/chat-gpt/index.html",
+      "bytes": 21506,
+      "sha256": "d1bbc41f059ddcd3e4a64d5386238d8d17533eaeae253a9b660ef7dd0336cc1f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chat-gpt/index.html"
+    },
+    {
+      "path": "demos/chat-message-flow/index.html",
+      "bytes": 15772,
+      "sha256": "8e29957385faa99647430ac3784102b02c46c1e0df5e79c6479859e0e66a3935",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chat-message-flow/index.html"
+    },
+    {
+      "path": "demos/chevron-lower-third/index.html",
+      "bytes": 6326,
+      "sha256": "9c20922af63e88a53939aa610f6f02fa95aaf539785b49fbdda3e190a0a372dd",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chevron-lower-third/index.html"
+    },
+    {
+      "path": "demos/chip-grid-single-select/index.html",
+      "bytes": 7323,
+      "sha256": "8e15099c8ab5567310f39dd9df175bcd1d25bb985e6165df2a6404c0d8f8481b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/chip-grid-single-select/index.html"
+    },
+    {
+      "path": "demos/claude-code/index.html",
+      "bytes": 19042,
+      "sha256": "8c94955720b495fb350fce2aa6af95209e8fe0d33b5db52e0bf738030babe041",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/claude-code/index.html"
+    },
+    {
+      "path": "demos/color-slam-beat-card/index.html",
+      "bytes": 8723,
+      "sha256": "50662efd5f742e331916e78ad90e67d57b9f730a20f66ea3aadf5a658a94a32f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/color-slam-beat-card/index.html"
+    },
+    {
+      "path": "demos/converging-arrows/index.html",
+      "bytes": 10052,
+      "sha256": "51008cba18e85293ce136c7329b90f03056cb4887e9125f8e8ea6aeccd7a3c67",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/converging-arrows/index.html"
+    },
+    {
+      "path": "demos/corner-bracket-frame/index.html",
+      "bytes": 5256,
+      "sha256": "2af73f7dd9a9aa0e37760268902d4c51428ab14331067775988d74f972e3308c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/corner-bracket-frame/index.html"
+    },
+    {
+      "path": "demos/count-badge-title/index.html",
+      "bytes": 6262,
+      "sha256": "fcce634a8133a3671dab1d5bd421f2b9e085eb284775217b250daaba94613064",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/count-badge-title/index.html"
+    },
+    {
+      "path": "demos/countdown-arc-scatter/index.html",
+      "bytes": 8269,
+      "sha256": "c8e4ef5fe62112e62c9a845bd86776a542a4b401d1905b9894e9d1e8d6d5cfe0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/countdown-arc-scatter/index.html"
+    },
+    {
+      "path": "demos/crash-zoom-punch/index.html",
+      "bytes": 7610,
+      "sha256": "cc00043f9dedcfcb38b946bb48d3440cdae938222ff353fb17185883b81dbb7d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/crash-zoom-punch/index.html"
+    },
+    {
+      "path": "demos/cursor-actor-demo/index.html",
+      "bytes": 17820,
+      "sha256": "ad5549eeba04ed4a541bbd1f39732517c49e4ff95e20421e7ae62b623d171044",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/cursor-actor-demo/index.html"
+    },
+    {
+      "path": "demos/cursor-locked-zoom/index.html",
+      "bytes": 8908,
+      "sha256": "c998cd16513b6172c0dc6559bcbc5dc866c96fd8aff0b83508a7d2bef0eaefb2",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/cursor-locked-zoom/index.html"
+    },
+    {
+      "path": "demos/danmu-bubble-praise/index.html",
+      "bytes": 4810,
+      "sha256": "38ce975e100511bb24d362f465f7a9a259685352041ddade0474f74a579e2121",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/danmu-bubble-praise/index.html"
+    },
+    {
+      "path": "demos/doc-park-left-pill-deal/index.html",
+      "bytes": 7890,
+      "sha256": "5a0a5b67382dc395411e6f6a6a1fc49042ed6f658b15290326246e7bbc784e21",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/doc-park-left-pill-deal/index.html"
+    },
+    {
+      "path": "demos/douyin-follow-card/index.html",
+      "bytes": 13579,
+      "sha256": "abffe78a49568a9696c0c7bc85d9073e83e7f77ba60f0131bd851ad0d6d3253b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/douyin-follow-card/index.html"
+    },
+    {
+      "path": "demos/error-retype/index.html",
+      "bytes": 6865,
+      "sha256": "ea329a0fcf64fc7198b569e74ada7e86bf25ce99fe50eb201e2fd18658c8b311",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/error-retype/index.html"
+    },
+    {
+      "path": "demos/evidence-scroll-tour/index.html",
+      "bytes": 8609,
+      "sha256": "9a21fc183c0d911207b17145023e4c783e050ef7162668f915b2745a6c7a6d53",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/evidence-scroll-tour/index.html"
+    },
+    {
+      "path": "demos/filmstrip-conveyor/index.html",
+      "bytes": 8899,
+      "sha256": "360f604f99dd214df855be741623a00c9fbb829560513e2c05c7018cc13a69c8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/filmstrip-conveyor/index.html"
+    },
+    {
+      "path": "demos/flying-words/index.html",
+      "bytes": 6146,
+      "sha256": "a313d3a09df860e7209c5c369ed677306efa50b2ba5140a069af4753cac0816d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/flying-words/index.html"
+    },
+    {
+      "path": "demos/focus-dim-spotlight/index.html",
+      "bytes": 9758,
+      "sha256": "dd03eab991956e4ca7ceccfdf3b5505b8f47d5d73b2721efe374620eced38b3d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/focus-dim-spotlight/index.html"
+    },
+    {
+      "path": "demos/gallery-wall-dolly/index.html",
+      "bytes": 7811,
+      "sha256": "18ffb6b8107f1679e73fd5bfb59cfb3981448ad049d780cafa7c5d7bba3a1f1b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/gallery-wall-dolly/index.html"
+    },
+    {
+      "path": "demos/glass-code-walk/index.html",
+      "bytes": 14939,
+      "sha256": "318e788730bb0eafca23c71e65443640d1b95e5e31f7839fd23b3795814d6e07",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/glass-code-walk/index.html"
+    },
+    {
+      "path": "demos/gooey-morph/index.html",
+      "bytes": 9193,
+      "sha256": "9e233ec7f54b18726c500fb9c7fd8c20f06547dd004c0b854a2cb8d8c3692556",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/gooey-morph/index.html"
+    },
+    {
+      "path": "demos/grid-to-hero/index.html",
+      "bytes": 7026,
+      "sha256": "237724574ebec0677480672566c3e1529f1558d6f3e9758b42171ca7c97ab99a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/grid-to-hero/index.html"
+    },
+    {
+      "path": "demos/hand-drawn-ellipse/index.html",
+      "bytes": 9455,
+      "sha256": "04bafe31141c43d3768717a5488f2783cb811dbb200a7d3a2008f1a7c229317b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/hand-drawn-ellipse/index.html"
+    },
+    {
+      "path": "demos/highlighter-sweep/index.html",
+      "bytes": 3583,
+      "sha256": "ad730bf4a697f120e44e62a71a779a1925868374bba4dd10c345fce2420f3cb3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/highlighter-sweep/index.html"
+    },
+    {
+      "path": "demos/host-card-glass-board/index.html",
+      "bytes": 12247,
+      "sha256": "eb9fc3c9ba8310eceb100deb061ff242c024ec7c07e7638951952955dc537b71",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/host-card-glass-board/index.html"
+    },
+    {
+      "path": "demos/host-shrink-to-chip/index.html",
+      "bytes": 8525,
+      "sha256": "f955584338221fb0232572413229bd9b9b7ef13340b431cb590c69f10c4fcd36",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/host-shrink-to-chip/index.html"
+    },
+    {
+      "path": "demos/impact-open-title/index.html",
+      "bytes": 8050,
+      "sha256": "2299dbf2e38c5d4139c9730be7d1bbbcd2a0e772958d0ee0205a1714b25c4663",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/impact-open-title/index.html"
+    },
+    {
+      "path": "demos/info-card-assemble/index.html",
+      "bytes": 7806,
+      "sha256": "a1e5dc13d7d3a3c61dd6a533336b66c3434b990d3eb5db764dfcd59248451c32",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/info-card-assemble/index.html"
+    },
+    {
+      "path": "demos/info-term-card/index.html",
+      "bytes": 3664,
+      "sha256": "e924e7779eacf20a008e1a95ac79cf62fcc3a6e5bf5a2a98e345df368c41519b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/info-term-card/index.html"
+    },
+    {
+      "path": "demos/ink-underline/index.html",
+      "bytes": 10092,
+      "sha256": "64595143fb4e0b5b7b2e5c3c89647ada494c7bc0451d66fbec2c12720b95e163",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/ink-underline/index.html"
+    },
+    {
+      "path": "demos/keyword-pop-highlight/index.html",
+      "bytes": 2867,
+      "sha256": "d47b23e0dcfe28cc5f2b69ddd17646a07b5af48cd4f30d50b1438de3a419c827",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/keyword-pop-highlight/index.html"
+    },
+    {
+      "path": "demos/lead-word-zoom-assemble/index.html",
+      "bytes": 7036,
+      "sha256": "1701e3a148b707a549da35b3e2c723da6f1cb5cb3eb7fc124f6df6678afddf7d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/lead-word-zoom-assemble/index.html"
+    },
+    {
+      "path": "demos/line-by-line-slide/index.html",
+      "bytes": 7349,
+      "sha256": "b77c79a6fffbeba903df4760b8c055107163742e86704a20d079586c207cc79d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/line-by-line-slide/index.html"
+    },
+    {
+      "path": "demos/line-carry-transition/index.html",
+      "bytes": 7614,
+      "sha256": "ae3016aa68c618e7c01e75f324b38fc4ce098a11f1552a2abb157445a4c3d2af",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/line-carry-transition/index.html"
+    },
+    {
+      "path": "demos/line-chart-story-draw/index.html",
+      "bytes": 16216,
+      "sha256": "25864be4eade9201308f388907cc3e0111d7a0d2ada16dcf31c10f505c2da482",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/line-chart-story-draw/index.html"
+    },
+    {
+      "path": "demos/logo-enter/index.html",
+      "bytes": 6751,
+      "sha256": "b872b4f86255555eacec9742871543d1ae5d90e87482ab17701924c2c93bdf7b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/logo-enter/index.html"
+    },
+    {
+      "path": "demos/long-take-world/index.html",
+      "bytes": 4753,
+      "sha256": "a0aa031ebf854f8e1db8cb44ec15c1b53cdf9c8aecb50a1b15964493a45e929e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/long-take-world/index.html"
+    },
+    {
+      "path": "demos/lower-third-nameplate/index.html",
+      "bytes": 3091,
+      "sha256": "e88f6e715af3322b65bc1a47fc967b309c95298bb424508da21e66b1cafdc46c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/lower-third-nameplate/index.html"
+    },
+    {
+      "path": "demos/magnifier-detail/index.html",
+      "bytes": 6885,
+      "sha256": "9241bab7228732e675dac677d4a30f285c309c20475208e7fb9fcc004374672b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/magnifier-detail/index.html"
+    },
+    {
+      "path": "demos/map-route-pin/index.html",
+      "bytes": 10560,
+      "sha256": "d6731f1f507b2f4018a901770ccbed85c5619cc19d0a8537a33a3b0761a0453c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/map-route-pin/index.html"
+    },
+    {
+      "path": "demos/media-pop-in/index.html",
+      "bytes": 5072,
+      "sha256": "c6c15e4ba58678a1a9df35ec0738a186e95b08e7a8bfecc53d60cfe73f836796",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/media-pop-in/index.html"
+    },
+    {
+      "path": "demos/metric-with-sparkline/index.html",
+      "bytes": 8560,
+      "sha256": "96debbde30abf8d295fe576f9a51a4134b1b47d7a13c98ba7a0111e19188532f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/metric-with-sparkline/index.html"
+    },
+    {
+      "path": "demos/motion-blur-slam-in/index.html",
+      "bytes": 7037,
+      "sha256": "3cf4f531fbea0fb7afbde0767b59366405af0031387b3d3c7d56d89655bcb84e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/motion-blur-slam-in/index.html"
+    },
+    {
+      "path": "demos/news-card-desk/index.html",
+      "bytes": 5125,
+      "sha256": "828a795233aceea9a68d66315927acd749abf1aa91b3733ace40e3e0b492bdab",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/news-card-desk/index.html"
+    },
+    {
+      "path": "demos/number-counter/index.html",
+      "bytes": 7024,
+      "sha256": "65ac05cf87fb674bb8fbe530e8b80fcacac144f4f6dc2c300075d998e4cf5544",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/number-counter/index.html"
+    },
+    {
+      "path": "demos/number-slab-pop/index.html",
+      "bytes": 5210,
+      "sha256": "a7dc71ab1f5c473a7d18dc586964da9a8783cc081a9afa7cc65f36935582141d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/number-slab-pop/index.html"
+    },
+    {
+      "path": "demos/numbered-step-stack/index.html",
+      "bytes": 4781,
+      "sha256": "7f4cb686e7ad00d64f30c94f2551416f2cd8909a79a40557aeb406d6d7f4b06f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/numbered-step-stack/index.html"
+    },
+    {
+      "path": "demos/orbit-drift/index.html",
+      "bytes": 11160,
+      "sha256": "121ac118a50176e08b7270a5e8138644c396c54bc81d12abf9b2a18950e13119",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/orbit-drift/index.html"
+    },
+    {
+      "path": "demos/outline-box-title/index.html",
+      "bytes": 6652,
+      "sha256": "9feb0441a84707d811d91e1da14dc3ca5b4e38f1ece88528d3e55ecefc5a8604",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/outline-box-title/index.html"
+    },
+    {
+      "path": "demos/overexpose-flip-transition/index.html",
+      "bytes": 6053,
+      "sha256": "e3e641d559dcc70015fb4d61f0bb95a32e2f37ccbe7962fbbd8fd4f47c307706",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/overexpose-flip-transition/index.html"
+    },
+    {
+      "path": "demos/parallel-items-with-host/index.html",
+      "bytes": 19867,
+      "sha256": "1b6073e41e39815b89e565038f9ae92e7369c6ef26dc089e09f5b8f45b87f348",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/parallel-items-with-host/index.html"
+    },
+    {
+      "path": "demos/particle-weld-transition/index.html",
+      "bytes": 8262,
+      "sha256": "a08b317fae725efa076b320232ed291672cb72fabd9e362b4eb45259a029188b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/particle-weld-transition/index.html"
+    },
+    {
+      "path": "demos/pencil-sketch-draw/hand-pencil.png",
+      "bytes": 383876,
+      "sha256": "37d9d7d70a5d0c0049f8c1828e04059edcb52531a455f09410c22f6c2d73e036",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/pencil-sketch-draw/hand-pencil.png"
+    },
+    {
+      "path": "demos/pencil-sketch-draw/index.html",
+      "bytes": 7055,
+      "sha256": "b083f83ff700bf8fbb4ecd024f0497912cd14732816be52b400c53f4d8ddacf4",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/pencil-sketch-draw/index.html"
+    },
+    {
+      "path": "demos/per-character-rise/index.html",
+      "bytes": 5734,
+      "sha256": "8655034f5cee0993bf451be4923ea24c3bf42b82bf542afb472dd3c9cead493f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/per-character-rise/index.html"
+    },
+    {
+      "path": "demos/pip-zoom-box/index.html",
+      "bytes": 10181,
+      "sha256": "75bd0d598a96bde9a9932b427cbf73cbcfe4c7c82e5e18480c9cb8b2422b5578",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/pip-zoom-box/index.html"
+    },
+    {
+      "path": "demos/pullback-cool-transition/index.html",
+      "bytes": 5475,
+      "sha256": "f31ccaba043c56f2c4e1e31372c6dd4b24f827a62ea8433053c10fd4f413fe79",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/pullback-cool-transition/index.html"
+    },
+    {
+      "path": "demos/push-through-transition/index.html",
+      "bytes": 5215,
+      "sha256": "965100eff4557be6dd3bb2ffb94a59a3897f829a3d9cbeff96a9b0cfae72c260",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/push-through-transition/index.html"
+    },
+    {
+      "path": "demos/quote-bracket-pull/index.html",
+      "bytes": 5244,
+      "sha256": "1624a8700cc98665f32a9648150b5e6db38f5abd0981ebd327d250ef0919d636",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/quote-bracket-pull/index.html"
+    },
+    {
+      "path": "demos/quote-card/index.html",
+      "bytes": 3622,
+      "sha256": "eb50970c13db140e34795f40b9ebc61209ca01ecee9f7beec4e6d36101ce42e0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/quote-card/index.html"
+    },
+    {
+      "path": "demos/quote-hold-arrow/index.html",
+      "bytes": 4603,
+      "sha256": "8e99b67aa02e316ad4045df3e8cb575b6feb2bde7e2637b6eb6ade6dde4650c8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/quote-hold-arrow/index.html"
+    },
+    {
+      "path": "demos/rack-focus-pair/index.html",
+      "bytes": 5754,
+      "sha256": "4fd3ddc3db55bf4b41de26aad7dfc3429bd508f597c53281095f64875e03b2ab",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/rack-focus-pair/index.html"
+    },
+    {
+      "path": "demos/reticle-lock-on/index.html",
+      "bytes": 7485,
+      "sha256": "4d24862ffd6ae1cb5fb659fda8f12fc592bca6ea96d2bca96b340456fb7c5de8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/reticle-lock-on/index.html"
+    },
+    {
+      "path": "demos/scanline-annotate/index.html",
+      "bytes": 9558,
+      "sha256": "dc55c1c2044e9fdbf713b1cd133e4bdbdde30000395db56ae24d1a709b2aa0a2",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/scanline-annotate/index.html"
+    },
+    {
+      "path": "demos/scribble-annotation/index.html",
+      "bytes": 11759,
+      "sha256": "8f358074b45ac85383dc3f43de5a5014f47bf1f8e422261f18202825fcf1e05b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/scribble-annotation/index.html"
+    },
+    {
+      "path": "demos/shape-wipe-transition/index.html",
+      "bytes": 6513,
+      "sha256": "384bb80b88823af30a5d2631d250286f1aa425b138ba842907ab83849423d5d0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/shape-wipe-transition/index.html"
+    },
+    {
+      "path": "demos/slab-punch-title/index.html",
+      "bytes": 5576,
+      "sha256": "9976118c8e928463f7786277eeb12f3a12febd88d99ff9fe94da6c0b62742514",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/slab-punch-title/index.html"
+    },
+    {
+      "path": "demos/slow-pull-reveal/index.html",
+      "bytes": 13479,
+      "sha256": "180f845cf984355329fb398d97beae5186f2e129333adab4c56efd34a16f3aa9",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/slow-pull-reveal/index.html"
+    },
+    {
+      "path": "demos/slow-push-in/index.html",
+      "bytes": 8741,
+      "sha256": "8ed72e4251a734ff4b09d93ef293f0f3752ca1da9e3ba1440c13fefb8f5ff94b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/slow-push-in/index.html"
+    },
+    {
+      "path": "demos/soft-blur-in/index.html",
+      "bytes": 5760,
+      "sha256": "812e2d71e233b5abbc0eb97276e9394230d6389cf78157b7fc54326fd30824b7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/soft-blur-in/index.html"
+    },
+    {
+      "path": "demos/source-converge/index.html",
+      "bytes": 9080,
+      "sha256": "b20ad260bd8b4eca9ea4fb2d1db8db3d0caa0aace6da43de6c60f414f9dc7138",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/source-converge/index.html"
+    },
+    {
+      "path": "demos/speed-slab-title/index.html",
+      "bytes": 7882,
+      "sha256": "1c26c9588676f332160b5bbff3979e17efe4727c606efd2f1916b7cfbad96259",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/speed-slab-title/index.html"
+    },
+    {
+      "path": "demos/split-60-40-story/index.html",
+      "bytes": 7323,
+      "sha256": "017574c876c3196a2384bd8a709d38d5c2adba1571405367459ad8326a30d6f4",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/split-60-40-story/index.html"
+    },
+    {
+      "path": "demos/split-compare-slider/index.html",
+      "bytes": 7837,
+      "sha256": "7bc49db14ffce7c8ea7d666f2926115f61384aae5cdcf08b65d783f2fefa5cf8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/split-compare-slider/index.html"
+    },
+    {
+      "path": "demos/split-text-stagger/index.html",
+      "bytes": 4488,
+      "sha256": "cd27f09815cdaa1ffd6f9a81257fa698727895667ce52a60f51a9a6ee2094402",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/split-text-stagger/index.html"
+    },
+    {
+      "path": "demos/stack-fan-out/index.html",
+      "bytes": 6240,
+      "sha256": "4f5a230f02b77ff02d33a12aa1baf854fc38fe3abd93bf60839df864a0856d0d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/stack-fan-out/index.html"
+    },
+    {
+      "path": "demos/stage-keyframe-tour/index.html",
+      "bytes": 16929,
+      "sha256": "313c7411d29a8595e5a584c77a2cd89d25018c217a3c993d2eaf9ae8e23411e5",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/stage-keyframe-tour/index.html"
+    },
+    {
+      "path": "demos/step-timeline-vertical/index.html",
+      "bytes": 6868,
+      "sha256": "429d3379235fb9e894d2cedf4e60962f47fbe5c7a251f1153b5525706d5fc1d7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/step-timeline-vertical/index.html"
+    },
+    {
+      "path": "demos/still-layout-relay/index.html",
+      "bytes": 11016,
+      "sha256": "47ff54f588d7f6a049be7d0d54039e4b84132fae4743c6eab9bf43248e4712cd",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/still-layout-relay/index.html"
+    },
+    {
+      "path": "demos/strike-and-replace/index.html",
+      "bytes": 7201,
+      "sha256": "1491b61b010f8de9cc7bf0ce1df2b47167990638da7cf5df7d0c9bb3fb57fdd9",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/strike-and-replace/index.html"
+    },
+    {
+      "path": "demos/subscribe-cta/index.html",
+      "bytes": 19722,
+      "sha256": "e1b76b321338f58b186cc2d749fc993be954bdba0849ea4bfc0c8f4e114e75d8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/subscribe-cta/index.html"
+    },
+    {
+      "path": "demos/sway-parallax/index.html",
+      "bytes": 10052,
+      "sha256": "1a814c23f6364d2cc32eef069aa6f4be106c715eda092261baef32227bba4d63",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/sway-parallax/index.html"
+    },
+    {
+      "path": "demos/terminal-typing-log/index.html",
+      "bytes": 10237,
+      "sha256": "77003ed6442ae073f9f385eb253a4a531e6652463877fb40f49023bd2d56169b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/terminal-typing-log/index.html"
+    },
+    {
+      "path": "demos/tilt-3d-page/index.html",
+      "bytes": 9081,
+      "sha256": "ef100b1883cff84dcce7525ef2e956bfa49e269ec006f965282c663c0ce3283c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/tilt-3d-page/index.html"
+    },
+    {
+      "path": "demos/timeline-photo-strip/index.html",
+      "bytes": 6694,
+      "sha256": "bae3026a5857c39f2e0cc80b9577834cd75c39fa50095cedf57b2013b6eee1c9",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/timeline-photo-strip/index.html"
+    },
+    {
+      "path": "demos/title-demote-to-label/index.html",
+      "bytes": 6384,
+      "sha256": "bb7ac79fd27a0c67b20be46aa974e1259c61a1bded406fa3a66c0c617e24718c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/title-demote-to-label/index.html"
+    },
+    {
+      "path": "demos/tracking-in/index.html",
+      "bytes": 5906,
+      "sha256": "1a2d2bebe8d3aee86a2e866316c1de6517d1f261c08a86d3b3bc1f619452ca75",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/tracking-in/index.html"
+    },
+    {
+      "path": "demos/type-contrast-emphasis/index.html",
+      "bytes": 7057,
+      "sha256": "88481f7c32b6de1683b76fbc3b8f0f140cd3a1170db5f7e601cbe9ae62f3f423",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/type-contrast-emphasis/index.html"
+    },
+    {
+      "path": "demos/typewriter-reveal/index.html",
+      "bytes": 4795,
+      "sha256": "ceda10a953dc6ecaca42f8716b96d725ccdb6d6191817da6578f07bdde039136",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/typewriter-reveal/index.html"
+    },
+    {
+      "path": "demos/ui-flow-theater/index.html",
+      "bytes": 21436,
+      "sha256": "7456428c020b026d3cbc83eb3804500af9486c2e7b5f8218828861d8567c70fd",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/ui-flow-theater/index.html"
+    },
+    {
+      "path": "demos/ui-prop-theater/index.html",
+      "bytes": 11168,
+      "sha256": "086712d0f3cafdef35b9705bd2a76110091e085e93347b1e5c5ed243039430f9",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/ui-prop-theater/index.html"
+    },
+    {
+      "path": "demos/unit-grid-proportion/index.html",
+      "bytes": 6689,
+      "sha256": "3d8469605494da8503025ded96d15cfbf7035e3cb8a72aeb94d97d68527c35fe",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/unit-grid-proportion/index.html"
+    },
+    {
+      "path": "demos/whip-pan-transition/index.html",
+      "bytes": 5390,
+      "sha256": "36ca1df52f5b8527ecc074296646113edd042fe0a662530d446800ba16dc2c94",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/whip-pan-transition/index.html"
+    },
+    {
+      "path": "demos/word-relay-filmstrip/index.html",
+      "bytes": 7667,
+      "sha256": "d8459277a6f5a17e9c48dfe058f3d63759498b3f78234ebfe2b572834ef1a523",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/word-relay-filmstrip/index.html"
+    },
+    {
+      "path": "demos/word-slot-cycle/index.html",
+      "bytes": 8898,
+      "sha256": "5dfe21219265b847ddee1b528182579270cd412cde348f24805b4704cc3a0edb",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/word-slot-cycle/index.html"
+    },
+    {
+      "path": "demos/x-follow-card/index.html",
+      "bytes": 20931,
+      "sha256": "09c534bb486732766e01af91012387bd7e95a701d7589905a0cfcb3fd0f74483",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/demos/x-follow-card/index.html"
+    },
+    {
+      "path": "gallery/index.html",
+      "bytes": 2865564,
+      "sha256": "14c891cb01a2b63dbb25dd5e154601ac39046b2c5624dd51ec33aa9e8ee68878",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/gallery/index.html"
+    },
+    {
+      "path": "references/cards/alt-block-lines.md",
+      "bytes": 13992,
+      "sha256": "accf022d54183b0aa1f22b9f7a453faba543affcb3b8ac0a009fc695b96515b1",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/alt-block-lines.md"
+    },
+    {
+      "path": "references/cards/bar-chart-growth.md",
+      "bytes": 11632,
+      "sha256": "2e8b31c4bc6ebcc9a4a025794c4b6f3e9701b0acac738e9e5162fa478c61fe8d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/bar-chart-growth.md"
+    },
+    {
+      "path": "references/cards/bed-echo-blur.md",
+      "bytes": 9539,
+      "sha256": "3aa6f8dd4cc26a4f8a4c7dc98cd23ddf37bbee4e50a808a74fe96de98271a13b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/bed-echo-blur.md"
+    },
+    {
+      "path": "references/cards/behind-text-title.md",
+      "bytes": 6974,
+      "sha256": "0e54e0046f56130f31aceef8f9afbde62b95b72cdb713697b97196d8215b3fe5",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/behind-text-title.md"
+    },
+    {
+      "path": "references/cards/black-slam-transition.md",
+      "bytes": 10028,
+      "sha256": "8908cc9359d6ea520b6d72dac5692501b67a26f459ef01165bd036dc1959cc6c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/black-slam-transition.md"
+    },
+    {
+      "path": "references/cards/callout-line-label.md",
+      "bytes": 7466,
+      "sha256": "ee858ec20a602e8fc58c1f9d4556ee06eebedb1b823e5637650884ea52426b62",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/callout-line-label.md"
+    },
+    {
+      "path": "references/cards/caret-wipe-transition.md",
+      "bytes": 13016,
+      "sha256": "c89e41e030a5b41765ef683b10bbd9a688446ccf9de500d3685147ef560c1392",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/caret-wipe-transition.md"
+    },
+    {
+      "path": "references/cards/chapter-progress-list.md",
+      "bytes": 10818,
+      "sha256": "ae49b89e3dcb392fc87489621f206d2546b41dcb9de3ffd271201cca12a5016a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chapter-progress-list.md"
+    },
+    {
+      "path": "references/cards/chapter-title-card.md",
+      "bytes": 11696,
+      "sha256": "b4d19e62c2492d293df9805af75f3a7d6f5b590b3359ccfa8c8666fae2553fcd",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chapter-title-card.md"
+    },
+    {
+      "path": "references/cards/chart-grow.md",
+      "bytes": 5514,
+      "sha256": "fed8966d0eddb0c0a9df7e7cb0568a3f8cadac4dd8013645be7ab56872a43dcb",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chart-grow.md"
+    },
+    {
+      "path": "references/cards/chat-gpt.md",
+      "bytes": 18480,
+      "sha256": "8d74d8dc775934976b95d78986660d0dabc652d28e9e9c85911553e09289ba09",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chat-gpt.md"
+    },
+    {
+      "path": "references/cards/chat-message-flow.md",
+      "bytes": 14842,
+      "sha256": "387513d4e6b704400b947a000df32df805481a0e376dad2336e6f2a0fd697bad",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chat-message-flow.md"
+    },
+    {
+      "path": "references/cards/chevron-lower-third.md",
+      "bytes": 12649,
+      "sha256": "2d0b99db0478fc8603cc4643a28f873399aa3be259bdf61fb43131452f42c43e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chevron-lower-third.md"
+    },
+    {
+      "path": "references/cards/chip-grid-single-select.md",
+      "bytes": 7333,
+      "sha256": "1be380f8c432c7d3de896042988457637dd279cee4a2b60964922edfe4d053a6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/chip-grid-single-select.md"
+    },
+    {
+      "path": "references/cards/claude-code.md",
+      "bytes": 20101,
+      "sha256": "f7046baf952540e8ee45cc8d9671eb5b79557ce3c69f6639c7945baaf72c50dd",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/claude-code.md"
+    },
+    {
+      "path": "references/cards/color-slam-beat-card.md",
+      "bytes": 10263,
+      "sha256": "8802b450cd3b51f190b7139f4bd1647b6be1815bbd9a4ae8b99623e9a207bb82",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/color-slam-beat-card.md"
+    },
+    {
+      "path": "references/cards/converging-arrows.md",
+      "bytes": 16227,
+      "sha256": "ce6e32f21a1a7f351e5edc867ff671f31bdf95daea7a38ecc326bdb44c76c5f2",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/converging-arrows.md"
+    },
+    {
+      "path": "references/cards/corner-bracket-frame.md",
+      "bytes": 10205,
+      "sha256": "50fdef43594cddbac4b3e10ca58eb7ed1940681b162d939b9c236d24b9005b1a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/corner-bracket-frame.md"
+    },
+    {
+      "path": "references/cards/count-badge-title.md",
+      "bytes": 12985,
+      "sha256": "11dc7deef400fbdc9540688563b7f25f39ee93a3e1fd631fdee8f37d570889fc",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/count-badge-title.md"
+    },
+    {
+      "path": "references/cards/countdown-arc-scatter.md",
+      "bytes": 8721,
+      "sha256": "737a9c31aede5ac99268f990b1191a72a40b92f3e133c6c8ddaf2e86b413c8ce",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/countdown-arc-scatter.md"
+    },
+    {
+      "path": "references/cards/crash-zoom-punch.md",
+      "bytes": 8802,
+      "sha256": "a102f5f2383cd04e7cde8c2ccec64fe05dc110b39c2a2e62bf6f2b1932ee1adb",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/crash-zoom-punch.md"
+    },
+    {
+      "path": "references/cards/cursor-actor-demo.md",
+      "bytes": 14577,
+      "sha256": "4b98f8d8ef2ef56dabae5dc8bdec686f2f37b2ab87d8b746216acfceb43da55c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/cursor-actor-demo.md"
+    },
+    {
+      "path": "references/cards/cursor-locked-zoom.md",
+      "bytes": 14268,
+      "sha256": "7f3a9819db0b967e6841f1ec04f264029934b1bb3860a2ec219685c417ec84d4",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/cursor-locked-zoom.md"
+    },
+    {
+      "path": "references/cards/danmu-bubble-praise.md",
+      "bytes": 12052,
+      "sha256": "e95959c3b67c671e89e30d8857302b6b11f905b694c5e28c3223be920f6e1a3d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/danmu-bubble-praise.md"
+    },
+    {
+      "path": "references/cards/doc-park-left-pill-deal.md",
+      "bytes": 8488,
+      "sha256": "e1494c9728e9237748df6e9c23b1b7e9de1a683e4f65ad0788348249c8daebf4",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/doc-park-left-pill-deal.md"
+    },
+    {
+      "path": "references/cards/douyin-follow-card.md",
+      "bytes": 17248,
+      "sha256": "28df69566ddf1d5febba03c1b5536e19626f32469fe6f1c2238680a367d418ae",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/douyin-follow-card.md"
+    },
+    {
+      "path": "references/cards/error-retype.md",
+      "bytes": 7478,
+      "sha256": "38233dba9bd98daf5fc15f0c4b0f5291c4902cf1180d6e75bdb80ce32f5552a2",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/error-retype.md"
+    },
+    {
+      "path": "references/cards/evidence-scroll-tour.md",
+      "bytes": 7201,
+      "sha256": "fd52bdc0de5842099f977ec1f7e49c4085bf3a569313529fa4d1f324e0028dab",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/evidence-scroll-tour.md"
+    },
+    {
+      "path": "references/cards/filmstrip-conveyor.md",
+      "bytes": 10873,
+      "sha256": "a264ee89dc56955a46c320eab1fdced43e610f185a0684d9692aa6b8f4f1605e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/filmstrip-conveyor.md"
+    },
+    {
+      "path": "references/cards/flying-words.md",
+      "bytes": 7680,
+      "sha256": "971f55ae0d5372693ced7287b29c7dc202ecd7a8d69d52b64fa82fd10c11695a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/flying-words.md"
+    },
+    {
+      "path": "references/cards/focus-dim-spotlight.md",
+      "bytes": 9796,
+      "sha256": "e870589c0f3f2215760c1986783a7824dc4aec9880dadaed1303432392de1760",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/focus-dim-spotlight.md"
+    },
+    {
+      "path": "references/cards/gallery-wall-dolly.md",
+      "bytes": 9662,
+      "sha256": "ab295c08c4913e27966b501f74e1d56722725c922af0c5bf9008db34e65eb676",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/gallery-wall-dolly.md"
+    },
+    {
+      "path": "references/cards/glass-code-walk.md",
+      "bytes": 21703,
+      "sha256": "b514a9fcb89b34401012f1d91c75a881544a6832dfa8792c0a0e0d4358e4aa4f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/glass-code-walk.md"
+    },
+    {
+      "path": "references/cards/gooey-morph.md",
+      "bytes": 11163,
+      "sha256": "16df4f875e8c098cbd7956ac7ee0f8a28a1d27341a6428a061d2a923e4a6d670",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/gooey-morph.md"
+    },
+    {
+      "path": "references/cards/grid-to-hero.md",
+      "bytes": 8299,
+      "sha256": "5a4c931995ecc40509a502675f154f12adf4530e1c48d12289a9e8be6deae127",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/grid-to-hero.md"
+    },
+    {
+      "path": "references/cards/hand-drawn-ellipse.md",
+      "bytes": 14526,
+      "sha256": "7b51a020a987f25190c3427cab42da0f2c1976ddc33eef6e20ab67a90f345d94",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/hand-drawn-ellipse.md"
+    },
+    {
+      "path": "references/cards/highlighter-sweep.md",
+      "bytes": 6178,
+      "sha256": "3911439c459f784c95e9d092921e6b0967cc7aacd72c9e5874ab2aae40e1d800",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/highlighter-sweep.md"
+    },
+    {
+      "path": "references/cards/host-card-glass-board.md",
+      "bytes": 12014,
+      "sha256": "c8f90471a568022d320d2506d91e42d905ad58b5e94cbd4e81fb794450c0eb9e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/host-card-glass-board.md"
+    },
+    {
+      "path": "references/cards/host-shrink-to-chip.md",
+      "bytes": 10060,
+      "sha256": "3eee081c3251860fb0e062d45ab8772b5960ab1a1dc0acf0496bef110d6974b7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/host-shrink-to-chip.md"
+    },
+    {
+      "path": "references/cards/impact-open-title.md",
+      "bytes": 14942,
+      "sha256": "3f52db9b74b9a6b4777a53ba0a877afe725b175dc1c5f83ff70880dfbb9be05d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/impact-open-title.md"
+    },
+    {
+      "path": "references/cards/info-card-assemble.md",
+      "bytes": 8680,
+      "sha256": "99f119b095502cd1943ee3c47bc2507c2edc58e500195f13f6e3e7606bb89bd1",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/info-card-assemble.md"
+    },
+    {
+      "path": "references/cards/info-term-card.md",
+      "bytes": 6468,
+      "sha256": "d55ec6db90f46a7b96eaeea3753370663b564d8289e5c3591c1e5eb64240337e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/info-term-card.md"
+    },
+    {
+      "path": "references/cards/ink-underline.md",
+      "bytes": 12377,
+      "sha256": "5686392fd1b21d309c7c143eb571606516e3ba6d482b65810997072cc377d802",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/ink-underline.md"
+    },
+    {
+      "path": "references/cards/keyword-pop-highlight.md",
+      "bytes": 5653,
+      "sha256": "0a847997a25270383dada2f539f43fa60baac0bb9deee62e3be66d16b882c5de",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/keyword-pop-highlight.md"
+    },
+    {
+      "path": "references/cards/lead-word-zoom-assemble.md",
+      "bytes": 8221,
+      "sha256": "521c246b1e8eefa89b2c1f33237eacb39427f36a58094eaf027386c1ef40d8bb",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/lead-word-zoom-assemble.md"
+    },
+    {
+      "path": "references/cards/line-by-line-slide.md",
+      "bytes": 14251,
+      "sha256": "ec881dada8f213dfff33c0aa5808565421bd71e140b6a8a66aa3373e14bc7416",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/line-by-line-slide.md"
+    },
+    {
+      "path": "references/cards/line-carry-transition.md",
+      "bytes": 9994,
+      "sha256": "9aa9bf5ca72904ebe69a562cd5225791b5b52c48ea610bd01b365b56d8629f25",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/line-carry-transition.md"
+    },
+    {
+      "path": "references/cards/line-chart-story-draw.md",
+      "bytes": 9678,
+      "sha256": "d2f1ce7bccc588d2273f72e56b82e4072d50230d48438d0f8df87442a40d1359",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/line-chart-story-draw.md"
+    },
+    {
+      "path": "references/cards/logo-enter.md",
+      "bytes": 11674,
+      "sha256": "d2cf05cd9e8190758c4ae1038d57d00549f870ac1e1406e2d518df56960c21e1",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/logo-enter.md"
+    },
+    {
+      "path": "references/cards/long-take-world.md",
+      "bytes": 6585,
+      "sha256": "a0ba7f730f724868ac86469a08fe93d243be95da4e0662db7011c3e5719a257a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/long-take-world.md"
+    },
+    {
+      "path": "references/cards/lower-third-nameplate.md",
+      "bytes": 5955,
+      "sha256": "217bd07eb591a1cb35c9c9c732697c830bd41189ce77914d81ab1b09315e85be",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/lower-third-nameplate.md"
+    },
+    {
+      "path": "references/cards/magnifier-detail.md",
+      "bytes": 7898,
+      "sha256": "738b148ebc7bc3b3439b335d1fa0446e0b132b6ac65ee07b1b94d1e6e4c6078f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/magnifier-detail.md"
+    },
+    {
+      "path": "references/cards/map-route-pin.md",
+      "bytes": 7224,
+      "sha256": "2684d9bfc2cc524422eb2f4084570d62835f7fbab23579d5b39191567b8d7030",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/map-route-pin.md"
+    },
+    {
+      "path": "references/cards/media-pop-in.md",
+      "bytes": 5876,
+      "sha256": "185b4945d978246aebda1cb45f24742977ec06646950843209f0400517b070c6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/media-pop-in.md"
+    },
+    {
+      "path": "references/cards/metric-with-sparkline.md",
+      "bytes": 12037,
+      "sha256": "2d557daf71f3a112f90af86d09dd6b8f2fec3783efd0d89b54e624e9ea693f9d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/metric-with-sparkline.md"
+    },
+    {
+      "path": "references/cards/motion-blur-slam-in.md",
+      "bytes": 8534,
+      "sha256": "1df8fe77e75d1256cd329db8e69884bfc505911f9d119273f3cdf29353517a8e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/motion-blur-slam-in.md"
+    },
+    {
+      "path": "references/cards/news-card-desk.md",
+      "bytes": 7146,
+      "sha256": "ea2ee48232665cf48fcef345a3e200800b7c46a9dfb5302ecf6933448d6ce544",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/news-card-desk.md"
+    },
+    {
+      "path": "references/cards/number-counter.md",
+      "bytes": 5973,
+      "sha256": "298a9d5430788834dd289b1bd181cb6662ccce24057ca9abe039a17eeef37efa",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/number-counter.md"
+    },
+    {
+      "path": "references/cards/number-slab-pop.md",
+      "bytes": 12979,
+      "sha256": "f6f4d0b46ec28c53b9923ba9f784ea43a3ce9860cc278b2a55245c56f108298d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/number-slab-pop.md"
+    },
+    {
+      "path": "references/cards/numbered-step-stack.md",
+      "bytes": 11753,
+      "sha256": "de2441aac11a66c84f59fd2c323bd6724a85fec8592444d627109fcf1f87e9f5",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/numbered-step-stack.md"
+    },
+    {
+      "path": "references/cards/orbit-drift.md",
+      "bytes": 11272,
+      "sha256": "bbaede59a120935758fe747486cf6cebaabadf895ffd93d7a09614c52642304a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/orbit-drift.md"
+    },
+    {
+      "path": "references/cards/outline-box-title.md",
+      "bytes": 11808,
+      "sha256": "208c01e29ce5777d912ff057197a933053ead61c83f04f409305bb26ea4cc48a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/outline-box-title.md"
+    },
+    {
+      "path": "references/cards/overexpose-flip-transition.md",
+      "bytes": 8825,
+      "sha256": "a9fb10b3acd832651c4ef22fb55eb31db3e88dcd57fc42d4e013dc4efc9cdcc1",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/overexpose-flip-transition.md"
+    },
+    {
+      "path": "references/cards/parallel-items-with-host.md",
+      "bytes": 10839,
+      "sha256": "4bb15d67e09dbecf7919fd158048e2a2d96c5a484a3a98356c9191930d3255f6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/parallel-items-with-host.md"
+    },
+    {
+      "path": "references/cards/particle-weld-transition.md",
+      "bytes": 11367,
+      "sha256": "df48b69531f5c56690d4725fc5a092acddf9a2e69fc9f6b0875796fbe4339426",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/particle-weld-transition.md"
+    },
+    {
+      "path": "references/cards/pencil-sketch-draw.md",
+      "bytes": 9423,
+      "sha256": "e4e4c94a0fe83f6fd8c56f453636f01ae3829d5da128aece075ec15f70cc2841",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/pencil-sketch-draw.md"
+    },
+    {
+      "path": "references/cards/per-character-rise.md",
+      "bytes": 12664,
+      "sha256": "deda7fbd0e60a7a70320ec015cd836d650869efa8b4e20651c15e24fd1c3a47d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/per-character-rise.md"
+    },
+    {
+      "path": "references/cards/pip-zoom-box.md",
+      "bytes": 14642,
+      "sha256": "d5711c6384b5bb9555e70e5c211fb20a0b0e8f65efb4506767d26329a8e4a316",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/pip-zoom-box.md"
+    },
+    {
+      "path": "references/cards/pullback-cool-transition.md",
+      "bytes": 10280,
+      "sha256": "2bb49ece695d34568bd0bb3cc07a00140e449d42c279edb3ae0d0a649fe54051",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/pullback-cool-transition.md"
+    },
+    {
+      "path": "references/cards/push-through-transition.md",
+      "bytes": 8386,
+      "sha256": "36502bc9e285c8d734d036a0d471833038929cc357dca809c5d4aa573e25f50f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/push-through-transition.md"
+    },
+    {
+      "path": "references/cards/quote-bracket-pull.md",
+      "bytes": 13171,
+      "sha256": "4f2a8a4c53a9449549ebf1b7482d0fbeacf7f6f4a4aa3549f1389a3f19da1931",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/quote-bracket-pull.md"
+    },
+    {
+      "path": "references/cards/quote-card.md",
+      "bytes": 5697,
+      "sha256": "51cd4fac787cdcf7b0a4d2ad82329c900b73b540200ec4c0cf94f748c30238b9",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/quote-card.md"
+    },
+    {
+      "path": "references/cards/quote-hold-arrow.md",
+      "bytes": 12168,
+      "sha256": "fbf64430fe4384f2333d816fe63d02307849c29be175f46af4226d90407a0056",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/quote-hold-arrow.md"
+    },
+    {
+      "path": "references/cards/rack-focus-pair.md",
+      "bytes": 7250,
+      "sha256": "fb3fd36cff8ea16e382e30ea1649f1438e61d1aa4812f2d29192556a22e927f5",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/rack-focus-pair.md"
+    },
+    {
+      "path": "references/cards/reticle-lock-on.md",
+      "bytes": 7473,
+      "sha256": "78e8c669788988af54c9b4779aaa23e332635af17b1008242c3c54e9f3856e7f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/reticle-lock-on.md"
+    },
+    {
+      "path": "references/cards/scanline-annotate.md",
+      "bytes": 9007,
+      "sha256": "142ccbe881a15f086db486aa549d22a9fd223024cb98e3689281c2d8680e1d32",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/scanline-annotate.md"
+    },
+    {
+      "path": "references/cards/scribble-annotation.md",
+      "bytes": 9315,
+      "sha256": "c609e46d91cf1759e253fb89e163e6f9547b4ac799ec2e331c39e8549560c6dd",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/scribble-annotation.md"
+    },
+    {
+      "path": "references/cards/shape-wipe-transition.md",
+      "bytes": 6281,
+      "sha256": "0c2a6b5de379c610db6573bf4941a17925511db5822f603c6fabbc1f2b8696ba",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/shape-wipe-transition.md"
+    },
+    {
+      "path": "references/cards/slab-punch-title.md",
+      "bytes": 12762,
+      "sha256": "863e175f00ff7499ebee0a087a9d5450bc52f40a68e702eeabb0f27bc5297996",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/slab-punch-title.md"
+    },
+    {
+      "path": "references/cards/slow-pull-reveal.md",
+      "bytes": 9574,
+      "sha256": "fcc0ce1b52ced94c001e832f3e136ba9e005c1ba1709b1197442637d5e577ffe",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/slow-pull-reveal.md"
+    },
+    {
+      "path": "references/cards/slow-push-in.md",
+      "bytes": 9504,
+      "sha256": "49744f05e17ef0923e0ad0d14d00bef56cee04d3f0ae78d53fca98e4e210ad08",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/slow-push-in.md"
+    },
+    {
+      "path": "references/cards/soft-blur-in.md",
+      "bytes": 12504,
+      "sha256": "b790cabca7ff2ede465f61b42f3a68cc294ba5b02048417c53643e93e3c3417b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/soft-blur-in.md"
+    },
+    {
+      "path": "references/cards/source-converge.md",
+      "bytes": 9811,
+      "sha256": "705e105954d9a82efb19c53e11de73aa6cf0eadba901841eb0b6c2dda85c4daf",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/source-converge.md"
+    },
+    {
+      "path": "references/cards/speed-slab-title.md",
+      "bytes": 16490,
+      "sha256": "0a62b898d3cefc8ebe52d96a0d91d63a808b3d9c2c2a250d1a774bfffa9f4aba",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/speed-slab-title.md"
+    },
+    {
+      "path": "references/cards/split-60-40-story.md",
+      "bytes": 8242,
+      "sha256": "3150c5f9e4ff3cecf2a8d7fe1a10ba1fb865606027a287356dd24c8bdaf8419f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/split-60-40-story.md"
+    },
+    {
+      "path": "references/cards/split-compare-slider.md",
+      "bytes": 9972,
+      "sha256": "177aea125a211c810fa6b5799fc79e53b01481f6d1fe039f6f6981f07ec709dc",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/split-compare-slider.md"
+    },
+    {
+      "path": "references/cards/split-text-stagger.md",
+      "bytes": 7102,
+      "sha256": "fa505ab97067c8a3d9beacc8a57756eb994c87f16292db476171c14a172c7024",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/split-text-stagger.md"
+    },
+    {
+      "path": "references/cards/stack-fan-out.md",
+      "bytes": 7554,
+      "sha256": "1aa455453a8e501ff6a3b5617d158e54c871aa0a2f899acce34bbaea808f0a29",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/stack-fan-out.md"
+    },
+    {
+      "path": "references/cards/stage-keyframe-tour.md",
+      "bytes": 15091,
+      "sha256": "de3c8979a60eb65592f82f24b6c3c5a6bea27879e37f28143458dd6955e23d4c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/stage-keyframe-tour.md"
+    },
+    {
+      "path": "references/cards/step-timeline-vertical.md",
+      "bytes": 13522,
+      "sha256": "6bcbb02f95c8232c8da72158d50a38a1a6db1822899d05d8c6488aae41996a7e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/step-timeline-vertical.md"
+    },
+    {
+      "path": "references/cards/still-layout-relay.md",
+      "bytes": 9305,
+      "sha256": "5c013648a88b9bded0c7d7cf8065987b7ca05aa818903ef209ec1559d8bdb8c8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/still-layout-relay.md"
+    },
+    {
+      "path": "references/cards/strike-and-replace.md",
+      "bytes": 13469,
+      "sha256": "c503ece18fbf7c65d8969520d1dec6b6ef5e34f178795d0cd03a82424ad4008d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/strike-and-replace.md"
+    },
+    {
+      "path": "references/cards/subscribe-cta.md",
+      "bytes": 11052,
+      "sha256": "40da367296cf2c9f80a885e26759c9a2e5bb1de408d3ff8a9bb1100e594b7098",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/subscribe-cta.md"
+    },
+    {
+      "path": "references/cards/sway-parallax.md",
+      "bytes": 10299,
+      "sha256": "e77c325be957b9d5c751599d791385fcf3684d0f1bc23c53aa9c767982514f06",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/sway-parallax.md"
+    },
+    {
+      "path": "references/cards/terminal-typing-log.md",
+      "bytes": 12416,
+      "sha256": "8f91791ea8742fc4cf433651f6c7b88c9d8e2bc5d7a3acd270d8e1a4f1afb2ac",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/terminal-typing-log.md"
+    },
+    {
+      "path": "references/cards/tilt-3d-page.md",
+      "bytes": 11071,
+      "sha256": "3352b7de484012e16cbb403c65b1cb009b2cc32596a765fdb8897a5468292088",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/tilt-3d-page.md"
+    },
+    {
+      "path": "references/cards/timeline-photo-strip.md",
+      "bytes": 8467,
+      "sha256": "57dcec9c9562f43fe84f34147689721c2cbceb8f1bd0a5f26cdea405214b31a7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/timeline-photo-strip.md"
+    },
+    {
+      "path": "references/cards/title-demote-to-label.md",
+      "bytes": 8375,
+      "sha256": "8da54b7decab006e7c8f6f180bfb2bc3cf70c3d402564c226f34a225bbe0fe8f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/title-demote-to-label.md"
+    },
+    {
+      "path": "references/cards/tracking-in.md",
+      "bytes": 15121,
+      "sha256": "c91f6f636db1b9e43638aa70c8099d4748265e6513e1118a42ddea3555a67635",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/tracking-in.md"
+    },
+    {
+      "path": "references/cards/type-contrast-emphasis.md",
+      "bytes": 9608,
+      "sha256": "ae59de8d56cdbd975ba56377eb44f32fe55025163bea76f32080898e848a258d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/type-contrast-emphasis.md"
+    },
+    {
+      "path": "references/cards/typewriter-reveal.md",
+      "bytes": 6720,
+      "sha256": "eb681acd161f9cb8908a92428843f79ada76260dd7edb50d6714568f095b576b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/typewriter-reveal.md"
+    },
+    {
+      "path": "references/cards/ui-flow-theater.md",
+      "bytes": 17571,
+      "sha256": "fa64b76ba187c3c51e66206ad55172f64e6770cc60ced5047ac3b8a8ef2e2e85",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/ui-flow-theater.md"
+    },
+    {
+      "path": "references/cards/ui-prop-theater.md",
+      "bytes": 11739,
+      "sha256": "512d0f45884c50673cfe08c86709a1b96e29f4297aec38d604babbad0d9ff64c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/ui-prop-theater.md"
+    },
+    {
+      "path": "references/cards/unit-grid-proportion.md",
+      "bytes": 8653,
+      "sha256": "63e0fa0e1086ecb63600f0dae7c7da93e385bd78bf8d7f02436aa0981114ca30",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/unit-grid-proportion.md"
+    },
+    {
+      "path": "references/cards/whip-pan-transition.md",
+      "bytes": 9310,
+      "sha256": "fbaff5160bddb08bb133eb157ca32d5c01ca1b688ad92b6568bd258d4c342fe6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/whip-pan-transition.md"
+    },
+    {
+      "path": "references/cards/word-relay-filmstrip.md",
+      "bytes": 7929,
+      "sha256": "b2cf856686a6a9ca528915d869959b9b499bf59b0abe90fca3f5721c13696cc3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/word-relay-filmstrip.md"
+    },
+    {
+      "path": "references/cards/word-slot-cycle.md",
+      "bytes": 9064,
+      "sha256": "345701103e11b23c38896cea35bc8e48e0a9927df1a761f5a87f7b0d4fcf9927",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/word-slot-cycle.md"
+    },
+    {
+      "path": "references/cards/x-follow-card.md",
+      "bytes": 20776,
+      "sha256": "9a2127808f64001517be626a276e4f816b564704e9d1c6945cf04c415b038266",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/cards/x-follow-card.md"
+    },
+    {
+      "path": "references/taxonomy.md",
+      "bytes": 60834,
+      "sha256": "e200a84c25cd6e88f014668229de3b62a7fe79335f6529db5795df780bb4b6a0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/references/taxonomy.md"
+    },
+    {
+      "path": "template/cards/alt-block-lines.tsx",
+      "bytes": 5772,
+      "sha256": "9676728d2d7176abf7b3e214adec83a30ddb31ec78e962ee665355d291933265",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/alt-block-lines.tsx"
+    },
+    {
+      "path": "template/cards/bar-chart-growth.tsx",
+      "bytes": 7104,
+      "sha256": "3c9ca039d3f7eea3327028e633c5c80c4d2c919b1f062c584707a073b132df4f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/bar-chart-growth.tsx"
+    },
+    {
+      "path": "template/cards/bed-echo-blur.tsx",
+      "bytes": 9111,
+      "sha256": "bdae9cbb330d3870ce39cb34db429eac7db85d7e3abdb0731df99260a137aa5a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/bed-echo-blur.tsx"
+    },
+    {
+      "path": "template/cards/behind-text-title.tsx",
+      "bytes": 5853,
+      "sha256": "dedbcae9399eda679507e3f5451bb32df702bad44a92aa2b3ded66dc84e44d87",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/behind-text-title.tsx"
+    },
+    {
+      "path": "template/cards/black-slam-transition.tsx",
+      "bytes": 6180,
+      "sha256": "35e06a31af863fe9edbfa4f002660dca2289cbd13419758f04a4f2549e90d6b3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/black-slam-transition.tsx"
+    },
+    {
+      "path": "template/cards/callout-line-label.tsx",
+      "bytes": 8060,
+      "sha256": "58d29fcd73a8f41ae13e9cad9a281b50d817c57b2fe0b82d788e8f0e6175a314",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/callout-line-label.tsx"
+    },
+    {
+      "path": "template/cards/caret-wipe-transition.tsx",
+      "bytes": 7577,
+      "sha256": "40be04725ff8381fed5b952345a45873ae617ff274c0adfdc589fc5ea69dad3f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/caret-wipe-transition.tsx"
+    },
+    {
+      "path": "template/cards/chapter-progress-list.tsx",
+      "bytes": 8388,
+      "sha256": "16c5457e98671023f0a0dfc361caff0f8a9619118665fb30aef93b3b974a4560",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chapter-progress-list.tsx"
+    },
+    {
+      "path": "template/cards/chapter-title-card.tsx",
+      "bytes": 9963,
+      "sha256": "f30ac52ebb7095b61aa9515de4eac911edd658e5244a0e6209f45c9246662c50",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chapter-title-card.tsx"
+    },
+    {
+      "path": "template/cards/chart-grow.tsx",
+      "bytes": 5789,
+      "sha256": "3026616f4d18dfd4dfe35e972fb357f49f1d04f7ed4121591fb7e276c6c9c7f8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chart-grow.tsx"
+    },
+    {
+      "path": "template/cards/chat-gpt.tsx",
+      "bytes": 19796,
+      "sha256": "019843122d6b61447c72e635d90e8fa0138eab17c7596341d45caab4917ee862",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chat-gpt.tsx"
+    },
+    {
+      "path": "template/cards/chat-message-flow.tsx",
+      "bytes": 14906,
+      "sha256": "c841669eefc46253286cc37a3545db7e5eed45dbfb22f9e82c411fda18c6a0df",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chat-message-flow.tsx"
+    },
+    {
+      "path": "template/cards/chevron-lower-third.tsx",
+      "bytes": 7385,
+      "sha256": "6eb05135628410f79495d9134f50a5a6e5600ba5b6ebd6a8b6d9c9dece8a9535",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chevron-lower-third.tsx"
+    },
+    {
+      "path": "template/cards/chip-grid-single-select.tsx",
+      "bytes": 10007,
+      "sha256": "432460135c0ac2d1007a7824f0f24f675aac7f6c3e17aeac557cc3aa6e403586",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/chip-grid-single-select.tsx"
+    },
+    {
+      "path": "template/cards/claude-code.tsx",
+      "bytes": 17402,
+      "sha256": "b2cfc9ddb2c110164839e3f99ab5843fac0dcece628838c9c77ce0070fd16707",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/claude-code.tsx"
+    },
+    {
+      "path": "template/cards/color-slam-beat-card.tsx",
+      "bytes": 10504,
+      "sha256": "9e61532bb89bcf3ad1e0f02833d805d7da75ccc1de9057fd4af07e9e76971323",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/color-slam-beat-card.tsx"
+    },
+    {
+      "path": "template/cards/converging-arrows.tsx",
+      "bytes": 10464,
+      "sha256": "429f963d636c31e9ce9a9aa2ae9cfe2ea11f8cc4999c358a2ef8bd57097aa4ce",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/converging-arrows.tsx"
+    },
+    {
+      "path": "template/cards/corner-bracket-frame.tsx",
+      "bytes": 6089,
+      "sha256": "4c39c67354ce057edb7050891367d0300ab9b4e407e2c107ef67701bb3c6deb0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/corner-bracket-frame.tsx"
+    },
+    {
+      "path": "template/cards/count-badge-title.tsx",
+      "bytes": 7612,
+      "sha256": "ba43d69ea8f2378cccd3aaa9587311928f9faf75a5a4a192294a6b82ccbf0836",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/count-badge-title.tsx"
+    },
+    {
+      "path": "template/cards/countdown-arc-scatter.tsx",
+      "bytes": 9133,
+      "sha256": "33650e5dcf308e0badf6832a2c02a5c3a738e86908ef240e9baf20c74eb85fac",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/countdown-arc-scatter.tsx"
+    },
+    {
+      "path": "template/cards/crash-zoom-punch.tsx",
+      "bytes": 9102,
+      "sha256": "3e4bc7d7ad3eb4fcfe52de07a9e2976d90b69dc01de460eab82dae389ff05a69",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/crash-zoom-punch.tsx"
+    },
+    {
+      "path": "template/cards/cursor-actor-demo.tsx",
+      "bytes": 18553,
+      "sha256": "411baf57cd319fe5b72a089fe876501f4b5bef3592ce273a23aaa18587340f2d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/cursor-actor-demo.tsx"
+    },
+    {
+      "path": "template/cards/cursor-locked-zoom.tsx",
+      "bytes": 8077,
+      "sha256": "0e4a042428cd14457c3de5475b82da27208e24a46cbf4eef4fe73fd74cf7a57d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/cursor-locked-zoom.tsx"
+    },
+    {
+      "path": "template/cards/danmu-bubble-praise.tsx",
+      "bytes": 6222,
+      "sha256": "b87a28ce6b1d16b8b4a8591ad7448aff565d7028c52f9af287f1cff0174cd37a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/danmu-bubble-praise.tsx"
+    },
+    {
+      "path": "template/cards/doc-park-left-pill-deal.tsx",
+      "bytes": 9470,
+      "sha256": "874d90c93efd1a9334970629d0a29f67fdb2f8900135174b2c6a882ec0d7a74b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/doc-park-left-pill-deal.tsx"
+    },
+    {
+      "path": "template/cards/douyin-follow-card.tsx",
+      "bytes": 18055,
+      "sha256": "f94ef9efca1ab2db43d49ac56c016c5db5a93a3a14fcf48b034283aa038461cb",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/douyin-follow-card.tsx"
+    },
+    {
+      "path": "template/cards/error-retype.tsx",
+      "bytes": 7330,
+      "sha256": "a1d8f1898808bb37c1978c834b186d0be231370318be99b22ac1b7c6d074bcfc",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/error-retype.tsx"
+    },
+    {
+      "path": "template/cards/evidence-scroll-tour.tsx",
+      "bytes": 10788,
+      "sha256": "b29eac867833599bad85f43798f52cc98f9d1682f167ca8b7c2636d52fda34b2",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/evidence-scroll-tour.tsx"
+    },
+    {
+      "path": "template/cards/filmstrip-conveyor.tsx",
+      "bytes": 8883,
+      "sha256": "ffc4ff9ae7fe18120f081b32b69268528e245b0b2386a2aa2aa38f9cac2e479d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/filmstrip-conveyor.tsx"
+    },
+    {
+      "path": "template/cards/flying-words.tsx",
+      "bytes": 6218,
+      "sha256": "9b4c7e727b18b78931cc053757132fd4be734a9f5206cc853288182c0de31166",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/flying-words.tsx"
+    },
+    {
+      "path": "template/cards/focus-dim-spotlight.tsx",
+      "bytes": 10634,
+      "sha256": "d1d5e488a783639ccbd9078119b4ccba8a809603cdb1f8c63a331da527fd0d09",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/focus-dim-spotlight.tsx"
+    },
+    {
+      "path": "template/cards/gallery-wall-dolly.tsx",
+      "bytes": 9462,
+      "sha256": "2b4d214d058d26c10655763e826336e376edd200e03a70b2e427d94f99a7410f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/gallery-wall-dolly.tsx"
+    },
+    {
+      "path": "template/cards/glass-code-walk.tsx",
+      "bytes": 14049,
+      "sha256": "af01ece4a25974caf914475ac5e6b513ea805a9a53f8a91cb929ae827ec5c232",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/glass-code-walk.tsx"
+    },
+    {
+      "path": "template/cards/gooey-morph.tsx",
+      "bytes": 7704,
+      "sha256": "3a573f5da6643f46629a18e2615d64be570cb42360db788a8818f82d42684889",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/gooey-morph.tsx"
+    },
+    {
+      "path": "template/cards/grid-to-hero.tsx",
+      "bytes": 8869,
+      "sha256": "e9e550223301f791e46e0afc60c5d1ab171fc777c81ca130b56ef2951cf389f4",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/grid-to-hero.tsx"
+    },
+    {
+      "path": "template/cards/hand-drawn-ellipse.tsx",
+      "bytes": 7894,
+      "sha256": "31b3c51a9a2201795e0192ce7d8b5219cf59dbcf3d9134b006106c636721c961",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/hand-drawn-ellipse.tsx"
+    },
+    {
+      "path": "template/cards/highlighter-sweep.tsx",
+      "bytes": 4492,
+      "sha256": "f04a519c5c0167b1da4b54b5a7082893e89f10ccf526ea080732cadc769893b6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/highlighter-sweep.tsx"
+    },
+    {
+      "path": "template/cards/host-card-glass-board.tsx",
+      "bytes": 14193,
+      "sha256": "23389c67e5daa18ace4caac08fcaf5645f2ef44fc70a0873bea055655491a22e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/host-card-glass-board.tsx"
+    },
+    {
+      "path": "template/cards/host-shrink-to-chip.tsx",
+      "bytes": 8878,
+      "sha256": "84ca07795d6f7a228a478e7e2345f2d5fecf153fdfa666889cd02b05532a8a49",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/host-shrink-to-chip.tsx"
+    },
+    {
+      "path": "template/cards/impact-open-title.tsx",
+      "bytes": 7855,
+      "sha256": "127581f5a1cdccfbe9e332d271beb2ccb8168c29196c7a8533b0b968929e0084",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/impact-open-title.tsx"
+    },
+    {
+      "path": "template/cards/info-card-assemble.tsx",
+      "bytes": 9607,
+      "sha256": "c6fe0ace4d61c6ed9c53a66334230aa0a1ef8ef19d45904f9f03d5f28befeb65",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/info-card-assemble.tsx"
+    },
+    {
+      "path": "template/cards/info-term-card.tsx",
+      "bytes": 5823,
+      "sha256": "40bb632b621afca9b27ee2ee653bc1f92cd0006c10a7f9e2452f743e94b391b6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/info-term-card.tsx"
+    },
+    {
+      "path": "template/cards/ink-underline.tsx",
+      "bytes": 9697,
+      "sha256": "e1d692b1fb5560ed64d97f31559650bc10c3f6daacca0e313fdb0769276e19a0",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/ink-underline.tsx"
+    },
+    {
+      "path": "template/cards/keyword-pop-highlight.tsx",
+      "bytes": 5451,
+      "sha256": "0ff812e4fef3dc1e9b91575063737ac61848eb47e818c4f969a611e3758b9306",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/keyword-pop-highlight.tsx"
+    },
+    {
+      "path": "template/cards/lead-word-zoom-assemble.tsx",
+      "bytes": 8859,
+      "sha256": "fc3c59b8a4834f436da9143b7677d1223e5ee85cd1d3dfa752594170b120f84e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/lead-word-zoom-assemble.tsx"
+    },
+    {
+      "path": "template/cards/line-by-line-slide.tsx",
+      "bytes": 6530,
+      "sha256": "41cf138ce7ba628dc5d83f00b891898dfb2726041e127b6f679d0ffec65c2aa3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/line-by-line-slide.tsx"
+    },
+    {
+      "path": "template/cards/line-carry-transition.tsx",
+      "bytes": 8890,
+      "sha256": "9e380f85c1f72d220c1b02bf8a88d9c6795921e3c4115c2b6c52fbb806523b22",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/line-carry-transition.tsx"
+    },
+    {
+      "path": "template/cards/line-chart-story-draw.tsx",
+      "bytes": 17307,
+      "sha256": "937320d2bf1ed2e3f09b5c7abf8085eb42b086b386d0dd58fb1fb05807edebb3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/line-chart-story-draw.tsx"
+    },
+    {
+      "path": "template/cards/logo-enter.tsx",
+      "bytes": 6560,
+      "sha256": "4489e6dda20b6e1eb444e6f3efe53a275e594c1a64039ece515d5697db8628da",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/logo-enter.tsx"
+    },
+    {
+      "path": "template/cards/long-take-world.tsx",
+      "bytes": 5585,
+      "sha256": "70e059a6ec67097d2d097d0ea52acb61ed6066f7e8f44f97ca7e23afc8ea1a32",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/long-take-world.tsx"
+    },
+    {
+      "path": "template/cards/lower-third-nameplate.tsx",
+      "bytes": 4696,
+      "sha256": "a22273f51010dd153b089341e80deba9097965f3b702e04e4956bbb33af7d91c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/lower-third-nameplate.tsx"
+    },
+    {
+      "path": "template/cards/magnifier-detail.tsx",
+      "bytes": 7688,
+      "sha256": "59ca146586bf0f56826dd80e33edfb29c10a7da8cb31aa23a72bc28e49f1544b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/magnifier-detail.tsx"
+    },
+    {
+      "path": "template/cards/map-route-pin.tsx",
+      "bytes": 12614,
+      "sha256": "fec5d18b99286f1306eb9378db59b756085a4083700c147a971926b397858ef3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/map-route-pin.tsx"
+    },
+    {
+      "path": "template/cards/media-pop-in.tsx",
+      "bytes": 6729,
+      "sha256": "7156764244dd7ac4840e19b12c15ccbe72f4c38e4d5d9b168882a9f577494552",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/media-pop-in.tsx"
+    },
+    {
+      "path": "template/cards/metric-with-sparkline.tsx",
+      "bytes": 8505,
+      "sha256": "8568f46f620ccec15e4f1fe7258d2f0be8c500f01f05ccfa4dd2cb1c607d69e8",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/metric-with-sparkline.tsx"
+    },
+    {
+      "path": "template/cards/motion-blur-slam-in.tsx",
+      "bytes": 7605,
+      "sha256": "52b833847f1da7e7cd47b3cbf03cc6de27e868c14510ae772c0ff9ce85f3812b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/motion-blur-slam-in.tsx"
+    },
+    {
+      "path": "template/cards/news-card-desk.tsx",
+      "bytes": 6053,
+      "sha256": "76adedbbeb839241fee88d56f1eac188527fef918aa04837ede799644586a2b3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/news-card-desk.tsx"
+    },
+    {
+      "path": "template/cards/number-counter.tsx",
+      "bytes": 7520,
+      "sha256": "34a00653402a52d6925c5ef06da3988cf82f200f6ea9bb9f2d1ea5e5a93609a3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/number-counter.tsx"
+    },
+    {
+      "path": "template/cards/number-slab-pop.tsx",
+      "bytes": 6227,
+      "sha256": "26facbd762315fb5f5d196d7b1d439470c29f0e2ad7265d34185dbe4fb6df806",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/number-slab-pop.tsx"
+    },
+    {
+      "path": "template/cards/numbered-step-stack.tsx",
+      "bytes": 6146,
+      "sha256": "cb16806443f00085f3b2b3334c4fa97f1fe87494ce6c7906c1be1caea5ca2dfe",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/numbered-step-stack.tsx"
+    },
+    {
+      "path": "template/cards/orbit-drift.tsx",
+      "bytes": 11281,
+      "sha256": "1039d20ad1d033d195be51cac7ae8e1c7dc07870d938da22e5ea7bedf2d89c7d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/orbit-drift.tsx"
+    },
+    {
+      "path": "template/cards/outline-box-title.tsx",
+      "bytes": 7030,
+      "sha256": "4984e614edd2e10c58140f91f0771f2ab9cd08437e5f3db502ae9c35115a003c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/outline-box-title.tsx"
+    },
+    {
+      "path": "template/cards/overexpose-flip-transition.tsx",
+      "bytes": 5933,
+      "sha256": "b032936e3e9615460ef3329abc5b15b0de0a05750f70329e472edca7658af575",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/overexpose-flip-transition.tsx"
+    },
+    {
+      "path": "template/cards/parallel-items-with-host.tsx",
+      "bytes": 18619,
+      "sha256": "162290efbb146397a49d39efa13cd529236d7baf4a8088c3af9b05d725fcb27e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/parallel-items-with-host.tsx"
+    },
+    {
+      "path": "template/cards/particle-weld-transition.tsx",
+      "bytes": 8526,
+      "sha256": "99190675adbd6bf30f120c69d2b1e494a897f2de597d298a9d77a0ba24043739",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/particle-weld-transition.tsx"
+    },
+    {
+      "path": "template/cards/pencil-sketch-draw.tsx",
+      "bytes": 11476,
+      "sha256": "4e648e11ec75364b8111cdff92dbdd3fa8998cadc4b93b18e5e2766a849b41e3",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/pencil-sketch-draw.tsx"
+    },
+    {
+      "path": "template/cards/per-character-rise.tsx",
+      "bytes": 4566,
+      "sha256": "ddcdfd303810b22051f754295ff11034980a08219db88620279877a2ec19a027",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/per-character-rise.tsx"
+    },
+    {
+      "path": "template/cards/pip-zoom-box.tsx",
+      "bytes": 9611,
+      "sha256": "3162d14b5c15e60fbf7cb2f13cd38151c089c1569c4adf59f433aa23c5ca1df2",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/pip-zoom-box.tsx"
+    },
+    {
+      "path": "template/cards/pullback-cool-transition.tsx",
+      "bytes": 5523,
+      "sha256": "766065471f36cd8a6087bf5c07f1df642f29a22f71b49bcc291eb9b9ca76d232",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/pullback-cool-transition.tsx"
+    },
+    {
+      "path": "template/cards/push-through-transition.tsx",
+      "bytes": 5112,
+      "sha256": "1edc6f745d4c8ed6f674735f5d9bac1ce8883e66a588fd7e172f618bd110411f",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/push-through-transition.tsx"
+    },
+    {
+      "path": "template/cards/quote-bracket-pull.tsx",
+      "bytes": 6810,
+      "sha256": "5235dfe8b864fdb197fc6624ed5731084329c80b753b9e22170e96f672649e9c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/quote-bracket-pull.tsx"
+    },
+    {
+      "path": "template/cards/quote-card.tsx",
+      "bytes": 5141,
+      "sha256": "3e8f1233c31453f4492eb4076fed680fc029be0056dd8c6eeb6914bdbcc0e18e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/quote-card.tsx"
+    },
+    {
+      "path": "template/cards/quote-hold-arrow.tsx",
+      "bytes": 5545,
+      "sha256": "9b3cbd6a29ec4580ac0d53b54d8ef82bfa5d7c00100562e370dee2f57b30daef",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/quote-hold-arrow.tsx"
+    },
+    {
+      "path": "template/cards/rack-focus-pair.tsx",
+      "bytes": 6681,
+      "sha256": "79e8f4009f111c7cb698f0e59543e02a73e8afb1ffa747b81a31c8093351f123",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/rack-focus-pair.tsx"
+    },
+    {
+      "path": "template/cards/reticle-lock-on.tsx",
+      "bytes": 8961,
+      "sha256": "267372d5e16401608fa30557ace5b078121e5a4ba347ac7f1d9a4ecfcc7209e6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/reticle-lock-on.tsx"
+    },
+    {
+      "path": "template/cards/scanline-annotate.tsx",
+      "bytes": 10459,
+      "sha256": "d51fb08a3cb1ef8648e57cbcbac31a4e94a3518fa72736088c840915cbe6de94",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/scanline-annotate.tsx"
+    },
+    {
+      "path": "template/cards/scribble-annotation.tsx",
+      "bytes": 7053,
+      "sha256": "373f659948a7c7997590afa935a26a635fdbf195195633ed628992f536305786",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/scribble-annotation.tsx"
+    },
+    {
+      "path": "template/cards/shape-wipe-transition.tsx",
+      "bytes": 7890,
+      "sha256": "7df7c971a89d47e9054e17483b2367f78538c66060a45bf0217a5883faa033ea",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/shape-wipe-transition.tsx"
+    },
+    {
+      "path": "template/cards/slab-punch-title.tsx",
+      "bytes": 5594,
+      "sha256": "4c527c14b83de154076bc3a7d8a0fe84679754f572fe6b039df132456c9fee4d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/slab-punch-title.tsx"
+    },
+    {
+      "path": "template/cards/slow-pull-reveal.tsx",
+      "bytes": 14215,
+      "sha256": "79438baa13340fb21800720cedd387ea4ec228620d0c87e4da2388c30c8fe263",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/slow-pull-reveal.tsx"
+    },
+    {
+      "path": "template/cards/slow-push-in.tsx",
+      "bytes": 9032,
+      "sha256": "ec3a24f96e52320e3036c8584d591d63c927e64b067e8843a80f0ba49579534e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/slow-push-in.tsx"
+    },
+    {
+      "path": "template/cards/soft-blur-in.tsx",
+      "bytes": 5361,
+      "sha256": "72cfd018a6d1ce18226ae9b77a7fe5c0b08887d740bfdad4a9239332784ed307",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/soft-blur-in.tsx"
+    },
+    {
+      "path": "template/cards/source-converge.tsx",
+      "bytes": 10842,
+      "sha256": "a00163db942ec12861a243ad46e6b980804e8dd245cdcf5359b9bf06c5260673",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/source-converge.tsx"
+    },
+    {
+      "path": "template/cards/speed-slab-title.tsx",
+      "bytes": 7104,
+      "sha256": "58c74373a2662539447665192ed45e695da4b85cac29639f43d8e4191f839290",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/speed-slab-title.tsx"
+    },
+    {
+      "path": "template/cards/split-60-40-story.tsx",
+      "bytes": 8728,
+      "sha256": "1ce1395ea3fb54df8a83e98252d45e85866c1cbf7dcfd7ed4379ebf765edb1dc",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/split-60-40-story.tsx"
+    },
+    {
+      "path": "template/cards/split-compare-slider.tsx",
+      "bytes": 9000,
+      "sha256": "0fe6c944cc9b8144229a35576ff49c7482bc39a1de2e67001b82019e8992f475",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/split-compare-slider.tsx"
+    },
+    {
+      "path": "template/cards/split-text-stagger.tsx",
+      "bytes": 5743,
+      "sha256": "9c9c4d9aaa1c001a0d69bd013cedd864431f9be175cbb70242e072f6b329072e",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/split-text-stagger.tsx"
+    },
+    {
+      "path": "template/cards/stack-fan-out.tsx",
+      "bytes": 7849,
+      "sha256": "f4eafd9935f0ad3c14713d3036967927a389c3820a8a4467063b0048d1370146",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/stack-fan-out.tsx"
+    },
+    {
+      "path": "template/cards/stage-keyframe-tour.tsx",
+      "bytes": 16295,
+      "sha256": "155ac1ffc5a442d85307a128495f878fe4a33f5cb6a1ed3a753e1b28967be9d7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/stage-keyframe-tour.tsx"
+    },
+    {
+      "path": "template/cards/step-timeline-vertical.tsx",
+      "bytes": 7679,
+      "sha256": "023f0cba47caaede7b1de3e194010d7d8294ce2a7319b8b737b09e6efaa2eebf",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/step-timeline-vertical.tsx"
+    },
+    {
+      "path": "template/cards/still-layout-relay.tsx",
+      "bytes": 12334,
+      "sha256": "acf431e96eefbe478be5b82ae8cfeb11cccc734580367667a8f3fd3210c602dc",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/still-layout-relay.tsx"
+    },
+    {
+      "path": "template/cards/strike-and-replace.tsx",
+      "bytes": 7076,
+      "sha256": "75e994e167cd94f6d118f4cd1ff2b1e794be443b4e705fbf01031a605013269d",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/strike-and-replace.tsx"
+    },
+    {
+      "path": "template/cards/subscribe-cta.tsx",
+      "bytes": 20356,
+      "sha256": "87c3b952819317432f25e1ec40b9b6561c00cdaf8819c404a146d092cc0dda32",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/subscribe-cta.tsx"
+    },
+    {
+      "path": "template/cards/sway-parallax.tsx",
+      "bytes": 10813,
+      "sha256": "4fa9cca75dd02ab13b7163b8a33bd7e0a7e5cb1ab2f703f501de2631d0c07231",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/sway-parallax.tsx"
+    },
+    {
+      "path": "template/cards/terminal-typing-log.tsx",
+      "bytes": 9726,
+      "sha256": "337090493417804c462f5905ddea89d30dbf90d9badc243b4e808113953ecfaa",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/terminal-typing-log.tsx"
+    },
+    {
+      "path": "template/cards/tilt-3d-page.tsx",
+      "bytes": 9866,
+      "sha256": "6abd2141e995365190923694201154d01adf0610482c20b1b868ef57f8343a6c",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/tilt-3d-page.tsx"
+    },
+    {
+      "path": "template/cards/timeline-photo-strip.tsx",
+      "bytes": 8094,
+      "sha256": "ddcaa579f3210fd751cc350776f6561d0f4a7156cb3cb8a5896ab7b76c484f05",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/timeline-photo-strip.tsx"
+    },
+    {
+      "path": "template/cards/title-demote-to-label.tsx",
+      "bytes": 6973,
+      "sha256": "9bdb8c8f826a274cb76bf6959302ee9eddf1bb7a9b466cefc7dbbb1a3f865d91",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/title-demote-to-label.tsx"
+    },
+    {
+      "path": "template/cards/tracking-in.tsx",
+      "bytes": 4382,
+      "sha256": "b45ee0b45164a5286c31d9b75b1673a798cbc1f9fe75397eb2873094f073b21a",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/tracking-in.tsx"
+    },
+    {
+      "path": "template/cards/type-contrast-emphasis.tsx",
+      "bytes": 6989,
+      "sha256": "a32939c7f34212449ede31eab9e49a7e096b3f48231723b80043f65cc3bdcad6",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/type-contrast-emphasis.tsx"
+    },
+    {
+      "path": "template/cards/typewriter-reveal.tsx",
+      "bytes": 6088,
+      "sha256": "778a4cbc833c2d52e852a3afffd535d9f94bd49f049b3fe7042fc56ce12c9dba",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/typewriter-reveal.tsx"
+    },
+    {
+      "path": "template/cards/ui-flow-theater.tsx",
+      "bytes": 19024,
+      "sha256": "05d1aa1e495221f067ab5b8c9bb186275fe4450c59b2fb84f12276ab30c135de",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/ui-flow-theater.tsx"
+    },
+    {
+      "path": "template/cards/ui-prop-theater.tsx",
+      "bytes": 12757,
+      "sha256": "f85f9c49ecbc1cf170ce977bed5536eacdf7aacddfc9f3051c4f7d7c627bd08b",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/ui-prop-theater.tsx"
+    },
+    {
+      "path": "template/cards/unit-grid-proportion.tsx",
+      "bytes": 8446,
+      "sha256": "b06dc875caf9745ad1f48ae72b3b760cfca9c586badde5b212a05796eb12d465",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/unit-grid-proportion.tsx"
+    },
+    {
+      "path": "template/cards/whip-pan-transition.tsx",
+      "bytes": 5652,
+      "sha256": "735e00f3e7173b0a63a0bde557ffdf9bbdd10f542eff8e908d1783dbc2a46551",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/whip-pan-transition.tsx"
+    },
+    {
+      "path": "template/cards/word-relay-filmstrip.tsx",
+      "bytes": 8815,
+      "sha256": "07ce275988732be32ddddc9e9d6f38221201b2a369b469553bf112874f462635",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/word-relay-filmstrip.tsx"
+    },
+    {
+      "path": "template/cards/word-slot-cycle.tsx",
+      "bytes": 11275,
+      "sha256": "71be5941fff1635cdbe14ab62bdd318b46fa8203dc21e60daa0f0b923ad389a7",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/word-slot-cycle.tsx"
+    },
+    {
+      "path": "template/cards/x-follow-card.tsx",
+      "bytes": 19918,
+      "sha256": "a555ec01a8330af0e13447173673f9a5f3d09f491ca52d9cee5e79f92ca9d2ac",
+      "url": "https://raw.githubusercontent.com/Vincentwei1021/video-talkcraft/a7c29edfb2404612dde6a5a1c8aa94232e85625b/template/cards/x-follow-card.tsx"
+    }
+  ]
+}

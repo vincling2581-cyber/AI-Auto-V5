@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-20T14:59:58.473018+08:00",
+  "updated_at": "2026-10-21T00:20:22.673442+08:00",
   "purpose": "V5 当前制作入口；只维护有效路径、范围和最新交接状态。所有相对路径以 V5 根目录为基准。",
   "workflow": "docs/SINGLE_EPISODE_WORKFLOW.md",
   "new_episode_state_template": "templates/episode_state.json",
@@ -26,10 +26,10 @@
     "stage_runner": "standards/v4.7/production_standard/run_stage.py"
   },
   "latest_episode": {
-    "id": "TEST_V46_HUMAN3_20261018",
-    "root": "episodes/TEST_V46_HUMAN3_20261018",
-    "state_file": "episodes/TEST_V46_HUMAN3_20261018/00_brief/episode_state.json",
-    "status": "comic_2s_demo_ready_for_user_viewing"
+    "id": "REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+    "root": "episodes/REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+    "state_file": "episodes/REMAKE_HUMAN3_V47_TALKCRAFT_20261020/00_brief/episode_state.json",
+    "status": "ready_for_user_review"
   },
   "routine_search_exclusions": [
     "card_motion_trial_v1/**",
@@ -47,5 +47,18 @@
   "export_tooling": {
     "skill": "skills/jianying-layered-export/SKILL.md",
     "policy": "New explicitly requested V5 exports copy needed tools from this repository into the episode and record hashes; legacy exports retain their bundled tools. Repository updates do not install the global Skill."
+  },
+  "research_resources": {
+    "information_card_motion": {
+      "entry": "research/video-talkcraft/README.md",
+      "browser_index": "research/video-talkcraft/index.html",
+      "catalog": "research/video-talkcraft/catalog.json",
+      "query_tool": "research/video-talkcraft/scripts/query.py",
+      "source_commit": "a7c29edfb2404612dde6a5a1c8aa94232e85625b",
+      "selection_workflow": "docs/SINGLE_EPISODE_WORKFLOW.md",
+      "selection_section": "3.1 信息卡动效选型与实现检查",
+      "selection_record": "episode_state.authoritative_files.semantic_design",
+      "scope": "candidate_reference_only"
+    }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "created_at": "2026-10-20T23:31:02.214200+08:00",
+  "source_episode": "TEST_V46_HUMAN3_20261018",
+  "standard_root": "standards/v4.7",
+  "inputs": {
+    "voice": {
+      "path": "00_brief/input/10月18日.mp3",
+      "original_path": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\TEST_V46_HUMAN3_20261018\\00_brief\\input\\10月18日.mp3",
+      "sha256": "7dba283d1420d7a3be5e86ac41f355f31274425e99f985a6fe28c5aef51b0642",
+      "duration_seconds": 55.902042
+    },
+    "srt": {
+      "path": "00_brief/input/10月18日.srt",
+      "original_path": "D:\\AI-Auto-V5（Codex+AE）\\episodes\\TEST_V46_HUMAN3_20261018\\00_brief\\input\\10月18日.srt",
+      "sha256": "26561571776fbc22d14c7aaa4bdd4a0cd94e176dd6578ffd9c2bd2c6c8f22462"
+    }
+  },
+  "narration_unchanged": true,
+  "old_episode_writes": false,
+  "user_review_scope": "完整重制样片供用户观看；代理先内部检查，无新增中间选卡审批。"
+}

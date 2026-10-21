@@ -1,0 +1,186 @@
+{
+  "schemaVersion": "1.0",
+  "episodeId": "REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+  "checkedOn": "2026-10-20",
+  "language": "zh-CN",
+  "researchScope": {
+    "method": "保存同轮已浏览的 Dan Koe 官方文章和提示词结论，写文件时未重新浏览。",
+    "localSourceAttempt": "指定的旧集 TEST_V46_HUMAN3_20261018/01_research 不存在；未搜索其他集或历史目录。",
+    "audioPolicy": "保留原配音。本研究未修改、重录或验收音频。",
+    "evidenceBoundary": "官方页面可以证明作者怎样定义和使用该框架，不能单独证明其诊断效度或保证个人结果。"
+  },
+  "sources": [
+    {
+      "id": "dan_koe_framework",
+      "title": "HUMAN 3.0 – A Map To Reach The Top 1%",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
+      "publisher": "Dan Koe 官方网站",
+      "supports": [
+        "Dan Koe 介绍并整合了 HUMAN 3.0 个人发展框架。四象限借鉴 Ken Wilber 的 AQAL，不能表述为 Dan Koe 从零发明所有基础理论。",
+        "四象限为 Mind、Body、Spirit、Vocation。",
+        "每个象限采用 Level 1.0 Conformist、Level 2.0 Individualist、Level 3.0 Synthesist 三个宏观层级。",
+        "各象限可处于不同层级；较高层级不是人格价值更高，发展包含并整合先前能力。"
+      ]
+    },
+    {
+      "id": "dan_koe_prompt",
+      "title": "Prompt: HUMAN 3.0 Self-Discovery & Metatype Test",
+      "sourceURL": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and",
+      "publisher": "Dan Koe 官方 newsletter",
+      "supports": [
+        "作者提供可复制给 AI 的长提示词，并建议通过对话开展自我探索。",
+        "提示词要求自适应访谈，一次一题，每象限至少三题、最多八题，再分析象限关系与成长行动。",
+        "输出包括四象限分析、核心问题与阶段性行动规划；提示词明确要求不在输出中展示数字评分。",
+        "提示词采用每象限三个层级，也强调非线性发展、回退、知识与实践的差别及 AI 依赖风险。"
+      ]
+    },
+    {
+      "id": "dan_koe_expanded_knowledge_base",
+      "title": "A Complete Knowledge Base Of HUMAN 3.0",
+      "sourceURL": "https://thedankoe.com/letters/a-complete-knowledge-base-of-human-3-0/",
+      "publisher": "Dan Koe 官方网站",
+      "supports": [
+        "扩展知识库另列 Level 4.0 The Evolutionary (Post-Integral)，所以不能将三层称为全部官方材料永远不变的上限。",
+        "作者明确提醒 HUMAN 3.0 是模型，不是现实本身，应按有用性采用。"
+      ],
+      "shortQuote": "Human 3.0 is a model, not reality."
+    }
+  ],
+  "quadrants": [
+    {
+      "english": "Mind",
+      "chineseLabel": "心智",
+      "position": "左上",
+      "officialDomain": "Personal Mental World",
+      "meaning": "思想、情绪、信念与世界观，以及理解现实的方式。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    },
+    {
+      "english": "Body",
+      "chineseLabel": "身体",
+      "position": "右上",
+      "officialDomain": "Personal Physical World",
+      "meaning": "身体、健康、行为、习惯与外在呈现。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    },
+    {
+      "english": "Spirit",
+      "chineseLabel": "精神",
+      "position": "左下",
+      "officialDomain": "Collective Mental World",
+      "meaning": "关系、社区、文化、归属与意义，不仅指宗教或神秘体验。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    },
+    {
+      "english": "Vocation",
+      "chineseLabel": "事业",
+      "alternativeChineseLabel": "职业",
+      "position": "右下",
+      "officialDomain": "Collective Physical World",
+      "meaning": "工作、价值创造、经济及社会参与，不宜缩减为收入高低。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    }
+  ],
+  "levels": [
+    {
+      "level": "1.0",
+      "officialName": "The Conformist",
+      "chineseTranslation": "顺从者",
+      "plainDescription": "较依赖既定规则、传统和外部权威。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    },
+    {
+      "level": "2.0",
+      "officialName": "The Individualist",
+      "chineseTranslation": "个体主义者",
+      "plainDescription": "追求自主目标、成就与差异化，但也可能执着于自己的方法。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    },
+    {
+      "level": "3.0",
+      "officialName": "The Synthesist",
+      "chineseTranslation": "整合者",
+      "plainDescription": "整合多种视角、识别联系，并创造新的路径。",
+      "sourceURL": "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/"
+    }
+  ],
+  "threeLevelVersionScope": {
+    "status": "supported_with_scope",
+    "statement": "本片可以采用框架原文和自我探索提示词的每象限三宏观层级结构。",
+    "sourceURLs": [
+      "https://thedankoe.com/letters/human-3-0-a-map-to-reach-the-top-1/",
+      "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and"
+    ],
+    "limitation": "扩展知识库另含 Level 4.0；避免写成官方体系只有三级、三级是最终终点。中文层级名称是本片采用的译法，不是官方中文定名。",
+    "expandedSourceURL": "https://thedankoe.com/letters/a-complete-knowledge-base-of-human-3-0/"
+  },
+  "limitations": [
+    {
+      "statement": "将其定位为启发式自我反思工具，不把 AI 的判断包装成专业诊断、客观人格等级或标准化测量。",
+      "basis": "本次核查判断；上述官方材料未提供足以证明诊断效度的独立验证。作者也明确模型不等于现实。",
+      "sourceURL": "https://thedankoe.com/letters/a-complete-knowledge-base-of-human-3-0/"
+    },
+    {
+      "statement": "评估基于用户回答及模型解释；画面中的示例应标注示意，不假冒真实测试结果。",
+      "basis": "访谈提示词依赖回答进行分支判断；不确定性说明属于本片的保守呈现建议。",
+      "sourceURL": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and"
+    },
+    {
+      "statement": "不要用精确分数、百分位或权威认证画面强化 AI 定级。",
+      "basis": "官方提示词明确要求输出不展示数字评分；本次也未核实标准化常模或权威认证。",
+      "sourceURL": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and"
+    }
+  ],
+  "unverifiedPromises": [
+    {
+      "claim": "使用提示词必然赚钱、保证收入增长或短期达成特定收入。",
+      "status": "not_established_by_checked_sources",
+      "sourceURL": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and",
+      "treatment": "若原配音含此类表述，保留配音；画面不追加金额跳涨、收益保证、到账或必然成功的暗示，可用结果因人而异的小字限定。"
+    },
+    {
+      "claim": "二十分钟访谈必然改变人生，或必然胜过多年自助学习。",
+      "status": "author_marketing_claim_not_independently_verified",
+      "sourceURL": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and",
+      "treatment": "官方页面有强宣传表达，不能据此画成已经证实的普遍效果。"
+    },
+    {
+      "claim": "AI 能准确诊断真实发展层级或测出客观的个人分数。",
+      "status": "not_established_by_checked_sources",
+      "sourceURL": "https://letters.thedankoe.com/p/prompt-human-30-self-discovery-and",
+      "treatment": "使用自我探索、参考判断、行动建议等表达；不以临床、科学认证或精密仪器风格强化可信度。"
+    }
+  ],
+  "suggestedOnScreenSmallPrint": [
+    {
+      "text": "自我反思框架，非专业诊断",
+      "placement": "介绍框架或开始 AI 访谈时按语义出现。",
+      "kind": "editorial_qualification"
+    },
+    {
+      "text": "AI 判断基于你的回答，仅供参考",
+      "placement": "示范访谈结果或层级定位时出现。",
+      "kind": "editorial_qualification"
+    },
+    {
+      "text": "成长与收入结果因人而异",
+      "placement": "配音涉及收入或改变人生的效果时出现。",
+      "kind": "editorial_qualification"
+    },
+    {
+      "text": "示意结果",
+      "placement": "出现虚构的聊天、象限位置或行动规划示例时。",
+      "kind": "example_disclosure"
+    },
+    {
+      "text": "采用原文及提示词中的三层结构",
+      "placement": "仅在需要交代版本范围时使用，不作为常驻角标。",
+      "kind": "version_scope"
+    }
+  ],
+  "visualGuidance": {
+    "labelPolicy": "小字与相应语义同步出现，不作为固定品牌、栏目或集数角标。",
+    "relationshipPolicy": "四象限互相影响，各自发展可不同步；不画成给整个人贴单一等级标签。",
+    "audioPolicy": "本研究只约束画面信息与证据表达，不建议擅自改动已锁定的原配音。"
+  }
+}

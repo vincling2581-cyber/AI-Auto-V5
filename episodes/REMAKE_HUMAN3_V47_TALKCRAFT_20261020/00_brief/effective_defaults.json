@@ -1,0 +1,440 @@
+{
+  "version": "4.7",
+  "review_status": "active_after_explicit_user_authorization_2026_10_19",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "video_codec": "libx264",
+    "crf": 17,
+    "preset": "fast",
+    "pixel_format": "yuv420p",
+    "audio_codec": "aac",
+    "audio_bitrate": "256k",
+    "duration_basis": "final_voice"
+  },
+  "brand": {
+    "series_label_template": null,
+    "episode_title": null,
+    "cream": "#F5F2E9",
+    "dark": "#07110C",
+    "card": "#14271B",
+    "accent": "#78EFA2",
+    "text_on_dark": "#F0F3EC",
+    "text_on_light": "#24362B",
+    "robot_enabled": false
+  },
+  "type": {
+    "family": "Microsoft YaHei",
+    "regular_font": "C:\\Windows\\Fonts\\msyh.ttc",
+    "bold_font": "C:\\Windows\\Fonts\\msyhbd.ttc",
+    "title_px": 64,
+    "title_range_px": [
+      52,
+      64
+    ],
+    "node_px": 40,
+    "node_range_px": [
+      34,
+      44
+    ],
+    "support_px": 30,
+    "support_range_px": [
+      28,
+      32
+    ],
+    "caption_px": 44,
+    "caption_range_px": [
+      40,
+      44
+    ],
+    "caption_bold": true
+  },
+  "layout": {
+    "content_safe": [
+      64,
+      110,
+      1856,
+      880
+    ],
+    "content_safe_scope": "critical_details_only_not_illustration_bounds",
+    "caption_safe": [
+      160,
+      920,
+      1760,
+      1040
+    ],
+    "illustration_extent": [
+      0,
+      0,
+      1920,
+      1080
+    ],
+    "reserved_bottom_band_px": 0,
+    "illustration_lower_edge": "natural_scene_continuation",
+    "subtitle_placement": "independent_fixed_bottom_center_overlay_on_complete_scene",
+    "source_aspect_mismatch": "safe_reframe_else_extend_or_regenerate",
+    "border_px": 2,
+    "radius_px": 24,
+    "badge_optional": false,
+    "episode_label_px": null,
+    "episode_label_right_px": null,
+    "episode_label_top_px": null,
+    "corner_labels_enabled": false,
+    "subtitle_independent_layer": true,
+    "subtitle_fixed_position": true,
+    "subtitle_alignment": "bottom_center",
+    "semantic_titles_enabled": true,
+    "step_numbers_enabled": true,
+    "necessary_body_text_enabled": true
+  },
+  "animation": {
+    "max_static_seconds": 2.0,
+    "target_static_seconds": null,
+    "scope": "animation_layer_complete_still_images_only",
+    "decorative_changes_count": false,
+    "same_scene_state_switching_allowed": true,
+    "cross_segment_image_reuse": false,
+    "visual_priority": "semantic_increment_between_complete_still_images",
+    "preserve_graphic_text_scenes": true,
+    "text_required_every_shot": false,
+    "pose_change": "meaningful_pose_position_contact_or_result_differences_between_complete_still_images",
+    "fixed_action_shot_ratio": null,
+    "frame_count_quota": null,
+    "qc_exclusion": "actual_text_overlay_mask_not_fixed_bottom_strip",
+    "anatomy_check": true,
+    "anatomy_check_scope": "visible_character_limb_connections_left_right_and_prop_contact",
+    "preserve_natural_limb_occlusion": true,
+    "timing_policy": "semantic_sequence_with_still_cap",
+    "fixed_cut_interval_seconds": null,
+    "minimum_state_seconds": null,
+    "hold_basis": [
+      "semantic_increment",
+      "narration_anchor",
+      "readability_within_still_cap",
+      "same_event_continuity"
+    ],
+    "long_hold_policy": "redesign_semantic_still_sequence_each_image_continuous_at_most_2_seconds",
+    "continuous_hold_across_srt_allowed": true,
+    "split_complete_meaning_to_meet_timer": false,
+    "semantic_check": "每次静态插画切换增加行动、条件、反应、结果、视角或关系理解，并以场景、姿势、人物位置、道具状态或构图的有意义变化体现。单图、同场景组、整语义段分别检查；同场景须有目标、阻碍、行动、反应、发现或结果等推进，语义强相关不能单独支持长期同场景，不用坐着换手势或数量道具凑密度。跨具体情境须有语义依据并保留可懂的连贯线索，返回原场景仍用新图。临时遮去说明标签仍可辨关键含义。",
+    "source_adapter_policy": "复用脚本前清除动画图内人物/道具运动、推拉平移缩放、视差、渐变/溶解转场及图形动效和固定角标；实际消费max_static_seconds=2.0，只硬切完整静态插画。删除固定2秒切图、补无意义状态和旧无上限逻辑；target=null不得回退成固定节拍。信息卡max_static_seconds=null不得回退成2秒。帧率、音频对齐、总片长和去重检查保留。",
+    "internal_motion_allowed": false,
+    "camera_motion_allowed": false,
+    "transition": "hard_cut",
+    "corner_labels_enabled": false,
+    "cap_reset_by_subtitle_or_same_image_split": false,
+    "semantic_increment_required_per_cut": true,
+    "forbidden_effects": [
+      "character_motion",
+      "prop_motion",
+      "camera_push_pull",
+      "pan",
+      "zoom",
+      "parallax",
+      "shake",
+      "morph",
+      "particles",
+      "graphic_motion",
+      "animated_gradient",
+      "fade",
+      "dissolve"
+    ]
+  },
+  "cards": {
+    "semantic_process_required": true,
+    "render_continuous_intermediate_frames": true,
+    "pure_title_exemption_requires_reason": true,
+    "reading_hold_allowed": true,
+    "entry_seconds": [
+      0.25,
+      0.4
+    ],
+    "entry_translation_px": [
+      16,
+      32
+    ],
+    "highlight_seconds": [
+      0.15,
+      0.3
+    ],
+    "zoom_seconds": [
+      0.3,
+      0.6
+    ],
+    "process_initial_seconds": 0.55,
+    "flubber_version": "0.4.2",
+    "method_profile": "semantic_forms_with_reference_cards_v1_primitives",
+    "implementation": "deterministic_svg_frame_time",
+    "method_assets": "production_standard/method_assets/reference_cards_v1",
+    "palette": {
+      "background": "#F5F2E9",
+      "dark": "#14271B",
+      "soft": "#E8EEDC",
+      "paper": "#F0F3EC",
+      "accent": "#78EFA2",
+      "text": "#24362B",
+      "ink": "#12251A",
+      "muted": "#526454",
+      "line": "#54775E",
+      "edge": "#B1C1AE",
+      "paperLine": "#C4CCC2"
+    },
+    "palette_roles": {
+      "background": "当前场景底色；paper/dark为起点，也可按题材登记自定义色板，不固定全片深绿黑底",
+      "dark": "可选深绿表面和对象；不要求每卡出现大框",
+      "soft": "当前主题的次级表面，字色按实际底色选择",
+      "paper": "对照方、文档或重要结果的纸白表面",
+      "accent": "当前焦点、传递对象、完成状态或三框以上时的浅绿表面",
+      "text": "当前画面背景上的主文字；局部容器中的字色按实际底色显式选择",
+      "ink": "纸白/浅绿底文字",
+      "muted": "当前底色上可读的辅助说明；局部深浅底变化需适配",
+      "line": "普通关系线",
+      "edge": "当前主题中的边缘；根据表面调整对比",
+      "paperLine": "浅色表面内部细线"
+    },
+    "large_panel_policy": {
+      "two": [
+        "dark",
+        "paper"
+      ],
+      "three_or_more": "可按对象职责增加浅绿或其他已登记颜色，不强制每框不同色",
+      "single_large_with_small": "保留大框与小框的深绿层级；不机械套两大框规则",
+      "palette_change_scope": "局部调色遵守本集修订范围；选浅/深主题时同步检查文字、关系线与表面对比，不能沿用导致不可读的字色。",
+      "applies_when": "已按内容选择两个或更多大面板；不据此决定卡片必须有框"
+    },
+    "typography": {
+      "title_px": 72,
+      "node_px": 46,
+      "support_px": 34,
+      "status": "active_starting_point_inherited_from_accepted_latest_video",
+      "scope": "information_cards_only",
+      "intermediate_sizes": "按字段/文件名/局部标题的阅读层级选择；不固定为本集具体字号列表",
+      "override_policy": "按本集effective defaults执行；可按内容和可读性调整并记录依据；用户本集明确要求优先，不影响字幕和动画文字。"
+    },
+    "geometry": {
+      "panel_border_px": 2,
+      "panel_radius_px": 28,
+      "connection_stroke_px": 3,
+      "icon_stroke_local_px": 3.5,
+      "icon_viewbox_units": 100,
+      "status": "active_starting_points_inherited_from_accepted_latest_video",
+      "icon_viewbox_policy": "fixed_100_unit_shape_coordinates_validated_not_arbitrary_override"
+    },
+    "frame_time_easing": {
+      "object_default": "cubic_out",
+      "morph_default": "quadratic_out",
+      "path_progress": "path_arc_length_with_explicit_progress_curve"
+    },
+    "object_handoff": {
+      "continuous_identity_required": true,
+      "target_state_after_arrival": true,
+      "preserve_reusable_source": true,
+      "occlusion_matches_container_depth": true
+    },
+    "process_sampling": {
+      "interior_fractions": [
+        0.2,
+        0.5,
+        0.8
+      ],
+      "encoded_midpoint_neighbors": true,
+      "normal_speed_review_required": true,
+      "pixel_change_is_not_semantic_pass": true
+    },
+    "dependencies": {
+      "flubber": {
+        "version": "0.4.2",
+        "local_only": true
+      },
+      "tween_js": {
+        "required": false,
+        "reason": "已认可成片由明确帧时间的纯函数插值驱动；无 Tween.js 运行时加载"
+      }
+    },
+    "effective_defaults_required": true,
+    "episode_scene_generation_required": true,
+    "jianying_layer_extraction_default": false,
+    "layout_policy": "semantic_relation_before_container",
+    "default_layout": null,
+    "allowed_forms": [
+      "evidence_with_annotation",
+      "mapping",
+      "causal_process",
+      "condition_branch",
+      "gather_and_archive",
+      "comparison",
+      "quote_and_network",
+      "cycle",
+      "minimal_conclusion",
+      "freeform_semantic_diagram"
+    ],
+    "container_required": false,
+    "theme_selection": "per_scene_semantics_and_contrast",
+    "default_theme": "paper",
+    "palette_presets": {
+      "paper": {
+        "background": "#F5F2E9",
+        "dark": "#14271B",
+        "soft": "#E8EEDC",
+        "paper": "#F0F3EC",
+        "accent": "#78EFA2",
+        "text": "#24362B",
+        "ink": "#12251A",
+        "muted": "#526454",
+        "line": "#54775E",
+        "edge": "#B1C1AE",
+        "paperLine": "#C4CCC2"
+      },
+      "dark": {
+        "background": "#07110C",
+        "dark": "#14271B",
+        "soft": "#101F16",
+        "paper": "#F0F3EC",
+        "accent": "#78EFA2",
+        "text": "#F0F3EC",
+        "ink": "#12251A",
+        "muted": "#A9B9AC",
+        "line": "#54775E",
+        "edge": "#33533B",
+        "paperLine": "#C4CCC2"
+      }
+    },
+    "fixed_card_share": null,
+    "fixed_layout_count": null,
+    "timing_policy": "narration_and_semantic_process_with_reading_hold",
+    "timing_parameters_status": "entry/highlight/zoom/process_initial_seconds仅为可调的局部插值起点，不是镜头、状态或阅读时长限制；逐事件按语义与配音设置。",
+    "layout_diversity_review": "比较相邻及跨段的整体构图、关系结构和表现方式；避免只换字换色的双栏/三栏，内容自然需要重复结构时允许保留。",
+    "max_static_seconds": null,
+    "corner_labels_enabled": false,
+    "animation_still_cap_applies": false,
+    "continuous_semantic_motion_allowed": true,
+    "semantic_titles_enabled": true,
+    "step_numbers_enabled": true,
+    "necessary_body_text_enabled": true
+  },
+  "audio": {
+    "preserve_provided_voice": true,
+    "bgm_default": "user_adds_in_post",
+    "sfx_default": "only_when_needed_and_authorized",
+    "fixed_bgm_gain_db": null,
+    "cue_required_if_enabled": true,
+    "sfx_gain_applied_once": true,
+    "fixed_voice_gain_db": null,
+    "fixed_sfx_gain_db": null,
+    "fixed_sfx_count": null,
+    "fixed_sfx_ducking_db": null,
+    "auto_authorize_paid_sfx": false
+  },
+  "delivery": {
+    "scope_default": [
+      "master",
+      "review_per_episode",
+      "rerenderable_source_project",
+      "srt",
+      "assets",
+      "qc_and_handoff"
+    ],
+    "caption_mode": "per_episode",
+    "project_format": "source_project",
+    "cover_default": "echo",
+    "jianying_import_default": false,
+    "jianying_import_requires": "explicit_user_request"
+  },
+  "brand_assets": {
+    "identity": "production_standard/assets/角色身份参考.png",
+    "eye_reference": "production_standard/assets/补全眼部参考.png",
+    "action_and_lower_edge_references": "production_standard/visual_references.json"
+  },
+  "tools_local": {
+    "ffmpeg": "D:\\ffmpeg\\bin\\ffmpeg.exe",
+    "browser_channel": "chrome",
+    "python_packages": [
+      "playwright",
+      "Pillow",
+      "numpy",
+      "opencv-python"
+    ],
+    "optional_overlay_library": "D:\\AI\\overlay-studio"
+  },
+  "notes": [
+    "2026-10-19本轮用户明确授权将静态连环画、单张连续≤2.0秒、逐图语义增量、两层无固定角标及信息卡连续过程边界写入全流程；不代表demo已通过主观视听或用户验收。",
+    "2.0秒仅为动画单张完整静态插画的连续显示上限；实际可更短，整段依语义配音安排，不设固定切换节拍、目标时长或图片数量，不靠同图拆段、改字幕或无关动作重置计时。",
+    "信息卡保留必要连续语义动效、中间状态和阅读保持，max_static_seconds=null，不套用动画2秒上限。",
+    "两层不渲染固定品牌、栏目、集数角标；语义标题、步骤编号和必要正文保留；口播字幕独立固定底部居中。",
+    "场景、图片数、室外比例、图卡占比和卡片结构无固定配额；同场景组须有叙事推进，不能只因语义强相关而长期保持。换景有语义依据，不换句必换景；返回原场景用新图，不复用旧叙事图。",
+    "旧集和旧快照不改写。新集复制当前标准及锁；续做旧集沿用已锁版本，只有用户明确要求迁移时另行更新。",
+    "旧集脚本不自动消费这些默认值；适配复用时检查实际字段消费和分层契约，不运行旧标准构建器覆盖本版。",
+    "2026-10-20用户明确授权继续完善v4.7：按单图→同场景组→整语义段三级检查，合同插画记录scene_id与scene_progress，场景切换填写scene_change_reason；声明齐全不代替真实图组和正常速度视听检查。"
+  ],
+  "illustration": {
+    "reference": "xianyu_anhao",
+    "reference_manifest": "production_standard/visual_references.json",
+    "scene_selection": "meaning_first",
+    "default_setting": null,
+    "identity_style_lock_only": true,
+    "same_semantic_scene_continuity": true,
+    "composition_policy": "先按整语义段分配具体情境和场景组，再选择逐图地点、景别、机位、主体尺度与空间关系。每次硬切以姿势、人物位置、道具状态、构图或场景的有意义变化增加理解；同场景继续须有真实叙事推进，不要求每次全部变化。跨情境用主角、目标、关键道具或因果顺序衔接；返回原场景用有新状态的新图，不复用旧图。",
+    "color_policy": "保留奶油纸感、手绘线条和角色绿，环境/道具用符合内容的自然颜色与暖冷光；柔和不等于统一灰暗滤镜。",
+    "repeat_review_dimensions": [
+      "setting",
+      "composition",
+      "camera_angle",
+      "subject_scale",
+      "action",
+      "lighting",
+      "palette"
+    ],
+    "fixed_outdoor_ratio": null,
+    "fixed_scene_count": null,
+    "fixed_illustration_share": null,
+    "presentation_mode": "static_comic_sequence",
+    "transition": "hard_cut",
+    "internal_motion_allowed": false,
+    "camera_motion_allowed": false,
+    "corner_labels_enabled": false,
+    "semantic_increment_required_per_cut": true,
+    "scene_change_policy": "semantic_reason_and_segment_continuity_required_no_fixed_duration_or_scene_quota",
+    "random_gestures_or_props_allowed": false,
+    "planning_levels": [
+      "single_image",
+      "same_scene_group",
+      "semantic_segment"
+    ],
+    "planning_order": "semantic_segment_then_scene_groups_then_still_images",
+    "semantic_relation_alone_allows_hold": false,
+    "scene_group_requires_narrative_progress": true,
+    "fixed_scene_duration_seconds": null,
+    "scene_group_duration_basis": "narrative_progress_and_narration",
+    "scene_progress_dimensions": [
+      "goal",
+      "obstacle",
+      "action",
+      "reaction",
+      "discovery",
+      "result"
+    ],
+    "scene_progress_dimensions_are_quotas": false,
+    "continuity_anchors": [
+      "protagonist",
+      "goal",
+      "key_prop",
+      "causal_order"
+    ],
+    "scene_change_per_sentence_required": false,
+    "scene_contract_fields": [
+      "scene_id",
+      "scene_progress"
+    ],
+    "scene_change_reason_required_on_scene_change": true,
+    "return_to_scene_policy": "new_image_with_new_state_never_reuse_prior_narrative_image",
+    "scene_group_policy": "单图提供有意义增量；同场景组须推进具体目标、阻碍、行动、反应、发现或结果，不能只因语义强相关或持续讲解就长期同场景，也不能只坐着换手势。整语义段可跨多个具体情境，用主角、目标、关键道具或因果顺序连贯；换景有语义依据，不换句必换景，不设场景固定秒数或数量。"
+  },
+  "layer_contract": {
+    "schema": "production_standard/layer_contract.json",
+    "validator": "production_standard/validate_episode.py",
+    "effective_defaults_must_be_consumed": true,
+    "machine_validation_is_subjective_acceptance": false,
+    "stage_runner": "production_standard/run_stage.py"
+  }
+}

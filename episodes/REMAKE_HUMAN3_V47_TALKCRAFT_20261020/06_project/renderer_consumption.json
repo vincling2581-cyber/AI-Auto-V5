@@ -1,0 +1,35 @@
+{
+  "renderer": {
+    "entry": "06_project/render.py",
+    "required_stage_entry": "00_brief/standard_snapshot/production_standard/run_stage.py",
+    "required_stage": "render",
+    "environment_inputs": {
+      "V5_EPISODE_ROOT": "resolve and require exact equality with render.py parent episode root",
+      "V5_EFFECTIVE_DEFAULTS": "require this episode 00_brief/effective_defaults.json; read and hash before rendering; rehash before final rename",
+      "V5_PRODUCTION_CONTRACT": "require this episode 03_storyboard/production_contract.json; read and hash; validate fps and total_frames; rehash before final rename",
+      "V5_STAGE": "require literal render"
+    },
+    "effective_defaults": {
+      "video.width": "Chrome viewport width and ffprobe output width verification; require 1920",
+      "video.height": "Chrome viewport height and ffprobe output height verification; require 1080",
+      "video.fps": "episode/contract equality check; FFmpeg image pipe framerate, audio seek and duration, frame-count duration verification; require 30",
+      "video.video_codec": "FFmpeg -c:v",
+      "video.crf": "FFmpeg -crf",
+      "video.preset": "FFmpeg -preset",
+      "video.pixel_format": "FFmpeg -pix_fmt and ffprobe verification",
+      "video.audio_codec": "FFmpeg -c:a",
+      "video.audio_bitrate": "FFmpeg -b:a",
+      "audio.preserve_provided_voice": "require true; use only original voice, checked against episode voice SHA-256; no gain/speed/mixing filter",
+      "tools_local.ffmpeg": "actual FFmpeg executable and adjacent ffprobe",
+      "tools_local.browser_channel": "Playwright Chromium launch channel",
+      "type.regular_font": "file existence preflight; actual browser font usage belongs to page renderer",
+      "type.bold_font": "file existence preflight; actual browser font usage belongs to page renderer"
+    },
+    "timeline": "episode.json and production_contract.json must both declare 1678 frames at 30 fps; full output is 55.93333333333333 seconds, no -shortest",
+    "page_contract": "local server rooted at episode; /06_project/index.html and app.js must exist; await window.ready Promise and window.renderFrame(absoluteFrame)",
+    "resource_failure_policy": "abort on pageerror, console.error, HTTP >= 400, request failure, image decode failure, failed font face, external origin request",
+    "output_policy": "inside episode only; refuse existing MP4 or partial; JPEG screenshot bytes streamed to FFmpeg stdin; atomic partial-to-final rename after ffprobe and input hash checks",
+    "machine_report": "08_qc/render_<timestamp>_<pid>.json binds effective-defaults, contract, voice and output hashes to consumed video parameters, FFmpeg command and ffprobe evidence",
+    "acceptance_limit": "configuration/encoding/container checks do not establish illustration semantic correctness, card process quality or normal-speed subjective audiovisual acceptance"
+  }
+}

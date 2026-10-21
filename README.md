@@ -11,6 +11,8 @@ V5 视频制作项目的代码、规则与必要配置仓库，保留本地目�
 当前采用 [v4.7 标准](standards/v4.7/production_standard.json)：插画参考《闲鱼暗号》，信息卡结合《闲鱼暗号》的形式变化与《Skill工作手册》的连续过程；动画层采用连环画式静态插画，仅硬切，单张连续不超过2秒；信息卡保留连续过程与阅读，不套2秒上限；两层无固定角标。变化见 [v4.7 变更说明](standards/v4.7/production_standard/变更说明_v4.7.md)。新集锁定新标准，旧集快照和已有成片保留原样；`.gitattributes` 禁止 Git 自动转换换行，避免改变锁定文件的字节。
 
 
+信息卡设计前按整段语义检索 [108 套候选动效库](research/video-talkcraft/README.md)，逐卡记录配方 ID、选择理由与配音落点，再核对实际编码画面的过程。制作代理负责选型和检查，用户继续按样片反馈；具体执行见[单集工作流 §3.1](docs/SINGLE_EPISODE_WORKFLOW.md#31-信息卡动效选型与实现检查)。库内配方按需适配，不自动采用上游整套制作规则。
+
 新集分镜使用标准中的 `episode_contract_template.json` 建立 `03_storyboard/production_contract.json`；填完后设 `is_template=false`，运行本集锁定的 `validate_episode.py --episode-root <本集绝对路径>`。检查器只查合同声明、帧区间与源资产哈希，实际图像语义、编码后静止/无角标和正常速度全片视听分别验收。读取有效参数不等于实现已消费；必须核对实际输出。
 
 v4.7 场景组修订按单图、连续场景组、整段语义规划：同景需推进叙事，同主题可跨具体情境，并用人物、目标、关键道具或因果保持连贯；回场用新图，不设场景时长或数量配额。本地主干为 `D:\AI-Auto-V5（Codex+AE）`，分支通过 Git 合并同步；当前入口与锁是版本依据。原4.6和旧集锁、配置、素材、成片保留。
@@ -27,13 +29,14 @@ v4.7 场景组修订按单图、连续场景组、整段语义规划：同景需
 | `docs/`、`templates/` | 工作约定与单集状态模板 |
 | `skills/jianying-layered-export/` | 已同步的剪映导出 Skill 源码；卡片内可提取文字按逻辑块独立可编辑，每卡非文字合为一层。仅用户明确要求时导出；默认不附带复检。仓库副本不会自动安装到全局 |
 | `standards/v4.7/` | 当前 SOP、规则、提示词、默认参数及可复用绘图组件；本地品牌图不入库 |
+| `research/video-talkcraft/` | 108 套候选动效索引、中文笔记、查询工具和固定版本源码与授权；预览及演示媒体留本地 |
 | `episodes/.../00_brief/` | 本集配置与标准快照，输入媒体不入库 |
 | `episodes/.../02_timing/`、`03_storyboard/` | 时间轴、分镜和语义设计数据 |
 | `episodes/.../06_project/` | 制作、预览、渲染、合成及检查源码 |
 | `episodes/.../09_revisions/jianying_layered_20261009_v1/` | 剪映分层导出的构建脚本、`adapter`、`delivery_tools`、图层/文字配置及 `source/episode` 源码；媒体与生成草稿除外 |
 | `card_motion_trial_v1/`、`card_motion_trial_v2_complex/` | 保留的动效试验源码与配置，日常制作不默认读取 |
 
-`.gitignore` 采用代码/配置扩展名允许清单，排除素材、输入、成片、运行依赖、生成报告及缓存。新增类型确需入库时单独检查，不用 `git add -f` 绕过素材或凭据排除规则。
+`.gitignore` 采用代码/配置扩展名允许清单，排除素材、输入、成片、运行依赖、生成报告及缓存。新增类型确需入库时单独检查，不用 `git add -f` 绕过素材或凭据排除规则。最新源码分发、动效库校验与本地媒体恢复边界见 [GitHub 同步说明](docs/GITHUB_SOURCE_SYNC.md)。
 
 ## 运行环境与恢复
 

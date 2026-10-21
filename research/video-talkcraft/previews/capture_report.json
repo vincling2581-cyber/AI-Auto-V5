@@ -1,0 +1,1953 @@
+{
+  "scope": "Three sampled upstream HTML keyframes per card, silent and independent of V5 production",
+  "normal_speed_review": "not_performed",
+  "cards": [
+    {
+      "id": "alt-block-lines",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.647,
+      "shell_duration_seconds": 2.647,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.582,
+        1.323,
+        2.065
+      ],
+      "preview": "previews/alt-block-lines.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "bar-chart-growth",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.26,
+      "shell_duration_seconds": 3.26,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.717,
+        1.63,
+        2.543
+      ],
+      "preview": "previews/bar-chart-growth.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "bed-echo-blur",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 7.7,
+      "shell_duration_seconds": 7.7,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.694,
+        3.85,
+        6.006
+      ],
+      "preview": "previews/bed-echo-blur.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "behind-text-title",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.1666666666666665,
+      "shell_duration_seconds": 60,
+      "sampling_note": "DemoShell capped an infinite tween at 60s; numeric TSX meta / 30fps used only as research sampling span",
+      "sample_times": [
+        0.697,
+        1.583,
+        2.47
+      ],
+      "preview": "previews/behind-text-title.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "black-slam-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.32,
+      "shell_duration_seconds": 2.32,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.51,
+        1.16,
+        1.81
+      ],
+      "preview": "previews/black-slam-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "callout-line-label",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.53,
+      "shell_duration_seconds": 4.53,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.997,
+        2.265,
+        3.533
+      ],
+      "preview": "previews/callout-line-label.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "caret-wipe-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.03,
+      "shell_duration_seconds": 3.03,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.667,
+        1.515,
+        2.363
+      ],
+      "preview": "previews/caret-wipe-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chapter-progress-list",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.31,
+      "shell_duration_seconds": 3.31,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.728,
+        1.655,
+        2.582
+      ],
+      "preview": "previews/chapter-progress-list.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chapter-title-card",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.3,
+      "shell_duration_seconds": 6.3,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.386,
+        3.15,
+        4.914
+      ],
+      "preview": "previews/chapter-title-card.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chart-grow",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 1.9,
+      "shell_duration_seconds": 1.9,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.418,
+        0.95,
+        1.482
+      ],
+      "preview": "previews/chart-grow.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chat-gpt",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.4117647,
+      "shell_duration_seconds": 6.4117647,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.411,
+        3.206,
+        5.001
+      ],
+      "preview": "previews/chat-gpt.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chat-message-flow",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.82,
+      "shell_duration_seconds": 8.82,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.94,
+        4.41,
+        6.88
+      ],
+      "preview": "previews/chat-message-flow.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chevron-lower-third",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.2,
+      "shell_duration_seconds": 3.2,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.704,
+        1.6,
+        2.496
+      ],
+      "preview": "previews/chevron-lower-third.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "chip-grid-single-select",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.800000000000001,
+      "shell_duration_seconds": 6.800000000000001,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.496,
+        3.4,
+        5.304
+      ],
+      "preview": "previews/chip-grid-single-select.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "claude-code",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 9.9447811,
+      "shell_duration_seconds": 9.9447811,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        2.188,
+        4.972,
+        7.757
+      ],
+      "preview": "previews/claude-code.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "color-slam-beat-card",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.78,
+      "shell_duration_seconds": 6.78,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.492,
+        3.39,
+        5.288
+      ],
+      "preview": "previews/color-slam-beat-card.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "converging-arrows",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.55,
+      "shell_duration_seconds": 2.55,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.561,
+        1.275,
+        1.989
+      ],
+      "preview": "previews/converging-arrows.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "corner-bracket-frame",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.72,
+      "shell_duration_seconds": 2.72,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.598,
+        1.36,
+        2.122
+      ],
+      "preview": "previews/corner-bracket-frame.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "count-badge-title",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.3200000000000003,
+      "shell_duration_seconds": 3.3200000000000003,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.73,
+        1.66,
+        2.59
+      ],
+      "preview": "previews/count-badge-title.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "countdown-arc-scatter",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5,
+      "shell_duration_seconds": 5,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.1,
+        2.5,
+        3.9
+      ],
+      "preview": "previews/countdown-arc-scatter.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "crash-zoom-punch",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.4,
+      "shell_duration_seconds": 4.4,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.968,
+        2.2,
+        3.432
+      ],
+      "preview": "previews/crash-zoom-punch.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "cursor-actor-demo",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.09,
+      "shell_duration_seconds": 4.09,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.9,
+        2.045,
+        3.19
+      ],
+      "preview": "previews/cursor-actor-demo.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "cursor-locked-zoom",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6,
+      "shell_duration_seconds": 6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.32,
+        3.0,
+        4.68
+      ],
+      "preview": "previews/cursor-locked-zoom.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "danmu-bubble-praise",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.95,
+      "shell_duration_seconds": 3.95,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.869,
+        1.975,
+        3.081
+      ],
+      "preview": "previews/danmu-bubble-praise.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "doc-park-left-pill-deal",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 7,
+      "shell_duration_seconds": 7,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.54,
+        3.5,
+        5.46
+      ],
+      "preview": "previews/doc-park-left-pill-deal.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "douyin-follow-card",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.03,
+      "shell_duration_seconds": 4.03,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.887,
+        2.015,
+        3.143
+      ],
+      "preview": "previews/douyin-follow-card.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "error-retype",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.51,
+      "shell_duration_seconds": 5.51,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.212,
+        2.755,
+        4.298
+      ],
+      "preview": "previews/error-retype.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "evidence-scroll-tour",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 10.2153846,
+      "shell_duration_seconds": 10.2153846,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        2.247,
+        5.108,
+        7.968
+      ],
+      "preview": "previews/evidence-scroll-tour.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "filmstrip-conveyor",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 7.94,
+      "shell_duration_seconds": 7.94,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.747,
+        3.97,
+        6.193
+      ],
+      "preview": "previews/filmstrip-conveyor.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "flying-words",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6,
+      "shell_duration_seconds": 6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.32,
+        3.0,
+        4.68
+      ],
+      "preview": "previews/flying-words.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "focus-dim-spotlight",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.75,
+      "shell_duration_seconds": 8.75,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.925,
+        4.375,
+        6.825
+      ],
+      "preview": "previews/focus-dim-spotlight.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "gallery-wall-dolly",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.2,
+      "shell_duration_seconds": 8.2,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.804,
+        4.1,
+        6.396
+      ],
+      "preview": "previews/gallery-wall-dolly.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "glass-code-walk",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.24,
+      "shell_duration_seconds": 8.24,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.813,
+        4.12,
+        6.427
+      ],
+      "preview": "previews/glass-code-walk.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "gooey-morph",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.833,
+      "shell_duration_seconds": 2.833,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.623,
+        1.417,
+        2.21
+      ],
+      "preview": "previews/gooey-morph.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "grid-to-hero",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 7.33,
+      "shell_duration_seconds": 7.33,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.613,
+        3.665,
+        5.717
+      ],
+      "preview": "previews/grid-to-hero.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "hand-drawn-ellipse",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3,
+      "shell_duration_seconds": 3,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.66,
+        1.5,
+        2.34
+      ],
+      "preview": "previews/hand-drawn-ellipse.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "highlighter-sweep",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 1.6,
+      "shell_duration_seconds": 1.6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.352,
+        0.8,
+        1.248
+      ],
+      "preview": "previews/highlighter-sweep.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "host-card-glass-board",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.6,
+      "shell_duration_seconds": 6.6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.452,
+        3.3,
+        5.148
+      ],
+      "preview": "previews/host-card-glass-board.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "host-shrink-to-chip",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.4,
+      "shell_duration_seconds": 3.4,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.748,
+        1.7,
+        2.652
+      ],
+      "preview": "previews/host-shrink-to-chip.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "sample_inspected_with_observation",
+      "sample_warning": "本地取样缩位后圆内未见人物，不能据此确认裁剪和锚点正确；使用真实人物素材时需单独核对。"
+    },
+    {
+      "id": "impact-open-title",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.84,
+      "shell_duration_seconds": 2.84,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.625,
+        1.42,
+        2.215
+      ],
+      "preview": "previews/impact-open-title.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "info-card-assemble",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.800000000000001,
+      "shell_duration_seconds": 6.800000000000001,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.496,
+        3.4,
+        5.304
+      ],
+      "preview": "previews/info-card-assemble.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "info-term-card",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.16,
+      "shell_duration_seconds": 6.16,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.355,
+        3.08,
+        4.805
+      ],
+      "preview": "previews/info-term-card.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "ink-underline",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.22,
+      "shell_duration_seconds": 3.22,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.708,
+        1.61,
+        2.512
+      ],
+      "preview": "previews/ink-underline.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "keyword-pop-highlight",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 1.01,
+      "shell_duration_seconds": 1.01,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.222,
+        0.505,
+        0.788
+      ],
+      "preview": "previews/keyword-pop-highlight.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "lead-word-zoom-assemble",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.800000000000001,
+      "shell_duration_seconds": 4.800000000000001,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.056,
+        2.4,
+        3.744
+      ],
+      "preview": "previews/lead-word-zoom-assemble.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "line-by-line-slide",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.6,
+      "shell_duration_seconds": 3.6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.792,
+        1.8,
+        2.808
+      ],
+      "preview": "previews/line-by-line-slide.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "line-carry-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.4,
+      "shell_duration_seconds": 6.4,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.408,
+        3.2,
+        4.992
+      ],
+      "preview": "previews/line-carry-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "line-chart-story-draw",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.8,
+      "shell_duration_seconds": 4.8,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.056,
+        2.4,
+        3.744
+      ],
+      "preview": "previews/line-chart-story-draw.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "logo-enter",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.583,
+      "shell_duration_seconds": 2.583,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.568,
+        1.292,
+        2.015
+      ],
+      "preview": "previews/logo-enter.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "long-take-world",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.71,
+      "shell_duration_seconds": 6.71,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.476,
+        3.355,
+        5.234
+      ],
+      "preview": "previews/long-take-world.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "sample_inspected_with_observation",
+      "sample_warning": "跳转取样中后两态只见网格，HTML 使用独立 ticker；此取样不足以证明到站显形，也不能据此断言正常播放相同。需统一时钟后验证。"
+    },
+    {
+      "id": "lower-third-nameplate",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.16,
+      "shell_duration_seconds": 3.16,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.695,
+        1.58,
+        2.465
+      ],
+      "preview": "previews/lower-third-nameplate.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "magnifier-detail",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.3666666666666667,
+      "shell_duration_seconds": 60,
+      "sampling_note": "DemoShell capped an infinite tween at 60s; numeric TSX meta / 30fps used only as research sampling span",
+      "sample_times": [
+        0.741,
+        1.683,
+        2.626
+      ],
+      "preview": "previews/magnifier-detail.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "map-route-pin",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.76,
+      "shell_duration_seconds": 4.76,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.047,
+        2.38,
+        3.713
+      ],
+      "preview": "previews/map-route-pin.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "media-pop-in",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.066666666666667,
+      "shell_duration_seconds": 60,
+      "sampling_note": "DemoShell capped an infinite tween at 60s; numeric TSX meta / 30fps used only as research sampling span",
+      "sample_times": [
+        0.675,
+        1.533,
+        2.392
+      ],
+      "preview": "previews/media-pop-in.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "metric-with-sparkline",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.4000000000000004,
+      "shell_duration_seconds": 3.4000000000000004,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.748,
+        1.7,
+        2.652
+      ],
+      "preview": "previews/metric-with-sparkline.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "motion-blur-slam-in",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 1.1,
+      "shell_duration_seconds": 1.1,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.242,
+        0.55,
+        0.858
+      ],
+      "preview": "previews/motion-blur-slam-in.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "news-card-desk",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 10.3,
+      "shell_duration_seconds": 10.3,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        2.266,
+        5.15,
+        8.034
+      ],
+      "preview": "previews/news-card-desk.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "number-counter",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.46,
+      "shell_duration_seconds": 2.46,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.541,
+        1.23,
+        1.919
+      ],
+      "preview": "previews/number-counter.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "number-slab-pop",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.96,
+      "shell_duration_seconds": 2.96,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.651,
+        1.48,
+        2.309
+      ],
+      "preview": "previews/number-slab-pop.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "numbered-step-stack",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.183,
+      "shell_duration_seconds": 3.183,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.7,
+        1.591,
+        2.483
+      ],
+      "preview": "previews/numbered-step-stack.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "orbit-drift",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.6,
+      "shell_duration_seconds": 5.6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.232,
+        2.8,
+        4.368
+      ],
+      "preview": "previews/orbit-drift.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "outline-box-title",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.04,
+      "shell_duration_seconds": 3.04,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.669,
+        1.52,
+        2.371
+      ],
+      "preview": "previews/outline-box-title.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "overexpose-flip-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.7,
+      "shell_duration_seconds": 2.7,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.594,
+        1.35,
+        2.106
+      ],
+      "preview": "previews/overexpose-flip-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "parallel-items-with-host",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 22.1,
+      "shell_duration_seconds": 22.1,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        4.862,
+        11.05,
+        17.238
+      ],
+      "preview": "previews/parallel-items-with-host.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "particle-weld-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.88,
+      "shell_duration_seconds": 2.88,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.634,
+        1.44,
+        2.246
+      ],
+      "preview": "previews/particle-weld-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "pencil-sketch-draw",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.05,
+      "shell_duration_seconds": 4.05,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.891,
+        2.025,
+        3.159
+      ],
+      "preview": "previews/pencil-sketch-draw.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "per-character-rise",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.4331,
+      "shell_duration_seconds": 2.4331,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.535,
+        1.217,
+        1.898
+      ],
+      "preview": "previews/per-character-rise.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "pip-zoom-box",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.326,
+      "shell_duration_seconds": 3.326,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.732,
+        1.663,
+        2.594
+      ],
+      "preview": "previews/pip-zoom-box.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "pullback-cool-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.05,
+      "shell_duration_seconds": 3.05,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.671,
+        1.525,
+        2.379
+      ],
+      "preview": "previews/pullback-cool-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "push-through-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.75,
+      "shell_duration_seconds": 2.75,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.605,
+        1.375,
+        2.145
+      ],
+      "preview": "previews/push-through-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "quote-bracket-pull",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.55,
+      "shell_duration_seconds": 3.55,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.781,
+        1.775,
+        2.769
+      ],
+      "preview": "previews/quote-bracket-pull.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "quote-card",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.7,
+      "shell_duration_seconds": 3.7,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.814,
+        1.85,
+        2.886
+      ],
+      "preview": "previews/quote-card.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "quote-hold-arrow",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.87,
+      "shell_duration_seconds": 3.87,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.851,
+        1.935,
+        3.019
+      ],
+      "preview": "previews/quote-hold-arrow.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "rack-focus-pair",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.8,
+      "shell_duration_seconds": 6.8,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.496,
+        3.4,
+        5.304
+      ],
+      "preview": "previews/rack-focus-pair.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "reticle-lock-on",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6,
+      "shell_duration_seconds": 6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.32,
+        3.0,
+        4.68
+      ],
+      "preview": "previews/reticle-lock-on.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "scanline-annotate",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.6000000000000005,
+      "shell_duration_seconds": 5.6000000000000005,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.232,
+        2.8,
+        4.368
+      ],
+      "preview": "previews/scanline-annotate.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "scribble-annotation",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.05,
+      "shell_duration_seconds": 3.05,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.671,
+        1.525,
+        2.379
+      ],
+      "preview": "previews/scribble-annotation.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "shape-wipe-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.07,
+      "shell_duration_seconds": 2.07,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.455,
+        1.035,
+        1.615
+      ],
+      "preview": "previews/shape-wipe-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "slab-punch-title",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.637,
+      "shell_duration_seconds": 2.637,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.58,
+        1.319,
+        2.057
+      ],
+      "preview": "previews/slab-punch-title.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "slow-pull-reveal",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.9,
+      "shell_duration_seconds": 5.9,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.298,
+        2.95,
+        4.602
+      ],
+      "preview": "previews/slow-pull-reveal.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "slow-push-in",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.800000000000001,
+      "shell_duration_seconds": 5.800000000000001,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.276,
+        2.9,
+        4.524
+      ],
+      "preview": "previews/slow-push-in.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "soft-blur-in",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.6664,
+      "shell_duration_seconds": 2.6664,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.587,
+        1.333,
+        2.08
+      ],
+      "preview": "previews/soft-blur-in.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "source-converge",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.2,
+      "shell_duration_seconds": 6.2,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.364,
+        3.1,
+        4.836
+      ],
+      "preview": "previews/source-converge.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "speed-slab-title",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.864,
+      "shell_duration_seconds": 2.864,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.63,
+        1.432,
+        2.234
+      ],
+      "preview": "previews/speed-slab-title.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "split-60-40-story",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.8,
+      "shell_duration_seconds": 6.8,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.496,
+        3.4,
+        5.304
+      ],
+      "preview": "previews/split-60-40-story.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "split-compare-slider",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 9.48,
+      "shell_duration_seconds": 9.48,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        2.086,
+        4.74,
+        7.394
+      ],
+      "preview": "previews/split-compare-slider.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "split-text-stagger",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.8,
+      "shell_duration_seconds": 4.8,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.056,
+        2.4,
+        3.744
+      ],
+      "preview": "previews/split-text-stagger.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "stack-fan-out",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.4,
+      "shell_duration_seconds": 6.4,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.408,
+        3.2,
+        4.992
+      ],
+      "preview": "previews/stack-fan-out.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "stage-keyframe-tour",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.75,
+      "shell_duration_seconds": 8.75,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.925,
+        4.375,
+        6.825
+      ],
+      "preview": "previews/stage-keyframe-tour.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "step-timeline-vertical",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 3.5245255,
+      "shell_duration_seconds": 3.5245255,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.775,
+        1.762,
+        2.749
+      ],
+      "preview": "previews/step-timeline-vertical.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "still-layout-relay",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 15.16,
+      "shell_duration_seconds": 15.16,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        3.335,
+        7.58,
+        11.825
+      ],
+      "preview": "previews/still-layout-relay.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "strike-and-replace",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.85,
+      "shell_duration_seconds": 2.85,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.627,
+        1.425,
+        2.223
+      ],
+      "preview": "previews/strike-and-replace.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "subscribe-cta",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 9.72,
+      "shell_duration_seconds": 9.72,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        2.138,
+        4.86,
+        7.582
+      ],
+      "preview": "previews/subscribe-cta.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "sway-parallax",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.196428600000001,
+      "shell_duration_seconds": 6.196428600000001,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.363,
+        3.098,
+        4.833
+      ],
+      "preview": "previews/sway-parallax.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "terminal-typing-log",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.2012276,
+      "shell_duration_seconds": 8.2012276,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.804,
+        4.101,
+        6.397
+      ],
+      "preview": "previews/terminal-typing-log.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "tilt-3d-page",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5,
+      "shell_duration_seconds": 5,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.1,
+        2.5,
+        3.9
+      ],
+      "preview": "previews/tilt-3d-page.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "timeline-photo-strip",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 9.9,
+      "shell_duration_seconds": 9.9,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        2.178,
+        4.95,
+        7.722
+      ],
+      "preview": "previews/timeline-photo-strip.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "title-demote-to-label",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.9,
+      "shell_duration_seconds": 5.9,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.298,
+        2.95,
+        4.602
+      ],
+      "preview": "previews/title-demote-to-label.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "tracking-in",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.6,
+      "shell_duration_seconds": 2.6,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.572,
+        1.3,
+        2.028
+      ],
+      "preview": "previews/tracking-in.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "sample_inspected_with_observation",
+      "sample_warning": "跳转取样的后段仍有模糊；源码弹簧存在轻微过冲且 blur 未钳制，随机跳转不能证明最终清晰度。正式适配应统一进度并检查逐帧清晰度。"
+    },
+    {
+      "id": "type-contrast-emphasis",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 1.82,
+      "shell_duration_seconds": 1.82,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.4,
+        0.91,
+        1.42
+      ],
+      "preview": "previews/type-contrast-emphasis.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "typewriter-reveal",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.6548923,
+      "shell_duration_seconds": 60,
+      "sampling_note": "DemoShell capped an infinite tween at 60s; finite GSAP actions plus 1.5s used only as research sampling span",
+      "sample_times": [
+        1.244,
+        2.827,
+        4.411
+      ],
+      "preview": "previews/typewriter-reveal.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "sample_inspected"
+    },
+    {
+      "id": "ui-flow-theater",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 8.97,
+      "shell_duration_seconds": 8.97,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.973,
+        4.485,
+        6.997
+      ],
+      "preview": "previews/ui-flow-theater.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "ui-prop-theater",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 5.55,
+      "shell_duration_seconds": 5.55,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.221,
+        2.775,
+        4.329
+      ],
+      "preview": "previews/ui-prop-theater.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "unit-grid-proportion",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.1,
+      "shell_duration_seconds": 6.1,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.342,
+        3.05,
+        4.758
+      ],
+      "preview": "previews/unit-grid-proportion.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "whip-pan-transition",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 2.41,
+      "shell_duration_seconds": 2.41,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.53,
+        1.205,
+        1.88
+      ],
+      "preview": "previews/whip-pan-transition.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "word-relay-filmstrip",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.4,
+      "shell_duration_seconds": 6.4,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.408,
+        3.2,
+        4.992
+      ],
+      "preview": "previews/word-relay-filmstrip.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "word-slot-cycle",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 6.45,
+      "shell_duration_seconds": 6.45,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        1.419,
+        3.225,
+        5.031
+      ],
+      "preview": "previews/word-slot-cycle.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    },
+    {
+      "id": "x-follow-card",
+      "normal_speed_review": "not_performed",
+      "production_adaptation": "not_performed",
+      "capture": "completed",
+      "duration_seconds": 4.03,
+      "shell_duration_seconds": 4.03,
+      "sampling_note": "Three normalized upstream-demo states; not semantic timing validation",
+      "sample_times": [
+        0.887,
+        2.015,
+        3.143
+      ],
+      "preview": "previews/x-follow-card.jpg",
+      "errors": [],
+      "failed_requests": [],
+      "keyframe_visual_review": "pending"
+    }
+  ]
+}

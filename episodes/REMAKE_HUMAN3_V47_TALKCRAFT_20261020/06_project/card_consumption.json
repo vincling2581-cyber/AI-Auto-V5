@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "episodeId": "REMAKE_HUMAN3_V47_TALKCRAFT_20261020",
+  "renderer": "06_project/cards.js",
+  "defaultsSource": "00_brief/effective_defaults.json",
+  "scope": "8张信息卡的本地SVG渲染；字幕由主app消费独立字幕参数",
+  "actualConsumption": [
+    {"field":"type.family","value":"Microsoft YaHei","consumer":"config.family -> renderCard SVG font-family"},
+    {"field":"cards.typography.title_px","value":72,"consumer":"config.title -> heading/c01/c07实际text font-size"},
+    {"field":"cards.typography.node_px","value":46,"consumer":"config.node -> 节点、字段、选项及CTA实际text font-size"},
+    {"field":"cards.typography.support_px","value":34,"consumer":"config.support -> 必要说明、示意标识、辅助正文实际text font-size"},
+    {"field":"cards.geometry.panel_border_px","value":2,"consumer":"rect/line实际stroke-width"},
+    {"field":"cards.geometry.panel_radius_px","value":28,"consumer":"面板与候选实际rect.rx"},
+    {"field":"cards.geometry.connection_stroke_px","value":3,"consumer":"curve/关系线/焦点标识实际stroke-width"},
+    {"field":"cards.geometry.icon_stroke_local_px","value":3.5,"consumer":"100单位图标实际stroke-width"},
+    {"field":"cards.entry_seconds","value":[0.25,0.4],"chosen":0.25,"consumer":"节点/消息/标题的显式progress时长"},
+    {"field":"cards.entry_translation_px","value":[16,32],"chosen":16,"consumer":"C05消息与C07新词连续上移距离"},
+    {"field":"cards.highlight_seconds","value":[0.15,0.3],"chosen":0.15,"consumer":"C02/C08焦点建立的progress时长"},
+    {"field":"cards.process_initial_seconds","value":0.55,"consumer":"C03层级线与首节点实际开始时刻"},
+    {"field":"cards.palette","consumer":"config纸白主题基础色；C01/C03/C04/C06实际填充、文字、边缘和关系线"},
+    {"field":"cards.palette_presets.dark","consumer":"C07实际背景、文字、强调及旧判断对比色"},
+    {"field":"layout.content_safe","value":[64,110,1856,880],"consumer":"renderCard实际SVG clipPath限制语义主体"}
+  ],
+  "explicitLocalChoices": {
+    "timing": "按SRT锚点逐卡安排，不使用固定节拍；duration只限定本卡有效时间，不把各卡过程等比例压缩",
+    "geometry": "1920×1080语义构图；所有固定坐标按本集内容设计。100单位图标路径保持100单位合同。",
+    "easing": "对象默认cubic_out；路径及协调变化用smoothstep连续进度，沿真实曲线弧长取位，未使用全局时钟或Tween.js",
+    "continuousMotion": "信息卡保留真实中间帧，不套插画单图2秒规则",
+    "captionSafe": "[160,920,1760,1040]为主app独立字幕责任；cards.js不渲染字幕，不在该区放关键正文",
+    "titleAnchor": "C01标题的中心、字号与textLength共享降级进度，保持最终左缘128且无锚点跳变",
+    "twoLargePanelPolicy": "C04唯一双大面板使用defaults.cards.palette.dark与paper；其他卡按关系采用环盘、层级、聊天、单文档或四个小候选",
+    "fontExceptions": [{"cardId":"C05","field":"message-body","size":40,"reason":"四条聊天同屏需保留历史；字号为node46减6，其余主要节点仍46、辅助34"}],
+    "sourceCopies": "C01/C04/C05/C06保留可复用源，仅传副本；目标内容只在副本到达后建立",
+    "fixedBrandOrEpisodeCorners": false,
+    "guaranteedIncomeOrDiagnosis": false
+  },
+  "registeredThemes": {
+    "paper": {"source":"defaults.cards.palette/palette_presets.paper","cards":["C01","C03","C04","C06"]},
+    "dark": {"source":"defaults.cards.palette_presets.dark","cards":["C07"]},
+    "blue": {"cards":["C02","C05"],"background":"#ECF2F7","dark":"#14271B","soft":"#DDE8F2","paper":"#F8FAFC","accent":"#4384B8","text":"#243A4C","ink":"#243A4C","muted":"#597183","line":"#94AFC1","edge":"#B9CAD7","paperLine":"#D1DFE8","reason":"概念分解与访谈采用轻量蓝纸，正文与辅助字同步使用深蓝灰对比色"},
+    "peach": {"cards":["C08"],"background":"#F8EDE4","dark":"#14271B","soft":"#EFDBCA","paper":"#FFF9F2","accent":"#B86A42","text":"#4D352A","ink":"#4D352A","muted":"#876A5A","line":"#C29D83","edge":"#DCC4B1","paperLine":"#EAD9C9","reason":"结尾开放选择采用暖纸；四项同等面积、没有赢家与默认选中"}
+  },
+  "notClaimed": {
+    "encodedProcessAndReadingPassed": false,
+    "normalSpeedAVPassed": false,
+    "nativeEditorPassed": false,
+    "reason":"本实现阶段只检查源码语法和抽样调用；实际编码画面检查与正常速度审片由主代理按匹配输出另记。"
+  }
+}

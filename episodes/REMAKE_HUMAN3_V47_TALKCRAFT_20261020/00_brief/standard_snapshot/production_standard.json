@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "version": "4.7",
+  "status": "active",
+  "date": "2026-10-20",
+  "scope": "V5 current standard for new episodes; branch/main share this version only after Git merge; old episode snapshots/configuration and existing media remain unchanged",
+  "sop": "Xilo风格视频生产线SOP_v4.7.md",
+  "prompts": "production_standard/提示词_v4.7.md",
+  "prompts_data": "production_standard/prompts.json",
+  "defaults": "production_standard/defaults.json",
+  "rules": "production_standard/rules.json",
+  "rules_readable": "production_standard/全部制作规则_v4.7.md",
+  "changes": "production_standard/变更说明_v4.7.md",
+  "visual_references": "production_standard/visual_references.json",
+  "brand_assets": "production_standard/brand_assets.json",
+  "verifier": "production_standard/verify_standard.py",
+  "selection": "Select from project CURRENT_PROJECT.json for new episodes; continue existing episodes from their own lock. Paths in this manifest are relative to its directory.",
+  "origin": {
+    "version": "4.6",
+    "project_relative_manifest": "standards/v4.6/production_standard.json",
+    "sha256": "6bc4e458cfb7da0cc9c736bb5343590aeb8a1a0e60baba50da0b9ad6497c42ab",
+    "policy": "read_only_provenance_not_active_dependency"
+  },
+  "user_approved": true,
+  "approval": {
+    "mode": "explicit_user_confirmation",
+    "date": "2026-10-20",
+    "authorized_quote": "那就补做一次 V5 主干的代码审查，检查重复实现、废弃代码、渲染和导出调用链冲突，以及旧硬编码覆盖新参数的问题。查实后按最新规则修复，保留旧集重渲所需代码，不动 V4、旧集配置和已有成片，检查通过后同步 GitHub，并告诉我发现和修改了什么。",
+    "scope": "维持已批准的 v4.7 视觉规则，修复当前卡片参数消费、通用导出默认调用与输出声明，收敛重复摘要函数，补上新集锁定的渲染/导出执行入口；保留旧集代码、锁、配置和成片，不安装全局 Skill。"
+  },
+  "history_policy": "existing_episode_snapshots_configuration_and_outputs_remain_unchanged",
+  "initialization": "Follow docs/SINGLE_EPISODE_WORKFLOW.md; copy this standard/lock and state/contract templates into a new episode, derive effective defaults and adapt the actual renderer. Run the episode-locked stage_runner before new-episode rendering or explicitly requested export. No generic SRT-to-video generator is implied.",
+  "media_distribution": "Two local brand-reference images remain excluded from Git; restore using brand_assets.json and verify hashes before production. External reference films are not bundled or required by integrity checks.",
+  "files": [
+    {
+      "path": "production_standard/assets/补全眼部参考.png",
+      "sha256": "b6c9b7acaadb640676227e69c839739597f15d37a65debbd8f00d69b0c26d49d"
+    },
+    {
+      "path": "production_standard/assets/角色身份参考.png",
+      "sha256": "03b39446edbd89af83f235a40660a55d3bb07f8ceb74b59d5dfa58bf67a509fd"
+    },
+    {
+      "path": "production_standard/brand_assets.json",
+      "sha256": "574af837c5a7c826b20577f2c50b3fe038c5939befd95a82a9a02ce3eef4ba05"
+    },
+    {
+      "path": "production_standard/defaults.json",
+      "sha256": "1f3ef7e805d2bdfc03570065b8805a99f5ec595fed384eb5b717d33a58c153f0"
+    },
+    {
+      "path": "production_standard/episode_contract_template.json",
+      "sha256": "9b330e098a70fce685edac6bbb289c44a669a68c3cc504f0ffe4c793231c8b75"
+    },
+    {
+      "path": "production_standard/layer_contract.json",
+      "sha256": "e82269631425b2c652a9ff7e0d99308b9fb621407b2826872fbbe7c8edb02378"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/card_kit.js",
+      "sha256": "30bc5baccf24f839bfc9edc1ca096ce0c96b6f51e76050e8690ac421c20f24b1"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/README.md",
+      "sha256": "b4d94c9ac7045e70ece5e4c074d68a44020ed8c76fedf84fce65bcc765219e63"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
+      "sha256": "3eb888ef31044c40757fe52030e381d2b7ec6ef5e90379920ea18b98ac32d187"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber.min.js",
+      "sha256": "5f04395eabfef5048e3e779da3624834fa873c4ccee3b5b5f6134298ba675ae4"
+    },
+    {
+      "path": "production_standard/method_assets/reference_cards_v1/vendor/THIRD_PARTY.md",
+      "sha256": "4a150d9ca340ab483e0dbe2675d3140828b2e94c8561fa5791b7755c99896eff"
+    },
+    {
+      "path": "production_standard/prompts.json",
+      "sha256": "cfbcb424981e51e531b8fccde4140be26af6140febd7dbc99eca45a1a421be2b"
+    },
+    {
+      "path": "production_standard/rules.json",
+      "sha256": "9401b5ddc12894f46cddfc1e40f886a66551c4a5e09dd51adcfe68b305b6ef4d"
+    },
+    {
+      "path": "production_standard/validate_episode.py",
+      "sha256": "148da7b107b834851bfb766ec7598a7c829c0b0cd256bac24cc486e133afc9b3"
+    },
+    {
+      "path": "production_standard/verify_standard.py",
+      "sha256": "5c367c5485b75fb53b35f1a8f702613fcb78741121b744ddd303e2ef8374c47e"
+    },
+    {
+      "path": "production_standard/visual_references.json",
+      "sha256": "a3cc56c89c4d5c2708b1f33299765fce12dae6c87f5ac1deb69c0b038b3e7da4"
+    },
+    {
+      "path": "production_standard/全部制作规则_v4.7.md",
+      "sha256": "67c28d5adbe45e89970f07c680ced001996eabbf4059fe37550a73cd90202b62"
+    },
+    {
+      "path": "production_standard/变更说明_v4.7.md",
+      "sha256": "0b9f60713620b135c898fc7e9526d93682b4c4f96c6007cac4c1d462ef5250f3"
+    },
+    {
+      "path": "production_standard/提示词_v4.7.md",
+      "sha256": "2fe9bf150adfe38a690e6e663a70d0acb20948576f56f14ab35aa5047478bf93"
+    },
+    {
+      "path": "Xilo风格视频生产线SOP_v4.7.md",
+      "sha256": "71bf1bfc79fd1b268f6dc8c86581a60b995aa8440e5966aeb6bcf1456a942d7c"
+    },
+    {
+      "path": "production_standard/run_stage.py",
+      "sha256": "c1fd665647ab2758a9148085725c7fc767ff4f8ac4cf64f45ba4cd104ce9196d"
+    }
+  ],
+  "layer_contract": "production_standard/layer_contract.json",
+  "episode_validator": "production_standard/validate_episode.py",
+  "episode_contract_template": "production_standard/episode_contract_template.json",
+  "revision": "2026-10-20-code-audit",
+  "stage_runner": "production_standard/run_stage.py"
+}

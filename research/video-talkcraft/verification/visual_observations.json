@@ -1,0 +1,17 @@
+{
+  "scope": "研究取样观察，不是正常速度播放验收",
+  "contact_sheets_inspected": "12 张初次完整取样拼图，后续取样器改为每状态重载，针对 4 个时钟/回放敏感效果复看最终取样",
+  "final_capture_targeted_cards": [
+    "tracking-in",
+    "long-take-world",
+    "host-shrink-to-chip",
+    "typewriter-reveal"
+  ],
+  "observations": {
+    "tracking-in": "跳转取样的后段仍有模糊；源码弹簧存在轻微过冲且 blur 未钳制，随机跳转不能证明最终清晰度。正式适配应统一进度并检查逐帧清晰度。",
+    "long-take-world": "跳转取样中后两态只见网格，HTML 使用独立 ticker；此取样不足以证明到站显形，也不能据此断言正常播放相同。需统一时钟后验证。",
+    "host-shrink-to-chip": "本地取样缩位后圆内未见人物，不能据此确认裁剪和锚点正确；使用真实人物素材时需单独核对。"
+  },
+  "normal_speed_review": "not_performed",
+  "upstream_code_modified": false
+}

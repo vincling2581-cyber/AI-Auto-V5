@@ -1,0 +1,850 @@
+{
+  "relations": {
+    "一句内部重音": [
+      "type-contrast-emphasis"
+    ],
+    "一条重点与其余背景反馈": [
+      "danmu-bubble-praise"
+    ],
+    "一段论证结束到下一段": [
+      "overexpose-flip-transition"
+    ],
+    "三项累计或轮换": [
+      "parallel-items-with-host"
+    ],
+    "上一主题到下一主题": [
+      "chapter-title-card"
+    ],
+    "上个话题到下个话题": [
+      "shape-wipe-transition"
+    ],
+    "两项对照": [
+      "alt-block-lines"
+    ],
+    "个体计数": [
+      "unit-grid-proportion"
+    ],
+    "主句让位到副句补充": [
+      "lead-word-zoom-assemble"
+    ],
+    "主图与佐证归属": [
+      "still-layout-relay"
+    ],
+    "主推阶段到末速延续": [
+      "slow-push-in"
+    ],
+    "主次重排": [
+      "grid-to-hero"
+    ],
+    "主素材与辅助要点": [
+      "split-60-40-story"
+    ],
+    "主要身份先于补充头衔": [
+      "lower-third-nameplate"
+    ],
+    "主题揭示": [
+      "behind-text-title"
+    ],
+    "主题让位": [
+      "title-demote-to-label"
+    ],
+    "主题钩子": [
+      "impact-open-title"
+    ],
+    "交接切点到曝光重音": [
+      "overexpose-flip-transition"
+    ],
+    "交替指认": [
+      "rack-focus-pair"
+    ],
+    "人物到姓名与身份": [
+      "lower-third-nameplate"
+    ],
+    "人物持续讲解": [
+      "host-card-glass-board"
+    ],
+    "人物旁并列列举": [
+      "parallel-items-with-host"
+    ],
+    "人物来源介绍": [
+      "douyin-follow-card"
+    ],
+    "人物说明与侧边解释补充": [
+      "info-term-card"
+    ],
+    "人物资料到来源身份": [
+      "x-follow-card"
+    ],
+    "人物身份归属": [
+      "chevron-lower-third"
+    ],
+    "人物遮挡标题": [
+      "behind-text-title"
+    ],
+    "介质差分层": [
+      "slab-punch-title"
+    ],
+    "从汇总到可逐项阅读": [
+      "stack-fan-out"
+    ],
+    "代码整体结构到逐行解释": [
+      "glass-code-walk"
+    ],
+    "任务命令到工具调用": [
+      "claude-code"
+    ],
+    "位置指认": [
+      "scribble-annotation"
+    ],
+    "低权重结论呈现": [
+      "soft-blur-in"
+    ],
+    "候选取舍": [
+      "chip-grid-single-select"
+    ],
+    "候选收束": [
+      "countdown-arc-scatter"
+    ],
+    "先出现的核心词到完整主张": [
+      "lead-word-zoom-assemble"
+    ],
+    "先划范围再给题名": [
+      "corner-bracket-frame"
+    ],
+    "先到位再咬合的重音确认": [
+      "reticle-lock-on"
+    ],
+    "先立主标题再给副题重音": [
+      "speed-slab-title"
+    ],
+    "全景与细节并存": [
+      "pip-zoom-box"
+    ],
+    "共同句干": [
+      "word-slot-cycle"
+    ],
+    "关注状态改变": [
+      "douyin-follow-card"
+    ],
+    "关键词与其余句子的权重": [
+      "quote-card"
+    ],
+    "关键词精确标记": [
+      "ink-underline"
+    ],
+    "兴趣点导航": [
+      "stage-keyframe-tour"
+    ],
+    "内容接续": [
+      "title-demote-to-label"
+    ],
+    "分散字符到完整标题": [
+      "tracking-in"
+    ],
+    "判断与证据配对": [
+      "color-slam-beat-card"
+    ],
+    "前一步完成到后一步启动": [
+      "step-timeline-vertical"
+    ],
+    "前后景降权": [
+      "rack-focus-pair"
+    ],
+    "前后空间层次": [
+      "orbit-drift"
+    ],
+    "前景与语境降权": [
+      "highlighter-sweep"
+    ],
+    "前景内容与来源说明分区": [
+      "bed-echo-blur"
+    ],
+    "剩余路径": [
+      "chapter-progress-list"
+    ],
+    "动作后确认": [
+      "ui-prop-theater"
+    ],
+    "动词与证据一一对应": [
+      "word-relay-filmstrip"
+    ],
+    "区间标注到相关范围": [
+      "line-chart-story-draw"
+    ],
+    "单一焦点": [
+      "converging-arrows"
+    ],
+    "单条竖屏证据与同源环境底床": [
+      "bed-echo-blur"
+    ],
+    "单点结论": [
+      "number-slab-pop"
+    ],
+    "单词强调": [
+      "keyword-pop-highlight"
+    ],
+    "双向指认": [
+      "converging-arrows"
+    ],
+    "双词对照": [
+      "ink-underline"
+    ],
+    "变化范围揭示": [
+      "split-compare-slider"
+    ],
+    "口播重音": [
+      "keyword-pop-highlight"
+    ],
+    "同一拐点下两种未来": [
+      "line-chart-story-draw"
+    ],
+    "同一讲者连续存在与舞台让位": [
+      "host-shrink-to-chip"
+    ],
+    "同主体多能力列举": [
+      "word-relay-filmstrip"
+    ],
+    "同位前后差异": [
+      "split-compare-slider"
+    ],
+    "同位更正": [
+      "strike-and-replace"
+    ],
+    "同向连续举例": [
+      "motion-blur-slam-in"
+    ],
+    "同步解释列举": [
+      "split-60-40-story"
+    ],
+    "命令触发": [
+      "terminal-typing-log"
+    ],
+    "唯一选择": [
+      "chip-grid-single-select"
+    ],
+    "回到对照": [
+      "grid-to-hero"
+    ],
+    "图形角色转换": [
+      "line-carry-transition"
+    ],
+    "图标与实体命名": [
+      "logo-enter"
+    ],
+    "圈定位置先于文字重音": [
+      "hand-drawn-ellipse"
+    ],
+    "地理转移": [
+      "map-route-pin"
+    ],
+    "基线生长与末字落定同步": [
+      "split-text-stagger"
+    ],
+    "多个概念到信息涌入的感受": [
+      "flying-words"
+    ],
+    "多个目标的先后指认": [
+      "callout-line-label"
+    ],
+    "多份证据到同一主张": [
+      "media-pop-in"
+    ],
+    "多图汇聚": [
+      "gooey-morph"
+    ],
+    "多处证据定位": [
+      "scanline-annotate"
+    ],
+    "多对一汇聚": [
+      "source-converge"
+    ],
+    "多条独立短评到群体在场感": [
+      "danmu-bubble-praise"
+    ],
+    "多步操作到最终保存反馈": [
+      "ui-flow-theater"
+    ],
+    "姓名与资历配对": [
+      "chevron-lower-third"
+    ],
+    "字段分组": [
+      "info-card-assemble"
+    ],
+    "字符接续到完整标题": [
+      "split-text-stagger"
+    ],
+    "字距收拢到视觉聚焦": [
+      "tracking-in"
+    ],
+    "完成项累积": [
+      "ui-prop-theater"
+    ],
+    "完整引句定位": [
+      "highlighter-sweep"
+    ],
+    "完整论述到一句核心结论": [
+      "quote-card"
+    ],
+    "定标数量比较": [
+      "chart-grow"
+    ],
+    "对照结论突出": [
+      "type-contrast-emphasis"
+    ],
+    "对等论点成组": [
+      "alt-block-lines"
+    ],
+    "小节路标": [
+      "title-demote-to-label"
+    ],
+    "少量清单成组": [
+      "line-by-line-slide"
+    ],
+    "局部到整体": [
+      "gallery-wall-dolly"
+    ],
+    "局部回到整体": [
+      "still-layout-relay"
+    ],
+    "局部回归整体": [
+      "focus-dim-spotlight"
+    ],
+    "局部提取": [
+      "pip-zoom-box"
+    ],
+    "局部证据定位": [
+      "magnifier-detail"
+    ],
+    "巡览后聚焦": [
+      "evidence-scroll-tour"
+    ],
+    "平级案例巡览": [
+      "gallery-wall-dolly"
+    ],
+    "并列候选": [
+      "grid-to-hero"
+    ],
+    "并列对象焦点接力": [
+      "still-layout-relay"
+    ],
+    "并列方法到完整清单": [
+      "numbered-step-stack"
+    ],
+    "并列枚举": [
+      "word-slot-cycle"
+    ],
+    "并列案例 A 到案例 B": [
+      "whip-pan-transition"
+    ],
+    "并列证据成组": [
+      "gooey-morph"
+    ],
+    "引文内重点": [
+      "quote-bracket-pull"
+    ],
+    "引用边界": [
+      "quote-bracket-pull"
+    ],
+    "强转折": [
+      "black-slam-transition"
+    ],
+    "当前位置": [
+      "chapter-progress-list"
+    ],
+    "当前语句与上下文的邻接": [
+      "glass-code-walk"
+    ],
+    "形态转化": [
+      "particle-weld-transition"
+    ],
+    "总结升格": [
+      "word-slot-cycle"
+    ],
+    "悬念揭晓": [
+      "black-slam-transition"
+    ],
+    "我方提问到对方回应": [
+      "chat-message-flow"
+    ],
+    "截图具体部位到名称解释": [
+      "callout-line-label"
+    ],
+    "执行结果": [
+      "terminal-typing-log"
+    ],
+    "扫描到命名": [
+      "scanline-annotate"
+    ],
+    "报道来源到被引用重点": [
+      "news-card-desk"
+    ],
+    "拖拽归属": [
+      "cursor-actor-demo"
+    ],
+    "指标与趋势合成": [
+      "metric-with-sparkline"
+    ],
+    "按序到达": [
+      "map-route-pin"
+    ],
+    "提交状态转换": [
+      "chat-gpt"
+    ],
+    "操作与响应因果": [
+      "cursor-actor-demo"
+    ],
+    "操作动作到控件换态": [
+      "ui-flow-theater"
+    ],
+    "数值收敛确认": [
+      "number-counter"
+    ],
+    "数字主次强调": [
+      "count-badge-title"
+    ],
+    "数字揭晓": [
+      "countdown-arc-scatter"
+    ],
+    "数量承诺": [
+      "count-badge-title"
+    ],
+    "数量级呈现": [
+      "number-counter"
+    ],
+    "整份截图到兴趣点的收拢": [
+      "slow-push-in"
+    ],
+    "整体目录": [
+      "chapter-progress-list"
+    ],
+    "整体量级": [
+      "bar-chart-growth"
+    ],
+    "整句内部层级": [
+      "quote-hold-arrow"
+    ],
+    "整句到核心词的聚焦": [
+      "impact-open-title"
+    ],
+    "整句观点与其强调边界": [
+      "corner-bracket-frame"
+    ],
+    "整句近同步揭示": [
+      "per-character-rise"
+    ],
+    "整数与精度补充": [
+      "number-slab-pop"
+    ],
+    "整页证据到单个指定对象": [
+      "reticle-lock-on"
+    ],
+    "整页证据到单处关键文字": [
+      "crash-zoom-punch"
+    ],
+    "文本版本替换": [
+      "caret-wipe-transition"
+    ],
+    "新旧互补揭示": [
+      "caret-wipe-transition"
+    ],
+    "既成历史到未来假设": [
+      "line-chart-story-draw"
+    ],
+    "日志推进": [
+      "terminal-typing-log"
+    ],
+    "旧值否定": [
+      "strike-and-replace"
+    ],
+    "旧内容退场到新内容出现": [
+      "pullback-cool-transition"
+    ],
+    "时序趋势": [
+      "bar-chart-growth"
+    ],
+    "时间先后": [
+      "timeline-photo-strip"
+    ],
+    "时间地点交代": [
+      "typewriter-reveal"
+    ],
+    "有序列举": [
+      "filmstrip-conveyor"
+    ],
+    "术语界定": [
+      "outline-box-title"
+    ],
+    "来源驻留": [
+      "doc-park-left-pill-deal"
+    ],
+    "标题组装": [
+      "countdown-arc-scatter"
+    ],
+    "档案录入": [
+      "typewriter-reveal"
+    ],
+    "概念推进到证据": [
+      "push-through-transition"
+    ],
+    "横向交接到同向速度连续": [
+      "whip-pan-transition"
+    ],
+    "横向序列连续浏览": [
+      "sway-parallax"
+    ],
+    "正视阅读到立面展示": [
+      "tilt-3d-page"
+    ],
+    "步骤接力": [
+      "host-card-glass-board"
+    ],
+    "比例可视化": [
+      "unit-grid-proportion"
+    ],
+    "流程总貌到当前所在步骤": [
+      "step-timeline-vertical"
+    ],
+    "流程状态推进": [
+      "ui-prop-theater"
+    ],
+    "流程结果": [
+      "host-card-glass-board"
+    ],
+    "消息发送到延迟反馈": [
+      "chat-message-flow"
+    ],
+    "激烈论述到沉淀收束": [
+      "pullback-cool-transition"
+    ],
+    "点击关注到按钮与计数反馈": [
+      "x-follow-card"
+    ],
+    "版面证据定位": [
+      "focus-dim-spotlight"
+    ],
+    "物质连续": [
+      "particle-weld-transition"
+    ],
+    "犹豫与果断纠错的时间差": [
+      "error-retype"
+    ],
+    "界面过程例证": [
+      "chat-gpt"
+    ],
+    "相邻关系导航": [
+      "long-take-world"
+    ],
+    "短句从未明到清晰": [
+      "soft-blur-in"
+    ],
+    "短论点立起": [
+      "per-character-rise"
+    ],
+    "短语指认到重要性确认": [
+      "hand-drawn-ellipse"
+    ],
+    "移动与按压到关注状态": [
+      "subscribe-cta"
+    ],
+    "空间化流程": [
+      "long-take-world"
+    ],
+    "章节承接": [
+      "line-carry-transition"
+    ],
+    "章节编号与题名的层级": [
+      "chapter-title-card"
+    ],
+    "笔尖位置到当前可见笔迹": [
+      "pencil-sketch-draw"
+    ],
+    "第一份报道到补充报道": [
+      "news-card-desk"
+    ],
+    "累积标注": [
+      "scanline-annotate"
+    ],
+    "累计清单": [
+      "doc-park-left-pill-deal"
+    ],
+    "细节到全貌": [
+      "cursor-locked-zoom"
+    ],
+    "细节扩展": [
+      "slow-pull-reveal"
+    ],
+    "细节放大与出处对应": [
+      "magnifier-detail"
+    ],
+    "结构化生成": [
+      "info-card-assemble"
+    ],
+    "结果归纳": [
+      "bar-chart-growth"
+    ],
+    "结果收束": [
+      "source-converge"
+    ],
+    "结论框选": [
+      "outline-box-title"
+    ],
+    "编号与对应条目的一一对应": [
+      "numbered-step-stack"
+    ],
+    "背景词群与前景主旨的主次": [
+      "flying-words"
+    ],
+    "行级先后列举": [
+      "line-by-line-slide"
+    ],
+    "观点断拍": [
+      "color-slam-beat-card"
+    ],
+    "规模揭示": [
+      "slow-pull-reveal"
+    ],
+    "讲者主体到图形主体的交接": [
+      "host-shrink-to-chip"
+    ],
+    "讲解次序到图形生成次序": [
+      "pencil-sketch-draw"
+    ],
+    "证据压入": [
+      "motion-blur-slam-in"
+    ],
+    "证据定位": [
+      "evidence-scroll-tour"
+    ],
+    "证据提炼结论": [
+      "doc-park-left-pill-deal"
+    ],
+    "证据页持续在场": [
+      "orbit-drift"
+    ],
+    "语音指认到目标特写": [
+      "crash-zoom-punch"
+    ],
+    "调用结果到代码改动再到结论": [
+      "claude-code"
+    ],
+    "超宽证据保尺寸": [
+      "sway-parallax"
+    ],
+    "跨素材景别承接": [
+      "push-through-transition"
+    ],
+    "路线接续": [
+      "map-route-pin"
+    ],
+    "身份收束": [
+      "logo-enter"
+    ],
+    "输入到响应": [
+      "chat-gpt"
+    ],
+    "过程到结论": [
+      "metric-with-sparkline"
+    ],
+    "选择后的结果": [
+      "chip-grid-single-select"
+    ],
+    "逐处圈注": [
+      "scribble-annotation"
+    ],
+    "逐字跟随": [
+      "cursor-locked-zoom"
+    ],
+    "逐站查看与全貌回顾": [
+      "timeline-photo-strip"
+    ],
+    "逐项列举": [
+      "chart-grow"
+    ],
+    "逐项列举到同屏共存": [
+      "media-pop-in"
+    ],
+    "逐项焦点接力": [
+      "focus-dim-spotlight"
+    ],
+    "通路传递": [
+      "source-converge"
+    ],
+    "速度主题到视觉惯性线索": [
+      "speed-slab-title"
+    ],
+    "遮挡完成到内容替换": [
+      "shape-wipe-transition"
+    ],
+    "部分与整体": [
+      "unit-grid-proportion"
+    ],
+    "重点停靠": [
+      "filmstrip-conveyor"
+    ],
+    "重点抽取": [
+      "info-card-assemble"
+    ],
+    "铺垫与重点结论": [
+      "slab-punch-title"
+    ],
+    "铺垫到结论升级": [
+      "quote-hold-arrow"
+    ],
+    "错误判断到修正结论": [
+      "error-retype"
+    ],
+    "长按过程到依次完成的反馈": [
+      "subscribe-cta"
+    ],
+    "长文上下文连续": [
+      "evidence-scroll-tour"
+    ],
+    "长页分区阅读": [
+      "stage-keyframe-tour"
+    ],
+    "集合拆分为成员": [
+      "stack-fan-out"
+    ],
+    "页面信息到产品物件的身份转换": [
+      "tilt-3d-page"
+    ],
+    "顺序演示": [
+      "cursor-actor-demo"
+    ],
+    "首次出现的名词到简短释义": [
+      "info-term-card"
+    ]
+  },
+  "categories": {
+    "字幕花字": [
+      "alt-block-lines",
+      "count-badge-title",
+      "countdown-arc-scatter",
+      "error-retype",
+      "flying-words",
+      "impact-open-title",
+      "keyword-pop-highlight",
+      "lead-word-zoom-assemble",
+      "line-by-line-slide",
+      "outline-box-title",
+      "per-character-rise",
+      "quote-bracket-pull",
+      "quote-card",
+      "slab-punch-title",
+      "soft-blur-in",
+      "speed-slab-title",
+      "split-text-stagger",
+      "title-demote-to-label",
+      "tracking-in",
+      "type-contrast-emphasis",
+      "typewriter-reveal",
+      "word-slot-cycle"
+    ],
+    "数据信息图": [
+      "bar-chart-growth",
+      "chart-grow",
+      "chip-grid-single-select",
+      "info-term-card",
+      "line-chart-story-draw",
+      "map-route-pin",
+      "metric-with-sparkline",
+      "number-counter",
+      "number-slab-pop",
+      "numbered-step-stack",
+      "source-converge",
+      "step-timeline-vertical",
+      "ui-prop-theater",
+      "unit-grid-proportion"
+    ],
+    "素材呈现": [
+      "bed-echo-blur",
+      "chat-gpt",
+      "chat-message-flow",
+      "claude-code",
+      "cursor-actor-demo",
+      "doc-park-left-pill-deal",
+      "evidence-scroll-tour",
+      "filmstrip-conveyor",
+      "gallery-wall-dolly",
+      "glass-code-walk",
+      "gooey-morph",
+      "grid-to-hero",
+      "info-card-assemble",
+      "logo-enter",
+      "media-pop-in",
+      "motion-blur-slam-in",
+      "news-card-desk",
+      "pencil-sketch-draw",
+      "rack-focus-pair",
+      "split-60-40-story",
+      "split-compare-slider",
+      "stack-fan-out",
+      "still-layout-relay",
+      "terminal-typing-log",
+      "timeline-photo-strip",
+      "ui-flow-theater",
+      "word-relay-filmstrip"
+    ],
+    "人物互动": [
+      "behind-text-title",
+      "chevron-lower-third",
+      "danmu-bubble-praise",
+      "douyin-follow-card",
+      "host-card-glass-board",
+      "host-shrink-to-chip",
+      "lower-third-nameplate",
+      "parallel-items-with-host",
+      "subscribe-cta",
+      "x-follow-card"
+    ],
+    "转场结构": [
+      "black-slam-transition",
+      "caret-wipe-transition",
+      "chapter-progress-list",
+      "chapter-title-card",
+      "color-slam-beat-card",
+      "line-carry-transition",
+      "long-take-world",
+      "overexpose-flip-transition",
+      "particle-weld-transition",
+      "pullback-cool-transition",
+      "push-through-transition",
+      "shape-wipe-transition",
+      "whip-pan-transition"
+    ],
+    "强调标注": [
+      "callout-line-label",
+      "converging-arrows",
+      "corner-bracket-frame",
+      "crash-zoom-punch",
+      "focus-dim-spotlight",
+      "hand-drawn-ellipse",
+      "highlighter-sweep",
+      "ink-underline",
+      "magnifier-detail",
+      "quote-hold-arrow",
+      "reticle-lock-on",
+      "scanline-annotate",
+      "scribble-annotation",
+      "strike-and-replace"
+    ],
+    "运镜": [
+      "cursor-locked-zoom",
+      "orbit-drift",
+      "pip-zoom-box",
+      "slow-pull-reveal",
+      "slow-push-in",
+      "stage-keyframe-tour",
+      "sway-parallax",
+      "tilt-3d-page"
+    ]
+  },
+  "roles": {
+    "card_content": "信息卡主体",
+    "card_emphasis": "卡内强调标注",
+    "evidence_presentation": "证据与素材呈现",
+    "source_camera": "证据或卡片运镜",
+    "transition": "转场与章节结构",
+    "host_interaction": "人物出镜互动"
+  }
+}

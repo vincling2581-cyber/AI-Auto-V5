@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="data:,">
+<title>HUMAN 3.0 · 语义动效重制源工程</title>
+<style>
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#07110c}
+#stage{position:absolute;width:1920px;height:1080px;transform-origin:top left;overflow:hidden;background:#f5f2e9}
+#visual{position:absolute;inset:0;overflow:hidden}
+#visual>svg{display:block;width:100%;height:100%}
+#caption-region{position:absolute;display:flex;align-items:center;justify-content:center;pointer-events:none}
+#caption{color:#f0f3ec;font-family:"Microsoft YaHei",sans-serif;font-weight:700;line-height:1.28;text-align:center;white-space:nowrap;padding:8px 22px 11px;border-radius:12px;background:rgba(7,17,12,.76);text-shadow:0 1px 2px #000;box-sizing:border-box}
+</style>
+<div id="stage"><div id="visual"></div><div id="caption-region"><div id="caption"></div></div></div>
+<script type="module" src="app.js"></script>
+</html>

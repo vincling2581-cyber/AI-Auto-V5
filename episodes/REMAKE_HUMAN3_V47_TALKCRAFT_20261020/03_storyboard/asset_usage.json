@@ -1,0 +1,71 @@
+{
+  "assets": [
+    {
+      "id": "I01",
+      "asset_path": "04_assets/illustrations/I01.png",
+      "sha256": "5b0dfc894fee27d3cf2c58c63dce6203256a2e390a8416fa5e67844f5686f5f6",
+      "source": "built_in_imagegen_new_for_this_remake",
+      "source_visual_observation": "主角身份/深绿虹膜瞳孔清楚，打开日志并看向学习场所；明亮自然景色，完整下沿，双手持书与坐姿连接可见。",
+      "source_visual_review": "sample_inspected",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "I02",
+      "asset_path": "04_assets/illustrations/I02.png",
+      "sha256": "b742d3c80e808272fa1460b36fe32f9499e969f7f0b9d5e3a25b199c027e73e5",
+      "source": "built_in_imagegen_new_for_this_remake",
+      "source_visual_observation": "从成长愿望落到具体工作受阻：手工笔记本/空白计划页，停笔思考；室内暖墙与冷窗形成自然色差，手臂和握笔连接清楚。",
+      "source_visual_review": "sample_inspected",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "I03",
+      "asset_path": "04_assets/illustrations/I03.png",
+      "sha256": "6b6feb3ebab48d159eca56970a38fbc7bdfa3e14b56b4b3fedb312393af8bd7c",
+      "source": "built_in_imagegen_new_for_this_remake",
+      "source_visual_observation": "岔路与地图起点构成决定入口的具体关系；俯视新构图，主角虹膜、地图握持、笔与起点关系可见，无文字标签依赖。",
+      "source_visual_review": "sample_inspected",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "I04",
+      "asset_path": "04_assets/illustrations/I04.png",
+      "sha256": "680826af371046a60106bbfd785446887aae26d5000f4d77936a1d65794efabd",
+      "source": "built_in_imagegen_new_for_this_remake",
+      "source_visual_observation": "用一张具体票据/纪念卡回忆经历，日志与手机明确自我反思情境；长椅自然延伸到下沿，双手持票姿态连接清楚。",
+      "source_visual_review": "sample_inspected",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "I05",
+      "asset_path": "04_assets/illustrations/I05.png",
+      "sha256": "ed475adfad3418f180ba70fa71f33c52d53cb1a0f139f176d803c9ad16eac84d",
+      "source": "built_in_imagegen_new_for_this_remake",
+      "source_visual_observation": "同一反思情境中转为俯视近景：圈选日志条目并连向下一问，具有道具状态和焦点变化；可见眼睛/左右手与袖口连接正常。",
+      "source_visual_review": "sample_inspected",
+      "size": [
+        1672,
+        941
+      ]
+    },
+    {
+      "id": "cards_module",
+      "asset_path": "06_project/cards.js",
+      "sha256": "092ade83a10defe9338d6d73a242f2e4b30fcb3a3007fbf743301c450858100e",
+      "source": "episode_local_semantic_adaptation_from_recorded_recipes"
+    }
+  ],
+  "old_narrative_images_reused": false
+}
