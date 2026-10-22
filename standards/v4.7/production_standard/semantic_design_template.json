@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "is_template": true,
+  "library": {
+    "source_commit": null,
+    "catalog_sha256": null
+  },
+  "cards": [
+    {
+      "card_id": null,
+      "clip_ids": [],
+      "relation": null,
+      "motion_selection": {
+        "queries": [],
+        "candidates_read": [],
+        "recipe_ids": [],
+        "reason": null,
+        "custom_reason": null,
+        "expected_process": {
+          "initial": null,
+          "transition": null,
+          "result": null
+        },
+        "narration_anchors": []
+      },
+      "implementation": {
+        "path": null,
+        "symbol": null
+      },
+      "palette": {
+        "theme": null
+      },
+      "output_observations": {
+        "status": "not_performed",
+        "encoded_output": null,
+        "artifact_sha256": null,
+        "evidence": []
+      }
+    }
+  ],
+  "template_guidance": "Populate one record per designed card and cover every information_card contract clip exactly once using clip_ids. Every card must use the episode effective cards.default_theme. Changing the episode palette/theme requires an explicit information_cards/cards.palette override in episode_state.scoped_overrides; that override does not authorize per-card theme changes. Record searches and candidate notes even when selecting a custom process; empty recipe_ids require custom_reason. A static card may describe a justified hold while retaining the production contract static_card_purpose. implementation.path must name an existing source file inside this episode and symbol locates the actual function/component. Set is_template=false after completing the real design. Pre-render output observations remain not_performed; declarations cannot prove recipe implementation, actual palette consumption, encoded semantics or normal-speed review."
+}

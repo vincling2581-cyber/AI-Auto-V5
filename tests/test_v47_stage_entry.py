@@ -45,6 +45,21 @@ class StageEntryTest(unittest.TestCase):
             "keys=['V5_EPISODE_ROOT','V5_EFFECTIVE_DEFAULTS','V5_PRODUCTION_CONTRACT','V5_STAGE']\n"
             "Path('child.json').write_text(json.dumps({k:os.environ[k] for k in keys}),encoding='utf-8')\n"
             "raise SystemExit(int(sys.argv[1]) if len(sys.argv)>1 else 0)\n", encoding="utf-8")
+        self.state = {"authoritative_files": {"semantic_design": "03_storyboard/semantic_design.json"},
+                      "scoped_overrides": []}
+        (self.brief / "episode_state.json").write_text(json.dumps(self.state), encoding="utf-8")
+        design = {
+            "is_template": False,
+            "library": {"source_commit": "a" * 40, "catalog_sha256": "b" * 64},
+            "cards": [{"card_id": "card", "clip_ids": ["card"], "relation": "A source supplies one result",
+                       "motion_selection": {"queries": ["source result"], "candidates_read": ["cards/source-converge.md"],
+                                            "recipe_ids": ["source-converge"], "reason": "Show source and result",
+                                            "expected_process": {"initial": "Source", "transition": "Copy moves", "result": "Result"},
+                                            "narration_anchors": [{"text": "Narration", "start_frame": 0, "end_frame_exclusive": 240}]},
+                       "implementation": {"path": "06_project/worker.py", "symbol": "test_worker"},
+                       "palette": {"theme": self.defaults["cards"]["default_theme"]},
+                       "output_observations": {"status": "not_performed"}}]}
+        (self.root / "03_storyboard/semantic_design.json").write_text(json.dumps(design), encoding="utf-8")
 
     def write_defaults(self):
         self.defaults_path.write_text(json.dumps(self.defaults), encoding="utf-8")
@@ -90,6 +105,13 @@ class StageEntryTest(unittest.TestCase):
         self.contract["corner_labels"] = True
         self.write_contract()
         self.assertNotEqual(self.launch().returncode, 0)
+        self.assertFalse((self.root / "child.json").exists())
+
+    def test_missing_card_design_blocks_before_child(self):
+        (self.root / "03_storyboard/semantic_design.json").unlink()
+        result = self.launch()
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn("card_design", result.stdout)
         self.assertFalse((self.root / "child.json").exists())
 
     def test_changed_locked_file_blocks_before_importing_child(self):

@@ -4,7 +4,7 @@
 
 1. 从项目 `CURRENT_PROJECT.json` 或本集锁选择标准，得到本集 `effective_defaults.json`。
 2. 先根据语义选择卡片关系与形式。允许文章证据、自由关系图、映射、循环、极简结论等无大框画面，不因为 helper 有 `panel()` 就强制套双栏/三栏。
-3. 每个场景按内容选择 `cards.palette_presets.paper`、`dark` 或登记的自定义色板，写入该场景传给 helper 的 `cards.palette`。全局 fallback 为浅纸色；局部深绿面板显式使用浅色字，浅表面使用深字，同时检查线条及辅助文字对比。绿白双框只约束已选中的双框布局。
+3. 新集所有卡片默认使用本集 `effective_defaults.json#cards.palette`，主题为 `xianyu`；色板等于 `cards.palette_presets[cards.default_theme]`，不按场景轮换 paper/dark 或硬编码题材色。用户明确覆盖才记录整集色板变化。局部深绿面板显式使用浅色字，浅表面使用深字，同时检查线条及辅助文字对比。绿白双框只约束已选中的双框布局，真实素材保留原色。
 4. 加载 `card_kit.js`，调用 `createReferenceCardKit(effectiveDefaults)`；需要轮廓形变时再加载 `vendor/flubber.min.js`。本集自己实现 `renderFrame(frame)`，语义事件与配音锚点决定起止帧。
 5. helper 提供绘图、遮罩、路径、几何形变等基础函数，不负责镜头切换，也不消费动画同状态时长参数。内部短动效参数是可调起点，不能当作叙事节奏限制。
 6. 对象沿同一路径移动、到达后目标更新、来源保留和遮挡需要场景作者实际实现；有像素变化不等于语义正确。完成后按 SOP 做适用的过程与正常速度阅读检查。

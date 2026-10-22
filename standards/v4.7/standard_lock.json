@@ -2,7 +2,7 @@
   "schema_version": 1,
   "version": "4.7",
   "status": "active",
-  "date": "2026-10-20",
+  "date": "2026-10-22",
   "scope": "V5 current standard for new episodes; branch/main share this version only after Git merge; old episode snapshots/configuration and existing media remain unchanged",
   "sop": "Xilo风格视频生产线SOP_v4.7.md",
   "prompts": "production_standard/提示词_v4.7.md",
@@ -24,9 +24,9 @@
   "user_approved": true,
   "approval": {
     "mode": "explicit_user_confirmation",
-    "date": "2026-10-20",
-    "authorized_quote": "那就补做一次 V5 主干的代码审查，检查重复实现、废弃代码、渲染和导出调用链冲突，以及旧硬编码覆盖新参数的问题。查实后按最新规则修复，保留旧集重渲所需代码，不动 V4、旧集配置和已有成片，检查通过后同步 GitHub，并告诉我发现和修改了什么。",
-    "scope": "维持已批准的 v4.7 视觉规则，修复当前卡片参数消费、通用导出默认调用与输出声明，收敛重复摘要函数，补上新集锁定的渲染/导出执行入口；保留旧集代码、锁、配置和成片，不安装全局 Skill。"
+    "date": "2026-10-22",
+    "authorized_quote": "那以后制作新视频，怎么保证按这套配色执行，并根据语义真正用上动效库？需要把执行和检查要求补进SOP吗？我不想每次都要提醒。",
+    "scope": "未来新集统一闲鱼暗号信息卡配色，动效按语义检索适配并核对编码画面；同步默认参数、SOP、规则、提示词和必要的结构检查，不迁移旧集，不改V4或成片，不新增人工审批。"
   },
   "history_policy": "existing_episode_snapshots_configuration_and_outputs_remain_unchanged",
   "initialization": "Follow docs/SINGLE_EPISODE_WORKFLOW.md; copy this standard/lock and state/contract templates into a new episode, derive effective defaults and adapt the actual renderer. Run the episode-locked stage_runner before new-episode rendering or explicitly requested export. No generic SRT-to-video generator is implied.",
@@ -46,7 +46,7 @@
     },
     {
       "path": "production_standard/defaults.json",
-      "sha256": "1f3ef7e805d2bdfc03570065b8805a99f5ec595fed384eb5b717d33a58c153f0"
+      "sha256": "fac857d5acf8bf72caf9201c4e29e323d4ad0bd946cb4206e17fd515d7fa85ab"
     },
     {
       "path": "production_standard/episode_contract_template.json",
@@ -62,7 +62,7 @@
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/README.md",
-      "sha256": "b4d94c9ac7045e70ece5e4c074d68a44020ed8c76fedf84fce65bcc765219e63"
+      "sha256": "3d01242e4886b50216d28a7d86c8ffe42592565ae5d38ea70f60c9cb6a5c9662"
     },
     {
       "path": "production_standard/method_assets/reference_cards_v1/vendor/flubber-LICENSE",
@@ -78,11 +78,11 @@
     },
     {
       "path": "production_standard/prompts.json",
-      "sha256": "cfbcb424981e51e531b8fccde4140be26af6140febd7dbc99eca45a1a421be2b"
+      "sha256": "86d00d680fed5c7f1688dc184316a7588e72811d9f5b7b06caa94dafb89a562a"
     },
     {
       "path": "production_standard/rules.json",
-      "sha256": "9401b5ddc12894f46cddfc1e40f886a66551c4a5e09dd51adcfe68b305b6ef4d"
+      "sha256": "e637a0687c642f8baa154c4f99dc931656d55593c7456d95ca2ee28fe5873252"
     },
     {
       "path": "production_standard/validate_episode.py",
@@ -90,7 +90,7 @@
     },
     {
       "path": "production_standard/verify_standard.py",
-      "sha256": "5c367c5485b75fb53b35f1a8f702613fcb78741121b744ddd303e2ef8374c47e"
+      "sha256": "deb0592481874b1e8ceccb2b045897ca374d27795c54542ed033739919c5b697"
     },
     {
       "path": "production_standard/visual_references.json",
@@ -98,28 +98,46 @@
     },
     {
       "path": "production_standard/全部制作规则_v4.7.md",
-      "sha256": "67c28d5adbe45e89970f07c680ced001996eabbf4059fe37550a73cd90202b62"
+      "sha256": "3a3a5677c58baf93df2db039070a064a934980cc8d845e0d908a72fcb7a31c5e"
     },
     {
       "path": "production_standard/变更说明_v4.7.md",
-      "sha256": "0b9f60713620b135c898fc7e9526d93682b4c4f96c6007cac4c1d462ef5250f3"
+      "sha256": "a9b8bc854c6e55967ae8e69b0035ef1946d74cee1ec8b0208d1d72141c2ea2a1"
     },
     {
       "path": "production_standard/提示词_v4.7.md",
-      "sha256": "2fe9bf150adfe38a690e6e663a70d0acb20948576f56f14ab35aa5047478bf93"
+      "sha256": "8d20914d01f33cca9c9aa10445b1beb3f2d9c44945439fcca041c7c4f655279a"
     },
     {
       "path": "Xilo风格视频生产线SOP_v4.7.md",
-      "sha256": "71bf1bfc79fd1b268f6dc8c86581a60b995aa8440e5966aeb6bcf1456a942d7c"
+      "sha256": "f7ba91b23e3a23c4df7cd1bab621615837ab0442bf72d955d3761c08d176d9df"
     },
     {
       "path": "production_standard/run_stage.py",
-      "sha256": "c1fd665647ab2758a9148085725c7fc767ff4f8ac4cf64f45ba4cd104ce9196d"
+      "sha256": "983722811d7742d562159e691190266e943347fde637ece486e5603ae57fe4ae"
+    },
+    {
+      "path": "production_standard/validate_card_design.py",
+      "sha256": "8535f621d91263da98a5005543640aa8c1454e8ef134e260e92b0eb179c4a4d2"
+    },
+    {
+      "path": "production_standard/semantic_design_template.json",
+      "sha256": "f4cbc25e9615f1ea656c33ffe81397cf4fa45932eaab6ba36fe6ab023399da90"
     }
   ],
   "layer_contract": "production_standard/layer_contract.json",
   "episode_validator": "production_standard/validate_episode.py",
   "episode_contract_template": "production_standard/episode_contract_template.json",
-  "revision": "2026-10-20-code-audit",
-  "stage_runner": "production_standard/run_stage.py"
+  "revision": "2026-10-22-card-palette-motion",
+  "stage_runner": "production_standard/run_stage.py",
+  "approval_history": [
+    {
+      "mode": "explicit_user_confirmation",
+      "date": "2026-10-20",
+      "authorized_quote": "那就补做一次 V5 主干的代码审查，检查重复实现、废弃代码、渲染和导出调用链冲突，以及旧硬编码覆盖新参数的问题。查实后按最新规则修复，保留旧集重渲所需代码，不动 V4、旧集配置和已有成片，检查通过后同步 GitHub，并告诉我发现和修改了什么。",
+      "scope": "维持已批准的 v4.7 视觉规则，修复当前卡片参数消费、通用导出默认调用与输出声明，收敛重复摘要函数，补上新集锁定的渲染/导出执行入口；保留旧集代码、锁、配置和成片，不安装全局 Skill。"
+    }
+  ],
+  "card_design_validator": "production_standard/validate_card_design.py",
+  "semantic_design_template": "production_standard/semantic_design_template.json"
 }

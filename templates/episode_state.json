@@ -26,7 +26,7 @@
     "episode_config": "00_brief/episode.json",
     "effective_defaults": "00_brief/effective_defaults.json",
     "storyboard": null,
-    "semantic_design": null,
+    "semantic_design": "03_storyboard/semantic_design.json",
     "asset_usage": null,
     "production_contract": "03_storyboard/production_contract.json",
     "defaults_consumption": null
@@ -57,7 +57,10 @@
     "jianying_draft_registration": "not_requested",
     "jianying_native_open_playback": "not_performed",
     "jianying_native_export": "not_performed",
-    "illustration_scene_progress_and_sequence_continuity": "not_performed"
+    "illustration_scene_progress_and_sequence_continuity": "not_performed",
+    "information_card_selection_coverage": "not_performed",
+    "information_card_palette_consumption": "not_performed",
+    "encoded_information_card_palette": "not_performed"
   },
   "blocking_issues": [],
   "deferred_improvements": [],
@@ -70,6 +73,7 @@
     "outputs": "每项记录类型、相对路径、sha256 和状态；未验证临时文件不冒充有效交付。",
     "checks": "每项记录 id、status、checked_at、dependencies_manifest、dependencies_sha256、artifact_sha256、evidence。passed 必须有可核对证据，依赖变化标 stale；允许 failed、not_performed、not_applicable。",
     "dependencies": "依赖清单按检查对象记录输入、规则、实现、素材、字体、工具/依赖版本及参数；缺依赖指纹不得复用旧 passed。",
-    "authority": "本文件只做交接和证据索引；生产配置以 authoritative_files 指向的内容为准。"
+    "authority": "本文件只做交接和证据索引；生产配置以 authoritative_files 指向的内容为准。",
+    "information_cards": "从本集锁定semantic_design_template初始化唯一设计文件；渲染前结构检查覆盖/检索/实现/配色声明，渲染后逐卡观察编码配色与语义过程并绑定输出哈希。模板及机器通过不能代替实际消费、过程观察或正常速度整片视听。"
   }
 }

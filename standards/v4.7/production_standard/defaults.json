@@ -168,39 +168,41 @@
     "implementation": "deterministic_svg_frame_time",
     "method_assets": "production_standard/method_assets/reference_cards_v1",
     "palette": {
-      "background": "#F5F2E9",
-      "dark": "#14271B",
-      "soft": "#E8EEDC",
-      "paper": "#F0F3EC",
-      "accent": "#78EFA2",
-      "text": "#24362B",
-      "ink": "#12251A",
-      "muted": "#526454",
-      "line": "#54775E",
-      "edge": "#B1C1AE",
-      "paperLine": "#C4CCC2"
+      "background": "#07110C",
+      "dark": "#13271C",
+      "paper": "#F1F3EB",
+      "text": "#F1F3EB",
+      "ink": "#13271C",
+      "soft": "#214632",
+      "accent": "#87EFAA",
+      "muted": "#8DA294",
+      "line": "#87EFAA",
+      "edge": "#355240",
+      "paperLine": "#C4CCC2",
+      "emphasis": "#71C993"
     },
     "palette_roles": {
-      "background": "当前场景底色；paper/dark为起点，也可按题材登记自定义色板，不固定全片深绿黑底",
+      "background": "新集默认统一《闲鱼暗号》近黑绿底；不按卡号或题材自动轮换全屏背景",
       "dark": "可选深绿表面和对象；不要求每卡出现大框",
-      "soft": "当前主题的次级表面，字色按实际底色选择",
+      "soft": "深绿内层和次级表面，必须配浅色字",
       "paper": "对照方、文档或重要结果的纸白表面",
       "accent": "当前焦点、传递对象、完成状态或三框以上时的浅绿表面",
       "text": "当前画面背景上的主文字；局部容器中的字色按实际底色显式选择",
       "ink": "纸白/浅绿底文字",
-      "muted": "当前底色上可读的辅助说明；局部深浅底变化需适配",
-      "line": "普通关系线",
+      "muted": "只用于近黑绿底辅助文字；浅纸对象说明改用ink",
+      "line": "主关系/强调线使用参考浅绿；次级边线使用edge",
       "edge": "当前主题中的边缘；根据表面调整对比",
-      "paperLine": "浅色表面内部细线"
+      "paperLine": "浅色表面内部细线",
+      "emphasis": "强调框线，来自参考Cards.tsx"
     },
     "large_panel_policy": {
       "two": [
         "dark",
         "paper"
       ],
-      "three_or_more": "可按对象职责增加浅绿或其他已登记颜色，不强制每框不同色",
+      "three_or_more": "按对象职责使用同一色板的深绿、米白、浅绿，不强制每框不同色",
       "single_large_with_small": "保留大框与小框的深绿层级；不机械套两大框规则",
-      "palette_change_scope": "局部调色遵守本集修订范围；选浅/深主题时同步检查文字、关系线与表面对比，不能沿用导致不可读的字色。",
+      "palette_change_scope": "新集默认统一xianyu；未经本集用户明确覆盖不按卡片轮换背景。局部表面的字色与线条需保证对比，统一色板不等于统一布局。",
       "applies_when": "已按内容选择两个或更多大面板；不据此决定卡片必须有框"
     },
     "typography": {
@@ -270,8 +272,8 @@
       "freeform_semantic_diagram"
     ],
     "container_required": false,
-    "theme_selection": "per_scene_semantics_and_contrast",
-    "default_theme": "paper",
+    "theme_selection": "episode_unified_xianyu_unless_explicit_user_override",
+    "default_theme": "xianyu",
     "palette_presets": {
       "paper": {
         "background": "#F5F2E9",
@@ -298,6 +300,20 @@
         "line": "#54775E",
         "edge": "#33533B",
         "paperLine": "#C4CCC2"
+      },
+      "xianyu": {
+        "background": "#07110C",
+        "dark": "#13271C",
+        "paper": "#F1F3EB",
+        "text": "#F1F3EB",
+        "ink": "#13271C",
+        "soft": "#214632",
+        "accent": "#87EFAA",
+        "muted": "#8DA294",
+        "line": "#87EFAA",
+        "edge": "#355240",
+        "paperLine": "#C4CCC2",
+        "emphasis": "#71C993"
       }
     },
     "fixed_card_share": null,
@@ -311,7 +327,33 @@
     "continuous_semantic_motion_allowed": true,
     "semantic_titles_enabled": true,
     "step_numbers_enabled": true,
-    "necessary_body_text_enabled": true
+    "necessary_body_text_enabled": true,
+    "palette_policy": {
+      "scope": "information_cards_only",
+      "runtime_source": "00_brief/effective_defaults.json#cards.palette",
+      "per_card_theme_rotation": false,
+      "override_record": "episode_state.scoped_overrides",
+      "override_requires": "explicit_user_request_with_field_scope_reason_and_user_basis",
+      "media_original_colors_preserved": true,
+      "evidence_required": [
+        "actual_parameter_consumption",
+        "encoded_palette_observation"
+      ]
+    },
+    "motion_library_policy": {
+      "selection_required": true,
+      "record_source": "episode_state.authoritative_files.semantic_design",
+      "template": "production_standard/semantic_design_template.json",
+      "validator": "production_standard/validate_card_design.py",
+      "library_entry": "CURRENT_PROJECT.research_resources.information_card_motion",
+      "selection_basis": "whole_semantic_span_object_relationship_and_change",
+      "read_scope": "local_query_then_candidate_notes_then_needed_source",
+      "custom_with_specific_reason_allowed": true,
+      "fixed_recipe_count": null,
+      "fixed_adoption_ratio": null,
+      "agent_responsible_for_output_review": true,
+      "extra_user_selection_approval": false
+    }
   },
   "audio": {
     "preserve_provided_voice": true,
@@ -365,7 +407,8 @@
     "场景、图片数、室外比例、图卡占比和卡片结构无固定配额；同场景组须有叙事推进，不能只因语义强相关而长期保持。换景有语义依据，不换句必换景；返回原场景用新图，不复用旧叙事图。",
     "旧集和旧快照不改写。新集复制当前标准及锁；续做旧集沿用已锁版本，只有用户明确要求迁移时另行更新。",
     "旧集脚本不自动消费这些默认值；适配复用时检查实际字段消费和分层契约，不运行旧标准构建器覆盖本版。",
-    "2026-10-20用户明确授权继续完善v4.7：按单图→同场景组→整语义段三级检查，合同插画记录scene_id与scene_progress，场景切换填写scene_change_reason；声明齐全不代替真实图组和正常速度视听检查。"
+    "2026-10-20用户明确授权继续完善v4.7：按单图→同场景组→整语义段三级检查，合同插画记录scene_id与scene_progress，场景切换填写scene_change_reason；声明齐全不代替真实图组和正常速度视听检查。",
+    "2026-10-22按用户要求将《闲鱼暗号》信息卡配色设为新集默认，统一运行参数来源；语义动效检索、实现与编码后检查纳入锁定流程，不迁移旧集。"
   ],
   "illustration": {
     "reference": "xianyu_anhao",

@@ -69,7 +69,7 @@ def preflight(episode_root, entry=None):
         locked_paths = [item["path"] for item in manifest["files"]]
         if len(locked_paths) != len(set(locked_paths)):
             raise ValueError("Duplicate locked dependency")
-        for key in ("verifier", "episode_validator", "stage_runner", "layer_contract"):
+        for key in ("verifier", "episode_validator", "card_design_validator", "stage_runner", "layer_contract"):
             if manifest[key] not in locked_paths:
                 raise ValueError("Entry is absent from the locked dependencies: " + key)
         # Verify bytes before loading the snapshot's own validation modules.
@@ -89,6 +89,15 @@ def preflight(episode_root, entry=None):
         defaults = read_json(defaults_path)
         contract_path = contained(root, spec["episode_contract"])
         contract = read_json(contract_path)
+        card_validator = load_module(contained(standard, manifest["card_design_validator"]),
+                                     "episode_card_design_validator")
+        card_result = card_validator.validate(
+            root, contract_path=contract_path, effective_defaults_path=defaults_path,
+            locked_defaults_path=contained(standard, manifest["defaults"]))
+        result["card_design"] = card_result
+        if not card_result["passed"]:
+            result["errors"].extend(card_result["errors"])
+            return result
         # These are the current standard's execution invariants, not visual
         # preferences such as palette, typography or local animation durations.
         expected = {

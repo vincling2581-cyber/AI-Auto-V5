@@ -42,7 +42,7 @@ def verify(root=STANDARD_ROOT, project_root=None):
     files = manifest["files"]
     paths = [item["path"] for item in files]
     require(len(paths) == len(set(paths)), "Duplicate manifest path")
-    for key in ("sop", "prompts", "prompts_data", "defaults", "rules", "rules_readable", "changes", "visual_references", "brand_assets", "verifier", "layer_contract", "episode_validator", "episode_contract_template", "stage_runner"):
+    for key in ("sop", "prompts", "prompts_data", "defaults", "rules", "rules_readable", "changes", "visual_references", "brand_assets", "verifier", "layer_contract", "episode_validator", "episode_contract_template", "stage_runner", "card_design_validator", "semantic_design_template"):
         require(manifest[key] in paths, "Untracked required file: " + key)
     for item in files:
         path = local_path(root, item["path"])
@@ -84,6 +84,15 @@ def verify(root=STANDARD_ROOT, project_root=None):
     require(cards["reading_hold_allowed"] and cards["render_continuous_intermediate_frames"], "Missing process/reading requirement")
     require({"paper", "dark"}.issubset(cards["palette_presets"]), "Missing palette choices")
     require(cards["palette"] == cards["palette_presets"][cards["default_theme"]], "Default palette/theme mismatch")
+    require(cards["default_theme"] == "xianyu", "New episodes must default to the unified Xianyu palette")
+    require(cards["theme_selection"] == "episode_unified_xianyu_unless_explicit_user_override", "Unexpected per-card theme policy")
+    require(cards["palette_policy"]["per_card_theme_rotation"] is False, "Automatic theme rotation enabled")
+    motion = cards["motion_library_policy"]
+    require(motion["selection_required"] is True and motion["extra_user_selection_approval"] is False, "Motion selection responsibility mismatch")
+    require(motion["fixed_recipe_count"] is None and motion["fixed_adoption_ratio"] is None, "Unexpected library adoption quota")
+    require(motion["template"] == manifest["semantic_design_template"] and motion["validator"] == manifest["card_design_validator"], "Motion design entry mismatch")
+    design_template = read_json(local_path(root, manifest["semantic_design_template"]))
+    require(design_template["is_template"] is True, "Semantic template must not claim completed design")
     for palette in cards["palette_presets"].values():
         require(palette["background"] != palette["text"], "Background and text are identical")
     require(defaults["layout"]["reserved_bottom_band_px"] == 0, "Blank lower band introduced")
